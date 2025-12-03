@@ -3,10 +3,11 @@ import Image from "next/image";
 import { Button2 } from "@/components/ui/button2";
 import { ArrowUpIcon } from "lucide-react";
 import React from "react";
+import TeamMembers from "../teammember/teammember";
 
 const TeamDreamSection = () => {
     return (
-        <section className="one-team-wrapper section-gap">
+        <section className="one-team-wrapper relative section-gap">
             <div className="container mx-auto">
                 <div className="max-w-7xl mx-auto px-5 lg:px-0 flex flex-col lg:flex-row items-center gap-12">
 
@@ -22,7 +23,7 @@ const TeamDreamSection = () => {
                         </p>
 
                         <Button2 className="mt-5 p-[20px]">
-                            <span>View More</span>
+                            <span>Discover Who We Are</span>
                             <ArrowUpIcon className="transform rotate-45" />
                         </Button2>
                     </div>
@@ -42,27 +43,27 @@ const TeamDreamSection = () => {
                 <div className="max-w-7xl mx-auto px-5 lg:px-0 mt-20 grid grid-cols-1 md:grid-cols-3 gap-8">
 
                     {/* Card 1 */}
-                    <div className="bg-[#436E53] text-white p-12 rounded-xl one-team-card">
-                        <h3 className="font-poppins font-semibold text-[#FFFFFF] text-[28px] leading-[1.23] tracking-normal mb-3">One Team</h3>
-                        <p className="font-poppins font-normal text-[16px]  tracking-normal text-[ #FFFFFFDB]">
+                    <div className=" p-8 one-team-card">
+                        <h3 className="font-semibold text-[20px] leading-[123%] tracking-[0] text-[ #161616] mb-3">One Team</h3>
+                        <p className="font-poppins font-normal text-[14px] leading-[130%] tracking-[0] text-[#191919DB]">
                             Your challenges, your goals, and your ambition become the foundation of
                             everything we create. Your challenges, your goals, and your ambition.
                         </p>
                     </div>
 
                     {/* Card 2 */}
-                    <div className="bg-white p-15 rounded-xl one-team-card">
-                        <h3 className="font-poppins font-semibold text-[28px] leading-[1.23] tracking-normal mb-3 text-[ #161616]">One Dream</h3>
-                        <p className="font-poppins font-normal text-[16px]  tracking-normal text-[#525252]">
+                    <div className=" p-8  one-team-card">
+                        <h3 className="font-semibold text-[20px] leading-[123%] tracking-[0] mb-3 text-[ #161616]">One Dream</h3>
+                        <p className="font-poppins font-normal text-[14px] leading-[130%] tracking-[0] text-[#191919DB]">
                             Your challenges, your goals, and your ambition become the foundation of
                             everything we create.
                         </p>
                     </div>
 
                     {/* Card 3 */}
-                    <div className="bg-white p-12 rounded-xl one-team-card">
-                        <h3 className="font-poppins font-semibold text-[28px] leading-[1.23] tracking-normal mb-3 text-[ #161616]">Together for Tomorrow</h3>
-                        <p className="font-poppins font-normal text-[16px]  tracking-normal text-[#525252]">
+                    <div className=" p-8  one-team-card">
+                        <h3 className="font-semibold text-[20px] leading-[123%] tracking-[0] mb-3 text-[ #161616]  ">Together for Tomorrow</h3>
+                        <p className="font-poppins font-normal text-[14px] leading-[130%] tracking-[0] text-[#191919DB]">
                             We turn that vision into a roadmap powered by insight, innovation, and
                             measurable action.
                         </p>
@@ -70,6 +71,7 @@ const TeamDreamSection = () => {
 
                 </div>
             </div>
+            <TeamMembers />
         </section>
     );
 };

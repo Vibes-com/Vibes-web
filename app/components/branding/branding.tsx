@@ -6,7 +6,8 @@ export default function Branding() {
             <SectionWithSlider
                 title="Branding"
                 highlight="& Strategy"
-                description="Identity, story, and experience-reimagined..."
+                description="Identity, Story, and Experience- Reimagined.Distinctive brand identities, narratives, and visual systems built to spark connection and inspire loyalty. Evolving brands into powerful experiences that stand apart with purpose.
+"
                 tags={[
                     "Brand Upliftment",
                     "Brand Communication",

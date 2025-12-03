@@ -18,7 +18,7 @@ const page = () => {
 
       <Hero />
       <TeamDreamSection />
-      <TogetherMain />
+      {/* <TogetherMain /> */}
       {/* <Technology />
       <Branding />
       <Digital /> */}
@@ -36,12 +36,12 @@ const page = () => {
       </div>
 
       <CaseStudies />
-      <TeamMembers />
+      {/* <TeamMembers /> */}
       <MilestoneMetrics />
       {/* <MarqueeTabsSlider /> */}
       <SocialStorytelling />
 
-      <OurBlogs />
+      {/* <OurBlogs /> */}
     </div>
   );
 };

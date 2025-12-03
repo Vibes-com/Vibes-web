@@ -308,14 +308,15 @@ border: 1px solid #466E59
 .one-team-wrapper{
 background: url("/assests/img/home/together-bg.jpg") center/cover no-repeat;
 background-size: cover;
-height: 842px;
 }
 
 .one-team-wrapper .one-team-card{
-box-shadow: 0px 4px 4px 0px #00000026;
+border-right: 1px solid #A2A2A2;
 
 }
-
+.one-team-wrapper .one-team-card:last-child {
+  border-right: none;
+}
 .blogs-wrapper .swiper-pagination{
 position: relative;
 bottom: 0px!important;

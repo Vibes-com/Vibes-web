@@ -3,11 +3,13 @@ import SectionWithSlider from "@/app/components/common/SectionWithSlider/Section
 export default function Digital() {
     return (
         <div>
-            
+
             <SectionWithSlider
                 title="Digital"
                 highlight=" Marketing"
-                description="Turning ideas into intelligent Digital Platforms..."
+                description="Strategy, Creativity & Data - Working as One.Performance-driven campaigns, content, SEO, automation, and analytics crafted to create seamless digital pathways for measurable growth.
+
+"
                 tags={["UI/UX Design", "Website Development", "App Design"]}
                 buttonText="Explore Tech Solutions"
                 images={[

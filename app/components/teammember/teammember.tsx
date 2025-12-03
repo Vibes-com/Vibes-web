@@ -52,22 +52,22 @@ const TeamMembers = () => {
     };
 
     return (
-        <section className="team-member-wrapper section-gap relative bg-[#E2ECE4] w-full overflow-hidden">
+        <section className="team-member-wrapper relative pt-15  overflow-hidden">
             <div className="container mx-auto">
 
                 <img
                     src="/assests/img/home/bg-line.png"
-                    className="absolute top-100 w-full left-0 "
+                    className="absolute top-45 w-full left-0 "
                     alt=""
                 />
 
-                <div className="text-center relative z-10 mb-16">
+                {/* <div className="text-center relative z-10 mb-16">
                     <h3 className="font-poppins font-medium text-[48px] leading-[123%] tracking-normal">Team <span className="highlight relative z-9 w-fit">Members</span></h3>
 
                     <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
                         Working as one team to build a greener tomorrow working as one team to build a greener tomorrow.
                     </p>
-                </div>
+                </div> */}
 
                 <div className="relative max-w-7xl mx-auto px-4 pb-10">
                     <Slider {...settings}>
