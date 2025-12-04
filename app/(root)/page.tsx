@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useRef } from "react";
 import Hero from "../components/hero/Hero";
 import TogetherMain from "../components/together/together-main";
 import Technology from "../components/technology/technology";
@@ -12,8 +13,11 @@ import OurBlogs from "../components/blogs/blogs";
 import SocialStorytelling from "../components/socialstorytelling/socialstorytelling";
 import MarqueeTabsSlider from "../components/clients/clients";
 import HomeGallery from "../components/homegallery/HomeGallery";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 const page = () => {
+
+
   return (
     <div>
 
@@ -23,18 +27,24 @@ const page = () => {
       {/* <Technology />
       <Branding />
       <Digital /> */}
+      <div className="relative">
 
-      <div className="h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth no-scrollbar">
-        <div className="snap-start">
+      <div className="sticky top-0 h-screen z-[10]">
           <Technology />
         </div>
-        <div className="snap-start">
+
+        <div className="sticky top-0 h-screen z-[20]">
           <Digital />
         </div>
-        <div className="snap-start">
+
+        <div className="sticky top-0 h-screen z-[30]">
           <Branding />
         </div>
-      </div>
+        </div>
+
+      
+
+
 
       <CaseStudies />
       {/* <TeamMembers /> */}

@@ -2,7 +2,7 @@ import SectionWithSlider from "../common/SectionWithSlider/SectionWithSlider";
 
 export default function Technology() {
   return (
-
+    
     <SectionWithSlider
       title="Technology"
       highlight="Solutions"
