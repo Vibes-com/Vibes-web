@@ -122,8 +122,8 @@ const SectionWithSlider: FC<SectionProps> = ({
           >
             <Swiper
               modules={[EffectFade, Autoplay]}
-              effect="fade"
-              autoplay={{ delay: 2000 }}
+              // effect="fade"
+              // autoplay={{ delay: 2000 }}
               speed={1500}
               loop
               className="w-full h-full"

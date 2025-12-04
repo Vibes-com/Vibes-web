@@ -45,7 +45,7 @@ export default function CaseStudies() {
 
     return (
         <section className="casestudies-wrapper section-gap">
-            <div className="container mx-auto">
+            <div className="container mx-auto  px-4">
                 <div className="flex justify-start mb-5">
                     <div className="
         px-6 py-2 

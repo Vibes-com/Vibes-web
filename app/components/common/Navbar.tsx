@@ -18,9 +18,9 @@ const Navbar = () => {
 
         <div className="flex items-center gap-3">
           <Button
-            className="bg-[#F4BE00] text-black rounded-full px-5 py-5 flex items-center space-x-5  transition"
+            className="bg-[#F4BE00] text-black rounded-full px-5 py-5 flex items-center space-x-5  transition  hover:border-[#F4BE00] hover:border-[2px] hover:text-white rounded-full hover:bg-transparent"
           >
-            <span>Enquire Now</span>
+            <span>Talk to us today</span>
             <ArrowUpIcon className="transform rotate-45" />
           </Button>
           {/* Mobile Menu */}
