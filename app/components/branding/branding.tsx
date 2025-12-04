@@ -2,7 +2,7 @@ import SectionWithSlider from "@/app/components/common/SectionWithSlider/Section
 
 export default function Branding() {
     return (
-        <div>
+        <div className="branding-wrapper">
             <SectionWithSlider
                 title="Branding"
                 highlight="& Strategy"
@@ -20,7 +20,6 @@ export default function Branding() {
                     "/assests/img/home/slider-img-3.png",
                     "/assests/img/home/slider-img-1.png",
                 ]}
-                bgColor="bg-purple-600"
                 reverse={false}
             />
         </div>

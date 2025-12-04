@@ -46,6 +46,21 @@ export default function CaseStudies() {
     return (
         <section className="casestudies-wrapper section-gap">
             <div className="container mx-auto">
+                <div className="flex justify-start mb-5">
+                    <div className="
+        px-6 py-2 
+        rounded-full 
+        border border-[#F4BE00] 
+        inline-flex items-center gap-2
+      ">
+                        <span
+                            className="w-2 h-2 rounded-full bg-[#F4BE00]"
+                        ></span>
+                        <span className="font-[Poppins] font-semibold text-[10px] leading-[1.23] uppercase text-[#F4BE00]">
+                            Key Performance Insights
+                        </span>
+                    </div>
+                </div>
                 <div className="flex justify-between items-start">
                     <div>
                         <h3 className="font-poppins font-medium text-[48px] leading-[123%] tracking-normal">Vision to <span className="highlight relative z-9 w-fit">Verified Results</span></h3>

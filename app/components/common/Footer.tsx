@@ -5,7 +5,8 @@ import SubscribeBox from "./Footer/subscribe";
 import FooterRightSection from "./Footer/footer-right";
 import Copyright from "./Footer/copyright";
 import Image from "next/image";
-import { MessageCircle, Bot, Coffee } from "lucide-react";
+import { Bot, Coffee } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -37,13 +38,13 @@ const Footer = () => {
       <div className="fixed right-0 bottom-15 flex flex-col gap-3 z-[99]">
         <div className="flex justify-end">
           <div className="group w-[50px] hover:w-[200px] h-[46px] 
-        bg-[#24CC63] rounded-tl-full rounded-bl-full flex items-center px-4 cursor-pointer
-        transition-all duration-300  shadow-lg overflow-hidden">
-            <MessageCircle size={20} className="text-white shrink-0" />
+        bg-[#F4BE00] rounded-tl-full rounded-bl-full flex items-center px-4 cursor-pointer
+        transition-all duration-700  shadow-lg overflow-hidden">
+            <Coffee size={20} className="text-black shrink-0" />
 
-            <span className="ml-3 text-white font-medium text-sm 
-          opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
-              WhatsApp Support
+            <span className="ml-3 text-black font-medium text-sm 
+          opacity-0 group-hover:opacity-100 transition-opacity duration-700 whitespace-nowrap">
+              Coffee Table
             </span>
           </div>
         </div>
@@ -51,25 +52,29 @@ const Footer = () => {
         <div className="flex justify-end">
           <div className="group w-[50px] hover:w-[200px] h-[46px] 
         bg-[#2B4C69] rounded-tl-full rounded-bl-full flex items-center px-4 cursor-pointer
-        transition-all duration-300  shadow-lg overflow-hidden">
+        transition-all duration-700  shadow-lg overflow-hidden">
             <Bot size={20} className="text-white shrink-0" />
 
             <span className="ml-3 text-white font-medium text-sm 
-          opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+          opacity-0 group-hover:opacity-100 transition-opacity duration-700 whitespace-nowrap">
               Chat With Bot
             </span>
           </div>
         </div>
 
         <div className="flex justify-end">
-          <div className="group w-[50px] hover:w-[200px] h-[46px] 
-        bg-[#F4BE00] rounded-tl-full rounded-bl-full flex items-center px-4 cursor-pointer
-        transition-all duration-300  shadow-lg overflow-hidden">
-            <Coffee size={20} className="text-black shrink-0" />
+          <div
+            className="group w-[50px] hover:w-[200px] h-[46px]
+    bg-[#24CC63] rounded-tl-full rounded-bl-full flex items-center px-4 cursor-pointer
+    transition-all duration-700 shadow-lg overflow-hidden"
+          >
+            <FaWhatsapp size={20} className="text-white shrink-0" />
 
-            <span className="ml-3 text-black font-medium text-sm 
-          opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
-              Coffee Table
+            <span
+              className="ml-3 text-white font-medium text-sm
+      opacity-0 group-hover:opacity-100 transition-opacity duration-700 whitespace-nowrap"
+            >
+              WhatsApp Support
             </span>
           </div>
         </div>

@@ -6,7 +6,7 @@ import { EffectFade, Autoplay } from "swiper/modules";
 import { Button4 } from "@/components/ui/button4";
 import { ArrowRight, ArrowLeft } from "lucide-react";
 import { ArrowUpIcon } from "lucide-react";
-
+import Image from "next/image";
 import "swiper/css";
 import "swiper/css/effect-fade";
 
@@ -17,7 +17,6 @@ interface SectionProps {
   tags: string[];
   buttonText: string;
   images: string[];
-  bgColor?: string;
   reverse?: boolean;
 }
 
@@ -28,7 +27,6 @@ const SectionWithSlider: FC<SectionProps> = ({
   tags,
   buttonText,
   images,
-  bgColor = "bg-black",
   reverse = false,
 }) => {
 
@@ -40,7 +38,7 @@ const SectionWithSlider: FC<SectionProps> = ({
   return (
     <div className="sticky-wrapper hide-scrollbar">
 
-      <div className={`${bgColor} overflow-hidden`}>
+      <div className="">
         <style>{`
         @keyframes zoomInFade {
             0% { transform: scale(0.85); opacity: 0.3; }
@@ -89,20 +87,19 @@ const SectionWithSlider: FC<SectionProps> = ({
             <div className="flex items-center gap-4 mt-6">
               <button
                 onClick={goPrev}
-                className="w-[48px] h-[48px] rounded-xl border border-white/40 flex items-center justify-center text-white "
-              >
+                className="w-[48px] h-[48px] rounded-xl border border-white/40 flex items-center justify-center text-white cursor-pointer bg-[rgba(255,255,255,0.5)]">
                 <ArrowLeft size={22} />
               </button>
 
               <button
                 onClick={goNext}
-                className="w-[48px] h-[48px] rounded-xl border border-white/40 flex items-center justify-center text-white cursor-pointer"
+                className="w-[48px] h-[48px] rounded-xl border border-white/40 flex items-center justify-center text-white cursor-pointer bg-[rgba(255,255,255,0.5)]"
               >
                 <ArrowRight size={22} />
               </button>
             </div>
 
-            <Button4 className="mt-5 p-[20px]">
+            <Button4 className="mt-3 p-[20px]">
               {buttonText}
               <ArrowUpIcon className="transform rotate-45" />
             </Button4>

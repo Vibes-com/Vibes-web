@@ -251,6 +251,12 @@ width: 12px!important;
 .swiper-pagination-bullet-active {
 background: #FFD400 !important;
 }
+.casestudies-wrapper{
+background: url("/assests/img/home/case-studies-bg.png");
+background-size: cover;
+background-repeat: no-repeat; 
+background-position: center;  
+}
 .casestudies-wrapper .swiper-pagination{
 position: relative;
 bottom: 0px!important;
@@ -306,8 +312,10 @@ border-radius: 50%;
 border: 1px solid #466E59
 }
 .one-team-wrapper{
-background: url("/assests/img/home/together-bg.jpg") center/cover no-repeat;
+background: url("/assests/img/home/one-team-bg.png");
 background-size: cover;
+background-repeat: no-repeat; 
+background-position: center;  
 }
 
 .one-team-wrapper .one-team-card{
@@ -404,6 +412,7 @@ width: 50px;
   height: 100%;
   object-fit: cover;
   display: block;
+  object-position: top;
 }
 .home-gallery-wrapper .wrapper > div:nth-child(n+4){
  margin-top: calc(var(--_offset-3) * -1 + var(--_gap));
@@ -415,8 +424,13 @@ width: 50px;
   
 .home-gallery-wrapper .wrapper > div:nth-child(4){ --_clip-path: 0 var(--_offset-3), 100% var(--_offset-2), 100% 100%, 0 100%;}
 .home-gallery-wrapper .wrapper > div:nth-child(5){ --_clip-path: 0 var(--_offset-2), 100% var(--_offset-1), 100% 100%, 0 100%;}
-.home-gallery-wrapper .wrapper > div:nth-child(6){ --_clip-path: 0 var(--_offset-1), 100% 0%, 100% 100%, 100% 100%, 0 100%;}
-
+.home-gallery-wrapper .wrapper > div:nth-child(6){
+  --_clip-path: 
+    0 var(--_offset-1),
+    100% 0,
+    100% 100%,
+    0 100%;
+}
 
 .home-gallery-wrapper .wrapper > div:hover{
   transition: scale 500ms ease-in-out, filter 500ms ease-in-out, clip-path 500ms ease-in-out 500ms;
@@ -439,6 +453,28 @@ width: 50px;
 @keyframes zIndexHack {
   0%, 100% { z-index: 100; }
 }
+.home-gallery-wrapper{
+     background: url("/assests/img/home/home-gallery-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center;  
+}
 
-
-
+ .technology-wrapper{
+    background: url("/assests/img/home/technology-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center; 
+ }
+ .branding-wrapper{
+    background: url("/assests/img/home/branding bg.png");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center; 
+ }
+ .digital-wrapper{
+    background: url("/assests/img/home/digital-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center; 
+ }

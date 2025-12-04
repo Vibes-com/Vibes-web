@@ -3,11 +3,11 @@ import Image from "next/image";
 import React, { useState, useRef, useEffect } from "react";
 
 const counters = [
-    { value: 8, label: "Average period of client collaboration (years)" },
-    { value: 50, label: "Team Members" },
-    { value: 500, label: "Clients Served" },
     { value: 15, label: "Years of Operation" },
     { value: 700, label: "Projects Delivered" },
+    { value: 500, label: "Clients Served" },
+    { value: 50, label: "Team Members" },
+    { value: 8, label: "Average period of client collaboration (years)" },
 ];
 
 const galleryImages = [
@@ -100,12 +100,7 @@ export default function MilestoneSection() {
         <section ref={sectionRef} className="relative w-full section-gap overflow-hidden">
 
             <Image
-                src="/assests/img/home/together-bg.jpg"
-                fill
-                alt="main-bg"
-                priority
-                className="absolute inset-0 object-cover z-0"
-            />
+                src="/assests/img/home/milestone-bg.png" fill alt="main-bg" priority unoptimized className="absolute inset-0 object-cover z-0" />
 
             <div className="absolute z-99 inset-0 grid grid-cols-14 grid-rows-5 gap-0 pointer-events-none">
                 {galleryImages.map((src, index) => (
@@ -128,9 +123,24 @@ export default function MilestoneSection() {
             </div>
 
             <div className="relative z-40 max-w-6xl mx-auto text-center px-6">
-                <h3 className="font-poppins font-medium text-[48px] leading-[123%] tracking-normal"><span className="highlight relative z-9 w-fit">Milestone</span> Metrics</h3>
+                <div className="flex justify-center mb-5">
+                    <div className="
+        px-6 py-2 
+        rounded-full 
+        border border-[#F4BE00] 
+        inline-flex items-center gap-2
+      ">
+                        <span
+                            className="w-2 h-2 rounded-full bg-[#F4BE00]"
+                        ></span>
+                        <span className="font-[Poppins] font-semibold text-[10px] leading-[1.23] uppercase text-[#F4BE00]">
+                            Key Performance Insights
+                        </span>
+                    </div>
+                </div>
+                <h3 className="font-poppins font-medium text-[48px] leading-[123%] tracking-normal text-[#FFFFFF]"><span className="highlight relative z-9 w-fit">Milestone</span> Metrics</h3>
 
-                <p className="text-lg text-[#4b5563] max-w-2xl mx-auto mb-16">
+                <p className="text-[#FFFFFFDB] font-normal text-[16px] leading-[130%] tracking-[0] text-center max-w-2xl mx-auto mb-16 mt-5">
                     A showcase of achievements and performance benchmarks that reflect our growth and expertise.
                 </p>
 
@@ -141,7 +151,7 @@ export default function MilestoneSection() {
                 </div>
             </div>
 
-            <div className="absolute inset-0 bg-gradient-to-b from-white/70 to-white/20 z-30"></div>
+            {/* <div className="absolute inset-0 bg-gradient-to-b from-white/70 to-white/20 z-30"></div> */}
         </section>
     );
 }
@@ -166,8 +176,8 @@ function CounterBox({ value, label, animate }: { value: number; label: string; a
 
     return (
         <div className="flex flex-col items-center text-center">
-            <p className="text-[55px] font-bold text-[#204667] leading-none">{count}+</p>
-            <p className="text-sm text-[#324256] mt-3 max-w-[170px] leading-snug">{label}</p>
+            <p className="text-[60px] font-semibold text-[#FFFFFF] leading-none">{count}+</p>
+            <p className="text-sm text-[#FFFFFF] mt-3 max-w-[170px] leading-snug">{label}</p>
         </div>
     );
 }

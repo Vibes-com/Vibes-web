@@ -30,6 +30,15 @@ export default function SocialStorytelling() {
     return (
         <section className="social-storytelling-wrapper section-gap">
             <div className="container mx-auto px-4">
+                <div className="flex justify-center mb-5">
+                    <div className="px-6 py-2 rounded-full border border-[#F4BE00] inline-flex items-center gap-2">
+                        <span className="w-2 h-2 rounded-full bg-[#F4BE00]"></span>
+                        <span className="font-[Poppins] font-semibold text-[10px] leading-[1.23] uppercase text-[#F4BE00]">
+                            Key Performance Insights
+                        </span>
+                    </div>
+                </div>
+
                 <h3 className=" text-center font-poppins font-semibold text-[40px] leading-[1.23] tracking-norma]">
                     <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[40px] leading-[1.23] tracking-normal">Visual Impact</span>That <br />Speaks for Brands
 
@@ -39,7 +48,6 @@ export default function SocialStorytelling() {
 
             <div className="marquee-swiper swiper mt-10">
                 <div className="swiper-wrapper">
-                    {/* --- your slides remain untouched --- */}
                     {/* EVEN — VIDEO */}
                     <div className="swiper-slide even-slide">
                         <div className="videos-event flex align-center">
@@ -167,9 +175,11 @@ export default function SocialStorytelling() {
 
             <style jsx>{`
         .social-storytelling-wrapper {
-          background: url("https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/social-banner.jpg")
-            no-repeat center/cover;
-          overflow: hidden;
+            background: url("/assests/img/home/brand-stories-bg.png");
+            background-size: cover;
+            background-repeat: no-repeat; 
+            background-position: center;  
+            overflow: hidden;
         }
 
         .marquee-swiper .swiper-wrapper {

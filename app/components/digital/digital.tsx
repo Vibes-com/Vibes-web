@@ -2,7 +2,7 @@ import SectionWithSlider from "@/app/components/common/SectionWithSlider/Section
 
 export default function Digital() {
     return (
-        <div>
+        <div className="digital-wrapper">
 
             <SectionWithSlider
                 title="Digital"
@@ -17,7 +17,7 @@ export default function Digital() {
                     "/assests/img/home/slider-img-2.png",
                     "/assests/img/home/slider-img-1.png",
                 ]}
-                bgColor="bg-green-600"
+
                 reverse={true}
             />
         </div>
