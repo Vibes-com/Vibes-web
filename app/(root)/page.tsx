@@ -27,7 +27,7 @@ const page = () => {
       {/* <Technology />
       <Branding />
       <Digital /> */}
-      <div className="relative">
+      <div className="relative py-5">
 
       <div className="sticky top-0 h-screen z-[10]">
           <Technology />
