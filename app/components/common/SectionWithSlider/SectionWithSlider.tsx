@@ -117,7 +117,7 @@ const SectionWithSlider: FC<SectionProps> = ({
 
           {/* RIGHT SIDE SLIDER */}
           <div
-            className={`relative md:col-span-7 w-full h-[772px] overflow-hidden ${reverse ? "md:order-1" : "md:order-2"
+            className={`relative md:col-span-7 w-full h-[772px] overflow-hidden  ${reverse ? "md:order-1" : "md:order-2"
               }`}
           >
             <Swiper
