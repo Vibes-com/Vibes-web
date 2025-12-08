@@ -13,7 +13,7 @@ export default function Preloader() {
   if (!loading) return null;
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-white z-[9999] w-full">
+    <div className="fixed inset-0 flex items-center justify-center bg-white z-[9999] w-full overflow-hidden h-full">
       <div className="preloader-section-wrapper flex flex-col justify-center items-center  text-white leading-tight">
             <h1 className="text-[85px] font-semibold ">TOGETHER WE BUILD</h1>
             <div className="flex items-center space-x-4">

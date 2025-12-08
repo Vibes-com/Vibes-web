@@ -82,7 +82,7 @@ const TeamDreamSection = () => {
 
                     {/* Card 1 */}
                      <SlideRight delay={0.5}>
-                    <div className="p-8 one-team-card">
+                    <div className="p-8 one-team-card bdr">
                         <h3 className="font-semibold text-[20px] leading-[123%] mb-3">One Team</h3>
                         <p className="font-poppins font-normal text-[14px] leading-[130%] text-[#191919DB]">
                             Vibes aligns purposefully, turning challenges, goals and ambitions into one clear, unified brand narrative.
@@ -92,7 +92,7 @@ const TeamDreamSection = () => {
 
                     {/* Card 2 */}
                      <SlideUp delay={0.5}>
-                    <div className="p-8 one-team-card">
+                    <div className="p-8 one-team-card bdr">
                         <h3 className="font-semibold text-[20px] leading-[123%] mb-3">One Dream</h3>
                         <p className="font-poppins font-normal text-[14px] leading-[130%] text-[#191919DB]">
                             A brand starts with a vision, insight, innovation and data that turn it into a clear measurable and achievable roadmap.

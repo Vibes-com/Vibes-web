@@ -318,12 +318,16 @@ background-repeat: no-repeat;
 background-position: center;  
 }
 
-.one-team-wrapper .one-team-card{
+/* .one-team-wrapper .one-team-card{
 border-right: 1px solid #A2A2A2;
 
 }
 .one-team-wrapper .one-team-card:last-child {
 border-right: none;
+} */
+
+.bdr{
+  border-right: 1px solid #a2a2a2;
 }
 .blogs-wrapper .swiper-pagination{
 position: relative;
