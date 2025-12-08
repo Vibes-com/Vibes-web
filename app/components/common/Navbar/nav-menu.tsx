@@ -21,7 +21,7 @@ export const NavMenu = (props: ComponentProps<typeof NavigationMenu>) => (
             </NavigationMenuItem>
             <NavigationMenuItem>
                 <NavigationMenuLink asChild className="font-poppins font-normal text-[14px] leading-[100%] tracking-[0] text-[#FFFFFF]">
-                    <Link href="/">WHO WE ARE</Link>
+                    <Link href="/who-we-are">WHO WE ARE</Link>
                 </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>
@@ -33,19 +33,19 @@ export const NavMenu = (props: ComponentProps<typeof NavigationMenu>) => (
                     <ul className="grid gap-3 p-4 md:w-[300px]">
                         <li>
                             <Link href="/service1" className="block p-2 hover:bg-gray-100 rounded">
-                                Service 1
+                                Technology
                             </Link>
                         </li>
 
                         <li>
                             <Link href="/service2" className="block p-2 hover:bg-gray-100 rounded">
-                                Service 2
+                                Branding
                             </Link>
                         </li>
 
                         <li>
                             <Link href="/service3" className="block p-2 hover:bg-gray-100 rounded">
-                                Service 3
+                                Digital Marketing
                             </Link>
                         </li>
                     </ul>

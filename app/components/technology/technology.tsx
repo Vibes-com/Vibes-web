@@ -15,7 +15,7 @@ export default function Technology() {
           "/assests/img/home/technology-img-1.jpg",
           "/assests/img/home/technology-img-2.jpg",
           "/assests/img/home/technology-img-3.jpg",
-          "/assests/img/home/branding-img-1.jpg",
+          "/assests/img/home/technology-img-4.jpg",
 
         ]}
 

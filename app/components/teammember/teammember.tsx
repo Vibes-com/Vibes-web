@@ -52,7 +52,7 @@ const TeamMembers = () => {
     };
 
     return (
-        <section className="team-member-wrapper relative pt-15  overflow-hidden">
+        <div className="team-member-wrapper relative pt-15  overflow-hidden">
             <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
 
                 <img
@@ -115,7 +115,7 @@ const TeamMembers = () => {
                 </div>
 
             </div>
-        </section>
+        </div>
     );
 };
 

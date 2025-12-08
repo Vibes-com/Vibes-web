@@ -15,6 +15,7 @@ export default function Digital() {
                     "/assests/img/home/digital-img-1.jpg",
                     "/assests/img/home/digital-img-2.jpg",
                     "/assests/img/home/digital-img-3.jpg",
+                    "/assests/img/home/digital-img-4.jpg",
                 ]}
 
                 reverse={false}

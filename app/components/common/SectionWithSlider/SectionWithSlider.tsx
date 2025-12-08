@@ -140,25 +140,19 @@ const SectionWithSlider: FC<SectionProps> = ({
                 animation: cutLTR var(--cut-time) linear forwards;
               }
 
-              /* RIGHT → LEFT animation */
-              .rtl {
-                animation: cutRTL var(--cut-time) linear forwards;
-              }
+              
 
               @keyframes cutLTR {
                 0%   { clip-path: inset(0 100% 0 0); } 
                 100% { clip-path: inset(0 0 0 0); }
               }
 
-              @keyframes cutRTL {
-                0%   { clip-path: inset(0 0 0 100%); }
-                100% { clip-path: inset(0 0 0 0); }
-              }
+              
             `}</style>
 
             {images.map((img, i) => {
               const nextIndex = (i + 1) % images.length;
-              const direction = i % 2 === 0 ? "ltr" : "rtl";
+
 
               return (
                 <SwiperSlide key={i}>
@@ -166,7 +160,7 @@ const SectionWithSlider: FC<SectionProps> = ({
                     <img src={images[nextIndex]} className="img-next" alt="next" />
                     <img
                       src={img}
-                      className={`img-current ${direction}`}
+                      className={`img-current ltr`}
                       alt="current"
                       onAnimationEnd={handleAnimationEnd}
                     />

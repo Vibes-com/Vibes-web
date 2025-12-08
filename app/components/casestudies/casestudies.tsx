@@ -91,7 +91,7 @@ export default function CaseStudies() {
                                         src={card.img}
                                         alt={card.title}
                                         fill
-                                        className="object-cover transition-all duration-[900ms] ease-out group-hover:scale-110 group-hover:opacity-90"
+                                        className="object-fill transition-all duration-[900ms] ease-out group-hover:scale-110 group-hover:opacity-90"
                                     />
                                 </div>
 
