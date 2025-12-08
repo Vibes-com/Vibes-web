@@ -642,20 +642,51 @@ background-position: center;
   position: absolute !important;
   right: 0px !important;
 }
+.celebrating-milestones-wrapper .slick-dots ul{
+display: flex;
+flex-direction: column;
+position: absolute;
+right: -45px;
+align-items: center!important;
+}
+
 
 .celebrating-milestones-wrapper .slick-dots li {
   margin: 10px 0 !important;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .celebrating-milestones-wrapper .slick-dots li button:before {
   content: "" !important;
 }
+.celebrating-milestones-wrapper .slick-dots li button {
+  background: #466e5999;
+    border: 1px solid #466e59;
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+}
 .celebrating-milestones-wrapper .slick-dots li div {
   transition: 0.3s;
+    background: #FFFFFF;
+    border: 1px solid #466e59;
+    border-radius: 50%;
+
 }
 
 .celebrating-milestones-wrapper .slick-dots li.slick-active div {
-  background: #F4BE00 !important;
+  opacity: 1;
+    content: "";
+    background-color: #f4be00;
+    border-radius: 61px;
+    width: 10px;
+    height: 20px;
+    margin: -3px -4px;
+    display: block;
+    color: #f4be00 !important;
+    border: none !important;
 }
 
 .our-team-wrapper{

@@ -20,7 +20,7 @@ export default function VerticalSlickMilestones() {
             <div
                 style={{
                     right: "-30px",
-                    top: "50%",
+                    top: "60%",
                     transform: "translateY(-50%)",
                 }}
                 className="absolute"
@@ -30,7 +30,7 @@ export default function VerticalSlickMilestones() {
         ),
 
         customPaging: () => (
-            <div className="w-[10px] h-[10px] bg-[#bdbdbd] rounded-full"></div>
+            <div className="w-[15px] h-[15px] rounded-full"></div>
         ),
     };
 
@@ -79,7 +79,7 @@ export default function VerticalSlickMilestones() {
                                 {slides.map((item, i) => (
                                     <div key={i} className="py-3">
                                         <div
-                                            className="relative bg-white p-6 rounded-xl shadow-md flex items-center gap-6 h-[170px] transition-all duration-500 milestone-card border-l-[8px] border-l-[#F4BE00]"
+                                            className="relative bg-white p-4 rounded-xl shadow-md flex items-center gap-6 h-[170px] transition-all duration-500 milestone-card border-l-[8px] border-l-[#F4BE00]"
                                         >
                                             {/* Image */}
                                             <img src={item.img} className="w-25 h-25 object-contain" />
