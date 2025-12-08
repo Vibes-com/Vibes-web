@@ -9,12 +9,14 @@ export default function Technology() {
         title="Technology"
         highlight="Solutions"
         description="Turning Ideas into Intelligent Digital Platforms.Responsive websites, mobile apps, enterprise systems, and full tech ecosystems designed to future-proof brands."
-        tags={["UI/UX Design", "Website Development", "PMIS Solutions", "App Design"]}
+        tags={["E-commerce Development", "Website Development", "PMIS Solutions", "App Development"]}
         buttonText="Explore Tech Solutions"
         images={[
           "/assests/img/home/technology-img-1.jpg",
           "/assests/img/home/technology-img-2.jpg",
           "/assests/img/home/technology-img-3.jpg",
+          "/assests/img/home/branding-img-1.jpg",
+
         ]}
 
         reverse={false}   // slider left text right

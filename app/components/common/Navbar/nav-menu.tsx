@@ -13,15 +13,20 @@ import { ComponentProps } from "react";
 
 export const NavMenu = (props: ComponentProps<typeof NavigationMenu>) => (
     <NavigationMenu {...props}>
-        <NavigationMenuList className="space-x-0 data-[orientation=vertical]:flex-col data-[orientation=vertical]:items-start data-[orientation=vertical]:justify-start">
+        <NavigationMenuList className="space-x-3 data-[orientation=vertical]:flex-col data-[orientation=vertical]:items-start data-[orientation=vertical]:justify-start">
             <NavigationMenuItem>
-                <NavigationMenuLink asChild className="font-poppins font-normal text-[17px] leading-[100%] tracking-[0] text-[#FFFFFF]">
+                <NavigationMenuLink asChild className="font-poppins font-normal text-[14px] leading-[100%] tracking-[0] text-[#FFFFFF]">
+                    <Link href="/">HOME</Link>
+                </NavigationMenuLink>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+                <NavigationMenuLink asChild className="font-poppins font-normal text-[14px] leading-[100%] tracking-[0] text-[#FFFFFF]">
                     <Link href="/">WHO WE ARE</Link>
                 </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>
-                <NavigationMenuTrigger className=" bg-transparent font-poppins font-normal text-[17px] leading-[100%] tracking-[0] text-[#FFFFFF]">
-                    OUR SERVICES
+                <NavigationMenuTrigger className=" bg-transparent font-poppins font-normal text-[14px] leading-[100%] tracking-[0] text-[#FFFFFF]">
+                    WHAT WE DO
                 </NavigationMenuTrigger>
 
                 <NavigationMenuContent>
@@ -47,22 +52,22 @@ export const NavMenu = (props: ComponentProps<typeof NavigationMenu>) => (
                 </NavigationMenuContent>
             </NavigationMenuItem>
             <NavigationMenuItem>
-                <NavigationMenuLink asChild className="font-poppins font-normal text-[17px] leading-[100%] tracking-[0] text-[#FFFFFF]">
+                <NavigationMenuLink asChild className="font-poppins font-normal text-[14px] leading-[100%] tracking-[0] text-[#FFFFFF]">
                     <Link href="#">CASE STUDIES</Link>
                 </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>
-                <NavigationMenuLink asChild className="font-poppins font-normal text-[17px] leading-[100%] tracking-[0] text-[#FFFFFF]">
-                    <Link href="/blog">BLOGS</Link>
+                <NavigationMenuLink asChild className="font-poppins font-normal text-[14px] leading-[100%] tracking-[0] text-[#FFFFFF]">
+                    <Link href="/blog">CULTURE</Link>
                 </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>
-                <NavigationMenuLink asChild className="font-poppins font-normal text-[17px] leading-[100%] tracking-[0] text-[#FFFFFF]">
+                <NavigationMenuLink asChild className="font-poppins font-normal text-[14px] leading-[100%] tracking-[0] text-[#FFFFFF]">
                     <Link href="#">CAREERS</Link>
                 </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>
-                <NavigationMenuLink asChild className="font-poppins font-normal text-[17px] leading-[100%] tracking-[0] text-[#FFFFFF]">
+                <NavigationMenuLink asChild className="font-poppins font-normal text-[14px] leading-[100%] tracking-[0] text-[#FFFFFF]">
                     <Link href="#">CONTACT US</Link>
                 </NavigationMenuLink>
             </NavigationMenuItem>

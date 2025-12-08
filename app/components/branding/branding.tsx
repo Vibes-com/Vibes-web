@@ -7,13 +7,11 @@ export default function Branding() {
                 heading="Service"
                 title="Branding"
                 highlight="& Strategy"
-                description="Identity, Story, and Experience- Reimagined.Distinctive brand identities, narratives, and visual systems built to spark connection and inspire loyalty. Evolving brands into powerful experiences that stand apart with purpose.
-"
+                description="Identity, Story, and Experience- Reimagined.Distinctive brand identities, narratives, and visual systems built to spark connection and inspire loyalty. Evolving brands into powerful experiences that stand apart with purpose."
                 tags={[
                     "Brand Upliftment",
-                    "Brand Communication",
-                    "Brand Positioning",
-                    "Brand Management",
+                    "Corporate Branding",
+                    "Brand Communication & Strategy",
                 ]}
                 buttonText="Build Your Brand"
                 images={[

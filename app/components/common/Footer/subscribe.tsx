@@ -7,7 +7,7 @@ export default function SubscribeBox() {
                 <input
                     type="email"
                     placeholder="Enter Email-ID"
-                    className="w-full bg-[#6D6D6D54] border-[2px] border-solid border-[#7373732B] px-5 py-3 pr-40 rounded-full  placeholder:font-medium placeholder:text-[16px] placeholder:leading-[100%] placeholder:tracking-[0] focus:outline-none text-[#A3A3A3]"
+                    className="w-full bg-[#6D6D6D54] border-[2px] border-solid border-[#7373732B] px-5 py-3 pr-40 rounded-full  placeholder:font-medium placeholder:text-[14px] placeholder:leading-[100%] placeholder:tracking-[0] focus:outline-none text-[#A3A3A3]"
                 />
 
                 <button

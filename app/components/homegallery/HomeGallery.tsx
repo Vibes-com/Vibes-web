@@ -2,6 +2,7 @@ import React from 'react'
 import Image from "next/image";
 import { Button2 } from "@/components/ui/button2";
 import { ArrowUpIcon } from "lucide-react";
+import SlideUp from '../animations/SlideUp';
 
 const HomeGallery = () => {
   return (
@@ -19,7 +20,7 @@ const HomeGallery = () => {
               className="w-2 h-2 rounded-full bg-[#F4BE00]"
             ></span>
             <span className="font-[Poppins] font-semibold text-[10px] leading-[1.23] uppercase text-[#F4BE00]">
-              Key Performance Insights
+              Gallery
             </span>
           </div>
         </div>
@@ -30,6 +31,7 @@ const HomeGallery = () => {
         <p className="text-[#707070] font-normal text-[16px] leading-[130%] tracking-[0] text-center max-w-2xl mx-auto mb-16 mt-5">
           Memories that capture energy, teamwork, and the spirit of creating together.
         </p>
+        <SlideUp delay={0.5}>
         <div className="wrapper w-80 mt-5">
           <div>
             <Image
@@ -85,8 +87,9 @@ const HomeGallery = () => {
             />
           </div>
         </div>
+        </SlideUp>
         <div className="text-center mt-12">
-          <Button2 className="mt-5 p-[20px]">
+          <Button2 className="mt-5 p-[20px] hover:border-[#2B4C69] hover:border-[2px] hover:text-[#F4BE00] hover:bg-transparent">
             <span>Peek Behind the Magic</span>
             <ArrowUpIcon className="transform rotate-45" />
           </Button2>

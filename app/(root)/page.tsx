@@ -14,6 +14,9 @@ import SocialStorytelling from "../components/socialstorytelling/socialstorytell
 import MarqueeTabsSlider from "../components/clients/clients";
 import HomeGallery from "../components/homegallery/HomeGallery";
 import { motion, useScroll, useTransform } from "framer-motion";
+import FadeIn from "../components/animations/FadeIn";
+import FadeOut from "../components/animations/FadeOut";
+import SlideRight from "../components/animations/SlideRight";
 
 const page = () => {
 
@@ -22,21 +25,24 @@ const page = () => {
     <div>
 
       <Hero />
+      
+      
       <TeamDreamSection />
+      
       {/* <TogetherMain /> */}
       {/* <Technology />
       <Branding />
       <Digital /> */}
-      <div className="relative py-5">
+      <div className="relative">
 
-        <div className="sticky top-0 h-screen z-[10]">
-          <Technology />
+        <div className="sticky top-0 z-[10]">
+          <Technology/>
         </div>
-        <div className="sticky top-0 h-screen z-[20]">
-          <Branding />
+        <div className="sticky top-0 z-[20]">
+          <Branding/>
         </div>
-        <div className="sticky top-0 h-screen z-[30]">
-          <Digital />
+        <div className="sticky top-0 z-[30]">
+          <Digital/>
         </div>
       </div>
 

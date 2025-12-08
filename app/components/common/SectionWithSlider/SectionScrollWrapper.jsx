@@ -3,7 +3,7 @@
 import Technology from "./Technology";
 import Digital from "./Digital";
 import Branding from "./Branding";
-import Creative from "./Creative"; // if you don’t have this, remove it
+import Creative from "./Creative"; 
 
 export default function SectionScrollWrapper() {
   return (

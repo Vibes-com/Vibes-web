@@ -7,6 +7,7 @@ import { Button3 } from "@/components/ui/button3";
 import { ArrowUpIcon } from "lucide-react";
 import "swiper/css";
 import "swiper/css/pagination";
+import SlideUp from "../animations/SlideUp";
 
 export default function CaseStudies() {
     const cards = [
@@ -45,14 +46,9 @@ export default function CaseStudies() {
 
     return (
         <section className="casestudies-wrapper section-gap">
-            <div className="container mx-auto">
+            <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
                 <div className="flex justify-start mb-5">
-                    <div className="
-        px-6 py-2 
-        rounded-full 
-        border border-[#F4BE00] 
-        inline-flex items-center gap-2
-      ">
+                    <div className="px-6 py-2 rounded-full border border-[#F4BE00] inline-flex items-center gap-2">
                         <span
                             className="w-2 h-2 rounded-full bg-[#F4BE00]"
                         ></span>
@@ -67,12 +63,12 @@ export default function CaseStudies() {
                         <p className="text-[#707070] font-normal text-[16px] leading-[130%] tracking-[0]  max-w-2xl mx-auto  mt-5">Turning brand challenges into growth stories with strategies to solve, scale, and sustain showing how clear vision and 360° digital expertise drive results.</p>
                     </div>
 
-                    <Button2 className="mt-5 p-[20px]">
+                    <Button2 className="mt-5 p-[20px] hover:border-[#2B4C69] hover:border-[2px] hover:text-[#F4BE00] hover:bg-transparent">
                         <span>Explore Case Studies</span>
                         <ArrowUpIcon className="transform rotate-45" />
                     </Button2>
                 </div>
-
+                <SlideUp delay={0.5}>
                 <Swiper
                     modules={[Pagination, Autoplay]}
                     spaceBetween={30}
@@ -86,6 +82,7 @@ export default function CaseStudies() {
                     }}
                     className="mt-16 pb-12"
                 >
+                    
                     {cards.map((card, index) => (
                         <SwiperSlide key={index}>
                             <div className="bg-white rounded-2xl mb-5 p-1 shadow-[0_8px_30px_rgba(0,0,0,0.06)]">
@@ -112,15 +109,18 @@ export default function CaseStudies() {
                                         ))}
                                     </div>
 
-                                    <Button3 className="text-[#204667] p-[5px] flex items-center gap-2">
+                                    <Button3 className="text-[#204667] p-[5px] flex items-center gap-2 hover:text-[#F4BE00]">
                                         <span>View More</span>
                                         <ArrowUpIcon className="transform rotate-45" />
                                     </Button3>
                                 </div>
                             </div>
                         </SwiperSlide>
+                        
                     ))}
+                    
                 </Swiper>
+                </SlideUp>
             </div>
         </section>
     );
