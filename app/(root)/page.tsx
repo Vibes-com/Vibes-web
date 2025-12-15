@@ -25,10 +25,10 @@ const page = () => {
     <div>
 
       <Hero />
-      
-      
+
+
       <TeamDreamSection />
-      
+
       {/* <TogetherMain /> */}
       {/* <Technology />
       <Branding />
@@ -36,13 +36,13 @@ const page = () => {
       <div className="relative">
 
         <div className="sticky top-0 z-[10]">
-          <Technology/>
+          <Technology />
         </div>
         <div className="sticky top-0 z-[20]">
-          <Branding/>
+          <Branding />
         </div>
         <div className="sticky top-0 z-[30]">
-          <Digital/>
+          <Digital />
         </div>
       </div>
 

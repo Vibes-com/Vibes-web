@@ -32,61 +32,61 @@ const HomeGallery = () => {
           Memories that capture energy, teamwork, and the spirit of creating together.
         </p>
         <SlideUp delay={0.5}>
-        <div className="wrapper w-80 mt-5">
-          <div>
-            <Image
-              src="/assests/img/home/home-gallery-img-1.jpg"
-              alt="Gallery Image 1"
-              width={400}
-              height={400}
-            />
-          </div>
+          <div className="wrapper w-80 mt-5">
+            <div>
+              <Image
+                src="/assests/img/home/home-gallery-img-1.jpg"
+                alt="Gallery Image 1"
+                width={400}
+                height={400}
+              />
+            </div>
 
-          <div>
-            <Image
-              src="/assests/img/home/home-gallery-img-2.jpg"
-              alt="Gallery Image 2"
-              width={400}
-              height={400}
-            />
-          </div>
+            <div>
+              <Image
+                src="/assests/img/home/home-gallery-img-2.jpg"
+                alt="Gallery Image 2"
+                width={400}
+                height={400}
+              />
+            </div>
 
-          <div>
-            <Image
-              src="/assests/img/home/home-gallery-img-3.jpg"
-              alt="Gallery Image 3"
-              width={400}
-              height={400}
-            />
-          </div>
+            <div>
+              <Image
+                src="/assests/img/home/home-gallery-img-3.jpg"
+                alt="Gallery Image 3"
+                width={400}
+                height={400}
+              />
+            </div>
 
-          <div>
-            <Image
-              src="/assests/img/home/home-gallery-img-4.png"
-              alt="Gallery Image 4"
-              width={400}
-              height={400}
-            />
-          </div>
+            <div>
+              <Image
+                src="/assests/img/home/home-gallery-img-4.png"
+                alt="Gallery Image 4"
+                width={400}
+                height={400}
+              />
+            </div>
 
-          <div>
-            <Image
-              src="/assests/img/home/home-gallery-img-5.jpg"
-              alt="Gallery Image 5"
-              width={400}
-              height={400}
-            />
-          </div>
+            <div>
+              <Image
+                src="/assests/img/home/home-gallery-img-5.jpg"
+                alt="Gallery Image 5"
+                width={400}
+                height={400}
+              />
+            </div>
 
-          <div>
-            <Image
-              src="/assests/img/home/home-gallery-img-6.jpg"
-              alt="Gallery Image 6"
-              width={400}
-              height={400}
-            />
+            <div>
+              <Image
+                src="/assests/img/home/home-gallery-img-6.jpg"
+                alt="Gallery Image 6"
+                width={400}
+                height={400}
+              />
+            </div>
           </div>
-        </div>
         </SlideUp>
         <div className="text-center mt-12">
           <Button2 className="mt-5 p-[20px] hover:border-[#2B4C69] hover:border-[2px] hover:text-[#F4BE00] hover:bg-transparent">
