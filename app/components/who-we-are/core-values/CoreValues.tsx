@@ -31,14 +31,13 @@ const CoreValues = () => {
             <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
                 <div className="grid md:grid-cols-2 gap-10 items-center">
                     <div>
-                        <h2 className="text-[42px] md:text-[54px] leading-tight font-semibold text-white">
-                            Our Core Values,<br />Our Driving Force
+                        <h2 className="font-poppins font-semibold text-[55px] leading-[123%] tracking-[0] text-[#FFFFFF]">
+                            Our Core Values,
                         </h2>
+                        <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[55px] leading-[123%] tracking-[0] text-[#FFFFFF]">Our Driving Force</span>
 
-                        <p className="text-white text-[16px] leading-relaxed mt-4">
-                            Our core values power every step we take fueling innovation,
-                            shaping excellence, and driving us to create meaningful impact
-                            for today and a better tomorrow.
+                        <p className="font-poppins font-normal text-[16px] leading-[130%] tracking-[0] text-[#FFFFFFDB] mt-5">
+                            Our core values power every step we take fueling innovation, shaping excellence, and driving us to create meaningful impact for today and a better tomorrow.
                         </p>
                     </div>
 
@@ -46,7 +45,7 @@ const CoreValues = () => {
                         {coreValues.map((item, index) => (
                             <div
                                 key={index}
-                                className="bg-white shadow-md rounded-xl p-6 border-b-[4px] border-b-[#F4BE00] hover:-translate-y-1 transition-all"
+                                className="bg-[#FFFFFF] shadow-md rounded-xl p-6 border-b-[5px] border-b-[#F4BE00] hover:-translate-y-1 transition-all"
                             >
                                 <div className="flex items-center justify-center h-[60px] w-[60] rounded-sm bg-[#F4BE00]">
                                     <Image
@@ -58,11 +57,11 @@ const CoreValues = () => {
                                     />
                                 </div>
 
-                                <p className="text-[16px] font-semibold text-gray-800 pt-3">
+                                <p className="text-[#2b3332] font-semibold text-[18px] leading-[123%]   mt-5">
                                     {item.title}
                                 </p>
 
-                                <p className="text-gray-600 text-sm mt-1">{item.desc}</p>
+                                <p className="text-[#707070] font-normal text-[14px] leading-[130%] tracking-[0]  max-w-2xl mx-auto mt-1">{item.desc}</p>
                             </div>
                         ))}
                     </div>

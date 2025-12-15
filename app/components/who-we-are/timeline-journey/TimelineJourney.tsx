@@ -18,77 +18,77 @@ const data = [
     {
         year: "2024",
         img: "/assests/img/about/2024.png",
-        text: "Today, we stand proud not just for achieving the targets but for fulfilling them in complete alignment with Vibe’s vision.",
+        text: "We sharpened our focus on targets, aligning our actions with long-term goals.",
     },
     {
         year: "2023",
-        img: "/assests/img/about/2024.png",
-        text: "A year of strategic advancements.",
+        img: "/assests/img/about/2023.png",
+        text: "This year marked a fresh beginning as we officially launched our branding division, adding it as a new pillar of strength.",
     },
     {
         year: "2022",
-        img: "/assests/img/about/2025.png",
-        text: "Expansion phase with new teams.",
+        img: "/assests/img/about/2022.png",
+        text: "Our journey evolved: digital and tech began charting their individual paths, and EY became one more valued partner.",
     },
     {
         year: "2021",
-        img: "/assests/img/about/2025.png",
-        text: "Rebranding and process improvement.",
+        img: "/assests/img/about/2021.png",
+        text: " The world slowed down with Covid, but our spirit, resilience, and motivation stood stronger than ever.",
     },
     {
         year: "2020",
-        img: "/assests/img/about/2025.png",
-        text: "Rebranding and process improvement.",
+        img: "/assests/img/about/2020.png",
+        text: " Growth followed in naturally, as our digital and tech teams flourished into a 30-member family.",
     },
     {
         year: "2019",
-        img: "/assests/img/about/2025.png",
-        text: "Rebranding and process improvement.",
+        img: "/assests/img/about/2019.png",
+        text: " Widex India joined hands with us in a larger alignment, strengthening our role as a trusted partner.",
     },
     {
         year: "2018",
-        img: "/assests/img/about/2025.png",
-        text: "Rebranding and process improvement.",
+        img: "/assests/img/about/2018.png",
+        text: " Our journey expanded as more brands believed in our digital capabilities and joined us.",
     },
     {
         year: "2017",
-        img: "/assests/img/about/2025.png",
-        text: "Rebranding and process improvement.",
+        img: "/assests/img/about/2017.png",
+        text: " Trust deepened as we handled more technical projects, including the nationally significant Operation Clean Money during demonetization, inaugurated by Shri Arun Jaitley, a milestone we hold with pride.",
     },
     {
         year: "2016",
-        img: "/assests/img/about/2025.png",
-        text: "Rebranding and process improvement.",
+        img: "/assests/img/about/2016.png",
+        text: "Brought our first long-term PwC project, MOHUA, cementing a relationship built on trust.",
     },
     {
         year: "2015",
-        img: "/assests/img/about/2025.png",
-        text: "Rebranding and process improvement.",
+        img: "/assests/img/about/2015.png",
+        text: "The fusion of technology and marketing was no longer just an idea, it became the heart of our story.",
     },
     {
         year: "2014",
-        img: "/assests/img/about/2025.png",
-        text: "Rebranding and process improvement.",
+        img: "/assests/img/about/2014.png",
+        text: " We began exploring a rebranding journey, realizing that growth often comes with reinvention.",
     },
     {
         year: "2013",
-        img: "/assests/img/about/2025.png",
-        text: "Rebranding and process improvement.",
+        img: "/assests/img/about/2013.png",
+        text: " With a team of 4-5 people, we stepped into Digital Marketing Services.",
     },
     {
         year: "2012",
-        img: "/assests/img/about/2025.png",
-        text: "Rebranding and process improvement.",
+        img: "/assests/img/about/2012.png",
+        text: " A breakthrough year for us when PwC entrusted us with our first tech project.",
     },
     {
         year: "2011",
-        img: "/assests/img/about/2025.png",
-        text: "Rebranding and process improvement.",
+        img: "/assests/img/about/2011.png",
+        text: "Our very first dream took shape through Project RX Care.",
     },
     {
         year: "2010",
-        img: "/assests/img/about/2025.png",
-        text: "Rebranding and process improvement.",
+        img: "/assests/img/about/2010.png",
+        text: "Born with a vision, determination, and the courage to create impact.",
     },
 ];
 
@@ -98,14 +98,22 @@ export default function TimelineVertical() {
     return (
         <div className="timeline-journey-wrapper section-gap">
             <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
+                <h3 className=" text-center font-poppins font-medium text-[40px] leading-[1.23] tracking-norma]">
+                    Our <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[40px] leading-[1.23] tracking-normal">Journey</span>
+
+                </h3>
                 <div className="relative ">
 
                     {/* TOP ARROW */}
                     <button
                         onClick={() => swiperRef.current.slidePrev()}
-                        className="absolute top-0 left-1/2 -translate-x-1/2 z-50 bg-yellow-500 p-3 rounded-full shadow-lg"
+                        className="up-arrow glow-up float-up-down absolute top-[-17px] left-1/2 -translate-x-1/2 z-30 p-3"
                     >
-                        <ArrowUp size={22} className="text-white" />
+                        <img
+                            src="/assests/img/about/up-arrow.png"
+                            alt="Up Arrow"
+                            className="w-6 h-6"
+                        />
                     </button>
 
                     {/* CENTER DOTTED LINE */}
@@ -142,8 +150,8 @@ export default function TimelineVertical() {
                                             </div>
                                         ) : (
                                             <div className="w-1/2 flex flex-col ">
-                                                <h2 className="text-3xl font-bold text-gray-700">{item.year}</h2>
-                                                <p className="text-gray-600 text-sm mt-3 w-72">{item.text}</p>
+                                                <h2 className="font-poppins font-semibold text-[40px] leading-[1.23] tracking-normal">{item.year}</h2>
+                                                <p className="text-[#707070] font-normal text-[16px] leading-[130%] tracking-[0] text-start  mt-3 w-90">{item.text}</p>
                                             </div>
                                         )}
 
@@ -174,8 +182,8 @@ export default function TimelineVertical() {
                                             </div>
                                         ) : (
                                             <div className=" flex flex-col ">
-                                                <h2 className="text-3xl font-bold text-gray-700">{item.year}</h2>
-                                                <p className="text-gray-600 text-sm mt-3 w-72">{item.text}</p>
+                                                <h2 className="font-poppins font-semibold text-[40px] leading-[1.23] tracking-normal">{item.year}</h2>
+                                                <p className="text-[#707070] font-normal text-[16px] leading-[130%] tracking-[0] text-start mt-3 w-90">{item.text}</p>
                                             </div>
                                         )}
                                     </div>

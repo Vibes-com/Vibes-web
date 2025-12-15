@@ -33,13 +33,13 @@ const MissionVision: React.FC = () => {
                     </div>
                     <div className="col-span-12 md:col-span-6 mt-16 md:mt-0 ps-0 md:ps-10">
 
-                        <h2 className="text-4xl md:text-5xl font-semibold text-[#333] leading-tight">
-                            Stronger Growth, Shared Future
-                        </h2>
+                        <h3 className=" font-poppins font-medium text-[40px] leading-[1.23] tracking-norma]">
+                            <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[40px] leading-[1.23] tracking-normal">Stronger Growth,</span>Shared Future
 
-                        <p className="mt-4 text-gray-600 text-lg md:pr-10">
-                            We harness creativity, technology, and strategy to build meaningful
-                            growth, trust, and long-term success.
+                        </h3>
+
+                        <p className="text-[#707070] font-normal text-[16px] leading-[130%] tracking-[0]  max-w-2xl mx-auto  mt-5">
+                            We harness creativity, technology, and strategy to build meaningful growth, trust, and long-term success.
                         </p>
 
                         <div className="grid grid-cols-12 mt-8 gap-4">
@@ -52,12 +52,10 @@ const MissionVision: React.FC = () => {
                                 />
                             </div>
 
-                            <div className="col-span-10 md:col-span-11">
-                                <h4 className="text-xl font-semibold text-gray-700">Mission</h4>
-                                <p className="text-gray-600 mt-1">
-                                    Our mission is to empower businesses with innovative strategies and
-                                    digital excellence, fostering collaboration, trust, and measurable
-                                    growth that creates lasting impact for clients and communities.
+                            <div className="col-span-10 md:col-span-11 ps-3">
+                                <h4 className="text-[#2b3332] font-semibold text-[20px] leading-[123%] mb-3">Mission</h4>
+                                <p className="text-[#707070] font-normal text-[16px] leading-[130%] tracking-[0]  max-w-2xl mx-auto  mt-5">
+                                    Our mission is to empower businesses with innovative strategies and digital excellence, fostering collaboration, trust, and measurable growth that creates lasting impact for clients and communities.
                                 </p>
                             </div>
                         </div>
@@ -71,12 +69,10 @@ const MissionVision: React.FC = () => {
                                 />
                             </div>
 
-                            <div className="col-span-10 md:col-span-11">
-                                <h4 className="text-xl font-semibold text-gray-700">Vision</h4>
-                                <p className="text-gray-600 mt-1">
-                                    Our vision is to be a trusted partner in digital transformation,
-                                    uniting creativity and technology to shape impactful journeys that
-                                    inspire progress, connection, and sustainable success.
+                            <div className="col-span-10 md:col-span-11 ps-3">
+                                <h4 className="text-[#2b3332] font-semibold text-[20px] leading-[123%] mb-3">Vision</h4>
+                                <p className="text-[#707070] font-normal text-[16px] leading-[130%] tracking-[0]  max-w-2xl mx-auto  mt-5">
+                                    Our vision is to be a trusted partner in digital transformation, uniting creativity and technology to shape impactful journeys that inspire progress, connection, and sustainable success.
                                 </p>
                             </div>
                         </div>

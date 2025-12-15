@@ -9,29 +9,34 @@ const AboutHero: React.FC = () => {
             <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
                 <div className="grid grid-cols-12 items-center">
                     <div className="col-span-6 text-white">
-                        <h1 className="text-[55px] font-semibold leading-tight">
+                        <h1 className="text-[55px] font-semibold leading-tight text-[#FFFFFF] ">
                             Shaping <br /> Tomorrow’s Digital <br /> Success
                         </h1>
 
-                        <p className="mt-6 text-lg md:text-xl opacity-90">
+                        <p className="mt-6 font-poppins font-normal text-[16px] leading-[130%] tracking-[0] text-[#FFFFFFDB]">
                             We blend creativity, technology, and strategy to craft impactful digital
                             journeys that drive growth, build trust, and create lasting value.
                         </p>
 
-                        <div className="mt-6 flex gap-4 text-yellow-400 font-semibold text-lg">
-                            <Link href="/innovate" className="hover:text-white transition">
+                        <div className="mt-6 flex text-[#F4BE00] font-semibold text-lg">
+                            <Link
+                                href="#"
+                                className="pr-4 border-r border-[#F4BE00] last:border-r-0 hover:text-white transition text-[23px] font-semibold leading-tight"
+                            >
                                 Innovate
                             </Link>
 
-                            <span className="text-white/70">|</span>
-
-                            <Link href="/deliver" className="hover:text-white transition">
+                            <Link
+                                href="#"
+                                className="px-4 border-r border-[#F4BE00] last:border-r-0 hover:text-white transition text-[23px] font-semibold leading-tight"
+                            >
                                 Deliver
                             </Link>
 
-                            <span className="text-white/70">|</span>
-
-                            <Link href="/sustain" className="hover:text-white transition">
+                            <Link
+                                href="#"
+                                className="px-4 border-r border-[#F4BE00] last:border-r-0 hover:text-white transition text-[23px] font-semibold leading-tight"
+                            >
                                 Sustain
                             </Link>
                         </div>

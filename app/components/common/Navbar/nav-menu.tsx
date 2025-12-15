@@ -32,7 +32,7 @@ export const NavMenu = (props: ComponentProps<typeof NavigationMenu>) => (
                 <NavigationMenuContent>
                     <ul className="grid gap-3 p-4 md:w-[300px]">
                         <li>
-                            <Link href="/service1" className="block p-2 hover:bg-gray-100 rounded">
+                            <Link href="/technology-details" className="block p-2 hover:bg-gray-100 rounded">
                                 Technology
                             </Link>
                         </li>

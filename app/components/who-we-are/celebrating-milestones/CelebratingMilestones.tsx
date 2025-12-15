@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import Slider from "react-slick";
 
 export default function VerticalSlickMilestones() {
@@ -20,7 +20,7 @@ export default function VerticalSlickMilestones() {
             <div
                 style={{
                     right: "-30px",
-                    top: "50%",
+                    top: "60%",
                     transform: "translateY(-50%)",
                 }}
                 className="absolute"
@@ -30,31 +30,31 @@ export default function VerticalSlickMilestones() {
         ),
 
         customPaging: () => (
-            <div className="w-[10px] h-[10px] bg-[#bdbdbd] rounded-full"></div>
+            <div className="w-[15px] h-[15px] rounded-full"></div>
         ),
     };
 
     const slides = [
         {
             title: "From Ideas to Action",
-            desc: "How Vibes Creates Eco-Smart Branding & Marketing.",
+            desc: " How Vibes Creates Eco-Smart Branding & Marketing.",
             img: "/assests/img/about/From-Ideas-Eco-Smart.png"
         },
         {
-            title: "From Ideas to Action",
-            desc: "How Vibes Creates Eco-Smart Branding & Marketing.",
-            img: "/assests/img/about/From-Ideas-Eco-Smart.png"
+            title: "On to the Path of Sustainability",
+            desc: " Forward-thinking digital solutions for a shared and innovative vision.",
+            img: "/assests/img/about/Together-Tomorrow.png"
         },
         {
             title: "From Vision to Impact",
-            desc: "How Vibes Powers Brands with Creativity & Innovation.",
-            img: "/assests/img/about/From-Ideas-Eco-Smart.png"
+            desc: " How Vibes Powers Brands with Creativity, Digital Strategy & Tech Innovation.",
+            img: "/assests/img/about/Vision-Impact.png"
         },
         {
-            title: "From Ideas to Action",
-            desc: "How Vibes Creates Eco-Smart Branding & Marketing.",
-            img: "/assests/img/about/From-Ideas-Eco-Smart.png"
-        }
+            title: "From Vision to Impact",
+            desc: " How Vibes Powers Brands with Creativity, Digital Strategy & Tech Innovation.",
+            img: "/assests/img/about/Vision-Impact.png"
+        },
     ];
 
     return (
@@ -63,11 +63,12 @@ export default function VerticalSlickMilestones() {
                 <div className="grid grid-cols-12 items-center">
                     <div className="col-span-6">
                         <div>
-                            <h3 className="text-[42px] md:text-[54px] leading-tight font-semibold text-white">
-                                Celebrating Milestones
-                            </h3>
+                            <h2 className="font-poppins font-semibold text-[55px] leading-[123%] tracking-[0] text-[#FFFFFF]">
+                                Celebrating
+                            </h2>
+                            <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[55px] leading-[123%] tracking-[0] text-[#FFFFFF]">Milestones</span>
 
-                            <p className="text-white text-[16px] leading-relaxed mt-4">
+                            <p className="font-poppins font-normal text-[16px] leading-[130%] tracking-[0] text-[#FFFFFFDB] mt-5">
                                 How Vibes Has Transformed Visions into Reality
                             </p>
                         </div>
@@ -79,18 +80,27 @@ export default function VerticalSlickMilestones() {
                                 {slides.map((item, i) => (
                                     <div key={i} className="py-3">
                                         <div
-                                            className="relative bg-white p-6 rounded-xl shadow-md flex items-center gap-6 h-[170px] transition-all duration-500 milestone-card border-l-[8px] border-l-[#F4BE00]"
+                                            className="relative bg-white p-4 rounded-xl shadow-md flex items-center gap-6 h-[170px] transition-all duration-500 milestone-card border-l-[8px] border-l-[#F4BE00]"
                                         >
                                             {/* Image */}
                                             <img src={item.img} className="w-25 h-25 object-contain" />
 
                                             {/* Text */}
                                             <div>
-                                                <h3 className="text-lg font-semibold text-gray-900">
+                                                <h3 className="text-[#2b3332] font-semibold text-[18px] leading-[123%]">
                                                     {item.title}
                                                 </h3>
-                                                <p className="text-gray-600 text-sm mt-1">{item.desc}</p>
+                                                <p className="text-[#707070] font-normal text-[14px] leading-[130%] tracking-[0] mt-1">{item.desc}</p>
                                             </div>
+                                            <div className="quote-container absolute top-6 right-6">
+                                                <Image
+                                                    src="/assests/img/about/quote-img.png"
+                                                    alt="quote image" priority unoptimized
+                                                    width={23}
+                                                    height={23}
+                                                />
+                                            </div>
+
                                         </div>
                                     </div>
                                 ))}

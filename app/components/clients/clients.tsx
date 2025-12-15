@@ -1,35 +1,28 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useMemo, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 import "swiper/css";
 import "swiper/css/navigation";
 
-// ----------------------------------------------------
-// FULLY CUSTOMIZABLE LOGO CONFIG (EDIT ANYTIME)
-// ----------------------------------------------------
 const logoConfig: Record<string, string[]> = {
-    all: [], // we auto-generate below
-
     digital: [
         "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/buzaria-logo.png",
         "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/buzaria-logo.png",
         "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/buzaria-logo.png",
     ],
-
     branding: [
         "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/buzaria-logo.png",
         "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/buzaria-logo.png",
     ],
-
     technology: [
         "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/buzaria-logo.png",
         "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/buzaria-logo.png",
     ],
 };
 
-// Bottom slider items (NOT functional)
 const bottomTabs = [
     "healthcare",
     "education",
@@ -39,91 +32,44 @@ const bottomTabs = [
 ];
 
 export default function MarqueeTabsSlider() {
-    const topTabs = Object.keys(logoConfig); // auto-mapped tabs
 
-    const [activeTab, setActiveTab] = useState("all");
+    const swiperRef = useRef<any>(null);
 
-    // Generate logos based on active tab
-    const filteredLogos = useMemo(() => {
-        if (activeTab === "all") {
-            const merged: string[] = [];
-            Object.keys(logoConfig).forEach((key) => {
-                if (key !== "all") merged.push(...logoConfig[key]);
-            });
-            return merged;
-        }
-        return logoConfig[activeTab] || [];
-    }, [activeTab]);
+    const allLogos = useMemo(() => {
+        const merged: string[] = [];
+        Object.values(logoConfig).forEach((arr) => merged.push(...arr));
+        return merged;
+    }, []);
 
     return (
-        <section className="w-full py-16 bg-black text-white">
+        <section className="w-full section-gap bg-[#466E59] text-white">
             <div className="container mx-auto">
 
-                {/* Heading */}
-                <h2 className="text-center text-3xl font-semibold">Trusted by over</h2>
-                <p className="text-center text-green-400 text-4xl font-bold mt-2">
-                    100+ Companies
-                </p>
-
-                {/* TOP FILTER TABS — AUTO GENERATED */}
-                <div className="flex justify-center gap-4 mt-8 mb-10 flex-wrap">
-                    {topTabs.map((t) => (
-                        <button
-                            key={t}
-                            onClick={() => setActiveTab(t)}
-                            className={`px-4 py-2 rounded-full border transition-all capitalize
-                ${activeTab === t
-                                    ? "bg-green-500 text-white border-green-500"
-                                    : "border-gray-500 text-gray-300 hover:border-white"
-                                }
-              `}
-                        >
-                            {t}
-                        </button>
-                    ))}
-                </div>
-
-                {/* SLIDER 1 (Left → Right) */}
-                <div className="overflow-hidden w-[90%] mx-auto mb-10">
-                    <div className="flex animate-marquee-left gap-10">
-                        {[...filteredLogos, ...filteredLogos].map((src, i) => (
+                {/* SINGLE MARQUEE */}
+                <div className="overflow-hidden w-[90%] mx-auto mb-14 mt-12">
+                    <div className="flex animate-marquee-right gap-5">
+                        {[...allLogos, ...allLogos].map((src, i) => (
                             <div
                                 key={i}
-                                className="min-w-[180px] h-[90px] bg-[#5e816d] rounded-md flex items-center justify-center px-6 shadow-md border border-[#6f8f7c]"
+                                className="min-w-[153px] h-[80px] bg-[#71A68A] flex items-center justify-center px-6 shadow-md border border-[#6f8f7c]"
                             >
                                 <img
                                     src={src}
-                                    className="max-h-[50px] w-auto opacity-90 hover:opacity-100 transition"
+                                    className="max-h-[50px] w-auto hover:opacity-100 transition"
                                 />
                             </div>
                         ))}
                     </div>
                 </div>
 
-                {/* SLIDER 2 (Right → Left) */}
-                <div className="overflow-hidden w-[90%] mx-auto mb-14">
-                    <div className="flex animate-marquee-right gap-10">
-                        {[...filteredLogos, ...filteredLogos].map((src, i) => (
-                            <div
-                                key={i}
-                                className="min-w-[180px] h-[90px] bg-[#5e816d] rounded-md flex items-center justify-center px-6 shadow-md border border-[#6f8f7c]"
-                            >
-                                <img
-                                    src={src}
-                                    className="max-h-[50px] w-auto opacity-90 hover:opacity-100 transition"
-                                />
-                            </div>
-                        ))}
-                    </div>
-                </div>
-
-                {/* BOTTOM SWIPER */}
+                {/* SLIDER WITH CUSTOM ARROWS */}
                 <div className="relative w-full max-w-3xl mx-auto">
-                    <div className="swiper-button-prev text-white !left-[-40px]"></div>
+
+                    <PrevArrow onClick={() => swiperRef.current?.slidePrev()} />
 
                     <Swiper
                         modules={[Navigation]}
-                        navigation
+                        onSwiper={(swiper) => (swiperRef.current = swiper)}
                         slidesPerView={3}
                         spaceBetween={20}
                         className="py-6"
@@ -135,34 +81,54 @@ export default function MarqueeTabsSlider() {
                     >
                         {bottomTabs.map((t) => (
                             <SwiperSlide key={t}>
-                                <div className="px-4 py-2 rounded-full border border-gray-500 text-gray-300 text-center capitalize hover:border-white transition cursor-pointer">
+                                <div className="font-[Poppins] font-medium text-[16px] leading-[1.23] tracking-normal px-2 py-2 rounded-sm  text-center capitalize bg-[#D9D9D908] text-[#FFFFFFA8] cursor-pointer">
                                     {t}
                                 </div>
                             </SwiperSlide>
                         ))}
                     </Swiper>
 
-                    <div className="swiper-button-next text-white !right-[-40px]"></div>
+                    <NextArrow onClick={() => swiperRef.current?.slideNext()} />
+
                 </div>
             </div>
 
-            {/* Custom Animations */}
+            {/* Animation */}
             <style>{`
-        .animate-marquee-left {
-          animation: marquee-left 25s linear infinite;
-        }
-        .animate-marquee-right {
-          animation: marquee-right 25s linear infinite;
-        }
-        @keyframes marquee-left {
-          0% { transform: translateX(-50%); }
-          100% { transform: translateX(0); }
-        }
-        @keyframes marquee-right {
-          0% { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
-        }
-      `}</style>
+                .animate-marquee-right {
+                    animation: marquee-right 25s linear infinite;
+                }
+                @keyframes marquee-right {
+                    0% { transform: translateX(0); }
+                    100% { transform: translateX(-50%); }
+                }
+            `}</style>
         </section>
     );
 }
+
+/* ---------------- CUSTOM ARROWS ---------------- */
+
+const NextArrow = ({ onClick }: any) => (
+    <button
+        onClick={onClick}
+        className="
+            absolute right-[-60px] top-[55%] -translate-y-1/2 z-20
+            p-2 border border-white/40 cursor-pointer rounded-md bg-[#FFFFFFB0]
+        "
+    >
+        <ArrowRight size={26} color="#FFFFFF" />
+    </button>
+);
+
+const PrevArrow = ({ onClick }: any) => (
+    <button
+        onClick={onClick}
+        className="
+            absolute left-[-60px] top-[55%] -translate-y-1/2 z-20
+            p-2 border border-white/40 cursor-pointer rounded-md bg-[#FFFFFFB0]
+        "
+    >
+        <ArrowLeft size={26} color="#FFFFFF" />
+    </button>
+);
