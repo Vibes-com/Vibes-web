@@ -11,7 +11,7 @@ import { useSubmitContactFormMutation } from "@/app/redux/api/contactApi";
 import { z } from "zod";
 import toast from "react-hot-toast";
 
-/* ---------------- CAPTCHA ---------------- */
+
 const generateCaptcha = () => {
   const chars = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
   return Array.from({ length: 5 }, () =>
@@ -104,11 +104,11 @@ const ContactForm = () => {
     <section className="w-full py-16">
       <div className="container mx-auto px-4">
 
-        {/* TOP CONTACT BLOCKS */}
+       
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
 
           <div className="bg-[#ECF3EE] shadow-md rounded-xl p-6 flex gap-4">
-            <div className="p-4 bg-[#F4BE00] rounded-full text-[20px]">
+            <div className="p-4 bg-[#F4BE00] text-[#2b3332] rounded-full text-[20px] h-[50px] w-[50px]">
               <IoIosMail />
             </div>
             <div>
@@ -120,7 +120,7 @@ const ContactForm = () => {
           </div>
 
           <div className="bg-[#ECF3EE] shadow-md rounded-xl p-6 flex gap-4">
-            <div className="p-4 bg-[#F4BE00] rounded-full text-[20px]">
+            <div className="p-4 bg-[#F4BE00] text-[#2b3332] rounded-full text-[20px] h-[50px] w-[50px]">
               <FaPhoneAlt />
             </div>
             <div>
@@ -132,7 +132,7 @@ const ContactForm = () => {
           </div>
 
           <div className="bg-[#ECF3EE] shadow-md rounded-xl p-6 flex gap-4">
-            <div className="p-4 bg-[#F4BE00] rounded-full text-[20px]">
+            <div className="p-4 bg-[#F4BE00] text-[#2b3332] rounded-full text-[20px] h-[50px] w-[50px]">
               <HiOfficeBuilding />
             </div>
             <div>
@@ -144,10 +144,10 @@ const ContactForm = () => {
           </div>
         </div>
 
-        {/* FORM + MAP */}
+        
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
 
-          {/* FORM */}
+          
           <div className="bg-[#ECF3EE] shadow-lg rounded-2xl p-8">
             <h3 className="text-2xl font-semibold mb-6">Connect With Us</h3>
 
@@ -208,7 +208,7 @@ const ContactForm = () => {
                  className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-black bg-white"
               />
 
-              {/* CAPTCHA */}
+             
               <div>
                 <label className="block font-medium mb-2">Captcha</label>
                 <div className="flex gap-4 items-center">
@@ -242,7 +242,7 @@ const ContactForm = () => {
             </form>
           </div>
 
-          {/* MAP */}
+          
           <div className="rounded-2xl overflow-hidden shadow-lg h-[635px]">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d755.3230908954598!2d77.32894854443926!3d28.59704149805207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce4ffd0000001%3A0x97587b436ee39762!2sVibes%20Communications%20%7C%20Best%20Digital%20Marketing%20Agency%20in%20Noida%20%2C%20Delhi%20NCR!5e0!3m2!1sen!2sin!4v1765798139858!5m2!1sen!2sin"
