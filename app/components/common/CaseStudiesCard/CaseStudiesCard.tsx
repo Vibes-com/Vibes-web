@@ -16,7 +16,7 @@ export default function CaseStudiesCard({ data }: CaseStudiesCardProps) {
     return (
 
         data.map((item: SingleCardProps, index: number) => (
-            <div key={item.id} className="bg-white mb-[100px] rounded-2xl p-1 shadow-[0_8px_30px_rgba(0,0,0,0.06)] w-full " >
+            <div key={item.id} className="bg-white mb-[100px] rounded-2xl p-3 shadow-[0_8px_30px_rgba(0,0,0,0.06)] w-full " >
 
                 {/* Image */}
                 < div className="relative w-full h-[450px] rounded-xl overflow-hidden group " >
@@ -29,7 +29,7 @@ export default function CaseStudiesCard({ data }: CaseStudiesCardProps) {
                 </div>
 
                 {/* Title */}
-                < h3 className="mt-5 text-[#1F1F1F] font-poppins font-semibold text-[24px] leading-[100%]" >
+                < h3 className="mt-5 text-[#1F1F1F] font-poppins font-semibold text-[28px] leading-[1] tracking-normal" >
                     {item.title}
                 </h3 >
 
@@ -42,7 +42,7 @@ export default function CaseStudiesCard({ data }: CaseStudiesCardProps) {
                             item.tags.map((tag, index) => (
                                 <span
                                     key={index}
-                                    className="px-3 py-1 bg-[#F2F4F7] text-[10px] rounded-full"
+                                    className="px-3 py-2 rounded-full font-poppins font-medium text-[14px] leading-[1] tracking-normal text-[2B2B2BDB] border border-[#BCBCBC]"
                                 >
                                     {tag}
                                 </span>
@@ -51,7 +51,7 @@ export default function CaseStudiesCard({ data }: CaseStudiesCardProps) {
                     </div >
 
                     {/* Button */}
-                    < Button3 className="text-[#204667] p-[5px] flex items-center gap-2 hover:text-[#F4BE00]" >
+                    < Button3 className="text-[#204667] p-[5px] flex items-center gap-2 hover:text-[#F4BE00] font-poppins font-semibold text-[16px] leading-[1] tracking-normal" >
                         <span>{item.buttonText}</span>
                         <ArrowUpIcon className="transform rotate-45" />
                     </Button3 >

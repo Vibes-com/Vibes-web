@@ -49,9 +49,28 @@ export default function OurBlogs() {
         <section className="blogs-wrapper section-gap relative w-full bg-[#F3EFE4]">
             <div className="container mx-auto px-4 relative z-10">
                 <div className="flex justify-between items-center mb-12">
-                    <h3 className="font-poppins font-medium text-[48px] leading-[123%] tracking-normal">
-                        <span className="highlight relative z-9 w-fit">Our Blogs</span>
-                    </h3>
+                    <div className="flex-1">
+                        <div className="flex justify-start mb-5">
+
+                            <div className="px-6 py-2 rounded-full border border-[#F4BE00] inline-flex items-center gap-2">
+                                <span className="w-2 h-2 rounded-full bg-[#F4BE00]"></span>
+                                <span className="font-[Poppins] font-semibold text-[10px] leading-[1.23] uppercase text-[#F4BE00]">
+                                    Blogs
+                                </span>
+                            </div>
+                        </div>
+                        <h3 className="font-poppins font-medium text-[40px] leading-[1.23] tracking-norma]">
+                            Tech Ideas & Insights
+                            <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[40px] leading-[1.23] tracking-normal">Insights</span>
+                        </h3>
+
+                        <p className="text-[#525252] mt-5 ">
+                            Explore curated articles on emerging tech, smart solutions, and expert<br /> perspectives from Vibes built to inform, inspire, and accelerate digital growth.
+
+                        </p>
+
+                    </div>
+
 
                     <Button2 className="mt-5 p-[20px]">
                         <span>Explore Our Blogs</span>
@@ -92,6 +111,6 @@ export default function OurBlogs() {
                     ))}
                 </Swiper>
             </div>
-        </section>
+        </section >
     );
 }

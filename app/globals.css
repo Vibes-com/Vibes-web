@@ -730,6 +730,20 @@ content: "";
     border-bottom-right-radius: 4px;
 }
 
+.contact-hero-wrapper{
+background: url("/assests/img/contact/contact-bg.webp") center/cover no-repeat;
+height: 763px;
+width:100%;
+}
+
+
+
+
+
+
+
+
+
 .curve-box{
  height: 200px;
 }

@@ -29,8 +29,19 @@ const CoreValues = () => {
     return (
         <div className="core-values-wrapper section-gap">
             <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
+
                 <div className="grid md:grid-cols-2 gap-10 items-center">
                     <div>
+                        <div className="flex justify-start mb-5">
+
+                            <div className="px-6 py-2 rounded-full border border-[#F4BE00] inline-flex items-center gap-2">
+                                <span className="w-2 h-2 rounded-full bg-[#F4BE00]"></span>
+                                <span className="font-[Poppins] font-semibold text-[10px] leading-[1.23] uppercase text-[#F4BE00]">
+                                    Core Values
+                                </span>
+                            </div>
+                        </div>
+
                         <h2 className="font-poppins font-semibold text-[55px] leading-[123%] tracking-[0] text-[#FFFFFF]">
                             Our Core Values,
                         </h2>

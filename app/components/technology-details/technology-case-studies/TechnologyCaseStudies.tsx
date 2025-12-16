@@ -63,7 +63,7 @@ const TechnologyCaseStudies = () => {
                                 Explore real technology success stories where Vibes turns complex challenges into measurable outcomes, delivering smarter, scalable digital solutions.
                             </p>
 
-                            <Button2 className="mt-5 p-[20px]  hover:border-[#2B4C69] hover:border-[2px] hover:text-[#F4BE00] hover:bg-transparent">
+                            <Button2 className="mt-5 p-[20px]  hover:border-[#2B4C69] hover:border-[2px] hover:text-[#F4BE00] hover:bg-transparent text-[14px]">
                                 <span>Dive Into Success Stories</span>
                                 <ArrowUpIcon className="transform rotate-45" />
                             </Button2>

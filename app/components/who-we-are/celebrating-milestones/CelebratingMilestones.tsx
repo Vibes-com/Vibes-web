@@ -63,6 +63,15 @@ export default function VerticalSlickMilestones() {
                 <div className="grid grid-cols-12 items-center">
                     <div className="col-span-6">
                         <div>
+                            <div className="flex justify-start mb-5">
+
+                                <div className="px-6 py-2 rounded-full border border-[#F4BE00] inline-flex items-center gap-2">
+                                    <span className="w-2 h-2 rounded-full bg-[#F4BE00]"></span>
+                                    <span className="font-[Poppins] font-semibold text-[10px] leading-[1.23] uppercase text-[#F4BE00]">
+                                        Milestones
+                                    </span>
+                                </div>
+                            </div>
                             <h2 className="font-poppins font-semibold text-[55px] leading-[123%] tracking-[0] text-[#FFFFFF]">
                                 Celebrating
                             </h2>

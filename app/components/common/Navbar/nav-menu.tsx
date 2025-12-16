@@ -68,7 +68,7 @@ export const NavMenu = (props: ComponentProps<typeof NavigationMenu>) => (
             </NavigationMenuItem>
             <NavigationMenuItem>
                 <NavigationMenuLink asChild className="font-poppins font-normal text-[14px] leading-[100%] tracking-[0] text-[#FFFFFF]">
-                    <Link href="#">CONTACT US</Link>
+                    <Link href="/contact-us">CONTACT US</Link>
                 </NavigationMenuLink>
             </NavigationMenuItem>
         </NavigationMenuList>

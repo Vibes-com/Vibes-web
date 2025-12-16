@@ -44,6 +44,20 @@ export default function MarqueeTabsSlider() {
     return (
         <section className="w-full section-gap bg-[#466E59] text-white">
             <div className="container mx-auto">
+                <div className="flex justify-center mb-5">
+                    <div className=" px-6 py-2 rounded-full border border-[#F4BE00] inline-flex items-center gap-2">
+                        <span className="w-2 h-2 rounded-full bg-[#F4BE00]"></span>
+                        <span className="font-[Poppins] font-semibold text-[10px] leading-[1.23] uppercase text-[#F4BE00]">
+                            Trusted Clients
+                        </span>
+                    </div>
+                </div>
+                <h3 className=" text-center font-poppins font-medium text-[48px] leading-[123%] tracking-normal text-[#FFFFFF]"><span className="highlight relative z-9 w-fit">Esteemed </span>Clients</h3>
+
+                <p className="text-[#FFFFFFDB] font-normal text-[16px] leading-[130%] tracking-[0] text-center max-w-2xl mx-auto mb-16 mt-5">
+                    A curated showcase of visual work that shapes brand perception across channels, including social campaigns, identity design, and custom website builds.
+                </p>
+
 
                 {/* SINGLE MARQUEE */}
                 <div className="overflow-hidden w-[90%] mx-auto mb-14 mt-12">
