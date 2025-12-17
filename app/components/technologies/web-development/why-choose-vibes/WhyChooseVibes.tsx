@@ -26,64 +26,36 @@ const items = [
 
 export default function WhyChooseVibes() {
   return (
-    <section className="bg-[#FAF8F3] py-28">
-      <div className="container mx-auto px-4">
+    <section className=" why-choose-vibes-wrapper bg-[#FAF8F3] section-gap">
+      <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
 
-        {/* HEADING */}
-        <h2 className="text-center font-semibold text-[42px] text-[#2B2B2B]">
-          <span className="relative inline-block">
-            Choose Vibes.
-            <span className="absolute left-0 -bottom-1 w-full h-[6px] bg-[#F4BE00]" />
-          </span>{" "}
-          Choose Certainty.
-        </h2>
+        <div className="flex justify-center mb-5">
+          <div className="px-6 py-2 rounded-full border border-[#F4BE00] inline-flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-[#F4BE00]"></span>
+            <span className="font-[Poppins] font-semibold text-[10px] leading-[1.23] uppercase text-[#F4BE00]">
+              Why Choose Us
+            </span>
+          </div>
+        </div>
 
-        <p className="mt-6 text-center max-w-3xl mx-auto text-[#6B6B6B]">
-          Vibes delivers high-performing, scalable, secure digital solutions—built
-          with precision, expertise, clear communication, and on-time delivery brands trust.
-        </p>
+        <h3 className=" text-center font-poppins font-medium text-[40px] leading-[1.23] tracking-norma]">
+          <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[40px] leading-[1.23] tracking-normal">Choose Vibes.</span> Choose Certainty.
 
+        </h3>
+        <p className="text-[#707070] font-normal text-[16px] leading-[130%] tracking-[0] text-center max-w-2xl mx-auto mb-16 mt-5">Vibes delivers high-performing, scalable, secure digital solutions- built with precision, expertise, clear communication, and on-time delivery brands trust.</p>
         {/* DESKTOP WORKFLOW */}
         <div className="relative mt-24 hidden lg:block bg-union">
 
-            <div className="bg-union">
-                <Image
-                    src="/assests/img/web-development/Union.png"
-                    alt="Banner Image"
-                    width={1200}
-                    height={300}
-                    className="absolute inset-0 w-full h-full z-0"
-                    />
-            </div>
-          {/* SVG FLOW */}
-           {/* <svg
-            className="absolute inset-0 w-full h-full z-0"
-            viewBox="0 0 1200 360"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="
-                
-                M 80 60
-                V 10
-
-                H 260
-                V 300
-                H 460
-                V 60
-                H 660
-                V 300
-                H 860
-                V 60
-                H 1120
-              "
-              stroke="#7FA58F"
-              strokeWidth="2"
-              fill="none"
-              strokeLinejoin="round"
-              strokeLinecap="round"
+          <div className="bg-union">
+            <Image
+              src="/assests/img/web-development/Union.png"
+              alt="Banner Image"
+              width={1200}
+              height={300}
+              className="absolute inset-0 w-full h-full z-0"
             />
-          </svg> */}
+          </div>
+
 
           {/* CARDS */}
           <div className="relative z-10 grid grid-cols-4 rounded-[40px]">
@@ -107,24 +79,24 @@ export default function WhyChooseVibes() {
                       />
 
                       {/* TITLE */}
-                      <h3 className="font-semibold text-[18px] text-[#2B2B2B] mb-3">
+                      <h3 className="font-poppins font-semibold text-[24px] leading-[1.23] tracking-normal text-center text-[#303030] mb-3">
                         {item.title}
                       </h3>
 
                       {/* DESC */}
-                      <p className="text-[14px] leading-[160%] text-[#6B6B6B]">
+                      <p className="font-poppins font-normal text-[14px] leading-[1.23] tracking-normal text-center text-[#707070]">
                         {item.desc}
                       </p>
                     </>
                   ) : (
                     <>
                       {/* DESC */}
-                      <p className="text-[14px] leading-[160%] text-[#6B6B6B] mb-4">
+                      <p className="font-poppins font-normal text-[14px] leading-[1.23] tracking-normal text-center text-[#707070] mb-4">
                         {item.desc}
                       </p>
 
                       {/* TITLE */}
-                      <h3 className="font-semibold text-[18px] text-[#2B2B2B] mb-4">
+                      <h3 className="font-poppins font-semibold text-[24px] leading-[1.23] tracking-normal text-center text-[#303030] mb-4">
                         {item.title}
                       </h3>
 
