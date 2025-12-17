@@ -12,7 +12,7 @@ const WebDevelopment = () => {
             <WebDevelopmentHero />
             <WebDevelopmentAbout />
             <WebDevelopmentWorkflow />
-            {/* <WhyChooseVibes /> */}
+            <WhyChooseVibes />
             <TechnologyStack />
             <BuiltWay />
         </div>
