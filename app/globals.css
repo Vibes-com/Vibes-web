@@ -758,3 +758,83 @@ height:503px;
     top: 60%;
     left: 50%;
 }
+
+/* 404 Pages */
+.grad-container{
+  background: #57C785;
+  background: linear-gradient(177deg,rgba(87, 199, 133, 1) 0%, rgba(79, 120, 86, 1) 100%);
+}
+/* Floating Animation */
+.floating-circle {
+    font-size: 200px;
+    font-weight: 900;
+    color: #f4be00; /* Vibescom orange accent */
+    animation: float 4s ease-in-out infinite;
+    text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/*Thank You*/
+
+.checkmark__circle {
+    stroke-dasharray: 166;
+    stroke-dashoffset: 166;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+    stroke: #f4be00;
+    fill: #afe785;
+    animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.checkmark {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: block;
+    stroke-width: 5;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+    margin: 10% auto;
+    box-shadow: inset 0px 0px 0px #7ac142;
+    animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+}
+
+.checkmark__check {
+    transform-origin: 50% 50%;
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    animation: stroke 2s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes stroke {
+    100% {
+        stroke-dashoffset: 0
+    }
+}
+
+@keyframes scale {
+
+    0%,
+    100% {
+        transform: none
+    }
+
+    50% {
+        transform: scale3d(1.1, 1.1, 1)
+    }
+}
+
+@keyframes fill {
+    100% {
+        box-shadow: inset 0px 0px 0px 30px #7ac142
+    }
+}
