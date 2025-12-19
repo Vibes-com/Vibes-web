@@ -12,11 +12,6 @@ const ContactHero = () => {
                             <br />
                             <span className="hero-highlight relative z-9 w-fit font-poppins font-semibold text-[65px] leading-[116%] tracking-normal capitalize text-[#F4BE00]">Get in Touch.</span>
                         </h1>
-
-                        <p className="mt-10 font-poppins font-semibold text-[18px] leading-[128%] tracking-normal capitalize text-[#FFFFFF]">
-                            We’re ready to turn ideas into meaningful digital experiences—let’s connect and build something impactful together.
-                        </p>
-
                     </div>
 
                     {/* RIGHT COLUMN */}
