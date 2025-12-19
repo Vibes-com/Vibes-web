@@ -1,0 +1,86 @@
+"use client";
+
+import React from "react";
+import { Button2 } from "@/components/ui/button2";
+import { ArrowUpIcon } from "lucide-react";
+// import CaseStudiesCard from "/CaseStudiesCard/CaseStudiesCard";
+// import { CaseStudy } from "@/types/CaseStudy";
+import CaseStudiesCard from "../CaseStudiesCard/CaseStudiesCard";
+import { CaseStudy } from "@/types/commoncasestudy";
+
+interface CaseStudiesSectionProps {
+  badgeText: string;
+  title: string;
+  highlightTitle: string;
+  description: string;
+  buttonText: string;
+  cards: CaseStudy[];
+  bgColor?: string;
+}
+
+const CommonCasestudy = ({
+  badgeText,
+  title,
+  highlightTitle,
+  description,
+  buttonText,
+  cards,
+  bgColor = "#dfe8dd",
+}: CaseStudiesSectionProps) => {
+  return (
+    <section
+      className="section-gap"
+      style={{ backgroundColor: bgColor }}
+    >
+      <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
+        <div className="grid grid-cols-12 relative">
+
+          {/* LEFT CONTENT */}
+          <div className="col-span-6 sticky top-0 h-screen flex items-center">
+            <div className="flex-1">
+
+              {/* BADGE */}
+              <div className="flex mb-5">
+                <div className="px-6 py-2 rounded-full border border-[#F4BE00] inline-flex items-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-[#F4BE00]" />
+                  <span className="font-poppins font-semibold text-[10px] uppercase text-[#F4BE00]">
+                    {badgeText}
+                  </span>
+                </div>
+              </div>
+
+              {/* TITLE */}
+              <h3 className="font-poppins font-medium text-[40px] leading-[1.23]">
+                {title}
+                <br />
+                <span className="highlight relative z-9 font-semibold">
+                  {highlightTitle}
+                </span>
+              </h3>
+
+              {/* DESC */}
+              <p className="text-[#525252] mt-5 max-w-md">
+                {description}
+              </p>
+
+              {/* BUTTON */}
+              <Button2 className="mt-5 p-[20px] hover:border-[#2B4C69] hover:border-2 hover:text-[#F4BE00] hover:bg-transparent text-[14px]">
+                <span>{buttonText}</span>
+                <ArrowUpIcon className="rotate-45" />
+              </Button2>
+
+            </div>
+          </div>
+
+          {/* RIGHT CONTENT */}
+          <div className="col-span-6 sticky top-0 h-screen overflow-y-auto no-scrollbar">
+            <CaseStudiesCard data={cards} />
+          </div>
+
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default CommonCasestudy;

@@ -11,30 +11,118 @@ import TeamDreamSection from "../components/teamdream/teamdream";
 import MilestoneMetrics from "../components/milestones/milestones";
 import OurBlogs from "../components/blogs/blogs";
 import SocialStorytelling from "../components/socialstorytelling/socialstorytelling";
-import MarqueeTabsSlider from "../components/clients/clients";
+// import MarqueeTabsSlider from "../components/clients/clients";
 import HomeGallery from "../components/homegallery/HomeGallery";
 import { motion, useScroll, useTransform } from "framer-motion";
 import FadeIn from "../components/animations/FadeIn";
 import FadeOut from "../components/animations/FadeOut";
 import SlideRight from "../components/animations/SlideRight";
+import MarqueeStorySection, { SlideItem } from "../components/common/MarqueeStorySection/MarqueeStorySection";
+// import MarqueeStorySection from "../components/common/MarqueeStorySection/MarqueeStorySection";
+
+
+const slides: SlideItem[] = [
+  {
+    type: "video",
+    src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video1.mp4",
+  },
+  {
+    type: "images",
+    images: [
+      { src: "/assests/img/home/brand-img-1.jpg" },
+      { src: "/assests/img/home/brand-img-2.jpg" },
+    ],
+  },
+  {
+    type: "video",
+    src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video1.mp4",
+  },
+  {
+    type: "images",
+    images: [
+      { src: "/assests/img/home/brand-img-3.jpg" },
+      { src: "/assests/img/home/brand-img-4.png" },
+    ],
+  },
+   {
+    type: "video",
+    src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video1.mp4",
+  },
+  {
+    type: "images",
+    images: [
+      { src: "/assests/img/home/brand-img-1.jpg" },
+      { src: "/assests/img/home/brand-img-2.jpg" },
+    ],
+  },
+  {
+    type: "video",
+    src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video1.mp4",
+  },
+  {
+    type: "images",
+    images: [
+      { src: "/assests/img/home/brand-img-3.jpg" },
+      { src: "/assests/img/home/brand-img-4.png" },
+    ],
+  },
+   {
+    type: "video",
+    src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video1.mp4",
+  },
+  {
+    type: "images",
+    images: [
+      { src: "/assests/img/home/brand-img-1.jpg" },
+      { src: "/assests/img/home/brand-img-2.jpg" },
+    ],
+  },
+  {
+    type: "video",
+    src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video1.mp4",
+  },
+  {
+    type: "images",
+    images: [
+      { src: "/assests/img/home/brand-img-3.jpg" },
+      { src: "/assests/img/home/brand-img-4.png" },
+    ],
+  },
+   {
+    type: "video",
+    src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video1.mp4",
+  },
+  {
+    type: "images",
+    images: [
+      { src: "/assests/img/home/brand-img-1.jpg" },
+      { src: "/assests/img/home/brand-img-2.jpg" },
+    ],
+  },
+  {
+    type: "video",
+    src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video1.mp4",
+  },
+  {
+    type: "images",
+    images: [
+      { src: "/assests/img/home/brand-img-3.jpg" },
+      { src: "/assests/img/home/brand-img-4.png" },
+    ],
+  },
+];
 
 const page = () => {
-
-
   return (
     <div>
 
       <Hero />
-
-
       <TeamDreamSection />
-
       {/* <TogetherMain /> */}
       {/* <Technology />
       <Branding />
       <Digital /> */}
       <div className="relative">
-
         <div className="sticky top-0 z-[10]">
           <Technology />
         </div>
@@ -47,7 +135,16 @@ const page = () => {
       </div>
 
       <CaseStudies />
-      <SocialStorytelling />
+      {/* <SocialStorytelling /> */}
+      <MarqueeStorySection
+      badge="WORK SHOWCASE"
+      highlightTitle="Brand Stories"
+      title="in Motion"
+      description="A curated showcase of visual work that shapes brand perception across channels."
+      slides={slides}
+      ctaText="Talk to us today"
+      bgImage="/assests/img/home/brand-stories-bg.png"
+    />
       {/* <TeamMembers /> */}
       <MilestoneMetrics />
       {/* <MarqueeTabsSlider /> */}

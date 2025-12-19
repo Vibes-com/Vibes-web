@@ -74,7 +74,7 @@ export default function CaseStudies() {
 
                                     <div className="relative w-full h-[280px] rounded-xl overflow-hidden group">
                                         <Image
-                                            src={item.banner_image}
+                                            src={item.thumbnail}
                                             alt={item.client_name}
                                             fill
                                             className="object-fill transition-all duration-[900ms] group-hover:scale-110 group-hover:opacity-90"
@@ -86,11 +86,15 @@ export default function CaseStudies() {
                                     </h3>
 
                                     <div className="flex items-center gap-3 mt-4 justify-between">
-                                        <div className="flex gap-3">
-                                            <span className="px-3 py-1 bg-[#F2F4F7] text-[10px] rounded-full">
-                                                {item.category}
-                                            </span>
-                                        </div>
+                                       {item.tags && item.tags.length > 0 && (
+                                            <div className="flex gap-3 flex-wrap">
+                                                {item.tags.split(",").map((tag, index) => (
+                                                <span key={index} className="px-3 py-1 bg-[#F2F4F7] text-[10px] rounded-full">
+                                                    {tag.trim()}
+                                                </span>
+                                                ))}
+                                            </div>
+                                            )}
 
                                         <Button3 className="text-[#204667] p-[5px] flex items-center gap-2 hover:text-[#F4BE00]">
                                             <span>View More</span>

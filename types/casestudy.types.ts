@@ -1,9 +1,9 @@
 export interface CaseStudy {
   client_name: string;
   client_slug: string;
-  banner_image: string;
+  thumbnail: string;
   banner_heading: string;
-  category: string;
+  tags: string;
   case_status: string;
   show_order: string;
   short_desc: string;
@@ -14,3 +14,4 @@ export interface CaseStudyResponse {
   success: boolean;
   data: CaseStudy[];
 }
+

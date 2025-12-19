@@ -76,13 +76,13 @@ const TeamDreamSection = () => {
 
                 {/* Bottom Cards */}
                 <div
-                    className="max-w-7xl mx-auto px-5 lg:px-0 mt-20 grid grid-cols-1 md:grid-cols-3 gap-8"
-                    onMouseEnter={() => setShowTeam(true)}
-                >
+                    className="max-w-7xl mx-auto px-5 lg:px-0 mt-20 grid grid-cols-1 md:grid-cols-3 gap-8">
 
                     {/* Card 1 */}
                     <SlideRight delay={0.5}>
-                        <div className="p-8 one-team-card bdr">
+                        <div className="p-8 one-team-card bdr"
+                        onMouseEnter={() => setShowTeam(true)}
+                        >
                             <h3 className="font-semibold text-[20px] leading-[123%] mb-3">One Team</h3>
                             <p className="font-poppins font-normal text-[14px] leading-[130%] text-[#191919DB]">
                                 Vibes aligns purposefully, turning challenges, goals and ambitions into one clear, unified brand narrative.
