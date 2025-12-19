@@ -753,38 +753,118 @@ height:503px;
     top: 60%;
     left: 50%;
 }
-
-.job-tab-wrapper button.data-\[state\=active\]\:shadow-sm[data-state="active"] .bg-card{
-background-color: #326E4F;
-color:#fff;
+.branding-details-hero-wrapper{
+background: url("/assests/img/branding-details/branding-bg.jpg") center/cover no-repeat;
+height: 763px;
+width:100%;
+}
+/* Circle */
+.branding-customer-wrapper .customer-circle {
+  height: 270px;
+  width: 270px;
+  border-radius: 9999px;
+background: #204667;
+  border: 7px solid #ffffff;
+  box-shadow: 0px 4px 136px 0px #000000 inset;
+  position: relative;
 }
 
-.main-tab button.data-\[state\=active\]\:shadow-sm[data-state="active"]{
-  background-color: #326E4F;
-color:#fff;
+.branding-customer-wrapper .customer-circle::after {
+  content: "";
+  position: absolute;
+  bottom: -14px;
+  left: 88%;
+  height: 298px;
+  width: 380px;
+  background: url("https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/focus-img.webp")
+    no-repeat center/cover;
+  z-index: -9;
 }
 
-.inner-tab button.data-\[state\=active\]\:shadow-sm[data-state="active"]{
-  background-color: #326E4F;
-color:#fff;
+
+.branding-customer-wrapper .customer-card {
+  position: relative;
+  width: 550px;
+  height:130px;
+  margin: 15px 0 15px 54px;
+  padding: 21px;
+  border-radius: 8px;
+  border: 1px solid #ebebeb;
+  border-bottom: 5px solid #466E59;
+  background: #ffffff;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  box-shadow: 0px 4px 4px 0px #00000040;
+
 }
 
-/* .job-tab-wrapper button.data-\[state\=active\]\:shadow-sm[data-state="active"]{
-  background-color: #326E4F!important;
-  color:#fff;
-} */
 
-.job-tab-wrapper button.data-\[state\=active\]\:shadow-sm[data-state="active"] {
-    --tw-shadow: none;
-    box-shadow: none;
-    background-color: transparent;
+/* Active (center) slide */
+.branding-customer-wrapper .customer-slider .slick-center .customer-card {
+  transform: translateX(-52px);
+  background: #466E59;
+  border-bottom: 0;
+  box-shadow: 0px 4px 4px 0px #00000040;
 }
 
-.career-wrap {
-    background: url(/assests/img/home/one-team-bg.png) center / cover no-repeat;
+.branding-customer-wrapper .customer-slider .slick-center h5 {
+  color: #ffffff;
 }
 
-.career-wrap p{
-  color:#525252;
+.branding-customer-wrapper .customer-slider .slick-center p {
+  color: #d0d0d0;
 }
 
+/* Dots */
+.branding-customer-wrapper .customer-slider .slick-dots {
+  position: absolute;
+  right: 30px;
+  top: 60%;
+  transform: translateY(-50%);
+  display: flex !important;
+  flex-direction: column;
+  gap: 4px;
+  width: 30px;
+}
+
+.branding-customer-wrapper .customer-slider .slick-dots li button:before {
+  font-size: 15px;
+  color: #bbb;
+}
+
+.branding-customer-wrapper .customer-slider .slick-dots li.slick-active button:before {
+  color: #466e59;
+}
+
+@keyframes marqueeLeft {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marqueeRight {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-marquee-left {
+  animation: marqueeLeft 25s linear infinite;
+}
+
+.animate-marquee-right {
+  animation: marqueeRight 25s linear infinite;
+}
+.branding-marquee{
+  overflow-x: clip;
+}
+.digital-details-hero-wrapper {
+  background: url("/assests/img/digital-m-details/digital-marketing-bg.png") center/cover no-repeat;
+height: 763px;
+width:100%;
+}

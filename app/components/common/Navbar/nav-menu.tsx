@@ -38,13 +38,13 @@ export const NavMenu = (props: ComponentProps<typeof NavigationMenu>) => (
                         </li>
 
                         <li>
-                            <Link href="/service2" className="block p-2 hover:bg-gray-100 rounded">
+                            <Link href="/branding" className="block p-2 hover:bg-gray-100 rounded">
                                 Branding
                             </Link>
                         </li>
 
                         <li>
-                            <Link href="/service3" className="block p-2 hover:bg-gray-100 rounded">
+                            <Link href="/digital-marketing" className="block p-2 hover:bg-gray-100 rounded">
                                 Digital Marketing
                             </Link>
                         </li>

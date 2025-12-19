@@ -60,8 +60,7 @@ export default function OurBlogs() {
                             </div>
                         </div>
                         <h3 className="font-poppins font-medium text-[40px] leading-[1.23] tracking-norma]">
-                            Tech Ideas & Insights
-                            <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[40px] leading-[1.23] tracking-normal">Insights</span>
+                            Tech Ideas & Insights <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[40px] leading-[1.23] tracking-normal">Insights</span>
                         </h3>
 
                         <p className="text-[#525252] mt-5 ">

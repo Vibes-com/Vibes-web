@@ -1,8 +1,10 @@
-import HeroSection from '@/app/components/common/InnerPageHero/HeroSection'
+"use client";
 import ContactForm from '@/app/components/contact-us/contact-form/ContactForm'
+import ContactHero from '@/app/components/contact-us/contact-hero/ContactHero'
 import React from 'react'
 
 const page = () => {
+    const router = useRouter();
     return (
         <div>
             
