@@ -4,7 +4,7 @@ export const bannerApiUrls = {
 };
 
 export const blogApiUrls = {
-    getAllBlogs: "/blogs",
+    getAllBlogs: "/blogs?limit=all",
     getSingleBlog: "/single-blog-detail"
 };
 
@@ -20,4 +20,8 @@ export const teamMembersApiUrls = {
 
 export const contactApiUrls = {
   submitContact: "/contact-enquiry",
+};
+
+export const galleryApiUrls = {
+  getGallery: "/image-gallery", 
 };

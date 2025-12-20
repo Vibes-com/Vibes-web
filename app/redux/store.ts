@@ -4,6 +4,7 @@ import { blogsApi } from "../redux/api/blogApi";
 import { caseStudyApi } from "./api/caseStudyApi";
 import { teamMembersApi } from "./api/teamMembersApi";
 import { contactApi } from "./api/contactApi";
+import { galleryApi } from "./api/galleryApi";
 // import { caseStudyApi } from "../redux/api/caseStudyApi";
 
 export const store = configureStore({
@@ -13,6 +14,7 @@ export const store = configureStore({
     [caseStudyApi.reducerPath]: caseStudyApi.reducer, 
     [teamMembersApi.reducerPath]: teamMembersApi.reducer, 
     [contactApi.reducerPath]: contactApi.reducer,
+    [galleryApi.reducerPath]: galleryApi.reducer,
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware().concat(
@@ -20,7 +22,8 @@ export const store = configureStore({
       blogsApi.middleware,
       caseStudyApi.middleware,
       teamMembersApi.middleware,
-      contactApi.middleware
+      contactApi.middleware,
+      galleryApi.middleware
     ),
 });
 
