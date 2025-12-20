@@ -821,20 +821,58 @@ height:503px;
     }
 }
 
-@keyframes scale {
-
-    0%,
-    100% {
-        transform: none
-    }
-
-    50% {
-        transform: scale3d(1.1, 1.1, 1)
-    }
+@keyframes marqueeLeft {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
-@keyframes fill {
-    100% {
-        box-shadow: inset 0px 0px 0px 30px #7ac142
-    }
+@keyframes marqueeRight {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-marquee-left {
+  animation: marqueeLeft 25s linear infinite;
+}
+
+.animate-marquee-right {
+  animation: marqueeRight 25s linear infinite;
+}
+.branding-marquee{
+  overflow-x: clip;
+}
+.digital-details-hero-wrapper {
+  background: url("/assests/img/digital-m-details/digital-marketing-bg.png") center/cover no-repeat;
+height: 763px;
+width:100%;
+}
+
+.main-tab .data-\[state\=active\]\:shadow-sm[data-state="active"] {
+    --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, #0000001a), 0 1px 2px -1px var(--tw-shadow-color, #0000001a);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    background-color: #4e7759;
+    color: #fff;
+}
+
+.inner-tab .data-\[state\=active\]\:shadow-sm[data-state="active"]{
+   --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, #0000001a), 0 1px 2px -1px var(--tw-shadow-color, #0000001a);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    background-color: #4e7759;
+    color: #fff;
+}
+
+.job-tab-wrapper .data-\[state\=active\]\:shadow-sm[data-state="active"] .tab-bg, .job-tab-wrapper .data-\[state\=active\]\:shadow-sm[data-state="active"] {
+    --tw-shadow: 0;
+    box-shadow: 0;
+    background-color: #4e7759;
+    color: #fff;
+    border-width: 0px!important;
 }

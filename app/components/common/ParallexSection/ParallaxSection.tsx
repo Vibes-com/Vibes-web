@@ -5,7 +5,7 @@ import { useRef } from "react";
 
 export default function ParallaxSection({
   children,
-  offset = -150, // how much it moves
+  offset = -150, 
 }: {
   children: React.ReactNode;
   offset?: number;

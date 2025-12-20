@@ -5,7 +5,7 @@ export const bannerApiUrls = {
 
 export const blogApiUrls = {
     getAllBlogs: "/blogs",
-
+    getSingleBlog: "/single-blog-detail"
 };
 
 export const caseStudyApiUrls = {

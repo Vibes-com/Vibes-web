@@ -1,21 +1,24 @@
 export interface Blog {
-  id: string;
+  blog_id: number;
   blog_title: string;
-  slug: string;
-  blog_main_image: string;
-  short_description: string;
-  content: string;
-  author: string;
-  createdAt: string;
-  updatedAt: string;
-   blog_service: string;
+  blog_slug: string;
+  blog_description: string;
+  blog_small_description: string;
+  blog_thumb_image: string;
+  blog_service: string;
 }
 
-
 export interface BlogResponse {
-  statusCode: number;
   success: boolean;
-  message: string;
-  data: Blog[];
   blog_list: Blog[];
+}
+
+export interface SingleBlogResponse {
+  success: boolean;
+  blog: Blog;
+  blog_title: string;
+  blog_description: string;
+  status: number;
+  msg: string;
+  data: Blog;
 }

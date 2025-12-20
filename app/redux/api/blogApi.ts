@@ -1,12 +1,11 @@
 import { createApi } from "@reduxjs/toolkit/query/react";
 import { baseQuery } from "./baseQuery";
 import { blogApiUrls } from "@/app/constants/apiUrls";
-import { BlogResponse } from "@/types/blog.types";
-
+import { SingleBlogResponse, BlogResponse } from "@/types/blog.types";
 
 export const blogsApi = createApi({
   reducerPath: "blogApi",
-  baseQuery: baseQuery,
+  baseQuery,
   endpoints: (builder) => ({
     getAllBlogs: builder.query<BlogResponse, void>({
       query: () => ({
@@ -14,7 +13,18 @@ export const blogsApi = createApi({
         method: "GET",
       }),
     }),
+
+    // ✅ SINGLE BLOG BY SLUG
+    getSingleBlog: builder.query<SingleBlogResponse, string>({
+      query: (slug) => ({
+        url: `${blogApiUrls.getSingleBlog}/${slug}`,
+        method: "GET",
+      }),
+    }),
   }),
 });
 
-export const { useGetAllBlogsQuery } = blogsApi;
+export const {
+  useGetAllBlogsQuery,
+  useGetSingleBlogQuery,
+} = blogsApi;
