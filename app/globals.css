@@ -893,7 +893,7 @@ width:100%;
 
 .gallery-group:hover .gallery-card .gallery-image {
   filter: grayscale(100%);
-  transform: scale(1);
+  transform: scale(0.94);
   opacity: 0.75;
 }
 

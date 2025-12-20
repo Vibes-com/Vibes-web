@@ -59,7 +59,7 @@ export default function Gallery() {
                 key={index}
                 href={img.src}
                 data-fancybox="gallery"
-                className="relative overflow-hidden  gallery-card shadow-lg shadow-gray-700/40"
+                className="relative overflow-hidden  gallery-card shadow-lg "
               >
                 <Image
                   src={img.thumb}
