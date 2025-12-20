@@ -992,3 +992,23 @@ background: #204667;
 .branding-customer-wrapper .customer-slider .slick-dots li.slick-active button:before {
   color: #466e59;
 }
+
+/*Blogs*/
+.prose input[type="image"]{
+  width: 100%;
+  border: 30px solid #ffffff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  margin:30px 0
+}
+.blog-content h2{
+  margin: 20px 0 5px 0;
+}
+.blog-content h2, .blog-content h2 strong{
+  font-size: 1.3rem;
+  color: #f4be00;
+  font-weight: 500;
+}
+.blog-content p{
+  font-size: .85rem;
+  color: #333333;
+}
