@@ -13,13 +13,14 @@ const TeamMembers = () => {
   const members = data?.member_list ?? [];
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     centerMode: true,
     centerPadding: "0px",
     slidesToShow: 3,
-    autoplaySpeed: 2500,
-    speed: 600,
+    autoplaySpeed: 5000,
+    autoplay: true,
+    speed: 1000,
     arrows: true,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
