@@ -71,7 +71,7 @@ const DigitalMarketingSolutions = () => {
                             src="/assests/img/digital-m-details/digital-solutions-middle-img.png"
                             alt="Technology Showcase"
                             fill
-                            className="object-fill"
+                            className="object-fill "
                             priority
                             unoptimized
                         />
@@ -113,7 +113,7 @@ border-[7px] border-[#ffffff]">
                 alt="bg"
                 fill
                 unoptimized
-                className="absolute inset-0 object-cover opacity-20 transition-opacity duration-500 group-hover:opacity-0"
+                className="absolute inset-0 object-cover opacity-20 transition-opacity duration-500 group-hover:opacity-0 rounded-lg"
             />
 
 

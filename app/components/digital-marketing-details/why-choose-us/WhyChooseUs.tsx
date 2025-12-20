@@ -29,18 +29,16 @@ const WhyChooseUs: React.FC = () => {
             <div className="container mx-auto px-4">
                 <div className="grid grid-cols-12 lg:grid-cols-12 gap-4 items-center">
 
-                    {/* LEFT CONTENT */}
                     <div className="col-span-5">
 
                     </div>
 
-                    {/* RIGHT CARDS */}
                     <div className="col-span-7">
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                             {cards.map((card, index) => (
                                 <div
                                     key={index}
-                                    className={`rounded-2xl p-8 shadow-md transition-all duration-300
+                                    className={`h-[233px] rounded-2xl p-7 shadow-md transition-all duration-300
                   ${card.dark
                                             ? "bg-[#4E6F5C] text-white"
                                             : "bg-white text-[#1F2D27]"
@@ -48,14 +46,14 @@ const WhyChooseUs: React.FC = () => {
                 `}
                                 >
                                     <h3
-                                        className={`text-xl font-semibold mb-4 ${card.dark ? "text-white" : "text-[#1F2D27]"
+                                        className={`font-poppins font-semibold text-[21px] leading-[100%] tracking-normal mb-4 ${card.dark ? "text-[#FFFFFF]" : "text-[#373737]"
                                             }`}
                                     >
                                         {card.title}
                                     </h3>
 
                                     <p
-                                        className={`text-sm leading-relaxed ${card.dark ? "text-[#E6EFE9]" : "text-[#6B7C72]"
+                                        className={`font-poppins font-medium text-[16px] leading-[145%] tracking-normal ${card.dark ? "text-[#FFFFFFA6]" : "text-[#585858A6]"
                                             }`}
                                     >
                                         {card.desc}
