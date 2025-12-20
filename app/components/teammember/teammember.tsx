@@ -57,7 +57,7 @@ const TeamMembers = () => {
 
         <div className="relative max-w-7xl mx-auto px-4 pb-10">
           <Slider {...settings}>
-            {members.slice(0, 5).map((m) => (
+            {members.map((m) => (
               <div key={m.member_id} className="px-4 member-card">
                 <div
                   className="
