@@ -758,7 +758,11 @@ height:503px;
     top: 60%;
     left: 50%;
 }
-
+.branding-details-hero-wrapper{
+background: url("/assests/img/branding-details/branding-bg.jpg") center/cover no-repeat;
+height: 763px;
+width:100%;
+}
 /* 404 Pages */
 .grad-container{
   background: #57C785;
@@ -875,4 +879,39 @@ width:100%;
     background-color: #4e7759;
     color: #fff;
     border-width: 0px!important;
+}
+/* DEFAULT: fully visible images */
+.gallery-image {
+  clip-path: inset(0 0 0 0);
+  transition:
+    clip-path 0.9s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.7s ease,
+    filter 0.5s ease,
+    opacity 0.5s ease;
+}
+
+
+.gallery-group:hover .gallery-card .gallery-image {
+  filter: grayscale(100%);
+  transform: scale(0.94);
+  opacity: 0.75;
+}
+
+.gallery-group:hover .gallery-card:hover .gallery-image {
+  clip-path: inset(50% 0 50% 0);
+  animation: centerReveal 0.9s ease forwards;
+
+  filter: grayscale(0);
+  transform: scale(1.12);
+  opacity: 1;
+  z-index: 10;
+}
+
+@keyframes centerReveal {
+  from {
+    clip-path: inset(50% 0 50% 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
 }
