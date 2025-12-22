@@ -1,20 +1,20 @@
 export const bannerApiUrls = {
-    getAllBanners: "/banners",
+  getAllBanners: "/banners",
 
 };
 
 export const blogApiUrls = {
-    getAllBlogs: "/blogs?limit=all",
-    getSingleBlog: "/single-blog-detail"
+  getAllBlogs: "/blogs?limit=all",
+  getSingleBlog: "/single-blog-detail"
 };
 
 export const caseStudyApiUrls = {
-    getAllCasestudy: "/casestudy",
+  getAllCasestudy: "/casestudy",
 
 };
 
 export const teamMembersApiUrls = {
-    getAllTeamMembers: "/our-team",
+  getAllTeamMembers: "/our-team",
 
 };
 
@@ -23,5 +23,10 @@ export const contactApiUrls = {
 };
 
 export const galleryApiUrls = {
-  getGallery: "/image-gallery", 
+  getGallery: "/image-gallery",
 };
+
+export const careerApiUrls = {
+  getAllJobs: "/getJob",
+  applyToJob: "/jobApply"
+}
