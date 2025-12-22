@@ -21,7 +21,7 @@ export const store = configureStore({
     [galleryApi.reducerPath]: galleryApi.reducer,
     [technologyApi.reducerPath]: technologyApi.reducer,
     [digitalApi.reducerPath]: digitalApi.reducer,
-    [brandingApi.reducerPath]: brandingApi.reducer
+    [brandingApi.reducerPath]: brandingApi.reducer,
     [careerApi.reducerPath]: careerApi.reducer
   },
   middleware: (getDefaultMiddleware) =>
