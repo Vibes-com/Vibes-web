@@ -15,6 +15,7 @@ import {
 import z from "zod";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { useApplyToJobMutation } from "@/app/redux/api/careerApi";
 
 
 export const jobApplySchema = z.object({
@@ -40,7 +41,7 @@ export const jobApplySchema = z.object({
 
 export type JobApplyFormValues = z.infer<typeof jobApplySchema>;
 
-export default function JobApplyForm({careerId}: {careerId: string}) {
+export default function JobApplyForm({ jobTitle }: { jobTitle: string }) {
     const form = useForm<JobApplyFormValues>({
         resolver: zodResolver(jobApplySchema),
         defaultValues: {
@@ -52,15 +53,41 @@ export default function JobApplyForm({careerId}: {careerId: string}) {
         },
     });
 
-    const onSubmit = (data: JobApplyFormValues) => {
+    const [applyToJob] = useApplyToJobMutation();
+
+    const onSubmit = async (data: JobApplyFormValues) => {
         const formData = new FormData();
 
-        Object.entries(data).forEach(([key, value]) => {
-            if (value) formData.append(key, value);
-        });
+        // Map values according to API
+        formData.append(
+            "name",
+            `${data.firstname || ""} ${data.lastname || ""}`.trim()
+        );
 
+        formData.append("email", data.email || "");
+        formData.append("telephone", data.mobile || "");
+        formData.append("job_title", jobTitle || "");
+        formData.append("company_name", "Vibes"); // static as per API
 
-        console.log("Submitted data:", data);
+        // File mapping
+        if (data.file) {
+            formData.append("file_upload", data.file);
+        } else {
+            formData.append("file_upload", "");
+        }
+
+        // Optional assignment file
+        formData.append("assign_upload", "");
+        console.log("Submitting mapped FormData", formData, data);
+        console.log([...formData.entries()]);
+
+        const res = await applyToJob(formData).unwrap()
+        if (res.status === 1) {
+            alert("Application submitted successfully!");
+            form.reset();
+        } else {
+            alert("Failed to submit application. Please try again.");
+        }
     };
 
     return (

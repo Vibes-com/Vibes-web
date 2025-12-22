@@ -65,7 +65,7 @@ const ListJobs = ({ type }: { type: number }) => {
                                         </Card>
                                         </TabsContent>
                                         <TabsContent value="apply">
-                                            <JobApplyForm careerId={job.career_id} />
+                                            <JobApplyForm jobTitle={job.job_title} />
                                         </TabsContent>
                                     </Tabs>
                                 </TabsContent>
