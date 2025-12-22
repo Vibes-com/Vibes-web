@@ -47,7 +47,7 @@ const services: ServiceItem[] = [
 
 const BrandingDetailsServices: React.FC = () => {
     return (
-        <section className="w-full section-gap">
+        <section className=" branding-services-wrapper w-full section-gap">
             <div className="flex justify-center mb-5">
                 <div className="
         px-6 py-2 
@@ -72,13 +72,9 @@ const BrandingDetailsServices: React.FC = () => {
             </p>
             {services.map((item, index) => (
                 <div
-                    key={index}
-                    className={` ${item.highlighted ? "bg-[#E6EFE7]" : "bg-white"
-                        }`}
-                >
+                    key={index}>
                     <div className="container mx-auto px-4 py-14">
                         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-                            {/* LEFT CONTENT */}
                             <div className="lg:col-span-4">
                                 <h2 className="font-poppins font-semibold text-[32px] leading-[1.27] tracking-normal text-[#282828] mb-4">
                                     {item.title}
@@ -102,7 +98,7 @@ const BrandingDetailsServices: React.FC = () => {
                                     {item.description}
                                 </p>
                             </div>
-                            {/* RIGHT BUTTON */}
+
                             <div className="lg:col-span-3 flex lg:justify-end">
                                 <Button2 className="mt-5 p-[20px]  hover:border-[#2B4C69] hover:border-[2px] hover:text-[#F4BE00] hover:bg-transparent text-[14px]">
                                     <span>View More</span>

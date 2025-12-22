@@ -1,4 +1,5 @@
-'use client'
+'use client';
+
 import {
     NavigationMenu,
     NavigationMenuItem,
@@ -6,71 +7,102 @@ import {
     NavigationMenuTrigger,
     NavigationMenuContent,
     NavigationMenuLink,
-    navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import Link from "next/link";
 import { ComponentProps } from "react";
+import { usePathname } from "next/navigation";
+import clsx from "clsx";
 
-export const NavMenu = (props: ComponentProps<typeof NavigationMenu>) => (
-    <NavigationMenu {...props}>
-        <NavigationMenuList className="space-x-3 data-[orientation=vertical]:flex-col data-[orientation=vertical]:items-start data-[orientation=vertical]:justify-start">
-            <NavigationMenuItem>
-                <NavigationMenuLink asChild className="font-poppins font-normal text-[14px] leading-[100%] tracking-[0] text-[#FFFFFF]">
-                    <Link href="/">HOME</Link>
-                </NavigationMenuLink>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-                <NavigationMenuLink asChild className="font-poppins font-normal text-[14px] leading-[100%] tracking-[0] text-[#FFFFFF]">
-                    <Link href="/who-we-are">WHO WE ARE</Link>
-                </NavigationMenuLink>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-                <NavigationMenuTrigger className=" bg-transparent font-poppins font-normal text-[14px] leading-[100%] tracking-[0] text-[#FFFFFF]">
-                    WHAT WE DO
-                </NavigationMenuTrigger>
+export const NavMenu = (props: ComponentProps<typeof NavigationMenu>) => {
+    const pathname = usePathname();
 
-                <NavigationMenuContent>
-                    <ul className="grid gap-3 p-4 md:w-[300px]">
-                        <li>
-                            <Link href="/technology" className="block p-2 hover:bg-gray-100 rounded">
-                                Technology
-                            </Link>
-                        </li>
+    const isActive = (path: string) => pathname === path;
 
-                        <li>
-                            <Link href="/branding" className="block p-2 hover:bg-gray-100 rounded">
-                                Branding
-                            </Link>
-                        </li>
+    const isWhatWeDoActive =
+        pathname === "/technology" ||
+        pathname === "/branding" ||
+        pathname === "/digital-marketing";
 
-                        <li>
-                            <Link href="/digital-marketing" className="block p-2 hover:bg-gray-100 rounded">
-                                Digital Marketing
-                            </Link>
-                        </li>
-                    </ul>
-                </NavigationMenuContent>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-                <NavigationMenuLink asChild className="font-poppins font-normal text-[14px] leading-[100%] tracking-[0] text-[#FFFFFF]">
-                    <Link href="#">CASE STUDIES</Link>
-                </NavigationMenuLink>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-                <NavigationMenuLink asChild className="font-poppins font-normal text-[14px] leading-[100%] tracking-[0] text-[#FFFFFF]">
-                    <Link href="/gallery">CULTURE</Link>
-                </NavigationMenuLink>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-                <NavigationMenuLink asChild className="font-poppins font-normal text-[14px] leading-[100%] tracking-[0] text-[#FFFFFF]">
-                    <Link href="/careers">CAREERS</Link>
-                </NavigationMenuLink>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-                <NavigationMenuLink asChild className="font-poppins font-normal text-[14px] leading-[100%] tracking-[0] text-[#FFFFFF]">
-                    <Link href="/contact-us">CONTACT US</Link>
-                </NavigationMenuLink>
-            </NavigationMenuItem>
-        </NavigationMenuList>
-    </NavigationMenu>
-);
+    const linkClass = (active: boolean) =>
+        clsx(
+            "relative font-poppins font-normal text-[14px] leading-[100%] tracking-[0] text-white",
+            "after:absolute after:left-0 after:-bottom-1 after:h-[4px] after:w-full after:bg-[#F4BE00] after:scale-x-0 after:transition-transform after:duration-300 after:origin-left after:rounded-tl-[30px] after:rounded-tr-[30px]",
+            active && "after:scale-x-100 text-[#F4BE00]"
+        );
+
+    return (
+        <NavigationMenu {...props}>
+            <NavigationMenuList className=" nav-menu-new space-x-3 data-[orientation=vertical]:flex-col data-[orientation=vertical]:items-start">
+
+                <NavigationMenuItem>
+                    <NavigationMenuLink asChild className={linkClass(isActive("/"))}>
+                        <Link href="/">HOME</Link>
+                    </NavigationMenuLink>
+                </NavigationMenuItem>
+
+                <NavigationMenuItem className="">
+                    <NavigationMenuLink asChild className={linkClass(isActive("/who-we-are"))}>
+                        <Link href="/who-we-are" className="text-white">WHO WE ARE</Link>
+                    </NavigationMenuLink>
+                </NavigationMenuItem>
+
+                <NavigationMenuItem>
+                    <NavigationMenuTrigger
+                        className={clsx(
+                            "text-[#FFFFFF] bg-transparent font-poppins font-normal text-[14px] leading-[100%] tracking-[0]",
+                            "relative after:absolute after:left-0 after:-bottom-1 after:h-[4px] after:w-full after:bg-[#F4BE00] after:scale-x-0 after:transition-transform after:duration-300 after:origin-left after:rounded-tl-[30px] after:rounded-tr-[30px]",
+                            isWhatWeDoActive && "after:scale-x-100 text-[#F4BE00]"
+                        )}
+                    >
+                        WHAT WE DO
+                    </NavigationMenuTrigger>
+
+                    <NavigationMenuContent>
+                        <ul className="grid gap-3 p-4 md:w-[300px]">
+                            <li>
+                                <Link href="/technology" className="block p-2 hover:bg-gray-100 rounded">
+                                    Technology
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/branding" className="block p-2 hover:bg-gray-100 rounded">
+                                    Branding
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/digital-marketing" className="block p-2 hover:bg-gray-100 rounded">
+                                    Digital Marketing
+                                </Link>
+                            </li>
+                        </ul>
+                    </NavigationMenuContent>
+                </NavigationMenuItem>
+
+                <NavigationMenuItem>
+                    <NavigationMenuLink asChild className={linkClass(isActive("/case-studies"))}>
+                        <Link href="/case-studies">CASE STUDIES</Link>
+                    </NavigationMenuLink>
+                </NavigationMenuItem>
+
+                <NavigationMenuItem>
+                    <NavigationMenuLink asChild className={linkClass(isActive("/gallery"))}>
+                        <Link href="/gallery">CULTURE</Link>
+                    </NavigationMenuLink>
+                </NavigationMenuItem>
+
+                <NavigationMenuItem>
+                    <NavigationMenuLink asChild className={linkClass(isActive("/careers"))}>
+                        <Link href="/careers">CAREERS</Link>
+                    </NavigationMenuLink>
+                </NavigationMenuItem>
+
+                <NavigationMenuItem>
+                    <NavigationMenuLink asChild className={linkClass(isActive("/contact-us"))}>
+                        <Link href="/contact-us">CONTACT US</Link>
+                    </NavigationMenuLink>
+                </NavigationMenuItem>
+
+            </NavigationMenuList>
+        </NavigationMenu>
+    );
+};

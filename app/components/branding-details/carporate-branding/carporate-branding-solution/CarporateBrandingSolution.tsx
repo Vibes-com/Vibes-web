@@ -23,9 +23,9 @@ const cards = [
     },
 ];
 
-const WhyChooseUs: React.FC = () => {
+const CarporateBrandingSolution: React.FC = () => {
     return (
-        <section className=" digital-choose-us-wrapper relative w-full section-gap">
+        <section className="relative w-full bg-[#EEF4EF] py-20">
             <div className="container mx-auto px-4">
                 <div className="grid grid-cols-12 lg:grid-cols-12 gap-4 items-center">
 
@@ -90,4 +90,4 @@ const WhyChooseUs: React.FC = () => {
     );
 };
 
-export default WhyChooseUs;
+export default CarporateBrandingSolution;

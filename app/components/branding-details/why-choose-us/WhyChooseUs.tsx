@@ -58,7 +58,7 @@ const WhyChooseUs: React.FC = () => {
     };
 
     return (
-        <section className="branding-customer-wrapper relative bg-[#E6EFE7] py-20 pb-50 overflow-visible">
+        <section className="branding-customer-wrapper relative section-gap !pb-40 not-odd:overflow-visible">
             <div className="container mx-auto px-4">
                 <div className="flex justify-center mb-5">
                     <div className="

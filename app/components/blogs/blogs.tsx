@@ -46,7 +46,7 @@ const blogs: BlogCardProps[] = [
 
 export default function OurBlogs() {
     return (
-        <section className="blogs-wrapper section-gap relative w-full bg-[#F3EFE4]">
+        <section className="blogs-wrapper section-gap relative w-full">
             <div className="container mx-auto max-w-screen-xl px-4 md:px-8 relative z-10">
                 <div className="flex justify-between items-center mb-12">
                     <div className="flex-1">

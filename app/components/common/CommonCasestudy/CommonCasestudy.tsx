@@ -18,20 +18,10 @@ interface CaseStudiesSectionProps {
   bgColor?: string;
 }
 
-const CommonCasestudy = ({
-  badgeText,
-  title,
-  highlightTitle,
-  description,
-  buttonText,
-  cards,
-  bgColor = "#dfe8dd",
-}: CaseStudiesSectionProps) => {
+const CommonCasestudy = ({ badgeText, title, highlightTitle, description, buttonText, cards, bgColor = "#dfe8dd" }: CaseStudiesSectionProps) => {
   return (
     <section
-      className="section-gap"
-      style={{ backgroundColor: bgColor }}
-    >
+      className=" casestudy-common-wrapper section-gap">
       <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
         <div className="grid grid-cols-12 relative">
 

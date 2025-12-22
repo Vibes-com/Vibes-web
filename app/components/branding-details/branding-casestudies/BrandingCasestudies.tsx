@@ -12,7 +12,7 @@ import "swiper/css";
 
 const BrandingCasestudies = () => {
     return (
-        <section className="bg-[#F7F7F5] -mt-[50px] ">
+        <section className="branding-casestudy-wrapper -mt-[50px] ">
             <div className="w-full mx-auto space-y-32">
                 <BrandingMarquee />
 

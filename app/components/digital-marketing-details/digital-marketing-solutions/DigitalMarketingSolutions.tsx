@@ -53,7 +53,7 @@ const services = [
 
 const DigitalMarketingSolutions = () => {
     return (
-        <div className="tech-solution-wrapper section-gap">
+        <div className="digital-solution-wrapper section-gap">
             <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
 
                 {/* GRID */}

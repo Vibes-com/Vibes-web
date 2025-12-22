@@ -120,6 +120,14 @@ body {
 @apply bg-background text-foreground;
 }
 }
+
+ .nav-menu-new .focus\:bg-accent:focus {
+    background-color: transparent!important;
+    color: #fff !important;
+}
+.navmenu-dropdown-new{
+  color: #fff !important;
+}
 /* Hide scrollbar but keep scrolling */
 .no-scrollbar::-webkit-scrollbar {
 display: none;
@@ -991,4 +999,40 @@ background: #204667;
 
 .branding-customer-wrapper .customer-slider .slick-dots li.slick-active button:before {
   color: #466e59;
+}
+.tech-solution-wrapper{
+background: url("/assests/img/technology-details/technology-key-services-bg.jpg") center/cover no-repeat;
+width:100%;
+}
+.casestudy-common-wrapper{
+ background: url("/assests/img/technology-details/common-casestudy-bg.jpg") center/cover no-repeat;
+width:100%;
+}
+.blogs-wrapper{
+background: url("/assests/img/technology-details/common-blog-bg.png") center/cover no-repeat;
+width:100%; 
+}
+.clients-wrapper {
+  background: url("/assests/img/technology-details/common-clients-bg.png") center/cover no-repeat;
+width:100%; 
+}
+.branding-services-wrapper{
+  background: url("/assests/img/branding-details/branding-services-bg.jpg") center/cover no-repeat;
+width:100%; 
+}
+.branding-customer-wrapper{
+ background: url("/assests/img/technology-details/common-casestudy-bg.jpg") center/cover no-repeat;
+width:100%;
+}
+.branding-casestudy-wrapper {
+background: url("/assests/img/branding-details/branding-casestudy-bg.jpg") center/cover no-repeat;
+width:100%
+}
+.digital-solution-wrapper {
+  background: url("/assests/img/digital-m-details/dm-solution-bg.png") center/cover no-repeat;
+width:100%
+}
+.digital-choose-us-wrapper{
+ background: url("/assests/img/technology-details/common-casestudy-bg.jpg") center/cover no-repeat;
+width:100%;
 }

@@ -158,7 +158,7 @@ const page = () => {
         description="A curated showcase of visual work that shapes brand perception across channels."
         slides={slides}
         ctaText="Talk to us today"
-        bgImage="/assests/img/home/brand-stories-bg.png"
+        bgImage="/assests/img/digital-m-details/dm-brandstory-bg.png"
       />
       <CommonCasestudy
         badgeText="CASE STUDIES"
