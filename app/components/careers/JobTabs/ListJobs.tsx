@@ -20,7 +20,6 @@ const ListJobs = ({ type }: { type: number }) => {
     };
 
     const { data, isLoading } = useGetAllJobsQuery(type)
-
     if (isLoading) {
         return <div>Loading...</div>
     }
@@ -29,13 +28,13 @@ const ListJobs = ({ type }: { type: number }) => {
         <div>
             <Tabs defaultValue={data?.jobs[0].career_id} className="w-full flex">
                 <div className="grid grid-cols-3 gap-4">
-                    <div className="col-span-1">
+                    <div className="col-span-1 border-r pr-5">
                         {
                             data?.jobs?.map((job) => (
-                                <TabsList key={job.career_id} className='block w-full  h-auto job-tab-wrapper'>
+                                <TabsList key={job.career_id} className='block w-full border-none h-auto job-tab-wrapper'>
                                     <TabsTrigger className='block w-full text-start bg-transparent' value={job.career_id}>
                                         <Card className='tab-bg'>
-                                            <CardContent>
+                                            <CardContent className='px-3'>
                                                 {job.job_title}
                                             </CardContent>
                                         </Card>
@@ -54,15 +53,16 @@ const ListJobs = ({ type }: { type: number }) => {
                                             <TabsTrigger className='h-auto py-3' value="jd">Job Description</TabsTrigger>
                                             <TabsTrigger className='h-auto py-3' value="apply">Apply</TabsTrigger>
                                         </TabsList>
-                                        <TabsContent value="jd"><Card className='tab-bg'>
-                                            <CardContent>
-                                                <div
-                                                    dangerouslySetInnerHTML={{
-                                                        __html: DOMPurify.sanitize(job.job_description),
-                                                    }}
-                                                />
-                                            </CardContent>
-                                        </Card>
+                                        <TabsContent value="jd">
+                                            <Card className='tab-bg border-0 shadow-none p-0'>
+                                                <CardContent className='px-6 rounded-br-0'>
+                                                    <div className='jobdesc'
+                                                        dangerouslySetInnerHTML={{
+                                                            __html: DOMPurify.sanitize(job.job_description),
+                                                        }}
+                                                    />
+                                                </CardContent>
+                                            </Card>
                                         </TabsContent>
                                         <TabsContent value="apply">
                                             <JobApplyForm jobTitle={job.job_title} />

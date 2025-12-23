@@ -859,27 +859,63 @@ height: 763px;
 width:100%;
 }
 
-.main-tab .data-\[state\=active\]\:shadow-sm[data-state="active"] {
+.main-tab .data-\[state\=active\]\:shadow-sm[data-state="active"], .main-tab button:hover {
     --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, #0000001a), 0 1px 2px -1px var(--tw-shadow-color, #0000001a);
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
     background-color: #4e7759;
-    color: #fff;
+    color: #f4be00;
 }
 
-.inner-tab .data-\[state\=active\]\:shadow-sm[data-state="active"]{
+.inner-tab{
+    border-bottom: 2px solid #f4be00;
+    padding: 0;
+  }
+
+.inner-tab .data-\[state\=active\]\:shadow-sm[data-state="active"], .inner-tab button:hover{
    --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, #0000001a), 0 1px 2px -1px var(--tw-shadow-color, #0000001a);
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
     background-color: #4e7759;
     color: #fff;
+    border-bottom: 2px solid #f4be00;
+    cursor: pointer;
+  }
+  .inner-tab button{
+    border-radius: 5px 5px 0 0;
+    margin-right: 5px;
+    margin-bottom: -2px;
+  }
+
+.job-tab-wrapper .data-\[state\=active\]\:shadow-sm[data-state="active"] .tab-bg, 
+.job-tab-wrapper .data-\[state\=active\]\:shadow-sm[data-state="active"] {
+    background-color: #f3f3f3;
+    box-shadow: none;
+    font-size: large;
+    color: #333333;
+    border-radius:0;
+    border-width: 0px!important;
+  }
+  .job-tab-wrapper .data-\[state\=active\]\:shadow-sm[data-state="active"] {
+  border-left:5px solid #4e7759!important;
+  margin-bottom: 10px;
 }
 
-.job-tab-wrapper .data-\[state\=active\]\:shadow-sm[data-state="active"] .tab-bg, .job-tab-wrapper .data-\[state\=active\]\:shadow-sm[data-state="active"] {
-    --tw-shadow: 0;
-    box-shadow: 0;
-    background-color: #4e7759;
-    color: #fff;
-    border-width: 0px!important;
+.jobdesc h4{
+  color: #333333!important;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 16px!important;
 }
+.jobdesc p, .jobdesc ul li, .jobdesc ul li font{
+  color: #555555!important;
+}
+
+.job-apply-wrap form{
+  border-radius: 0;
+  box-shadow: none;
+}
+
+
+
 /* DEFAULT: fully visible images */
 .gallery-image {
   clip-path: inset(0 0 0 0);
