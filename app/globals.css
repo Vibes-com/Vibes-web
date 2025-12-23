@@ -1071,6 +1071,17 @@ width:100%;
 background: url("/assests/img/case-study-details/case-study-hero-bg.jpg") center/cover no-repeat;
 width:100%;
 }
-.case-study-details-branding-wrapper .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
-  
+.case-study-listing-wrapper .case-study-card-common{
+height: 250px;
+}
+.case-study-listing-wrapper .case-study-common-tags{
+  font-size: 10px;
+}
+.case-study-listing-wrapper .case-study-tags-gap{
+ gap: calc(var(--spacing) * 2);
+}
+.casestudy-listing-hero-wrapper{
+background: url("/assests/img/case-study-details/casestudy-listing-bg.png") center/cover no-repeat;
+width:100%;
+height:503px;
 }
