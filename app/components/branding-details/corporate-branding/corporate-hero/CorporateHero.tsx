@@ -4,7 +4,7 @@ import { Button2 } from "@/components/ui/button2";
 import { ArrowUpIcon } from "lucide-react";
 import Image from "next/image";
 
-const CarporateHero: React.FC = () => {
+const CorporateHero: React.FC = () => {
     return (
         <div className="webdevelopment-hero-wrapper flex items-center h-[90vh]">
             <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
@@ -29,4 +29,4 @@ const CarporateHero: React.FC = () => {
     );
 };
 
-export default CarporateHero;
+export default CorporateHero;

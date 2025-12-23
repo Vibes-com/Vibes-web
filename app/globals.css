@@ -737,6 +737,18 @@ content: "";
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
 }
+.hero-highlight1::before{
+content: "";
+    z-index: -9;
+    background: #C32B2B;
+    width: 30%;
+    height: 8px;
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
 
 .contact-hero-wrapper{
 background: url("/assests/img/contact/contact-us-bg.jpg") center/cover no-repeat;
@@ -1035,4 +1047,11 @@ width:100%
 .digital-choose-us-wrapper{
  background: url("/assests/img/technology-details/common-casestudy-bg.jpg") center/cover no-repeat;
 width:100%;
+}
+.case-study-details-hero-wrapper{
+background: url("/assests/img/case-study-details/case-study-hero-bg.jpg") center/cover no-repeat;
+width:100%;
+}
+.case-study-details-branding-wrapper .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+  
 }

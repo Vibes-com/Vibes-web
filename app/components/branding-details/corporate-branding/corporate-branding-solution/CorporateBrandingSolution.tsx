@@ -23,7 +23,7 @@ const cards = [
     },
 ];
 
-const CarporateBrandingSolution: React.FC = () => {
+const CorporateBrandingSolution: React.FC = () => {
     return (
         <section className="relative w-full bg-[#EEF4EF] py-20">
             <div className="container mx-auto px-4">
@@ -90,4 +90,4 @@ const CarporateBrandingSolution: React.FC = () => {
     );
 };
 
-export default CarporateBrandingSolution;
+export default CorporateBrandingSolution;
