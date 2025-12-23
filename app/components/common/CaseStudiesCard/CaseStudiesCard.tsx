@@ -1,62 +1,72 @@
 import Image from "next/image";
+import Link from "next/link";
 import { ArrowUpIcon } from "lucide-react";
 import { Button3 } from "@/components/ui/button3";
 
-interface SingleCardProps {
-    id: number;
-    img: string;
-    title: string;
-    tags: string[];
-    buttonText?: string;
+/* ---------------- TYPES ---------------- */
+
+export interface SingleCaseStudyCard {
+  id: string;
+  img: string;
+  title: string;
+  slug: string;
+  tags: string[];
+  buttonText?: string;
 }
+
 interface CaseStudiesCardProps {
-    data: SingleCardProps[];
+  data: SingleCaseStudyCard[];
 }
+
+/* ---------------- COMPONENT ---------------- */
+
 export default function CaseStudiesCard({ data }: CaseStudiesCardProps) {
-    return (
+  return (
+    <>
+      {data.map((item) => (
+        <div
+          key={item.id}
+          className="bg-white mb-[70px] rounded-2xl p-3 shadow-[0_8px_30px_rgba(0,0,0,0.06)] w-full"
+        >
+          {/* Image */}
+          <div className="relative w-full h-[450px] rounded-xl overflow-hidden group">
+            <Image
+              src={item.img}
+              alt={item.title}
+              fill
+              className="object-fill transition-all duration-[900ms] ease-out group-hover:scale-110 group-hover:opacity-90"
+            />
+          </div>
 
-        data.map((item: SingleCardProps, index: number) => (
-            <div key={item.id} className="bg-white mb-[70px] rounded-2xl p-3 shadow-[0_8px_30px_rgba(0,0,0,0.06)] w-full " >
+          {/* Title */}
+          <h3 className="mt-5 text-[#1F1F1F] font-poppins font-semibold text-[28px]">
+            {item.title}
+          </h3>
 
-                {/* Image */}
-                < div className="relative w-full h-[450px] rounded-xl overflow-hidden group " >
-                    <Image
-                        src={item.img}
-                        alt={item.title}
-                        fill
-                        className="object-fill transition-all duration-[900ms] ease-out group-hover:scale-110 group-hover:opacity-90"
-                    />
-                </div>
+          {/* Tags + Button */}
+          <div className="flex items-center gap-3 mt-4 justify-between">
+            {/* Tags */}
+            <div className="flex gap-3 flex-wrap">
+              {item.tags.map((tag, index) => (
+                <span
+                  key={index}
+                  className="px-3 py-2 rounded-full text-[14px] border border-[#BCBCBC]"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
 
-                {/* Title */}
-                < h3 className="mt-5 text-[#1F1F1F] font-poppins font-semibold text-[28px] leading-[1] tracking-normal" >
-                    {item.title}
-                </h3 >
-
-                {/* Tags + Button */}
-                < div className="flex items-center gap-3 mt-4 justify-between" >
-
-                    {/* Tags */}
-                    < div className="flex gap-3" >
-                        {
-                            item.tags.map((tag, index) => (
-                                <span
-                                    key={index}
-                                    className="px-3 py-2 rounded-full font-poppins font-medium text-[14px] leading-[1] tracking-normal text-[2B2B2BDB] border border-[#BCBCBC]"
-                                >
-                                    {tag}
-                                </span>
-                            ))
-                        }
-                    </div >
-
-                    {/* Button */}
-                    < Button3 className="text-[#204667] p-[5px] flex items-center gap-2 hover:text-[#F4BE00] font-poppins font-semibold text-[16px] leading-[1] tracking-normal" >
-                        <span>{item.buttonText}</span>
-                        <ArrowUpIcon className="transform rotate-45" />
-                    </Button3 >
-                </div >
-            </div >
-        ))
-    );
+            {/* View More Link */}
+            <Link href={`/casestudy/${item.slug}`}>
+              <Button3 className="text-[#204667] flex items-center gap-2 hover:text-[#F4BE00]">
+                <span>{item.buttonText || "View More"}</span>
+                <ArrowUpIcon className="rotate-45" />
+              </Button3>
+            </Link>
+          </div>
+        </div>
+      ))}
+    </>
+  );
 }

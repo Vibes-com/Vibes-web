@@ -1,25 +1,27 @@
+"use client";
+
 import SectionWithSlider from "../common/SectionWithSlider/SectionWithSlider";
+import { useGetTechnologyServicesQuery } from "@/app/redux/api/technologyApi";
 
 export default function Technology() {
+  const { data, isLoading, isError } = useGetTechnologyServicesQuery();
+
+  if (isLoading) return null; // or loader
+  if (isError || !data?.service_list?.length) return null;
+
+  const service = data.service_list[0];
+
   return (
     <div className="technology-wrapper">
-
       <SectionWithSlider
         heading="Service"
-        title="Technology"
-        highlight="Solutions"
-        description="Turning Ideas into Intelligent Digital Platforms.Responsive websites, mobile apps, enterprise systems, and full tech ecosystems designed to future-proof brands."
-        tags={["E-commerce Development", "Website Development", "PMIS Solutions", "App Development"]}
+        title={service.name}
+        highlight={service.sub_name}
+        description={service.description}
+        tags={service.tags.split(",").map((tag) => tag.trim())}
         buttonText="Explore Tech Solutions"
-        images={[
-          "/assests/img/home/technology-img-1.jpg",
-          "/assests/img/home/technology-img-2.jpg",
-          "/assests/img/home/technology-img-3.jpg",
-          "/assests/img/home/technology-img-4.jpg",
-
-        ]}
-
-        reverse={false}   // slider left text right
+        images={service.image_gallery.map((img) => img.url)}
+        reverse={false}
       />
     </div>
   );

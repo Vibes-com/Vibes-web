@@ -11,8 +11,11 @@ import "swiper/css/pagination";
 import SlideUp from "../animations/SlideUp";
 import { useGetAllCaseStudiesQuery } from "@/app/redux/api/caseStudyApi";
 // import { useGetAllCaseStudiesQuery } from "@/store/services/caseStudyApi";
+import { useRouter } from "next/navigation";
+
 
 export default function CaseStudies() {
+    const router = useRouter();
 
     const { data, isLoading, isError } = useGetAllCaseStudiesQuery();
 
@@ -96,10 +99,18 @@ export default function CaseStudies() {
                                             </div>
                                             )}
 
-                                        <Button3 className="text-[#204667] p-[5px] flex items-center gap-2 hover:text-[#F4BE00]">
+                                        <Button3
+                                            className="text-[#204667] p-[5px] flex items-center gap-2 hover:text-[#F4BE00]"
+                                            onClick={() =>
+                                                router.push(
+                                                `/casestudy/${item.slug || item.client_slug}`
+                                                )
+                                            }
+                                            >
                                             <span>View More</span>
                                             <ArrowUpIcon className="transform rotate-45" />
-                                        </Button3>
+                                            </Button3>
+
                                     </div>
 
                                 </div>

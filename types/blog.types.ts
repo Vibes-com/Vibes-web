@@ -1,5 +1,6 @@
 export interface Blog {
   blog_id: number;
+  banner_img:string;
   blog_title: string;
   blog_slug: string;
   blog_description: string;
@@ -15,6 +16,7 @@ export interface BlogResponse {
 
 export interface SingleBlogResponse {
   success: boolean;
+  banner_img:string;
   blog: Blog;
   blog_title: string;
   blog_description: string;

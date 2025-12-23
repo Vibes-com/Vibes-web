@@ -14,6 +14,7 @@ export const blogsApi = createApi({
       }),
     }),
 
+    
     // ✅ SINGLE BLOG BY SLUG
     getSingleBlog: builder.query<SingleBlogResponse, string>({
       query: (slug) => ({

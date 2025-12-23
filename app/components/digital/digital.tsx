@@ -1,25 +1,40 @@
+"use client";
+
 import SectionWithSlider from "@/app/components/common/SectionWithSlider/SectionWithSlider";
+import { useGetDigitalServicesQuery } from "@/app/redux/api/digitalApi";
 
 export default function Digital() {
+  const { data, isLoading, isError } = useGetDigitalServicesQuery();
+
+  // States
+  if (isLoading)
     return (
-        <div className="digital-wrapper">
-
-            <SectionWithSlider
-                heading="Service"
-                title="Digital"
-                highlight=" Marketing"
-                description="Strategy, Creativity & Data - Working as One.Performance-driven campaigns, content, SEO, automation, and analytics crafted to create seamless digital pathways for measurable growth."
-                tags={["SEO", "Social Media Management (B2B & B2C)", "Content Upliftment", "Performance Marketing"]}
-                buttonText="Discover More"
-                images={[
-                    "/assests/img/home/digital-img-1.jpg",
-                    "/assests/img/home/digital-img-2.jpg",
-                    "/assests/img/home/digital-img-3.jpg",
-                    "/assests/img/home/digital-img-4.jpg",
-                ]}
-
-                reverse={false}
-            />
-        </div>
+      <p className="text-center py-10 text-gray-500">
+        Loading digital services...
+      </p>
     );
+
+  if (isError || !data?.service_list?.length)
+    return (
+      <p className="text-center py-10 text-red-500">
+        Failed to load digital services
+      </p>
+    );
+
+  const service = data.service_list[0];
+
+  return (
+    <div className="digital-wrapper">
+      <SectionWithSlider
+        heading="Service"
+        title={service.name}
+        highlight={` ${service.sub_name}`}
+        description={service.description}
+        tags={service.tags.split(",").map((tag) => tag.trim())}
+        buttonText="Discover More"
+        images={service.image_gallery.map((img) => img.url)}
+        reverse={false}
+      />
+    </div>
+  );
 }

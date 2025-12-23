@@ -1,65 +1,32 @@
-'use client';
+"use client";
 
-import React from 'react';
-import CaseStudiesCard from '@/app/components/common/CommonCasestudy/CommonCasestudy';
+import CaseStudiesCard, {
+  SingleCaseStudyCard,
+} from "@/app/components/common/CaseStudiesCard/CaseStudiesCard";
+import { useGetAllCaseStudiesQuery } from "@/app/redux/api/caseStudyApi";
 
-/* UI card type (what CommonCasestudy expects) */
-export interface SingleCardProps {
-    id: number;
-    img: string;
-    title: string;
-    buttonText?: string;
-    tags?: string[];
+export default function Page() {
+  const { data, isLoading, isError } = useGetAllCaseStudiesQuery();
+
+  if (isLoading) return <p className="text-center py-10">Loading...</p>;
+  if (isError) return <p className="text-center py-10 text-red-500">Error</p>;
+
+  // ✅ MAP API → CARD TYPE
+  const cards: SingleCaseStudyCard[] =
+    data?.data?.map((item) => ({
+      id: item.id,
+      img: item.thumbnail,
+      title: item.client_name,
+      slug: item.slug || item.client_slug, // 🔥 FIX HERE
+      tags: item.tags ? item.tags.split(",").map((t) => t.trim()) : [],
+      buttonText: "View More",
+    })) || [];
+
+  return (
+    <section className="container mx-auto max-w-screen-xl px-4 py-16">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
+        <CaseStudiesCard data={cards} />
+      </div>
+    </section>
+  );
 }
-
-/* Raw case study type */
-export interface CaseStudy {
-    id: number;
-    img: string;
-    title: string;
-    buttonText: string;
-    tags: string[];
-}
-
-/* Static data */
-const cards: CaseStudy[] = [
-    {
-        id: 1,
-        img: '/assests/img/home/interio-heaven-img.jpg',
-        title: 'Interio Heaven',
-        buttonText: 'View More',
-        tags: ['Branding', 'Creative', 'Product Design'],
-    },
-    {
-        id: 2,
-        img: '/assests/img/home/tomarrow-india-img.jpg',
-        title: 'Tomorrow India',
-        buttonText: 'View More',
-        tags: ['Branding', 'Creative', 'Product Design'],
-    },
-    {
-        id: 3,
-        img: '/assests/img/home/mahakumbh-img.png',
-        title: 'Mahakumbh',
-        buttonText: 'View More',
-        tags: ['Branding', 'Creative', 'Product Design'],
-    },
-];
-
-const Page = () => {
-    const mappedCards: SingleCardProps[] = cards.map((item) => ({
-        id: item.id,
-        img: item.img,
-        title: item.title,
-        buttonText: item.buttonText,
-        tags: item.tags,
-    }));
-
-    return (
-        <div>
-            {/* <CaseStudiesCard data={mappedCards} /> */}
-        </div>
-    );
-};
-
-export default Page;

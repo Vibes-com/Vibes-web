@@ -4,4 +4,5 @@ export interface CaseStudy {
   title: string;
   buttonText: string;
   tags: string[];
+  slug: string;
 }
