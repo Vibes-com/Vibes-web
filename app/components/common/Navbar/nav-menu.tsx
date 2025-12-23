@@ -80,7 +80,7 @@ export const NavMenu = (props: ComponentProps<typeof NavigationMenu>) => {
 
                 <NavigationMenuItem>
                     <NavigationMenuLink asChild className={linkClass(isActive("/case-studies"))}>
-                        <Link href="/casestudy">CASE STUDIES</Link>
+                        <Link href="/case-study">CASE STUDIES</Link>
                     </NavigationMenuLink>
                 </NavigationMenuItem>
 

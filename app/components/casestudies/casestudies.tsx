@@ -103,7 +103,7 @@ export default function CaseStudies() {
                                             className="text-[#204667] p-[5px] flex items-center gap-2 hover:text-[#F4BE00]"
                                             onClick={() =>
                                                 router.push(
-                                                `/casestudy/${item.slug || item.client_slug}`
+                                                `/case-study/${item.slug || item.client_slug}`
                                                 )
                                             }
                                             >
