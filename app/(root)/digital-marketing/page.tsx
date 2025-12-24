@@ -8,11 +8,11 @@ import CommonCasestudy from "@/app/components/common/CommonCasestudy/CommonCases
 import MarqueeTabsSlider from "@/app/components/common/MarqueeTabsSlider/MarqueeTabsSlider";
 import DigitalMarketingDetailsHero from "@/app/components/digital-marketing-details/digital-marketing-hero/DigitalMarketingDetailsHero";
 import DigitalMarketingSolutions from "@/app/components/digital-marketing-details/digital-marketing-solutions/DigitalMarketingSolutions";
-import WhyChooseUs from "@/app/components/digital-marketing-details/why-choose-us/WhyChooseUs";
 import SuccessStory from "@/app/components/technology-details/success-story/SuccessStory";
 
 import { useGetAllCaseStudiesQuery } from "@/app/redux/api/caseStudyApi";
 import { SingleCaseStudyCard } from "@/app/components/common/CaseStudiesCard/CaseStudiesCard";
+import WhyChooseUsSection from "@/app/components/common/WhyChooseUsSection/WhyChooseUsSection";
 
 const logos = [
   "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/buzaria-logo.png",
@@ -46,7 +46,39 @@ export default function Page() {
     <div>
       <DigitalMarketingDetailsHero />
       <DigitalMarketingSolutions />
-      <WhyChooseUs />
+      <WhyChooseUsSection
+        badgeText="Why Choose Us"
+        heading={
+          <>
+            A Smarter Way to <br />
+            <span className="font-semibold">Build Digital Brands</span>
+          </>
+        }
+        description="Vibes applies a structured, insight-led digital marketing framework that aligns strategy, creativity, and performance."
+        cards={[
+          {
+              title: "Strategic Alignment",
+              desc: "Digital strategies aligned with business goals, market realities, and customer intent to drive measurable outcomes.",
+              dark: true,
+          },
+          {
+              title: "Audience Intelligence",
+              desc: "Data-driven insights and behavioral analysis guide precise targeting, messaging, and channel selection.",
+              dark: false,
+          },
+          {
+              title: "Omnichannel Execution",
+              desc: "Search, media, content, and social function as one integrated system to maximize performance and efficiency.",
+              dark: false,
+          },
+          {
+              title: "Performance Optimization",
+              desc: "Continuous monitoring and refinement ensure relevance, scalability, and sustained digital growth.",
+              dark: true,
+          },
+      ]}
+      />
+
 
       {/* CASE STUDIES */}
       {isLoading && (
