@@ -36,7 +36,7 @@ const slides: SlideItem[] = [
       { src: "/assests/img/home/brand-img-4.png" },
     ],
   },
-   {
+  {
     type: "video",
     src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video1.mp4",
   },
@@ -58,7 +58,7 @@ const slides: SlideItem[] = [
       { src: "/assests/img/home/brand-img-4.png" },
     ],
   },
-   {
+  {
     type: "video",
     src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video1.mp4",
   },
@@ -80,7 +80,7 @@ const slides: SlideItem[] = [
       { src: "/assests/img/home/brand-img-4.png" },
     ],
   },
-   {
+  {
     type: "video",
     src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video1.mp4",
   },
@@ -129,14 +129,14 @@ const page = () => {
       <CaseStudies />
       {/* <SocialStorytelling /> */}
       <MarqueeStorySection
-      badge="WORK SHOWCASE"
-      highlightTitle="Brand Stories"
-      title="in Motion"
-      description="A curated showcase of visual work that shapes brand perception across channels."
-      slides={slides}
-      ctaText="Talk to us today"
-      bgImage="/assests/img/home/brand-stories-bg.png"
-    />
+        badge="WORK SHOWCASE"
+        highlightTitle="Brand Stories"
+        title="in Motion"
+        description="A curated showcase of visual work that shapes brand perception across channels, including social campaigns, identity design, and custom website builds."
+        slides={slides}
+        ctaText="Talk to us today"
+        bgImage="/assests/img/home/brand-stories-bg.png"
+      />
       {/* <TeamMembers /> */}
       <MilestoneMetrics />
       {/* <MarqueeTabsSlider /> */}

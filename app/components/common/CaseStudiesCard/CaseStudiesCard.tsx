@@ -46,7 +46,6 @@ export default function CaseStudiesCard({ data }: CaseStudiesCardProps) {
 
           {/* Tags + Button */}
           <div className="flex items-center gap-3 mt-4 justify-between">
-            {/* Tags */}
             <div className="flex gap-3 case-study-tags-gap flex-wrap">
               {item.tags.map((tag, index) => (
                 <span

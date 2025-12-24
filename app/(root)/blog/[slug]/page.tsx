@@ -2,6 +2,7 @@
 
 import React, { use } from "react";
 import { useGetSingleBlogQuery } from "@/app/redux/api/blogApi";
+import BlogShareButtons from "@/app/components/blog/blog-share-btn/BlogShareBtn";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -26,15 +27,22 @@ export default function BlogDetailPage({ params }: PageProps) {
           {blog?.blog_title}
         </h1>
       </div>
-      <div className="max-w-4xl mx-auto pb-20 pt-10 px-4 blog-content">
-        <h2 className="!mt-0">Overview</h2>
-        {/* Blog Description (HTML) */}
-        <div
-          className="prose max-w-none"
-          dangerouslySetInnerHTML={{
-            __html: blog?.blog_description || "",
-          }}
-        />
+      <div className="blog-content-wrapper section-gap">
+        <div className="container mx-auto max-w-screen-xl px-4 md:px-8  blog-content">
+          <BlogShareButtons />
+          <h2 className=" flex justify-center font-poppins !font-bold !text-[50px] leading-[116%] tracking-normal  pb-10 capitalize  items-center gap-1 ">
+            <span className="!text-[#1F1F1F]  !text-[50px]">–</span>
+            OVERVIEW
+            <span className="!text-[#1F1F1F] !text-[50px]">–</span>
+          </h2>
+          {/* Blog Description (HTML) */}
+          <div
+            className="prose max-w-none"
+            dangerouslySetInnerHTML={{
+              __html: blog?.blog_description || "",
+            }}
+          />
+        </div>
       </div>
     </section>
   );
