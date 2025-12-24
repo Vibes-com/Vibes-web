@@ -50,7 +50,8 @@ const TeamDreamSection = () => {
                             </h3>
 
                             <p className="text-[#525252] mt-5 max-w-md">
-                                Vibes has shaped brand evolution for 15+ years through 360° technology, branding, and digital excellence. A unified ecosystem fuels stronger identity, higher performance, and future-ready growth driven by the spirit of One Team, One Dream, Together for Tomorrow
+                                Vibes has shaped brand evolution for 15+ years through 360° technology, branding, and digital excellence. A unified ecosystem fuels stronger identity, higher performance, and future-ready growth driven by the spirit of One Team, One Dream, Together for Tomorrow.
+
                             </p>
 
                             <Button2 className="mt-5 p-[20px]  hover:border-[#2B4C69] hover:border-[2px] hover:text-[#F4BE00] hover:bg-transparent">
@@ -81,7 +82,7 @@ const TeamDreamSection = () => {
                     {/* Card 1 */}
                     <SlideRight delay={0.5}>
                         <div className="p-8 one-team-card bdr"
-                        onMouseEnter={() => setShowTeam(true)}
+                            onMouseEnter={() => setShowTeam(true)}
                         >
                             <h3 className="font-semibold text-[20px] leading-[123%] mb-3">One Team</h3>
                             <p className="font-poppins font-normal text-[14px] leading-[130%] text-[#191919DB]">

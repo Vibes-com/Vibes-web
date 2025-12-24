@@ -17,7 +17,7 @@ const CorporateWorkflow = () => {
                     }}
                     loop
                     spaceBetween={8}
-                    slidesPerView={3}
+                    slidesPerView={2}
                     breakpoints={{
                         0: {
                             slidesPerView: 1.2,
@@ -45,6 +45,7 @@ const CorporateWorkflow = () => {
                                     alt="Integrated Brand Identity"
                                     width={720}
                                     height={674}
+                                    unoptimized
                                     className="w-full h-auto object-cover transition-transform duration-700 ease-in-out hover:scale-110"
                                 />
                             </div>

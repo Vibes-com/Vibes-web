@@ -1059,15 +1059,48 @@ background: #204667;
 .blog-content h2{
   margin: 20px 0 5px 0;
 }
-.blog-content h2, .blog-content h2 strong{
-  font-size: 1.3rem;
-  color: #f4be00;
-  font-weight: 500;
+.blog-content h1{
+  color: #1F1F1F;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  font-size: 28px;
 }
-.blog-content p{
-  font-size: .85rem;
-  color: #333333;
-}.tech-solution-wrapper{
+.blog-content h2,
+.blog-content h3,
+.blog-content h4,
+.blog-content h5,
+.blog-content h6 {
+  color: #1F1F1F;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+}
+
+.blog-content p,
+.blog-content li,
+.blog-content span {
+  color: #707070;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0;
+}
+
+.blog-content a{
+   color: #F4BE00;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 600; 
+}
+.blog-content a:hover{
+   color: #1F1F1F;
+   font-weight: 600; 
+}
+.blog-content-wrapper{
+background: url("/assests/img/digital-m-details/dm-solution-bg.png") center/cover no-repeat;
+width:100%
+}
+.tech-solution-wrapper{
 background: url("/assests/img/technology-details/technology-key-services-bg.jpg") center/cover no-repeat;
 width:100%;
 }
@@ -1120,4 +1153,17 @@ height: 250px;
 background: url("/assests/img/case-study-details/casestudy-listing-bg.png") center/cover no-repeat;
 width:100%;
 height:503px;
+}
+.blog-listing-hero-wrapper{
+background: url("/assests/img/blog/blog-listing-bg.jpg") center/cover no-repeat;
+width:100%;
+height:503px;
+}
+.blog-listing-wrapper{
+ background: url("/assests/img/technology-details/common-casestudy-bg.jpg") center/cover no-repeat;
+width:100%;
+}
+.blog-listig-bottom-wrapper{
+ background: url("/assests/img/digital-m-details/dm-solution-bg.png") center/cover no-repeat;
+width:100%
 }

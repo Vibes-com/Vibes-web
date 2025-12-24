@@ -29,14 +29,14 @@ export default function Gallery() {
         backgroundImage="/assests/img/culture/culture-banner.jpg"
         title={
           <h1 className="font-poppins font-normal text-[60px] leading-[116%] capitalize text-white">
-            Get your Business streamlined for success.
+            Inside the Culture That
             <br />
-            <span className="relative z-10 font-poppins font-semibold text-[65px] text-[#F4BE00]">
-              Our Culture
+            <span className=" hero-highlight relative z-10 font-poppins font-semibold text-[65px] text-[#F4BE00]">
+              Drives Vibes
             </span>
           </h1>
         }
-        description="We’re ready to turn ideas into meaningful digital experiences—let’s connect and build something impactful together."
+        description=" A glimpse into everyday moments of collaboration, celebration, and team bonding that shape the spirit of Vibes."
       />
 
       {/* CONTENT */}
@@ -53,13 +53,11 @@ export default function Gallery() {
           </div>
 
           <h3 className="text-center font-poppins font-medium text-[40px]">
-            <span className="font-semibold">Brand Stories</span> in Motion
+            <span className=" relative w-fit highlight font-semibold">Beyond the</span> Desk
           </h3>
 
           <p className="text-[#707070] text-center max-w-2xl mx-auto mb-16 mt-5">
-            A curated showcase of visual work that shapes brand perception across
-            channels, including social campaigns, identity design, and custom
-            website builds.
+            Snapshots of teamwork, connection, and the people who bring energy and purpose beyond the workplace.
           </p>
 
           {/* STATES */}

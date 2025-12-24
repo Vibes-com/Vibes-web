@@ -46,18 +46,26 @@ export default function CaseStudies() {
                 <div className="flex justify-between items-start">
                     <div>
                         <h3 className="font-poppins font-medium text-[48px] leading-[123%]">
-                            Vision to <span className="highlight font-semibold">Verified Results</span>
+                            Vision to <span className=" z-9 relative w-fit highlight font-semibold">Verified Results</span>
                         </h3>
                         <p className="text-[#707070] text-[16px] mt-5 max-w-2xl">
-                            Turning brand challenges into growth stories with strategies to solve, scale, and sustain.
+                            Turning brand challenges into powerful growth stories with strategies crafted to solve, scale, and sustain.These case studies show how clear vision and 360° digital expertise drive real results.
                         </p>
                     </div>
+<<<<<<< HEAD
                     <Link href="/case-study">
                         <Button2 className="cursor-pointer mt-5 p-[20px] hover:border-[#2B4C69] hover:border-[2px] hover:text-[#F4BE00] hover:bg-transparent">
                             <span>Explore Case Studies</span>
                             <ArrowUpIcon className="transform rotate-45" />
                         </Button2>
                     </Link>
+=======
+
+                    <Button2 className="mt-5 p-[20px] hover:border-[#2B4C69] hover:border-[2px] hover:text-[#F4BE00] hover:bg-transparent">
+                        <span>Dive Into Success Stories</span>
+                        <ArrowUpIcon className="transform rotate-45" />
+                    </Button2>
+>>>>>>> ba54487433a89911c434e75dfca5e3bc06e061f1
                 </div>
 
                 <SlideUp delay={0.5}>
@@ -91,27 +99,27 @@ export default function CaseStudies() {
                                     </h3>
 
                                     <div className="flex items-center gap-3 mt-4 justify-between">
-                                       {item.tags && item.tags.length > 0 && (
+                                        {item.tags && item.tags.length > 0 && (
                                             <div className="flex gap-3 flex-wrap">
                                                 {item.tags.split(",").map((tag, index) => (
-                                                <span key={index} className="px-3 py-1 bg-[#F2F4F7] text-[10px] rounded-full">
-                                                    {tag.trim()}
-                                                </span>
+                                                    <span key={index} className="px-3 py-1 bg-[#F2F4F7] text-[10px] rounded-full">
+                                                        {tag.trim()}
+                                                    </span>
                                                 ))}
                                             </div>
-                                            )}
+                                        )}
 
                                         <Button3
                                             className="text-[#204667] p-[5px] flex items-center gap-2 hover:text-[#F4BE00]"
                                             onClick={() =>
                                                 router.push(
-                                                `/case-study/${item.slug || item.client_slug}`
+                                                    `/case-study/${item.slug || item.client_slug}`
                                                 )
                                             }
-                                            >
+                                        >
                                             <span>View More</span>
                                             <ArrowUpIcon className="transform rotate-45" />
-                                            </Button3>
+                                        </Button3>
 
                                     </div>
 

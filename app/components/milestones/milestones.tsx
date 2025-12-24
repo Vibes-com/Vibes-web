@@ -134,8 +134,8 @@ export default function MilestoneSection() {
                 </div>
                 <h3 className="font-poppins font-medium text-[48px] leading-[123%] tracking-normal text-[#FFFFFF]"><span className="highlight relative z-9 w-fit">Milestone</span> Metrics</h3>
 
-                <p className="text-[#FFFFFFDB] font-normal text-[16px] leading-[130%] tracking-[0] text-center max-w-2xl mx-auto mb-16 mt-5">
-                    A showcase of achievements and performance benchmarks that reflect our growth and expertise.
+                <p className="text-[#FFFFFFDB] font-normal text-[16px] leading-[130%] tracking-[0] text-center max-w-3xl mx-auto mb-16 mt-5">
+                    A clear snapshot of the brands, projects, and successes we’ve built together, reflecting the scale of our partnerships and the momentum powering every milestone.
                 </p>
 
                 <div className="grid grid-cols-5 gap-10">
@@ -170,10 +170,10 @@ function CounterBox({ value, label, animate }: { value: number; label: string; a
 
     return (
         <SlideUp delay={0.5}>
-        <div className="flex flex-col items-center text-center">
-            <p className="text-[60px] font-semibold text-[#FFFFFF] leading-none">{count}+</p>
-            <p className="text-sm text-[#FFFFFF] mt-3 max-w-[170px] leading-snug">{label}</p>
-        </div>
+            <div className="flex flex-col items-center text-center">
+                <p className="text-[60px] font-semibold text-[#FFFFFF] leading-none">{count}+</p>
+                <p className="text-sm text-[#FFFFFF] mt-3 max-w-[170px] leading-snug">{label}</p>
+            </div>
         </SlideUp>
     );
 }

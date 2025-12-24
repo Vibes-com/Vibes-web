@@ -103,30 +103,30 @@ const ContactForm = () => {
   return (
     <section className="w-full pb-16">
       <div className="tech-solution-wrapper section-gap">
-            <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
-                <div className="flex justify-center mb-5">
-                    <div className="
+        <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
+          <div className="flex justify-center mb-5">
+            <div className="
         px-6 py-2 
         rounded-full 
         border border-[#F4BE00] 
         inline-flex items-center gap-2
       ">
-                        <span
-                            className="w-2 h-2 rounded-full bg-[#F4BE00]"
-                        ></span>
-                        <span className="font-[Poppins] font-semibold text-[10px] leading-[1.23] uppercase text-[#F4BE00]">
-                            Connect us
-                        </span>
-                    </div>
-                </div>
-                <h3 className=" text-center font-poppins font-medium text-[40px] leading-[1.23] tracking-norma]">
-                    From idea to interface <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[40px] leading-[1.23] tracking-normal">let’s Connect</span>
-                </h3>
-                <p className="text-[#707070] font-normal text-[16px] leading-[130%] tracking-[0] text-center max-w-2xl mx-auto mt-5">
-                    We’re ready to turn ideas into meaningful digital experiences<br />let’s connect and build something impactful together.
-                </p>
-            </div >
-        </div>
+              <span
+                className="w-2 h-2 rounded-full bg-[#F4BE00]"
+              ></span>
+              <span className="font-[Poppins] font-semibold text-[10px] leading-[1.23] uppercase text-[#F4BE00]">
+                Connect With us
+              </span>
+            </div>
+          </div>
+          <h3 className=" text-center font-poppins font-medium text-[40px] leading-[1.23] tracking-norma]">
+            Partner for Digital <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[40px] leading-[1.23] tracking-normal">Excellence</span>
+          </h3>
+          <p className="text-[#707070] font-normal text-[16px] leading-[130%] tracking-[0] text-center max-w-2xl mx-auto mt-5">
+            From concept to execution, building digital experiences that drive long-term value.
+          </p>
+        </div >
+      </div>
       <div className="container mx-auto px-4">
 
 
