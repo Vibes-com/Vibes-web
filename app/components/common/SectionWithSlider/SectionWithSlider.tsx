@@ -7,6 +7,7 @@ import { Button4 } from "@/components/ui/button4";
 import { ArrowRight, ArrowLeft } from "lucide-react";
 import { ArrowUpIcon } from "lucide-react";
 import "swiper/css";
+import Link from "next/link";
 
 interface SectionProps {
   heading: string;
@@ -17,6 +18,7 @@ interface SectionProps {
   buttonText: string;
   images: string[];
   reverse?: boolean;
+  btnlink?:string;
 }
 
 const SectionWithSlider: FC<SectionProps> = ({
@@ -28,6 +30,7 @@ const SectionWithSlider: FC<SectionProps> = ({
   buttonText,
   images,
   reverse = false,
+  btnlink
 }) => {
   const swiperRef = useRef<any>(null);
 
@@ -82,6 +85,7 @@ const SectionWithSlider: FC<SectionProps> = ({
           </div>
 
           <div className="flex items-center gap-4 mt-4">
+            
             <button
               onClick={goPrev}
               className="w-[48px] h-[48px] rounded-xl border border-white/40 flex items-center justify-center text-white cursor-pointer bg-[rgba(255,255,255,0.5)]">
@@ -95,11 +99,12 @@ const SectionWithSlider: FC<SectionProps> = ({
               <ArrowRight size={22} />
             </button>
           </div>
-
-          <Button4 className="mt-1 p-[18px] hover:text-[#F4BE00]">
-            {buttonText}
-            <ArrowUpIcon className="transform rotate-45" />
-          </Button4>
+          <Link href={`${btnlink}`}>
+            <Button4 className="mt-1 cursor-pointer p-[18px] hover:text-[#F4BE00]">
+              {buttonText}
+              <ArrowUpIcon className="transform rotate-45" />
+            </Button4>
+          </Link>
         </div>
 
         {/* RIGHT SIDE SLIDER */}

@@ -137,8 +137,10 @@ const MarqueeStorySection = ({
       {/* CTA */}
       <div className="text-center mt-12">
         <Button2 className="p-[20px] hover:border-[#2B4C69] hover:border-[2px] hover:text-[#F4BE00] hover:bg-transparent">
-          <span>{ctaText}</span>
-          <ArrowUpIcon className="rotate-45" />
+          <a className="flex items-center" href="tel:+91-8586932861">
+            <span>{ctaText}</span>
+            <ArrowUpIcon className="rotate-45 transform" />
+          </a>
         </Button2>
       </div>
 

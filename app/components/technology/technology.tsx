@@ -22,6 +22,7 @@ export default function Technology() {
         buttonText="Explore Tech Solutions"
         images={service.image_gallery.map((img) => img.url)}
         reverse={false}
+        btnlink="/technology"
       />
     </div>
   );

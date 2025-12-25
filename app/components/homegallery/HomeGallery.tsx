@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Button2 } from "@/components/ui/button2";
 import { ArrowUpIcon } from "lucide-react";
 import SlideUp from '../animations/SlideUp';
+import Link from 'next/link';
 
 const HomeGallery = () => {
   return (
@@ -89,10 +90,12 @@ const HomeGallery = () => {
           </div>
         </SlideUp>
         <div className="text-center mt-12">
-          <Button2 className="mt-5 p-[20px] hover:border-[#2B4C69] hover:border-[2px] hover:text-[#F4BE00] hover:bg-transparent">
+          <Link href="/gallery">
+          <Button2 className="mt-5 p-[20px] cursor-pointer hover:border-[#2B4C69] hover:border-[2px] hover:text-[#F4BE00] hover:bg-transparent">
             <span>Peek Behind the Magic</span>
             <ArrowUpIcon className="transform rotate-45" />
           </Button2>
+          </Link>
         </div>
       </div>
     </section>

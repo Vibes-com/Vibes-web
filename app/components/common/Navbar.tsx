@@ -33,12 +33,12 @@ const Navbar = () => {
           <NavMenu className="hidden md:block" />
 
           <div className="flex items-center gap-3">
-            <Button
-              className="bg-[#F4BE00] text-black rounded-full px-5 py-5 flex items-center space-x-5  transition  hover:border-[#F4BE00] hover:border-[2px] hover:text-white rounded-full hover:bg-transparent"
+            <a href="tel:+91-8586932861"
+              className="bg-[#F4BE00] text-black px-4 text-sm py-1 flex items-center space-x-5 transition  border-[2px] border-[#F4BE00] hover:text-white rounded-full hover:bg-transparent"
             >
-              <span>Talk to us today</span>
-              <ArrowUpIcon className="transform rotate-45" />
-            </Button>
+                <span  className="mx-1">Talk to us today</span>
+                <ArrowUpIcon className="transform rotate-45" />
+            </a>
             {/* Mobile Menu */}
             <div className="md:hidden">
               <NavigationSheet />

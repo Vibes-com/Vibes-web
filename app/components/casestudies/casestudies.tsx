@@ -12,6 +12,7 @@ import SlideUp from "../animations/SlideUp";
 import { useGetAllCaseStudiesQuery } from "@/app/redux/api/caseStudyApi";
 // import { useGetAllCaseStudiesQuery } from "@/store/services/caseStudyApi";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 
 export default function CaseStudies() {

@@ -36,7 +36,7 @@ const Footer = () => {
 
 
       <div className="fixed right-0 bottom-15 flex flex-col gap-3 z-[99]">
-        <div className="flex justify-end">
+        {/* <div className="flex justify-end">
           <div className="group w-[50px] hover:w-[200px] h-[46px] 
         bg-[#F4BE00] rounded-tl-full rounded-bl-full flex items-center px-4 cursor-pointer
         transition-all duration-700  shadow-lg overflow-hidden">
@@ -47,7 +47,7 @@ const Footer = () => {
               Coffee Table Book
             </span>
           </div>
-        </div>
+        </div> */}
 
         <div className="flex justify-end">
           <div className="group w-[50px] hover:w-[200px] h-[46px] 
@@ -68,14 +68,16 @@ const Footer = () => {
     bg-[#24CC63] rounded-tl-full rounded-bl-full flex items-center px-4 cursor-pointer
     transition-all duration-700 shadow-lg overflow-hidden"
           >
-            <FaWhatsapp size={20} className="text-white shrink-0" />
+            <a className="flex items-center" target="_blank" href="https://api.whatsapp.com/send?phone=918586932861">
+              <FaWhatsapp size={20} className="text-white shrink-0" />
 
-            <span
-              className="ml-3 text-white font-medium text-sm
-      opacity-0 group-hover:opacity-100 transition-opacity duration-700 whitespace-nowrap"
-            >
-              WhatsApp
-            </span>
+              <span
+                className="ml-3 text-white font-medium text-sm
+        opacity-0 group-hover:opacity-100 transition-opacity duration-700 whitespace-nowrap"
+              >
+                WhatsApp
+              </span>
+            </a>
           </div>
         </div>
 
