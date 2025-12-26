@@ -740,8 +740,8 @@ content: "";
 .hero-highlight1::before{
 content: "";
     z-index: -9;
-    background: #C32B2B;
-    width: 30%;
+    background: #ffffff;
+    width: 120px;
     height: 8px;
     position: absolute;
     bottom: -12px;
