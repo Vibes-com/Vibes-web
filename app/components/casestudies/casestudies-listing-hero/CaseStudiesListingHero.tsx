@@ -13,7 +13,7 @@ const CaseStudiesListingHero: React.FC = () => {
                         <h1 className="font-poppins font-normal text-[60px] leading-[116%] tracking-normal capitalize text-[#FFFFFF]">
                             oUR
                             <br />
-                            <span className="hero-highlight relative z-9 w-fit font-poppins font-semibold text-[65px] leading-[116%] tracking-normal capitalize text-[#F4BE00]">cASESTUDIES</span>
+                            <span className="hero-highlight relative z-9 w-fit font-poppins font-semibold text-[65px] leading-[116%] tracking-normal capitalize text-[#F4BE00]">CASE STUDIES</span>
                         </h1>
 
                         <p className="mt-10 font-poppins font-semibold text-[16px] leading-[128%] tracking-normal capitalize text-[#FFFFFF]">

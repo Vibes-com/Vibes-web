@@ -52,11 +52,12 @@ export default function CaseStudies() {
                             Turning brand challenges into powerful growth stories with strategies crafted to solve, scale, and sustain.These case studies show how clear vision and 360° digital expertise drive real results.
                         </p>
                     </div>
-
-                    <Button2 className="mt-5 p-[20px] hover:border-[#2B4C69] hover:border-[2px] hover:text-[#F4BE00] hover:bg-transparent">
-                        <span>Dive Into Success Stories</span>
-                        <ArrowUpIcon className="transform rotate-45" />
-                    </Button2>
+                    <Link href="/case-study">
+                        <Button2 className="mt-5 p-[20px] cursor-pointer hover:border-[#2B4C69] hover:border-[2px] hover:text-[#F4BE00] hover:bg-transparent">
+                            <span>Dive Into Success Stories</span>
+                            <ArrowUpIcon className="transform rotate-45" />
+                        </Button2>
+                    </Link>
                 </div>
 
                 <SlideUp delay={0.5}>
