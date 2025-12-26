@@ -15,34 +15,28 @@ const AppDevelopment = () => {
     <div>
       <WebDevelopmentHero />
       <AboutSection
-        badgeText="ABOUT US"
-        heading="IT Solutions Engineered for"
-        highlightText="Speed and Scalability"
-        description="Vibes develops secure, bespoke web platforms engineered for high performance, scalability, and reliability."
+        badgeText="Services"
+        heading="Apps Built for"
+        highlightText="Performance"
+        description="Custom-built mobile applications that support business growth across Android and iOS platforms."
         mainImage="/assests/img/web-development/webdevelopment-about-img.png"
         features={[
           {
             icon: "/assests/img/web-development/built-way-icon-1.png",
-            title: <>Custom-Coded,<br />Secure Builds</>,
+            title: <>Android App Development</>,
+            subtitle: <>Robust Android applications built for performance, security, and seamless user experiences across devices</>,
           },
           {
             icon: "/assests/img/web-development/built-way-icon-1.png",
-            title: <>High-Speed <br />Performance</>,
+            title: <>iOS App Development</>,
+            subtitle: <>High-quality iOS apps designed for speed, stability, and compliance with Apple’s design and performance standards</>,
           },
-          {
-            icon: "/assests/img/web-development/built-way-icon-1.png",
-            title: <>Scalable <br />Architecture</>,
-          },
-          {
-            icon: "/assests/img/web-development/built-way-icon-1.png",
-            title: <>On-Time Project<br />Delivery</>,
-          },
+
         ]}
       />
-
       <WebDevelopmentWorkflow />
       <WhyChooseSection
-        badgeText="Why Choose Us"
+        badgeText="Why Choose Vibes?"
         heading={
           <>
             <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[40px] leading-[1.23] tracking-normal">Choose Vibes.</span> Choose Certainty.
@@ -72,7 +66,6 @@ const AppDevelopment = () => {
           },
         ]}
       />
-
       <TechnologyStackSection
         badgeText="Technology we use"
         heading={
@@ -99,7 +92,6 @@ const AppDevelopment = () => {
           "/assests/img/web-development/mongodb-logo.png",
         ]}
       />
-
       <BuiltWay />
       <SuccessStory
         title="Let’s Build Something Powerful"

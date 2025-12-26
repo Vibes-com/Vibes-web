@@ -1173,16 +1173,16 @@ width:100%;
 }
 
 .branding-customer-wrapper .customer-slider .slick-dots li.slick-active button:before {
-      opacity: 1;
-    content: "";
-    background-color: #f4be00;
-    border-radius: 61px;
-    width: 13px;
-    height: 20px;
+opacity: 1;
+content: "";
+background-color: #f4be00;
+border-radius: 61px;
+width: 13px;
+height: 20px;
 margin: -4px 0px;
-    display: block;
-    color: #f4be00 !important;
-    border: none !important;
+display: block;
+color: #f4be00 !important;
+border: none !important;
 }
 .branding-customer-wrapper .slick-dots li.slick-active button:before {
 width: 12px;
@@ -1203,16 +1203,15 @@ padding: 0;
 display: inline-block;
 position: relative;
 }
+
 .branding-customer-wrapper  .slick-dots li button:before {
 font-size: 0 !important;  
 } 
+
 .branding-customer-wrapper  .slick-dots li button {
 width: 4px;
 height: 4px;
 background:#466e5999;
 border-radius: 50%;
 border: 1px solid #466E59
-}
-[data-radix-navigation-menu-trigger] {
-  background: transparent !important;
 }

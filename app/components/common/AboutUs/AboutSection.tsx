@@ -3,6 +3,7 @@ import Image from "next/image";
 type Feature = {
   icon: string;
   title: React.ReactNode;
+  subtitle: React.ReactNode;
 };
 
 type AboutSectionProps = {
@@ -68,7 +69,7 @@ const AboutSection = ({
             {/* Features */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-10">
               {features.map((feature, index) => (
-                <div key={index} className="flex items-start gap-4">
+                <div key={index} className="flex items-start gap-4 flex-wrap">
                   <div className="w-15 h-15 rounded-full bg-[#466E59] flex items-center justify-center">
                     <Image
                       src={feature.icon}
@@ -77,10 +78,17 @@ const AboutSection = ({
                       height={25}
                     />
                   </div>
-                  <p className="font-poppins font-medium text-[18px] leading-[1.2] tracking-normal text-[#525252ED]">
-                    {feature.title}
-                  </p>
+                  <div>
+                    <p className="font-poppins font-medium text-[18px] leading-[1.2] tracking-normal text-[#525252ED] mb-3">
+                      {feature.title}
+                    </p>
+                    <span className="text-[#525252] text-[12px]">
+                      {feature.subtitle}
+                    </span>
+                  </div>
+
                 </div>
+
               ))}
             </div>
 
