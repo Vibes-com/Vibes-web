@@ -34,7 +34,7 @@ const services: ServiceItem[] = [
             "PR, Photoshoot & Videos",
             "Graphic Design",
         ],
-        url: "/branding/corporate-branding",
+        url: "/branding/brand-upliftment",
     },
     {
         title: "Brand Communication & Strategy",
@@ -46,7 +46,7 @@ const services: ServiceItem[] = [
             "Storytelling",
             "Brand Positioning",
         ],
-        url: "/branding/corporate-branding",
+        url: "/branding/brand-communication-and-strategy",
     },
 ];
 
