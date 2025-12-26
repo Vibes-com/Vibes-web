@@ -39,6 +39,7 @@ export default function CaseStudies() {
                         <span className="w-2 h-2 rounded-full bg-[#F4BE00]"></span>
                         <span className="font-[Poppins] font-semibold text-[10px] leading-[1.23] uppercase text-[#F4BE00]">
                             CASE STUDIES
+                            
                         </span>
                     </div>
                 </div>
@@ -77,7 +78,7 @@ export default function CaseStudies() {
                             <SwiperSlide key={index}>
                                 <div className="bg-white rounded-2xl mb-5 p-1 shadow-[0_8px_30px_rgba(0,0,0,0.06)]">
 
-                                    <div className="relative w-full h-[280px] rounded-xl overflow-hidden group">
+                                    <div className="relative w-full h-[280px] border-1 border-gray-400 rounded-xl overflow-hidden group">
                                         <Image
                                             src={item.thumbnail}
                                             alt={item.client_name}
@@ -109,7 +110,7 @@ export default function CaseStudies() {
                                                 )
                                             }
                                         >
-                                            <span>View More</span>
+                                            <span>Explore This Case</span>
                                             <ArrowUpIcon className="transform rotate-45" />
                                         </Button3>
 

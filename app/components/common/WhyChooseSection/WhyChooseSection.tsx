@@ -68,7 +68,7 @@ export default function WhyChooseSection({
               return (
                 <div
                   key={index}
-                  className="px-10 py-14 h-[300px] flex flex-col items-center text-center"
+                  className="px-10 py-7 flex flex-col items-center text-center"
                 >
                   {isEven ? (
                     <>

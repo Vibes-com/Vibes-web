@@ -19,7 +19,7 @@ export default function Page() {
       title: item.client_name,
       slug: item.slug || item.client_slug,
       tags: item.tags ? item.tags.split(",").map((t) => t.trim()) : [],
-      buttonText: "View More",
+      buttonText: "Explore This Case",
     })) || [];
     console.log(data)
   return (
