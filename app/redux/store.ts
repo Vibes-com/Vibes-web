@@ -9,6 +9,7 @@ import { technologyApi } from "./api/technologyApi";
 import { digitalApi } from "./api/digitalApi";
 import { brandingApi } from "./api/brandingApi";
 import { careerApi } from "./api/careerApi";
+import { subscribeApi } from "./api/subscribeApi";
 // import { caseStudyApi } from "../redux/api/caseStudyApi";
 
 export const store = configureStore({
@@ -22,7 +23,8 @@ export const store = configureStore({
     [technologyApi.reducerPath]: technologyApi.reducer,
     [digitalApi.reducerPath]: digitalApi.reducer,
     [brandingApi.reducerPath]: brandingApi.reducer,
-    [careerApi.reducerPath]: careerApi.reducer
+    [careerApi.reducerPath]: careerApi.reducer,
+    [subscribeApi.reducerPath]: subscribeApi.reducer
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware().concat(
@@ -35,7 +37,8 @@ export const store = configureStore({
       technologyApi.middleware,
       digitalApi.middleware,
       brandingApi.middleware,
-      careerApi.middleware
+      careerApi.middleware,
+      subscribeApi.middleware
     ),
 });
 
