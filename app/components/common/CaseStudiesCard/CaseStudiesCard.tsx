@@ -37,6 +37,7 @@ export default function CaseStudiesCard({ data }: CaseStudiesCardProps) {
               fill
               className="object-fill transition-all duration-[900ms] ease-out group-hover:scale-110 group-hover:opacity-90"
             />
+            
           </div>
 
           {/* Title */}
