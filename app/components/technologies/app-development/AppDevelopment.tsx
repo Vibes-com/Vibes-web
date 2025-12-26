@@ -4,16 +4,25 @@ import { useRouter } from "next/navigation";
 import AboutSection from '../../common/AboutUs/AboutSection';
 import WhyChooseSection from '../../common/WhyChooseSection/WhyChooseSection';
 import TechnologyStackSection from '../../common/TechnologyStackSection/TechnologyStackSection';
-import WebDevelopmentHero from '../web-development/web-development-hero/WebDevelopmentHero';
-import WebDevelopmentWorkflow from '../web-development/web-development-workflow/WebDevelopmentWorkflow';
 import BuiltWay from '../web-development/built-way/BuiltWay';
+import WorkflowSection from '../../common/WorkflowSection/WorkflowSection';
+import HeroSection from '../../common/HeroSection/HeroSection';
 
 
 const AppDevelopment = () => {
   const router = useRouter();
   return (
     <div>
-      <WebDevelopmentHero />
+      <HeroSection
+       bgImage="/assests/img/web-development/web-development-bg.jpg"
+      title={
+        <>
+          Web <br />
+          <span className="hero-highlight relative z-9 w-fit font-poppins font-semibold text-[65px] leading-[116%] tracking-normal capitalize text-[#F4BE00]">Development</span>
+        </>
+      }
+      description="Vibes builds secure scalable websites with strong UI/UX and reliable backend systems for seamless user experiences"
+    />
       <AboutSection
         badgeText="ABOUT US"
         heading="IT Solutions Engineered for"
@@ -40,7 +49,67 @@ const AppDevelopment = () => {
         ]}
       />
 
-      <WebDevelopmentWorkflow />
+     <WorkflowSection
+        badgeText="Workflow"
+        heading={
+          <>
+            Development{" "}
+            <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[40px] leading-[1.23] tracking-normal">Process</span>
+                </>
+              }
+              description="From concept to launch, explore the clear process that bring websites to life with precision and purpose."
+              steps={[
+          {
+              id: "01",
+              title: "Discovery & Planning",
+              desc: "The goals, audience, and structure are defined during Discovery & Planning to create a scalable foundation for the website.",
+              icon: "/assests/img/web-development/workflow-icon-1.png",
+          },
+          {
+              id: "02",
+              title: "Wireframing & Architecture",
+              desc: "Wireframes and architecture are used as the blueprint to define structure and function before design begins.",
+              icon: "/assests/img/web-development/workflow-icon-2.png",
+          },
+          {
+              id: "03",
+              title: "UI/UX Design",
+              desc: "UI/UX design is used to create intuitive digital experiences, using clear layouts, colors, and flows to ensure smooth, efficient user interaction.",
+              icon: "/assests/img/web-development/workflow-icon-3.png",
+          },
+          {
+              id: "04",
+              title: "Front-End Development",
+              desc: "Front-end development is used to turn designs into responsive, interactive interfaces with HTML, CSS, JavaScript, and modern UI frameworks.",
+              icon: "/assests/img/web-development/workflow-icon-1.png",
+          },
+          {
+              id: "05",
+              title: "Back-End Development",
+              desc: "Server logic, databases, APIs, and security are built in the backend to support scalable and reliable applications.",
+              icon: "/assests/img/web-development/workflow-icon-4.png",
+          },
+          {
+              id: "06",
+              title: "Testing",
+              desc: "Website testing is conducted to verify functionality, meet requirements, and ensure performance across devices and browsers.",
+              icon: "/assests/img/web-development/workflow-icon-5.png",
+              active: true,
+          },
+          {
+              id: "07",
+              title: "Deployment",
+              desc: "The tested product is deployed to production, configured for use, and optimized for performance and stability.",
+              icon: "/assests/img/web-development/workflow-icon-6.png",
+          },
+          {
+              id: "08",
+              title: "Support & Maintenance",
+              desc: "Performed to keep software secure, updated, and high-performing through continuous monitoring and improvements.",
+              icon: "/assests/img/web-development/workflow-icon-7.png",
+          },
+      ]}
+      />
       <WhyChooseSection
         badgeText="Why Choose Us"
         heading={
