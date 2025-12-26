@@ -36,7 +36,6 @@ const workflowSteps = [
         title: "Testing",
         desc: "Website testing is conducted to verify functionality, meet requirements, and ensure performance across devices and browsers.",
         icon: "/assests/img/web-development/workflow-icon-5.png",
-        active: true,
     },
     {
         id: "07",
@@ -54,7 +53,7 @@ const workflowSteps = [
 
 const WebDevelopmentWorkflow = () => {
     return (
-        <section className=" development-process-wrapper bg-[#E7EFE8] section-gap">
+        <section className="development-process-wrapper bg-[#E7EFE8] section-gap">
             <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
                 <div className="flex justify-center mb-5">
                     <div className="px-6 py-2 rounded-full border border-[#F4BE00] inline-flex items-center gap-2">
@@ -65,33 +64,41 @@ const WebDevelopmentWorkflow = () => {
                     </div>
                 </div>
 
-                <h3 className=" text-center font-poppins font-medium text-[40px] leading-[1.23] tracking-norma]">Development <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[40px] leading-[1.23] tracking-normal">Process</span>
-
+                <h3 className="text-center font-poppins font-medium text-[40px] leading-[1.23] tracking-normal">
+                    Development{" "}
+                    <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[40px] leading-[1.23] tracking-normal">
+                        Process
+                    </span>
                 </h3>
-                <p className="text-[#707070] font-normal text-[16px] leading-[130%] tracking-[0] text-center max-w-2xl mx-auto mb-16 mt-5">From concept to launch, explore the clear process that bring websites to life with precision and purpose.</p>
+
+                <p className="text-[#707070] font-normal text-[16px] leading-[130%] text-center max-w-2xl mx-auto mb-16 mt-5">
+                    From concept to launch, explore the clear process that bring websites to life with precision and purpose.
+                </p>
+
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                     {workflowSteps.map((step) => (
                         <div
                             key={step.id}
-                            className={`relative rounded-sm p-3 min-h-[280px] transition-all
-                ${step.active
-                                    ? "bg-gradient-to-br from-[#3F6B57] to-[#2F5443] text-white"
-                                    : "bg-[#FAF8F3] text-[#2B2B2B] border-b-[5px] border-[#4B7057]"
-                                } shadow-md`}
+                            className="
+                                group relative rounded-sm p-3 min-h-[280px]
+                                bg-[#FAF8F3] text-[#2B2B2B]
+                                border-b-[5px] border-[#4B7057]
+                                shadow-md transition-all duration-300
+                                hover:bg-gradient-to-br hover:from-[#3F6B57] hover:to-[#2F5443]
+                                hover:text-white
+                            "
                         >
                             {/* Number */}
                             <span
-                                className={`absolute top-5 right-6 font-poppins font-semibold text-[70px]
-    ${step.active
-                                        ? "text-[#f4be00]"
-                                        : "text-[#DEE9E1]"
-                                    }`}
-                                style={{
-                                    WebkitTextStroke: step.active ? "0px" : "1px #466E59",
-                                }}
+                                className="
+                                    absolute top-5 right-6 font-poppins font-semibold text-[70px]
+                                    text-[#DEE9E1] group-hover:text-[#F4BE00]
+                                "
+                                style={{ WebkitTextStroke: "1px #466E59" }}
                             >
                                 {step.id}
                             </span>
+
                             {/* Icon */}
                             <div className="mb-6 mt-20">
                                 <Image
@@ -99,23 +106,17 @@ const WebDevelopmentWorkflow = () => {
                                     alt={step.title}
                                     width={36}
                                     height={36}
-                                    className={step.active ? "invert" : ""}
+                                    className="transition group-hover:invert"
                                 />
                             </div>
 
                             {/* Title */}
-                            <h3
-                                className={`font-poppins font-semibold text-[18px] leading-[1.23] tracking-normal mb-3
-                  ${step.active ? "text-white" : "text-[#4C4C4C]"}`}
-                            >
+                            <h3 className="font-poppins font-semibold text-[18px] leading-[1.23] mb-3 text-[#4C4C4C] group-hover:text-white">
                                 {step.title}
                             </h3>
 
                             {/* Description */}
-                            <p
-                                className={`font-poppins font-normal text-[12px] leading-[1.3] tracking-normal
-                  ${step.active ? "text-[#E6EFEA]" : "text-[#575757DB]"}`}
-                            >
+                            <p className="font-poppins font-normal text-[12px] leading-[1.3] text-[#575757DB] group-hover:text-[#E6EFEA]">
                                 {step.desc}
                             </p>
                         </div>

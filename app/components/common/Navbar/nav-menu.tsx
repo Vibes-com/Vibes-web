@@ -52,11 +52,19 @@ export const NavMenu = (props: ComponentProps<typeof NavigationMenu>) => {
                 <NavigationMenuItem>
                     <NavigationMenuTrigger
                         className={clsx(
-                            "bg-transparent text-white font-poppins font-normal text-[14px] leading-[100%]",
+                            "bg-transparent !bg-transparent text-white font-poppins font-normal text-[14px] leading-[100%]",
+
+                            // 🔥 force remove bg on ALL states
+                            "hover:!bg-transparent focus:!bg-transparent active:!bg-transparent",
+                            "data-[state=open]:!bg-transparent data-[state=closed]:!bg-transparent",
+
+                            // text stays white
                             "hover:text-white focus:text-white data-[state=open]:text-white",
-                            "hover:bg-transparent focus:bg-transparent data-[state=open]:bg-transparent",
+
+                            // underline
                             "relative after:absolute after:left-0 after:-bottom-1 after:h-[4px] after:w-full after:bg-[#F4BE00]",
                             "after:scale-x-0 after:transition-transform after:duration-300 after:origin-left after:rounded-tl-[30px] after:rounded-tr-[30px]",
+
                             isWhatWeDoActive && "after:scale-x-100"
                         )}
                     >
