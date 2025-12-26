@@ -34,14 +34,14 @@ const CaseStudyDetailsHero: React.FC<CaseStudyDetailsHeroProps> = ({
       <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
         <div className="grid grid-cols-12 items-center ">
           <div
-            className={`col-span-12 md:col-span-6 bg-white/40 p-[15px_25px_35px] rounded-2xl`}
+            className={`col-span-12 md:col-span-6 bg-black/40 p-[15px_25px_35px] rounded-2xl`}
           >
-            <h1 className="font-poppins font-normal text-[60px] leading-[116%] capitalize text-white">
+            <h1 className="font-poppins font-normal text-[40px] leading-[116%] capitalize text-white">
               {title}
               {highlightTitle && (
                 <>
                   <br />
-                  <span className="hero-highlight1 relative z-10 w-fit font-poppins font-semibold text-[65px] leading-[116%] capitalize text-white">
+                  <span className="hero-highlight1 relative z-10 w-fit font-poppins font-semibold text-[45px] leading-[116%] capitalize text-white">
                     {highlightTitle}
                   </span>
                 </>

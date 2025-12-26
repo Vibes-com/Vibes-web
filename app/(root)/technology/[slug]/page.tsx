@@ -28,7 +28,7 @@ const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
   );
   if (slug === "pmis-development") 
     return (
-  <p><PmisDevelopment/></p>
+  <PmisDevelopment/>
   );
 };
 
