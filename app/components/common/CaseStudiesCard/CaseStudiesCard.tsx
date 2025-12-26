@@ -21,15 +21,16 @@ interface CaseStudiesCardProps {
 /* ---------------- COMPONENT ---------------- */
 
 export default function CaseStudiesCard({ data }: CaseStudiesCardProps) {
+
   return (
     <>
-      {data.map((item) => (
+      {data.map((item, index) => (
         <div
-          key={item.id}
+          key={index}
           className="bg-white mb-[70px] rounded-2xl p-3 shadow-[0_8px_30px_rgba(0,0,0,0.06)] w-full"
         >
           {/* Image */}
-          <div className=" case-study-card-common relative w-full h-[450px] rounded-xl overflow-hidden group">
+          <div className=" case-study-card-common border-1 border-gray-200 relative w-full h-[450px] rounded-xl overflow-hidden group">
             <Image
 
               src={item.img}
@@ -59,7 +60,7 @@ export default function CaseStudiesCard({ data }: CaseStudiesCardProps) {
 
             {/* View More Link */}
             <Link href={`/case-study/${item.slug}`}>
-              <Button3 className="text-[#204667] flex items-center gap-2 hover:text-[#F4BE00]">
+              <Button3 className="text-[#204667] cursor-pointer flex items-center gap-2 hover:text-[#F4BE00]">
                 <span>{item.buttonText || "View More"}</span>
                 <ArrowUpIcon className="rotate-45" />
               </Button3>
