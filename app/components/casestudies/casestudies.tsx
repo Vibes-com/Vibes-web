@@ -39,6 +39,7 @@ export default function CaseStudies() {
                         <span className="w-2 h-2 rounded-full bg-[#F4BE00]"></span>
                         <span className="font-[Poppins] font-semibold text-[10px] leading-[1.23] uppercase text-[#F4BE00]">
                             CASE STUDIES
+                            
                         </span>
                     </div>
                 </div>

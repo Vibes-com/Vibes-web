@@ -13,7 +13,7 @@ interface CaseStudiesSectionProps {
   highlightTitle: string;
   description: string;
   buttonText: string;
-  cards: SingleCaseStudyCard[]; // ✅ UPDATED TYPE
+  cards: SingleCaseStudyCard[];
   bgColor?: string;
 }
 
