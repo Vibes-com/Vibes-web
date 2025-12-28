@@ -110,7 +110,7 @@ export default function CaseStudies() {
                                                 )
                                             }
                                         >
-                                            <span>Explore This Case</span>
+                                            <span>Inside The Project</span>
                                             <ArrowUpIcon className="transform rotate-45" />
                                         </Button3>
 

@@ -43,3 +43,7 @@ export const careerApiUrls = {
   getAllJobs: (jobid: number) => `/getJob?job_type=${jobid}`,
   applyToJob: "/jobApply",
 };
+
+export const subscribeApiUrls = {
+  subscribeNow: "/subscribe",
+};
