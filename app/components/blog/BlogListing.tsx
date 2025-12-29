@@ -1,6 +1,15 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { useGetAllBlogsQuery } from "@/app/redux/api/blogApi";
+import {
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectLabel,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select"
 
 export default function BlogListing() {
   const { data, error, isLoading } = useGetAllBlogsQuery();
@@ -15,6 +24,11 @@ export default function BlogListing() {
     selectedFilter === "All"
       ? blogs
       : blogs.filter((blog: any) => blog.blog_service === selectedFilter);
+    
+    const services = Array.from(
+  new Set(blogs.map((blog: any) => blog.blog_service))
+);
+
 
   const LatestBlog = filteredBlogs[0]
   const LatestBlogList = filteredBlogs.slice(0, 4)
@@ -81,7 +95,35 @@ export default function BlogListing() {
 
       <div className="border-t-2 border-[#FFFFFF] blog-listig-bottom-wrapper section-gap">
         <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
-          <h2 className="text-[#1F1F1F] font-poppins font-semibold text-[28px] text-start mb-10">Popular</h2>
+          <div className="flex justify-between">
+            <h2 className="text-[#1F1F1F] font-poppins font-semibold text-[28px] text-start mb-10">Popular</h2>
+             <Select
+              value={selectedFilter}
+              onValueChange={(value) => setSelectedFilter(value)}
+            >
+              <SelectTrigger className="w-[220px]">
+                <SelectValue placeholder="Filter by service" />
+              </SelectTrigger>
+
+              <SelectContent>
+                <SelectGroup>
+                  <SelectLabel>Services</SelectLabel>
+
+                  {/* ALL OPTION */}
+                  <SelectItem value="All">All</SelectItem>
+
+                  {/* DYNAMIC OPTIONS */}
+                  {services.map((service) => (
+                    <SelectItem key={service} value={service}>
+                      {service}
+                    </SelectItem>
+                  ))}
+                </SelectGroup>
+              </SelectContent>
+            </Select>
+
+          </div>
+          
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredBlogs.map((blog: any) => (
               <Link
