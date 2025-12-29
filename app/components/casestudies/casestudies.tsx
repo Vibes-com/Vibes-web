@@ -50,7 +50,7 @@ export default function CaseStudies() {
                             Vision to <span className=" z-9 relative w-fit highlight font-semibold">Verified Results</span>
                         </h3>
                         <p className="text-[#707070] text-[16px] mt-5 max-w-2xl">
-                            Turning brand challenges into powerful growth stories with strategies crafted to solve, scale, and sustain.These case studies show how clear vision and 360° digital expertise drive real results.
+                            Turning brand challenges into powerful growth stories with strategies crafted to solve, scale, and sustain. These case studies show how clear vision and 360° digital expertise drive real results.
                         </p>
                     </div>
                     <Link href="/case-study">

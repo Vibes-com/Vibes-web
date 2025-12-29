@@ -44,7 +44,7 @@ const MissionVision: React.FC = () => {
                         </div>
 
                         <h3 className=" font-poppins font-medium text-[40px] leading-[1.23] tracking-norma]">
-                            <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[40px] leading-[1.23] tracking-normal">Stronger Growth,</span>Shared Future
+                            <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[40px] leading-[1.23] tracking-normal">Stronger Growth,</span> Shared Future
 
                         </h3>
 

@@ -8,8 +8,8 @@ export default function FooterRightSection() {
             <div className="col-span-4">
                 <ul className="space-y-3 text-[15px] font-light tracking-wide">
                     <li className="list-disc list-inside font-[500] text-[#7C7C7C] text-[16px] leading-[100%] tracking-[0] "><Link href="/who-we-are" className="hover:text-[#F4BE00] transition-colors">Who we are</Link></li>
-                    <li className="list-disc list-inside font-[500] text-[#7C7C7C] text-[16px] leading-[100%] tracking-[0]"><Link href="/case-study" className="hover:text-[#F4BE00] transition-colors">Case study</Link></li>
-                    <li className="list-disc list-inside font-[500] text-[#7C7C7C] text-[16px] leading-[100%] tracking-[0] "><Link href="/careers" className="hover:text-[#F4BE00] transition-colors">Career</Link></li>
+                    <li className="list-disc list-inside font-[500] text-[#7C7C7C] text-[16px] leading-[100%] tracking-[0]"><Link href="/case-study" className="hover:text-[#F4BE00] transition-colors">CASE STUDIES</Link></li>
+                    <li className="list-disc list-inside font-[500] text-[#7C7C7C] text-[16px] leading-[100%] tracking-[0] "><Link href="/careers" className="hover:text-[#F4BE00] transition-colors">Careers</Link></li>
 
                 </ul>
             </div>

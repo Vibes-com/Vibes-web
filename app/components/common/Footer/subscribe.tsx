@@ -49,7 +49,7 @@ export default function SubscribeBox() {
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          placeholder="Enter Email-ID"
+          placeholder="Enter Email ID"
           className="w-full bg-[#6D6D6D54] border-[2px] border-[#7373732B] px-5 py-3 pr-40 rounded-full focus:outline-none text-[#A3A3A3]"
         />
 

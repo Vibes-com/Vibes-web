@@ -85,9 +85,9 @@ const MarqueeStorySection = ({
 
         {/* TITLE */}
         <h3 className="text-center font-poppins font-medium text-[40px] leading-[1.23]">
-          {title}
+          {title} 
           {highlightTitle && (
-            <span className=" w-fit z-9 relative highlight font-semibold">{highlightTitle} </span>
+            <span className=" ml-2 w-fit z-9 relative highlight font-semibold">{highlightTitle} </span>
           )}
 
         </h3>
