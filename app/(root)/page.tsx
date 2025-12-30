@@ -130,8 +130,8 @@ const page = () => {
       {/* <SocialStorytelling /> */}
       <MarqueeStorySection
         badge="WORK SHOWCASE"
+        title=" in Motion"
         highlightTitle="Brand Stories"
-        title="in Motion"
         description="A curated showcase of visual work that shapes brand perception across channels, including social campaigns, identity design, and custom website builds."
         slides={slides}
         ctaText="Talk to us today"

@@ -16,8 +16,8 @@ interface blogContent {
   highlighttitle: string,
 }
 const textcontent: blogContent = {
-  title: 'Branding',
-  highlighttitle: "Insights",
+  title: 'Ideas, insights, and intelligent ',
+  highlighttitle: "digital success.",
   Subtitle: (
     <>
       Expert perspectives, trends, and strategic thinking that explore branding, <br />identity, and communication shaping how brands grow and stay relevant.

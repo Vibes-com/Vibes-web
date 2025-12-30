@@ -188,8 +188,8 @@ export default function Page() {
       />
       <MarqueeStorySection
         badge="Work Showcase"
-        title="Digital Work That "
-        highlightTitle="Drives Impact"
+        title="That Drives Impact"
+        highlightTitle="Digital Work"
         description="A showcase of strategic digital campaigns, performance marketing, and brand-building initiatives that deliver measurable results across industries."
         slides={slides}
         ctaText="View Our Digital Work"

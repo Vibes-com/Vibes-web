@@ -48,7 +48,7 @@ const PmisDevelopment = () => {
             <span className="hero-highlight relative z-9 w-fit font-poppins font-semibold text-[65px] leading-[116%] tracking-normal capitalize text-[#F4BE00]">INFORMATION SYSTEM (PMIS)</span>
           </>
         }
-        description="Vibes builds secure scalable websites with strong UI/UX and reliable backend systems for seamless user experiences"
+        description=" A centralized digital platform for planning, tracking, and monitoring project lifecycles with transparency and accountability."
       />
       <BuiltWaySlider
         badgeText="Core Purpose"
@@ -58,7 +58,7 @@ const PmisDevelopment = () => {
             Why PMIS Matter:<br /> <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[40px] leading-[1.23] tracking-normal">Purpose & Value</span>
           </>
         }
-        description="Turning brand challenges into growth stories with strategies to solve, scale, and sustain showing how clear vision and 360° digital expertise drive results."
+        description="Purpose-driven digital platforms that bring clarity, control, and accountability to complex project execution."
         slides={slides}
       />
       <WhyChooseUs

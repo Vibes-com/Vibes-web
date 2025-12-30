@@ -34,6 +34,7 @@ const page = () => {
       <BrandingDetailsServices />
       <WhyChooseUs
         backgroundImage="/assests/img/technology-details/common-casestudy-bg.jpg"
+        badgeText="Why Choose Us?"
         heading="How We"
         highlightText="Elevate Your Brand"
         description="Combining strategy, creativity, and data-driven insights to build distinctive brands that stand out, connect meaningfully, and drive measurable business impact."

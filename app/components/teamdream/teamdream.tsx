@@ -51,14 +51,14 @@ const TeamDreamSection = () => {
                             </h3>
 
                             <p className="text-[#525252] mt-5 max-w-md">
-                                Vibes has shaped brand evolution for 15+ years through 360° technology, branding, and digital excellence. A unified ecosystem fuels stronger identity, higher performance, and future-ready growth driven by the spirit of One Team, One Dream, Together for Tomorrow.
+                                Vibes has shaped brand evolution for 15+ years through 360° technology, branding, and digital excellence. A unified ecosystem fueling stronger identity, higher performance, and future-ready growth & driven by the spirit of One Team, One Dream, Together for Tomorrow.
 
                             </p>
                             <Link href="/who-we-are">
-                            <Button2 className="mt-5 p-[20px] cursor-pointer hover:border-[#2B4C69] hover:border-[2px] hover:text-[#F4BE00] hover:bg-transparent">
-                                <span>Discover Who We Are</span>
-                                <ArrowUpIcon className="transform rotate-45" />
-                            </Button2>
+                                <Button2 className="mt-5 p-[20px] cursor-pointer hover:border-[#2B4C69] hover:border-[2px] hover:text-[#F4BE00] hover:bg-transparent">
+                                    <span>Discover Who We Are</span>
+                                    <ArrowUpIcon className="transform rotate-45" />
+                                </Button2>
                             </Link>
                         </SlideLeft>
                     </div>

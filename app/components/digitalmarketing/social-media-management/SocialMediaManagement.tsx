@@ -14,8 +14,8 @@ interface blogContent {
   highlighttitle: string,
 }
 const textcontent: blogContent = {
-  title: 'Tech Ideas & Insights',
-  highlighttitle: "Insights",
+  title: 'Ideas, insights, and intelligent ',
+  highlighttitle: "digital success.",
   Subtitle: (
     <>
       Insights, trends, and expert perspectives on social media strategy,<br /> content performance, and digital brand growth.

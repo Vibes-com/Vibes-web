@@ -84,7 +84,7 @@ const BrandUpliftment = () => {
           badge: "Work Showcase",
           title: (
             <>
-              <span className="highlight relative w-fit z-9 font-semibold">Transformation in</span> in Practice
+              <span className="highlight relative w-fit z-9 font-semibold">Transformation</span> in Practice
             </>
           ),
           description:
