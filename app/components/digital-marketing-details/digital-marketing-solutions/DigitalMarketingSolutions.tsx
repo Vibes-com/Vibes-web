@@ -10,7 +10,7 @@ const services = [
     {
         title: "Campaign Management",
         description:
-            "Vibes builds secure, personalised, and fully custom-coded websites designed to adapt as the brands grow.",
+            " End-to-end campaign management including influencer collaborations and event marketing to amplify reach, drive engagement, and create measurable brand impact.",
         bgImage: "/assests/img/technology-details/web-devlopment-bg.png",
         icon: "/assests/img/digital-m-details/digital-solution-icon-1.png",
         tags: [
@@ -22,7 +22,7 @@ const services = [
     {
         title: "Performance Marketing",
         description:
-            "Vibes creates high-performing Android and iOS apps built to solve real problems.",
+            "Campaign management focused on performance marketing and lead generation through Meta, Google, and LinkedIn ads to drive measurable conversions and ROI.",
         bgImage: "/assests/img/technology-details/mobile-app-development-bg.jpg",
         hoverBgImage: "/assests/img/technology-details/tech-cards-bg.png",
         icon: "/assests/img/digital-m-details/digital-solution-icon-2.png",
@@ -32,7 +32,7 @@ const services = [
     {
         title: "Social Media Management ",
         description:
-            "Vibes creates secure, custom eCommerce platforms that convert better and scale faster.",
+            "Strategic social media management for B2B and B2C, covering content planning, creation, and platform-led growth across LinkedIn and consumer channels.",
         bgImage: "/assests/img/technology-details/ecommerce-development-bg.jpg",
         hoverBgImage: "/assests/img/technology-details/tech-cards-bg.png",
         icon: "/assests/img/digital-m-details/digital-solution-icon-3.png",
@@ -42,7 +42,7 @@ const services = [
     {
         title: "Search Engine Optimization",
         description:
-            "PMIS streamlines project tracking with smart dashboards and integrations.",
+            "Comprehensive SEO management covering on-page, off-page, technical SEO, LLM optimization, and keyword strategy to improve visibility, rankings, and search performance.",
         bgImage: "/assests/img/technology-details/project-monitoring-system-bg.png",
         hoverBgImage: "/assests/img/technology-details/tech-cards-bg.png",
         icon: "/assests/img/digital-m-details/digital-solution-icon-4.png",

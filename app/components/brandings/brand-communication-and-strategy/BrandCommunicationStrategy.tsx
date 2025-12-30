@@ -14,8 +14,8 @@ interface blogContent {
   service:string
 }
 const textcontent: blogContent = {
-  title: 'Thoughts on Brand ',
-  highlighttitle: "Narrative",
+  title: 'Branding ',
+  highlighttitle: "Insights",
   Subtitle: (
     <>
       nsights, perspectives, and trends shaping effective brand communication<br /> in evolving markets.

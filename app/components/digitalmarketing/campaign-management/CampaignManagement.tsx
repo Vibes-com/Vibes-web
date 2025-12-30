@@ -16,8 +16,8 @@ interface blogContent {
   service:string
 }
 const textcontent: blogContent = {
-  title: 'Tech Ideas',
-  highlighttitle: "Insights",
+  title: 'Ideas, insights, and intelligent ',
+  highlighttitle: "digital success.",
   Subtitle: (
     <>
       Explore thought leadership, trends, and proven strategies behind<br /> successful influencer and event-led campaigns shaping modern brand communication.

@@ -51,8 +51,8 @@ const AppDevelopment = () => {
         bgImage="/assests/img/technology-details/common-casestudy-bg.jpg"
         heading={
           <>
-            From Concept to {" "}
-            <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[40px] leading-[1.23] tracking-normal">Launch</span>
+            From {" "}
+            <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[40px] leading-[1.23] tracking-normal">Concept to Launch</span>
           </>
         }
         description=" A streamlined process delivering reliable, scalable mobile applications."

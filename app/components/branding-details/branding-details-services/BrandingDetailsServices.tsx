@@ -15,7 +15,7 @@ const services: ServiceItem[] = [
     {
         title: "Corporate Branding",
         description:
-            "PMIS streamlines project tracking with smart dashboards for tasks, approvals, finances, and completion. It enhances workflow.",
+            "Building clear, consistent corporate brand identities that reflect strong values, strengthen credibility, and ensure alignment across all business touchpoints.",
         tags: [
             "Corporate Identity",
             "Personal Branding",
@@ -28,7 +28,7 @@ const services: ServiceItem[] = [
     {
         title: "Brand Upliftment",
         description:
-            "PMIS streamlines project tracking with smart dashboards for tasks, approvals, finances, and completion. It enhances workflow.",
+            " Refreshing and elevating existing brands through strategic design and storytelling to improve relevance, consistency, and market perception.",
         tags: [
             "Rebranding",
             "PR, Photoshoot & Videos",
@@ -39,7 +39,7 @@ const services: ServiceItem[] = [
     {
         title: "Brand Communication & Strategy",
         description:
-            "PMIS streamlines project tracking with smart dashboards for tasks, approvals, finances, and completion. It enhances workflow.",
+            " Developing  structured brand strategies and communication frameworks that align messaging, tone, and positioning with business goals.",
         tags: [
             "Logo Design",
             "Content Creation",
