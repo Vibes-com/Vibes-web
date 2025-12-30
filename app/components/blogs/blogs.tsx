@@ -63,13 +63,8 @@ export default function OurBlogs({ tData }: BlogsProps) {
       if (error) return <p>Error loading blogs</p>;
     
       const blogs = (data?.blog_list.filter((blog: any) => blog.blog_service === tData.service))?.slice(0,5) ?? [];
-      //console.log(blogs)
-        // const filteredBlogs =
-        // selectedFilter === "All"
-        // ? blogs
-        // : blogs.filter((blog: any) => blog.blog_service === selectedFilter);
-
-
+      console.log(blogs)
+        
     return (
         <section
             className="blogs-wrapper section-gap relative w-full bg-no-repeat bg-cover bg-center"
@@ -125,13 +120,16 @@ export default function OurBlogs({ tData }: BlogsProps) {
                     {blogs.map((item) => (
                         <SwiperSlide key={item.blog_id}>
                             <div className="bg-[#ECF3EE] p-8 mb-8 border border-[#E5E5E5] hover:shadow-xl transition-all duration-300">
-                                {/* <p className="font-poppins font-medium text-[12px] leading-[100%] tracking-[0px] text-[#636060] mb-4">{item.date}</p> */}
+                                <p className="font-poppins font-medium text-[12px] leading-[100%] tracking-[0px] text-[#636060] mb-4">{item.created_on}</p>
                                 <h4 className="font-poppins font-semibold text-[24px] leading-[130%] tracking-[0px] text-[#464646] mb-2">
                                     {item.blog_title}
                                 </h4>
-                                {/* <p className="font-poppins font-normal text-[14px] leading-[130%] tracking-[0px] text-[#606060]">
-                                    {item.description}
-                                </p> */}
+                                <p className="font-poppins font-normal text-[14px] leading-[130%] tracking-[0px] text-[#606060]">
+                                    {item.blog_small_description ||
+                                        item.blog_description
+                                        .replace(/<[^>]*>/g, "")
+                                        .substring(0, 200)}
+                                </p>
                                 <Button3 className=" text-[#204667] flex items-center gap-2">
                                     <span>View More</span>
                                     <ArrowUpIcon className="transform rotate-45" />

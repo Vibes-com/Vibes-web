@@ -31,8 +31,8 @@ export default function BlogListing() {
     );
 
 
-  const LatestBlog = filteredBlogs[0]
-  const LatestBlogList = filteredBlogs.slice(0, 4)
+  const LatestBlog = blogs[0]
+  const LatestBlogList = blogs.slice(0, 4)
 
   return (
     <>
@@ -132,7 +132,7 @@ export default function BlogListing() {
                 href={`/blog/${blog.blog_slug}`}
                 className="group"
               >
-                <div className="bg-white h-[400px] rounded-1xl shadow-md hover:shadow-xl transition">
+                <div className="bg-white h-[410px] rounded-1xl shadow-md hover:shadow-xl transition">
                   <img
                     src={blog.blog_thumb_image}
                     alt={blog.blog_title}
@@ -140,10 +140,10 @@ export default function BlogListing() {
                   />
 
                   <div className="p-6">
-                    <h3 className="text-[#1F1F1F] font-poppins font-semibold text-[20px] mb-2 line-clamp-2">
+                    <h3 className="text-[#1F1F1F] font-poppins font-semibold text-[20px] mb-1 line-clamp-2">
                       {blog.blog_title}
                     </h3>
-
+                    <p className="font-poppins font-medium text-[12px] leading-[100%] tracking-[0px] text-[#636060] mb-2">{blog.created_on}</p>
                     <p className="text-[#525252] line-clamp-3 text-[14px]">
                       {blog.blog_small_description ||
                         blog.blog_description

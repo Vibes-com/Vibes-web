@@ -1,4 +1,5 @@
 export interface Blog {
+  created_on: string;
   blog_id: number;
   banner_img:string;
   blog_title: string;
