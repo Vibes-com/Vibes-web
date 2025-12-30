@@ -63,6 +63,7 @@ export default function OurBlogs({ tData }: BlogsProps) {
       if (error) return <p>Error loading blogs</p>;
     
       const blogs = (data?.blog_list.filter((blog: any) => blog.blog_service === tData.service))?.slice(0,5) ?? [];
+      //console.log(blogs)
         // const filteredBlogs =
         // selectedFilter === "All"
         // ? blogs
@@ -124,7 +125,7 @@ export default function OurBlogs({ tData }: BlogsProps) {
                     {blogs.map((item) => (
                         <SwiperSlide key={item.blog_id}>
                             <div className="bg-[#ECF3EE] p-8 mb-8 border border-[#E5E5E5] hover:shadow-xl transition-all duration-300">
-                                <p className="font-poppins font-medium text-[12px] leading-[100%] tracking-[0px] text-[#636060] mb-4">{item.date}</p>
+                                {/* <p className="font-poppins font-medium text-[12px] leading-[100%] tracking-[0px] text-[#636060] mb-4">{item.date}</p> */}
                                 <h4 className="font-poppins font-semibold text-[24px] leading-[130%] tracking-[0px] text-[#464646] mb-2">
                                     {item.blog_title}
                                 </h4>
