@@ -73,7 +73,6 @@ const page = () => {
         className="bg-black"
         onButtonClick={() => router.push("/contact")}
       />
-
     </div>
   )
 }

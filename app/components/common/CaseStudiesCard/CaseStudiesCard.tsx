@@ -59,7 +59,7 @@ export default function CaseStudiesCard({ data }: CaseStudiesCardProps) {
             </div>
 
             {/* View More Link */}
-            <Link href={`/case-study/${item.slug}`}>
+            <Link href={`/case-studies/${item.slug}`}>
               <Button3 className="text-[#204667] cursor-pointer flex items-center gap-2 hover:text-[#F4BE00]">
                 <span>{item.buttonText || "View More"}</span>
                 <ArrowUpIcon className="rotate-45" />

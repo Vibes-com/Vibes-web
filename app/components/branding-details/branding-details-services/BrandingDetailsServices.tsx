@@ -22,7 +22,7 @@ const services: ServiceItem[] = [
             "Brand Guidelines",
             "Employer Branding",
         ],
-        url: "/branding/corporate-branding",
+        url: "/branding-services/corporate-branding",
         highlighted: true,
     },
     {
@@ -34,7 +34,7 @@ const services: ServiceItem[] = [
             "PR, Photoshoot & Videos",
             "Graphic Design",
         ],
-        url: "/branding/brand-upliftment",
+        url: "/branding-services/brand-upliftment",
     },
     {
         title: "Brand Communication & Strategy",
@@ -46,7 +46,7 @@ const services: ServiceItem[] = [
             "Storytelling",
             "Brand Positioning",
         ],
-        url: "/branding/brand-communication-and-strategy",
+        url: "/branding-services/brand-communication-and-strategy",
     },
 ];
 

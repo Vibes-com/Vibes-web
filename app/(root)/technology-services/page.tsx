@@ -108,7 +108,7 @@ export default function Page() {
         buttonText="Talk to Experts"
         arrowImage="/assests/img/technology-details/arrow.png"
         className="bg-black"
-        onButtonClick={() => router.push("/contact-us")}
+        onButtonClick={() => router.push("/contact-for-digital-requirements")}
       />
     </div>
   );

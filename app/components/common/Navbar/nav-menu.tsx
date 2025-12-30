@@ -19,9 +19,9 @@ export const NavMenu = (props: ComponentProps<typeof NavigationMenu>) => {
     const isActive = (path: string) => pathname === path;
 
     const isWhatWeDoActive =
-        pathname === "/technology" ||
-        pathname === "/branding" ||
-        pathname === "/digital-marketing";
+        pathname === "/technology-services" ||
+        pathname === "/branding-services" ||
+        pathname === "/digital-marketing-services";
 
     const linkClass = (active: boolean) =>
         clsx(
@@ -44,8 +44,8 @@ export const NavMenu = (props: ComponentProps<typeof NavigationMenu>) => {
                 </NavigationMenuItem>
 
                 <NavigationMenuItem className="">
-                    <NavigationMenuLink asChild className={linkClass(isActive("/who-we-are"))}>
-                        <Link href="/who-we-are" className="text-white">WHO WE ARE</Link>
+                    <NavigationMenuLink asChild className={linkClass(isActive("/about-us-together-for-tomorrow"))}>
+                        <Link href="/about-us-together-for-tomorrow" className="text-white">WHO WE ARE</Link>
                     </NavigationMenuLink>
                 </NavigationMenuItem>
 
@@ -74,17 +74,17 @@ export const NavMenu = (props: ComponentProps<typeof NavigationMenu>) => {
                     <NavigationMenuContent>
                         <ul className="grid gap-3 p-4 md:w-[300px]">
                             <li>
-                                <Link href="/technology" className="block p-2 hover:bg-gray-100 rounded">
+                                <Link href="/technology-services" className="block p-2 hover:bg-gray-100 rounded">
                                     Technology
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/branding" className="block p-2 hover:bg-gray-100 rounded">
+                                <Link href="/branding-services" className="block p-2 hover:bg-gray-100 rounded">
                                     Branding
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/digital-marketing" className="block p-2 hover:bg-gray-100 rounded">
+                                <Link href="/digital-marketing-services" className="block p-2 hover:bg-gray-100 rounded">
                                     Digital Marketing
                                 </Link>
                             </li>
@@ -95,9 +95,9 @@ export const NavMenu = (props: ComponentProps<typeof NavigationMenu>) => {
                 <NavigationMenuItem>
                     <NavigationMenuLink
                         asChild
-                        className={linkClass(isActive("/case-study"))}
+                        className={linkClass(isActive("/case-studies"))}
                     >
-                        <Link href="/case-study">CASE STUDIES</Link>
+                        <Link href="/case-studies">CASE STUDIES</Link>
                     </NavigationMenuLink>
                 </NavigationMenuItem>
 
@@ -108,14 +108,14 @@ export const NavMenu = (props: ComponentProps<typeof NavigationMenu>) => {
                 </NavigationMenuItem>
 
                 <NavigationMenuItem>
-                    <NavigationMenuLink asChild className={linkClass(isActive("/careers"))}>
-                        <Link href="/careers">CAREERS</Link>
+                    <NavigationMenuLink asChild className={linkClass(isActive("/work-with-digital-agency"))}>
+                        <Link href="/work-with-digital-agency">CAREERS</Link>
                     </NavigationMenuLink>
                 </NavigationMenuItem>
 
                 <NavigationMenuItem>
-                    <NavigationMenuLink asChild className={linkClass(isActive("/contact-us"))}>
-                        <Link href="/contact-us">CONTACT US</Link>
+                    <NavigationMenuLink asChild className={linkClass(isActive("/contact-for-digital-requirements"))}>
+                        <Link href="/contact-for-digital-requirements">CONTACT US</Link>
                     </NavigationMenuLink>
                 </NavigationMenuItem>
 

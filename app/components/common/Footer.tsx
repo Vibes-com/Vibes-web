@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import FooterText from "./Footer/footer-text";
 import SubscribeBox from "./Footer/subscribe";
 import FooterRightSection from "./Footer/footer-right";
@@ -7,8 +7,11 @@ import Copyright from "./Footer/copyright";
 import Image from "next/image";
 import { Bot, Coffee } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
+import ChatWindow from "../chatbot-ui/ChatWindow";
+import { AnimatePresence } from "framer-motion";
 
 const Footer = () => {
+  const [open, setOpen] = useState(false);
   return (
     <div className="footer-wrapper relative ">
       <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
@@ -49,10 +52,16 @@ const Footer = () => {
           </div>
         </div>
 
+        <AnimatePresence>
+        {open && (
+          <ChatWindow onClose={() => setOpen(false)} />
+        )}
+      </AnimatePresence>
+
         <div className="flex justify-end">
           <div className="group w-[50px] hover:w-[200px] h-[46px] 
         bg-[#2B4C69] rounded-tl-full rounded-bl-full flex items-center px-4 cursor-pointer
-        transition-all duration-700  shadow-lg overflow-hidden">
+        transition-all duration-700  shadow-lg overflow-hidden" onClick={() => setOpen(true)}>
             <Bot size={20} className="text-white shrink-0" />
 
             <span className="ml-3 text-white font-medium text-sm 
