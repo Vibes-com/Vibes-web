@@ -25,7 +25,7 @@ const textcontent: blogContent = {
     </>
   ),
   bgImage: '/assests/img/technology-details/common-casestudy-bg.jpg',
-  service:'branding'
+  service:'digital'
 };
 
 

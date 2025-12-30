@@ -23,7 +23,8 @@ interface blogContent {
     title: string;
     Subtitle: React.ReactNode;
     bgImage?: string;
-    highlighttitle: string,
+    highlighttitle: string;
+    service:string
 }
 interface BlogsProps {
     tData: blogContent;
@@ -57,12 +58,11 @@ interface BlogsProps {
 
 export default function OurBlogs({ tData }: BlogsProps) {
     const { data, error, isLoading } = useGetAllBlogsQuery();
-      const [selectedFilter, setSelectedFilter] = useState("All");
     
       if (isLoading) return <p>Loading...</p>;
       if (error) return <p>Error loading blogs</p>;
     
-      const blogs = data?.blog_list.filter((blog: any) => blog.blog_service === selectedFilter) ?? [];
+      const blogs = (data?.blog_list.filter((blog: any) => blog.blog_service === tData.service))?.slice(0,5) ?? [];
         // const filteredBlogs =
         // selectedFilter === "All"
         // ? blogs
