@@ -26,10 +26,10 @@ const JobTabs = () => {
         <div className="container mx-auto px-4">
           <Tabs defaultValue="technology" className="w-full">
             <TabsList className='w-[80%] mx-auto mb-10 h-auto main-tab p-0 rounded-md bg-gray-50'>
-              <TabsTrigger value="technology" className='flex flex-col h-auto text-center py-6 rounded-r-none'><FaCode className="!w-[40px] !h-[40px]" />
+              <TabsTrigger value="technology" className='flex flex-col h-auto text-center py-6 rounded-r-none'><FaCode className="!w-[40px] !h-[40px] cursor-pointer" />
                 <span>Technology</span></TabsTrigger>
-              <TabsTrigger value="digital" className='flex flex-col h-auto text-center py-6 rounded-none border-x border-y-0 border-gray-400'><LucideMonitorPlay className="!w-[40px] !h-[40px]" />Digital Marketing</TabsTrigger>
-              <TabsTrigger value="branding" className='flex flex-col h-auto text-center py-6 rounded-l-none'><TbBrandAirtable className="!w-[40px] !h-[40px]" />Branding</TabsTrigger>
+              <TabsTrigger value="digital" className='flex flex-col h-auto text-center py-6 rounded-none border-x border-y-0 border-gray-400 cursor-pointer'><LucideMonitorPlay className="!w-[40px] !h-[40px]" />Digital Marketing</TabsTrigger>
+              <TabsTrigger value="branding" className='flex flex-col h-auto text-center py-6 rounded-l-none cursor-pointer'><TbBrandAirtable className="!w-[40px] !h-[40px]" />Branding</TabsTrigger>
             </TabsList>
             {/* technology start */}
             <TabsContent value="technology">

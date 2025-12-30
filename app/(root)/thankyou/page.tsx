@@ -14,7 +14,7 @@ const page = () => {
           
             <Button2
                 type="submit"
-                className="mt-5 p-[20px]"
+                className="mt-5 p-[20px]  cursor-pointer"
               >
                 <ArrowLeftIcon />
                 <span>Explore More</span>

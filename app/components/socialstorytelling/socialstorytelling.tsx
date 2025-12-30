@@ -227,7 +227,7 @@ export default function SocialStorytelling() {
             </SlideUp>
 
             <div className="text-center mt-12">
-                <Button2 className="mt-5 p-[20px] hover:border-[#2B4C69] hover:border-[2px] hover:text-[#F4BE00] hover:bg-transparent">
+                <Button2 className="mt-5 p-[20px] cursor-pointer hover:border-[#2B4C69] hover:border-[2px] hover:text-[#F4BE00] hover:bg-transparent">
                     <span>Talk to us today</span>
                     <ArrowUpIcon className="transform rotate-45" />
                 </Button2>

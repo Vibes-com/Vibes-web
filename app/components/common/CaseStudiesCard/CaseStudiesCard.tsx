@@ -30,7 +30,7 @@ export default function CaseStudiesCard({ data }: CaseStudiesCardProps) {
           className="bg-white mb-[70px] rounded-2xl p-3 shadow-[0_8px_30px_rgba(0,0,0,0.06)] w-full"
         >
           {/* Image */}
-          <div className=" case-study-card-common border-1 border-gray-400 relative w-full h-[450px] rounded-xl overflow-hidden group">
+          <div className=" case-study-card-common border-1 border-gray-400 relative w-full h-[390px] rounded-xl overflow-hidden group">
             <Image
               src={item.img}
               alt={item.title}

@@ -96,7 +96,7 @@ export default function OurBlogs({ tData }: BlogsProps) {
                     </div>
 
                     <Link href="/blog">
-                        <Button2 className="mt-5 p-[20px]">
+                        <Button2 className="mt-5 p-[20px] cursor-pointer">
                             <span>Explore Our Blogs</span>
                             <ArrowUpIcon className="transform rotate-45" />
                         </Button2>

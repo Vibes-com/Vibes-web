@@ -257,7 +257,7 @@ const ContactForm = () => {
               <Button2
                 type="submit"
                 disabled={isLoading}
-                className="mt-5 p-[20px]"
+                className="mt-5 p-[20px] cursor-pointer"
               >
                 <span>{isLoading ? "Submitting..." : "Submit"}</span>
                 <ArrowUpIcon className="rotate-45" />

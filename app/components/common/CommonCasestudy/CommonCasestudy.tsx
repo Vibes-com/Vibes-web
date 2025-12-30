@@ -54,7 +54,7 @@ const CommonCasestudy = ({ badgeText, title, highlightTitle, description, button
 
               {/* CTA BUTTON */}
               <Link href="/case-study">
-                <Button2 className="mt-6 p-[20px] hover:border-[#2B4C69] hover:border-2 hover:text-[#F4BE00] hover:bg-transparent text-[14px]">
+                <Button2 className="mt-6 p-[20px] hover:border-[#2B4C69] hover:border-2 hover:text-[#F4BE00] hover:bg-transparent text-[14px] cursor-pointer">
                   <span>{buttonText}</span>
                   <ArrowUpIcon className="rotate-45" />
                 </Button2>

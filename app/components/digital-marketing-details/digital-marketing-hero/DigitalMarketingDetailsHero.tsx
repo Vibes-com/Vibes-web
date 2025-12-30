@@ -25,7 +25,7 @@ const DigitalMarketingDetailsHero: React.FC = () => {
                         </p>
                         <div className=" mt-4">
                             <Link href="contact-us">
-                                <Button2 className="mt-5 p-[20px] hover:border-[#2B4C69] hover:border-[2px] hover:text-[#F4BE00] hover:bg-transparent bg-[#FFFFFF] text-[#204667]">
+                                <Button2 className="mt-5 p-[20px]  cursor-pointer hover:border-[#2B4C69] hover:border-[2px] hover:text-[#F4BE00] hover:bg-transparent bg-[#FFFFFF] text-[#204667]">
                                     <span>Plan Your Digital Success</span>
                                     <ArrowUpIcon className="transform rotate-45" />
                                 </Button2>

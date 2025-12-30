@@ -107,7 +107,7 @@ const BrandingDetailsServices: React.FC = () => {
                             </div>
 
                             <div className="lg:col-span-3 flex lg:justify-end">
-                                <Button2 className=" transition-all duration-300 group-hover:translate-x-5 not-odd:mt-5 p-[20px]  hover:border-[#2B4C69] hover:bord[2px] hover:text-[#F4BE00] hover:bg-transparent text-[14px]">
+                                <Button2 className=" cursor-pointer transition-all duration-300 group-hover:translate-x-5 not-odd:mt-5 p-[20px]  hover:border-[#2B4C69] hover:bord[2px] hover:text-[#F4BE00] hover:bg-transparent text-[14px]">
                                     <Link href={item.url}><span>View More</span></Link>
                                     <ArrowUpIcon className="transform rotate-45" />
                                 </Button2>

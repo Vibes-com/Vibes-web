@@ -51,7 +51,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 
             {showCTA && (
               <div className="mt-10">
-                <Button2 onClick={onCtaClick}>
+                <Button2 className=" cursor-pointer" onClick={onCtaClick}>
                   {ctaText}
                   <ArrowUpIcon className="ml-2 rotate-45" size={18} />
                 </Button2>

@@ -33,7 +33,7 @@ const ListJobs = ({ type }: { type: number }) => {
                             data?.jobs?.map((job) => (
                                 <TabsList key={job.career_id} className='block w-full border-none h-auto job-tab-wrapper'>
                                     <TabsTrigger className='block w-full text-start bg-transparent' value={job.career_id}>
-                                        <Card className='tab-bg'>
+                                        <Card className='tab-bg cursor-pointer'>
                                             <CardContent className='px-3'>
                                                 {job.job_title}
                                             </CardContent>

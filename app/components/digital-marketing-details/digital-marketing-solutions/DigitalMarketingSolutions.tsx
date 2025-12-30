@@ -157,7 +157,7 @@ border-[7px] border-[#ffffff]">
                         {service.description}
                     </p>
 
-                    <Button2 className="mt-5 p-[20px] bg-transparent text-[#204667] hover:text-[#F4BE00]">
+                    <Button2 className="mt-5 p-[20px]  cursor-pointer bg-transparent text-[#204667] hover:text-[#F4BE00]">
                         <Link href={service.url}>
                             <span>View More</span>
                         </Link>

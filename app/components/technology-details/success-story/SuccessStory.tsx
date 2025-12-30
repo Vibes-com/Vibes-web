@@ -49,7 +49,7 @@ export default function SuccessStory({
           <div>
             <Button2
               onClick={onButtonClick}
-              className="mt-5 p-[20px] bg-[#fff]"
+              className="mt-5 p-[20px] bg-[#fff] cursor-pointer"
             >
               <span className="text-[#000]">{buttonText}</span>
               <ArrowUpIcon className="transform rotate-45 text-[#000]" />

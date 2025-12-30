@@ -154,7 +154,7 @@ const TechSolutions = () => {
                                 >
                                     <p className="font-poppins font-medium text-[12px]  tracking-normal text-[#737373]">{service.description}</p>
 
-                                    <Button2 className="mt-5 p-[20px] hover:text-[#F4BE00] bg-transparent  text-[#204667] text-[16px]">
+                                    <Button2 className="mt-5 p-[20px] hover:text-[#F4BE00] bg-transparent  text-[#204667] text-[16px]  cursor-pointer">
                                         <Link href={service.url}><span>View More</span></Link>
                                         <ArrowUpIcon className="transform rotate-45" />
                                     </Button2>

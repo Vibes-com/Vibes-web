@@ -39,7 +39,7 @@ const BrandingCasestudies = () => {
                     </div>
 
                     <Link href="/case-study">
-                        <Button2 className="mt-5 p-[20px]">
+                        <Button2 className="mt-5 p-[20px] cursor-pointer">
                             <span>Explore Case Studies</span>
                             <ArrowUpIcon className="transform rotate-45" />
                         </Button2>
@@ -64,7 +64,7 @@ const BrandingCasestudies = () => {
                             <p className="text-[#525252] mt-5 max-w-lg">
                                 A focused branding approach shaped distinct B2B and B2C identities through research-led rebranding, campaigns, and consistent digital presence.
                             </p>
-                            <Button2 className="mt-5 p-0! p-[20px] hover:text-[#F4BE00] bg-transparent  text-[#204667] text-[16px]">
+                            <Button2 className="mt-5 p-0! p-[20px]  cursor-pointer hover:text-[#F4BE00] bg-transparent  text-[#204667] text-[16px]">
                                 <Link href="case-study/tomorrows-india"><span>Read More</span></Link>
                                 <ArrowUpIcon className="transform rotate-45" />
                             </Button2>
@@ -86,7 +86,7 @@ const BrandingCasestudies = () => {
 
                             </p>
 
-                            <Button2 className="mt-5 p-0! p-[20px] hover:text-[#F4BE00] bg-transparent  text-[#204667] text-[16px]">
+                            <Button2 className="mt-5 p-0!  cursor-pointer p-[20px] hover:text-[#F4BE00] bg-transparent  text-[#204667] text-[16px]">
                                 <Link href="case-study/interio-haven"><span>Read More</span></Link>
                                 <ArrowUpIcon className="transform rotate-45" />
                             </Button2>
@@ -125,7 +125,7 @@ const BrandingCasestudies = () => {
                                 A focused branding approach shaped distinct B2B and B2C identities through research-led rebranding, campaigns, and consistent digital presence.
                             </p>
 
-                            <Button2 className="mt-5 p-0! p-[20px] hover:text-[#F4BE00] bg-transparent  text-[#204667] text-[16px]">
+                            <Button2 className="mt-5  cursor-pointer p-0! p-[20px] hover:text-[#F4BE00] bg-transparent  text-[#204667] text-[16px]">
                                 <Link href="case-study/maxim-alert"><span>Read More</span></Link>
                                 <ArrowUpIcon className="transform rotate-45" />
                             </Button2>
@@ -155,7 +155,7 @@ const BrandingCasestudies = () => {
                                 A comprehensive branding strategy covering name, logo, colour palette, and clear brand guidelines to ensure consistency across all platforms.
                             </p>
 
-                            <Button2 className="mt-5 p-0! p-[20px] hover:text-[#F4BE00] bg-transparent  text-[#204667] text-[16px]">
+                            <Button2 className="mt-5 p-0!  cursor-pointer p-[20px] hover:text-[#F4BE00] bg-transparent  text-[#204667] text-[16px]">
                                 <Link href="case-study/buzaria"><span>Read More</span></Link>
                                 <ArrowUpIcon className="transform rotate-45" />
                             </Button2>
