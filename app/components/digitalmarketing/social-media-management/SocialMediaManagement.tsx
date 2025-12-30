@@ -12,6 +12,7 @@ interface blogContent {
   Subtitle: React.ReactNode;
   bgImage?: string;
   highlighttitle: string,
+  service:string
 }
 const textcontent: blogContent = {
   title: 'Ideas, insights, and intelligent ',
@@ -21,7 +22,8 @@ const textcontent: blogContent = {
       Insights, trends, and expert perspectives on social media strategy,<br /> content performance, and digital brand growth.
     </>
   ),
-  bgImage: '/assets/img/web-development/wd-services-bg.jpg'
+  bgImage: '/assets/img/web-development/wd-services-bg.jpg',
+  service:'digital'
 };
 
 const SocialMediaManagement = () => {

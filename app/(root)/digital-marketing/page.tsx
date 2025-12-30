@@ -18,6 +18,7 @@ interface blogContent {
   Subtitle: React.ReactNode;
   bgImage?: string;
   highlighttitle: string;
+  service:string
 }
 const textcontent: blogContent = {
   title: 'Ideas, insights, and intelligent ',
@@ -27,7 +28,8 @@ const textcontent: blogContent = {
       Subtext: Insights focused on performance, visibility, and sustainable<br /> digital growth.
     </>
   ),
-  bgImage: '/assets/img/web-development/wd-services-bg.jpg'
+  bgImage: '/assets/img/web-development/wd-services-bg.jpg',
+  service:'digital'
 };
 
 const slides: SlideItem[] = [

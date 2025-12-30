@@ -14,6 +14,7 @@ interface blogContent {
   Subtitle: React.ReactNode;
   bgImage?: string;
   highlighttitle: string,
+  service:string
 }
 const textcontent: blogContent = {
   title: 'Ideas, insights, and intelligent ',
@@ -23,7 +24,8 @@ const textcontent: blogContent = {
       Expert perspectives, trends, and strategic thinking that explore branding, <br />identity, and communication shaping how brands grow and stay relevant.
     </>
   ),
-  bgImage: '/assests/img/technology-details/common-casestudy-bg.jpg'
+  bgImage: '/assests/img/technology-details/common-casestudy-bg.jpg',
+  service:'digital'
 };
 
 

@@ -11,6 +11,7 @@ interface blogContent {
   Subtitle: React.ReactNode;
   bgImage?: string;
   highlighttitle: string,
+  service:string
 }
 const textcontent: blogContent = {
   title: 'Branding ',
@@ -20,7 +21,8 @@ const textcontent: blogContent = {
       Expert insights, trends, and ideas focused on keeping brands relevant <br />in changing markets.
     </>
   ),
-  bgImage: '/assets/img/web-development/wd-services-bg.jpg'
+  bgImage: '/assets/img/web-development/wd-services-bg.jpg',
+  service:'branding'
 };
 
 const images = [

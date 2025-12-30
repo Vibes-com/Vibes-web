@@ -13,6 +13,7 @@ interface blogContent {
   Subtitle: React.ReactNode;
   bgImage?: string;
   highlighttitle: string,
+  service:string
 }
 const textcontent: blogContent = {
   title: 'Ideas, insights, and intelligent ',
@@ -22,7 +23,8 @@ const textcontent: blogContent = {
       Explore thought leadership, trends, and proven strategies behind<br /> successful influencer and event-led campaigns shaping modern brand communication.
     </>
   ),
-  bgImage: '/assets/img/web-development/wd-services-bg.jpg'
+  bgImage: '/assets/img/web-development/wd-services-bg.jpg',
+  service:'digital'
 };
 
 const CampaignManagement = () => {

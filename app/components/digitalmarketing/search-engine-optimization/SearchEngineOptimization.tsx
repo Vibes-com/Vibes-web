@@ -12,6 +12,7 @@ interface blogContent {
   Subtitle: React.ReactNode;
   bgImage?: string;
   highlighttitle: string,
+  service:string
 }
 const textcontent: blogContent = {
   title: 'SEO Insights & ',
@@ -21,7 +22,8 @@ const textcontent: blogContent = {
       Practical perspectives on evolving search algorithms, AI-driven SEO,<br /> content performance, and organic growth strategies.
     </>
   ),
-  bgImage: '/assets/img/web-development/wd-services-bg.jpg'
+  bgImage: '/assets/img/web-development/wd-services-bg.jpg',
+  service:'digital'
 };
 
 
