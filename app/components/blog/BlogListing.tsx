@@ -27,8 +27,8 @@ export default function BlogListing() {
       : blogs.filter((blog: any) => blog.blog_service === selectedFilter);
     
     const services = Array.from(
-    new Set(blogs.map((blog: any) => blog.blog_service))
-);
+      new Set(blogs.map((blog: any) => blog.blog_service))
+    );
 
 
   const LatestBlog = filteredBlogs[0]
