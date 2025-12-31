@@ -84,7 +84,7 @@ const DigitalMarketingSolutions = () => {
 
                     <div className="relative w-full h-[582px]  overflow-hidden shadow-xl ">
                         <Image
-                            src="/assests/img/digital-m-details/digital-solutions-middle-img.png"
+                            src="/assests/img/digital-m-details/digital-middle-img.png"
                             alt="Technology Showcase"
                             fill
                             className="object-fill "
