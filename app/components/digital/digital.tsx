@@ -34,7 +34,7 @@ export default function Digital() {
         buttonText="Discover More"
         images={service.image_gallery.map((img) => img.url)}
         reverse={false}
-        btnlink="/digital-marketing"
+        btnlink="/digital-marketing-services"
       />
     </div>
   );

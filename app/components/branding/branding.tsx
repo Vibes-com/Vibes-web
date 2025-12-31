@@ -38,7 +38,7 @@ export default function Branding() {
         buttonText="Build Your Brand"
         images={service.image_gallery.map((img) => img.url)}
         reverse={true}
-        btnlink="/branding"
+        btnlink="/branding-services"
       />
     </div>
   );
