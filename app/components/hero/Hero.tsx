@@ -26,8 +26,8 @@ const Hero = () => {
   }
 
   const heroBanners = banners
-    // .sort((a: any, b: any) => Number(a.show_order) - Number(b.show_order))
-    // .slice(0, BANNER_LIMIT);
+  // .sort((a: any, b: any) => Number(a.show_order) - Number(b.show_order))
+  // .slice(0, BANNER_LIMIT);
 
   return (
     <div className="relative w-full h-screen overflow-hidden">

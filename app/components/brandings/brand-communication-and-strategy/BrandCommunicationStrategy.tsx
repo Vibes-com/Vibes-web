@@ -35,7 +35,7 @@ const BrandCommunicationStrategy = () => {
   return (
     <div>
       <HeroSection
-        bgImage="/assests/img/app-development/app-development-bannner.jpg"
+        bgImage="/assests/img/branding-details/brand-communication-banner.jpg"
         title={
           <>
             Brand Communication <br />

@@ -29,7 +29,7 @@ const SocialMediaManagement = () => {
   return (
     <div>
       <HeroSection
-        bgImage="/assests/img/campaign-management/campaign-management-banner.jpg"
+        bgImage="/assests/img/digital-m-details/social-media-banner.jpg"
         title={
           <>
             Social Media <br />
@@ -47,18 +47,18 @@ const SocialMediaManagement = () => {
         bgImage="/assests/img/web-development/wd-services-bg.jpg"
         features={[
           {
-            icon: "/assests/img/web-development/built-way-icon-1.png",
+            icon: "/assests/img/digital-m-details/copy-writing.png",
             title: <>Content Creation & Planning</>,
             subtitle: "Purpose-driven content calendars, platform-specific creatives, and messaging frameworks built to maintain consistency, relevance, and brand recall."
           },
           {
-            icon: "/assests/img/web-development/built-way-icon-1.png",
+            icon: "/assests/img/digital-m-details/b2b.png",
             title: <>B2B Social Media Management</>,
             subtitle: "Professional, insight-driven social strategies that position brands as industry leaders, strengthen credibility, and support long-term business growth."
           },
 
           {
-            icon: "/assests/img/web-development/built-way-icon-1.png",
+            icon: "/assests/img/digital-m-details/b2c.png",
             title: <>B2C Social Media Management</>,
             subtitle: "Engaging, trend-responsive social storytelling designed to increase visibility, build community, and drive meaningful consumer interaction."
           },

@@ -82,6 +82,7 @@ const AboutSection = ({
                       alt="feature icon"
                       width={25}
                       height={25}
+                      unoptimized
                     />
                   </div>
                   <div>

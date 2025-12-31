@@ -35,7 +35,7 @@ const BrandUpliftment = () => {
   return (
     <div>
       <HeroSection
-        bgImage="/assests/img/app-development/app-development-bannner.jpg"
+        bgImage="/assests/img/branding-details/brand-upliftment-banner.jpg"
         title={
           <>
             Brand <br />

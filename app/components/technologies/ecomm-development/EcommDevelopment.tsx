@@ -14,7 +14,7 @@ const EcommDevelopment = () => {
   return (
     <div>
       <HeroSection
-        bgImage="/assests/img/ecommerce-development/ecommerce-banner.jpg"
+        bgImage="/assests/img/ecommerce-development/ecom-banner.jpg"
         title={
           <>
             E-Commerce <br />
@@ -33,22 +33,22 @@ const EcommDevelopment = () => {
 
         features={[
           {
-            icon: "/assests/img/web-development/built-way-icon-1.png",
+            icon: "/assests/img/ecommerce-development/ecommerce.png",
             title: <>Custom E-commerce Development</>,
             subtitle: <>Tailored online stores built for performance, scalability, and seamless operations.</>,
           },
           {
-            icon: "/assests/img/web-development/built-way-icon-1.png",
+            icon: "/assests/img/ecommerce-development/platform.png",
             title: <>Platform-Based Solutions</>,
             subtitle: <> Expert development on Shopify, WooCommerce, and custom frameworks</>,
           },
           {
-            icon: "/assests/img/web-development/built-way-icon-1.png",
+            icon: "/assests/img/ecommerce-development/integration.png",
             title: <>Payment & System Integrations</>,
             subtitle: <> Secure payment gateways, shipping, CRM, and marketing tool integrations.</>,
           },
           {
-            icon: "/assests/img/web-development/built-way-icon-1.png",
+            icon: "/assests/img/ecommerce-development/optimization.png",
             title: <>Optimization & Support</>,
             subtitle: <>Performance tuning, security updates, and ongoing enhancements for growth.</>,
           },
@@ -72,7 +72,7 @@ const EcommDevelopment = () => {
             id: "01",
             title: "Planning & Strategy",
             desc: "Define business objectives, target audience, USPs, budget, and select the right e-commerce platform.",
-            icon: "/assests/img/web-development/workflow-icon-1.png",
+            icon: "/assests/img/app-development/planning.png",
           },
           {
             id: "02",
@@ -102,14 +102,14 @@ const EcommDevelopment = () => {
             id: "06",
             title: "Testing (QA)",
             desc: "Comprehensive usability, performance, security, and cross-device testing.",
-            icon: "/assests/img/web-development/workflow-icon-5.png",
+            icon: "/assests/img/web-development/testing.png",
             active: true,
           },
           {
             id: "07",
             title: "Launch & Deployment",
             desc: "Go-live support with SEO setup, content readiness, and analytics integration.",
-            icon: "/assests/img/web-development/workflow-icon-6.png",
+            icon: "/assests/img/web-development/deployment.png",
           },
           {
             id: "08",
@@ -132,12 +132,12 @@ const EcommDevelopment = () => {
           {
             title: "Conversion-Focused Design",
             desc: "Built for intuitive navigation, seamless journeys, and higher sales conversions.",
-            icon: "/assests/img/web-development/why-choose-icon2.png",
+            icon: "/assests/img/ecommerce-development/focused-design.png",
           },
           {
             title: "Scalable Architecture",
             desc: "Flexible, future-ready systems supporting business growth and high traffic.",
-            icon: "/assests/img/web-development/why-choose-icon1.png",
+            icon: "/assests/img/app-development/scalability.png",
           },
           {
             title: "End-to-End Delivery",
@@ -147,7 +147,7 @@ const EcommDevelopment = () => {
           {
             title: "Secure & Optimized Performance",
             desc: "Fast, reliable, and secure platforms that enhance user trust and experience.",
-            icon: "/assests/img/web-development/why-choose-icon4.png",
+            icon: "/assests/img/ecommerce-development/security.png",
           },
         ]}
       />

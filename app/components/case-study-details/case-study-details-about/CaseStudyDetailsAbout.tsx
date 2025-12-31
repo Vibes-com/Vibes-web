@@ -32,7 +32,7 @@ const CaseStudyDetailsAbout: React.FC<CaseStudyDetailsAboutProps> = ({
 
           {/* LEFT IMAGE */}
           <div className="col-span-12 lg:col-span-6">
-            <div className="bg-white rounded-xl shadow-[0px_4px_7.6px_0px_#0000001F] p-8">
+            <div className="bg-white rounded-xl shadow-[0px_4px_7.6px_0px_#0000001F] ">
               <Image
                 src={imageSrc}
                 alt={imageAlt}

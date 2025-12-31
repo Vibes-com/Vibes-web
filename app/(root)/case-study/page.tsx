@@ -21,7 +21,7 @@ export default function Page() {
       tags: item.tags ? item.tags.split(",").map((t) => t.trim()) : [],
       buttonText: "Inside The Project",
     })) || [];
-    console.log(data)
+  console.log(data)
   return (
     <div>
       <CaseStudiesListingHero />

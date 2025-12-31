@@ -11,8 +11,8 @@ const services = [
         title: "Campaign Management",
         description:
             " End-to-end campaign management including influencer collaborations and event marketing to amplify reach, drive engagement, and create measurable brand impact.",
-        bgImage: "/assests/img/technology-details/web-devlopment-bg.png",
-        icon: "/assests/img/digital-m-details/digital-solution-icon-1.png",
+        bgImage: "/assests/img/digital-m-details/dm-bg-1.jpeg",
+        icon: "/assests/img/digital-m-details/campaign.png",
         tags: [
             "Influencer Marketing",
             "Event Marketing",
@@ -23,9 +23,9 @@ const services = [
         title: "Performance Marketing",
         description:
             "Campaign management focused on performance marketing and lead generation through Meta, Google, and LinkedIn ads to drive measurable conversions and ROI.",
-        bgImage: "/assests/img/technology-details/mobile-app-development-bg.jpg",
+        bgImage: "/assests/img/digital-m-details/dm-bg-2.jpeg",
         hoverBgImage: "/assests/img/technology-details/tech-cards-bg.png",
-        icon: "/assests/img/digital-m-details/digital-solution-icon-2.png",
+        icon: "/assests/img/digital-m-details/growth.png",
         tags: ["Lead Generation", "Meta Ads", "Google Ads", "LinkedIn Ads"],
         url: "/digital-marketing/performance-marketing",
     },
@@ -33,9 +33,9 @@ const services = [
         title: "Social Media Management ",
         description:
             "Strategic social media management for B2B and B2C, covering content planning, creation, and platform-led growth across LinkedIn and consumer channels.",
-        bgImage: "/assests/img/technology-details/ecommerce-development-bg.jpg",
+        bgImage: "/assests/img/digital-m-details/dm-bg-3.jpeg",
         hoverBgImage: "/assests/img/technology-details/tech-cards-bg.png",
-        icon: "/assests/img/digital-m-details/digital-solution-icon-3.png",
+        icon: "/assests/img/digital-m-details/social-media.png",
         tags: ["Content Creation & Planning", "B2B: LinkedIn Management", "B2C: LinkedIn Management"],
         url: "/digital-marketing/social-media-management",
     },
@@ -43,9 +43,9 @@ const services = [
         title: "Search Engine Optimization",
         description:
             "Comprehensive SEO management covering on-page, off-page, technical SEO, LLM optimization, and keyword strategy to improve visibility, rankings, and search performance.",
-        bgImage: "/assests/img/technology-details/project-monitoring-system-bg.png",
+        bgImage: "/assests/img/digital-m-details/dm-bg-4.jpeg",
         hoverBgImage: "/assests/img/technology-details/tech-cards-bg.png",
-        icon: "/assests/img/digital-m-details/digital-solution-icon-4.png",
+        icon: "/assests/img/digital-m-details/seo.png",
         tags: ["On-Page SEO", "Off-Page SEO", "Technical SEO", "LLM", "Keyword Strategy"],
         url: "/digital-marketing/search-engine-optimization",
     },
@@ -108,7 +108,7 @@ const DigitalMarketingSolutions = () => {
 
 const ServiceCard = ({ service }: any) => {
     return (
-        <div className="group relative w-full  h-[278px] bg-[#466E59]/85 shadow-lg transition-all duration-500 rounded-lg hover:bg-[#FFFFFF]">
+        <div className="group relative w-full  h-[278px] bg-[#466E59]/100 shadow-lg transition-all duration-500 rounded-lg hover:bg-[#FFFFFF]">
 
             {/* ICON */}
             <div
@@ -129,7 +129,7 @@ border-[7px] border-[#ffffff]">
                 alt="bg"
                 fill
                 unoptimized
-                className="absolute inset-0 object-cover opacity-20 transition-opacity duration-500 group-hover:opacity-0 rounded-lg"
+                className="absolute inset-0 object-cover opacity-5 transition-opacity duration-500 group-hover:opacity-0 rounded-lg"
             />
 
 

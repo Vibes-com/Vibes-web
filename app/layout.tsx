@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 // import { Geist, Geist_Mono } from "next/font/google";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import "./responsive.css";
 import Preloader from "./components/preloader/Preloader";
 // import Preloader from "./components/preloader/Preloader";
 
@@ -23,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={poppins.className}>
       <body>
-        <Preloader/>
+        <Preloader />
         {children}
       </body>
     </html>

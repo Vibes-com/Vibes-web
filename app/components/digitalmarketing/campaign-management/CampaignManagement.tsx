@@ -30,7 +30,7 @@ const CampaignManagement = () => {
   return (
     <div>
       <HeroSection
-        bgImage="/assests/img/campaign-management/campaign-management-banner.jpg"
+        bgImage="/assests/img/campaign-management/compaign-banner.jpg"
         title={
           <>
             Campaign <br />
@@ -48,12 +48,12 @@ const CampaignManagement = () => {
         bgImage="/assests/img/web-development/wd-services-bg.jpg"
         features={[
           {
-            icon: "/assests/img/web-development/built-way-icon-1.png",
+            icon: "/assests/img/digital-m-details/influencer.png",
             title: <>Influencer Marketing</>,
             subtitle: "Strategic influencer collaborations that amplify brand narratives through credible voices, targeted communities, and performance-driven partnerships aligned with campaign goals."
           },
           {
-            icon: "/assests/img/web-development/built-way-icon-1.png",
+            icon: "/assests/img/digital-m-details/marketing-plan.png",
             title: <>Event Marketing</>,
             subtitle: "Concept-to-closure event execution that creates immersive brand experiences, drives audience participation, and strengthens brand recall through seamless planning and promotion."
           },

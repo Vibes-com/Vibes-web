@@ -24,10 +24,14 @@ const textcontent: blogContent = {
 };
 
 const images = [
-  { src: "/assests/img/branding-details/branding-bottom-img-1.png" },
-  { src: "/assests/img/branding-details/branding-bottom-img-2.png" },
-  { src: "/assests/img/branding-details/branding-bottom-img-3.png" },
-  { src: "/assests/img/branding-details/branding-bottom-img-4.png" },
+  { src: "/assests/img/branding-details/corporate-workflow-1.jpg" },
+  { src: "/assests/img/branding-details/corporate-workflow-2.jpg" },
+  { src: "/assests/img/branding-details/corporate-workflow-3.jpg" },
+  { src: "/assests/img/branding-details/corporate-workflow-4.jpg" },
+  { src: "/assests/img/branding-details/corporate-workflow-5.jpg" },
+  { src: "/assests/img/branding-details/corporate-workflow-6.jpg" },
+  { src: "/assests/img/branding-details/corporate-workflow-7.jpg" },
+  { src: "/assests/img/branding-details/corporate-workflow-8.jpg" },
 ];
 
 const CorporateBranding = () => {
@@ -35,7 +39,7 @@ const CorporateBranding = () => {
   return (
     <div>
       <HeroSection
-        bgImage="/assests/img/app-development/app-development-bannner.jpg"
+        bgImage="/assests/img/branding-details/corporate-branding-banner.jpg"
         title={
           <>
             CORPORATE <br />

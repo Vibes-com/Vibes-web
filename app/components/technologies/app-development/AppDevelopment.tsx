@@ -14,7 +14,7 @@ const AppDevelopment = () => {
   return (
     <div>
       <HeroSection
-        bgImage="/assests/img/app-development/app-development-bannner.jpg"
+        bgImage="/assests/img/app-development/mobile-app-banner.jpg"
         title={
           <>
             Mobile App <br />
@@ -33,12 +33,12 @@ const AppDevelopment = () => {
 
         features={[
           {
-            icon: "/assests/img/web-development/built-way-icon-1.png",
+            icon: "/assests/img/app-development/mobile-development.png",
             title: <>Android App Development</>,
             subtitle: <>Robust Android applications built for performance, security, and seamless user experiences across devices</>,
           },
           {
-            icon: "/assests/img/web-development/built-way-icon-1.png",
+            icon: "/assests/img/app-development/ios-development.png",
             title: <>iOS App Development</>,
             subtitle: <>High-quality iOS apps designed for speed, stability, and compliance with Apple’s design and performance standards</>,
           },
@@ -61,13 +61,13 @@ const AppDevelopment = () => {
             id: "01",
             title: "Ideation & Strategy",
             desc: "Define the core app idea, unique value proposition (UVP), target audience, and feature roadmap.",
-            icon: "/assests/img/web-development/workflow-icon-1.png",
+            icon: "/assests/img/app-development/idea.png",
           },
           {
             id: "02",
             title: "Planning & Analysis",
             desc: "Market research, competitor analysis, MVP feature definition, and structured planning for timelines and budgets.",
-            icon: "/assests/img/web-development/workflow-icon-2.png",
+            icon: "/assests/img/app-development/planning.png",
           },
           {
             id: "03",
@@ -85,20 +85,20 @@ const AppDevelopment = () => {
             id: "05",
             title: "Testing & Quality Assurance (QA)",
             desc: "Comprehensive testing for functionality, performance, security, and usability across devices and platforms.",
-            icon: "/assests/img/web-development/workflow-icon-4.png",
+            icon: "/assests/img/web-development/testing.png",
           },
           {
             id: "06",
             title: "Deployment & Launch",
             desc: "App Store and Play Store submissions with ASO-ready assets for smooth approvals and visibility.",
-            icon: "/assests/img/web-development/workflow-icon-5.png",
+            icon: "/assests/img/web-development/deployment.png",
             active: true,
           },
           {
             id: "07",
             title: "Post-Launch: Maintenance & Updates",
             desc: "Ongoing monitoring, feature enhancements, performance optimization, and regular updates.",
-            icon: "/assests/img/web-development/workflow-icon-6.png",
+            icon: "/assests/img/web-development/workflow-icon-7.png",
           },
 
         ]}
@@ -117,22 +117,22 @@ const AppDevelopment = () => {
           {
             title: "Strategy-Led Development",
             desc: " Mobile apps built with clear goals, purpose, and measurable outcomes.",
-            icon: "/assests/img/web-development/why-choose-icon2.png",
+            icon: "/assests/img/app-development/development.png",
           },
           {
             title: "Scalable Architecture",
             desc: " Robust app frameworks designed to grow with evolving business needs.",
-            icon: "/assests/img/web-development/why-choose-icon1.png",
+            icon: "/assests/img/app-development/scalability.png",
           },
           {
             title: "End-to-End Ownership",
             desc: " Complete lifecycle management from idea to launch and beyond.",
-            icon: "/assests/img/web-development/why-choose-icon3.png",
+            icon: "/assests/img/app-development/ownership.png",
           },
           {
             title: "User-Centric Design",
             desc: " Intuitive experiences crafted for engagement, usability, and retention.",
-            icon: "/assests/img/web-development/why-choose-icon4.png",
+            icon: "/assests/img/app-development/centric.png",
           },
         ]}
       />

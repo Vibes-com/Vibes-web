@@ -31,12 +31,18 @@ const textcontent: blogContent = {
 };
 
 const logos = [
-  "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/buzaria-logo.png",
-  "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/buzaria-logo.png",
-  "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/buzaria-logo.png",
-  "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/buzaria-logo.png",
-  "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/buzaria-logo.png",
-  "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/buzaria-logo.png",
+  "/assests/img/technology-details/tech-logo-1.png",
+  "/assests/img/technology-details/tech-logo-2.png",
+  "/assests/img/technology-details/tech-logo-3.png",
+  "/assests/img/technology-details/tech-logo-4.png",
+  "/assests/img/technology-details/tech-logo-5.png",
+  "/assests/img/technology-details/tech-logo-6.png",
+  "/assests/img/technology-details/tech-logo-7.png",
+  "/assests/img/technology-details/tech-logo-8.png",
+  "/assests/img/technology-details/tech-logo-9.png",
+  "/assests/img/technology-details/tech-logo-10.png",
+  "/assests/img/technology-details/tech-logo-11.png",
+  "/assests/img/technology-details/tech-logo-12.png",
 ];
 
 const tabs = ["healthcare", "education", "realestate", "entertainment", "government"];

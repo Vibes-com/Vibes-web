@@ -85,6 +85,7 @@ const WorkflowSection: React.FC<WorkflowSectionProps> = ({
                   alt={step.title}
                   width={36}
                   height={36}
+                  unoptimized
                   className="transition group-hover:invert"
                 />
               </div>

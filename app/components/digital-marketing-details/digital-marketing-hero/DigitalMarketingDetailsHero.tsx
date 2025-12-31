@@ -35,7 +35,7 @@ const DigitalMarketingDetailsHero: React.FC = () => {
                             <div className="flex items-center -space-x-5 me-auto">
                                 <div className="w-[55px] h-[55px] rounded-full border border-white/70 flex items-center justify-center shadow-[0px_4px_4px_0px_#00000040]">
                                     <Image
-                                        src="/assests/img/technology-details/widex-logo.png"
+                                        src="/assests/img/digital-m-details/digtal-client-1.png"
                                         alt="client logo"
                                         width={55}
                                         height={55}
@@ -43,7 +43,7 @@ const DigitalMarketingDetailsHero: React.FC = () => {
                                 </div>
                                 <div className="w-[55px] h-[55px] rounded-full border border-white/70 flex items-center justify-center shadow-[0px_4px_4px_0px_#00000040]">
                                     <Image
-                                        src="/assests/img/technology-details/pwc-logo.png"
+                                        src="/assests/img/digital-m-details/digtal-client-2.png"
                                         alt="client logo"
                                         width={55}
                                         height={55}
@@ -51,7 +51,7 @@ const DigitalMarketingDetailsHero: React.FC = () => {
                                 </div>
                                 <div className="w-[55px] h-[55px] rounded-full border border-white/70 flex items-center justify-center shadow-[0px_4px_4px_0px_#00000040]">
                                     <Image
-                                        src="/assests/img/technology-details/lumenis-logo.png"
+                                        src="/assests/img/digital-m-details/digtal-client-3.png"
                                         alt="client logo"
                                         width={55}
                                         height={55}
@@ -60,7 +60,7 @@ const DigitalMarketingDetailsHero: React.FC = () => {
 
                                 <div className="w-[55px] h-[55px] rounded-full border border-white/70 flex items-center justify-center shadow-[0px_4px_4px_0px_#00000040]">
                                     <Image
-                                        src="/assests/img/technology-details/mofiso-logo.png"
+                                        src="/assests/img/digital-m-details/digtal-client-4.png"
                                         alt="client logo"
                                         width={55}
                                         height={55}

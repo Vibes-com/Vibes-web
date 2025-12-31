@@ -32,7 +32,7 @@ const PerformanceMarketing = () => {
   return (
     <div>
       <HeroSection
-        bgImage="/assests/img/app-development/app-development-bannner.jpg"
+        bgImage="/assests/img/performance-marketing/performance-marketing-banner.jpg"
         title={
           <>
             PERFORMANCE <br />
@@ -51,22 +51,22 @@ const PerformanceMarketing = () => {
 
         features={[
           {
-            icon: "/assests/img/web-development/built-way-icon-1.png",
+            icon: "/assests/img/digital-m-details/leads.png",
             title: <>Lead <br />Generation</>,
             subtitle: ""
           },
           {
-            icon: "/assests/img/web-development/built-way-icon-1.png",
+            icon: "/assests/img/digital-m-details/meta-ads.png",
             title: <>Meta<br />Ads</>,
             subtitle: ""
           },
           {
-            icon: "/assests/img/web-development/built-way-icon-1.png",
+            icon: "/assests/img/digital-m-details/google-ads.png",
             title: <>Google Ads</>,
             subtitle: ""
           },
           {
-            icon: "/assests/img/web-development/built-way-icon-1.png",
+            icon: "/assests/img/digital-m-details/linkedin-ads.png",
             title: <>LinkedIn<br />Ads</>,
             subtitle: ""
           },

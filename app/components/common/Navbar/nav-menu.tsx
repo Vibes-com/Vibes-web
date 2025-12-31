@@ -35,7 +35,7 @@ export const NavMenu = (props: ComponentProps<typeof NavigationMenu>) => {
         );
     return (
         <NavigationMenu {...props}>
-            <NavigationMenuList className=" nav-menu-new space-x-3 data-[orientation=vertical]:flex-col data-[orientation=vertical]:items-start">
+            <NavigationMenuList className=" nav-menu-new space-x-3 data-[orientation=vertical]:flex-col data-[orientation=vertical]:items-start ">
 
                 <NavigationMenuItem>
                     <NavigationMenuLink asChild className={linkClass(isActive("/"))}>
@@ -54,7 +54,6 @@ export const NavMenu = (props: ComponentProps<typeof NavigationMenu>) => {
                         className={clsx(
                             "bg-transparent !bg-transparent text-white font-poppins font-normal text-[14px] leading-[100%]",
 
-                            // 🔥 force remove bg on ALL states
                             "hover:!bg-transparent focus:!bg-transparent active:!bg-transparent",
                             "data-[state=open]:!bg-transparent data-[state=closed]:!bg-transparent",
 

@@ -14,7 +14,7 @@ const slides: BuiltWaySlide[] = [
     id: "testing",
     title: "Application Testing",
     desc: "Ensuring flawless performance with rigorous, end-to-end quality checks.",
-    icon: "/assests/img/web-development/built-way-icon-1.png",
+    icon: "/assests/img/web-development/testing-icon.png",
   },
   {
     id: "uiux",
@@ -32,13 +32,13 @@ const slides: BuiltWaySlide[] = [
     id: "figma",
     title: "Figma Mockup",
     desc: "Turning ideas into pixel-perfect visual prototypes for faster approvals.",
-    icon: "/assests/img/web-development/built-way-icon-1.png",
+    icon: "/assests/img/web-development/figma.png",
   },
   {
     id: "maintenance",
     title: "Maintenance & Support",
     desc: "Keeping your digital products smooth, secure, and always up-to-date.",
-    icon: "/assests/img/web-development/built-way-icon-1.png",
+    icon: "/assests/img/web-development/it-support.png",
   },
 ];
 
@@ -67,22 +67,22 @@ const WebDevelopment = () => {
 
         features={[
           {
-            icon: "/assests/img/web-development/built-way-icon-1.png",
+            icon: "/assests/img/web-development/coded-secure.png",
             title: <>Custom-Coded,<br />Secure Builds</>,
             subtitle: ""
           },
           {
-            icon: "/assests/img/web-development/built-way-icon-1.png",
+            icon: "/assests/img/web-development/high-speed-icon.png",
             title: <>High-Speed <br />Performance</>,
             subtitle: ""
           },
           {
-            icon: "/assests/img/web-development/built-way-icon-1.png",
+            icon: "/assests/img/web-development/scalability.png",
             title: <>Scalable <br />Architecture</>,
             subtitle: ""
           },
           {
-            icon: "/assests/img/web-development/built-way-icon-1.png",
+            icon: "/assests/img/web-development/project-management.png",
             title: <>On-Time Project<br />Delivery</>,
             subtitle: ""
           },
@@ -105,7 +105,7 @@ const WebDevelopment = () => {
             id: "01",
             title: "Discovery & Planning",
             desc: "The goals, audience, and structure are defined during Discovery & Planning to create a scalable foundation for the website.",
-            icon: "/assests/img/web-development/workflow-icon-1.png",
+            icon: "/assests/img/web-development/discovery.png",
           },
           {
             id: "02",
@@ -135,14 +135,14 @@ const WebDevelopment = () => {
             id: "06",
             title: "Testing",
             desc: "Website testing is conducted to verify functionality, meet requirements, and ensure performance across devices and browsers.",
-            icon: "/assests/img/web-development/workflow-icon-5.png",
+            icon: "/assests/img/web-development/testing.png",
             active: true,
           },
           {
             id: "07",
             title: "Deployment",
             desc: "The tested product is deployed to production, configured for use, and optimized for performance and stability.",
-            icon: "/assests/img/web-development/workflow-icon-6.png",
+            icon: "/assests/img/web-development/deployment.png",
           },
           {
             id: "08",

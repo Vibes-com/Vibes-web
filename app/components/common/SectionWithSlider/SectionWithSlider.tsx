@@ -18,7 +18,7 @@ interface SectionProps {
   buttonText: string;
   images: string[];
   reverse?: boolean;
-  btnlink?:string;
+  btnlink?: string;
 }
 
 const SectionWithSlider: FC<SectionProps> = ({
@@ -42,13 +42,14 @@ const SectionWithSlider: FC<SectionProps> = ({
   };
 
   return (
-    <div className="sticky-wrapper hide-scrollbar">
+    <div className="relative md:sticky md:top-0">
       <div className="grid grid-cols-1 md:grid-cols-12 items-center gap-10 md:gap-0">
 
         {/* LEFT SIDE CONTENT */}
-        
+
         <div
-          className={`p-15 md:col-span-5 space-y-6 ${reverse ? "md:order-2" : "md:order-1"}`}
+          className="p-15 md:col-span-5 space-y-6
+  max-h-[772px] overflow-y-auto pr-2"
         >
           <div className="space-y-2">
             <div className="flex justify-start mb-5">
@@ -85,7 +86,7 @@ const SectionWithSlider: FC<SectionProps> = ({
           </div>
 
           <div className="flex items-center gap-4 mt-4">
-            
+
             <button
               onClick={goPrev}
               className="w-[48px] h-[48px] rounded-xl border border-white/40 flex items-center justify-center text-white cursor-pointer bg-[rgba(255,255,255,0.5)]">
@@ -109,7 +110,8 @@ const SectionWithSlider: FC<SectionProps> = ({
 
         {/* RIGHT SIDE SLIDER */}
         <div
-          className={`relative md:col-span-7 w-full h-[772px] overflow-hidden ${reverse ? "md:order-1" : "md:order-2"}`}
+          className={`relative md:col-span-7 w-full h-[700px]
+  ${reverse ? "md:order-1" : "md:order-2"}`}
         >
           <Swiper
             modules={[Autoplay]}
