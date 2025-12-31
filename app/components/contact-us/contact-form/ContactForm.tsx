@@ -10,7 +10,7 @@ import { Button2 } from "@/components/ui/button2";
 import { useSubmitContactFormMutation } from "@/app/redux/api/contactApi";
 import { z } from "zod";
 import toast from "react-hot-toast";
-
+import { useRouter } from "next/navigation";
 
 const generateCaptcha = () => {
   const chars = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
@@ -32,6 +32,7 @@ export const contactSchema = z.object({
 });
 
 const ContactForm = () => {
+  const router = useRouter();
   const [submitContact, { isLoading, isSuccess, data, error }] =
     useSubmitContactFormMutation();
 
@@ -85,7 +86,8 @@ const ContactForm = () => {
 
     try {
       const res = await submitContact(formData).unwrap();
-      toast.success(res.msg);
+      // toast.success(res.msg);
+      router.push("/thankyou");
       refreshCaptcha();
       setFormData({
         firstname: "",

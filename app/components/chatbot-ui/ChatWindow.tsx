@@ -241,7 +241,7 @@ useEffect(() => {
           value={input}
           onChange={(e) => setInput(e.target.value)}
         />
-        <button onClick={sendMessage} className="bg-[#F4BE00] text-white px-4 rounded-lg">➤</button>
+        <button onClick={sendMessage} className="cursor-pointer bg-[#F4BE00] text-white px-4 rounded-lg">➤</button>
       </div>
     </motion.div>
   );
