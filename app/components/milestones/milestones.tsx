@@ -137,7 +137,7 @@ export default function MilestoneSection() {
                 <p className="text-[#FFFFFFDB] font-normal text-[16px] leading-[130%] tracking-[0] text-center max-w-3xl mx-auto mb-16 mt-5">
                     A clear snapshot of the brands, projects, and successes we’ve built together, reflecting the scale of our partnerships and the momentum powering every milestone.
                 </p>
-
+                {/* helloworld */}
                 <div className="lg:grid grid-cols-5 gap-10">
                     {counters.map((item, idx) => (
                         <CounterBox key={idx} value={item.value} label={item.label} animate={startCount} />
