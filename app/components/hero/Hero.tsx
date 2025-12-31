@@ -30,12 +30,12 @@ const Hero = () => {
   // .slice(0, BANNER_LIMIT);
 
   return (
-    <div className="relative w-full h-screen overflow-hidden">
+    <div className="relative w-full h-[40vh] sm:h-[50vh] md:h-[60vh] lg:h-[75vh] xl:h-screen overflow-hidden">
       {heroBanners.map((item: any, index: number) => (
         <div key={index} className="absolute inset-0">
           {item.banner_type === "video" ? (
             <video
-              className="w-full h-full object-cover"
+              className="w-full object-cover"
               autoPlay
               loop
               muted
