@@ -8,8 +8,8 @@ import React from 'react'
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Us | Vibes",
-  description: "Learn more about Vibes, our mission, values, and digital expertise.",
+  title: "Digital Marketing & Brand Agency | IT Services Company | Delhi NCR",
+  description: "Vibes Communications is a proven agency in the space of Digital Marketing, Brand & IT Services. SEO, SMO, Brand Positioning, Website & Customized Software Development are prime services of the company.",
 };
 
 const page = () => {
