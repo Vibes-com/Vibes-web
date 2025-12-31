@@ -2,6 +2,57 @@
 import JobTabs from '@/app/components/careers/JobTabs/JobTabs'
 import HeroSection from '@/app/components/common/InnerPageHero/HeroSection'
 import React from 'react'
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Work with Leading Digital Agency | Noida | Vibes Communications",
+
+  description:
+    "If you quest for growth and have the right attitude, then work with a leading digital agency in Delhi/NCR. We are hiring PHP, Social Media, HTML, UI, QA, and SEO professionals.",
+
+  alternates: {
+    canonical: "https://www.vibescom.in/work-with-digital-agency",
+  },
+
+  openGraph: {
+    title: "Work with Leading Digital Agency | Noida | Vibes Communications",
+    description:
+      "If you quest for growth and have the right attitude, then work with a leading digital agency in Delhi/NCR. We are hiring PHP, Social Media, HTML, UI, QA, and SEO professionals.",
+    url: "https://www.vibescom.in/work-with-digital-agency",
+    siteName: "Vibes Communications Pvt Ltd",
+    images: [
+      {
+        url: "https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary",
+    site: "@vibescom",
+    title: "Work with Leading Digital Agency | Noida | Vibes Communications",
+    description:
+      "If you quest for growth and have the right attitude, then work with a leading digital agency in Delhi/NCR. We are hiring PHP, Social Media, HTML, UI, QA, and SEO professionals.",
+    images: ["https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png"],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+
+  authors: [{ name: "Vibes Communications" }],
+  creator: "Vibes Communications",
+  publisher: "Vibes Communications",
+};
 
 const page = () => {
   return (

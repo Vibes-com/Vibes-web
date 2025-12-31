@@ -13,6 +13,60 @@ import { useGetAllCaseStudiesQuery } from "@/app/redux/api/caseStudyApi";
 import { SingleCaseStudyCard } from "@/app/components/common/CaseStudiesCard/CaseStudiesCard";
 import WhyChooseUsSection from "@/app/components/common/WhyChooseUsSection/WhyChooseUsSection";
 import MarqueeStorySection, { SlideItem } from "@/app/components/common/MarqueeStorySection/MarqueeStorySection";
+
+// import type { Metadata } from "next";
+
+// export const metadata: Metadata = {
+//   title: "Digital Solutions and Digital Marketing Services | Vibes Communications",
+
+//   description:
+//     "Looking for digital solutions and digital marketing services? Vibes Communications is a leading digital company in Noida, India, delivering SEO, social media, and performance-driven marketing solutions.",
+
+//   alternates: {
+//     canonical: "https://www.vibescom.in/digital-marketing-services",
+//   },
+
+//   openGraph: {
+//     title: "Digital Solutions and Digital Marketing Services | Vibes Communications",
+//     description:
+//       "Looking for digital solutions and digital marketing services? Vibes Communications is a leading digital company in Noida, India, delivering SEO, social media, and performance-driven marketing solutions.",
+//     url: "https://www.vibescom.in/digital-marketing-services",
+//     siteName: "Vibes Communications Pvt Ltd",
+//     images: [
+//       {
+//         url: "https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png",
+//         width: 1200,
+//         height: 630,
+//       },
+//     ],
+//     locale: "en_US",
+//     type: "website",
+//   },
+
+//   twitter: {
+//     card: "summary",
+//     site: "@vibescom",
+//     title: "Digital Solutions and Digital Marketing Services | Vibes Communications",
+//     description:
+//       "Looking for digital solutions and digital marketing services? Vibes Communications is a leading digital company in Noida, India, delivering SEO, social media, and performance-driven marketing solutions.",
+//     images: ["https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png"],
+//   },
+
+//   robots: {
+//     index: true,
+//     follow: true,
+//     googleBot: {
+//       index: true,
+//       follow: true,
+//     },
+//   },
+
+//   authors: [{ name: "Vibes Communications" }],
+//   creator: "Vibes Communications",
+//   publisher: "Vibes Communications",
+// };
+
+
 interface blogContent {
   title: string;
   Subtitle: React.ReactNode;

@@ -1,8 +1,9 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpIcon } from "lucide-react";
 import { Button3 } from "@/components/ui/button3";
-
+import { useGetAllCaseStudiesQuery } from "@/app/redux/api/caseStudyApi";
 /* ---------------- TYPES ---------------- */
 
 export interface SingleCaseStudyCard {
@@ -20,11 +21,24 @@ interface CaseStudiesCardProps {
 
 /* ---------------- COMPONENT ---------------- */
 
-export default function CaseStudiesCard({ data }: CaseStudiesCardProps) {
+export default function CaseStudiesCard() {
+const { data, isLoading, isError } = useGetAllCaseStudiesQuery();
 
+  if (isLoading) return <p className="text-center py-10">Loading...</p>;
+  if (isError) return <p className="text-center py-10 text-red-500">Error</p>;
+
+  const cards: SingleCaseStudyCard[] =
+    data?.data?.map((item) => ({
+      id: item.id,
+      img: item.thumbnail,
+      title: item.client_name,
+      slug: item.slug || item.client_slug,
+      tags: item.tags ? item.tags.split(",").map((t) => t.trim()) : [],
+      buttonText: "Inside The Project",
+    })) || [];
   return (
     <>
-      {data.map((item, index) => (
+      {cards.map((item, index) => (
         <div
           key={index}
           className="bg-white mb-[70px] rounded-2xl p-1 ps-2 pb-3 shadow-[0_8px_30px_rgba(0,0,0,0.06)] w-full"
