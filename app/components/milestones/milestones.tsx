@@ -159,6 +159,7 @@ function CounterBox({ value, label, animate }: { value: number; label: string; a
         const speed = value > 300 ? 6 : 2;
         const timer = setInterval(() => {
             current += speed;
+            console.log(speed)
             if (current >= value) {
                 setCount(value);
                 clearInterval(timer);
