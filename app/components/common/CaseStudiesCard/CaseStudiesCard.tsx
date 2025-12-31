@@ -60,13 +60,8 @@ export default function CaseStudiesCard({ data }: CaseStudiesCardProps) {
             </div>
 
             {/* View More Link */}
-<<<<<<< HEAD
             <Link href={`/case-study/${item.slug}`}>
               <Button3 className="text-[#204667] cursor-pointer !p-1 flex items-center gap-2 hover:text-[#F4BE00]">
-=======
-            <Link href={`/case-studies/${item.slug}`}>
-              <Button3 className="text-[#204667] cursor-pointer flex items-center gap-2 hover:text-[#F4BE00]">
->>>>>>> a8717815a11e286f667774e628433a55ccb9d90c
                 <span>{item.buttonText || "View More"}</span>
                 <ArrowUpIcon className="rotate-45" />
               </Button3>

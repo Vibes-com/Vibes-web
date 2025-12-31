@@ -29,11 +29,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             {title}
 
             {description && (
-<<<<<<< HEAD
               <p className="mt-10 font-poppins max-w-2xl font-semibold text-[18px] leading-[128%] text-white">
-=======
-              <p className="mt-10 font-poppins w-[70%] font-semibold text-[18px] leading-[128%] text-white">
->>>>>>> a8717815a11e286f667774e628433a55ccb9d90c
                 {description}
               </p>
             )}
