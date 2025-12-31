@@ -28,7 +28,7 @@ const EcommDevelopment = () => {
         heading=" Solutions Built for"
         highlightText="Online Growth"
         description="Comprehensive e-commerce services covering development, integrations, optimization, and scalability."
-        mainImage="/assests/img/web-development/webdevelopment-about-img.png"
+        mainImage="/assests/img/ecommerce-development/ecom-dev-services.png"
         bgImage="/assests/img/web-development/wd-services-bg.jpg"
 
         features={[

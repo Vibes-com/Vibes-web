@@ -28,7 +28,7 @@ const AppDevelopment = () => {
         heading="Apps Built for"
         highlightText="Performance"
         description="Custom-built mobile applications that support business growth across Android and iOS platforms."
-        mainImage="/assests/img/web-development/webdevelopment-about-img.png"
+        mainImage="/assests/img/app-development/app-dev-serivice.png"
         bgImage="/assests/img/web-development/wd-services-bg.jpg"
 
         features={[

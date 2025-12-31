@@ -30,7 +30,23 @@ const MarqueeTabsSlider = ({
   const swiperRef = useRef<any>(null);
 
   const marqueeLogos = useMemo(() => {
-    return [...logos, ...logos];
+    return [
+      "/assests/img/digital-m-details/digital-icon-1.png",
+      "/assests/img/digital-m-details/digital-icon-2.png",
+      "/assests/img/digital-m-details/digital-icon-3.png",
+      "/assests/img/digital-m-details/digital-icon-4.png",
+      "/assests/img/digital-m-details/digital-icon-5.png",
+      "/assests/img/digital-m-details/digital-icon-6.png",
+      "/assests/img/digital-m-details/digital-icon-7.png",
+      "/assests/img/digital-m-details/digital-icon-1.png",
+      "/assests/img/digital-m-details/digital-icon-2.png",
+      "/assests/img/digital-m-details/digital-icon-3.png",
+      "/assests/img/digital-m-details/digital-icon-4.png",
+      "/assests/img/digital-m-details/digital-icon-5.png",
+      "/assests/img/digital-m-details/digital-icon-6.png",
+      "/assests/img/digital-m-details/digital-icon-7.png",
+
+    ];
   }, [logos]);
 
   return (
