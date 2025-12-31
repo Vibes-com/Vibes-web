@@ -22,7 +22,7 @@ const TechnologyDetailsHero: React.FC = () => {
                             Vibes builds smart, responsive digital systems and apps
                         </p>
                         <div className=" mt-4">
-                            <Link href="contact-us">
+                            <Link href="/contact-for-digital-requirements">
                                 <Button2 className="mt-5 p-[20px] cursor-pointer hover:border-[#2B4C69] hover:border-[2px] hover:text-[#F4BE00] hover:bg-transparent bg-[#FFFFFF] text-[#204667]">
                                     <span>Create Your Edge</span>
                                     <ArrowUpIcon className="transform rotate-45" />

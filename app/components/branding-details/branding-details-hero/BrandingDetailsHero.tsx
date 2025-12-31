@@ -23,7 +23,7 @@ const BrandingDetailsHero: React.FC = () => {
                             From insight to identity, built for business impact
                         </p>
                         <div className=" mt-4">
-                            <Link href="contact-us">
+                            <Link href="/contact-for-digital-requirements">
                                 <Button2 className="mt-5 cursor-pointer p-[20px] hover:border-[#2B4C69] hover:border-[2px] hover:text-[#F4BE00] hover:bg-transparent bg-[#FFFFFF] text-[#204667]">
                                     <span>Create a Stronger Brand</span>
                                     <ArrowUpIcon className="transform rotate-45" />
