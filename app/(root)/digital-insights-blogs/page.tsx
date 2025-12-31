@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 import BlogListingHero from '@/app/components/blog/blog-listing-hero/BlogListingHero';
 import BlogListing from '@/app/components/blog/BlogListing'
 import AboutHero from '@/app/components/who-we-are/about-hero/AboutHero'
