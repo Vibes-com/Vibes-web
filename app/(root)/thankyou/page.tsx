@@ -1,5 +1,5 @@
 import { Button2 } from '@/components/ui/button2'
-import { ArrowLeftIcon } from 'lucide-react'
+import { ArrowLeftIcon, Link } from 'lucide-react'
 import React from 'react'
 
 const page = () => {
@@ -11,14 +11,14 @@ const page = () => {
             </svg>
             <h1 className="text-4xl font-bold text-white">Thank You !</h1>
             <p className='text-white'>We’ve received your message! We’ll get in touch with you shortly.</p>
-          
-            <Button2
+              <a href="/">
+              <Button2
                 type="submit"
                 className="mt-5 p-[20px]  cursor-pointer"
               >
                 <ArrowLeftIcon />
                 <span>Explore More</span>
-              </Button2>
+              </Button2></a>
         </div>
     </div>
   )
