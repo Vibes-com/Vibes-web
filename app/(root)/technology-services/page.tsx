@@ -12,6 +12,75 @@ import CommonCasestudy from "@/app/components/common/CommonCasestudy/CommonCases
 
 import { useGetAllCaseStudiesQuery } from "@/app/redux/api/caseStudyApi";
 import { SingleCaseStudyCard } from "@/app/components/common/CaseStudiesCard/CaseStudiesCard";
+// import type { Metadata } from "next";
+
+// export const metadata: Metadata = {
+//   title: "Best Technology Solutions Services | Vibes Communications",
+
+//   description:
+//     "Vibes Communications provides you with a team of technology experts to handle your business challenges and deliver scalable, high-performance digital solutions.",
+
+//   alternates: {
+//     canonical: "https://www.vibescom.in/technology-services",
+//   },
+
+//   openGraph: {
+//     title: "Best Technology Solutions Services | Vibes Communications",
+//     description:
+//       "Vibes Communications provides you with a team of technology experts to handle your business challenges and deliver scalable, high-performance digital solutions.",
+//     url: "https://www.vibescom.in/technology-services",
+//     siteName: "Vibes Communications Pvt Ltd",
+//     images: [
+//       {
+//         url: "https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png",
+//         width: 1200,
+//         height: 630,
+//       },
+//     ],
+//     locale: "en_US",
+//     type: "website",
+//   },
+
+//   twitter: {
+//     card: "summary",
+//     site: "@vibescom",
+//     title: "Best Technology Solutions Services | Vibes Communications",
+//     description:
+//       "Vibes Communications provides you with a team of technology experts to handle your business challenges and deliver scalable, high-performance digital solutions.",
+//     images: ["https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png"],
+//   },
+
+//   robots: {
+//     index: true,
+//     follow: true,
+//     googleBot: {
+//       index: true,
+//       follow: true,
+//     },
+//   },
+
+//   authors: [{ name: "Vibes Communications" }],
+//   creator: "Vibes Communications",
+//   publisher: "Vibes Communications",
+// };
+// interface blogContent {
+//   title: string;
+//   Subtitle: React.ReactNode;
+//   bgImage?: string;
+//   highlighttitle: string;
+//   service:string;
+// }
+// const textcontent: blogContent = {
+//   title: 'Tech Ideas &',
+//   highlighttitle: "Insights",
+//   Subtitle: (
+//     <>
+//       Explore curated articles on emerging tech, smart solutions, and expert perspectives from<br /> Vibes built to inform, inspire, and accelerate digital growth.
+//     </>
+//   ),
+//   bgImage: '/assets/img/web-development/wd-services-bg.jpg',
+//   service:'technology'
+// };
 
 interface blogContent {
   title: string;
