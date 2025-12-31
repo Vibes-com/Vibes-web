@@ -109,7 +109,7 @@ const page = () => {
   return (
     <div className="overflow-hidden ">
 
-      {/* <Hero /> */}
+      <Hero />
       <TeamDreamSection />
       {/* <TogetherMain /> */}
       {/* <Technology />

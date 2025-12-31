@@ -43,7 +43,7 @@ const SectionWithSlider: FC<SectionProps> = ({
 
   return (
     <div className="relative md:sticky md:top-0">
-      <div className="grid grid-cols-1 md:grid-cols-12 items-center gap-10 md:gap-0">
+      <div className="lg:grid grid-cols-1 md:grid-cols-12 items-center gap-10 md:gap-0">
 
         {/* LEFT SIDE CONTENT */}
 

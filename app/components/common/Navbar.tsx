@@ -30,7 +30,7 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <div className="flex ms-auto gap-8 items-center">
-          <NavMenu className="hidden md:block" />
+          <NavMenu className="hidden lg:block" />
 
           <div className="flex items-center gap-3">
             <a href="tel:+91-8586932861"
@@ -40,7 +40,7 @@ const Navbar = () => {
               <ArrowUpIcon className="transform rotate-45" />
             </a>
             {/* Mobile Menu */}
-            <div className="md:hidden">
+            <div className="lg:hidden">
               <NavigationSheet />
             </div>
           </div>
