@@ -175,13 +175,13 @@ border-[7px] border-[#ffffff]">
             </div>
 
             {/* DEFAULT BG */}
-            <Image
+            {/* <Image
                 src={service.bgImage}
                 alt="bg"
                 fill
                 unoptimized
                 className="absolute inset-0 object-cover opacity-5 transition-opacity duration-500 group-hover:opacity-0 rounded-lg"
-            />
+            /> */}
 
 
             {/* CONTENT */}
