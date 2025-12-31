@@ -107,7 +107,7 @@ const slides: SlideItem[] = [
 
 const page = () => {
   return (
-    <div className="overflow-hidden ">
+    <div>
 
       <Hero />
       <TeamDreamSection />

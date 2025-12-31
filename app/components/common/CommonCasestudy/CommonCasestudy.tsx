@@ -65,7 +65,7 @@ const CommonCasestudy = ({ badgeText, title, highlightTitle, description, button
           {/* RIGHT CONTENT */}
           <div className="col-span-12 lg:col-span-6 sticky top-0 h-screen overflow-y-auto no-scrollbar">
             {/* ✅ CaseStudiesCard handles mapping internally */}
-            <CaseStudiesCard data={cards} />
+            <CaseStudiesCard />
           </div>
 
         </div>
