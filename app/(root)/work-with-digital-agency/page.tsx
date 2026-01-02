@@ -60,10 +60,10 @@ const page = () => {
       <HeroSection
         backgroundImage="/assests/img/career/career-banner.jpg"
         title={
-          <h1 className="font-poppins font-normal text-[60px] leading-[116%] capitalize text-white">
+          <h1 className="font-poppins font-normal text-[30px] sm:text-[60px] md:text-[60px] lg:text-[60px] xl:text-[60px] 2xl:text-[60px] leading-[116%] capitalize text-white">
             Where Careers Take Shape:
             <br />
-            <span className=" hero-highlight relative z-10 w-fit font-poppins font-semibold text-[65px] leading-[116%] text-[#F4BE00]">
+            <span className=" hero-highlight relative z-10 w-fit font-poppins font-semibold text-[30px] sm:text-[65px] md:text-[65px] lg:text-[65px] xl:text-[65px] 2xl:text-[65px] leading-[116%] text-[#F4BE00]">
               Growth at Vibes
             </span>
           </h1>
