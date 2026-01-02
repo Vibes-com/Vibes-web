@@ -12,7 +12,7 @@ const TeamMembers = () => {
 
   const members = data?.member_list ?? [];
 
- const settings = {
+const settings = {
   dots: false,
   infinite: true,
   autoplay: true,
@@ -22,23 +22,28 @@ const TeamMembers = () => {
   nextArrow: <NextArrow />,
   prevArrow: <PrevArrow />,
 
-  // Desktop
   slidesToShow: 3,
   centerMode: true,
   centerPadding: "0px",
 
   responsive: [
     {
-      breakpoint: 767,
+      breakpoint: 1024,   // Tablet / small laptop
+      settings: {
+        slidesToShow: 3,
+        centerMode: true,
+      },
+    },
+    {
+      breakpoint: 767,    // Mobile
       settings: {
         slidesToShow: 1,
         centerMode: false,
-        arrows: false, 
+        arrows: false,
       },
     },
   ],
 };
-
 
   if (isLoading) {
     return (
