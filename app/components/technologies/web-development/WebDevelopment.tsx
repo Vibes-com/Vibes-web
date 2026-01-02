@@ -1,7 +1,7 @@
-"use client";
+// "use client";
 import BuiltWay from './built-way/BuiltWay'
 import SuccessStory from '../../technology-details/success-story/SuccessStory'
-import { useRouter } from "next/navigation";
+// import { useRouter } from "next/navigation";
 import AboutSection from '../../common/AboutUs/AboutSection';
 import WhyChooseSection from '../../common/WhyChooseSection/WhyChooseSection';
 import TechnologyStackSection from '../../common/TechnologyStackSection/TechnologyStackSection';
@@ -44,7 +44,7 @@ const slides: BuiltWaySlide[] = [
 
 
 const WebDevelopment = () => {
-  const router = useRouter();
+  // const router = useRouter();
   return (
     <div>
       <HeroSection

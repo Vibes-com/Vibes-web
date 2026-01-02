@@ -1,11 +1,10 @@
 "use client";
-import { useRouter } from "next/navigation";
+// import { useRouter } from "next/navigation";
 import OurBlogs from '../../blogs/blogs'
 import SuccessStory from "@/app/components/technology-details/success-story/SuccessStory";
 import ImageCarousel from "../../common/ImageCarouselWorkflow/ImageCarousel";
 import HeroSection from '../../common/HeroSection/HeroSection';
 import WhyChooseUsSection from "@/app/components/common/WhyChooseUsSection/WhyChooseUsSection";
-
 interface blogContent {
   title: string;
   Subtitle: React.ReactNode;
@@ -33,7 +32,7 @@ const images = [
 ];
 
 const BrandUpliftment = () => {
-  const router = useRouter();
+  // const router = useRouter();
   return (
     <div>
       <HeroSection

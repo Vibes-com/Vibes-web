@@ -1,6 +1,6 @@
-"use client";
+// "use client";
 import React from 'react'
-import { useRouter } from "next/navigation";
+// import { useRouter } from "next/navigation";
 import PmisDevelopmentHero from './pmis-development-hero/PmisDevelopmentHero'
 import WhyChooseUs from '@/app/components/common/why-choose-us/WhyChooseUs';
 import WhyChooseSection from '../../common/WhyChooseSection/WhyChooseSection';
@@ -37,7 +37,7 @@ const slides: BuiltWaySlide[] = [
 ];
 
 const PmisDevelopment = () => {
-  const router = useRouter();
+  // const router = useRouter();
   return (
     <div>
       <HeroSection
