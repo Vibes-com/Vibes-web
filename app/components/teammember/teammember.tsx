@@ -21,7 +21,6 @@ const settings = {
   arrows: true,
   nextArrow: <NextArrow />,
   prevArrow: <PrevArrow />,
-
   slidesToShow: 3,
   centerMode: true,
   centerPadding: "0px",
@@ -74,23 +73,28 @@ const settings = {
         <div className="relative max-w-7xl mx-auto px-4 pb-10">
           <Slider {...settings}>
             {members.map((m) => (
-              <div key={m.member_id} className="px-4 member-card">
-                <div
-                  className="
-                     relative member-center px-8 pt-16 pb-10 rounded-xl shadow-xl bg-white text-[#2B3332]
-                    transition-all duration-500
-                    md:slick-center:scale-[1.15]   
-                    md:slick-center:translate-y-6
-                    md:slick-center:bg-[#326E4F]
-                    md:slick-center:text-white
-                  "
-                >
+              <div key={m.member_id} className="px-4 member-card w-full">
+            <div
+              className="
+                relative w-full max-w-full
+                member-center px-8 pt-16 pb-10 rounded-xl shadow-xl
+                bg-white text-[#2B3332]
+                transition-all duration-500
+
+                md:slick-center:scale-[1.15]
+                md:slick-center:translate-y-6
+                md:slick-center:bg-[#326E4F]
+                md:slick-center:text-white
+              "
+            >
                   {/* Profile Image */}
                   <div
                     className="
                       absolute left-1/2 -top-14 -translate-x-1/2
                       transition-all duration-500
-                      w-24 h-24 slick-center:w-32 slick-center:h-32
+                      w-24 h-24
+                      md:slick-center:w-32
+                      md:slick-center:h-32
                     "
                   >
                     <div className="rounded-full overflow-hidden border-[6px] border-[#F4BE00] shadow-lg">
