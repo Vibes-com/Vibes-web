@@ -1273,3 +1273,94 @@ border-right: none;
   width: 12px;
   height: 12px;
 }
+
+
+/* slick slider css  */
+/* Target the center slide for special styling */
+.slick-center .member-center {
+  background-color: #326E4F !important;
+  color: white !important;
+  transform: scale(1.05);
+}
+
+.slick-center .member-center p:nth-child(3) {
+  color: #fef08a !important; /* yellow-200 */
+}
+
+
+/* Enhanced center effect on larger screens */
+@media (min-width: 768px) {
+  .slick-center .member-center {
+    transform: scale(1.15) translateY(1.5rem);
+  }
+  
+  .slick-center .member-center > div:first-child {
+    width: 8rem !important;
+    height: 8rem !important;
+  }
+}
+
+/* Ensure proper spacing on mobile */
+@media (max-width: 767px) {
+  .slick-slide {
+    padding: 0 0.5rem;
+  }
+}
+
+
+/* Team Swiper Styles */
+.team-swiper {
+  padding-bottom: 50px;
+}
+
+/* Center slide effect on desktop */
+@media (min-width: 768px) {
+  .team-swiper .swiper-slide-active .member-center {
+    background-color: #326E4F !important;
+    color: white !important;
+    transform: scale(1.15) translateY(1.5rem);
+  }
+  
+  .team-swiper .swiper-slide-active .member-center .opacity-80 {
+    color: #fef08a !important;
+    opacity: 1 !important;
+  }
+  
+  .team-swiper .swiper-slide-active .member-center > div:first-child {
+    width: 8rem !important;
+    height: 8rem !important;
+  }
+}
+
+/* Mobile - no center effect */
+@media (max-width: 767px) {
+  .team-swiper .swiper-slide {
+    width: 100% !important;
+  }
+}
+
+/* Custom pagination styling */
+.swiper-pagination-custom {
+  text-align: center;
+}
+
+.swiper-pagination-custom .swiper-pagination-bullet {
+  background: #326E4F;
+  opacity: 0.5;
+}
+
+.swiper-pagination-custom .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #326E4F;
+}
+.team-member-wrapper .swiper-horizontal{
+    padding-top: 58px;
+}
+.team-member-wrapper .rounded-full.overflow-hidden{width: 70%;}
+.team-member-wrapper .left-1\/2 {left: 57%;}
+.team-member-wrapper .swiper-slide.swiper-slide-active .member-center{
+    padding-bottom: 30px;
+}
+.team-swiper {
+  padding-bottom: 40px; /* adjust as needed */
+}

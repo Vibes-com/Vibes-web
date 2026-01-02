@@ -65,6 +65,10 @@ export default function CaseStudies() {
                         spaceBetween={30}
                         pagination={{ clickable: true }}
                         loop={true}
+                        autoplay={{
+              delay: 5000,
+              disableOnInteraction: false,
+            }}
                         breakpoints={{
                             320: { slidesPerView: 1 },
                             768: { slidesPerView: 2 },
