@@ -15,8 +15,8 @@ const Footer = () => {
   return (
     <div className="footer-wrapper  relative ">
       <div className="container mx-auto  px-4 md:px-8">
-        <div className="lg:grid grid-cols-12 items-center pt-10 pb-8">
-          <div className="col-span-5 pe-10 pt-6 p-4 border-e border-white/30">
+        <div className="lg:grid grid-cols-12 items-center pt-10 pb-5">
+          <div className="col-span-5 pe-10 pt-6 p-4 border-e-0  lg:border-e border-white/30 xl:border-e border-white/30 2xl:border-e border-white/30">
             <FooterText />
             <SubscribeBox />
           </div>
@@ -59,7 +59,7 @@ const Footer = () => {
       </AnimatePresence>
 
         <div className="flex justify-end">
-          <div className="group w-[50px] hover:w-[200px] h-[46px] 
+          {/* <div className="group w-[50px] hover:w-[200px] h-[46px] 
         bg-[#2B4C69] rounded-tl-full rounded-bl-full flex items-center px-4 cursor-pointer
         transition-all duration-700  shadow-lg overflow-hidden" onClick={() => setOpen(true)}>
             <Bot size={20} className="text-white shrink-0" />
@@ -68,7 +68,7 @@ const Footer = () => {
           opacity-0 group-hover:opacity-100 transition-opacity duration-700 whitespace-nowrap">
               AI Assistant
             </span>
-          </div>
+          </div> */}
         </div>
 
         <div className="flex justify-end">

@@ -10,7 +10,7 @@ interface CaseStudyDetailsAboutProps {
   imageSrc: string;
   imageAlt?: string;
   points: string[];
-  bgColor?: string;
+  bgImage?: string;
 }
 
 const CaseStudyDetailsAbout: React.FC<CaseStudyDetailsAboutProps> = ({
@@ -20,12 +20,14 @@ const CaseStudyDetailsAbout: React.FC<CaseStudyDetailsAboutProps> = ({
   imageSrc,
   imageAlt = "About image",
   points,
-  bgColor = "#FFFDF7",
+  bgImage = "/assests/img/web-development/wd-services-bg.jpg",
 }) => {
   return (
     <section
-      className="w-full section-gap"
-      style={{ backgroundColor: bgColor }}
+      className="w-full section-gap bg-no-repeat bg-cover bg-center"
+      style={{
+        backgroundImage: bgImage ? `url(${bgImage})` : "none",
+      }}
     >
       <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
         <div className="grid grid-cols-12 gap-14 items-center">

@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { Button2 } from "@/components/ui/button2";
 import { ArrowUpIcon } from "lucide-react";
+import Link from "next/link";
 
 interface SuccessStoryProps {
   title: string;
@@ -11,6 +12,7 @@ interface SuccessStoryProps {
   arrowImage?: string;
   onButtonClick?: () => void;
   className?: string;
+  btnlink:string;
 }
 
 export default function SuccessStory({
@@ -20,6 +22,7 @@ export default function SuccessStory({
   arrowImage = "/assests/img/technology-details/arrow.png",
   onButtonClick,
   className = "",
+  btnlink
 }: SuccessStoryProps) {
   return (
     <section className={`w-full pt-15 pb-20 bg-success-story ${className}`}>
@@ -47,6 +50,7 @@ export default function SuccessStory({
 
           {/* Button */}
           <div>
+            <Link href={btnlink}>
             <Button2
               onClick={onButtonClick}
               className="mt-5 p-[20px] bg-[#fff] cursor-pointer"
@@ -54,6 +58,7 @@ export default function SuccessStory({
               <span className="text-[#000] cursor-pointer">{buttonText}</span>
               <ArrowUpIcon className="transform rotate-45 text-[#000]" />
             </Button2>
+            </Link>
           </div>
 
         </div>

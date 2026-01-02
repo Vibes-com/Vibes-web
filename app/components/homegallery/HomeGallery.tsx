@@ -25,8 +25,8 @@ const HomeGallery = () => {
             </span>
           </div>
         </div>
-        <h3 className=" text-center font-poppins font-medium text-[40px] leading-[1.23] tracking-norma]">
-          Good Vibes, <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[40px] leading-[1.23] tracking-normal">Great Moments</span>
+        <h3 className=" text-center font-poppins font-medium text-[28px] sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] leading-[1.23] tracking-norma]">
+          Good Vibes, <br/><span className="highlight relative z-9 w-fit font-poppins font-semibold text-[28px] sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] leading-[1.23] tracking-normal">Great Moments</span>
 
         </h3>
         <p className="text-[#707070] font-normal text-[16px] leading-[130%] tracking-[0] text-center max-w-2xl mx-auto mb-16 mt-5">
@@ -91,7 +91,7 @@ const HomeGallery = () => {
         </SlideUp>
         <div className="text-center mt-12">
           <Link href="/gallery">
-          <Button2 className="mt-5 p-[20px] cursor-pointer hover:border-[#2B4C69] hover:border-[2px] hover:text-[#F4BE00] hover:bg-transparent">
+          <Button2 className="mt-5 text-[12px] sm:text-[16px] md:text-[16px] lg:text-[16px] xl:text-[18px] 2xl:text-[18px] p-[20px] cursor-pointer hover:border-[#2B4C69] hover:border-[2px] hover:text-[#F4BE00] hover:bg-transparent">
             <span>Peek Behind the Magic</span>
             <ArrowUpIcon className="transform rotate-45" />
           </Button2>

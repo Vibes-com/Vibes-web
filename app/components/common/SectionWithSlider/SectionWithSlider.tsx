@@ -60,11 +60,11 @@ const SectionWithSlider: FC<SectionProps> = ({
                 </span>
               </div>
             </div>
-            <h2 className="font-poppins font-semibold text-[55px] leading-[123%] tracking-[0] text-[#FFFFFF]">
+            <h2 className="font-poppins font-semibold text-[35px] sm:text-[55px] md:text-[55px] lg:text-[55px] xl:text-[55px] 2xl:text-[55px] leading-[123%] tracking-[0] text-[#FFFFFF]">
               {title}
             </h2>
             {highlight && (
-              <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[55px] leading-[123%] tracking-[0] text-[#FFFFFF]">
+              <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[35px] sm:text-[55px] md:text-[55px] lg:text-[55px] xl:text-[55px] 2xl:text-[55px] leading-[123%] tracking-[0] text-[#FFFFFF]">
                 {highlight}
               </span>
             )}
@@ -85,7 +85,7 @@ const SectionWithSlider: FC<SectionProps> = ({
             ))}
           </div>
 
-          <div className="flex items-center gap-4 mt-4">
+          <div className=" hidden sm:flex md:flex lg:flex xl:flex 2xl:flex flex items-center gap-4 mt-4">
 
             <button
               onClick={goPrev}
@@ -110,8 +110,7 @@ const SectionWithSlider: FC<SectionProps> = ({
 
         {/* RIGHT SIDE SLIDER */}
         <div
-          className={`relative md:col-span-7 w-full h-[700px]
-  ${reverse ? "md:order-1" : "md:order-2"}`}
+          className={`relative md:col-span-7 w-full h-[340px] sm:h-[700px] md:h-[700px] lg:h-[700px] xl:h-[700px] ${reverse ? "md:order-1" : "md:order-2"}`}
         >
           <Swiper
             modules={[Autoplay]}

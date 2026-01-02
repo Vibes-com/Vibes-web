@@ -14,7 +14,7 @@ interface blogContent {
   Subtitle: React.ReactNode;
   bgImage?: string;
   highlighttitle: string,
-  service:string
+  service: string
 }
 const textcontent: blogContent = {
   title: 'Ideas, insights, and intelligent ',
@@ -25,7 +25,7 @@ const textcontent: blogContent = {
     </>
   ),
   bgImage: '/assests/img/technology-details/common-casestudy-bg.jpg',
-  service:'digital'
+  service: 'digital'
 };
 
 
@@ -142,7 +142,8 @@ const PerformanceMarketing = () => {
         buttonText="Let’s Connect"
         arrowImage="/assests/img/technology-details/arrow.png"
         className="bg-black"
-        onButtonClick={() => router.push("/contact-for-digital-requirements")}
+        // onButtonClick={() => router.push("/contact-for-digital-requirements")}
+        btnlink="/contact-for-digital-requirements"
       />
 
     </div>

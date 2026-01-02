@@ -12,23 +12,38 @@ const TeamMembers = () => {
 
   const members = data?.member_list ?? [];
 
-  const settings = {
-    dots: false,
-    infinite: true,
-    centerMode: true,
-    centerPadding: "0px",
-    slidesToShow: 3,
-    autoplaySpeed: 5000,
-    autoplay: true,
-    speed: 1000,
-    arrows: true,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
-    responsive: [
-      { breakpoint: 1024, settings: { slidesToShow: 1, centerMode: true } },
-      { breakpoint: 768, settings: { slidesToShow: 1, centerMode: true } },
-    ],
-  };
+const settings = {
+  dots: false,
+  infinite: true,
+  autoplay: true,
+  autoplaySpeed: 5000,
+  speed: 1000,
+  arrows: true,
+  nextArrow: <NextArrow />,
+  prevArrow: <PrevArrow />,
+
+  // slidesToShow: 3,
+  centerMode: true,
+  centerPadding: "0px",
+
+  responsive: [
+    {
+      breakpoint: 1024,   // Tablet / small laptop
+      settings: {
+        slidesToShow: 3,
+        centerMode: true,
+      },
+    },
+    {
+      breakpoint: 767,    // Mobile
+      settings: {
+        slidesToShow: 1,
+        centerMode: false,
+        arrows: false,
+      },
+    },
+  ],
+};
 
   if (isLoading) {
     return (
@@ -62,12 +77,12 @@ const TeamMembers = () => {
               <div key={m.member_id} className="px-4 member-card">
                 <div
                   className="
-                    relative member-center px-8 pt-16 pb-10 rounded-xl shadow-xl bg-white text-[#2B3332]
+                     relative member-center px-8 pt-16 pb-10 rounded-xl shadow-xl bg-white text-[#2B3332]
                     transition-all duration-500
-                    slick-center:scale-[1.15]
-                    slick-center:translate-y-6
-                    slick-center:bg-[#326E4F]
-                    slick-center:text-white
+                    md:slick-center:scale-[1.15]   
+                    md:slick-center:translate-y-6
+                    md:slick-center:bg-[#326E4F]
+                    md:slick-center:text-white
                   "
                 >
                   {/* Profile Image */}
@@ -120,7 +135,7 @@ const NextArrow = ({ onClick }: any) => (
   <button
     onClick={onClick}
     className="
-      absolute right-[-45px] top-[55%] -translate-y-1/2 z-20
+      absolute right-[-18px] sm:right-[-45px] md:right-[-45px] lg:right-[-45px] xl:right-[-45px] 2xl:right-[-45px] top-[55%] -translate-y-1/2 z-20
       p-2 border border-solid border-[#313131] cursor-pointer rounded-md bg-[#FFFFFFB0]
     "
   >
@@ -132,7 +147,7 @@ const PrevArrow = ({ onClick }: any) => (
   <button
     onClick={onClick}
     className="
-      absolute left-[-45px] top-[55%] -translate-y-1/2 z-20
+      absolute left-[-18px] sm:left-[-45px] md:left-[-45px] lg:left-[-45px] xl:left-[-45px] 2xl:left-[-45px] top-[55%] -translate-y-1/2 z-20
       p-2 border border-solid border-[#313131] cursor-pointer rounded-md bg-[#FFFFFFB0]
     "
   >

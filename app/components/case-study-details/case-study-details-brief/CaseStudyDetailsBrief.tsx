@@ -13,13 +13,13 @@ interface BriefBlock {
 interface CaseStudyDetailsBriefProps {
   leftBlock: BriefBlock;
   rightBlock: BriefBlock;
-  bgColor?: string;
+  bgImage?: string;
 }
 
 const CaseStudyDetailsBrief: React.FC<CaseStudyDetailsBriefProps> = ({
   leftBlock,
   rightBlock,
-  bgColor = "#DEE9E1",
+  bgImage = "/assests/img/technology-details/common-casestudy-bg.jpg",
 }) => {
   const renderBlock = (block: BriefBlock) => (
     <>
@@ -67,8 +67,10 @@ const CaseStudyDetailsBrief: React.FC<CaseStudyDetailsBriefProps> = ({
 
   return (
     <section
-      className="w-full section-gap"
-      style={{ backgroundColor: bgColor }}
+      className="w-full section-gap bg-no-repeat bg-cover bg-center"
+      style={{
+        backgroundImage: bgImage ? `url(${bgImage})` : "none",
+      }}
     >
       <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
         <div className="grid grid-cols-12 gap-14 items-start">

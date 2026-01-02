@@ -1,6 +1,6 @@
-"use client";
+// "use client";
 import React from "react";
-import { useRouter } from "next/navigation";
+// import { useRouter } from "next/navigation";
 
 import OurBlogs from "@/app/components/blogs/blogs";
 import CommonCasestudy from "@/app/components/common/CommonCasestudy/CommonCasestudy";
@@ -9,62 +9,62 @@ import DigitalMarketingDetailsHero from "@/app/components/digital-marketing-deta
 import DigitalMarketingSolutions from "@/app/components/digital-marketing-details/digital-marketing-solutions/DigitalMarketingSolutions";
 import SuccessStory from "@/app/components/technology-details/success-story/SuccessStory";
 
-import { useGetAllCaseStudiesQuery } from "@/app/redux/api/caseStudyApi";
+// import { useGetAllCaseStudiesQuery } from "@/app/redux/api/caseStudyApi";
 import { SingleCaseStudyCard } from "@/app/components/common/CaseStudiesCard/CaseStudiesCard";
 import WhyChooseUsSection from "@/app/components/common/WhyChooseUsSection/WhyChooseUsSection";
 import MarqueeStorySection, { SlideItem } from "@/app/components/common/MarqueeStorySection/MarqueeStorySection";
 
-// import type { Metadata } from "next";
+import type { Metadata } from "next";
 
-// export const metadata: Metadata = {
-//   title: "Digital Solutions and Digital Marketing Services | Vibes Communications",
+export const metadata: Metadata = {
+  title: "Digital Solutions and Digital Marketing Services | Vibes Communications",
 
-//   description:
-//     "Looking for digital solutions and digital marketing services? Vibes Communications is a leading digital company in Noida, India, delivering SEO, social media, and performance-driven marketing solutions.",
+  description:
+    "Looking for digital solutions and digital marketing services? Vibes Communications is a leading digital company in Noida, India, delivering SEO, social media, and performance-driven marketing solutions.",
 
-//   alternates: {
-//     canonical: "https://www.vibescom.in/digital-marketing-services",
-//   },
+  alternates: {
+    canonical: "https://www.vibescom.in/digital-marketing-services",
+  },
 
-//   openGraph: {
-//     title: "Digital Solutions and Digital Marketing Services | Vibes Communications",
-//     description:
-//       "Looking for digital solutions and digital marketing services? Vibes Communications is a leading digital company in Noida, India, delivering SEO, social media, and performance-driven marketing solutions.",
-//     url: "https://www.vibescom.in/digital-marketing-services",
-//     siteName: "Vibes Communications Pvt Ltd",
-//     images: [
-//       {
-//         url: "https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png",
-//         width: 1200,
-//         height: 630,
-//       },
-//     ],
-//     locale: "en_US",
-//     type: "website",
-//   },
+  openGraph: {
+    title: "Digital Solutions and Digital Marketing Services | Vibes Communications",
+    description:
+      "Looking for digital solutions and digital marketing services? Vibes Communications is a leading digital company in Noida, India, delivering SEO, social media, and performance-driven marketing solutions.",
+    url: "https://www.vibescom.in/digital-marketing-services",
+    siteName: "Vibes Communications Pvt Ltd",
+    images: [
+      {
+        url: "https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 
-//   twitter: {
-//     card: "summary",
-//     site: "@vibescom",
-//     title: "Digital Solutions and Digital Marketing Services | Vibes Communications",
-//     description:
-//       "Looking for digital solutions and digital marketing services? Vibes Communications is a leading digital company in Noida, India, delivering SEO, social media, and performance-driven marketing solutions.",
-//     images: ["https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png"],
-//   },
+  twitter: {
+    card: "summary",
+    site: "@vibescom",
+    title: "Digital Solutions and Digital Marketing Services | Vibes Communications",
+    description:
+      "Looking for digital solutions and digital marketing services? Vibes Communications is a leading digital company in Noida, India, delivering SEO, social media, and performance-driven marketing solutions.",
+    images: ["https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png"],
+  },
 
-//   robots: {
-//     index: true,
-//     follow: true,
-//     googleBot: {
-//       index: true,
-//       follow: true,
-//     },
-//   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
 
-//   authors: [{ name: "Vibes Communications" }],
-//   creator: "Vibes Communications",
-//   publisher: "Vibes Communications",
-// };
+  authors: [{ name: "Vibes Communications" }],
+  creator: "Vibes Communications",
+  publisher: "Vibes Communications",
+};
 
 
 interface blogContent {
@@ -189,21 +189,21 @@ const logos = [
 const tabs = ["healthcare", "education", "realestate", "entertainment", "government"];
 
 export default function Page() {
-  const router = useRouter();
+  // const router = useRouter();
 
-  // ✅ RTK QUERY
-  const { data, isLoading, isError } = useGetAllCaseStudiesQuery();
+  // // ✅ RTK QUERY
+  // const { data, isLoading, isError } = useGetAllCaseStudiesQuery();
 
-  // ✅ MAP API RESPONSE → CARD TYPE
-  const cards: SingleCaseStudyCard[] =
-    data?.data?.map((item) => ({
-      id: item.id,
-      img: item.thumbnail,
-      title: item.client_name,
-      slug: item.slug || item.client_slug,
-      tags: item.tags ? item.tags.split(",").map((t) => t.trim()) : [],
-      buttonText: "View More",
-    })) || [];
+  // // ✅ MAP API RESPONSE → CARD TYPE
+  // const cards: SingleCaseStudyCard[] =
+  //   data?.data?.map((item) => ({
+  //     id: item.id,
+  //     img: item.thumbnail,
+  //     title: item.client_name,
+  //     slug: item.slug || item.client_slug,
+  //     tags: item.tags ? item.tags.split(",").map((t) => t.trim()) : [],
+  //     buttonText: "View More",
+  //   })) || [];
 
   return (
     <div>
@@ -253,7 +253,7 @@ export default function Page() {
       />
 
       {/* CASE STUDIES */}
-      {isLoading && (
+      {/* {isLoading && (
         <p className="text-center py-10 text-gray-500">
           Loading case studies...
         </p>
@@ -265,18 +265,17 @@ export default function Page() {
         </p>
       )}
 
-      {!isLoading && !isError && cards.length > 0 && (
+      {!isLoading && !isError && cards.length > 0 && ( */}
         <CommonCasestudy
           badgeText="CASE STUDIES"
           title="Campaigns That Create"
           highlightTitle="Real Impact"
           description="Discover how our digital marketing strategies turn insights into action and brands into market leaders."
           buttonText="Explore Case Studies"
-          cards={cards}
+          // cards={cards}
           bgImage="/assests/img/technology-details/common-casestudy-bg.jpg"
-
         />
-      )}
+      {/* )} */}
 
       <OurBlogs tData={textcontent} />
 
@@ -296,7 +295,8 @@ export default function Page() {
         buttonText="Talk to Experts"
         arrowImage="/assests/img/technology-details/arrow.png"
         className="bg-black"
-        onButtonClick={() => router.push("/contact-for-digital-requirements")}
+        // onButtonClick={() => router.push("/contact-for-digital-requirements")}
+        btnlink="/contact-for-digital-requirements"
       />
     </div>
   );

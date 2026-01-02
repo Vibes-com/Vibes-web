@@ -69,7 +69,7 @@ export const NavMenu = (props: ComponentProps<typeof NavigationMenu> & { onLinkC
                             "hover:text-white focus:text-white data-[state=open]:text-white",
 
                             // underline
-                            "relative after:absolute after:left-0 after:-bottom-1 after:h-[4px] after:w-full after:bg-[#F4BE00]",
+                            " relative after:absolute after:left-0 after:-bottom-1 after:h-[4px] after:w-full after:bg-[#F4BE00]",
                             "after:scale-x-0 after:transition-transform after:duration-300 after:origin-left after:rounded-tl-[30px] after:rounded-tr-[30px]",
 
                             isWhatWeDoActive && "after:scale-x-100"
@@ -79,7 +79,7 @@ export const NavMenu = (props: ComponentProps<typeof NavigationMenu> & { onLinkC
                     </NavigationMenuTrigger>
 
                     <NavigationMenuContent>
-                        <ul className="grid gap-3 p-4 md:w-[300px]">
+                        <ul className="grid gap-3 p-4 lg:w-[300px]">
                             <li>
                                 <Link onClick={handleLinkClick} href="/technology-services" className="block p-2 hover:bg-gray-100 rounded">
                                     Technology
@@ -127,6 +127,6 @@ export const NavMenu = (props: ComponentProps<typeof NavigationMenu> & { onLinkC
                 </NavigationMenuItem>
 
             </NavigationMenuList>
-        </NavigationMenu>
+        </NavigationMenu >
     );
 };

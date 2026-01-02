@@ -103,7 +103,7 @@ export default function MilestoneSection() {
             <Image
                 src="/assests/img/home/milestone-bg.png" fill alt="main-bg" priority unoptimized className="absolute inset-0 object-cover z-0" />
 
-            <div className="absolute z-99 inset-0 grid grid-cols-14 grid-rows-5 gap-0 pointer-events-none">
+           <div className="absolute z-99 inset-0 hidden lg:grid grid-cols-14 grid-rows-5 gap-0 pointer-events-none">
                 {galleryImages.map((src, index) => (
                     <div
                         key={index}
@@ -115,7 +115,7 @@ export default function MilestoneSection() {
                             src={src}
                             alt="hover-img"
                             fill
-                            className={`object-cover transition-opacity duration-[900ms] ease-out
+                            className={` object-cover transition-opacity duration-[900ms] ease-out
     ${activeIndex === index ? "opacity-60" : "opacity-0 delay-[400ms]"}
   `}
                         />
@@ -132,12 +132,12 @@ export default function MilestoneSection() {
                         </span>
                     </div>
                 </div>
-                <h3 className="font-poppins font-medium text-[48px] leading-[123%] tracking-normal text-[#FFFFFF]"><span className="highlight relative z-9 w-fit">Milestone</span> Metrics</h3>
+                <h3 className="font-poppins font-medium text-[28px] sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px]  leading-[123%] tracking-normal text-[#FFFFFF]"><span className="highlight relative z-9 w-fit">Milestone</span> Metrics</h3>
 
-                <p className="text-[#FFFFFFDB] font-normal text-[16px] leading-[130%] tracking-[0] text-center max-w-3xl mx-auto mb-16 mt-5">
+                <p className="text-[#FFFFFFDB] font-normal text-[16px] leading-[130%] tracking-[0] text-center max-w-3xl mx-auto mb-5 sm:mb-15  md:mb-15 lg:mb-15 xl:mb-15 2xl:mb-5 mt-5">
                     A clear snapshot of the brands, projects, and successes we’ve built together, reflecting the scale of our partnerships and the momentum powering every milestone.
                 </p>
-
+                {/* helloworld */}
                 <div className="lg:grid grid-cols-5 gap-10">
                     {counters.map((item, idx) => (
                         <CounterBox key={idx} value={item.value} label={item.label} animate={startCount} />
@@ -159,6 +159,7 @@ function CounterBox({ value, label, animate }: { value: number; label: string; a
         const speed = value > 300 ? 6 : 2;
         const timer = setInterval(() => {
             current += speed;
+            console.log(speed)
             if (current >= value) {
                 setCount(value);
                 clearInterval(timer);
@@ -171,8 +172,8 @@ function CounterBox({ value, label, animate }: { value: number; label: string; a
     return (
         <SlideUp delay={0.5}>
             <div className="flex flex-col items-center text-center">
-                <p className="text-[60px] font-semibold text-[#FFFFFF] leading-none">{count}+</p>
-                <p className="text-sm text-[#FFFFFF] mt-3 max-w-[170px] leading-snug">{label}</p>
+                <p className="pt-4 text-[32px] sm:text-[60px] md:text-[60px] lg:text-[60px] xl:text-[60px] 2xl:text-[60px] font-semibold text-[#FFFFFF] leading-none">{count}+</p>
+                <p className="pb-5 text-sm text-[#FFFFFF] mt-3 max-w-[170px] leading-snug">{label}</p>
             </div>
         </SlideUp>
     );
