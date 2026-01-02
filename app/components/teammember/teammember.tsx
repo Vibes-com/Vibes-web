@@ -26,16 +26,18 @@ const settings = {
   centerMode: true,
   centerPadding: "0px",
 
-  responsive: [
+   responsive: [
     {
-      breakpoint: 1920,   // Tablet / small laptop
+      // Tablet & below
+      breakpoint: 1024,
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 2,
         centerMode: true,
       },
     },
     {
-      breakpoint: 767,    // Mobile
+      // Mobile
+      breakpoint: 767,
       settings: {
         slidesToShow: 1,
         centerMode: false,
