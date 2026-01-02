@@ -29,7 +29,7 @@ export default function FooterRightSection() {
                     width={100}
                     height={100}
                 />
-                <p className=" text-[#7C7C7C]  font-normal text-[12px] leading-[130%] tracking-[0] mb-4">
+                <p className=" text-[#7C7C7C]  font-normal text-[12px] leading-[25px] sm:leading-[25px] md:leading-[130%] lg:leading-[130%] xl:leading-[130%] 2xl:leading-[130%] tracking-[0] mb-4">
                     Digital Cooperation Organization promotes collaboration among member nations.
                     We bridge digital divides and enable equal opportunities through technology.
                 </p>
