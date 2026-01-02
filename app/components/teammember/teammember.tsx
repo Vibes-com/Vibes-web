@@ -22,7 +22,7 @@ const settings = {
   nextArrow: <NextArrow />,
   prevArrow: <PrevArrow />,
 
-  slidesToShow: 3,
+  // slidesToShow: 3,
   centerMode: true,
   centerPadding: "0px",
 

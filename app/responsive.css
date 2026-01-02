@@ -19,7 +19,7 @@ background-image: none;
 @media (min-width: 360px) and (max-width: 385px) {
 
     .hero-video{
-       height:46vh;
+       height:50vh;
     }
     .vibes-logo{
         width: 75px;
