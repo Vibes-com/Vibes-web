@@ -12,7 +12,7 @@ interface blogContent {
   Subtitle: React.ReactNode;
   bgImage?: string;
   highlighttitle: string,
-  service:string
+  service: string
 }
 const textcontent: blogContent = {
   title: 'SEO Insights & ',
@@ -23,7 +23,7 @@ const textcontent: blogContent = {
     </>
   ),
   bgImage: '/assets/img/web-development/wd-services-bg.jpg',
-  service:'digital'
+  service: 'digital'
 };
 
 
@@ -46,7 +46,7 @@ const SearchEngineOptimization = () => {
         heading="Comprehensive SEO Built for "
         highlightText="Sustainable Results"
         description="Data-driven optimization frameworks designed to strengthen rankings, improve site health, and convert organic visibility into business impact."
-        mainImage="/assests/img/performance-marketing/pm-overview-left-img.png"
+        mainImage="/assests/img/digital-m-details/seo-left-img.png"
         bgImage="/assests/img/web-development/wd-services-bg.jpg"
         features={[
           {

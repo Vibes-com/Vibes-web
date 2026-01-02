@@ -44,15 +44,15 @@ export default function CaseStudies() {
 
                 <div className="flex flex-col md:flex-row justify-between items-start">
                     <div>
-                        <h3 className="font-poppins font-medium text-[48px] leading-[123%]">
-                            Vision to <span className=" z-9 relative w-fit highlight font-semibold">Verified Results</span>
+                        <h3 className="font-poppins font-medium text-[28px] sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px]  leading-[123%] cmn-heading">
+                            Vision to <span className=" z-9 relative w-fit highlight font-semibold cmn-heading">Verified Results</span>
                         </h3>
                         <p className="text-[#707070] text-[16px] mt-5 max-w-2xl">
                             Turning brand challenges into powerful growth stories with strategies crafted to solve, scale, and sustain. These case studies show how clear vision and 360° digital expertise drive real results.
                         </p>
                     </div>
                     <Link href="/case-studies">
-                        <Button2 className="mt-5 p-[20px] cursor-pointer hover:border-[#2B4C69] hover:border-[2px] hover:text-[#F4BE00] hover:bg-transparent">
+                        <Button2 className="mt-5 text-[12px] sm:text-[16px] md:text-[16px] lg:text-[16px] xl:text-[18px] 2xl:text-[18px]  p-[20px] cursor-pointer hover:border-[#2B4C69] hover:border-[2px] hover:text-[#F4BE00] hover:bg-transparent">
                             <span>Dive Into Success Stories</span>
                             <ArrowUpIcon className="transform rotate-45" />
                         </Button2>

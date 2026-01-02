@@ -23,7 +23,6 @@ export default function SubscribeBox() {
     }
   };
 
-  /* 🔔 TOASTER HANDLING */
   useEffect(() => {
     if (data) {
       if (data.success) {
@@ -57,7 +56,7 @@ export default function SubscribeBox() {
           type="button"
           onClick={handleSubscribe}
           disabled={isLoading}
-          className="absolute top-1/2 -translate-y-1/2 right-1 bg-[#161616] text-white font-semibold px-6 py-2 rounded-full disabled:opacity-60"
+          className="absolute top-1/2 -translate-y-1/2 right-1 bg-[#161616] text-white font-semibold px-6 py-2 rounded-full disabled:opacity-60 text-[14px] sm:text-[16px] md:text-[16px] lg:text-[16px] xl:text-[16px] 2xl:text-[16px] sbs-btn"
         >
           {isLoading ? "Submitting..." : "Subscribe Now"}
         </button>
