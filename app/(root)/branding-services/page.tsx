@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 import OurBlogs from '@/app/components/blogs/blogs'
 import BrandingCasestudies from '@/app/components/branding-details/branding-casestudies/BrandingCasestudies'
 import BrandingDetailsHero from '@/app/components/branding-details/branding-details-hero/BrandingDetailsHero'
@@ -6,59 +6,58 @@ import BrandingDetailsServices from '@/app/components/branding-details/branding-
 // import WhyChooseUs from '@/app/components/branding-details/why-choose-us/WhyChooseUs'
 import SuccessStory from '@/app/components/technology-details/success-story/SuccessStory'
 import React from 'react'
-import { useRouter } from "next/navigation";
 import WhyChooseUs from '@/app/components/common/why-choose-us/WhyChooseUs';
-// import type { Metadata } from "next";
+import type { Metadata } from "next";
 
-// export const metadata: Metadata = {
-//   title: "Best Branding Services Agency | Vibes Communications",
+export const metadata: Metadata = {
+  title: "Best Branding Services Agency | Vibes Communications",
 
-//   description:
-//     "Vibes Communications offers end-to-end branding services including brand creation, brand communication, and brand promotion to build a strong and positive market presence.",
+  description:
+    "Vibes Communications offers end-to-end branding services including brand creation, brand communication, and brand promotion to build a strong and positive market presence.",
 
-//   alternates: {
-//     canonical: "https://www.vibescom.in/branding-services",
-//   },
+  alternates: {
+    canonical: "https://www.vibescom.in/branding-services",
+  },
 
-//   openGraph: {
-//     title: "Manage Your Brand with Brand Management Services | Vibes Communications",
-//     description:
-//       "Vibes Communications offers services in brand creation, brand communication, and brand promotion. Consult us today for professional brand management services.",
-//     url: "https://www.vibescom.in/branding-services",
-//     siteName: "Vibes Communications Pvt Ltd",
-//     images: [
-//       {
-//         url: "https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png",
-//         width: 1200,
-//         height: 630,
-//       },
-//     ],
-//     locale: "en_US",
-//     type: "website",
-//   },
+  openGraph: {
+    title: "Manage Your Brand with Brand Management Services | Vibes Communications",
+    description:
+      "Vibes Communications offers services in brand creation, brand communication, and brand promotion. Consult us today for professional brand management services.",
+    url: "https://www.vibescom.in/branding-services",
+    siteName: "Vibes Communications Pvt Ltd",
+    images: [
+      {
+        url: "https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 
-//   twitter: {
-//     card: "summary",
-//     site: "@vibescom",
-//     title: "Manage Your Brand with Brand Management Services | Vibes Communications",
-//     description:
-//       "Vibes Communications offers services in brand creation, brand communication, and brand promotion. Consult us today for professional brand management services.",
-//     images: ["https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png"],
-//   },
+  twitter: {
+    card: "summary",
+    site: "@vibescom",
+    title: "Manage Your Brand with Brand Management Services | Vibes Communications",
+    description:
+      "Vibes Communications offers services in brand creation, brand communication, and brand promotion. Consult us today for professional brand management services.",
+    images: ["https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png"],
+  },
 
-//   robots: {
-//     index: true,
-//     follow: true,
-//     googleBot: {
-//       index: true,
-//       follow: true,
-//     },
-//   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
 
-//   authors: [{ name: "Vibes Communications" }],
-//   creator: "Vibes Communications",
-//   publisher: "Vibes Communications",
-// };
+  authors: [{ name: "Vibes Communications" }],
+  creator: "Vibes Communications",
+  publisher: "Vibes Communications",
+};
 
 interface blogContent {
   title: string;
@@ -80,7 +79,7 @@ const textcontent: blogContent = {
 };
 
 const page = () => {
-  const router = useRouter();
+  // const router = useRouter();
   return (
     <div>
       <BrandingDetailsHero />

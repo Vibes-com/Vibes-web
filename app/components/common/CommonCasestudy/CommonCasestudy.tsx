@@ -7,6 +7,7 @@ import CaseStudiesCard, {
   SingleCaseStudyCard,
 } from "../CaseStudiesCard/CaseStudiesCard";
 import Link from "next/link";
+// import { useGetAllCaseStudiesQuery } from "@/app/redux/api/caseStudyApi";
 
 interface CaseStudiesSectionProps {
   badgeText: string;
@@ -14,11 +15,25 @@ interface CaseStudiesSectionProps {
   highlightTitle: string;
   description: string;
   buttonText: string;
-  cards: SingleCaseStudyCard[];
+  // cards: SingleCaseStudyCard[];
   bgImage?: string; // ✅ add this
 }
 
-const CommonCasestudy = ({ badgeText, title, highlightTitle, description, buttonText, cards, bgImage, }: CaseStudiesSectionProps) => {
+const CommonCasestudy = ({ badgeText, title, highlightTitle, description, buttonText, bgImage}: CaseStudiesSectionProps) => {
+  // // ✅ RTK QUERY
+  // const { data, isLoading, isError } = useGetAllCaseStudiesQuery();
+
+  // // ✅ MAP API RESPONSE → CARD TYPE
+  // const cards: SingleCaseStudyCard[] =
+  //   data?.data?.map((item) => ({
+  //     id: item.id,
+  //     img: item.thumbnail,
+  //     title: item.client_name,
+  //     slug: item.slug || item.client_slug,
+  //     tags: item.tags ? item.tags.split(",").map((t) => t.trim()) : [],
+  //     buttonText: "Inside The Project",
+  //   })) || [];
+  
   return (
     <section className="section-gap bg-no-repeat bg-cover bg-center" style={{ backgroundImage: bgImage ? `url(${bgImage})` : "none" }}>
       <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
