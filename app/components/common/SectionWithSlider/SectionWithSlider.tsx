@@ -85,7 +85,7 @@ const SectionWithSlider: FC<SectionProps> = ({
             ))}
           </div>
 
-          <div className="flex items-center gap-4 mt-4">
+          <div className=" hidden sm:flex md:flex lg:flex xl:flex 2xl:flex flex items-center gap-4 mt-4">
 
             <button
               onClick={goPrev}

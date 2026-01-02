@@ -103,7 +103,7 @@ export default function MilestoneSection() {
             <Image
                 src="/assests/img/home/milestone-bg.png" fill alt="main-bg" priority unoptimized className="absolute inset-0 object-cover z-0" />
 
-            <div className="absolute z-99 inset-0 grid grid-cols-14 grid-rows-5 gap-0 pointer-events-none">
+           <div className="absolute z-99 inset-0 hidden lg:grid grid-cols-14 grid-rows-5 gap-0 pointer-events-none">
                 {galleryImages.map((src, index) => (
                     <div
                         key={index}
@@ -172,8 +172,8 @@ function CounterBox({ value, label, animate }: { value: number; label: string; a
     return (
         <SlideUp delay={0.5}>
             <div className="flex flex-col items-center text-center">
-                <p className=" pb-2 pt-2 text-[32px] sm:text-[60px] md:text-[60px] lg:text-[60px] xl:text-[60px] 2xl:text-[60px] font-semibold text-[#FFFFFF] leading-none">{count}+</p>
-                <p className="text-sm text-[#FFFFFF] mt-3 max-w-[170px] leading-snug">{label}</p>
+                <p className="pt-4 text-[32px] sm:text-[60px] md:text-[60px] lg:text-[60px] xl:text-[60px] 2xl:text-[60px] font-semibold text-[#FFFFFF] leading-none">{count}+</p>
+                <p className="pb-5 text-sm text-[#FFFFFF] mt-3 max-w-[170px] leading-snug">{label}</p>
             </div>
         </SlideUp>
     );
