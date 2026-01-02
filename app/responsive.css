@@ -34,6 +34,6 @@ background-image: none;
 
 @media (min-width: 320px) and (max-width: 359px) {
  .hero-video{
-       height:52vh;
+       height:56vh;
     }
 }
