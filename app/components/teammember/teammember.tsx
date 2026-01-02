@@ -1,14 +1,19 @@
 "use client";
 
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import { useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Autoplay } from "swiper/modules";
+import type { Swiper as SwiperType } from "swiper";
+import "swiper/css";
+import "swiper/css/navigation";
 import { ArrowRight, ArrowLeft } from "lucide-react";
 
 import { useGetAllTeamMembersQuery } from "@/app/redux/api/teamMembersApi";
+import MemberCard from "./membercard";
 
 const TeamMembers = () => {
   const { data, isLoading, isError } = useGetAllTeamMembersQuery();
+  const [activeIndex, setActiveIndex] = useState(0);
 
   const members = data?.member_list ?? [];
 
@@ -132,29 +137,3 @@ const settings = {
 };
 
 export default TeamMembers;
-
-/* ---------------- CUSTOM ARROWS ---------------- */
-
-const NextArrow = ({ onClick }: any) => (
-  <button
-    onClick={onClick}
-    className="
-      absolute right-[-18px] sm:right-[-45px] md:right-[-45px] lg:right-[-45px] xl:right-[-45px] 2xl:right-[-45px] top-[55%] -translate-y-1/2 z-20
-      p-2 border border-solid border-[#313131] cursor-pointer rounded-md bg-[#FFFFFFB0]
-    "
-  >
-    <ArrowRight size={26} />
-  </button>
-);
-
-const PrevArrow = ({ onClick }: any) => (
-  <button
-    onClick={onClick}
-    className="
-      absolute left-[-18px] sm:left-[-45px] md:left-[-45px] lg:left-[-45px] xl:left-[-45px] 2xl:left-[-45px] top-[55%] -translate-y-1/2 z-20
-      p-2 border border-solid border-[#313131] cursor-pointer rounded-md bg-[#FFFFFFB0]
-    "
-  >
-    <ArrowLeft size={26} />
-  </button>
-);
