@@ -17,38 +17,6 @@ const TeamMembers = () => {
 
   const members = data?.member_list ?? [];
 
-const settings = {
-  dots: false,
-  infinite: true,
-  autoplay: true,
-  autoplaySpeed: 5000,
-  speed: 1000,
-  arrows: true,
-  nextArrow: <NextArrow />,
-  prevArrow: <PrevArrow />,
-  slidesToShow: 3,
-  centerMode: true,
-  centerPadding: "0px",
-
-  responsive: [
-    {
-      breakpoint: 1024,   // Tablet / small laptop
-      settings: {
-        slidesToShow: 3,
-        centerMode: true,
-      },
-    },
-    {
-      breakpoint: 767,    // Mobile
-      settings: {
-        slidesToShow: 1,
-        centerMode: false,
-        arrows: false,
-      },
-    },
-  ],
-};
-
   if (isLoading) {
     return (
       <p className="text-center py-20 text-gray-500">
@@ -76,59 +44,60 @@ const settings = {
         />
 
         <div className="relative max-w-7xl mx-auto px-4 pb-10">
-          <Slider {...settings}>
-            {members.map((m) => (
-              <div key={m.member_id} className="px-4 member-card w-full">
-            <div
-              className="
-                relative w-full max-w-full
-                member-center px-8 pt-16 pb-10 rounded-xl shadow-xl
-                bg-white text-[#2B3332]
-                transition-all duration-500
-
-                md:slick-center:scale-[1.15]
-                md:slick-center:translate-y-6
-                md:slick-center:bg-[#326E4F]
-                md:slick-center:text-white
-              "
-            >
-                  {/* Profile Image */}
-                  <div
-                    className="
-                      absolute left-1/2 -top-14 -translate-x-1/2
-                      transition-all duration-500
-                      w-24 h-24
-                      md:slick-center:w-32
-                      md:slick-center:h-32
-                    "
-                  >
-                    <div className="rounded-full overflow-hidden border-[6px] border-[#F4BE00] shadow-lg">
-                      <img
-                        src={m.member_image}
-                        alt={`${m.member_fname} ${m.member_lname}`}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                  </div>
-
-                  {/* Name */}
-                  <h3 className="text-lg font-bold text-center">
-                    {m.member_fname} {m.member_lname}
-                  </h3>
-
-                  {/* Role */}
-                  <p className="text-xs text-center mt-1 opacity-80 slick-center:text-yellow-200">
-                    {m.member_role}
-                  </p>
-
-                  {/* Description */}
-                  <p className="mt-4 text-sm leading-relaxed text-center line-clamp-3">
-                    {m.member_description}
-                  </p>
-                </div>
-              </div>
+          <Swiper
+            modules={[Navigation, Autoplay]}
+            spaceBetween={16}
+            slidesPerView={1}
+            centeredSlides={false}
+            loop={true}
+            // autoplay={{
+            //   delay: 5000,
+            //   disableOnInteraction: false,
+            // }}
+            speed={1000}
+            navigation={{
+              nextEl: ".swiper-button-next-custom",
+              prevEl: ".swiper-button-prev-custom",
+            }}
+            onSlideChange={(swiper: SwiperType) => setActiveIndex(swiper.realIndex)}
+            onSwiper={(swiper: SwiperType) => setActiveIndex(swiper.realIndex)}
+            breakpoints={{
+              768: {
+                slidesPerView: 3,
+                centeredSlides: true,
+                spaceBetween: 24,
+              },
+            }}
+            className="team-swiper"
+          >
+            {members.map((m, index) => (
+              <SwiperSlide key={m.member_id} className="px-4 member-card">
+                <MemberCard m={m} isActive={index === activeIndex} />
+              </SwiperSlide>
             ))}
-          </Slider>
+          </Swiper>
+
+          {/* Custom Navigation Arrows */}
+          <button
+            className="
+              swiper-button-prev-custom
+              hidden md:flex
+              absolute left-[-18px] sm:left-[-45px] md:left-[-45px] lg:left-[-45px] xl:left-[-45px] 2xl:left-[-45px] top-[55%] -translate-y-1/2 z-20
+              p-2 border border-solid border-[#313131] cursor-pointer rounded-md bg-[#FFFFFFB0]
+            "
+          >
+            <ArrowLeft size={26} />
+          </button>
+          <button
+            className="
+              swiper-button-next-custom
+              hidden md:flex
+              absolute right-[-18px] sm:right-[-45px] md:right-[-45px] lg:right-[-45px] xl:right-[-45px] 2xl:right-[-45px] top-[55%] -translate-y-1/2 z-20
+              p-2 border border-solid border-[#313131] cursor-pointer rounded-md bg-[#FFFFFFB0]
+            "
+          >
+            <ArrowRight size={26} />
+          </button>
         </div>
 
       </div>
