@@ -25,17 +25,18 @@ export default function RootLayout({
   return (
     <html lang="en" className={poppins.className}>
       <head>
-        {/* Google Analytics */}
+        
+        {/* Google Analytics (GA4) */}
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=UA-18662701-4"
+          src="https://www.googletagmanager.com/gtag/js?id=G-EN2VK2PXCN"
           strategy="afterInteractive"
         />
-        <Script id="ga-init" strategy="afterInteractive">
+        <Script id="ga4-init" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'UA-18662701-4');
+            gtag('config', 'G-EN2VK2PXCN');
           `}
         </Script>
 
