@@ -50,10 +50,10 @@ const TeamMembers = () => {
             slidesPerView={1}
             centeredSlides={false}
             loop={true}
-            // autoplay={{
-            //   delay: 5000,
-            //   disableOnInteraction: false,
-            // }}
+            autoplay={{
+              delay: 5000,
+              disableOnInteraction: false,
+            }}
             speed={1000}
             navigation={{
               nextEl: ".swiper-button-next-custom",
