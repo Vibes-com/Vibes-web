@@ -1287,6 +1287,7 @@ border-right: none;
   color: #fef08a !important; /* yellow-200 */
 }
 
+
 /* Enhanced center effect on larger screens */
 @media (min-width: 768px) {
   .slick-center .member-center {
@@ -1351,4 +1352,15 @@ border-right: none;
 .swiper-pagination-custom .swiper-pagination-bullet-active {
   opacity: 1;
   background: #326E4F;
+}
+.team-member-wrapper .swiper-horizontal{
+    padding-top: 58px;
+}
+.team-member-wrapper .rounded-full.overflow-hidden{width: 70%;}
+.team-member-wrapper .left-1\/2 {left: 57%;}
+.team-member-wrapper .swiper-slide.swiper-slide-active .member-center{
+    padding-bottom: 30px;
+}
+.team-swiper {
+  padding-bottom: 40px; /* adjust as needed */
 }

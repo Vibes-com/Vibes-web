@@ -16,10 +16,10 @@ const MemberCard = ({ m, isActive }: MemberCardProps) => {
     return (
         <div
             className={`
-        relative member-center px-8 pt-16 pb-10 rounded-xl shadow-xl 
+        relative member-center px-8 pt-12 pb-10 rounded-xl shadow-xl 
         transition-all duration-500
         ${isActive
-                    ? 'md:scale-[1.15] md:translate-y-6 md:bg-[#326E4F] md:text-white bg-white text-[#2B3332]'
+                    ? 'md:scale-[1.04] md:translate-y-6 md:bg-[#326E4F] md:text-white bg-white text-[#2B3332]'
                     : 'bg-white text-[#2B3332]'
                 }
       `}
@@ -42,7 +42,7 @@ const MemberCard = ({ m, isActive }: MemberCardProps) => {
             </div>
 
             {/* Name */}
-            <h3 className="text-lg font-bold text-center">
+            <h3 className="text-[15px] font-bold text-center">
                 {m.member_fname} {m.member_lname}
             </h3>
 
@@ -52,7 +52,7 @@ const MemberCard = ({ m, isActive }: MemberCardProps) => {
             </p>
 
             {/* Description */}
-            <p className="mt-4 text-sm leading-relaxed text-center line-clamp-3">
+            <p className="mt-4 text-[12px] leading-relaxed text-center line-clamp-3">
                 {m.member_description}
             </p>
         </div>
