@@ -1,5 +1,5 @@
 "use client";
-import { useRouter } from "next/navigation";
+// import { useRouter } from "next/navigation";
 import OurBlogs from '../../blogs/blogs'
 import SuccessStory from "@/app/components/technology-details/success-story/SuccessStory";
 import ImageCarousel from "../../common/ImageCarouselWorkflow/ImageCarousel";
@@ -37,7 +37,7 @@ const images = [
 ];
 
 const CorporateBranding = () => {
-  const router = useRouter();
+  // const router = useRouter();
   return (
     <div>
       <HeroSection
