@@ -13,15 +13,22 @@ export default function Preloader() {
   if (!loading) return null;
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-white z-[9999] w-full overflow-hidden h-full">
-      <div className="preloader-section-wrapper flex flex-col justify-center items-center  text-white leading-tight">
-            <h1 className="text-[85px] font-semibold ">TOGETHER WE BUILD</h1>
-            <div className="flex items-center space-x-4">
-                <span className="w-[80px] border-b-6 border-[#F4BE00]"></span>
-                <h2 className="text-[85px] font-semibold  whitespace-nowrap">TOMORROW</h2>
-                <span className="w-[80px] border-b-6 border-[#F4BE00]"></span>
-            </div>
-        </div>
+   <div className="fixed inset-0 flex items-center justify-center bg-white z-[9999] w-full h-full overflow-hidden">
+  <div className="preloader-section-wrapper flex flex-col items-center justify-center text-white leading-tight px-4">
+    <h1 className="text-[28px] sm:text-[36px] md:text-[85px] font-semibold text-center">
+      TOGETHER WE BUILD
+    </h1>
+    <div className="flex items-center space-x-2 sm:space-x-4 mt-2">
+      <span className="w-[40px] sm:w-[60px] md:w-[80px] border-b-[4px] md:border-b-6 border-[#F4BE00]"></span>
+
+      <h2 className="text-[42px] sm:text-[60px] md:text-[85px] font-semibold whitespace-nowrap">
+        TOMORROW
+      </h2>
+
+      <span className="w-[40px] sm:w-[60px] md:w-[80px] border-b-[4px] md:border-b-6 border-[#F4BE00]"></span>
     </div>
+
+  </div>
+</div>
   );
 }

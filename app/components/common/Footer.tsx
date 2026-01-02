@@ -15,8 +15,8 @@ const Footer = () => {
   return (
     <div className="footer-wrapper  relative ">
       <div className="container mx-auto  px-4 md:px-8">
-        <div className="lg:grid grid-cols-12 items-center pt-10 pb-8">
-          <div className="col-span-5 pe-10 pt-6 p-4 border-e border-white/30">
+        <div className="lg:grid grid-cols-12 items-center pt-10 pb-5">
+          <div className="col-span-5 pe-10 pt-6 p-4 border-e-0  lg:border-e border-white/30 xl:border-e border-white/30 2xl:border-e border-white/30">
             <FooterText />
             <SubscribeBox />
           </div>

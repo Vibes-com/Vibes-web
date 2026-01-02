@@ -84,10 +84,10 @@ const MarqueeStorySection = ({
         </div>
 
         {/* TITLE */}
-        <h3 className="text-center font-poppins font-medium text-[40px] leading-[1.23]">
+        <h3 className="text-center font-poppins font-medium text-[28px] sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] leading-[1.23] cmn-heading">
 
           {highlightTitle && (
-            <span className=" ml-2 w-fit z-9 relative highlight font-semibold">{highlightTitle} </span>
+            <span className=" ml-2 w-fit z-9 relative highlight font-semibold cmn-heading">{highlightTitle} </span>
           )}
           {title}
 
@@ -138,7 +138,7 @@ const MarqueeStorySection = ({
 
       {/* CTA */}
       <div className="text-center mt-12">
-        <Button2 className="p-[20px]  cursor-pointer hover:border-[#2B4C69] hover:border-[2px] hover:text-[#F4BE00] hover:bg-transparent">
+        <Button2 className=" text-[12px] sm:text-[16px] md:text-[16px] lg:text-[16px] xl:text-[18px] 2xl:text-[18px] p-[20px]  cursor-pointer hover:border-[#2B4C69] hover:border-[2px] hover:text-[#F4BE00] hover:bg-transparent">
           <a className="flex items-center" href="tel:+91-8586932861">
             <span>{ctaText}</span>
             <ArrowUpIcon className="rotate-45 transform" />

@@ -45,9 +45,9 @@ const TeamDreamSection = () => {
                                     </span>
                                 </div>
                             </div>
-                            <h3 className="font-poppins font-medium text-[40px] leading-[1.23] tracking-norma]">
+                            <h3 className="font-poppins font-medium text-[28px] sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] leading-[1.23] tracking-norma] cmn-heading">
                                 Shaping Vision <br />
-                                <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[40px] leading-[1.23] tracking-normal">Accelerating Growth.</span>
+                                <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[28px] sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] leading-[1.23] tracking-normal cmn-heading">Accelerating Growth.</span>
                             </h3>
 
                             <p className="text-[#525252] mt-5 max-w-md">
@@ -55,7 +55,7 @@ const TeamDreamSection = () => {
 
                             </p>
                             <Link href="/about-us-together-for-tomorrow">
-                                <Button2 className="mt-5 p-[20px] cursor-pointer hover:border-[#2B4C69] hover:border-[2px] hover:text-[#F4BE00] hover:bg-transparent">
+                                <Button2 className="mt-5 text-[12px] sm:text-[16px] md:text-[16px] lg:text-[16px] xl:text-[18px] 2xl:text-[18px] p-[20px] cursor-pointer hover:border-[#2B4C69] hover:border-[2px] hover:text-[#F4BE00] hover:bg-transparent">
                                     <span>Discover Who We Are</span>
                                     <ArrowUpIcon className="transform rotate-45" />
                                 </Button2>
@@ -83,7 +83,7 @@ const TeamDreamSection = () => {
 
                     {/* Card 1 */}
                     <SlideRight delay={0.5}>
-                        <div className="p-8 one-team-card bdr"
+                        <div className="py-6 sm:p-8 md:p-8 lg:p-8 xl:p-8 2xl:p-8 one-team-card bdr"
                             onMouseEnter={() => setShowTeam(true)}
                         >
                             <h3 className="font-semibold text-[20px] leading-[123%] mb-3">One Team</h3>
@@ -95,7 +95,7 @@ const TeamDreamSection = () => {
 
                     {/* Card 2 */}
                     <SlideUp delay={0.5}>
-                        <div className="p-8 one-team-card bdr">
+                        <div className="py-6 sm:p-8 md:p-8 lg:p-8 xl:p-8 2xl:p-8 one-team-card bdr">
                             <h3 className="font-semibold text-[20px] leading-[123%] mb-3">One Dream</h3>
                             <p className="font-poppins font-normal text-[14px] leading-[130%] text-[#191919DB]">
                                 A brand starts with a vision, insight, innovation and data that turn it into a clear measurable and achievable roadmap.
@@ -105,7 +105,7 @@ const TeamDreamSection = () => {
 
                     {/* Card 3 */}
                     <SlideLeft delay={0.5}>
-                        <div className="p-8 one-team-card">
+                        <div className="py-6 sm:p-8 md:p-8 lg:p-8 xl:p-8 2xl:p-8 one-team-card">
                             <h3 className="font-semibold text-[20px] leading-[123%] mb-3">Together for Tomorrow</h3>
                             <p className="font-poppins font-normal text-[14px] leading-[130%] text-[#191919DB]">
                                 Growth continues beyond every project, evolving so each step today strengthens the success of tomorrow.
