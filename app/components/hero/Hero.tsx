@@ -35,7 +35,7 @@ const Hero = () => {
         <div key={index} className="absolute inset-0 pt-[87px] sm:pt-0 md:pt-0 lg:pt-0 xl:pt-0 2xl:pt-0">
           {item.banner_type === "video" ? (
             <video
-              className="w-full object-cover"
+              className="w-full object-contain sm:object-cover lg:object-cover  xl:object-cover"
               autoPlay
               loop
               muted

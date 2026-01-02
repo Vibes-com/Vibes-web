@@ -22,13 +22,13 @@ const settings = {
   nextArrow: <NextArrow />,
   prevArrow: <PrevArrow />,
 
-  // slidesToShow: 3,
+  slidesToShow: 3,
   centerMode: true,
   centerPadding: "0px",
 
   responsive: [
     {
-      breakpoint: 1024,   // Tablet / small laptop
+      breakpoint: 1920,   // Tablet / small laptop
       settings: {
         slidesToShow: 3,
         centerMode: true,
