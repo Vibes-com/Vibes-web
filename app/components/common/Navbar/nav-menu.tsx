@@ -12,10 +12,17 @@ import Link from "next/link";
 import { ComponentProps } from "react";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
-
-export const NavMenu = (props: ComponentProps<typeof NavigationMenu>) => {
+import { SheetClose } from "@/components/ui/sheet";
+export const NavMenu = (props: ComponentProps<typeof NavigationMenu> & { onLinkClick?: () => void }) => {
+    const { onLinkClick, ...navProps } = props;
     const pathname = usePathname();
-
+    const handleLinkClick = (e: React.MouseEvent) => {
+        if (onLinkClick) {
+            setTimeout(() => {
+                onLinkClick();
+            }, 50);
+        }
+    }
     const isActive = (path: string) => pathname === path;
 
     const isWhatWeDoActive =
@@ -34,18 +41,19 @@ export const NavMenu = (props: ComponentProps<typeof NavigationMenu>) => {
             active && "after:scale-x-100"
         );
     return (
-        <NavigationMenu {...props}>
+        <NavigationMenu {...navProps}>
             <NavigationMenuList className=" nav-menu-new space-x-3 data-[orientation=vertical]:flex-col data-[orientation=vertical]:items-start ">
 
                 <NavigationMenuItem>
+
                     <NavigationMenuLink asChild className={linkClass(isActive("/"))}>
-                        <Link href="/">HOME</Link>
+                        <Link onClick={handleLinkClick} href="/" className="text-white">HOME</Link>
                     </NavigationMenuLink>
                 </NavigationMenuItem>
 
                 <NavigationMenuItem className="">
                     <NavigationMenuLink asChild className={linkClass(isActive("/about-us-together-for-tomorrow"))}>
-                        <Link href="/about-us-together-for-tomorrow" className="text-white">WHO WE ARE</Link>
+                        <Link onClick={handleLinkClick} href="/about-us-together-for-tomorrow" className="text-white">WHO WE ARE</Link>
                     </NavigationMenuLink>
                 </NavigationMenuItem>
 
@@ -73,12 +81,12 @@ export const NavMenu = (props: ComponentProps<typeof NavigationMenu>) => {
                     <NavigationMenuContent>
                         <ul className="grid gap-3 p-4 lg:w-[300px]">
                             <li>
-                                <Link href="/technology-services" className="block p-2 hover:bg-gray-100 rounded">
+                                <Link onClick={handleLinkClick} href="/technology-services" className="block p-2 hover:bg-gray-100 rounded">
                                     Technology
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/branding-services" className="block p-2 hover:bg-gray-100 rounded">
+                                <Link onClick={handleLinkClick} href="/branding-services" className="block p-2 hover:bg-gray-100 rounded">
                                     Branding
                                 </Link>
                             </li>
@@ -96,25 +104,25 @@ export const NavMenu = (props: ComponentProps<typeof NavigationMenu>) => {
                         asChild
                         className={linkClass(isActive("/case-studies"))}
                     >
-                        <Link href="/case-studies">CASE STUDIES</Link>
+                        <Link onClick={handleLinkClick} href="/case-studies">CASE STUDIES</Link>
                     </NavigationMenuLink>
                 </NavigationMenuItem>
 
                 <NavigationMenuItem>
                     <NavigationMenuLink asChild className={linkClass(isActive("/gallery"))}>
-                        <Link href="/gallery">CULTURE</Link>
+                        <Link onClick={handleLinkClick} href="/gallery">CULTURE</Link>
                     </NavigationMenuLink>
                 </NavigationMenuItem>
 
                 <NavigationMenuItem>
                     <NavigationMenuLink asChild className={linkClass(isActive("/work-with-digital-agency"))}>
-                        <Link href="/work-with-digital-agency">CAREERS</Link>
+                        <Link onClick={handleLinkClick} href="/work-with-digital-agency">CAREERS</Link>
                     </NavigationMenuLink>
                 </NavigationMenuItem>
 
                 <NavigationMenuItem>
                     <NavigationMenuLink asChild className={linkClass(isActive("/contact-for-digital-requirements"))}>
-                        <Link href="/contact-for-digital-requirements">CONTACT US</Link>
+                        <Link onClick={handleLinkClick} href="/contact-for-digital-requirements">CONTACT US</Link>
                     </NavigationMenuLink>
                 </NavigationMenuItem>
 
