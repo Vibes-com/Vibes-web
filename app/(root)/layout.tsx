@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: "Digital Marketing & Brand Agency | IT Services Company | Delhi NCR",
   description:
     "Vibes Communications is a proven agency in the space of Digital Marketing, Brand & IT Services. SEO, SMO, Brand Positioning, Website & Customized Software Development are prime services of the company.",
+    viewport: "width=device-width, initial-scale=1",
 
   openGraph: {
     title: "Digital Marketing & Brand Agency | IT Services Company | Delhi NCR",
