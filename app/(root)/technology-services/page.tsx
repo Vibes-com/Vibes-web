@@ -1,7 +1,7 @@
-"use client";
+// "use client";
 
 import React from "react";
-import { useRouter } from "next/navigation";
+// import { useRouter } from "next/navigation";
 
 import TechnologyDetailsHero from "@/app/components/technology-details/technology-details-hero/TechnologyDetailsHero";
 import TechSolutions from "@/app/components/technology-details/tech-solutions/TechSolutions";
@@ -119,7 +119,7 @@ const logos = [
 const tabs = ["healthcare", "education", "realestate", "entertainment", "government"];
 
 export default function Page() {
-  const router = useRouter();
+  // const router = useRouter();
 
   // ✅ RTK QUERY
   const { data, isLoading, isError } = useGetAllCaseStudiesQuery();
@@ -183,7 +183,8 @@ export default function Page() {
         buttonText="Talk to Experts"
         arrowImage="/assests/img/technology-details/arrow.png"
         className="bg-black"
-        onButtonClick={() => router.push("/contact-for-digital-requirements")}
+        // onButtonClick={() => router.push("/contact-for-digital-requirements")}
+        btnlink="/contact-for-digital-requirements"
       />
     </div>
   );
