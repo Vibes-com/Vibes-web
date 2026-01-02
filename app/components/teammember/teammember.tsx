@@ -18,25 +18,18 @@ const settings = {
   autoplay: true,
   autoplaySpeed: 5000,
   speed: 1000,
+
+  // ✅ Desktop (default)
+  // slidesToShow: 3,
+  centerMode: true,
+  centerPadding: "0px",
   arrows: true,
   nextArrow: <NextArrow />,
   prevArrow: <PrevArrow />,
 
-  slidesToShow: 3,
-  centerMode: true,
-  centerPadding: "0px",
-
-   responsive: [
+  responsive: [
     {
-      // Tablet & below
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 2,
-        centerMode: true,
-      },
-    },
-    {
-      // Mobile
+      // 📱 Mobile
       breakpoint: 767,
       settings: {
         slidesToShow: 1,
@@ -44,8 +37,10 @@ const settings = {
         arrows: false,
       },
     },
+    
   ],
 };
+
 
   if (isLoading) {
     return (
