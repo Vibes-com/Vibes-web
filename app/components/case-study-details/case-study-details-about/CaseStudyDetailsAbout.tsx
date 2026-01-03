@@ -60,7 +60,7 @@ const CaseStudyDetailsAbout: React.FC<CaseStudyDetailsAboutProps> = ({
             </div>
 
             {/* TITLE */}
-            <h3 className="mb-6 font-poppins font-medium text-[48px] leading-[1.23]">
+            <h3 className="mb-6 highlight relative z-9 w-fit font-poppins font-medium text-[33px] sm:text-[48px] md:text-[48px] lg:text-[48px] xl:text-[48px] 2xl:text-[48px] leading-[1.23]">
               {title}
               {highlightTitle && (
                 <span className="block highlight relative z-10 font-poppins font-semibold text-[40px]">
