@@ -30,8 +30,7 @@ export default function FooterRightSection() {
                     height={100}
                 />
                 <p className=" text-[#7C7C7C]  font-normal text-[12px] leading-[25px] sm:leading-[25px] md:leading-[130%] lg:leading-[130%] xl:leading-[130%] 2xl:leading-[130%] tracking-[0] mb-4">
-                    Digital Cooperation Organization promotes collaboration among member nations.
-                    We bridge digital divides and enable equal opportunities through technology.
+                    Vibes Communications is a creative agency focused on transforming ideas into powerful digital experiences. We bring brands to life through thoughtful design, smart strategy, and impactful storytelling.
                 </p>
                 <div className="flex items-center gap-5 mt-2">
                     <Link target="_blank" href="https://www.facebook.com/vibescomm" className="hover:text-[#E3A324] transition bg-[#585858] rounded-full h-[25px] w-[25px] flex items-center justify-center"><Facebook size={15} strokeWidth={1.6} /></Link>
