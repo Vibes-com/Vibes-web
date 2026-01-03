@@ -17,7 +17,7 @@ const MissionVision: React.FC = () => {
                                 alt="team main" priority unoptimized
                                 width={390}
                                 height={510}
-                                className="rounded-xl shadow-xl border-[5px] border-white "
+                                className="rounded-xl shadow-xl border-[5px] border-white w-[60%] "
                             />
                         </div>
 

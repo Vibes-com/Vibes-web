@@ -30,7 +30,7 @@ const CaseStudyDetailsAbout: React.FC<CaseStudyDetailsAboutProps> = ({
       }}
     >
       <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
-        <div className="grid grid-cols-12 gap-14 items-center">
+        <div className="grid grid-cols-12 lg:gap-14  items-center">
 
           {/* LEFT IMAGE */}
           <div className="col-span-12 lg:col-span-6">
@@ -47,7 +47,7 @@ const CaseStudyDetailsAbout: React.FC<CaseStudyDetailsAboutProps> = ({
           </div>
 
           {/* RIGHT CONTENT */}
-          <div className="col-span-12 lg:col-span-6">
+          <div className="col-span-12  pt-20 md:pt-0 lg:pt-0 xl:pt-0 2xl:pt-0 lg:col-span-6">
 
             {/* BADGE */}
             <div className="mb-5">
@@ -60,7 +60,7 @@ const CaseStudyDetailsAbout: React.FC<CaseStudyDetailsAboutProps> = ({
             </div>
 
             {/* TITLE */}
-            <h3 className="mb-6 font-poppins font-medium text-[48px] leading-[1.23]">
+            <h3 className="mb-6 highlight relative z-9 w-fit font-poppins font-medium text-[33px] sm:text-[48px] md:text-[48px] lg:text-[48px] xl:text-[48px] 2xl:text-[48px] leading-[1.23]">
               {title}
               {highlightTitle && (
                 <span className="block highlight relative z-10 font-poppins font-semibold text-[40px]">
@@ -70,7 +70,7 @@ const CaseStudyDetailsAbout: React.FC<CaseStudyDetailsAboutProps> = ({
             </h3>
 
             {/* POINTS */}
-            <div className="space-y-6 max-w-[520px]">
+            <div className="space-y-6 ">
               {points.map((text, index) => (
                 <div key={index} className="flex items-start gap-4">
                   <div className="mt-2 w-4 h-4 rounded-full border-2 border-[#466E59] flex items-center justify-center flex-shrink-0">

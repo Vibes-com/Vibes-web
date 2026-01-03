@@ -13,11 +13,19 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   backgroundImage,
   title,
   description,
+<<<<<<< HEAD
   height = "h-[60vh] sm:h-[90vh] md:h-[90vh] lg:h-[90vh] xl:h-[90vh] 2xl:h-[90vh]",
 }) => {
   return (
     <section
       className={`flex items-center ${height} bg-cover bg-left sm:bg-center lg:bg-center xl:bg-center 2xl:bg-center bg-no-repeat`}
+=======
+  height = "h-[65vh] sm:h-[90vh] md:h-[90vh] lg:h-[90vh] xl:h-[90vh] 2xl:h-[90vh]",
+}) => {
+  return (
+    <section
+      className={`flex items-center ${height} bg-cover bg-left sm:text-bg-center md:text-bg-center] lg:text-bg-center xl:text-bg-center 2xl:bg-center bg-no-repeat`}
+>>>>>>> vibes-web
       style={{
         backgroundImage: `url(${backgroundImage})`,
       }}
