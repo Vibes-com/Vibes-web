@@ -25,7 +25,7 @@ const CaseStudyDetailsImpact: React.FC<CaseStudyDetailsImpactProps> = ({
       }}
     >
       <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
-        <div className="grid grid-cols-12 items-center gap-12">
+        <div className="grid grid-cols-12 items-center gap-0 lg:gap-12">
 
           {/* LEFT CONTENT */}
           <div className="col-span-12 lg:col-span-5">
@@ -53,7 +53,7 @@ const CaseStudyDetailsImpact: React.FC<CaseStudyDetailsImpactProps> = ({
 
           {/* RIGHT LIST */}
           <div className="col-span-12 lg:col-span-7">
-            <ul className="space-y-6 text-[#AEAEAE] font-poppins font-medium text-[20px] lg:text-[26px] leading-[123%]">
+            <ul className="space-y-6 text-[#AEAEAE] font-poppins mt-10 lg:mt-0 font-medium text-[20px] lg:text-[26px] leading-[123%]">
               {impactList.map((item, index) => (
                 <li
                   key={item} // ✅ stable key
