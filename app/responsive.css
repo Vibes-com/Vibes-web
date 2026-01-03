@@ -19,6 +19,12 @@ background-image: none;
   color: white;
     padding-bottom: 30px;
 }
+.casestudy-listing-hero-wrapper {
+    background-position: left;
+}
+.jobdesc li{
+    margin-left: 0px!important;
+}
 }
 
 @media (min-width: 360px) and (max-width: 385px) {
@@ -34,6 +40,9 @@ background-image: none;
     }
     .sbs-btn{
        font-size: 13px; 
+    }
+    .hero-heading{
+        font-size: 28px!important;
     }
 }
 

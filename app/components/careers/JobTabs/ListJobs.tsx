@@ -27,8 +27,8 @@ const ListJobs = ({ type }: { type: number }) => {
     return (
         <div>
             <Tabs defaultValue={data?.jobs[0].career_id} className="w-full flex">
-                <div className="grid grid-cols-3 gap-4">
-                    <div className="col-span-1 border-r pr-5">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-0 md:gap-4 lg:gap-4 xl:gap-4 2xl:gap-4">
+                    <div className="md:col-span-1 border-r-none pr-0 md:pr-5 lg:pr-5 xl:pr-5 2xl:pr-5 md:border-r lg:border-r xl:border-r 2xl:border-r ">
                         {
                             data?.jobs?.map((job) => (
                                 <TabsList key={job.career_id} className='block w-full border-none h-auto job-tab-wrapper'>
