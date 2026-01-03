@@ -40,7 +40,7 @@ const CaseStudyDetailsBrief: React.FC<CaseStudyDetailsBriefProps> = ({
       </h3>
 
       {/* POINTS */}
-      <div className="space-y-6 max-w-[520px]">
+      <div className="space-y-6 ">
         {block.points.map((text, index) => (
           <div key={index} className="flex items-start gap-4">
             <div
@@ -73,7 +73,7 @@ const CaseStudyDetailsBrief: React.FC<CaseStudyDetailsBriefProps> = ({
       }}
     >
       <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
-        <div className="grid grid-cols-12 gap-14 items-start">
+        <div className="grid grid-cols-12 gap-0 lg:gap-14 xl:gap-14 2xl:gap-14 items-start">
 
           {/* LEFT BLOCK */}
           <div className="col-span-12 lg:col-span-6">

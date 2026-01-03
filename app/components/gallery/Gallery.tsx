@@ -28,10 +28,10 @@ export default function Gallery() {
       <HeroSection
         backgroundImage="/assests/img/culture/culture-banner.jpg"
         title={
-          <h1 className="font-poppins font-normal text-[60px] leading-[116%] capitalize text-white">
+          <h1 className="font-poppins font-normal hero-heading font-poppins  pt-15 text-[32px] sm:text-[60px] md:text-[60px] lg:text-[60px] xl:text-[60px] 2xl:text-[60px] leading-[116%] capitalize text-white">
             Inside the Culture That
             <br />
-            <span className=" hero-highlight relative z-10 font-poppins font-semibold text-[65px] text-[#F4BE00]">
+            <span className=" hero-heading hero-highlight relative z-10 font-poppins font-semibold text-[32px] sm:text-[65px] md:text-[65px] lg:text-[65px] xl:text-[65px] 2xl:text-[65px] text-[#F4BE00]">
               Drives Vibes
             </span>
           </h1>
@@ -52,7 +52,7 @@ export default function Gallery() {
             </div>
           </div>
 
-          <h3 className="text-center font-poppins font-medium text-[40px]">
+          <h3 className="text-center font-poppins font-medium text-[28px]  sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px]">
             <span className=" relative w-fit highlight font-semibold">Beyond the</span> Desk
           </h3>
 

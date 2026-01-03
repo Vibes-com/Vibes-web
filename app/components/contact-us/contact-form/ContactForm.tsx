@@ -120,15 +120,15 @@ const ContactForm = () => {
             </span>
           </div>
         </div>
-        <h3 className=" text-center font-poppins font-medium text-[40px] leading-[1.23] tracking-norma]">
-          Partner for Digital <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[40px] leading-[1.23] tracking-normal">Excellence</span>
+        <h3 className=" text-center font-poppins font-medium text-[28px]  sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] leading-[1.23] tracking-norma]">
+          Partner for Digital <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[28px]  sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] leading-[1.23] tracking-normal">Excellence</span>
         </h3>
         <p className="text-[#707070] font-normal text-[16px] leading-[130%] tracking-[0] text-center max-w-2xl mx-auto mt-5">
           From concept to execution, building digital experiences that drive long-term value.
         </p>
       </div>
 
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
 
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
@@ -237,7 +237,7 @@ const ContactForm = () => {
 
               <div>
                 <label className="block font-medium mb-2">Captcha</label>
-                <div className="flex gap-4 items-center">
+                <div className="flex flex-wrap sm:flex-nowrap md:flex-nowrap lg:flex-nowrap xl: 2xl: gap-4 items-center">
                   <input
                     placeholder="Enter Captcha"
                     value={captchaInput}
