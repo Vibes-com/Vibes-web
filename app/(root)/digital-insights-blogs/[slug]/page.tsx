@@ -1,50 +1,58 @@
-"use client";
-
-import React, { use } from "react";
-import { useGetSingleBlogQuery } from "@/app/redux/api/blogApi";
-import BlogShareButtons from "@/app/components/blog/blog-share-btn/BlogShareBtn";
+import { Metadata } from "next";
+import BlogClient from "./blog-detail";
+import { blogApiUrls } from "@/app/constants/apiUrls";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
 };
 
-export default function BlogDetailPage({ params }: PageProps) {
-  const { slug } = use(params);
+export async function generateMetadata(
+  { params }: PageProps
+): Promise<Metadata> {
+  const { slug } = await params;
 
-  const { data, isLoading, error } = useGetSingleBlogQuery(slug);
+  if (!slug) {
+    return {
+      title: "Blog",
+      description: "Blog details",
+    };
+  }
 
-  if (isLoading) return <p>Loading...</p>;
-  if (error) return <p>Failed to load blog</p>;
+  const baseUrl = process.env.NEXT_PUBLIC_API_URL;
+  const endpoint = blogApiUrls.getSingleBlog.replace(/^\/|\/$/g, "");
+  const apiUrl = `${baseUrl}/${endpoint}/${slug}`;
 
-  const blog = data?.data;
+  const res = await fetch(apiUrl, {
+    method: 'GET', // Default is GET, but good to be explicit
+    headers: {
+      "VIBES-API-KEY": `${process.env.NEXT_PUBLIC_API_TOKEN}`,
+      "Content-Type": "application/json",
+    },
+  });
 
-  return (
-    <section className="w-full">
-      <div className="relative">
-        <img className="w-full" src={blog?.banner_img} />
-        {/* Blog Title */}
-        <h1 className="text-5xl w-[80%] font-medium uppercase mb-6 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-4 text-center text-white z-10">
-          {blog?.blog_title}
-        </h1>
-      </div>
-      <div className="blog-content-wrapper section-gap">
-        <div className="container mx-auto max-w-screen-xl px-4 md:px-8  blog-content">
-          <BlogShareButtons />
-          <h2 className=" flex justify-center font-poppins !font-bold !text-[50px] leading-[116%] tracking-normal  pb-10 capitalize  items-center gap-1 ">
-            <span className="!text-[#1F1F1F]  !text-[50px]">–</span>
-            OVERVIEW
-            <span className="!text-[#1F1F1F] !text-[50px]">–</span>
-          </h2>
-          {/* Blog Description (HTML) */}
-          <div
-            className="prose max-w-none"
-            dangerouslySetInnerHTML={{
-              __html: blog?.blog_description || "",
-            }}
-          />
-        </div>
-      </div>
-    </section>
-  );
+  if (!res.ok) {
+    return {
+      title: "Blog",
+      description: "Blog details",
+    };
+  }
+
+  const json = await res.json();
+  const blog = json?.data;
+  const meta_description = blog?.page_description.match(/content="([^"]*)"/)?.[1];
+  return {
+    title: blog?.page_title || blog?.blog_title || "Blog",
+    description: blog?.meta_description || blog?.blog_slug || "",
+    openGraph: {
+      title: blog?.page_title || blog?.blog_title,
+      description: meta_description
+    },
+  };
 }
 
+/* SERVER → CLIENT */
+export default async function Page({ params }: PageProps) {
+  const { slug } = await params;
+
+  return <BlogClient slug={slug} />;
+}
