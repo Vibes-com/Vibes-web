@@ -28,7 +28,7 @@ export const contactSchema = z.object({
     .max(10, "Mobile number must be 10 digits"),
   email: z.string().email("Invalid email address"),
   website: z.string().optional(),
-  message: z.string().min(2, "Message must be atleast 5 character"),
+  message: z.string().optional(),
 });
 
 const ContactForm = () => {

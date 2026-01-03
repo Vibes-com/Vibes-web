@@ -33,8 +33,8 @@ const CaseStudyDetailsBrief: React.FC<CaseStudyDetailsBriefProps> = ({
         </div>
       </div>
 
-      <h3 className="mb-6 font-poppins font-medium text-[48px] leading-[1.23]">
-        <span className="highlight relative z-10 font-poppins font-semibold text-[40px]">
+      <h3 className="mb-6 font-poppins font-medium text-[33px] sm:text-[48px] md:text-[48px] lg:text-[48px] xl:text-[48px] 2xl:text-[48px] leading-[1.23]">
+        <span className="highlight relative z-10 font-poppins font-semibold text-[33px] sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px]">
           {block.title}
         </span>
       </h3>
@@ -81,7 +81,7 @@ const CaseStudyDetailsBrief: React.FC<CaseStudyDetailsBriefProps> = ({
           </div>
 
           {/* RIGHT BLOCK */}
-          <div className="col-span-12 lg:col-span-6">
+          <div className="col-span-12 lg:col-span-6 pt-15 lg:pt-0">
             {renderBlock(rightBlock)}
           </div>
 

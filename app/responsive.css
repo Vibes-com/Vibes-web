@@ -28,6 +28,10 @@ background-image: none;
 .case-study-details-hero-wrapper{
     background-position: left!important;
 }
+.about-hero-wrapper{
+    height: 585px!important;
+     background-position: left!important;
+}
 }
 
 @media (min-width: 360px) and (max-width: 385px) {
