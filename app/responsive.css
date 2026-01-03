@@ -25,6 +25,9 @@ background-image: none;
 .jobdesc li{
     margin-left: 0px!important;
 }
+.case-study-details-hero-wrapper{
+    background-position: left!important;
+}
 }
 
 @media (min-width: 360px) and (max-width: 385px) {

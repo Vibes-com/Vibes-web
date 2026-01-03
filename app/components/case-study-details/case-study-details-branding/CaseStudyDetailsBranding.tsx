@@ -47,7 +47,7 @@ const CaseStudyDetailsBranding: React.FC<CaseStudyDetailsBrandingProps> = ({
               loop
               spaceBetween={8}
               slidesPerView={section.slidesPerView ?? 1}
-              autoplay={section.autoplay ? { delay: 2500 } : false}
+              autoplay={section.autoplay ? { delay: 1500 } : false}
               pagination={{
                 el: `.${section.paginationId}`,
                 clickable: true,
