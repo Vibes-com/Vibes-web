@@ -39,7 +39,7 @@ const nextConfig: NextConfig = {
         permanent: true,// 301 redirect
       },
       {
-        source: '/:slug(retas|medrev|usof|ligo-group|aads-creative|ligo-bags|mofiso|mads|tomorrows-india|interio-haven|maxim-alert|kaivee|central-vista|smip|aes-india|city-dental-centre|the-solluna|women-listed-bazaar|widex|dubai-innovation|my-offiz|envision|amrut|slow-bazaar|lumenis|ikaroa)',
+        source: '/:slug(buzaria|retas|medrev|usof|ligo-group|aads-creative|ligo-bags|mofiso|mads|tomorrows-india|interio-haven|maxim-alert|kaivee|central-vista|smip|aes-india|city-dental-centre|the-solluna|women-listed-bazaar|widex|dubai-innovation|my-offiz|envision|amrut|slow-bazaar|lumenis|ikaroa)',
         destination: '/case-studies/:slug',
         permanent: true,
       },
