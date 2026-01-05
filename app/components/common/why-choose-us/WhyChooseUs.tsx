@@ -5,6 +5,7 @@ import Slider from "react-slick";
 import Image from "next/image";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useEffect, useState } from "react";
 
 /* ---------------- TYPES ---------------- */
 
@@ -36,30 +37,34 @@ const WhyChooseUs: React.FC<WhyChooseUsProps> = ({
   backgroundImage,
   quoteImage = "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/quote-img.png",
 }) => {
-  const settings = {
-    vertical: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    arrows: false,
-    dots: true,
-    centerMode: true,
-    centerPadding: "0px",
-    infinite: true,
-    swipe: false,
-    draggable: false,
-    responsive: [
-      {
-        breakpoint: 676,
-        settings: {
-          vertical: false,
-          slidesToShow: 1,
-          swipe: true,
-          draggable: true,
-          centerMode: true,
-        },
-      },
-    ],
-  };
+  const [isMobile, setIsMobile] = useState(false);
+
+useEffect(() => {
+  const handleResize = () => setIsMobile(window.innerWidth < 676);
+  handleResize();
+  window.addEventListener("resize", handleResize);
+  return () => window.removeEventListener("resize", handleResize);
+}, []);
+ const settings = {
+  dots: true,
+  infinite: true,
+
+  vertical: !isMobile,
+  verticalSwiping: !isMobile,
+
+  slidesToShow: isMobile ? 1 : 3,
+  slidesToScroll: 1,
+
+  centerMode: true,
+  centerPadding: "0px",
+
+  swipeToSlide: true,
+  swipe: isMobile,
+  draggable: isMobile,
+
+  arrows: false,
+  speed: 600,
+};
 
   return (
 
@@ -87,7 +92,7 @@ const WhyChooseUs: React.FC<WhyChooseUsProps> = ({
         </div>
 
         {/* HEADING */}
-        <h3 className="text-center font-poppins font-medium text-[40px] leading-[1.23]">
+        <h3 className="text-center font-poppins font-medium text-[28px]  sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] leading-[1.23]">
           {heading}{" "}<br />
           <span className="highlight relative w-fit z-9  font-poppins font-semibold">
             {highlightText}
@@ -113,7 +118,7 @@ const WhyChooseUs: React.FC<WhyChooseUsProps> = ({
           </div>
 
           {/* RIGHT SLIDER */}
-          <div className="lg:col-span-7">
+          <div className="lg:col-span-7 z-99">
             <Slider {...settings} className="customer-slider">
               {slides.map((item, index) => (
                 <div key={index} className="customer-slide">

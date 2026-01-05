@@ -137,7 +137,7 @@ spaceBetween={60}
 modules={[Navigation, Pagination]}
 pagination={{ clickable: true }}
 onSwiper={(swiper) => (swiperRef.current = swiper)}
-className="h-[520px] md:h-[760px] mt-6 md:mt-16"
+className="h-[485px] md:h-[760px] mt-6 md:mt-16"
 breakpoints={{
 0: {
 direction: "horizontal",

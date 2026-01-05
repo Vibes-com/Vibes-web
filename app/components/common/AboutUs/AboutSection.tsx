@@ -60,10 +60,10 @@ const AboutSection = ({
             </div>
 
             {/* Heading */}
-            <h3 className="font-poppins font-medium text-[40px] leading-[1.23]">
+            <h3 className="font-poppins font-medium text-[27px]  sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] leading-[1.23]">
               {heading}{" "}<br />
               {highlightText && (
-                <span className=" relative highlight w-fit z-9 font-semibold text-[40px]">
+                <span className=" relative highlight w-fit z-9 font-semibold text-[27px]  sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px]">
                   {highlightText}
                 </span>
               )}

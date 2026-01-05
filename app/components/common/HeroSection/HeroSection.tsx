@@ -19,7 +19,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   title,
   description,
   bgImage,
-  height = "h-[90vh]",
+  height = "h-[65vh] lg:h-[90vh]",
   overlay = true,
   showCTA = false,
   ctaText = "Get Started",
@@ -27,7 +27,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 }) => {
   return (
     <section
-      className={`relative flex items-center ${height} bg-cover bg-center bg-no-repeat bg-right`}
+      className={`relative flex items-center ${height} bg-cover bg-left lg:bg-right bg-no-repeat`}
       style={{
         backgroundImage: `url(${bgImage})`,
       }}
@@ -41,11 +41,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         <div className="grid grid-cols-12 items-center">
           {/* LEFT */}
           <div className="col-span-12 md:col-span-5">
-            <h1 className="font-poppins font-normal text-[60px] leading-[116%] text-white">
+            <h1 className="font-poppins font-normal hero-heading pt-15 text-[32px] sm:text-[60px] md:text-[60px] lg:text-[60px] xl:text-[60px] 2xl:text-[60px] leading-[116%] text-white">
               {title}
             </h1>
 
-            <p className="mt-10 w-[90%] font-poppins font-semibold text-[16px] leading-[128%] text-white">
+            <p className="mt-10 w-[90%] font-poppins font-semibold text-[14px] sm:text-[16px] md:text-[16px] lg:text-[16px] xl:text-[16px] 2xl:text-[16px] leading-[128%] text-white">
               {description}
             </p>
 

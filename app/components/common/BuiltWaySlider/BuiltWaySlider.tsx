@@ -50,7 +50,7 @@ export default function BuiltWaySlider({
         </div>
 
         {/* HEADING */}
-        <h3 className="text-center font-poppins font-medium text-[40px] leading-[1.23]">
+        <h3 className="text-center font-poppins font-medium text-[28px] sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] leading-[1.23]">
           {heading}
         </h3>
 
@@ -64,11 +64,11 @@ export default function BuiltWaySlider({
         {/* SLIDER */}
         <Swiper
           modules={[Autoplay]}
-          autoplay={{
-            delay: 0,
-            disableOnInteraction: false,
-            pauseOnMouseEnter: true,
-          }}
+          // autoplay={{
+          //   delay: 0,
+          //   disableOnInteraction: false,
+          //   pauseOnMouseEnter: true,
+          // }}
           onSwiper={(swiper) => (swiperRef.current = swiper)}
           onSlideChange={(swiper) =>
             setActiveIndex(swiper.realIndex % slides.length)
@@ -88,7 +88,7 @@ export default function BuiltWaySlider({
             <SwiperSlide key={`${item.id}-${index}`} className="!h-auto">
               <div
                 className="
-                  group relative h-[260px] mt-20 mb-10 rounded-2xl p-8
+                  group relative h-[260px] mt-20 mb-10 rounded-2xl p-4 lg:p-8
                   transition-all duration-300
                   flex flex-col justify-center cursor-pointer
                   bg-white text-[#2B2B2B]
@@ -106,11 +106,11 @@ export default function BuiltWaySlider({
                   />
                 </div>
 
-                <h3 className="font-poppins font-semibold text-[24px] mb-3">
+                <h3 className="font-poppins font-semibold text-[20px] lg:text-[24px] mb-3">
                   {item.title}
                 </h3>
 
-                <p className="font-poppins font-medium text-[18px] leading-[1.45]">
+                <p className="font-poppins font-medium text-[16px] lg:text-[18px] leading-[1.45]">
                   {item.desc}
                 </p>
               </div>

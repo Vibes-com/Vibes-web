@@ -90,6 +90,13 @@ height: 250px;
     height: 65vh!important;
     background-position: left; 
 }
+.branding-details-hero-wrapper {
+    height: 65vh!important;
+    background-position: left; 
+}
+.branding-customer-wrapper .customer-circle:after {
+   display: none;
+}
 }
 
 @media (min-width: 360px) and (max-width: 385px) {
@@ -110,18 +117,41 @@ height: 250px;
         font-size: 28px!important;
     }
     .technology-details-hero-wrapper{
-    height: 80vh!important;
+    height: 90vh!important;
     background-position: left;
 }
 .digital-details-hero-wrapper{
-    height: 80vh!important;
+    height: 90vh!important;
     background-position: left; 
 }
+.branding-details-hero-wrapper {
+    height: 90vh!important;
+    background-position: left; 
+}
+    .about-hero-wrapper, .blog-listing-hero-wrapper {
+        background-position: 0 !important;
+        height: 90vh !important;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 359px) {
  .hero-video{
        height:50vh;
     }
-   
+       .technology-details-hero-wrapper{
+    height: 100vh!important;
+    background-position: left;
+}
+.digital-details-hero-wrapper{
+    height: 100vh!important;
+    background-position: left; 
+}
+.branding-details-hero-wrapper {
+    height: 100vh!important;
+    background-position: left; 
+}
+ .about-hero-wrapper, .blog-listing-hero-wrapper {
+        background-position: 0 !important;
+        height: 100vh !important;
+    }
 }

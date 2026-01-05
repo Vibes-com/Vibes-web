@@ -41,7 +41,7 @@ const TechnologyStackSection: React.FC<TechnologyStackProps> = ({
         </div>
 
         {/* HEADING */}
-        <h3 className="text-center font-poppins font-medium text-[48px] leading-[123%] text-white">
+        <h3 className="text-center font-poppins font-medium text-[28px] sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] leading-[123%] text-white">
           {heading}
         </h3>
 
@@ -64,7 +64,7 @@ const TechnologyStackSection: React.FC<TechnologyStackProps> = ({
 
         {/* MARQUEE BOTTOM */}
         {bottomLogos.length > 0 && (
-          <div className="overflow-hidden mx-20">
+          <div className="overflow-hidden mx-5 lg:mx-20">
             <div
               className="flex gap-6 w-max animate-marquee-right"
               style={{ animationDuration: `${marqueeSpeed}s` }}

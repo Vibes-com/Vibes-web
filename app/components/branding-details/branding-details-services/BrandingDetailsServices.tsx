@@ -114,7 +114,7 @@ const BrandingDetailsServices: React.FC = () => {
                             </div>
                         </div>
 
-                        <h3 className=" font-poppins font-medium text-[40px]">End-to-End<br />
+                        <h3 className=" font-poppins font-medium text-[28px]  sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px]">End-to-End<br />
                             <span className=" relative w-fit highlight z-9 font-semibold">Branding Solutions</span>
                         </h3>
 
