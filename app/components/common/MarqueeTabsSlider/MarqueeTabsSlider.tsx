@@ -65,7 +65,7 @@ const MarqueeTabsSlider = ({
         </div>
 
         {/* TITLE */}
-        <h3 className="text-center font-poppins font-medium text-[48px] leading-[123%] text-white">
+        <h3 className="text-center font-poppins font-medium text-[28px]  sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] leading-[123%] text-white">
           {highlightTitle && (
             <span className="highlight relative z-9">{highlightTitle} </span>
           )}
@@ -104,7 +104,7 @@ const MarqueeTabsSlider = ({
             spaceBetween={20}
             className="py-6"
             breakpoints={{
-              320: { slidesPerView: 2 },
+              320: { slidesPerView: 1 },
               640: { slidesPerView: 3 },
               1024: { slidesPerView: 4 },
             }}
@@ -112,7 +112,7 @@ const MarqueeTabsSlider = ({
             {tabs.map((tab) => (
               <SwiperSlide key={tab}>
                 <div
-                  className="font-poppins font-medium text-[16px]
+                  className=" mx-15 lg:mx-0 font-poppins font-medium text-[16px]
                   px-2 py-2 rounded-sm text-center capitalize
                   bg-[#D9D9D908] text-[#FFFFFFA8] cursor-pointer"
                 >
@@ -147,7 +147,7 @@ export default MarqueeTabsSlider;
 const NextArrow = ({ onClick }: { onClick: () => void }) => (
   <button
     onClick={onClick}
-    className="absolute right-[-60px] top-1/2 -translate-y-1/2 z-20
+    className="absolute right-[0px] lg:right-[-60px] top-1/2 -translate-y-1/2 z-20
     p-2 border border-white/40 rounded-md bg-[#FFFFFFB0]"
   >
     <ArrowRight size={26} color="#FFFFFF" />
@@ -157,7 +157,7 @@ const NextArrow = ({ onClick }: { onClick: () => void }) => (
 const PrevArrow = ({ onClick }: { onClick: () => void }) => (
   <button
     onClick={onClick}
-    className="absolute left-[-60px] top-1/2 -translate-y-1/2 z-20
+    className="absolute left-[0px] lg:left-[-60px] top-1/2 -translate-y-1/2 z-20
     p-2 border border-white/40 rounded-md bg-[#FFFFFFB0]"
   >
     <ArrowLeft size={26} color="#FFFFFF" />

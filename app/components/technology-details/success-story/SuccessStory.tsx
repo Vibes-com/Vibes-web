@@ -25,9 +25,9 @@ export default function SuccessStory({
   btnlink
 }: SuccessStoryProps) {
   return (
-    <section className={`w-full pt-15 pb-20 bg-success-story ${className}`}>
-      <div className="curve-box max-w-7xl mx-auto px-6 relative">
-        <div className="h-full flex flex-col lg:flex-row items-center justify-between gap-8 px-10">
+    <section className={`w-full pt-10 lg:pt-15  pb-10 lg:pb-20 bg-success-story ${className}`}>
+      <div className="curve-box max-w-7xl mx-auto px-2 lg:px-6 relative">
+        <div className="h-full flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-8 px-2 lg:px-10">
 
           {/* Arrow Image */}
           <Image
@@ -40,10 +40,10 @@ export default function SuccessStory({
 
           {/* Text */}
           <div className="text-center lg:text-left">
-            <h3 className="text-[#F4BE00] font-poppins font-semibold text-[35px] leading-[100%]">
+            <h3 className="text-[#F4BE00] font-poppins font-semibold text-[20px] lg:text-[35px] leading-[100%]">
               {title}
             </h3>
-            <p className="text-[#EEEEEE] mt-3 font-poppins font-medium text-[20px] max-w-xl leading-[100%]">
+            <p className="text-[#EEEEEE] mt-3 font-poppins font-medium text-[15px] lg:text-[20px] max-w-xl leading-[100%]">
               {subtitle}
             </p>
           </div>
@@ -53,7 +53,7 @@ export default function SuccessStory({
             <Link href={btnlink}>
             <Button2
               onClick={onButtonClick}
-              className="mt-5 p-[20px] bg-[#fff] cursor-pointer"
+              className=" mt-0 h-3 md:h-9 lg:h-9 xl:h-9 2xl:h-9 lg:mt-5 p-[10px] lg:p-[20px] bg-[#fff] cursor-pointer"
             >
               <span className="text-[#000] cursor-pointer">{buttonText}</span>
               <ArrowUpIcon className="transform rotate-45 text-[#000]" />

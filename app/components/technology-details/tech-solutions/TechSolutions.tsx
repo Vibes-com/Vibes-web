@@ -95,8 +95,8 @@ const TechSolutions = () => {
                         </span>
                     </div>
                 </div>
-                <h3 className=" text-center font-poppins font-medium text-[40px] leading-[1.23] tracking-norma]">
-                    Vibes’ Smart <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[40px] leading-[1.23] tracking-normal">Tech Solutions</span>
+                <h3 className=" text-center font-poppins font-medium text-[28px]  sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] leading-[1.23] tracking-norma]">
+                    Vibes’ Smart <br/><span className="highlight relative z-9 w-fit font-poppins font-semibold text-[28px]  sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] leading-[1.23] tracking-normal">Tech Solutions</span>
 
                 </h3>
                 <p className="text-[#707070] font-normal text-[16px] leading-[130%] tracking-[0] text-center max-w-2xl mx-auto mb-16 mt-5">
