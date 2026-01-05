@@ -84,7 +84,7 @@ export default function OurBlogs({ tData }: BlogsProps) {
                             </div>
                         </div>
                         <h3 className="font-poppins font-medium text-[28px]  sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] leading-[1.23] tracking-norma]">
-                            {tData?.title} <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[28px]  sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] leading-[1.23] tracking-normal">{tData?.highlighttitle}</span>
+                            {tData?.title} <br/><span className="highlight relative z-9 w-fit font-poppins font-semibold text-[28px]  sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] leading-[1.23] tracking-normal">{tData?.highlighttitle}</span>
                         </h3>
 
                         <p className="text-[#525252] mt-5 ">
