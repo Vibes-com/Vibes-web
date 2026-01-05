@@ -3,57 +3,56 @@ import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useEffect, useState } from "react";
 
 export default function VerticalSlickMilestones() {
-   const settings: import("react-slick").Settings = {
-  dots: true,
-  infinite: true,
-  vertical: true,
-  verticalSwiping: true,
-  slidesToShow: 3,
-  centerMode: true,
-  centerPadding: "0px",
-  swipeToSlide: true,
-  arrows: false,
+    const [isMobile, setIsMobile] = useState(false);
+
+  // 1. Detect screen size dynamically
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 676);
+    handleResize(); // Run on mount
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const settings: import("react-slick").Settings = {
+    dots: true,
+    infinite: true,
+    // 2. Toggle vertical settings based on state
+    vertical: !isMobile,
+    verticalSwiping: !isMobile,
+    slidesToShow: isMobile ? 1 : 3,
+    centerMode: true,
+    centerPadding: "0px",
+    swipeToSlide: true,
+    arrows: false,
     autoplay: true,
-  speed: 600,
+    speed: 600,
 
-  appendDots: (dots: React.ReactNode) => (
-    <div
-      style={{
-        right: "-30px",
-        top: "60%",
-        transform: "translateY(-50%)",
-      }}
-      className="absolute"
-    >
-      <ul>{dots}</ul>
-    </div>
-  ),
+    // 3. Conditional dot positioning
+    appendDots: (dots: React.ReactNode) => (
+      <div
+        style={isMobile ? {
+          bottom: "-30px",
+          left: "50%",
+          transform: "translateX(-50%)",
+        } : {
+          right: "-30px",
+          top: "60%",
+          transform: "translateY(-50%)",
+        }}
+        className="absolute"
+      >
+        <ul>{dots}</ul>
+      </div>
+    ),
 
-  customPaging: () => (
-    <div className="w-[15px] h-[15px] rounded-full bg-gray-400"></div>
-  ),
+    customPaging: () => (
+      <div className="w-[15px] h-[15px] rounded-full bg-gray-400"></div>
+    ),
+  };
 
-  // ✅ Mobile behavior
-  responsive: [
-    {
-      breakpoint:67, // mobile & tablet
-      settings: {
-        vertical: false,
-        verticalSwiping: false,
-        slidesToShow: 1,
-        centerMode: false,
-        swipeToSlide: true,
-        appendDots: (dots: React.ReactNode) => (
-          <div className="mt-4">
-            <ul className="flex justify-center gap-2">{dots}</ul>
-          </div>
-        ),
-      },
-    },
-  ],
-};
     const slides = [
         {
             title: "From Ideas to Action",
