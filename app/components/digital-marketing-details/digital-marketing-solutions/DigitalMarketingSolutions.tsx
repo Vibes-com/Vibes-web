@@ -82,7 +82,7 @@ const DigitalMarketingSolutions = () => {
                         ))}
                     </div>
 
-                    <div className="relative w-full h-[582px] overflow-hidden shadow-xl ">
+                    <div className="relative w-full h-[582px] hidden md:block overflow-hidden shadow-xl ">
                         <Image
                             src="/assests/img/digital-m-details/digital-middle-img.png"
                             alt="Technology Showcase"
