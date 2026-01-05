@@ -16,6 +16,7 @@ import z from "zod";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useApplyToJobMutation } from "@/app/redux/api/careerApi";
+import toast from "react-hot-toast";
 
 
 export const jobApplySchema = z.object({
@@ -83,10 +84,10 @@ export default function JobApplyForm({ jobTitle }: { jobTitle: string }) {
 
         const res = await applyToJob(formData).unwrap()
         if (res.status === 1) {
-            alert("Application submitted successfully!");
+            toast.success(res.msg);
             form.reset();
         } else {
-            alert("Failed to submit application. Please try again.");
+            toast.error(res.msg);
         }
     };
 
