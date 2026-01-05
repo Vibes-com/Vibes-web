@@ -73,10 +73,9 @@ export default function OurBlogs({ tData }: BlogsProps) {
             }}
         >
             <div className="container mx-auto max-w-screen-xl px-4 md:px-8 relative z-10">
-                <div className="flex justify-between items-center mb-12">
+                <div className="flex flex-col  sm:flex-row justify-between items-start sm:items-center mb-12">
                     <div className="flex-1">
                         <div className="flex justify-start mb-5">
-
                             <div className="px-6 py-2 rounded-full border border-[#F4BE00] inline-flex items-center gap-2">
                                 <span className="w-2 h-2 rounded-full bg-[#F4BE00]"></span>
                                 <span className="font-[Poppins] font-semibold text-[10px] leading-[1.23] uppercase text-[#F4BE00]">
@@ -106,16 +105,22 @@ export default function OurBlogs({ tData }: BlogsProps) {
                 {/* Swiper */}
                 <Swiper
                     modules={[Pagination, Autoplay]}
-                    spaceBetween={30}
-                    slidesPerView={2}
+                    spaceBetween={24}
+                    slidesPerView={1}
                     loop={true}
                     pagination={{ clickable: true }}
                     autoplay={{
                         delay: 0,
                         disableOnInteraction: false,
+                    }}  
+                    breakpoints={{
+                        768: {
+                            slidesPerView: 2,
+                            spaceBetween: 24,
+                        }
                     }}
                     speed={2500}
-                    className="pb-10"
+                    className="pb-10 flex"
                 >
                     {blogs.map((item) => (
                         <SwiperSlide key={item.blog_id}>

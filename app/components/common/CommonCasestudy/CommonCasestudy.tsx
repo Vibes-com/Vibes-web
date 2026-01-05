@@ -40,7 +40,7 @@ const CommonCasestudy = ({ badgeText, title, highlightTitle, description, button
         <div className="grid grid-cols-12 relative">
 
           {/* LEFT CONTENT */}
-          <div className="col-span-12 lg:col-span-6 sticky top-0 h-screen flex ">
+          <div className="col-span-12 md:col-span-6 md:sticky top-0 h-screen flex ">
             <div className="flex-1">
 
               {/* BADGE */}
@@ -78,7 +78,7 @@ const CommonCasestudy = ({ badgeText, title, highlightTitle, description, button
           </div>
 
           {/* RIGHT CONTENT */}
-          <div className="col-span-12 lg:col-span-6 sticky top-0 h-screen overflow-y-auto no-scrollbar">
+          <div className="col-span-12 md:col-span-6 sticky top-0 h-screen overflow-y-auto no-scrollbar">
             {/* ✅ CaseStudiesCard handles mapping internally */}
             <CaseStudiesCard />
           </div>
