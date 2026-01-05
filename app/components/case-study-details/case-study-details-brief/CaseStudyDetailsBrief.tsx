@@ -24,14 +24,14 @@ const CaseStudyDetailsBrief: React.FC<CaseStudyDetailsBriefProps> = ({
   const renderBlock = (block: BriefBlock) => (
     <>
       {/* HEADER */}
-      <div className="mb-5">
+      {/* <div className="mb-5">
         <div className="px-6 py-2 rounded-full border border-[#F4BE00] inline-flex items-center gap-2">
           <span className="w-2 h-2 rounded-full bg-[#F4BE00]" />
           <span className="font-poppins font-semibold text-[10px] uppercase text-[#F4BE00]">
             {block.badgeText}
           </span>
         </div>
-      </div>
+      </div> */}
 
       <h3 className="mb-6 font-poppins font-medium text-[33px] sm:text-[48px] md:text-[48px] lg:text-[48px] xl:text-[48px] 2xl:text-[48px] leading-[1.23]">
         <span className="highlight relative z-10 font-poppins font-semibold text-[33px] sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px]">
