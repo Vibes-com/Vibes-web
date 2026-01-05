@@ -16,7 +16,6 @@ import {
 export default function BlogListing() {
   const { data, error, isLoading } = useGetAllBlogsQuery();
   const [selectedFilter, setSelectedFilter] = useState("All");
-
   if (isLoading) return <p>Loading...</p>;
   if (error) return <p>Error loading blogs</p>;
 
