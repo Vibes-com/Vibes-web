@@ -51,7 +51,7 @@ export default function BlogListing() {
                   <img
                     src={LatestBlog.blog_thumb_image}
                     alt={LatestBlog.blog_title}
-                    className="w-full h-80 object-cover rounded-t-2xl"
+                    className="w-full h-auto  md:h-70 lg:h-70 xl:h-70 2xl:h-70 object-fill md:object-cover lg:object-cover xl:object-cover rounded-t-2xl"
                   />
 
                   <div className="p-6">
@@ -81,7 +81,7 @@ export default function BlogListing() {
                             className="w-full border-1 border-[#F4BE00] rounded-md"
                           />
                         </figure>
-                        <h3 className="text-l flex-1  mb-2 text-[#1F1F1F] font-poppins font-semibold flex items-center">
+                        <h3 className="text-[12px] sm:text-[12px] md:text-[16px] lg:text-[16px] xl:text-[16px] 2xl:text-[16px] flex-1  mb-2 text-[#1F1F1F] font-poppins font-semibold flex items-center">
                           {blog.blog_title}
                         </h3>
                       </div>

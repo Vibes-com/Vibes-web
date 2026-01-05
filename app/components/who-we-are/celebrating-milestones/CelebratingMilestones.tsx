@@ -1,39 +1,59 @@
 "use client";
 import Image from "next/image";
 import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function VerticalSlickMilestones() {
-    const settings: import("react-slick").Settings = {
-        dots: true,
-        infinite: true,
-        vertical: true,
-        verticalSwiping: true,
-        slidesToShow: 3,
-        centerMode: true,
-        centerPadding: "0px",
+   const settings: import("react-slick").Settings = {
+  dots: true,
+  infinite: true,
+  vertical: true,
+  verticalSwiping: true,
+  slidesToShow: 3,
+  centerMode: true,
+  centerPadding: "0px",
+  swipeToSlide: true,
+  arrows: false,
+    autoplay: true,
+  speed: 600,
+
+  appendDots: (dots: React.ReactNode) => (
+    <div
+      style={{
+        right: "-30px",
+        top: "60%",
+        transform: "translateY(-50%)",
+      }}
+      className="absolute"
+    >
+      <ul>{dots}</ul>
+    </div>
+  ),
+
+  customPaging: () => (
+    <div className="w-[15px] h-[15px] rounded-full bg-gray-400"></div>
+  ),
+
+  // ✅ Mobile behavior
+  responsive: [
+    {
+      breakpoint:67, // mobile & tablet
+      settings: {
+        vertical: false,
+        verticalSwiping: false,
+        slidesToShow: 1,
+        centerMode: false,
         swipeToSlide: true,
-        arrows: false,
-        autoplay: false,
-        speed: 600,
-
         appendDots: (dots: React.ReactNode) => (
-            <div
-                style={{
-                    right: "-30px",
-                    top: "60%",
-                    transform: "translateY(-50%)",
-                }}
-                className="absolute"
-            >
-                <ul>{dots}</ul>
-            </div>
+          <div className="mt-4">
+            <ul className="flex justify-center gap-2">{dots}</ul>
+          </div>
         ),
-
-        customPaging: () => (
-            <div className="w-[15px] h-[15px] rounded-full"></div>
-        ),
-    };
-
+      },
+    },
+  ],
+};
     const slides = [
         {
             title: "From Ideas to Action",
@@ -58,12 +78,12 @@ export default function VerticalSlickMilestones() {
     ];
 
     return (
-        <div className="celebrating-milestones-wrapper section-gap">
+        <div className="celebrating-milestones-wrapper section-gap ">
             <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
                 <div className="grid grid-cols-12 items-center">
-                    <div className="col-span-6">
+                    <div className=" col-span-12 lg:col-span-6">
                         <div>
-                            <div className="flex justify-start mb-5">
+                            <div className="flex justify-center lg:justify-start mb-5">
 
                                 <div className="px-6 py-2 rounded-full border border-[#F4BE00] inline-flex items-center gap-2">
                                     <span className="w-2 h-2 rounded-full bg-[#F4BE00]"></span>
@@ -72,22 +92,22 @@ export default function VerticalSlickMilestones() {
                                     </span>
                                 </div>
                             </div>
-                            <h2 className="font-poppins font-semibold text-[55px] leading-[123%] tracking-[0] text-[#FFFFFF]">
+                            <h2 className="font-poppins font-semibold text-[28px]  sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] leading-[123%] tracking-[0] text-[#FFFFFF]">
                                 Celebrating
                             </h2>
-                            <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[55px] leading-[123%] tracking-[0] text-[#FFFFFF]">Milestones</span>
+                            <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[28px]  sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] leading-[123%] tracking-[0] text-[#FFFFFF]">Milestones</span>
 
                             <p className="font-poppins font-normal text-[16px] leading-[130%] tracking-[0] text-[#FFFFFFDB] mt-5">
                                 How Vibes Has Transformed Visions into Reality
                             </p>
                         </div>
                     </div>
-                    <div className="col-span-6">
-                        <div className="relative overflow-hidden ml-auto pr-16">
+                    <div className="col-span-12 lg:col-span-6">
+                        <div className="relative overflow-hidden ml-auto pr-0 lg:pr-16">
                             <Slider {...settings}>
 
                                 {slides.map((item, i) => (
-                                    <div key={i} className="py-3">
+                                    <div key={i} className=" py-6 lg:py-3">
                                         <div
                                             className="relative bg-white p-4 rounded-xl shadow-md flex items-center gap-6 h-[170px] transition-all duration-500 milestone-card border-l-[8px] border-l-[#F4BE00]"
                                         >

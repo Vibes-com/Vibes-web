@@ -8,7 +8,7 @@ const MissionVision: React.FC = () => {
         <div className="mission-vision-wrapper section-gap bg-[#F7F2E7]">
             <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
 
-                <div className="grid grid-cols-12 gap-10 items-center">
+                <div className="grid grid-cols-12 gap-0 lg:gap-10 items-center">
 
                     <div className="col-span-12 md:col-span-6 relative ">
                         <div className="rounded-xl overflow-hidden p-1">
@@ -17,11 +17,11 @@ const MissionVision: React.FC = () => {
                                 alt="team main" priority unoptimized
                                 width={390}
                                 height={510}
-                                className="rounded-xl shadow-xl border-[5px] border-white w-[60%] "
+                                className="rounded-xl shadow-xl border-[5px] border-white w-[70%] "
                             />
                         </div>
 
-                        <div className="absolute bottom-[-35px] right-[20px] md:right-[90px] rounded-xl overflow-hidden shadow-xl">
+                        <div className="absolute bottom-[-35px] right-[25px] md:right-[90px] rounded-xl overflow-hidden shadow-xl">
                             <Image
                                 src="/assests/img/about/together-img-2.jpg"
                                 alt="team small" priority unoptimized
@@ -43,8 +43,8 @@ const MissionVision: React.FC = () => {
                             </div>
                         </div>
 
-                        <h3 className=" font-poppins font-medium text-[40px] leading-[1.23] tracking-norma]">
-                            <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[40px] leading-[1.23] tracking-normal">Stronger Growth,</span> Shared Future
+                        <h3 className=" font-poppins font-medium text-[28px]  sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] leading-[1.23] tracking-norma]">
+                            <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[28px]  sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] leading-[1.23] tracking-normal">Stronger Growth,</span><br/> Shared Future
 
                         </h3>
 

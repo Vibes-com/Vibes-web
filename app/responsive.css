@@ -1,3 +1,9 @@
+ @media (min-width: 768px) {
+  .timeline-journey-wrapper .swiper-pagination {
+    display: none !important;
+  }
+}
+ 
  @media (max-width: 676px){
 
 .section-gap{
@@ -29,8 +35,38 @@ background-image: none;
     background-position: left!important;
 }
 .about-hero-wrapper{
-    height: 585px!important;
+    height: 65vh!important;
      background-position: left!important;
+}
+.blog-listing-hero-wrapper{
+ height: 65vh!important;
+ background-position: left!important;
+}
+.blg-overview{
+    font-size: 28px!important;
+}
+.blog-content h2,
+.blog-content h3,
+.blog-content h4,
+.blog-content h5,
+.blog-content h6 {
+  font-size: 18px;
+}
+.blog-content h1 {
+font-size: 22px;
+}
+.mission-vision-wrapper .together-small-img {
+    height: 170px;
+    width: 170px;
+}
+.timeline-journey-wrapper{
+    text-align: center!important;
+}
+.celebrating-milestones-wrapper{
+text-align: center!important;
+}
+.celebrating-milestones-wrapper .milestone-card {
+    transform: scale(0.9) translateX(0px);
 }
 }
 
