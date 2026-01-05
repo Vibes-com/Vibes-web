@@ -64,7 +64,7 @@ const DigitalMarketingSolutions = () => {
                     </div>
                 </div>
 
-                <h3 className="text-center font-poppins font-medium text-[40px]">Digital <span className=" relative w-fit highlight z-9 font-semibold">Marketing Solutions</span>
+                <h3 className="text-center font-poppins font-medium text-[28px]  sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px]">Digital Marketing <span className=" relative w-fit highlight z-9 font-semibold">Solutions</span>
                 </h3>
 
                 <p className="text-[#707070] text-center max-w-2xl mx-auto mb-16 mt-5">

@@ -55,7 +55,7 @@ const { data, isLoading, isError } = useGetAllCaseStudiesQuery();
           </div>
 
           {/* Title */}
-          <h3 className="mt-5 text-[#1F1F1F] font-poppins font-semibold text-[28px]">
+          <h3 className="mt-5 text-[#1F1F1F] font-poppins font-semibol0d text-[20px] lg:text-[28px]">
             {item.title}
           </h3>
 

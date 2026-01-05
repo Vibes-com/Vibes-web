@@ -111,14 +111,14 @@ export default function VerticalSlickMilestones() {
                                             className="relative bg-white p-4 rounded-xl shadow-md flex items-center gap-6 h-[170px] transition-all duration-500 milestone-card border-l-[8px] border-l-[#F4BE00]"
                                         >
                                             {/* Image */}
-                                            <img src={item.img} className="w-25 h-25 object-contain" />
+                                            <img src={item.img} className=" w-20 h-20 lg:w-25 lg:h-25 object-contain" />
 
                                             {/* Text */}
                                             <div>
-                                                <h3 className="text-[#2b3332] font-semibold text-[18px] leading-[123%]">
+                                                <h3 className="text-[#2b3332] font-semibold text-left text-[14] lg:text-[18px] leading-[123%]">
                                                     {item.title}
                                                 </h3>
-                                                <p className="text-[#707070] font-normal text-[14px] leading-[130%] tracking-[0] mt-1">{item.desc}</p>
+                                                <p className="text-[#707070] text-left font-normal text-[14px] leading-[130%] tracking-[0] mt-1">{item.desc}</p>
                                             </div>
                                             <div className="quote-container absolute top-6 right-6">
                                                 <Image
