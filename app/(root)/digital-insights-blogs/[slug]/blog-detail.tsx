@@ -18,9 +18,9 @@ export default function BlogClient({ slug }: Props) {
   return (
     <section className="w-full">
       <div className="relative">
-        <img src={blog?.banner_img} alt={blog?.blog_title} className="w-full" />
+        <img src={blog?.banner_img} alt={blog?.blog_title} className="w-full pt-[85px] sm:pt-0 md:pt-0 lg:pt-0 xl:pt-0 2xl:pt-0" />
 
-        <h1 className="text-5xl w-[80%] font-medium uppercase mb-6 absolute 
+        <h1 className=" pt-25 lg:pt-0 text-[14px] md:text-3xl lg:text-5xl w-[80%] lg:w-[70%] font-medium uppercase mb-6 absolute 
         top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 
         p-4 text-center text-white z-10">
           {blog?.blog_title}
@@ -30,7 +30,7 @@ export default function BlogClient({ slug }: Props) {
       <div className="blog-content-wrapper section-gap"> 
         <div className="container mx-auto max-w-screen-xl px-4 md:px-8 blog-content">
         <BlogShareButtons />
-        <h2 className=" flex justify-center font-poppins !font-bold !text-[50px] leading-[116%] tracking-normal pb-10 capitalize items-center gap-1 "> <span className="!text-[#1F1F1F] !text-[50px]">–</span> OVERVIEW <span className="!text-[#1F1F1F] !text-[50px]">–</span> </h2>
+        <h2 className=" flex justify-center font-poppins !font-bold !text-[25px] lg:!text-[50px] leading-[116%] tracking-normal pb-10 capitalize items-center gap-1 "> <span className="!text-[#1F1F1F] !text-[50px]">–</span> OVERVIEW <span className="!text-[#1F1F1F] !text-[50px]">–</span> </h2>
         <div
           className="prose max-w-none"
           dangerouslySetInnerHTML={{

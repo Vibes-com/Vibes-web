@@ -42,10 +42,10 @@ const CoreValues = () => {
                             </div>
                         </div>
 
-                        <h2 className="font-poppins font-semibold text-[55px] leading-[123%] tracking-[0] text-[#FFFFFF]">
+                        <h2 className="font-poppins font-semibold text-[28px]  sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] leading-[123%] tracking-[0] text-[#FFFFFF]">
                             Our Core Values,
                         </h2>
-                        <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[55px] leading-[123%] tracking-[0] text-[#FFFFFF]">Our Driving Force</span>
+                        <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[28px]  sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] leading-[123%] tracking-[0] text-[#FFFFFF]">Our Driving Force</span>
 
                         <p className="font-poppins font-normal text-[16px] leading-[130%] tracking-[0] text-[#FFFFFFDB] mt-5">
                             Our core values power every step we take fueling innovation, shaping excellence, and driving us to create meaningful impact for today and a better tomorrow.

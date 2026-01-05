@@ -26,7 +26,6 @@ const { data, isLoading, isError } = useGetAllCaseStudiesQuery();
 
   if (isLoading) return <p className="text-center py-10">Loading...</p>;
   if (isError) return <p className="text-center py-10 text-red-500">Error</p>;
-
   const cards: SingleCaseStudyCard[] =
     data?.data?.map((item) => ({
       id: item.id,

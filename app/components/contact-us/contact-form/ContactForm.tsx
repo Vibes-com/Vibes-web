@@ -11,6 +11,7 @@ import { useSubmitContactFormMutation } from "@/app/redux/api/contactApi";
 import { z } from "zod";
 import toast from "react-hot-toast";
 import { useRouter } from "next/navigation";
+import { FetchBaseQueryError } from "@reduxjs/toolkit/query";
 
 const generateCaptcha = () => {
   const chars = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
@@ -83,11 +84,17 @@ const ContactForm = () => {
       return;
     }
 
-
     try {
       const res = await submitContact(formData).unwrap();
-      // toast.success(res.msg);
+
+      if (res.status === 0) {
+        toast.error(res.msg);
+        return; // ⛔ STOP HERE
+      }
+
+      toast.success(res.msg);
       router.push("/thankyou");
+
       refreshCaptcha();
       setFormData({
         firstname: "",
@@ -97,8 +104,22 @@ const ContactForm = () => {
         website: "",
         message: "",
       });
+
     } catch (error) {
-      toast.error("Something went wrong. Please try again.");
+      console.error("Submission error:", error);
+
+      let msg = "Something went wrong. Please try again.";
+
+      if (
+        typeof (error as any)?.data === "string"
+      ) {
+        // HTML response
+        msg = "Server error. Please contact support.";
+      } else if ((error as any)?.data?.msg) {
+        msg = (error as any).data.msg;
+      }
+
+      toast.error(msg);
     }
   };
 
