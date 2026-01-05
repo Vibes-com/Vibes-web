@@ -68,6 +68,23 @@ text-align: center!important;
 .celebrating-milestones-wrapper .milestone-card {
     transform: scale(0.9) translateX(0px);
 }
+.technology-details-hero-wrapper{
+    height: 65vh!important;
+    background-position: left;
+}
+.tech-casestudy .case-study-card-common{
+height: 270px;
+}
+.curve-box {
+
+     height: 300px;
+    background-size: 251% 64%;
+    background-position: center;
+}
+.curve-box .arrow-img{
+    height: 25px;
+    width: 25px;
+}
 }
 
 @media (min-width: 360px) and (max-width: 385px) {
@@ -87,6 +104,10 @@ text-align: center!important;
     .hero-heading{
         font-size: 28px!important;
     }
+    .technology-details-hero-wrapper{
+    height: 80vh!important;
+    background-position: left;
+}
 }
 
 @media (min-width: 320px) and (max-width: 359px) {

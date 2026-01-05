@@ -83,8 +83,8 @@ export default function OurBlogs({ tData }: BlogsProps) {
                                 </span>
                             </div>
                         </div>
-                        <h3 className="font-poppins font-medium text-[40px] leading-[1.23] tracking-norma]">
-                            {tData?.title} <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[40px] leading-[1.23] tracking-normal">{tData?.highlighttitle}</span>
+                        <h3 className="font-poppins font-medium text-[28px]  sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] leading-[1.23] tracking-norma]">
+                            {tData?.title} <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[28px]  sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] leading-[1.23] tracking-normal">{tData?.highlighttitle}</span>
                         </h3>
 
                         <p className="text-[#525252] mt-5 ">
@@ -109,10 +109,10 @@ export default function OurBlogs({ tData }: BlogsProps) {
                     slidesPerView={1}
                     loop={true}
                     pagination={{ clickable: true }}
-                    autoplay={{
-                        delay: 0,
-                        disableOnInteraction: false,
-                    }}  
+                    // autoplay={{
+                    //     delay: 0,
+                    //     disableOnInteraction: false,
+                    // }}  
                     breakpoints={{
                         768: {
                             slidesPerView: 2,
@@ -124,12 +124,12 @@ export default function OurBlogs({ tData }: BlogsProps) {
                 >
                     {blogs.map((item) => (
                         <SwiperSlide key={item.blog_id}>
-                            <div className="bg-[#ECF3EE] p-8 mb-8 border border-[#E5E5E5] hover:shadow-xl transition-all duration-300">
+                            <div className="bg-[#ECF3EE] cmn-case-card p-8 mb-8 border border-[#E5E5E5] hover:shadow-xl transition-all duration-300">
                                 <p className="font-poppins font-medium text-[12px] leading-[100%] tracking-[0px] text-[#636060] mb-4">{item.created_on}</p>
-                                <h4 className="font-poppins font-semibold text-[24px] leading-[130%] tracking-[0px] text-[#464646] mb-2">
+                                <h4 className="font-poppins font-semibold text-[18px] lg:text-[24px] leading-[130%] tracking-[0px] text-[#464646] mb-2">
                                     {item.blog_title}
                                 </h4>
-                                <p className="font-poppins font-normal text-[14px] leading-[130%] tracking-[0px] text-[#606060]">
+                                <p className="font-poppins font-normal text-[12px] lg:text-[14px] leading-[130%] tracking-[0px] text-[#606060]">
                                     {item.blog_small_description ||
                                         item.blog_description
                                         .replace(/<[^>]*>/g, "")
