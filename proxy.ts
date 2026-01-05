@@ -132,16 +132,19 @@ const CASE_STUDY_SLUGS = new Set([
 ]);
 
 export function proxy(request: NextRequest) {
-   const url = request.nextUrl;
+  const url = request.nextUrl;
   const hostname = request.headers.get("host") || "";
 
-  /* ✅ STEP A: WWW → NON-WWW REDIRECT */
-  if (hostname.startsWith("www.")) {
-    const nonWwwHost = hostname.replace(/^www\./, "");
-    url.hostname = nonWwwHost;
-
+  /* ✅ STEP A: APEX → WWW REDIRECT */
+  if (
+    hostname &&
+    !hostname.startsWith("www.") &&
+    hostname.includes(".")
+  ) {
+    url.hostname = `www.${hostname}`;
     return NextResponse.redirect(url, 301);
   }
+
 
   const pathname = url.pathname;
 
