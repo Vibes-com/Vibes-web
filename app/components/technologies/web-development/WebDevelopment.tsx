@@ -52,7 +52,7 @@ const WebDevelopment = () => {
         title={
           <>
             Web <br />
-            <span className="hero-highlight relative z-9 w-fit font-poppins font-semibold text-[65px] leading-[116%] tracking-normal capitalize text-[#F4BE00]">Development</span>
+            <span className="hero-highlight  relative z-9 w-fit font-poppins font-semibold text-[33px] sm:text-[65px] md:text-[65px] lg:text-[65px] xl:text-[65px] 2xl:text-[65px] leading-[116%] tracking-normal capitalize text-[#F4BE00]">Development</span>
           </>
         }
         description="Vibes delivers high-performing, scalable, secure digital solutions- built with precision, expertise, clear communication, and on-time delivery brands trust"
@@ -96,7 +96,7 @@ const WebDevelopment = () => {
         heading={
           <>
             Development{" "}
-            <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[40px] leading-[1.23] tracking-normal">Process</span>
+            <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[28px] sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] leading-[1.23] tracking-normal">Process</span>
           </>
         }
         description="From concept to launch, explore the clear process that bring websites to life with precision and purpose."
@@ -185,7 +185,7 @@ const WebDevelopment = () => {
         bgImage="/assests/img/web-development/wd-services-bg.jpg"
         heading={
           <>
-            <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[40px] leading-[1.23] tracking-normal">Choose Vibes.</span> Choose Certainty.
+            <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[28px] sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] leading-[1.23] tracking-normal">Choose Vibes.</span> Choose Certainty.
           </>
         }
         description="Vibes delivers high-performing, scalable, secure digital solutions built with precision and trust."
@@ -218,7 +218,7 @@ const WebDevelopment = () => {
         bgImage="/assests/img/technology-details/common-casestudy-bg.jpg"
         heading={
           <>
-            Built <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[40px] leading-[1.23] tracking-normal">Your Way</span>
+            Built <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[28px] sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] leading-[1.23] tracking-normal">Your Way</span>
           </>
         }
         description="Vibes offers flexible, modular solutions whether you need a full build or just a specific feature. Every block is delivered with precision, performance, and complete scalability."

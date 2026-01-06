@@ -44,7 +44,7 @@ export default function WhyChooseSection({
         </div>
 
         {/* Heading */}
-        <h3 className="text-center font-poppins font-medium text-[40px] leading-[1.23]">
+        <h3 className="text-center font-poppins font-medium text-[28px] sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] leading-[1.23]">
           {heading}
         </h3>
 

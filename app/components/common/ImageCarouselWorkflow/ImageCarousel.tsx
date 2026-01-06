@@ -39,8 +39,8 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
   autoplayDelay = 2500,
   slidesPerView = 2,
   breakpoints = {
-    0: { slidesPerView: 1.2 },
-    640: { slidesPerView: 2 },
+    0: { slidesPerView: 1},
+    640: { slidesPerView: 1 },
     1024: { slidesPerView: 2.5 },
   },
 }) => {
@@ -61,7 +61,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
           )}
 
           {heading.title && (
-            <h3 className="font-poppins font-medium text-[40px] leading-[1.23]">
+            <h3 className="font-poppins font-medium text-[28px] sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] leading-[1.23]">
               {heading.title}
             </h3>
           )}

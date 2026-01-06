@@ -36,7 +36,7 @@ const CampaignManagement = () => {
         title={
           <>
             Campaign <br />
-            <span className="hero-highlight relative z-9 w-fit font-poppins font-semibold text-[65px] leading-[116%] tracking-normal capitalize text-[#F4BE00]">Management</span>
+            <span className="hero-highlight relative z-9 w-fit font-poppins font-semibold text-[33px] sm:text-[65px] md:text-[65px] lg:text-[65px] xl:text-[65px] 2xl:text-[65px] leading-[116%] tracking-normal capitalize text-[#F4BE00]">Management</span>
           </>
         }
         description="End-to-end campaign management that transforms strategy into action, ensuring consistent execution, measurable reach, and lasting brand impact across digital and on-ground platforms"

@@ -5,6 +5,7 @@ import Slider from "react-slick";
 import Image from "next/image";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useEffect, useState } from "react";
 
 /* ---------------- TYPES ---------------- */
 
@@ -36,35 +37,39 @@ const WhyChooseUs: React.FC<WhyChooseUsProps> = ({
   backgroundImage,
   quoteImage = "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/quote-img.png",
 }) => {
-  const settings = {
-    vertical: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    arrows: false,
-    dots: true,
-    centerMode: true,
-    centerPadding: "0px",
-    infinite: true,
-    swipe: false,
-    draggable: false,
-    responsive: [
-      {
-        breakpoint: 676,
-        settings: {
-          vertical: false,
-          slidesToShow: 1,
-          swipe: true,
-          draggable: true,
-          centerMode: true,
-        },
-      },
-    ],
-  };
+  const [isMobile, setIsMobile] = useState(false);
+
+useEffect(() => {
+  const handleResize = () => setIsMobile(window.innerWidth < 676);
+  handleResize();
+  window.addEventListener("resize", handleResize);
+  return () => window.removeEventListener("resize", handleResize);
+}, []);
+ const settings = {
+  dots: true,
+  infinite: true,
+
+  vertical: !isMobile,
+  verticalSwiping: !isMobile,
+
+  slidesToShow: isMobile ? 1 : 3,
+  slidesToScroll: 1,
+
+  centerMode: true,
+  centerPadding: "0px",
+
+  swipeToSlide: true,
+  swipe: isMobile,
+  draggable: isMobile,
+
+  arrows: false,
+  speed: 600,
+};
 
   return (
 
     <section
-      className="branding-customer-wrapper relative section-gap !pb-40 not-odd:overflow-visible"
+      className="branding-customer-wrapper relative section-gap !pb-30 lg:!pb-40 not-odd:overflow-visible"
       style={{
         backgroundImage: backgroundImage
           ? `url(${backgroundImage})`
@@ -87,7 +92,7 @@ const WhyChooseUs: React.FC<WhyChooseUsProps> = ({
         </div>
 
         {/* HEADING */}
-        <h3 className="text-center font-poppins font-medium text-[40px] leading-[1.23]">
+        <h3 className="text-center font-poppins font-medium text-[28px]  sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] leading-[1.23]">
           {heading}{" "}<br />
           <span className="highlight relative w-fit z-9  font-poppins font-semibold">
             {highlightText}
@@ -106,14 +111,14 @@ const WhyChooseUs: React.FC<WhyChooseUsProps> = ({
           {/* LEFT CIRCLE */}
           <div className="lg:col-span-5 flex justify-center relative z-10">
             <div className="customer-circle flex items-center justify-center text-center">
-              <h6 className="font-poppins font-semibold text-[36px] text-white leading-[1.13]">
+              <h6 className="font-poppins font-semibold text-[30px] lg:text-[36px] text-white leading-[1.13]">
                 {centerText}
               </h6>
             </div>
           </div>
 
           {/* RIGHT SLIDER */}
-          <div className="lg:col-span-7">
+          <div className="lg:col-span-7 z-99">
             <Slider {...settings} className="customer-slider">
               {slides.map((item, index) => (
                 <div key={index} className="customer-slide">
@@ -131,7 +136,7 @@ const WhyChooseUs: React.FC<WhyChooseUsProps> = ({
 
                     <div className="customer-inner">
                       <div className="customer-content">
-                        <h5 className="font-semibold text-[24px] leading-[1.23] tracking-normal text-[#404040] mb-3">{item.title}</h5>
+                        <h5 className="font-semibold text-[18px] lg:text-[20px] leading-[1.23] tracking-normal text-[#404040] mb-3">{item.title}</h5>
                         <p className="font-normal text-[14px] leading-[1.23] tracking-normal  text-[#575757DB] ">{item.desc}</p>
                       </div>
                     </div>

@@ -16,7 +16,7 @@ const BrandingCasestudies = () => {
             <div className="w-full mx-auto space-y-32">
                 <BrandingMarquee />
 
-                <div className="flex justify-between items-center mb-12 px-20">
+                <div className="flex justify-center flex-col lg:flex-row lg:justify-between items-center mb-12 px-6 lg:px-20">
                     <div className="flex-1">
                         <div className="flex justify-start mb-5">
 
@@ -27,8 +27,8 @@ const BrandingCasestudies = () => {
                                 </span>
                             </div>
                         </div>
-                        <h3 className="font-poppins font-medium text-[40px] leading-[1.23] tracking-norma]">
-                            <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[40px] leading-[1.23] tracking-normal"> Brand Work</span> That Speaks
+                        <h3 className="font-poppins font-medium text-[28px]  sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] leading-[1.23] tracking-norma]">
+                            <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[28px]  sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] leading-[1.23] tracking-normal"> Brand Work</span> That Speaks
                         </h3>
 
                         <p className="text-[#707070] mt-5 max-w-xl">
@@ -55,10 +55,10 @@ const BrandingCasestudies = () => {
                             className="w-full transition-transform duration-700 ease-in-out hover:scale-110"
                         />
                     </div>
-                    <div className="p-20">
+                    <div className="p-6 lg:p-20">
                         <div className="flex-1 ">
-                            <h3 className="font-poppins font-medium text-[32px] leading-[1.23] tracking-norma]">
-                                Building a <span className="highlight1 relative z-9 w-fit font-poppins font-semibold text-[32px] leading-[1.23] tracking-normal">New-Age Brand</span>
+                            <h3 className="font-poppins font-medium text-[28px] lg:text-[32px] xl:text-[32px] 2xl:text-[32px] leading-[1.23] tracking-norma]">
+                                Building a <br/><span className="highlight1 relative z-9 w-fit font-poppins font-semibold text-[28px] lg:text-[32px] xl:text-[32px] 2xl:text-[32px] leading-[1.23] tracking-normal">New-Age Brand</span>
                             </h3>
 
                             <p className="text-[#525252] mt-5 max-w-lg">
@@ -75,10 +75,10 @@ const BrandingCasestudies = () => {
 
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 items-center mb-0">
-                    <div className="p-20">
+                    <div className="p-6 lg:p-20">
                         <div className="flex-1 ">
-                            <h3 className="font-poppins font-medium text-[32px] leading-[1.23] tracking-norma]">
-                                Luxury <span className="highlight1 relative z-9 w-fit font-poppins font-semibold text-[32px] leading-[1.23] tracking-normal">Brand Storytelling</span>
+                            <h3 className="font-poppins font-medium text-[28px] lg:text-[32px] xl:text-[32px] 2xl:text-[32px] leading-[1.23] tracking-norma]">
+                                Luxury <br/><span className="highlight1 relative z-9 w-fit font-poppins font-semibold text-[28px] lg:text-[32px] xl:text-[32px] 2xl:text-[32px] leading-[1.23] tracking-normal">Brand Storytelling</span>
                             </h3>
 
                             <p className="text-[#525252] mt-5 max-w-lg">
@@ -115,10 +115,10 @@ const BrandingCasestudies = () => {
                             className="w-full transition-transform duration-700 ease-in-out hover:scale-110"
                         />
                     </div>
-                    <div className="p-20">
+                    <div className="p-6 lg:p-20">
                         <div className="flex-1 ">
-                            <h3 className="font-poppins font-medium text-[32px] leading-[1.23] tracking-norma]">
-                                Integrated <span className="highlight1 relative z-9 w-fit font-poppins font-semibold text-[32px] leading-[1.23] tracking-normal">Brand Identity</span>
+                            <h3 className="font-poppins font-medium text-[28px] lg:text-[32px] xl:text-[32px] 2xl:text-[32px] leading-[1.23] tracking-norma]">
+                                Integrated <br/><span className="highlight1 relative z-9 w-fit font-poppins font-semibold text-[28px] lg:text-[32px] xl:text-[32px] 2xl:text-[32px] leading-[1.23] tracking-normal">Brand Identity</span>
                             </h3>
 
                             <p className="text-[#525252] mt-5 max-w-lg">
@@ -145,10 +145,10 @@ const BrandingCasestudies = () => {
                             className="w-full transition-transform duration-700 ease-in-out hover:scale-110"
                         />
                     </div>
-                    <div className="w-full ps-20 pt-5 pb-5">
+                    <div className="w-full ps-6 lg:ps-20 pt-5 pb-5">
                         <div className="flex-1 ">
-                            <h3 className="font-poppins font-medium text-[32px] leading-[1.23] tracking-norma]">
-                                Complete <span className="highlight1 relative z-9 w-fit font-poppins font-semibold text-[32px] leading-[1.23] tracking-normal">Brand Framework </span>
+                            <h3 className="font-poppins font-medium text-[28px] lg:text-[32px] xl:text-[32px] 2xl:text-[32px] leading-[1.23] tracking-norma]">
+                                Complete <br/><span className="highlight1 relative z-9 w-fit font-poppins font-semibold text-[28px] lg:text-[32px] xl:text-[32px] 2xl:text-[32px] leading-[1.23] tracking-normal">Brand Framework </span>
                             </h3>
 
                             <p className="text-[#525252] mt-5">
@@ -176,7 +176,7 @@ const BrandingCasestudies = () => {
                         slidesPerView={4}
                         breakpoints={{
                             0: {
-                                slidesPerView: 1.2,
+                                slidesPerView: 1,
                             },
                             640: {
                                 slidesPerView: 2,
