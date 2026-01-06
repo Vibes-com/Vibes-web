@@ -136,7 +136,7 @@ export default function OurBlogs({ tData }: BlogsProps) {
                                         .substring(0, 200)}
                                 </p>
                                 <Link href={`/digital-insights-blogs/${item.blog_slug}`}>
-                                <Button3 className=" text-[#204667] cursor-pointer flex items-center gap-2">
+                                <Button3 className=" text-[#204667] cursor-pointer text-[14px] flex items-center gap-2">
                                     <span>View More</span>
                                     <ArrowUpIcon className="transform rotate-45" />
                                 </Button3>
