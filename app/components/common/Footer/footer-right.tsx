@@ -14,7 +14,7 @@ export default function FooterRightSection() {
                 </ul>
             </div>
 
-            <div className="col-span-4 pt-3 sm:pt-0 md:pt-0 lg:pt-0 xl:pt-0 2xl:pt-0">
+            <div className="col-span-4 pt-3 sm:pt-3 md:pt-3 lg:pt-0 xl:pt-0 2xl:pt-0">
                 <ul className="space-y-3 text-[15px] font-light tracking-wide">
                     <li className="list-disc list-inside font-[500] text-[#7C7C7C] text-[16px] leading-[100%] tracking-[0] "><Link href="/digital-insights-blogs" className="hover:text-[#F4BE00] transition-colors">Blogs</Link></li>
                     <li className="list-disc list-inside font-[500] text-[#7C7C7C] text-[16px] leading-[100%] tracking-[0] "><Link href="/gallery" className="hover:text-[#F4BE00] transition-colors">Culture</Link></li>

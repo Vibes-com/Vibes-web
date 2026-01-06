@@ -10,7 +10,7 @@ const MissionVision: React.FC = () => {
 
                 <div className="grid grid-cols-12 gap-0 lg:gap-10 items-center">
 
-                    <div className="col-span-12 md:col-span-6 relative ">
+                    <div className="col-span-12 md:col-span-12 lg:col-span-6 relative ">
                         <div className="rounded-xl overflow-hidden p-1">
                             <Image
                                 src="/assests/img/about/together-img-1.jpg"
@@ -21,7 +21,7 @@ const MissionVision: React.FC = () => {
                             />
                         </div>
 
-                        <div className="absolute bottom-[-35px] right-[25px] md:right-[90px] rounded-xl overflow-hidden shadow-xl">
+                        <div className="absolute bottom-[-35px] right-[25px] md:right-[80px] lg:right-[90px] xl:right-[90px] 2xl:right-[90px] rounded-xl overflow-hidden shadow-xl">
                             <Image
                                 src="/assests/img/about/together-img-2.jpg"
                                 alt="team small" priority unoptimized
@@ -31,8 +31,8 @@ const MissionVision: React.FC = () => {
                             />
                         </div>
                     </div>
-                    <div className="col-span-12 md:col-span-6 mt-16 md:mt-0 ps-0 md:ps-10">
-                        <div className="flex justify-start mb-5">
+                    <div className="col-span-12 md:col-span-12 lg:col-span-6 mt-16 md:mt-0 ps-0 md:ps-10">
+                        <div className="flex justify-start md:pt-10 lg:pt-0 mb-5">
 
                             <div className="px-6 py-2 rounded-full border border-[#F4BE00] inline-flex items-center gap-2">
                                 <span className="w-2 h-2 rounded-full bg-[#F4BE00]"></span>

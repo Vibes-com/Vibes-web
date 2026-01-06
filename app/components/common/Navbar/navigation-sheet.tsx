@@ -26,7 +26,7 @@ export const NavigationSheet = () => {
                     {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
                 </Button>
             </SheetTrigger>
-            <SheetContent className=" px-6 py-3 bg-black">
+            <SheetContent className=" px-6 py-3 bg-black border-0">
                 <div className="flex justify-between items-center">
                     <Logo />
                     <SheetClose asChild>

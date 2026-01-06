@@ -136,7 +136,7 @@ export default function BlogListing() {
                   <img
                     src={blog.blog_thumb_image}
                     alt={blog.blog_title}
-                    className="w-full h-56 object-cover rounded-t-1xl"
+                    className="w-full h-56 object-fill rounded-t-1xl"
                   />
 
                   <div className="p-6">

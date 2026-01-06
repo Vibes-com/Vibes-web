@@ -117,7 +117,7 @@ Our <span className="highlight relative z-9 w-fit font-poppins font-semibold tex
 {/* TOP ARROW */}
 <button
 onClick={() => swiperRef.current.slidePrev()}
-className="hidden lg:block up-arrow glow-up float-up-down absolute top-[-17px] left-1/2 -translate-x-1/2 z-30 p-3"
+className="hidden md:block lg:block up-arrow glow-up float-up-down absolute top-[-17px] left-1/2 -translate-x-1/2 z-30 p-3"
 >
 <img
 src="/assests/img/about/up-arrow.png"
@@ -127,7 +127,7 @@ className="w-6 h-6"
 </button>
 
 {/* CENTER DOTTED LINE */}
-<div className="hidden lg:block absolute top-0 bottom-0 left-1/2 -translate-x-1/2 border-[2px] border-dashed border-[#535353]"></div>
+<div className="hidden md:block lg:block absolute top-0 bottom-0 left-1/2 -translate-x-1/2 border-[2px] border-dashed border-[#535353]"></div>
 
 <Swiper
 direction="vertical"
@@ -228,7 +228,7 @@ className="w-full h-[244px] object-contain rounded-lg"
 {/* BOTTOM ARROW */}
 <button
 onClick={() => swiperRef.current.slideNext()}
-className="hidden lg:block arrows-down absolute bottom-0 left-1/2 -translate-x-1/2 z-50 shadow-lg animate-arrowBounce"
+className="hidden md:block lg:block arrows-down absolute bottom-0 left-1/2 -translate-x-1/2 z-50 shadow-lg animate-arrowBounce"
 >
 
 </button>
