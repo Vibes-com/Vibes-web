@@ -32,11 +32,11 @@ const CaseStudyDetailsBranding: React.FC<CaseStudyDetailsBrandingProps> = ({
           : [Pagination];
 
         return (
-          <div key={section.paginationId} className="w-full mb-20">
+          <div key={section.paginationId} className="w-full mb-13 lg:mb-20 ">
 
             {/* TITLE */}
             <h3 className="mb-3 pb-5 text-center font-poppins font-medium text-[65px]">
-              <span className="highlight font-semibold text-[33px] lg:text-[48px] relative">
+              <span className="highlight font-semibold text-[28px] lg:text-[48px] relative">
                 {section.title}
               </span>
             </h3>
@@ -47,7 +47,7 @@ const CaseStudyDetailsBranding: React.FC<CaseStudyDetailsBrandingProps> = ({
               loop
               spaceBetween={8}
               slidesPerView={section.slidesPerView ?? 1}
-              autoplay={section.autoplay ? { delay: 1500 } : false}
+              // autoplay={section.autoplay ? { delay: 1500 } : false}
               pagination={{
                 el: `.${section.paginationId}`,
                 clickable: true,

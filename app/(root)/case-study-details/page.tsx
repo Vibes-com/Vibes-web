@@ -93,6 +93,7 @@ const page = () => {
                     "/assests/img/case-study-details/case-study-bottom-img-4.jpg",
                 ],
                 slidesPerView: 4,
+                
                 paginationId: "case-study-pagination-2",
                 },
             ]}

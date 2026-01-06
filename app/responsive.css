@@ -171,6 +171,21 @@ height: 250px;
 .wht-btn{
     padding-left: 8px;
 }
+.nv-menu{
+    font-size: 14px!important;
+}
+.timeline-journey-wrapper .swiper-pagination-bullet{
+    background: #466e5999;
+    border: 1px solid #466e59;
+}
+.timeline-journey-wrapper .swiper-pagination-bullet-active {
+    border-radius: 61px;
+    background: #f4be00 !important;
+    border: none !important;
+    width: 20px !important;
+    height: 10px !important;
+}
+
 }
 
 @media (min-width: 360px) and (max-width: 385px) {
@@ -206,6 +221,12 @@ height: 250px;
         background-position: 0 !important;
         height: 90vh !important;
     }
+    .case-crd{
+        height: 240px;
+    }
+    .case-study-listing-wrapper .case-study-card-common {
+    height: 240px;
+}
 }
 
 @media (min-width: 320px) and (max-width: 359px) {
@@ -236,4 +257,10 @@ height: 250px;
         height: 50px;
         width: 70px;
     }
+    .case-crd{
+        height: 240px;
+    }
+    .case-study-listing-wrapper .case-study-card-common {
+    height: 240px;
+}
 }

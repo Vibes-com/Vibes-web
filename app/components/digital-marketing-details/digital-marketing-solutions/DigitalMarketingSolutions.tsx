@@ -53,7 +53,7 @@ const services = [
 
 const DigitalMarketingSolutions = () => {
     return (
-        <div className="digital-solution-wrapper section-gap">
+        <div className="digital-solution-wrapper section-gap overflow-hidden">
             <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
                 <div className="flex justify-center mb-5">
                     <div className="px-6 py-2 rounded-full border border-[#F4BE00] inline-flex items-center gap-2">

@@ -1362,8 +1362,19 @@ border-right: none;
     padding-bottom: 30px;
 }
 .team-swiper {
-  padding-bottom: 40px; /* adjust as needed */
+  padding-bottom: 40px;
 }
 .cmn-case-card{
   height: 285px;
+}
+.case-study-details-branding-wrapper .swiper-pagination-bullet-active{
+    border-radius: 61px;
+    background: #f4be00 !important;
+    border: none !important;
+    width: 20px !important;
+    height: 10px !important;
+}
+.case-study-details-branding-wrapper .swiper-pagination-bullet{
+    background: #466e5999;
+    border: 1px solid #466e59!important;
 }

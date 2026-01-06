@@ -81,17 +81,17 @@ export const NavMenu = (props: ComponentProps<typeof NavigationMenu> & { onLinkC
                     <NavigationMenuContent>
                         <ul className="grid gap-3 p-4 w-[50vw] lg:w-[300px]">
                             <li>
-                                <Link onClick={handleLinkClick} href="/technology-services" className="block p-2 hover:bg-gray-100 rounded text-[12px] lg:text-[16px]">
+                                <Link onClick={handleLinkClick} href="/technology-services" className="block p-2 hover:bg-gray-100 rounded text-[14px] lg:text-[16px]">
                                     Technology
                                 </Link>
                             </li>
                             <li>
-                                <Link onClick={handleLinkClick} href="/branding-services" className="block p-2 hover:bg-gray-100 rounded  text-[12px] lg:text-[16px]">
+                                <Link onClick={handleLinkClick} href="/branding-services" className="block p-2 hover:bg-gray-100 rounded  text-[14px] lg:text-[16px]">
                                     Branding
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/digital-marketing-services" className="block p-2 hover:bg-gray-100 rounded text-[12px] lg:text-[16px]">
+                                <Link href="/digital-marketing-services" className="block p-2 hover:bg-gray-100 rounded text-[14px] lg:text-[16px]">
                                     Digital Marketing
                                 </Link>
                             </li>
