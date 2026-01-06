@@ -45,7 +45,7 @@ const CorporateBranding = () => {
         title={
           <>
             CORPORATE <br />
-            <span className="hero-highlight relative z-9 w-fit font-poppins font-semibold text-[65px] leading-[116%] tracking-normal capitalize text-[#F4BE00]">BRANDING</span>
+            <span className="hero-highlight relative z-9 w-fit font-poppins font-semibold text-[33px] sm:text-[65px] md:text-[65px] lg:text-[65px] xl:text-[65px] 2xl:text-[65px] leading-[116%] tracking-normal capitalize text-[#F4BE00]">BRANDING</span>
           </>
         }
         description=" Strategic corporate branding that builds credibility, ensures consistency, and strengthens long-term business positioning."
@@ -90,7 +90,7 @@ const CorporateBranding = () => {
           badge: "Workflow Process",
           title: (
             <>
-              <span className="highlight relative w-fit z-9 font-semibold">Corporate Branding</span> in Action
+              <span className="highlight relative w-fit z-9 text-[28px] sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] font-semibold">Corporate Branding</span> in Action
             </>
           ),
           description:

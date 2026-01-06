@@ -88,7 +88,7 @@ export default function BuiltWaySlider({
             <SwiperSlide key={`${item.id}-${index}`} className="!h-auto">
               <div
                 className="
-                  group relative h-[260px] mt-20 mb-10 rounded-2xl p-4 lg:p-8
+                  group relative shadow-sm h-[260px] mt-20 mb-10 rounded-2xl p-4 lg:p-8
                   transition-all duration-300
                   flex flex-col justify-center cursor-pointer
                   bg-white text-[#2B2B2B]

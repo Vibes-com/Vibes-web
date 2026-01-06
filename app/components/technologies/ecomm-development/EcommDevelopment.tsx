@@ -17,7 +17,7 @@ const EcommDevelopment = () => {
         title={
           <>
             E-Commerce <br />
-            <span className="hero-highlight relative z-9 w-fit font-poppins font-semibold text-[65px] leading-[116%] tracking-normal capitalize text-[#F4BE00]">Development</span>
+            <span className="hero-highlight relative z-9 w-fit font-poppins font-semibold text-[33px] sm:text-[65px] md:text-[65px] lg:text-[65px] xl:text-[65px] 2xl:text-[65px] leading-[116%] tracking-normal capitalize text-[#F4BE00]">Development</span>
           </>
         }
         description="Scalable, secure, and high-performance online stores designed for growth and seamless customer journeys."
@@ -62,7 +62,7 @@ const EcommDevelopment = () => {
         heading={
           <>
             A Clear Path from {" "}<br />
-            <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[40px] leading-[1.23] tracking-normal">Strategy to Scale</span>
+            <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[28px] sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] leading-[1.23] tracking-normal">Strategy to Scale</span>
           </>
         }
         description=" A structured approach that ensures reliable builds, smooth launches, and long-term growth."
@@ -123,7 +123,7 @@ const EcommDevelopment = () => {
         bgImage="/assests/img/web-development/wd-services-bg.jpg"
         heading={
           <>
-            <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[40px] leading-[1.23] tracking-normal">Choose Vibes.</span> Choose Certainty.
+            <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[28px] sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] leading-[1.23] tracking-normal">Choose Vibes.</span> Choose Certainty.
           </>
         }
         description="Scalable e-commerce solutions built for performance, security, and seamless customer experiences."
