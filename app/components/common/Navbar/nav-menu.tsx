@@ -60,7 +60,7 @@ export const NavMenu = (props: ComponentProps<typeof NavigationMenu> & { onLinkC
                 <NavigationMenuItem>
                     <NavigationMenuTrigger
                         className={clsx(
-                            "bg-transparent !bg-transparent text-white font-poppins font-normal text-[14px] leading-[100%]",
+                            "bg-transparent !bg-transparent text-white font-poppins font-normal text-[14px] leading-[100%] wht-btn",
 
                             "hover:!bg-transparent focus:!bg-transparent active:!bg-transparent",
                             "data-[state=open]:!bg-transparent data-[state=closed]:!bg-transparent",

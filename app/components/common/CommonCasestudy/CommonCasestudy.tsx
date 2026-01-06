@@ -7,6 +7,7 @@ import CaseStudiesCard, {
   SingleCaseStudyCard,
 } from "../CaseStudiesCard/CaseStudiesCard";
 import Link from "next/link";
+import CaseStudiesCardS from "../CaseStudiesCard/CaseStudiesCardS";
 // import { useGetAllCaseStudiesQuery } from "@/app/redux/api/caseStudyApi";
 
 interface CaseStudiesSectionProps {
@@ -80,7 +81,7 @@ const CommonCasestudy = ({ badgeText, title, highlightTitle, description, button
           {/* RIGHT CONTENT */}
           <div className=" tech-casestudy col-span-12 pt-15 lg:pt-0 md:col-span-6 relative lg:sticky top-0 lg:h-screen lg:overflow-y-auto no-scrollbar">
             {/* ✅ CaseStudiesCard handles mapping internally */}
-            <CaseStudiesCard />
+            <CaseStudiesCardS />
           </div>
 
         </div>
