@@ -99,12 +99,12 @@ const Brandingservices: ServiceItem[] = [
 
 const BrandingDetailsServices: React.FC = () => {
     return (
-        <div className="branding-services-wrapper section-gap">
+        <div className="branding-services-wrapper section-gap overflow-hidden">
             <div className="container mx-auto max-w-screen-xl px-4 md:px-8 ">
                 <div className="grid grid-cols-12 gap-6 items-center">
 
                     {/* Left Column */}
-                    <div className="col-span-12 lg:col-span-5">
+                    <div className="col-span-12  lg:col-span-5">
                         <div className="flex  mb-5">
                             <div className="px-6 py-2 rounded-full border border-[#F4BE00] inline-flex items-center gap-2">
                                 <span className="w-2 h-2 rounded-full bg-[#F4BE00]" />
@@ -124,7 +124,7 @@ const BrandingDetailsServices: React.FC = () => {
                     </div>
 
                     {/* Right Column */}
-                    <div className="col-span-12 lg:col-span-7">
+                    <div className="col-span-12  lg:col-span-7">
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 place-items-center">
 
                             {[1, 2, 3].map((_, index) => (
@@ -132,7 +132,7 @@ const BrandingDetailsServices: React.FC = () => {
                                     key={index}
                                     className={
                                         index === 0
-                                            ? "sm:col-span-2 flex justify-center"
+                                            ? "sm:col-span-2 flex  justify-center"
                                             : ""
                                     }
                                 >
@@ -159,11 +159,11 @@ export default BrandingDetailsServices;
 
 const BrandingServiceCard = ({ service }: any) => {
     return (
-        <div className=" border-b-6 border-transparent hover:border-[#204667] transition-colors duration-300 group relative w-[340px]  h-[278px] bg-[#466E59]/100 shadow-lg transition-all duration-500 rounded-lg hover:bg-[#FFFFFF]">
+        <div className="border-b-6 border-transparent hover:border-[#204667] transition-colors duration-300 group relative w-[100%] lg:w-[340px]  h-[278px] bg-[#466E59]/100 shadow-lg transition-all duration-500 rounded-lg hover:bg-[#FFFFFF]">
 
             {/* ICON */}
             <div
-                className="group absolute -top-4 right-[-8px] w-18 h-18 z-10 rounded-full flex items-center justify-center transition bg-[#FFFFFF] group-hover:bg-[#F4BE00]
+                className="group absolute -top-4  right-[-8px] w-18 h-18 z-10 rounded-full flex items-center justify-center transition bg-[#FFFFFF] group-hover:bg-[#F4BE00]
 border-[7px] border-[#ffffff]">
                 <Image
                     src={service.icon}

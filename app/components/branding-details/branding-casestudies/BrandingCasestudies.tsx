@@ -65,7 +65,7 @@ const BrandingCasestudies = () => {
                                 A focused branding approach shaped distinct B2B and B2C identities through research-led rebranding, campaigns, and consistent digital presence.
                             </p>
                             <Button2 className="mt-5 p-0! p-[20px]  cursor-pointer hover:text-[#F4BE00] bg-transparent  text-[#204667] text-[16px]">
-                                <Link href="case-study/tomorrows-india"><span>Read More</span></Link>
+                                <Link href="/case-studies/tomorrows-india"><span>Read More</span></Link>
                                 <ArrowUpIcon className="transform rotate-45" />
                             </Button2>
                         </div>
@@ -87,7 +87,7 @@ const BrandingCasestudies = () => {
                             </p>
 
                             <Button2 className="mt-5 p-0!  cursor-pointer p-[20px] hover:text-[#F4BE00] bg-transparent  text-[#204667] text-[16px]">
-                                <Link href="case-study/interio-haven"><span>Read More</span></Link>
+                                <Link href="/case-studies/interio-haven"><span>Read More</span></Link>
                                 <ArrowUpIcon className="transform rotate-45" />
                             </Button2>
 
@@ -126,7 +126,7 @@ const BrandingCasestudies = () => {
                             </p>
 
                             <Button2 className="mt-5  cursor-pointer p-0! p-[20px] hover:text-[#F4BE00] bg-transparent  text-[#204667] text-[16px]">
-                                <Link href="case-study/maxim-alert"><span>Read More</span></Link>
+                                <Link href="/case-studies/maxim-alert"><span>Read More</span></Link>
                                 <ArrowUpIcon className="transform rotate-45" />
                             </Button2>
 
@@ -156,7 +156,7 @@ const BrandingCasestudies = () => {
                             </p>
 
                             <Button2 className="mt-5 p-0!  cursor-pointer p-[20px] hover:text-[#F4BE00] bg-transparent  text-[#204667] text-[16px]">
-                                <Link href="case-study/buzaria"><span>Read More</span></Link>
+                                <Link href="/case-studies/buzaria"><span>Read More</span></Link>
                                 <ArrowUpIcon className="transform rotate-45" />
                             </Button2>
 

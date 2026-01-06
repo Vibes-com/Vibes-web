@@ -27,7 +27,7 @@ export default function SuccessStory({
   return (
     <section className={`w-full pt-10 lg:pt-15  pb-10 lg:pb-20 bg-success-story ${className}`}>
       <div className="curve-box max-w-7xl mx-auto px-2 lg:px-6 relative">
-        <div className="h-full flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-8 px-2 lg:px-10">
+        <div className="h-full flex flex-col md:flex-row lg:flex-row items-center justify-center lg:justify-between gap-8 px-2 lg:px-10">
 
           {/* Arrow Image */}
           <Image

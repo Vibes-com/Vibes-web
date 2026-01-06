@@ -2,6 +2,16 @@
 .nv-menu{
     font-size: 10px!important;
 }
+.branding-customer-wrapper .customer-circle:after {
+    display: none;
+}
+.curve-box {
+
+     height: 300px;
+    background-size: 251% 64%;
+    background-position: center;
+    background-size: cover;
+}
 
  }
  
