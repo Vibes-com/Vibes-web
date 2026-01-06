@@ -17,6 +17,7 @@ const page = () => {
                 <span>Explore More</span>
               </Button2>
               </a>
+              
     </div>
   )
 }
