@@ -12,8 +12,17 @@
     background-position: center;
     background-size: cover;
 }
-
- }
+.timeline-journey-wrapper .arrows-down {
+    left: 52.1%;
+}
+.celebrating-milestones-wrapper  {
+    text-align: center;
+}
+.footer-wrapper {
+background-image: none;
+background-color: black;
+}
+}
  
 
  @media (min-width: 768px) {

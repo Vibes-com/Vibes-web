@@ -164,7 +164,7 @@ const isLeft = index % 2 === 0;
 
 return (
 <SwiperSlide key={index}>
-<div className="relative mt-6 md:mt-20 w-full flex flex-col md:flex-row lg:flex-row items-start md:items-center md:justify-between lg:justify-between xl:justify-between 2xl:justify-between">
+<div className="relative mt-6 md:mt-20 w-full flex flex-col md:flex-row lg:flex-row items-start md:items-center md:justify-between lg:justify-between xl:justify-between 2xl:justify-between md:gap-[20%] lg:gap-0">
 
 {/* LEFT SIDE */}
 {isLeft ? (
@@ -180,9 +180,9 @@ className="w-full h-[244px] object-contain rounded-lg"
 </div>
 </div>
 ) : (
-<div className="w-full flex flex-col ">
-<h2 className="font-poppins font-semibold text-[28px]  leading-[1.23] tracking-normal">{item.year}</h2>
-<p className="text-[#707070] font-normal text-[16px] leading-[130%] tracking-[0] text-center lg:text-start  mt-3 w-90">{item.text}</p>
+<div className="w-full flex flex-col w-[100%] md:w-[45%] lg:w-[50%]">
+<h2 className="font-poppins font-semibold text-[28px] sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] leading-[1.23] tracking-normal">{item.year}</h2>
+<p className="text-[#707070] font-normal text-[16px] leading-[130%] tracking-[0] text-center md:text-start lg:text-start  mt-3 w-90">{item.text}</p>
 </div>
 )}
 
@@ -202,7 +202,7 @@ height={40}
 
 {/* RIGHT SIDE */}
 {!isLeft ? (
-<div className="w-full lg:w-1/2 ... flex justify-end pl-0 lg:pl-10">
+<div className="w-full  flex justify-end pl-0 lg:pl-10">
 <div className="">
 <Image
 src={item.img}
@@ -214,7 +214,7 @@ className="w-full h-[244px] object-contain rounded-lg"
 </div>
 </div>
 ) : (
-<div className=" flex flex-col ">
+<div className=" flex flex-col w-[100%] lg:w-[50%]">
 <h2 className="font-poppins font-semibold text-[28px]  sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] leading-[1.23] tracking-normal">{item.year}</h2>
 <p className="text-[#707070] font-normal text-[16px] leading-[130%] tracking-[0] mt-3 break-words max-w-full">{item.text}</p>
 </div>

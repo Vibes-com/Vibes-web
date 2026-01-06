@@ -53,7 +53,7 @@ const MissionVision: React.FC = () => {
                         </p>
 
                         <div className="grid grid-cols-12 mt-8 gap-4">
-                            <div className="col-span-2 md:col-span-1  flex items-center justify-center h-[40px] w-[40] rounded-full bg-[#F4BE00]">
+                            <div className="col-span-12 md:col-span-1  flex items-center justify-center h-[40px] w-[40] rounded-full bg-[#F4BE00]">
                                 <Image
                                     src="/assests/img/about/mission.png"
                                     alt="mission icon" priority unoptimized
@@ -62,7 +62,7 @@ const MissionVision: React.FC = () => {
                                 />
                             </div>
 
-                            <div className="col-span-10 md:col-span-11 ps-3">
+                            <div className="col-span-12 md:col-span-11 ps-3">
                                 <h4 className="text-[#2b3332] font-semibold text-[20px] leading-[123%] mb-3">Mission</h4>
                                 <p className="text-[#707070] font-normal text-[16px] leading-[130%] tracking-[0]  max-w-2xl mx-auto  mt-5">
                                     Our mission is to empower businesses with innovative strategies and digital excellence, fostering collaboration, trust, and measurable growth that creates lasting impact for clients and communities.
@@ -79,7 +79,7 @@ const MissionVision: React.FC = () => {
                                 />
                             </div>
 
-                            <div className="col-span-10 md:col-span-11 ps-3">
+                            <div className="col-span-12 md:col-span-11 ps-3">
                                 <h4 className="text-[#2b3332] font-semibold text-[20px] leading-[123%] mb-3">Vision</h4>
                                 <p className="text-[#707070] font-normal text-[16px] leading-[130%] tracking-[0]  max-w-2xl mx-auto  mt-5">
                                     Our vision is to be a trusted partner in digital transformation, uniting creativity and technology to shape impactful journeys that inspire progress, connection, and sustainable success.

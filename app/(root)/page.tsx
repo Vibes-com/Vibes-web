@@ -116,13 +116,13 @@ const page = () => {
       <Branding />
       <Digital /> */}
       <div className="relative">
-        <div className=" relative sm:sticky md:sticky lg:sticky xl:sticky 2xl:sticky top-0 z-[10]">
+        <div className=" relative sm:relative md:relative lg:sticky xl:sticky 2xl:sticky top-0 z-[10]">
           <Technology />
         </div>
-        <div className="relative sm:sticky md:sticky lg:sticky xl:sticky 2xl:sticky top-0 z-[20]">
+        <div className="relative sm:relative md:relative lg:sticky xl:sticky 2xl:sticky top-0 z-[20]">
           <Branding />
         </div>
-        <div className="relative sm:sticky md:sticky lg:sticky xl:sticky 2xl:sticky top-0 z-[30]">
+        <div className="relative sm:relative md:relative lg:sticky xl:sticky 2xl:sticky top-0 z-[30]">
           <Digital />
         </div>
       </div>
