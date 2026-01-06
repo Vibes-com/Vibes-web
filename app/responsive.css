@@ -144,7 +144,7 @@ height: 250px;
     transform: translateX(0px)!important;
 }
     .branding-customer-wrapper .customer-slider .slick-dots {
-        width: 30px;
+        width: 64px;
         bottom: -24%;
         top: initial;
         flex-direction: row;

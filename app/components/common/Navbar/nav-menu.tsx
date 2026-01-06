@@ -91,7 +91,7 @@ export const NavMenu = (props: ComponentProps<typeof NavigationMenu> & { onLinkC
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/digital-marketing-services" className="block p-2 hover:bg-gray-100 rounded text-[14px] lg:text-[16px]">
+                                <Link onClick={handleLinkClick} href="/digital-marketing-services" className="block p-2 hover:bg-gray-100 rounded text-[14px] lg:text-[16px]">
                                     Digital Marketing
                                 </Link>
                             </li>
