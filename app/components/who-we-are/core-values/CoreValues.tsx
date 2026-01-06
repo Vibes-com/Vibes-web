@@ -30,7 +30,7 @@ const CoreValues = () => {
         <div className="core-values-wrapper section-gap">
             <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
 
-                <div className="grid md:grid-cols-2 gap-10 items-center">
+                <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-10 items-center">
                     <div>
                         <div className="flex justify-start mb-5">
 

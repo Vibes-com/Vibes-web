@@ -59,7 +59,7 @@ const CaseStudyDetailsHero: React.FC<CaseStudyDetailsHeroProps> = ({
                   <li className="inline-flex items-center">
                     <Link
                       href="/"
-                      className="inline-flex items-center text-sm font-medium text-body hover:text-fg-brand"
+                      className="inline-flex items-center text-[10px] lg:text-sm font-medium text-body hover:text-fg-brand"
                     >
                       <svg
                         className="w-4 h-4 me-1.5"
@@ -99,7 +99,7 @@ const CaseStudyDetailsHero: React.FC<CaseStudyDetailsHeroProps> = ({
                       </svg>
                       <Link
                         href="/case-studies"
-                        className="inline-flex items-center text-sm font-medium text-body hover:text-fg-brand"
+                        className="inline-flex items-center text-[10px] lg:text-sm font-medium text-body hover:text-fg-brand"
                       >
                         Case Study
                       </Link>
@@ -123,7 +123,7 @@ const CaseStudyDetailsHero: React.FC<CaseStudyDetailsHeroProps> = ({
                           strokeLinejoin="round"
                         />
                       </svg>
-                      <span className="inline-flex items-center text-sm font-medium text-body-subtle">
+                      <span className="inline-flex items-center text-[10px] lg:text-sm font-medium text-body-subtle">
                       Case Study Details
                       </span>
                     </div>
