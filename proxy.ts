@@ -132,9 +132,23 @@ const CASE_STUDY_SLUGS = new Set([
 ]);
 
 export function proxy(request: NextRequest) {
-  const { pathname } = request.nextUrl;
+  const url = request.nextUrl;
+  const hostname = request.headers.get("host") || "";
 
-  // Ignore system files
+  /* ✅ STEP A: APEX → WWW REDIRECT */
+  if (
+    hostname &&
+    !hostname.startsWith("www.") &&
+    hostname.includes(".")
+  ) {
+    url.hostname = `www.${hostname}`;
+    return NextResponse.redirect(url, 301);
+  }
+
+
+  const pathname = url.pathname;
+
+  /* ignore system & static files */
   if (
     pathname.startsWith("/_next") ||
     pathname.startsWith("/api") ||
@@ -143,7 +157,7 @@ export function proxy(request: NextRequest) {
     return NextResponse.next();
   }
 
-  // Already correct routes
+  /* already correct routes */
   if (
     pathname.startsWith(BLOG_PREFIX) ||
     pathname.startsWith(CASE_PREFIX)
@@ -153,6 +167,7 @@ export function proxy(request: NextRequest) {
 
   const slug = pathname.slice(1);
 
+  /* blog redirects */
   if (BLOG_SLUGS.has(slug)) {
     return NextResponse.redirect(
       new URL(`${BLOG_PREFIX}/${slug}`, request.url),
@@ -160,6 +175,7 @@ export function proxy(request: NextRequest) {
     );
   }
 
+  /* case study redirects */
   if (CASE_STUDY_SLUGS.has(slug)) {
     return NextResponse.redirect(
       new URL(`${CASE_PREFIX}/${slug}`, request.url),
@@ -168,4 +184,11 @@ export function proxy(request: NextRequest) {
   }
 
   return NextResponse.next();
+  // const { pathname } = request.nextUrl;
+
+  
+
+
+
+ 
 }
