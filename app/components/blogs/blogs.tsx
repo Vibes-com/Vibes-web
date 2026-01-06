@@ -135,10 +135,12 @@ export default function OurBlogs({ tData }: BlogsProps) {
                                         .replace(/<[^>]*>/g, "")
                                         .substring(0, 200)}
                                 </p>
-                                <Button3 className=" text-[#204667] flex items-center gap-2">
+                                <Link href={`/digital-insights-blogs/${item.blog_slug}`}>
+                                <Button3 className=" text-[#204667] cursor-pointer flex items-center gap-2">
                                     <span>View More</span>
                                     <ArrowUpIcon className="transform rotate-45" />
                                 </Button3>
+                                </Link>
                             </div>
                         </SwiperSlide>
                     ))}
