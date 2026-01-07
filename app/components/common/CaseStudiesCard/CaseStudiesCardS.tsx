@@ -43,16 +43,16 @@ const cardsc = data?.data.slice(0,5)
           className="bg-white mb-[70px] rounded-2xl p-1 ps-2 pb-3 shadow-[0_8px_30px_rgba(0,0,0,0.06)] w-full"
         >
           {/* Image */}
-          <div className=" case-study-card-common border-1 border-gray-400 relative w-full h-[390px] rounded-xl overflow-hidden group">
-            <Image
-              src={item.img}
-              alt={item.title}
-              fill
-              unoptimized
-              className="object-fill transition-all duration-[900ms] ease-out group-hover:scale-110 group-hover:opacity-90"
-            />
-
-          </div>
+          <div className="case-study-card-common border border-gray-400 w-full rounded-xl overflow-hidden group">
+                    <Image
+                      src={item.img}
+                      alt={item.title}
+                      width={1500}
+                      height={1000}
+                      unoptimized
+                      className="h-full  object-cover transition-transform duration-[900ms] ease-out group-hover:scale-110 group-hover:opacity-90"
+                    />
+                  </div>
 
           {/* Title */}
           <h3 className="mt-5 text-[#1F1F1F] font-poppins font-semibol0d text-[20px] lg:text-[28px]">
