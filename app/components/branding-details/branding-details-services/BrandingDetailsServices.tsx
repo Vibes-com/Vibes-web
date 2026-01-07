@@ -186,7 +186,7 @@ border-[7px] border-[#ffffff]">
 
             {/* CONTENT */}
             <div className="relative z-10 px-4 py-10 flex flex-col h-full">
-                <h3 className="font-poppins font-semibold text-[22px] text-white lg:group-hover:text-[#454545]">
+                <h3 className="font-poppins font-semibold text-[18px] lg:text-[22px] text-white lg:group-hover:text-[#454545]">
                     {service.title}
                 </h3>
 
@@ -201,9 +201,9 @@ border-[7px] border-[#ffffff]">
                         </span>
                     ))}
                 </div>
-                        <Button2 className="mt-5 p-[20px]  block  lg:hidden cursor-pointer bg-transparent flex justify-start text-[#FFFFFF] hover:text-[#F4BE00]">
+                        <Button2 className="mt-5 p-[20px] block lg:hidden cursor-pointer bg-transparent flex justify-start text-[#FFFFFF] hover:text-[#F4BE00]">
                         <Link href={service.url}>
-                            <span>View More</span>
+                            <span  className=" text-[16px] lg:text-[18px]">View More</span>
                         </Link>
                         <ArrowUpIcon className="rotate-45" />
                     </Button2>
