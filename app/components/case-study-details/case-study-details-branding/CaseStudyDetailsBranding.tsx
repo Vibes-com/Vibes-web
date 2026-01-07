@@ -44,31 +44,33 @@ const CaseStudyDetailsBranding: React.FC<CaseStudyDetailsBrandingProps> = ({
   
               {/* SLIDER */}
               <Swiper
-                modules={swiperModules}
-                loop
-                spaceBetween={8}
-                slidesPerView={section.slidesPerView ?? 1}
-                // autoplay={section.autoplay ? { delay: 1500 } : false}
-                pagination={{
-                  el: `.${section.paginationId}`,
-                  clickable: true,
-                }}
-              >
-                {section.images.map((src) => (
-                  <SwiperSlide key={src}>
-                    <div className="overflow-hidden">
-                      <Image
-                        src={src}
-                        alt={section.title}
-                        width={720}
-                        height={674}
-                        unoptimized
-                        className="w-full h-auto object-cover transition-transform duration-700 hover:scale-110"
-                      />
-                    </div>
-                  </SwiperSlide>
-                ))}
-              </Swiper>
+  modules={swiperModules}
+  loop
+  autoHeight
+  spaceBetween={8}
+  slidesPerView={section.slidesPerView ?? 1}
+  autoplay={section.autoplay ? { delay: 1500 } : false}
+  pagination={{
+    el: `.${section.paginationId}`,
+    clickable: true,
+  }}
+  onSlideChange={(swiper) => swiper.updateAutoHeight()}
+>
+  {section.images.map((src) => (
+    <SwiperSlide key={src}>
+      <div className="overflow-hidden">
+        <Image
+          src={src}
+          alt={section.title}
+          width={720}
+          height={674}
+          unoptimized
+          className="w-full h-auto object-cover transition-transform duration-700 hover:scale-110"
+        />
+      </div>
+    </SwiperSlide>
+  ))}
+</Swiper>
   
               <div className={`${section.paginationId} mt-4 text-center`} />
             </div>
