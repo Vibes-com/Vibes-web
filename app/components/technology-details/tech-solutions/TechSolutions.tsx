@@ -108,7 +108,7 @@ const TechSolutions = () => {
                     {services.map((service, idx) => (
                         <div
                             key={idx}
-                            className="group desktop-hover-only relative w-full overflow-hidden h-[392px] bg-[#466E59]/85 shadow-lg transition-all duration-500 group-hover:text-[#454545]"
+                            className="group desktop-hover-only relative w-full overflow-hidden h-[392px] bg-[#466E59]/85 shadow-lg transition-all duration-500 lg:group-hover:text-[#454545]"
                         >
 
                             {/* -------- DEFAULT BACKGROUND IMAGE -------- */}
@@ -117,7 +117,7 @@ const TechSolutions = () => {
                                 alt="bg" priority unoptimized
                                 fill
                                 className="absolute inset-0 object-cover opacity-20
-              transition-opacity duration-500 group-hover:opacity-0"
+              transition-opacity duration-500 lg:group-hover:opacity-0"
                             />
 
                             {/* -------- HOVER BACKGROUND IMAGE -------- */}
@@ -132,11 +132,11 @@ const TechSolutions = () => {
                             {/* -------- CONTENT -------- */}
                             <div className="relative z-10 px-4 py-10 flex flex-col h-full">
 
-                                <h3 className="font-poppins font-semibold text-[22px] tracking-normal text-[#FFFFFF] group-hover:text-[#454545] ">{service.title}</h3>
+                                <h3 className="font-poppins font-semibold text-[22px] tracking-normal text-[#FFFFFF] lg:group-hover:text-[#454545] ">{service.title}</h3>
 
                                 {/* TAGS → FADE OUT */}
                                 <div className="mt-6 flex flex-wrap gap-3
-              transition-all duration-300 group-hover:hidden group-hover:translate-x-5">
+              transition-all duration-300 lg:group-hover:hidden lg:group-hover:translate-x-5">
                                     {service.tags.map((tag, i) => (
                                         <span
                                             key={i}
