@@ -152,7 +152,7 @@ const BrandingCasestudies = () => {
                             </h3>
 
                             <p className="text-[#525252] mt-5">
-                                A comprehensive branding strategy covering name, logo, colour palette, and clear brand guidelines to ensure consistency across all platforms.
+                                A comprehensive branding strategy covering name  & storytelling, logo, colour palette, and clear brand guidelines to ensure consistency across all platforms.
                             </p>
 
                             <Button2 className="mt-5 p-0!  cursor-pointer p-[20px] hover:text-[#F4BE00] bg-transparent  text-[#204667] text-[16px]">
