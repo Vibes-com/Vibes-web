@@ -88,9 +88,10 @@ const Brandingservices: ServiceItem[] = [
         description:
             " Developing  structured brand strategies and communication frameworks that align messaging, tone, and positioning with business goals.",
         tags: [
-            "Rebranding",
-            "PR, Photoshoot & Videos",
-            "Graphic Design",
+            "Logo Design",
+            "Content Creation",
+            "Storytelling",
+            "Brand Positioning"
         ],
         icon: "/assests/img/branding-details/carporate-icon.png",
         url: "/branding-services/brand-communication-and-strategy",
@@ -119,7 +120,7 @@ const BrandingDetailsServices: React.FC = () => {
                         </h3>
 
                         <p className="text-[#707070]  max-w-2xl mx-auto mb-16 mt-5">
-                            Vibes delivers strategic branding that turns business vision into powerful, consistent identities, aligning purpose, design, and messaging across every customer touchpoint for lasting recognition growth.
+                            Offering strategic branding solutions that transform business vision into clear, consistent brand identities across every customer touchpoint.
                         </p>
                     </div>
 
