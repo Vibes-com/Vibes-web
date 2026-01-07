@@ -154,7 +154,7 @@ const TechSolutions = () => {
                                 {/* PARAGRAPH + BUTTON SLIDE IN */}
                                 <div
                                     className="mt-4 transition-all duration-500 opacity-0 translate-x-10
-                lg:group-hover:opacity-100 group-hover:translate-x-0"
+                lg:group-hover:opacity-100 lg:group-hover:translate-x-0"
                                 >
                                     <p className="font-poppins font-medium text-[12px]  tracking-normal text-[#737373]">{service.description}</p>
 
