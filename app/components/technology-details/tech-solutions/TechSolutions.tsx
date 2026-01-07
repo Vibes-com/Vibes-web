@@ -126,7 +126,7 @@ const TechSolutions = () => {
                                 alt="hover-bg" priority unoptimized
                                 fill
                                 className="absolute inset-0 object-cover opacity-0
-              transition-opacity duration-500 group-hover:opacity-100"
+              transition-opacity duration-500 lg:group-hover:opacity-100"
                             />
 
                             {/* -------- CONTENT -------- */}
@@ -154,11 +154,11 @@ const TechSolutions = () => {
                                 {/* PARAGRAPH + BUTTON SLIDE IN */}
                                 <div
                                     className="mt-4 transition-all duration-500 opacity-0 translate-x-10
-                group-hover:opacity-100 group-hover:translate-x-0"
+                lg:group-hover:opacity-100 group-hover:translate-x-0"
                                 >
                                     <p className="font-poppins font-medium text-[12px]  tracking-normal text-[#737373]">{service.description}</p>
 
-                                    <Button2 className="mt-5 p-[20px] hover:text-[#F4BE00] bg-transparent  text-[#204667] text-[16px]  cursor-pointer">
+                                    <Button2 className="mt-5 p-[20px] hidden md:flex hover:text-[#F4BE00] bg-transparent  text-[#204667] text-[16px]  cursor-pointer  items-center">
                                         <Link href={service.url}><span>View More</span></Link>
                                         <ArrowUpIcon className="transform rotate-45" />
                                     </Button2>
