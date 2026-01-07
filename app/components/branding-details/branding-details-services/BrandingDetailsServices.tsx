@@ -3,6 +3,7 @@ import { Button2 } from "@/components/ui/button2";
 import { ArrowUpIcon } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import {withImageBase} from "@/app/utils/image";
 
 type ServiceItem = {
     title: string;
@@ -67,7 +68,7 @@ const Brandingservices: ServiceItem[] = [
             "Brand Guidelines",
             "Employer Branding",
         ],
-        icon: "/assests/img/branding-details/carporate-icon.png",
+        icon: "/branding-details/carporate-icon.png",
         url: "/branding-services/corporate-branding",
         highlighted: true,
     },
@@ -80,7 +81,7 @@ const Brandingservices: ServiceItem[] = [
             "PR, Photoshoot & Videos",
             "Graphic Design",
         ],
-        icon: "/assests/img/branding-details/carporate-icon.png",
+        icon: "/branding-details/carporate-icon.png",
         url: "/branding-services/brand-upliftment",
     },
     {
@@ -93,7 +94,7 @@ const Brandingservices: ServiceItem[] = [
             "Storytelling",
             "Brand Positioning"
         ],
-        icon: "/assests/img/branding-details/carporate-icon.png",
+        icon: "/branding-details/carporate-icon.png",
         url: "/branding-services/brand-communication-and-strategy",
     },
 ];
@@ -167,7 +168,7 @@ const BrandingServiceCard = ({ service }: any) => {
                 className="group absolute -top-4  right-[-8px] w-18 h-18 z-10 rounded-full flex items-center justify-center transition bg-[#FFFFFF] lg:group-hover:bg-[#F4BE00]
 border-[7px] border-[#ffffff]">
                 <Image
-                    src={service.icon}
+                   src={withImageBase(service.icon)}
                     alt="service icon"
                     width={30}
                     height={30}

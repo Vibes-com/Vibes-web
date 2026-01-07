@@ -26,10 +26,10 @@ const textcontent: blogContent = {
 };
 
 const images = [
-  { src: "/assests/img/branding-details/branding-bottom-img-1.png" },
-  { src: "/assests/img/branding-details/branding-bottom-img-2.png" },
-  { src: "/assests/img/branding-details/branding-bottom-img-3.png" },
-  { src: "/assests/img/branding-details/branding-bottom-img-4.png" },
+  { src: "/branding-details/brand-communication-and-strategy-img-1.jpg" },
+  { src: "/branding-details/brand-communication-and-strategy-img-2.jpg" },
+  { src: "/branding-details/brand-communication-and-strategy-img-3.jpg" },
+  { src: "/branding-details/brand-communication-and-strategy-img-4.jpg" },
 ];
 
 const BrandCommunicationStrategy = () => {

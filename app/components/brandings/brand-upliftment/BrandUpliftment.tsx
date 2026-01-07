@@ -25,10 +25,15 @@ const textcontent: blogContent = {
 };
 
 const images = [
-  { src: "/assests/img/branding-details/branding-bottom-img-1.png" },
-  { src: "/assests/img/branding-details/branding-bottom-img-2.png" },
-  { src: "/assests/img/branding-details/branding-bottom-img-3.png" },
-  { src: "/assests/img/branding-details/branding-bottom-img-4.png" },
+  { src: "/branding-details/brand-upliftment-showcase-img-1.jpg" },
+  { src: "/branding-details/brand-upliftment-showcase-img-2.jpg" },
+  { src: "/branding-details/brand-upliftment-showcase-img-3.jpg" },
+  { src: "/branding-details/brand-upliftment-showcase-img-4.jpg" },
+  { src: "/branding-details/brand-upliftment-showcase-img-5.jpg" },
+  { src: "/branding-details/brand-upliftment-showcase-img-6.jpg" },
+  { src: "/branding-details/brand-upliftment-showcase-img-7.jpg" },
+  { src: "/branding-details/brand-upliftment-showcase-img-8.jpg" },
+  { src: "/branding-details/brand-upliftment-showcase-img-9.jpg" },
 ];
 
 const BrandUpliftment = () => {

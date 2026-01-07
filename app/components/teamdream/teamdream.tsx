@@ -8,7 +8,9 @@ import SlideRight from "../animations/SlideRight";
 import SlideLeft from "../animations/SlideLeft";
 import SlideUp from "../animations/SlideUp";
 import Link from "next/link";
+import {withImageBase} from "@/app/utils/image";
 
+const baseUrl = process.env.NEXT_IMG_URL;
 const TeamDreamSection = () => {
 
     const [showTeam, setShowTeam] = useState(false);
@@ -67,7 +69,7 @@ const TeamDreamSection = () => {
                     <div className="flex-1 flex justify-center">
                         <SlideRight delay={0.5}>
                             <Image
-                                src="/assests/img/home/one-team-img.png"
+                                src={withImageBase("/home/one-team-img.png")}
                                 alt="Team Dream"
                                 width={500}
                                 height={500} priority unoptimized

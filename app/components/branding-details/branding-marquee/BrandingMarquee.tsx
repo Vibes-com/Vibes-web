@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import {withImageBase} from "@/app/utils/image";
 
 const marqueeOne = [
     "Stand Out. Built to Last.",
@@ -28,7 +29,7 @@ const BrandingMarquee = () => {
                             >
                                 <span>{text}</span>
                                 <Image
-                                    src="/assests/img/home/star.png"
+                                     src={withImageBase("/home/star.png")}
                                     alt="star"
                                     width={40}
                                     height={40}
@@ -50,7 +51,7 @@ const BrandingMarquee = () => {
                             >
                                 <span>{text}</span>
                                 <Image
-                                    src="/assests/img/home/star.png"
+                                    src={withImageBase("/home/star.png")}
                                     alt="star"
                                     width={40}
                                     height={40}

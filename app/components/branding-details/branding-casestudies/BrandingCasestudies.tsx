@@ -7,6 +7,7 @@ import Link from "next/link";
 import BrandingMarquee from "../branding-marquee/BrandingMarquee";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
+import {withImageBase} from "@/app/utils/image";
 
 import "swiper/css";
 
@@ -48,7 +49,7 @@ const BrandingCasestudies = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 items-center mb-0">
                     <div className="overflow-hidden">
                         <Image
-                            src="/assests/img/branding-details/branding-case-img-1.png"
+                             src={withImageBase("/branding-details/branding-case-img-1.png")}
                             alt="Luxury Brand Storytelling"
                             width={720}
                             height={674}
@@ -95,7 +96,7 @@ const BrandingCasestudies = () => {
                     </div>
                     <div className="overflow-hidden">
                         <Image
-                            src="/assests/img/branding-details/branding-case-img-2.png"
+                             src={withImageBase("/branding-details/branding-case-img-2.png")}
                             alt="Building a New Age Brand"
                             width={720}
                             height={674}
@@ -108,7 +109,7 @@ const BrandingCasestudies = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 items-center mb-2">
                     <div className="overflow-hidden">
                         <Image
-                            src="/assests/img/branding-details/branding-case-img-3.png"
+                            src={withImageBase("/branding-details/branding-case-img-3.png")}
                             alt="Integrated Brand Identity"
                             width={720}
                             height={674}
@@ -138,7 +139,7 @@ const BrandingCasestudies = () => {
                 <div className="space-y-8 mb-5!">
                     <div className="overflow-hidden">
                         <Image
-                            src="/assests/img/branding-details/branding-case-img-4.png"
+                             src={withImageBase("/branding-details/branding-case-img-4.png")}
                             alt="Brand Campaign Execution"
                             width={1440}
                             height={700}
@@ -188,16 +189,16 @@ const BrandingCasestudies = () => {
                         className="w-full"
                     >
                         {[
-                            "/assests/img/branding-details/branding-bottom-img-1.png",
-                            "/assests/img/branding-details/branding-bottom-img-2.png",
-                            "/assests/img/branding-details/branding-bottom-img-3.png",
-                            "/assests/img/branding-details/branding-bottom-img-4.png",
-                            "/assests/img/branding-details/branding-bottom-img-1.png",
+                            "/branding-details/branding-bottom-img-1.png",
+                            "/branding-details/branding-bottom-img-2.png",
+                            "/branding-details/branding-bottom-img-3.png",
+                            "/branding-details/branding-bottom-img-4.png",
+                            "/branding-details/branding-bottom-img-1.png",
                         ].map((src, index) => (
                             <SwiperSlide key={index}>
                                 <div className="overflow-hidden">
                                     <Image
-                                        src={src}
+                                        src={withImageBase(src)}
                                         alt="Integrated Brand Identity"
                                         width={720}
                                         height={674}
