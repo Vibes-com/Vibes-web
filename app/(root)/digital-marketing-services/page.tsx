@@ -292,7 +292,7 @@ export default function Page() {
       <SuccessStory
         title="Let’s Build Something Powerful"
         subtitle="Scalable digital solutions tailored for you"
-        buttonText="Talk to Experts"
+        buttonText="Talk to  Experts"
         arrowImage="/assests/img/technology-details/arrow.png"
         className="bg-black"
         // onButtonClick={() => router.push("/contact-for-digital-requirements")}

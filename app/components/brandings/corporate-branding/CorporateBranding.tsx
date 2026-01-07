@@ -94,7 +94,7 @@ const CorporateBranding = () => {
             </>
           ),
           description:
-            "Turning brand challenges into growth stories with strategies to solve, scale, and sustain showing how clear vision and 360° digital expertise drive results.",
+            "Showcasing strategic branding work that strengthens identity, builds credibility, and drives long-term value.",
         }}
       />
       <OurBlogs tData={textcontent} />
