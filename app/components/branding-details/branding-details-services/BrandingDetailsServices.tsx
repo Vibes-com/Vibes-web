@@ -164,14 +164,14 @@ const BrandingServiceCard = ({ service }: any) => {
 
             {/* ICON */}
             <div
-                className="group absolute -top-4  right-[-8px] w-18 h-18 z-10 rounded-full flex items-center justify-center transition bg-[#FFFFFF] group-hover:bg-[#F4BE00]
+                className="group absolute -top-4  right-[-8px] w-18 h-18 z-10 rounded-full flex items-center justify-center transition bg-[#FFFFFF] lg:group-hover:bg-[#F4BE00]
 border-[7px] border-[#ffffff]">
                 <Image
                     src={service.icon}
                     alt="service icon"
                     width={30}
                     height={30}
-                    className="invert-1 transition-all duration-300 group-hover:invert"
+                    className="invert-1 transition-all duration-300 lg:group-hover:invert"
                 />
             </div>
 
@@ -187,12 +187,12 @@ border-[7px] border-[#ffffff]">
 
             {/* CONTENT */}
             <div className="relative z-10 px-4 py-10 flex flex-col h-full">
-                <h3 className="font-poppins font-semibold text-[22px] text-white group-hover:text-[#454545]">
+                <h3 className="font-poppins font-semibold text-[22px] text-white lg:group-hover:text-[#454545]">
                     {service.title}
                 </h3>
 
                 {/* TAGS */}
-                <div className="mt-6 flex flex-wrap gap-3 transition-all duration-300 group-hover:hidden">
+                <div className="mt-6 flex flex-wrap gap-3 transition-all duration-300 lg:group-hover:hidden">
                     {service.tags.map((tag: string, i: number) => (
                         <span
                             key={i}
@@ -202,9 +202,14 @@ border-[7px] border-[#ffffff]">
                         </span>
                     ))}
                 </div>
-
+                        <Button2 className="mt-5 p-[20px]  block  lg:hidden cursor-pointer bg-transparent flex justify-start text-[#FFFFFF] hover:text-[#F4BE00]">
+                        <Link href={service.url}>
+                            <span>View More</span>
+                        </Link>
+                        <ArrowUpIcon className="rotate-45" />
+                    </Button2>
                 {/* DESCRIPTION */}
-                <div className="mt-4 transition-all duration-500 opacity-0 translate-x-10 group-hover:opacity-100 group-hover:translate-x-0">
+                <div className="mt-4 transition-all duration-500 opacity-0 translate-x-10 lg:group-hover:opacity-100 lg:group-hover:translate-x-0">
                     <p className="font-poppins font-medium text-[12px] text-[#737373]">
                         {service.description}
                     </p>
