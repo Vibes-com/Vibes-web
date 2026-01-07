@@ -17,7 +17,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 }) => {
   return (
     <section
-      className={`flex items-center ${height} bg-cover bg-left sm:text-bg-center md:text-bg-center] lg:text-bg-center xl:text-bg-center 2xl:bg-center bg-no-repeat`}
+      className={`flex items-center ${height} bg-cover bg-left sm:text-bg-center md:text-bg-center] lg:text-bg-center xl:text-bg-center 2xl:bg-center bg-no-repeat service-bg`}
       style={{
         backgroundImage: `url(${backgroundImage})`,
       }}
