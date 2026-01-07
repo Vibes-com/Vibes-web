@@ -24,54 +24,58 @@ interface CaseStudyDetailsBrandingProps {
 const CaseStudyDetailsBranding: React.FC<CaseStudyDetailsBrandingProps> = ({
   sections,
 }) => {
+  
   return (
     <div className="case-study-details-branding-wrapper">
       {sections.map((section) => {
         const swiperModules: SwiperModule[] = section.autoplay
           ? [Autoplay, Pagination]
           : [Pagination];
-
-        return (
-          <div key={section.paginationId} className="w-full mb-13 lg:mb-20 ">
-
-            {/* TITLE */}
-            <h3 className="mb-3 pb-5 text-center font-poppins font-medium text-[65px]">
-              <span className="highlight font-semibold text-[28px] lg:text-[48px] relative">
-                {section.title}
-              </span>
-            </h3>
-
-            {/* SLIDER */}
-            <Swiper
-              modules={swiperModules}
-              loop
-              spaceBetween={8}
-              slidesPerView={section.slidesPerView ?? 1}
-              // autoplay={section.autoplay ? { delay: 1500 } : false}
-              pagination={{
-                el: `.${section.paginationId}`,
-                clickable: true,
-              }}
-            >
-              {section.images.map((src) => (
-                <SwiperSlide key={src}>
-                  <div className="overflow-hidden">
-                    <Image
-                      src={src}
-                      alt={section.title}
-                      width={720}
-                      height={674}
-                      unoptimized
-                      className="w-full h-auto object-cover transition-transform duration-700 hover:scale-110"
-                    />
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-
-            <div className={`${section.paginationId} mt-4 text-center`} />
-          </div>
-        );
+        if(sections && section.images.length>0){
+          return (
+            <div key={section.paginationId} className="w-full mb-13 lg:mb-20 ">
+  
+              {/* TITLE */}
+              <h3 className="mb-3 pb-5 text-center font-poppins font-medium text-[65px]">
+                <span className="highlight font-semibold text-[28px] lg:text-[48px] relative">
+                  {section.title}
+                </span>
+              </h3>
+  
+              {/* SLIDER */}
+              <Swiper
+                modules={swiperModules}
+                loop
+                spaceBetween={8}
+                slidesPerView={section.slidesPerView ?? 1}
+                // autoplay={section.autoplay ? { delay: 1500 } : false}
+                pagination={{
+                  el: `.${section.paginationId}`,
+                  clickable: true,
+                }}
+              >
+                {section.images.map((src) => (
+                  <SwiperSlide key={src}>
+                    <div className="overflow-hidden">
+                      <Image
+                        src={src}
+                        alt={section.title}
+                        width={720}
+                        height={674}
+                        unoptimized
+                        className="w-full h-auto object-cover transition-transform duration-700 hover:scale-110"
+                      />
+                    </div>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+  
+              <div className={`${section.paginationId} mt-4 text-center`} />
+            </div>
+          );
+        }else{
+          return null
+        }
       })}
     </div>
   );
