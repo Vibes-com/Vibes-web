@@ -53,11 +53,11 @@ const CaseStudyDetailsBrief: React.FC<CaseStudyDetailsBriefProps> = ({
               />
             </div>
 
-            <p
+            <p dangerouslySetInnerHTML={{ __html: text }}
               className="text-base leading-[26px] font-poppins font-normal"
               style={{ color: block.textColor ?? "#575757DB" }}
             >
-              {text}
+              
             </p>
           </div>
         ))}
