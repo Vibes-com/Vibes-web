@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
 import { FaShareAlt, FaTimes } from 'react-icons/fa';
+import {withImageBase} from "@/app/utils/image";
 
 const BlogShareButtons = () => {
     const [open, setOpen] = useState(false);
@@ -35,7 +36,7 @@ const BlogShareButtons = () => {
                             href={``}
                         >
                             <Image
-                                src="/assests/img/blog/whatsapp_share.png"
+                                src={withImageBase("/blog/whatsapp_share.png")}
                                 className="w-[40px]"
                                 alt="WhatsApp"
                                 width={30}
@@ -51,7 +52,7 @@ const BlogShareButtons = () => {
                             href={``}
                         >
                             <Image
-                                src="/assests/img/blog/facebook_share.png"
+                                src={withImageBase("/blog/facebook_share.png")}
                                 className="w-[40px]"
                                 alt="Facebook"
                                 width={30}
@@ -67,7 +68,7 @@ const BlogShareButtons = () => {
                             href={``}
                         >
                             <Image
-                                src="/assests/img/blog/twitter_share.png"
+                                 src={withImageBase("/blog/twitter_share.png")}
                                 className="w-[40px]"
                                 alt="Twitter"
                                 width={30}
@@ -83,7 +84,7 @@ const BlogShareButtons = () => {
                             href={``}
                         >
                             <Image
-                                src="/assests/img/blog/linkedin_share.png"
+                                src={withImageBase("/blog/linkedin_share.png")}
                                 className="w-[40px]"
                                 alt="LinkedIn"
                                 width={30}

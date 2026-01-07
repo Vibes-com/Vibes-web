@@ -5,6 +5,7 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
+import { withImageBase } from "@/app/utils/image";
 
 /* ---------- TYPES ---------- */
 
@@ -92,7 +93,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
             <SwiperSlide key={`${item.src}-${index}`}>
               <div className="overflow-hidden border-[5px] border-white">
                 <Image
-                  src={item.src}
+                  src={withImageBase(item.src)}
                   alt={item.alt || "carousel image"}
                   width={720}
                   height={674}
