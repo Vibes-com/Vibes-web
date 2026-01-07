@@ -132,7 +132,7 @@ const TechSolutions = () => {
                             {/* -------- CONTENT -------- */}
                             <div className="relative z-10 px-4 py-10 flex flex-col h-full">
 
-                                <h3 className="font-poppins font-semibold text-[22px] tracking-normal text-[#FFFFFF] lg:group-hover:text-[#454545] ">{service.title}</h3>
+                                <h3 className="font-poppins font-semibold text-[20px] lg:text-[22px] tracking-normal text-[#FFFFFF] lg:group-hover:text-[#454545] ">{service.title}</h3>
 
                                 {/* TAGS → FADE OUT */}
                                 <div className="mt-6 flex flex-wrap gap-3
@@ -147,7 +147,7 @@ const TechSolutions = () => {
                                     ))}
                                 </div>
                                  <Button2 className="block  lg:hidden mt-5 p-[20px] hover:text-[#F4BE00] bg-transparent  text-[#FFFFFF] text-[16px]  cursor-pointer flex justify-start">
-                                        <Link href={service.url}><span>View More</span></Link>
+                                        <Link href={service.url}><span className="text-[16px] lg:text-[18px] ">View More</span></Link>
                                         <ArrowUpIcon className="transform rotate-45" />
                                     </Button2>
 
