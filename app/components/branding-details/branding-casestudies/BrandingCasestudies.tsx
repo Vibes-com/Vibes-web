@@ -122,7 +122,7 @@ const BrandingCasestudies = () => {
                             </h3>
 
                             <p className="text-[#525252] mt-5 max-w-lg">
-                                A focused branding approach shaped distinct B2B and B2C identities through research-led rebranding, campaigns, and consistent digital presence.
+                                A complete 360° branding approach shaped Maxim Alert’s identity through logo, colours, tagline, and consistent marketing across all touchpoints.
                             </p>
 
                             <Button2 className="mt-5  cursor-pointer p-0! p-[20px] hover:text-[#F4BE00] bg-transparent  text-[#204667] text-[16px]">
