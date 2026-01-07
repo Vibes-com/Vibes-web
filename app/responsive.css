@@ -1,3 +1,14 @@
+ @media(min-width: 1780px) and (max-width: 1800px){
+.service-bg{
+   height: 65vh;
+}
+.hero-video{
+    height: 86vh;
+}
+
+ }
+ 
+ 
  @media (max-width: 1024px){
 .nv-menu{
     font-size: 10px!important;
