@@ -108,7 +108,7 @@ const TechSolutions = () => {
                     {services.map((service, idx) => (
                         <div
                             key={idx}
-                            className="group relative w-full overflow-hidden h-[392px] bg-[#466E59]/85 shadow-lg transition-all duration-500 group-hover:text-[#454545]"
+                            className="group desktop-hover-only relative w-full overflow-hidden h-[392px] bg-[#466E59]/85 shadow-lg transition-all duration-500 group-hover:text-[#454545]"
                         >
 
                             {/* -------- DEFAULT BACKGROUND IMAGE -------- */}

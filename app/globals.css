@@ -1378,3 +1378,34 @@ border-right: none;
     background: #466e5999;
     border: 1px solid #466e59!important;
 }
+/* Desktop only: hover + minimum width */
+@media (hover: hover) and (min-width: 1024px) {
+  .desktop-hover-only:hover .hover-show {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .desktop-hover-only:hover .hover-hide {
+    display: none;
+  }
+
+  .desktop-hover-only:hover .bg-default {
+    opacity: 0;
+  }
+
+  .desktop-hover-only:hover .bg-hover {
+    opacity: 1;
+  }
+}
+
+/* Mobile & Tablet (touch OR small screens) */
+@media (hover: none), (max-width: 1023px) {
+  .desktop-hover-only .hover-show {
+    opacity: 1;
+    transform: none;
+  }
+
+  .desktop-hover-only .hover-hide {
+    display: none;
+  }
+}
