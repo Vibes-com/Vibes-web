@@ -30,6 +30,18 @@ export default function BlogListing() {
       new Set(blogs.map((blog: any) => blog.blog_service))
     );
 
+    
+    function htmlToPlainText(html: string, maxLength = 190) {
+      if (!html) return "";
+
+      const div = document.createElement("div");
+      div.innerHTML = html;
+
+      const text = div.textContent || div.innerText || "";
+      return text.length > maxLength
+        ? text.slice(0, maxLength).trim() + "…"
+        : text;
+    }
 
   const LatestBlog = blogs[0]
   const LatestBlogList = blogs.slice(0, 4)
@@ -146,9 +158,7 @@ export default function BlogListing() {
                     <p className="font-poppins font-medium text-[12px] leading-[100%] tracking-[0px] text-[#636060] mb-2">{blog.created_on}</p>
                     <p className="text-[#525252] line-clamp-3 text-[14px]">
                       {blog.blog_small_description ||
-                        blog.blog_description
-                          .replace(/<[^>]*>/g, "")
-                          .substring(0, 200)}
+    htmlToPlainText(blog.blog_description, 190)}
                     </p>
                   </div>
                 </div>

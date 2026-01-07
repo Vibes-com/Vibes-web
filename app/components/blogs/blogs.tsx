@@ -55,7 +55,17 @@ interface BlogsProps {
 //         link: "/blogs/103",
 //     },
 // ];
+function htmlToPlainText(html: string, maxLength = 190) {
+      if (!html) return "";
 
+      const div = document.createElement("div");
+      div.innerHTML = html;
+
+      const text = div.textContent || div.innerText || "";
+      return text.length > maxLength
+        ? text.slice(0, maxLength).trim() + "…"
+        : text;
+    }
 export default function OurBlogs({ tData }: BlogsProps) {
     const { data, error, isLoading } = useGetAllBlogsQuery();
     
@@ -131,9 +141,7 @@ export default function OurBlogs({ tData }: BlogsProps) {
                                 </h4>
                                 <p className="font-poppins font-normal text-[12px] lg:text-[14px] leading-[130%] tracking-[0px] text-[#606060]">
                                     {item.blog_small_description ||
-                                        item.blog_description
-                                        .replace(/<[^>]*>/g, "")
-                                        .substring(0, 200)}
+    htmlToPlainText(item.blog_description, 190)}
                                 </p>
                                 <Link href={`/digital-insights-blogs/${item.blog_slug}`}>
                                 <Button3 className=" text-[#204667] cursor-pointer text-[14px] flex items-center gap-2">
