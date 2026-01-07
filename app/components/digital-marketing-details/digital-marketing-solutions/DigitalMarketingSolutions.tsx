@@ -108,18 +108,18 @@ const DigitalMarketingSolutions = () => {
 
 const ServiceCard = ({ service }: any) => {
     return (
-        <div className="group relative w-full  h-[278px] bg-[#466E59]/100 shadow-lg transition-all duration-500 rounded-lg hover:bg-[#FFFFFF]">
+        <div className="group relative w-full  h-[278px] bg-[#466E59]/100 shadow-lg transition-all duration-500 rounded-lg lg:hover:bg-[#FFFFFF]">
 
             {/* ICON */}
             <div
-                className="group absolute -top-4 right-[-8px] w-18 h-18 z-10 rounded-full flex items-center justify-center transition bg-[#FFFFFF] group-hover:bg-[rgb(70,110,89)]
+                className="group absolute -top-4 right-[-8px] w-18 h-18 z-10 rounded-full flex items-center justify-center transition bg-[#FFFFFF] lg:group-hover:bg-[rgb(70,110,89)]
 border-[7px] border-[#ffffff]">
                 <Image
                     src={service.icon}
                     alt="service icon"
                     width={30}
                     height={30}
-                    className="invert-1 transition-all duration-300 group-hover:invert"
+                    className="invert-1 transition-all duration-300 lg:group-hover:invert"
                 />
             </div>
 
@@ -129,18 +129,18 @@ border-[7px] border-[#ffffff]">
                 alt="bg"
                 fill
                 unoptimized
-                className="absolute inset-0 object-cover opacity-5 transition-opacity duration-500 group-hover:opacity-0 rounded-lg"
+                className="absolute inset-0 object-cover opacity-5 transition-opacity duration-500 lg:group-hover:opacity-0 rounded-lg"
             />
 
 
             {/* CONTENT */}
             <div className="relative z-10 px-4 py-10 flex flex-col h-full">
-                <h3 className="font-poppins font-semibold text-[22px] text-white group-hover:text-[#454545]">
+                <h3 className="font-poppins font-semibold text-[18px] lg:text-[22px] text-white lg:group-hover:text-[#454545]">
                     {service.title}
                 </h3>
 
                 {/* TAGS */}
-                <div className="mt-6 flex flex-wrap gap-3 transition-all duration-300 group-hover:hidden">
+                <div className="mt-6 flex flex-wrap gap-3 transition-all duration-300 lg:group-hover:hidden">
                     {service.tags.map((tag: string, i: number) => (
                         <span
                             key={i}
@@ -150,14 +150,19 @@ border-[7px] border-[#ffffff]">
                         </span>
                     ))}
                 </div>
-
+                   <Button2 className="mt-5 p-[20px] block lg:hidden cursor-pointer bg-transparent flex justify-start text-[#FFFFFF] hover:text-[#F4BE00]">
+                        <Link href={service.url}>
+                            <span className=" text-[16px] lg:text-[18px]">View More</span>
+                        </Link>
+                        <ArrowUpIcon className="rotate-45" />
+                    </Button2>
                 {/* DESCRIPTION */}
-                <div className="mt-4 transition-all duration-500 opacity-0 translate-x-10 group-hover:opacity-100 group-hover:translate-x-0">
+                <div className="mt-4 transition-all duration-500 opacity-0 translate-x-10 lg:group-hover:opacity-100 lg:group-hover:translate-x-0">
                     <p className="font-poppins font-medium text-[12px] text-[#737373]">
                         {service.description}
                     </p>
 
-                    <Button2 className="mt-5 p-[20px]  cursor-pointer bg-transparent text-[#204667] hover:text-[#F4BE00]">
+                    <Button2 className="mt-5 p-[20px]  cursor-pointer bg-transparent text-[#204667] lg:hover:text-[#F4BE00]">
                         <Link href={service.url}>
                             <span>View More</span>
                         </Link>
