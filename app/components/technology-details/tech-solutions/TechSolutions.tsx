@@ -108,35 +108,25 @@ const TechSolutions = () => {
                     {services.map((service, idx) => (
                         <div
                             key={idx}
-                            className="group relative w-full overflow-hidden h-[392px]
-    bg-[#466E59]/85 shadow-lg transition-all duration-500
-    focus-within:ring-2 focus-within:ring-[#F4BE00]"
+                            className="group relative w-full overflow-hidden h-[392px] bg-[#466E59]/85 shadow-lg transition-all duration-500 group-hover:text-[#454545]"
                         >
 
                             {/* -------- DEFAULT BACKGROUND IMAGE -------- */}
-                          <Image
-                            src={service.bgImage}
-                            alt={service.title}
-                            fill
-                            className="
-                                absolute inset-0 object-cover opacity-20
-                                transition-opacity duration-500
-                                group-hover:opacity-0
-                                group-focus-within:opacity-0
-                            "
+                            <Image
+                                src={service.bgImage}
+                                alt="bg" priority unoptimized
+                                fill
+                                className="absolute inset-0 object-cover opacity-20
+              transition-opacity duration-500 group-hover:opacity-0"
                             />
 
                             {/* -------- HOVER BACKGROUND IMAGE -------- */}
-                           <Image
-                            src={service.hoverBgImage}
-                            alt=""
-                            fill
-                            className="
-                                absolute inset-0 object-cover opacity-0
-                                transition-opacity duration-500
-                                group-hover:opacity-100
-                                group-focus-within:opacity-100
-                            "
+                            <Image
+                                src={service.hoverBgImage}
+                                alt="hover-bg" priority unoptimized
+                                fill
+                                className="absolute inset-0 object-cover opacity-0
+              transition-opacity duration-500 group-hover:opacity-100"
                             />
 
                             {/* -------- CONTENT -------- */}
@@ -145,10 +135,8 @@ const TechSolutions = () => {
                                 <h3 className="font-poppins font-semibold text-[22px] tracking-normal text-[#FFFFFF] group-hover:text-[#454545] ">{service.title}</h3>
 
                                 {/* TAGS → FADE OUT */}
-                                <div className=" mt-6 flex flex-wrap gap-3
-                                    transition-all duration-300
-                                    group-hover:hidden
-                                    group-focus-within:hidden">
+                                <div className="mt-6 flex flex-wrap gap-3
+              transition-all duration-300 group-hover:hidden group-hover:translate-x-5">
                                     {service.tags.map((tag, i) => (
                                         <span
                                             key={i}
@@ -158,26 +146,22 @@ const TechSolutions = () => {
                                         </span>
                                     ))}
                                 </div>
+                                 <Button2 className="block md: block lg:hidden mt-5 p-[20px] hover:text-[#F4BE00] bg-transparent  text-[#FFFFFF] text-[16px]  cursor-pointer flex justify-start">
+                                        <Link href={service.url}><span>View More</span></Link>
+                                        <ArrowUpIcon className="transform rotate-45" />
+                                    </Button2>
 
                                 {/* PARAGRAPH + BUTTON SLIDE IN */}
                                 <div
-                                    className="mt-4 transition-all duration-500
-                                    opacity-0 translate-x-10
-                                    group-hover:opacity-100 group-hover:translate-x-0
-                                    group-focus-within:opacity-100 group-focus-within:translate-x-0"
+                                    className="mt-4 transition-all duration-500 opacity-0 translate-x-10
+                group-hover:opacity-100 group-hover:translate-x-0"
                                 >
                                     <p className="font-poppins font-medium text-[12px]  tracking-normal text-[#737373]">{service.description}</p>
 
-                                   <Link
-                                    href={service.url}
-                                    className="inline-flex items-center gap-2 bg-transparent  focus:outline-none"
-                                    >
-                                    <Button2
-                                    className=" pt-5 text-[16px] bg-transparent cursor-pointer text-[#204667] hover:text-[#F4BE00]">
-                                        View More
-                                        <ArrowUpIcon className="rotate-45" />
+                                    <Button2 className="mt-5 p-[20px] hover:text-[#F4BE00] bg-transparent  text-[#204667] text-[16px]  cursor-pointer">
+                                        <Link href={service.url}><span>View More</span></Link>
+                                        <ArrowUpIcon className="transform rotate-45" />
                                     </Button2>
-                                    </Link>
 
                                 </div>
 
