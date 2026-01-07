@@ -79,7 +79,7 @@ const textcontent: blogContent = {
   highlighttitle: "digital success.",
   Subtitle: (
     <>
-      Subtext: Insights focused on performance, visibility, and sustainable<br /> digital growth.
+      Insights focused on performance, visibility, and sustainable<br /> digital growth.
     </>
   ),
   bgImage: '/assets/img/web-development/wd-services-bg.jpg',
