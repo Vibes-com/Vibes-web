@@ -38,14 +38,14 @@ const CaseStudyDetailsImpact: React.FC<CaseStudyDetailsImpactProps> = ({
               </div>
             </div>
 
-            <h3 className="font-poppins font-medium text-[33px] lg:text-[65px] leading-[1.23]">
+            <h3 className="font-poppins font-medium text-[30px] lg:text-[50px] leading-[1.23]">
               {titleLines.map((line, index) => (
                 <span key={index} className="block">
                   {line}
                 </span>
               ))}
 
-              <span className="highlight w-fit  relative z-10 block font-poppins font-semibold text-[40px] lg:text-[55px]">
+              <span className="highlight w-fit  relative z-10 block font-poppins font-semibold text-[30px] lg:text-[45px]">
                 {highlightText}
               </span>
             </h3>

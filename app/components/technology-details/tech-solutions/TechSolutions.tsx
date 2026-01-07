@@ -146,6 +146,10 @@ const TechSolutions = () => {
                                         </span>
                                     ))}
                                 </div>
+                                 <Button2 className="block md: block lg:hidden mt-5 p-[20px] hover:text-[#F4BE00] bg-transparent  text-[#FFFFFF] text-[16px]  cursor-pointer flex justify-start">
+                                        <Link href={service.url}><span>View More</span></Link>
+                                        <ArrowUpIcon className="transform rotate-45" />
+                                    </Button2>
 
                                 {/* PARAGRAPH + BUTTON SLIDE IN */}
                                 <div
