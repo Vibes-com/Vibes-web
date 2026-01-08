@@ -1379,6 +1379,15 @@ border-right: none;
     background: #466e5999;
     border: 1px solid #466e59!important;
 }
-
+.highlight-title::before{
+    content: "";
+    z-index: -9;
+    background: #f4be00;
+    width: 100%;
+    height: 9px;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+}
 
 

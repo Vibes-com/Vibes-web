@@ -133,7 +133,7 @@ export default function MilestoneSection() {
                         </span>
                     </div>
                 </div>
-                <h3 className="font-poppins font-medium text-[28px] sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px]  leading-[123%] tracking-normal text-[#FFFFFF]"><span className="highlight relative z-9 w-fit">Milestone</span> Metrics</h3>
+                <h3 className="font-poppins font-medium text-[28px] sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px]  leading-[123%] tracking-normal text-[#FFFFFF]"><span className="highlight-title relative z-9 w-fit">Milestone</span> Metrics</h3>
 
                 <p className="text-[#FFFFFFDB] font-normal text-[16px] leading-[130%] tracking-[0] text-center max-w-3xl mx-auto mb-5 sm:mb-15  md:mb-15 lg:mb-15 xl:mb-15 2xl:mb-5 mt-5">
                     A clear snapshot of the brands, projects, and successes we’ve built together, reflecting the scale of our partnerships and the momentum powering every milestone.

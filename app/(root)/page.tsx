@@ -22,8 +22,41 @@ const slides: SlideItem[] = [
   {
     type: "images",
     images: [
-      { src: "/assests/img/home/brand-img-1.jpg" },
-      { src: "/assests/img/home/brand-img-2.jpg" },
+      { src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img4.webp" },
+      { src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img1.webp" },
+    ],
+  },
+  {
+    type: "video",
+    src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video2.mp4",
+  },
+  {
+    type: "images",
+    images: [
+      { src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-image18.jpg" },
+      { src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img14.webp" },
+    ],
+  },
+  {
+    type: "video",
+    src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video9.mp4",
+  },
+  {
+    type: "images",
+    images: [
+      { src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-image19.jpg" },
+      { src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img6.webp" },
+    ],
+  },
+  {
+    type: "video",
+    src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video6.mp4",
+  },
+  {
+    type: "images",
+    images: [
+      { src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img7.webp" },
+      { src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-image17.jpg" },
     ],
   },
   {
@@ -33,74 +66,52 @@ const slides: SlideItem[] = [
   {
     type: "images",
     images: [
-      { src: "/assests/img/home/brand-img-3.jpg" },
-      { src: "/assests/img/home/brand-img-4.png" },
+      { src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-image20.jpg" },
+      { src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img10.webp" },
     ],
   },
   {
     type: "video",
-    src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video1.mp4",
+    src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video3.mp4",
   },
   {
     type: "images",
     images: [
-      { src: "/assests/img/home/brand-img-1.jpg" },
-      { src: "/assests/img/home/brand-img-2.jpg" },
+      { src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-image26.jpg" },
+      { src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img12.webp" },
     ],
   },
   {
     type: "video",
-    src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video1.mp4",
+    src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video7.mp4",
   },
   {
     type: "images",
     images: [
-      { src: "/assests/img/home/brand-img-3.jpg" },
-      { src: "/assests/img/home/brand-img-4.png" },
+      { src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img13.webp" },
+      { src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-image21.jpg" },
     ],
   },
   {
     type: "video",
-    src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video1.mp4",
+    src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video4.mp4",
   },
   {
     type: "images",
     images: [
-      { src: "/assests/img/home/brand-img-1.jpg" },
-      { src: "/assests/img/home/brand-img-2.jpg" },
+      { src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img16.webp" },
+      { src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-image25.jpg" },
     ],
   },
-  {
+   {
     type: "video",
-    src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video1.mp4",
+    src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video5.mp4",
   },
   {
     type: "images",
     images: [
-      { src: "/assests/img/home/brand-img-3.jpg" },
-      { src: "/assests/img/home/brand-img-4.png" },
-    ],
-  },
-  {
-    type: "video",
-    src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video1.mp4",
-  },
-  {
-    type: "images",
-    images: [
-      { src: "/assests/img/home/brand-img-1.jpg" },
-      { src: "/assests/img/home/brand-img-2.jpg" },
-    ],
-  },
-  {
-    type: "video",
-    src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video1.mp4",
-  },
-  {
-    type: "images",
-    images: [
-      { src: "/assests/img/home/brand-img-3.jpg" },
-      { src: "/assests/img/home/brand-img-4.png" },
+      { src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img2.webp" },
+      { src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img3.webp" },
     ],
   },
 ];
