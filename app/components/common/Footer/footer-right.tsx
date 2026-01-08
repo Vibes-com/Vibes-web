@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from 'next/image'
 import { withImageBase } from "@/app/utils/image";
 import { Facebook, Instagram, Twitter, Youtube, Linkedin } from "lucide-react";
+import { X } from "lucide-react";
 
 export default function FooterRightSection() {
     return (
@@ -36,7 +37,7 @@ export default function FooterRightSection() {
                 <div className="flex items-center gap-5 mt-2">
                     <Link target="_blank" href="https://www.facebook.com/vibescomm" className="hover:text-[#E3A324] transition bg-[#585858] rounded-full h-[25px] w-[25px] flex items-center justify-center"><Facebook size={15} strokeWidth={1.6} /></Link>
                     <Link target="_blank" href="https://www.instagram.com/vibescom/" className="hover:text-[#E3A324] transition bg-[#585858] rounded-full h-[25px] w-[25px] flex items-center justify-center"><Instagram size={15} strokeWidth={1.6} /></Link>
-                    <Link target="_blank" href="https://x.com/Vibescom" className="hover:text-[#E3A324] transition bg-[#585858] rounded-full h-[25px] w-[25px] flex items-center justify-center"><Twitter size={15} strokeWidth={1.6} /></Link>
+                    <Link target="_blank" href="https://x.com/Vibescom" className="hover:text-[#E3A324] transition bg-[#585858] rounded-full h-[25px] w-[25px] flex items-center justify-center"><svg viewBox="0 0 24 24"width="11" height="11"fill="currentColor"> <path d="M18.9 2H22l-7.1 8.1L23 22h-6.5l-5.1-6.2L5.7 22H2.6l7.6-8.7L1 2h6.7l4.6 5.6L18.9 2z" /></svg></Link>
                     <Link target="_blank" href="https://www.youtube.com/channel/UChD9LXlNV4_XnOmVmG2LTvQ/videos" className="hover:text-[#E3A324] transition bg-[#585858] rounded-full h-[25px] w-[25px] flex items-center justify-center"><Youtube size={15} strokeWidth={1.6} /></Link>
                     <Link target="_blank" href="https://www.linkedin.com/company/vibes-communications-pvt--ltd-/" className="hover:text-[#E3A324] transition bg-[#585858] rounded-full h-[25px] w-[25px] flex items-center justify-center"><Linkedin size={15} strokeWidth={1.6} /></Link>
                 </div>

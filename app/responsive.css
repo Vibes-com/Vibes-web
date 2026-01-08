@@ -286,4 +286,8 @@ height: 250px;
     .case-study-listing-wrapper .case-study-card-common {
     height: 240px;
 }
+.brnd-icon{
+    height: 50px;
+    width: 50px;
+}
 }

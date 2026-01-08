@@ -165,7 +165,7 @@ const BrandingServiceCard = ({ service }: any) => {
 
             {/* ICON */}
             <div
-                className="group absolute -top-4  right-[-8px] w-18 h-18 z-10 rounded-full flex items-center justify-center transition bg-[#FFFFFF] lg:group-hover:bg-[#F4BE00]
+                className="group brnd-icon absolute -top-4  right-[-8px] w-18 h-18 z-10 rounded-full flex items-center justify-center transition bg-[#FFFFFF] lg:group-hover:bg-[#F4BE00]
 border-[7px] border-[#ffffff]">
                 <Image
                    src={withImageBase(service.icon)}
