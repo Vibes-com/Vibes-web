@@ -14,25 +14,25 @@ const slides: BuiltWaySlide[] = [
     id: "1",
     title: "End-to-End Project Visibility",
     desc: "Complete oversight across planning, execution, monitoring, and closure stages.",
-    icon: "/assests/img/pmis/project-visibility.png",
+    icon: "/pmis/project-visibility.png",
   },
   {
     id: "2",
     title: "Real-Time Monitoring & Tracking",
     desc: "Live performance updates enable timely course correction and progress control.",
-    icon: "/assests/img/pmis/real-time.png",
+    icon: "/pmis/real-time.png",
   },
   {
     id: "3",
     title: "Stronger Governance & Accountability",
     desc: "Clearly defined roles approvals, and audit trails ensure compliance and resposibility",
-    icon: "/assests/img/pmis/governance.png",
+    icon: "/pmis/governance.png",
   },
   {
     id: "4",
     title: "End-to-End Project Visibility",
     desc: "Complete oversight across planning, execution, monitoring, and closure stages.",
-    icon: "/assests/img/pmis/project-visibility.png",
+    icon: "/pmis/project-visibility.png",
   },
 ];
 
@@ -102,22 +102,22 @@ const PmisDevelopment = () => {
           {
             title: "PMIS Portal Enhancement",
             desc: "Optimized portals designed for usability, performance, and secure multi-stakeholder access.",
-            icon: "/assests/img/pmis/portal.png",
+            icon: "/pmis/portal.png",
           },
           {
             title: "Dashboard Design & Analytics",
             desc: "Insight-driven dashboards delivering real-time project status, performance metrics, and actionable analytics.",
-            icon: "/assests/img/pmis/dashboard.png",
+            icon: "/pmis/dashboard.png",
           },
           {
             title: "User Flow & Functional Architecture",
             desc: "Structured workflows and system architecture ensuring clarity, compliance, and seamless navigation across roles.",
-            icon: "/assests/img/web-development/why-choose-icon1.png",
+            icon: "/web-development/why-choose-icon1.png",
           },
           {
             title: "Data Visualization",
             desc: "Interactive visual representations that simplify complex project data, highlight trends, and enable faster, insight-led governance decisions.",
-            icon: "/assests/img/pmis/data-visualization.png",
+            icon: "/pmis/data-visualization.png",
           },
         ]}
       />

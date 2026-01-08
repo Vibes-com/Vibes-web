@@ -45,22 +45,22 @@ const SocialMediaManagement = () => {
         heading="Strategic Social Media "
         highlightText="Services"
         description=" End-to-end social media solutions focused on planning, storytelling, and performance crafted to align brand objectives with audience behaviour."
-        mainImage="/assests/img/digital-m-details/social-media-left-img.png"
+        mainImage="/digital-m-details/social-media-left-img.png"
         bgImage="/assests/img/web-development/wd-services-bg.jpg"
         features={[
           {
-            icon: "/assests/img/digital-m-details/copy-writing.png",
+            icon: "/digital-m-details/copy-writing.png",
             title: <>Content Creation & Planning</>,
             subtitle: "Purpose-driven content calendars, platform-specific creatives, and messaging frameworks built to maintain consistency, relevance, and brand recall."
           },
           {
-            icon: "/assests/img/digital-m-details/b2b.png",
+            icon: "/digital-m-details/b2b.png",
             title: <>B2B Social Media Management</>,
             subtitle: "Professional, insight-driven social strategies that position brands as industry leaders, strengthen credibility, and support long-term business growth."
           },
 
           {
-            icon: "/assests/img/digital-m-details/b2c.png",
+            icon: "/digital-m-details/b2c.png",
             title: <>B2C Social Media Management</>,
             subtitle: "Engaging, trend-responsive social storytelling designed to increase visibility, build community, and drive meaningful consumer interaction."
           },

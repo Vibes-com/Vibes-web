@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from 'next/image'
+import { withImageBase } from "@/app/utils/image";
 import { Facebook, Instagram, Twitter, Youtube, Linkedin } from "lucide-react";
 
 export default function FooterRightSection() {
@@ -24,7 +25,7 @@ export default function FooterRightSection() {
 
             <div className="col-span-4 pt-4 sm:pt-0 md:pt-0 lg:pt-0 xl:pt-0 2xl:pt-0">
                 <Image
-                    src={"/assests/img/home/vibes-logo.png"}
+                    src={withImageBase("/home/vibes-logo.png")}
                     alt=''
                     width={100}
                     height={100}

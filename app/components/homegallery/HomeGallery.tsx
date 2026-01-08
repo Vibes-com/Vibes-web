@@ -4,6 +4,7 @@ import { Button2 } from "@/components/ui/button2";
 import { ArrowUpIcon } from "lucide-react";
 import SlideUp from '../animations/SlideUp';
 import Link from 'next/link';
+import { withImageBase } from "@/app/utils/image";
 
 const HomeGallery = () => {
   return (
@@ -36,7 +37,7 @@ const HomeGallery = () => {
           <div className="wrapper w-80 mt-5">
             <div>
               <Image
-                src="/assests/img/home/home-gallery-img-1.jpg"
+                src={withImageBase("/home/home-gallery-img-1.jpg")}
                 alt="Gallery Image 1"
                 width={400}
                 height={400}
@@ -45,7 +46,7 @@ const HomeGallery = () => {
 
             <div>
               <Image
-                src="/assests/img/home/home-gallery-img-2.jpg"
+               src={withImageBase("/home/home-gallery-img-2.jpg")}
                 alt="Gallery Image 2"
                 width={400}
                 height={400}
@@ -54,7 +55,7 @@ const HomeGallery = () => {
 
             <div>
               <Image
-                src="/assests/img/home/home-gallery-img-3.jpg"
+               src={withImageBase("/home/home-gallery-img-3.jpg")}
                 alt="Gallery Image 3"
                 width={400}
                 height={400}
@@ -63,7 +64,7 @@ const HomeGallery = () => {
 
             <div>
               <Image
-                src="/assests/img/home/home-gallery-img-4.png"
+                src={withImageBase("/home/home-gallery-img-4.png")}
                 alt="Gallery Image 4"
                 width={400}
                 height={400}
@@ -72,7 +73,7 @@ const HomeGallery = () => {
 
             <div>
               <Image
-                src="/assests/img/home/home-gallery-img-5.jpg"
+               src={withImageBase("/home/home-gallery-img-5.jpg")}
                 alt="Gallery Image 5"
                 width={400}
                 height={400}
@@ -81,7 +82,7 @@ const HomeGallery = () => {
 
             <div>
               <Image
-                src="/assests/img/home/home-gallery-img-6.jpg"
+                src={withImageBase("/home/home-gallery-img-6.jpg")}
                 alt="Gallery Image 6"
                 width={400}
                 height={400}

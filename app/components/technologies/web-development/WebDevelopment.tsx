@@ -14,31 +14,31 @@ const slides: BuiltWaySlide[] = [
     id: "testing",
     title: "Application Testing",
     desc: "Ensuring flawless performance with rigorous, end-to-end quality checks.",
-    icon: "/assests/img/web-development/testing-icon.png",
+    icon: "/web-development/testing-icon.png",
   },
   {
     id: "uiux",
     title: "UI/UX Design",
     desc: "Crafting intuitive, user-first designs that elevate every digital interaction.",
-    icon: "/assests/img/web-development/built-way-icon-2.png",
+    icon: "/web-development/built-way-icon-2.png",
   },
   {
     id: "cms",
     title: "CMS Development",
     desc: "Building scalable, easy-to-manage content systems tailored to your workflow.",
-    icon: "/assests/img/web-development/built-way-icon-3.png",
+    icon: "/web-development/built-way-icon-3.png",
   },
   {
     id: "figma",
     title: "Figma Mockup",
     desc: "Turning ideas into pixel-perfect visual prototypes for faster approvals.",
-    icon: "/assests/img/web-development/figma.png",
+    icon: "/web-development/figma.png",
   },
   {
     id: "maintenance",
     title: "Maintenance & Support",
     desc: "Keeping your digital products smooth, secure, and always up-to-date.",
-    icon: "/assests/img/web-development/it-support.png",
+    icon: "/web-development/it-support.png",
   },
 ];
 
@@ -62,27 +62,27 @@ const WebDevelopment = () => {
         heading="IT Solutions Engineered for"
         highlightText="Speed and Scalability"
         description="Vibes develops secure, bespoke web platforms engineered for high performance, scalability, and reliability."
-        mainImage="/assests/img/web-development/webdevelopment-about-img.png"
+        mainImage="/web-development/webdevelopment-about-img.png"
         bgImage="/assests/img/web-development/wd-services-bg.jpg"
 
         features={[
           {
-            icon: "/assests/img/web-development/coded-secure.png",
+            icon: "/web-development/coded-secure.png",
             title: <>Custom-Coded,<br />Secure Builds</>,
             subtitle: ""
           },
           {
-            icon: "/assests/img/web-development/high-speed-icon.png",
+            icon: "/web-development/high-speed-icon.png",
             title: <>High-Speed <br />Performance</>,
             subtitle: ""
           },
           {
-            icon: "/assests/img/web-development/scalability.png",
+            icon: "/web-development/scalability.png",
             title: <>Scalable <br />Architecture</>,
             subtitle: ""
           },
           {
-            icon: "/assests/img/web-development/project-management.png",
+            icon: "/web-development/project-management.png",
             title: <>On-Time Project<br />Delivery</>,
             subtitle: ""
           },
@@ -105,50 +105,50 @@ const WebDevelopment = () => {
             id: "01",
             title: "Discovery & Planning",
             desc: "The goals, audience, and structure are defined during Discovery & Planning to create a scalable foundation for the website.",
-            icon: "/assests/img/web-development/discovery.png",
+            icon: "/web-development/discovery.png",
           },
           {
             id: "02",
             title: "Wireframing & Architecture",
             desc: "Wireframes and architecture are used as the blueprint to define structure and function before design begins.",
-            icon: "/assests/img/web-development/workflow-icon-2.png",
+            icon: "/web-development/workflow-icon-2.png",
           },
           {
             id: "03",
             title: "UI/UX Design",
             desc: "UI/UX design is used to create intuitive digital experiences, using clear layouts, colors, and flows to ensure smooth, efficient user interaction.",
-            icon: "/assests/img/web-development/workflow-icon-3.png",
+            icon: "/web-development/workflow-icon-3.png",
           },
           {
             id: "04",
             title: "Front-End Development",
             desc: "Front-end development is used to turn designs into responsive, interactive interfaces with HTML, CSS, JavaScript, and modern UI frameworks.",
-            icon: "/assests/img/web-development/workflow-icon-1.png",
+            icon: "/web-development/workflow-icon-1.png",
           },
           {
             id: "05",
             title: "Back-End Development",
             desc: "Server logic, databases, APIs, and security are built in the backend to support scalable and reliable applications.",
-            icon: "/assests/img/web-development/workflow-icon-4.png",
+            icon: "/web-development/workflow-icon-4.png",
           },
           {
             id: "06",
             title: "Testing",
             desc: "Website testing is conducted to verify functionality, meet requirements, and ensure performance across devices and browsers.",
-            icon: "/assests/img/web-development/testing.png",
+            icon: "/web-development/testing.png",
             active: true,
           },
           {
             id: "07",
             title: "Deployment",
             desc: "The tested product is deployed to production, configured for use, and optimized for performance and stability.",
-            icon: "/assests/img/web-development/deployment.png",
+            icon: "/web-development/deployment.png",
           },
           {
             id: "08",
             title: "Support & Maintenance",
             desc: "Performed to keep software secure, updated, and high-performing through continuous monitoring and improvements.",
-            icon: "/assests/img/web-development/workflow-icon-7.png",
+            icon: "/web-development/workflow-icon-7.png",
           },
         ]}
       />
@@ -193,22 +193,22 @@ const WebDevelopment = () => {
           {
             title: "Insight-Led Execution",
             desc: "Smart decisions guide every build, ensuring each solution aligns with goals and delivers real impact.",
-            icon: "/assests/img/web-development/why-choose-icon2.png",
+            icon: "/web-development/why-choose-icon2.png",
           },
           {
             title: "Future-Ready Architecture",
             desc: " Code is crafted for speed, stability, and effortless scaling as your business and demands grow.",
-            icon: "/assests/img/web-development/why-choose-icon1.png",
+            icon: "/web-development/why-choose-icon1.png",
           },
           {
             title: " Delivery You Can Count On",
             desc: "Timelines are honored with precision, ensuring every milestone is met without compromising quality.",
-            icon: "/assests/img/web-development/why-choose-icon3.png",
+            icon: "/web-development/why-choose-icon3.png",
           },
           {
             title: "Continuous Care & Support",
             desc: " Ongoing updates, fixes, and monitoring keep your digital systems secure, smooth, and high-performing.",
-            icon: "/assests/img/web-development/why-choose-icon4.png",
+            icon: "/web-development/why-choose-icon4.png",
           },
         ]}
       />

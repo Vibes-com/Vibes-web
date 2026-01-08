@@ -5,14 +5,15 @@ import React from "react";
 import { Button2 } from "@/components/ui/button2";
 import { ArrowUpIcon } from "lucide-react";
 import Link from "next/link";
+import { withImageBase } from "@/app/utils/image";
 
 const services = [
     {
         title: "Campaign Management",
         description:
             " End-to-end campaign management including influencer collaborations and event marketing to amplify reach, drive engagement, and create measurable brand impact.",
-        bgImage: "/assests/img/digital-m-details/dm-bg-1.jpeg",
-        icon: "/assests/img/digital-m-details/campaign.png",
+        bgImage: "/digital-m-details/dm-bg-1.jpeg",
+        icon: "/digital-m-details/campaign.png",
         tags: [
             "Influencer Marketing",
             "Event Marketing",
@@ -23,9 +24,9 @@ const services = [
         title: "Performance Marketing",
         description:
             "Campaign management focused on performance marketing and lead generation through Meta, Google, and LinkedIn ads to drive measurable conversions and ROI.",
-        bgImage: "/assests/img/digital-m-details/dm-bg-2.jpeg",
-        hoverBgImage: "/assests/img/technology-details/tech-cards-bg.png",
-        icon: "/assests/img/digital-m-details/growth.png",
+        bgImage: "/digital-m-details/dm-bg-2.jpeg",
+        hoverBgImage: "/technology-details/tech-cards-bg.png",
+        icon: "/digital-m-details/growth.png",
         tags: ["Lead Generation", "Meta Ads", "Google Ads", "LinkedIn Ads"],
         url: "/digital-marketing-services/performance-marketing",
     },
@@ -33,9 +34,9 @@ const services = [
         title: "Social Media Management ",
         description:
             "Strategic social media management for B2B and B2C, covering content planning, creation, and platform-led growth across LinkedIn and consumer channels.",
-        bgImage: "/assests/img/digital-m-details/dm-bg-3.jpeg",
-        hoverBgImage: "/assests/img/technology-details/tech-cards-bg.png",
-        icon: "/assests/img/digital-m-details/social-media.png",
+        bgImage: "/digital-m-details/dm-bg-3.jpeg",
+        hoverBgImage: "/technology-details/tech-cards-bg.png",
+        icon: "/digital-m-details/social-media.png",
         tags: ["Content Creation & Planning", "B2B: LinkedIn Management", "B2C: LinkedIn Management"],
         url: "/digital-marketing-services/social-media-management",
     },
@@ -43,9 +44,9 @@ const services = [
         title: "Search Engine Optimization",
         description:
             "Comprehensive SEO management covering on-page, off-page, technical SEO, LLM optimization, and keyword strategy to improve visibility, rankings, and search performance.",
-        bgImage: "/assests/img/digital-m-details/dm-bg-4.jpeg",
-        hoverBgImage: "/assests/img/technology-details/tech-cards-bg.png",
-        icon: "/assests/img/digital-m-details/seo.png",
+        bgImage: "/digital-m-details/dm-bg-4.jpeg",
+        hoverBgImage: "/technology-details/tech-cards-bg.png",
+        icon: "/digital-m-details/seo.png",
         tags: ["On-Page SEO", "Off-Page SEO", "Technical SEO", "LLM", "Keyword Strategy"],
         url: "/digital-marketing-services/search-engine-optimization",
     },
@@ -84,7 +85,7 @@ const DigitalMarketingSolutions = () => {
 
                     <div className="relative w-full h-[582px] hidden md:block overflow-hidden shadow-xl ">
                         <Image
-                            src="/assests/img/digital-m-details/digital-middle-img.png"
+                           src={withImageBase("/digital-m-details/digital-middle-img.png")}
                             alt="Technology Showcase"
                             fill
                             className="object-fill "
@@ -115,7 +116,7 @@ const ServiceCard = ({ service }: any) => {
                 className="group absolute -top-4 right-[-8px] w-18 h-18 z-10 rounded-full flex items-center justify-center transition bg-[#FFFFFF] lg:group-hover:bg-[rgb(70,110,89)]
 border-[7px] border-[#ffffff]">
                 <Image
-                    src={service.icon}
+                   src={withImageBase(service.icon)}
                     alt="service icon"
                     width={30}
                     height={30}
@@ -125,7 +126,7 @@ border-[7px] border-[#ffffff]">
 
             {/* DEFAULT BG */}
             <Image
-                src={service.bgImage}
+                src={withImageBase(service.bgImage)}
                 alt="bg"
                 fill
                 unoptimized

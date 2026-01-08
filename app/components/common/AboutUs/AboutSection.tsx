@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { withImageBase } from "@/app/utils/image";
 
 type Feature = {
   icon: string;
@@ -39,7 +40,7 @@ const AboutSection = ({
           {/* LEFT IMAGE */}
           <div className="relative">
             <Image
-              src={mainImage}
+               src={withImageBase(mainImage)}
               alt="about image"
               width={650}
               height={450}
@@ -78,7 +79,7 @@ const AboutSection = ({
                 <div key={index} className="flex items-start gap-4 flex-wrap">
                   <div className="w-15 h-15 rounded-full bg-[#466E59] flex items-center justify-center">
                     <Image
-                      src={feature.icon}
+                       src={withImageBase(feature.icon)}
                       alt="feature icon"
                       width={25}
                       height={25}

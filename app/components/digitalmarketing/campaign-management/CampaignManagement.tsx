@@ -46,16 +46,16 @@ const CampaignManagement = () => {
         heading="Campaign Execution That "
         highlightText="Drives Engagement"
         description=" From audience discovery to on-ground activation, campaigns are designed, managed, and optimized to deliver visibility, relevance, and results across multiple touchpoints."
-        mainImage="/assests/img/digital-m-details/compaign-left-img.png"
+        mainImage="/digital-m-details/compaign-left-img.png"
         bgImage="/assests/img/web-development/wd-services-bg.jpg"
         features={[
           {
-            icon: "/assests/img/digital-m-details/influencer.png",
+            icon: "/digital-m-details/influencer.png",
             title: <>Influencer Marketing</>,
             subtitle: "Strategic influencer collaborations that amplify brand narratives through credible voices, targeted communities, and performance-driven partnerships aligned with campaign goals."
           },
           {
-            icon: "/assests/img/digital-m-details/marketing-plan.png",
+            icon: "/digital-m-details/marketing-plan.png",
             title: <>Event Marketing</>,
             subtitle: "Concept-to-closure event execution that creates immersive brand experiences, drives audience participation, and strengthens brand recall through seamless planning and promotion."
           },

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { ArrowUpIcon } from "lucide-react";
 import { Button3 } from "@/components/ui/button3";
 import { useGetAllCaseStudiesQuery } from "@/app/redux/api/caseStudyApi";
+import { withImageBase } from "@/app/utils/image";
 /* ---------------- TYPES ---------------- */
 
 export interface SingleCaseStudyCard {
@@ -45,7 +46,7 @@ const cardsc = data?.data.slice(0,5)
           {/* Image */}
           <div className="case-study-card-common border border-gray-400 w-full rounded-xl overflow-hidden group">
                     <Image
-                      src={item.img}
+                     src={withImageBase(item.img)}
                       alt={item.title}
                       width={1500}
                       height={1000}
