@@ -76,9 +76,7 @@ const CaseStudyDetailsAbout: React.FC<CaseStudyDetailsAboutProps> = ({
                   <div className="mt-2 w-4 h-4 rounded-full border-2 border-[#466E59] flex items-center justify-center flex-shrink-0">
                     <span className="w-2 h-2 rounded-full bg-[#466E59]" />
                   </div>
-
-                  <p className="text-[#575757DB] text-base leading-[26px] font-poppins font-normal">
-                    {text}
+                  <p dangerouslySetInnerHTML={{ __html: text }} className="text-[#575757DB] text-base leading-[26px] font-poppins font-normal">
                   </p>
                 </div>
               ))}
