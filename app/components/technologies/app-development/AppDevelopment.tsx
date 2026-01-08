@@ -27,17 +27,17 @@ const AppDevelopment = () => {
         heading="Apps Built for"
         highlightText="Performance"
         description="Custom-built mobile applications that support business growth across Android and iOS platforms."
-        mainImage="/assests/img/app-development/app-dev-serivice.png"
+        mainImage="/app-development/app-dev-serivice.png"
         bgImage="/assests/img/web-development/wd-services-bg.jpg"
 
         features={[
           {
-            icon: "/assests/img/app-development/mobile-development.png",
+            icon: "/app-development/mobile-development.png",
             title: <>Android App Development</>,
             subtitle: <>Robust Android applications built for performance, security, and seamless user experiences across devices</>,
           },
           {
-            icon: "/assests/img/app-development/ios-development.png",
+            icon: "/app-development/ios-development.png",
             title: <>iOS App Development</>,
             subtitle: <>High-quality iOS apps designed for speed, stability, and compliance with Apple’s design and performance standards</>,
           },
@@ -60,44 +60,44 @@ const AppDevelopment = () => {
             id: "01",
             title: "Ideation & Strategy",
             desc: "Define the core app idea, unique value proposition (UVP), target audience, and feature roadmap.",
-            icon: "/assests/img/app-development/idea.png",
+            icon: "/app-development/idea.png",
           },
           {
             id: "02",
             title: "Planning & Analysis",
             desc: "Market research, competitor analysis, MVP feature definition, and structured planning for timelines and budgets.",
-            icon: "/assests/img/app-development/planning.png",
+            icon: "/app-development/planning.png",
           },
           {
             id: "03",
             title: "UI/UX Design",
             desc: "User-centric wireframes, intuitive user flows, and visually engaging interfaces with interactive prototypes.",
-            icon: "/assests/img/web-development/workflow-icon-3.png",
+            icon: "/web-development/workflow-icon-3.png",
           },
           {
             id: "04",
             title: "Development",
             desc: "End-to-end app development covering front-end, back-end, and APIs using native and cross-platform technologies",
-            icon: "/assests/img/web-development/workflow-icon-1.png",
+            icon: "/web-development/workflow-icon-1.png",
           },
           {
             id: "05",
             title: "Testing & Quality Assurance (QA)",
             desc: "Comprehensive testing for functionality, performance, security, and usability across devices and platforms.",
-            icon: "/assests/img/web-development/testing.png",
+            icon: "/web-development/testing.png",
           },
           {
             id: "06",
             title: "Deployment & Launch",
             desc: "App Store and Play Store submissions with ASO-ready assets for smooth approvals and visibility.",
-            icon: "/assests/img/web-development/deployment.png",
+            icon: "/web-development/deployment.png",
             active: true,
           },
           {
             id: "07",
             title: "Post-Launch: Maintenance & Updates",
             desc: "Ongoing monitoring, feature enhancements, performance optimization, and regular updates.",
-            icon: "/assests/img/web-development/workflow-icon-7.png",
+            icon: "/web-development/workflow-icon-7.png",
           },
 
         ]}
@@ -116,22 +116,22 @@ const AppDevelopment = () => {
           {
             title: "Strategy-Led Development",
             desc: " Mobile apps built with clear goals, purpose, and measurable outcomes.",
-            icon: "/assests/img/app-development/development.png",
+            icon: "/app-development/development.png",
           },
           {
             title: "Scalable Architecture",
             desc: " Robust app frameworks designed to grow with evolving business needs.",
-            icon: "/assests/img/app-development/scalability.png",
+            icon: "/app-development/scalability.png",
           },
           {
             title: "End-to-End Ownership",
             desc: " Complete lifecycle management from idea to launch and beyond.",
-            icon: "/assests/img/app-development/ownership.png",
+            icon: "/app-development/ownership.png",
           },
           {
             title: "User-Centric Design",
             desc: " Intuitive experiences crafted for engagement, usability, and retention.",
-            icon: "/assests/img/app-development/centric.png",
+            icon: "/app-development/centric.png",
           },
         ]}
       />

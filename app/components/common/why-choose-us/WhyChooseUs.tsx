@@ -6,6 +6,7 @@ import Image from "next/image";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useEffect, useState } from "react";
+import { withImageBase } from "@/app/utils/image";
 
 /* ---------------- TYPES ---------------- */
 
@@ -127,7 +128,7 @@ useEffect(() => {
                     {/* QUOTE ICON */}
                     <div className="absolute top-4 right-4">
                       <Image
-                        src={quoteImage}
+                         src={withImageBase(quoteImage)}
                         alt="quote"
                         width={26}
                         height={26}

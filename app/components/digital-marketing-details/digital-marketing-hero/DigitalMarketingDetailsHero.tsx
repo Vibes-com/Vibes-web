@@ -5,6 +5,7 @@ import React from "react";
 import { Button2 } from "@/components/ui/button2";
 import { ArrowUpIcon } from "lucide-react";
 import Image from "next/image";
+import { withImageBase } from "@/app/utils/image";
 
 const DigitalMarketingDetailsHero: React.FC = () => {
     return (
@@ -35,7 +36,7 @@ const DigitalMarketingDetailsHero: React.FC = () => {
                             <div className="flex items-center -space-x-5 me-auto">
                                 <div className="w-[35px] h-[35px] lg:w-[55px] lg:h-[55px] rounded-full border border-white/70 flex items-center justify-center shadow-[0px_4px_4px_0px_#00000040]">
                                     <Image
-                                        src="/assests/img/digital-m-details/digtal-client-1.png"
+                                       src={withImageBase("/digital-m-details/digtal-client-1.png")}
                                         alt="client logo"
                                         width={55}
                                         height={55}
@@ -43,7 +44,7 @@ const DigitalMarketingDetailsHero: React.FC = () => {
                                 </div>
                                 <div className="w-[35px] h-[35px] lg:w-[55px] lg:h-[55px] rounded-full border border-white/70 flex items-center justify-center shadow-[0px_4px_4px_0px_#00000040]">
                                     <Image
-                                        src="/assests/img/digital-m-details/digtal-client-2.png"
+                                        src={withImageBase("/digital-m-details/digtal-client-2.png")}
                                         alt="client logo"
                                         width={55}
                                         height={55}
@@ -51,7 +52,7 @@ const DigitalMarketingDetailsHero: React.FC = () => {
                                 </div>
                                 <div className="w-[35px] h-[35px] lg:w-[55px] lg:h-[55px] rounded-full border border-white/70 flex items-center justify-center shadow-[0px_4px_4px_0px_#00000040]">
                                     <Image
-                                        src="/assests/img/digital-m-details/digtal-client-3.png"
+                                        src={withImageBase("/digital-m-details/digtal-client-3.png")}
                                         alt="client logo"
                                         width={55}
                                         height={55}
@@ -60,7 +61,7 @@ const DigitalMarketingDetailsHero: React.FC = () => {
 
                                 <div className="w-[35px] h-[35px] lg:w-[55px] lg:h-[55px] rounded-full border border-white/70 flex items-center justify-center shadow-[0px_4px_4px_0px_#00000040]">
                                     <Image
-                                        src="/assests/img/digital-m-details/digtal-client-4.png"
+                                        src={withImageBase("/digital-m-details/digtal-client-4.png")}
                                         alt="client logo"
                                         width={55}
                                         height={55}

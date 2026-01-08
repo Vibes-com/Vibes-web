@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import Image from "next/image";
 import "swiper/css";
+import { withImageBase } from "@/app/utils/image";
 
 export type BuiltWaySlide = {
   id: string;
@@ -98,7 +99,7 @@ export default function BuiltWaySlider({
                 {/* ICON */}
                 <div className="absolute -top-3 right-[-4px] w-20 h-20 rounded-full flex items-center justify-center bg-[#466E59] group-hover:bg-white border-[7px] border-[#EEF4EE]">
                   <Image
-                    src={item.icon}
+                     src={withImageBase(item.icon)}
                     alt={item.title}
                     width={26}
                     height={26}

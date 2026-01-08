@@ -9,6 +9,7 @@ import { Bot, Coffee } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 import ChatWindow from "../chatbot-ui/ChatWindow";
 import { AnimatePresence } from "framer-motion";
+import { withImageBase } from "@/app/utils/image";
 
 const Footer = () => {
   const [open, setOpen] = useState(false);
@@ -29,7 +30,7 @@ const Footer = () => {
 
         <div className="vibes-footer-logo z-[50000] py-5">
           <Image
-            src={"/assests/img/home/footer_vibes_icon.png"}
+           src={withImageBase("/home/footer_vibes_icon.png")}
             alt=""
             width={100}
             height={100}

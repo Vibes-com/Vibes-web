@@ -4,7 +4,6 @@ import { useEffect } from "react";
 import Image from "next/image";
 import { Fancybox } from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
-
 import HeroSection from "../common/InnerPageHero/HeroSection";
 import { useGetGalleryQuery } from "@/app/redux/api/galleryApi";
 
