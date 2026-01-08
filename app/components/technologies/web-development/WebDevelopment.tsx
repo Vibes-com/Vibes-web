@@ -55,13 +55,13 @@ const WebDevelopment = () => {
             <span className="hero-highlight  relative z-9 w-fit font-poppins font-semibold text-[33px] sm:text-[65px] md:text-[65px] lg:text-[65px] xl:text-[65px] 2xl:text-[65px] leading-[116%] tracking-normal capitalize text-[#F4BE00]">Development</span>
           </>
         }
-        description="Vibes delivers high-performing, scalable, secure digital solutions- built with precision, expertise, clear communication, and on-time delivery brands trust"
+        description="Vibes builds secure scalable websites with strong UI/UX and reliable backend systems for seamless user experiences."
       />
       <AboutSection
         badgeText="ABOUT US"
         heading="IT Solutions Engineered for"
         highlightText="Speed and Scalability"
-        description="Vibes develops secure, bespoke web platforms engineered for high performance, scalability, and reliability."
+        description="Vibes develops secure, bespoke web platforms engineered for high performance, scalability, and reliability, supported by refined development and adaptive design."
         mainImage="/web-development/webdevelopment-about-img.png"
         bgImage="/assests/img/web-development/wd-services-bg.jpg"
 
@@ -147,7 +147,7 @@ const WebDevelopment = () => {
           {
             id: "08",
             title: "Support & Maintenance",
-            desc: "Performed to keep software secure, updated, and high-performing through continuous monitoring and improvements.",
+            desc: "Performed to keep software secure, updated, and high-performing through fixes, patches, and ongoing improvements.",
             icon: "/web-development/workflow-icon-7.png",
           },
         ]}
@@ -161,7 +161,7 @@ const WebDevelopment = () => {
             Technology <span className="highlight relative z-9">Stack</span>
           </>
         }
-        description="Vibes uses a robust, future-ready tech stack built for speed, security, and scale."
+        description="Vibes uses a robust, future-ready tech stack built for speed, security, and scale every tool is handpicked to power high performance and elevate every digital experience."
         topLogos={[
           "/assests/img/web-development/php-logo.png",
           "/assests/img/web-development/react-logo.png",
