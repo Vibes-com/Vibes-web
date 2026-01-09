@@ -8,9 +8,9 @@ import {withImageBase} from "@/app/utils/image";
 const BlogShareButtons = () => {
     const [open, setOpen] = useState(false);
 
-    const url =
-        'https://www.ligogroup.in/blog-detail/the-best-corporate-bags-manufacturers-in-india';
-    const title = 'The Best Corporate Bags Manufacturers In India';
+   const url =
+typeof window !== "undefined" ? window.location.href : "";
+    const title = '';
     const encodedUrl = encodeURIComponent(url);
 const encodedTitle = encodeURIComponent(title);
 
