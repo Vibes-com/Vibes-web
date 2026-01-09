@@ -30,7 +30,7 @@ const Hero = () => {
   // .slice(0, BANNER_LIMIT);
 
   return (
-    <div className="relative w-full h-[37vh] sm:h-[50vh] md:h-[42vh] lg:h-[42vh] xl:h-screen overflow-hidden hero-video">
+    <div className=" w-full aspect-video overflow-hidden hero-video">
       {heroBanners.map((item: any, index: number) => (
         <div key={index} className="absolute inset-0 pt-[87px] sm:pt-0 md:pt-0 lg:pt-0 xl:pt-0 2xl:pt-0">
           {item.banner_type === "video" ? (
