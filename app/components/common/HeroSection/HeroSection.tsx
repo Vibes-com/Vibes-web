@@ -3,6 +3,7 @@
 import React from "react";
 import { Button2 } from "@/components/ui/button2";
 import { ArrowUpIcon } from "lucide-react";
+import {withImageBase} from "@/app/utils/image";
 
 type HeroSectionProps = {
   title: React.ReactNode;
@@ -29,7 +30,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
     <section
       className={`relative flex items-center ${height} bg-cover bg-left lg:bg-right bg-no-repeat service-bg`}
       style={{
-        backgroundImage: `url(${bgImage})`,
+        backgroundImage: `url(${withImageBase(bgImage)})`,
       }}
     >
       {/* Optional Overlay */}

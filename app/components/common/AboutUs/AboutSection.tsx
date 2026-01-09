@@ -31,7 +31,7 @@ const AboutSection = ({
     <section
       className="overflow-hidden section-gap bg-no-repeat bg-cover bg-center"
       style={{
-        backgroundImage: bgImage ? `url(${bgImage})` : "none",
+        backgroundImage: bgImage ? `url(${withImageBase(bgImage)})` : "none",
       }}
     >
       <div className="container mx-auto max-w-screen-xl px-4 md:px-8">

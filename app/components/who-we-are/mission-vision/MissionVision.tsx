@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import React from "react";
+import {withImageBase} from "@/app/utils/image";
 
 const MissionVision: React.FC = () => {
     return (
@@ -13,7 +14,7 @@ const MissionVision: React.FC = () => {
                     <div className="col-span-12 md:col-span-12 lg:col-span-6 relative ">
                         <div className="rounded-xl overflow-hidden p-1">
                             <Image
-                                src="/assests/img/about/together-img-1.jpg"
+                                src={withImageBase("/about/together-img-1.jpg")}
                                 alt="team main" priority unoptimized
                                 width={390}
                                 height={510}
@@ -23,7 +24,7 @@ const MissionVision: React.FC = () => {
 
                         <div className="absolute bottom-[-35px] right-[25px] md:right-[80px] lg:right-[90px] xl:right-[90px] 2xl:right-[90px] rounded-xl overflow-hidden shadow-xl">
                             <Image
-                                src="/assests/img/about/together-img-2.jpg"
+                                 src={withImageBase("/about/together-img-2.jpg")}
                                 alt="team small" priority unoptimized
                                 width={220}
                                 height={330}
@@ -55,7 +56,7 @@ const MissionVision: React.FC = () => {
                         <div className="grid grid-cols-12 mt-8 gap-4">
                             <div className="col-span-12 md:col-span-1  flex items-center justify-center h-[40px] w-[40] rounded-full bg-[#F4BE00]">
                                 <Image
-                                    src="/assests/img/about/mission.png"
+                                     src={withImageBase("/about/mission.png")}
                                     alt="mission icon" priority unoptimized
                                     width={20}
                                     height={20}
@@ -72,7 +73,7 @@ const MissionVision: React.FC = () => {
                         <div className="grid grid-cols-12 mt-8 gap-4">
                             <div className="col-span-2 md:col-span-1 flex items-center justify-center h-[40px] w-[40] rounded-full bg-[#F4BE00]">
                                 <Image
-                                    src="/assests/img/about/vision.png"
+                                    src={withImageBase("/about/vision.png")}
                                     alt="vision icon" priority unoptimized
                                     width={20}
                                     height={20}

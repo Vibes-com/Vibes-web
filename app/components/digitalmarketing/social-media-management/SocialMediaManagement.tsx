@@ -22,7 +22,7 @@ const textcontent: blogContent = {
       Insights, trends, and expert perspectives on social media strategy,<br /> content performance, and digital brand growth.
     </>
   ),
-  bgImage: '/assets/img/web-development/wd-services-bg.jpg',
+  bgImage: '/web-development/wd-services-bg.jpg',
   service: 'digital'
 };
 
@@ -31,7 +31,7 @@ const SocialMediaManagement = () => {
   return (
     <div>
       <HeroSection
-        bgImage="/assests/img/digital-m-details/social-media-banner.jpg"
+        bgImage="/digital-m-details/social-media-banner.jpg"
         title={
           <>
             Social Media <br />
@@ -46,7 +46,7 @@ const SocialMediaManagement = () => {
         highlightText="Services"
         description=" End-to-end social media solutions focused on planning, storytelling, and performance crafted to align brand objectives with audience behaviour."
         mainImage="/digital-m-details/social-media-left-img.png"
-        bgImage="/assests/img/web-development/wd-services-bg.jpg"
+        bgImage="/web-development/wd-services-bg.jpg"
         features={[
           {
             icon: "/digital-m-details/copy-writing.png",
@@ -68,7 +68,7 @@ const SocialMediaManagement = () => {
       />
       <WhyChooseUs
         badgeText="Why Choose Us?"
-        backgroundImage="/assests/img/technology-details/common-casestudy-bg.jpg"
+        backgroundImage="/technology-details/common-casestudy-bg.jpg"
         heading=" Vibes Social Growth "
         highlightText="Framework"
         description=" Purpose-driven social strategies built to engage audiences and strengthen brand relevance."
@@ -99,7 +99,7 @@ const SocialMediaManagement = () => {
         title="Elevate Your Social Presence"
         subtitle="Create a social media presence that reflects brand value, clarity, and consistency across every platform"
         buttonText="Let’s Connect"
-        arrowImage="/assests/img/technology-details/arrow.png"
+        arrowImage="/technology-details/arrow.png"
         className="bg-black"
         // onButtonClick={() => router.push("/contact-for-digital-requirements")}
         btnlink="/contact-for-digital-requirements"

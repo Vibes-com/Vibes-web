@@ -5,37 +5,38 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import Image from "next/image";
 import "swiper/css";
+import {withImageBase} from "@/app/utils/image";
 
 const slides = [
     {
         title: "Application Testing",
         desc: "Ensuring flawless performance with rigorous, end-to-end quality checks.",
-        icon: "/assests/img/web-development/built-way-icon-1.png",
+        icon: "/web-development/built-way-icon-1.png",
     },
     {
         title: "UI/UX Design",
         desc: "Crafting intuitive, user-first designs that elevate every digital interaction.",
-        icon: "/assests/img/web-development/built-way-icon-2.png",
+        icon: "/web-development/built-way-icon-2.png",
     },
     {
         title: "CMS Development",
         desc: "Building scalable, easy-to-manage content systems tailored to your workflow.",
-        icon: "/assests/img/web-development/built-way-icon-3.png",
+        icon: "/web-development/built-way-icon-3.png",
     },
     {
         title: "Application Testing",
         desc: "Ensuring flawless performance with rigorous, end-to-end quality checks.",
-        icon: "/assests/img/web-development/built-way-icon-1.png",
+        icon: "/web-development/built-way-icon-1.png",
     },
     {
         title: "UI/UX Design",
         desc: "Crafting intuitive, user-first designs that elevate every digital interaction.",
-        icon: "/assests/img/web-development/built-way-icon-2.png",
+        icon: "/web-development/built-way-icon-2.png",
     },
     {
         title: "CMS Development",
         desc: "Building scalable, easy-to-manage content systems tailored to your workflow.",
-        icon: "/assests/img/web-development/built-way-icon-3.png",
+        icon: "/web-development/built-way-icon-3.png",
     },
 ];
 
@@ -99,7 +100,7 @@ export default function BuiltWay() {
                                 <div
                                     className="group absolute -top-3 right-[-4px] w-20 h-20 rounded-full flex items-center justify-center transition bg-[#466E59] group-hover:bg-white border-[7px] border-[#EEF4EE]">
                                     <Image
-                                        src={item.icon}
+                                       src={withImageBase(item.icon)}
                                         alt={item.title}
                                         width={26}
                                         height={26}

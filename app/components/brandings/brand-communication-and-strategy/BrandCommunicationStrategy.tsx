@@ -21,7 +21,7 @@ const textcontent: blogContent = {
       nsights, perspectives, and trends shaping effective brand communication<br /> in evolving markets.
     </>
   ),
-  bgImage: '/assets/img/web-development/wd-services-bg.jpg',
+  bgImage: '/web-development/wd-services-bg.jpg',
   service:'branding'
 };
 
@@ -37,7 +37,7 @@ const BrandCommunicationStrategy = () => {
   return (
     <div>
       <HeroSection
-        bgImage="/assests/img/branding-details/brand-communication-banner.jpg"
+        bgImage="/branding-details/brand-communication-banner.jpg"
         title={
           <>
             Brand Communication <br />
@@ -48,7 +48,7 @@ const BrandCommunicationStrategy = () => {
       />
       <WhyChooseUsSection
         badgeText="Services Highlight"
-        bgImage="/assests/img/web-development/wd-services-bg.jpg"
+        bgImage="/web-development/wd-services-bg.jpg"
         heading={
           <>
             Integrated Communication &  <br />
@@ -99,7 +99,7 @@ const BrandCommunicationStrategy = () => {
         title="Let’s Define Your Brand Voice"
         subtitle=" Start building a clear, consistent, and compelling communication foundation."
         buttonText="Talk to Experts"
-        arrowImage="/assests/img/technology-details/arrow.png"
+        arrowImage="/technology-details/arrow.png"
         className="bg-black"
         // onButtonClick={() => router.push("/contact-for-digital-requirements")}
         btnlink="/contact-for-digital-requirements"

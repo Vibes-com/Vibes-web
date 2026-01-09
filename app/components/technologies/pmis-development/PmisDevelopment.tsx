@@ -41,7 +41,7 @@ const PmisDevelopment = () => {
   return (
     <div>
       <HeroSection
-        bgImage="/assests/img/pmis/pmis-banner.jpg"
+        bgImage="/pmis/pmis-banner.jpg"
         title={
           <>
             PROJECT MANAGEMENT<br />
@@ -52,7 +52,7 @@ const PmisDevelopment = () => {
       />
       <BuiltWaySlider
         badgeText="Core Purpose"
-        bgImage="/assests/img/web-development/wd-services-bg.jpg"
+        bgImage="/web-development/wd-services-bg.jpg"
         heading={
           <>
             Why PMIS Matter:<br /> <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[28px] sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] leading-[1.23] tracking-normal">Purpose & Value</span>
@@ -63,7 +63,7 @@ const PmisDevelopment = () => {
       />
       <WhyChooseUs
         badgeText="Clear Governance"
-        backgroundImage="/assests/img/technology-details/common-casestudy-bg.jpg"
+        backgroundImage="/technology-details/common-casestudy-bg.jpg"
         heading="Enabling PMIS Across"
         highlightText="Governance & Execution"
         description="Vibes designs and delivers PMIS platforms structured for complex, multi-agency project environments."
@@ -91,7 +91,7 @@ const PmisDevelopment = () => {
 
       <WhyChooseSection
         badgeText="Monitoring Tools"
-        bgImage="/assests/img/web-development/wd-services-bg.jpg"
+        bgImage="/web-development/wd-services-bg.jpg"
         heading={
           <>
             <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[28px] sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] leading-[1.23] tracking-normal">PMIS Modules</span> That<br /> Enable Governance
@@ -124,7 +124,7 @@ const PmisDevelopment = () => {
 
       <TechnologyStackSection
         badgeText="Government Projects"
-        bgImage="/assests/img/web-development/wd-technology-bg.jpg"
+        bgImage="/web-development/wd-technology-bg.jpg"
         heading={
           <>
             Proven Public Sector<br /><span className="highlight relative z-9">Deployments</span>
@@ -132,28 +132,28 @@ const PmisDevelopment = () => {
         }
         description="Delivered large-scale, mission-critical digital solutions in collaboration with PwC and EY, supporting transparency, governance, and data-driven decision-making across key government initiatives."
         topLogos={[
-          "/assests/img/pmis/cris-logo.png",
-          "/assests/img/pmis/pm-mitra-logo.png",
-          "/assests/img/pmis/education-logo.png",
-          "/assests/img/pmis/prayagraj-logo.jpg",
-          "/assests/img/pmis/kumbh-logo.png",
-          "/assests/img/pmis/dtis-logo.png",
-          "/assests/img/pmis/moh-logo.png",
+          "/pmis/cris-logo.png",
+          "/pmis/pm-mitra-logo.png",
+          "/pmis/education-logo.png",
+          "/pmis/prayagraj-logo.jpg",
+          "/pmis/kumbh-logo.png",
+          "/pmis/dtis-logo.png",
+          "/pmis/moh-logo.png",
         ]}
         bottomLogos={[
-          "/assests/img/pmis/dtis-logo.png",
-          "/assests/img/pmis/kumbh-logo.png",
-          "/assests/img/pmis/cris-logo.png",
-          "/assests/img/pmis/moh-logo.png",
-          "/assests/img/pmis/pm-mitra-logo.png",
-          "/assests/img/pmis/prayagraj-logo.jpg",
+          "/pmis/dtis-logo.png",
+          "/pmis/kumbh-logo.png",
+          "/pmis/cris-logo.png",
+          "/pmis/moh-logo.png",
+          "/pmis/pm-mitra-logo.png",
+          "/pmis/prayagraj-logo.jpg",
         ]}
       />
       <SuccessStory
         title="Digital Control. Real-Time Visibility."
         subtitle="PMIS platforms designed to manage scale, complexity, and accountability across large-impact projects."
         buttonText="Let’s Connect"
-        arrowImage="/assests/img/technology-details/arrow.png"
+        arrowImage="/technology-details/arrow.png"
         className="bg-black"
         // onButtonClick={() => router.push("/contact-for-digital-requirements")}
         btnlink="/contact-for-digital-requirements"

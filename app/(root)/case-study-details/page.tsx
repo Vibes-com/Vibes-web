@@ -15,7 +15,7 @@ const page = () => {
             />
            <CaseStudyDetailsAbout
             title="The Client"
-            imageSrc="/assests/img/case-study-details/case-study-about-left-img.jpg"
+            imageSrc="/case-study-details/case-study-about-left-img.jpg"
             imageAlt="Tomorrow’s India"
             points={[
                 "Tomorrow’s India is India’s finest multi-segmented brand coverage platform.",

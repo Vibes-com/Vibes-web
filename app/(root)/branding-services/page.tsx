@@ -74,7 +74,7 @@ const textcontent: blogContent = {
       Expert perspectives, trends, and strategic thinking that explore branding, <br />identity, and communication shaping how brands grow and stay relevant.
     </>
   ),
-  bgImage: '/assets/img/web-development/wd-services-bg.jpg',
+  bgImage: '/web-development/wd-services-bg.jpg',
   service: 'branding'
 };
 
@@ -85,7 +85,7 @@ const page = () => {
       <BrandingDetailsHero />
       <BrandingDetailsServices />
       <WhyChooseUs
-        backgroundImage="/assests/img/technology-details/common-casestudy-bg.jpg"
+        backgroundImage="/technology-details/common-casestudy-bg.jpg"
         badgeText="Why Choose Us?"
         heading="How We"
         highlightText="Elevate Your Brand"
@@ -118,8 +118,8 @@ const page = () => {
       <SuccessStory
         title="Build the Brand You Imagine"
         subtitle=" Branding designed to create clarity, and long-term impact"
-        buttonText="Talk to Branding Experts"
-        arrowImage="/assests/img/technology-details/arrow.png"
+        buttonText="Get Started with Us"
+        arrowImage="/technology-details/arrow.png"
         className="bg-black"
         // onButtonClick={() => router.push("/contact-for-digital-requirements")}
         btnlink="/contact-for-digital-requirements"

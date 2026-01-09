@@ -79,23 +79,23 @@ const textcontent: blogContent = {
       Explore curated articles on emerging tech, smart solutions, and expert perspectives from<br /> Vibes built to inform, inspire, and accelerate digital growth.
     </>
   ),
-  bgImage: '/assets/img/web-development/wd-services-bg.jpg',
+  bgImage: '/web-development/wd-services-bg.jpg',
   service: 'technology'
 };
 
 const logos = [
-  "/assests/img/technology-details/tech-logo-1.png",
-  "/assests/img/technology-details/tech-logo-2.png",
-  "/assests/img/technology-details/tech-logo-3.png",
-  "/assests/img/technology-details/tech-logo-4.png",
-  "/assests/img/technology-details/tech-logo-5.png",
-  "/assests/img/technology-details/tech-logo-6.png",
-  "/assests/img/technology-details/tech-logo-7.png",
-  "/assests/img/technology-details/tech-logo-8.png",
-  "/assests/img/technology-details/tech-logo-9.png",
-  "/assests/img/technology-details/tech-logo-10.png",
-  "/assests/img/technology-details/tech-logo-11.png",
-  "/assests/img/technology-details/tech-logo-12.png",
+  "/technology-details/tech-logo-1.png",
+  "/technology-details/tech-logo-2.png",
+  "/technology-details/tech-logo-3.png",
+  "/technology-details/tech-logo-4.png",
+  "/technology-details/tech-logo-5.png",
+  "/technology-details/tech-logo-6.png",
+  "/technology-details/tech-logo-7.png",
+  "/technology-details/tech-logo-8.png",
+  "/technology-details/tech-logo-9.png",
+  "/technology-details/tech-logo-10.png",
+  "/technology-details/tech-logo-11.png",
+  "/technology-details/tech-logo-12.png",
 ];
 
 const tabs = ["healthcare", "education", "realestate", "entertainment", "government"];
@@ -130,7 +130,7 @@ export default function Page() {
           highlightTitle="Real Impact"
           description="Explore real technology success stories where Vibes turns complex challenges into measurable outcomes, delivering smarter, scalable digital solutions."
           buttonText="Dive Into Success Stories"
-          bgImage="/assests/img/technology-details/common-casestudy-bg.jpg"
+          bgImage="/technology-details/common-casestudy-bg.jpg"
         />
       
 
@@ -150,7 +150,7 @@ export default function Page() {
         title="Let’s Build Something Powerful"
         subtitle="Scalable digital solutions tailored for you"
         buttonText="Talk to Experts"
-        arrowImage="/assests/img/technology-details/arrow.png"
+        arrowImage="/technology-details/arrow.png"
         className="bg-black"
         // onButtonClick={() => router.push("/contact-for-digital-requirements")}
         btnlink="/contact-for-digital-requirements"

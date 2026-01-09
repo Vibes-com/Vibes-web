@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { withImageBase } from "@/app/utils/image";
 
 interface BriefBlock {
   badgeText: string;
@@ -19,7 +20,7 @@ interface CaseStudyDetailsBriefProps {
 const CaseStudyDetailsBrief: React.FC<CaseStudyDetailsBriefProps> = ({
   leftBlock,
   rightBlock,
-  bgImage = "/assests/img/technology-details/common-casestudy-bg.jpg",
+  bgImage = "/technology-details/common-casestudy-bg.jpg",
 }) => {
   const renderBlock = (block: BriefBlock) => (
     <>
@@ -69,7 +70,7 @@ const CaseStudyDetailsBrief: React.FC<CaseStudyDetailsBriefProps> = ({
     <section
       className="w-full section-gap bg-no-repeat bg-cover bg-center"
       style={{
-        backgroundImage: bgImage ? `url(${bgImage})` : "none",
+        backgroundImage: bgImage ? `url(${withImageBase(bgImage)})` : "none",
       }}
     >
       <div className="container mx-auto max-w-screen-xl px-4 md:px-8">

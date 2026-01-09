@@ -13,7 +13,7 @@ const AppDevelopment = () => {
   return (
     <div>
       <HeroSection
-        bgImage="/assests/img/app-development/mobile-app-banner.jpg"
+        bgImage="/app-development/mobile-app-banner.jpg"
         title={
           <>
             Mobile App <br />
@@ -28,7 +28,7 @@ const AppDevelopment = () => {
         highlightText="Performance"
         description="Custom-built mobile applications that support business growth across Android and iOS platforms."
         mainImage="/app-development/app-dev-serivice.png"
-        bgImage="/assests/img/web-development/wd-services-bg.jpg"
+        bgImage="/web-development/wd-services-bg.jpg"
 
         features={[
           {
@@ -47,7 +47,7 @@ const AppDevelopment = () => {
 
       <WorkflowSection
         badgeText="Workflow"
-        bgImage="/assests/img/technology-details/common-casestudy-bg.jpg"
+        bgImage="/technology-details/common-casestudy-bg.jpg"
         heading={
           <>
             From <br/>{" "}
@@ -104,7 +104,7 @@ const AppDevelopment = () => {
       />
       <WhyChooseSection
         badgeText="Why Choose Vibes?"
-        bgImage="/assests/img/web-development/wd-services-bg.jpg"
+        bgImage="/web-development/wd-services-bg.jpg"
 
         heading={
           <>
@@ -166,7 +166,7 @@ const AppDevelopment = () => {
         title="Let’s Build Your App"
         subtitle="Turn ideas into high-impact mobile applications that users trust and engage with"
         buttonText="Talk to Experts"
-        arrowImage="/assests/img/technology-details/arrow.png"
+        arrowImage="/technology-details/arrow.png"
         className="bg-black"
         // onButtonClick={() => router.push("/contact-for-digital-requirements")}
         btnlink="/contact-for-digital-requirements"

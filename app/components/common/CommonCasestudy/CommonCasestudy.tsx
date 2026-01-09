@@ -8,6 +8,8 @@ import CaseStudiesCard, {
 } from "../CaseStudiesCard/CaseStudiesCard";
 import Link from "next/link";
 import CaseStudiesCardS from "../CaseStudiesCard/CaseStudiesCardS";
+import { withImageBase } from "@/app/utils/image";
+
 // import { useGetAllCaseStudiesQuery } from "@/app/redux/api/caseStudyApi";
 
 interface CaseStudiesSectionProps {
@@ -36,7 +38,7 @@ const CommonCasestudy = ({ badgeText, title, highlightTitle, description, button
   //   })) || [];
   
   return (
-    <section className="section-gap bg-no-repeat bg-cover bg-center" style={{ backgroundImage: bgImage ? `url(${bgImage})` : "none" }}>
+    <section className="section-gap bg-no-repeat bg-cover bg-center" style={{ backgroundImage: bgImage ? `url(${withImageBase(bgImage)})` : "none" }}>
       <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
         <div className="grid grid-cols-12 relative">
 

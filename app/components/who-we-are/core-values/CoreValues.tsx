@@ -1,25 +1,26 @@
 "use client";
 import Image from "next/image";
 import React from "react";
+import {withImageBase} from "@/app/utils/image";
 
 const coreValues = [
     {
-        img: "/assests/img/about/shared-vision.png",
+        img: "/about/shared-vision.png",
         title: "Shared Vision",
         desc: "Aligning goals to shape purposeful growth and tomorrow’s success.",
     },
     {
-        img: "/assests/img/about/seamless-communication.png",
+        img: "/about/seamless-communication.png",
         title: "Seamless Communication",
         desc: "Building clarity and trust for stronger collaboration in the future.",
     },
     {
-        img: "/assests/img/about/innovation-together.png",
+        img: "/about/innovation-together.png",
         title: "Innovation Together",
         desc: "Co-creating ideas today that fuel opportunities for tomorrow.",
     },
     {
-        img: "/assests/img/about/sustainable-impact.png",
+        img: "/about/sustainable-impact.png",
         title: "Sustainable Impact",
         desc: "Delivering lasting solutions that inspire progress for generations ahead.",
     },
@@ -60,7 +61,7 @@ const CoreValues = () => {
                             >
                                 <div className="flex items-center justify-center h-[60px] w-[60] rounded-sm bg-[#F4BE00]">
                                     <Image
-                                        src={item.img}
+                                        src={withImageBase(item.img)}
                                         alt={item.title} priority unoptimized
                                         width={35}
                                         height={35}

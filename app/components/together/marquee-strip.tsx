@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Image from 'next/image'
+import {withImageBase} from "@/app/utils/image";
 
 const items = [
     "Technology",
@@ -21,7 +22,7 @@ const MarqueeTabs = () => {
                     >
                         {label}
                         <Image
-                            src={"/assests/img/home/star.png"}
+                            src={withImageBase("/home/star.png")}
                             alt=''
                             width={100}
                             height={100}
@@ -36,7 +37,7 @@ const MarqueeTabs = () => {
                     >
                         {label}
                         <Image
-                            src={"/assests/img/home/star.png"}
+                           src={withImageBase("/home/star.png")}
                             alt=''
                             width={100}
                             height={100}

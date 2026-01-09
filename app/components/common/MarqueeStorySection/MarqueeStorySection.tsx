@@ -8,6 +8,8 @@ import { Button2 } from "@/components/ui/button2";
 import { ArrowUpIcon } from "lucide-react";
 import "swiper/css";
 import SlideUp from "../../animations/SlideUp";
+import { withImageBase } from "@/app/utils/image";
+
 
 export type VideoSlide = {
   type: "video";
@@ -67,7 +69,7 @@ const MarqueeStorySection = ({
     <section
       className="section-gap overflow-hidden"
       style={{
-        backgroundImage: `url(${bgImage})`,
+        backgroundImage: `url(${withImageBase(bgImage)})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

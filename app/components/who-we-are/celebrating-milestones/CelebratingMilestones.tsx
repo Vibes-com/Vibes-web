@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useEffect, useState } from "react";
+import {withImageBase} from "@/app/utils/image";
 
 export default function VerticalSlickMilestones() {
     const [isMobile, setIsMobile] = useState(false);
@@ -57,22 +58,22 @@ export default function VerticalSlickMilestones() {
         {
             title: "From Ideas to Action",
             desc: " How Vibes Creates Eco-Smart Branding & Marketing.",
-            img: "/assests/img/about/From-Ideas-Eco-Smart.png"
+            img: "/about/From-Ideas-Eco-Smart.png"
         },
         {
             title: "On to the Path of Sustainability",
             desc: " Forward-thinking digital solutions for a shared and innovative vision.",
-            img: "/assests/img/about/Together-Tomorrow.png"
+            img: "/about/Together-Tomorrow.png"
         },
         {
             title: "From Vision to Impact",
             desc: " How Vibes Powers Brands with Creativity, Digital Strategy & Tech Innovation.",
-            img: "/assests/img/about/Vision-Impact.png"
+            img: "/about/Vision-Impact.png"
         },
         {
             title: "From Vision to Impact",
             desc: " How Vibes Powers Brands with Creativity, Digital Strategy & Tech Innovation.",
-            img: "/assests/img/about/Vision-Impact.png"
+            img: "/about/Vision-Impact.png"
         },
     ];
 
@@ -111,7 +112,7 @@ export default function VerticalSlickMilestones() {
                                             className="relative bg-white p-4 rounded-xl shadow-md flex items-center gap-6 h-[170px] transition-all duration-500 milestone-card border-l-[8px] border-l-[#F4BE00]"
                                         >
                                             {/* Image */}
-                                            <img src={item.img} className=" w-20 h-20 lg:w-25 lg:h-25 object-contain" />
+                                            <img src={withImageBase(item.img)} className=" w-20 h-20 lg:w-25 lg:h-25 object-contain" />
 
                                             {/* Text */}
                                             <div>
@@ -122,7 +123,7 @@ export default function VerticalSlickMilestones() {
                                             </div>
                                             <div className="quote-container absolute top-6 right-6">
                                                 <Image
-                                                    src="/assests/img/about/quote-img.png"
+                                                   src={withImageBase("/about/quote-img.png")}
                                                     alt="quote image" priority unoptimized
                                                     width={23}
                                                     height={23}

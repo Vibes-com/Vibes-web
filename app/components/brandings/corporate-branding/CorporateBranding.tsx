@@ -21,7 +21,7 @@ const textcontent: blogContent = {
       Expert insights, trends, and ideas focused on keeping brands relevant in<br /> changing markets.
     </>
   ),
-  bgImage: '/assets/img/web-development/wd-services-bg.jpg',
+  bgImage: '/web-development/wd-services-bg.jpg',
   service:'branding'
 };
 
@@ -41,7 +41,7 @@ const CorporateBranding = () => {
   return (
     <div>
       <HeroSection
-        bgImage="/assests/img/branding-details/corporate-branding-banner.jpg"
+        bgImage="/branding-details/corporate-branding-banner.jpg"
         title={
           <>
             CORPORATE <br />
@@ -52,7 +52,7 @@ const CorporateBranding = () => {
       />
       <WhyChooseUsSection
         badgeText="Services Highlight"
-        bgImage="/assests/img/web-development/wd-services-bg.jpg"
+        bgImage="/web-development/wd-services-bg.jpg"
         heading={
           <>
             Unified Branding  <br />
@@ -102,7 +102,7 @@ const CorporateBranding = () => {
         title="Build a Brand That Commands Trust"
         subtitle="Branding designed to deliver clarity, consistency, and credibility across every business touchpoint."
         buttonText="Talk to Experts"
-        arrowImage="/assests/img/technology-details/arrow.png"
+        arrowImage="/technology-details/arrow.png"
         className="bg-black"
         // onButtonClick={() => router.push("/contact-for-digital-requirements")}
         btnlink="/contact-for-digital-requirements"
