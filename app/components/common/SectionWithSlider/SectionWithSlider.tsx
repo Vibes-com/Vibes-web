@@ -59,11 +59,11 @@ const SectionWithSlider: FC<SectionProps> = ({
                 </span>
               </div>
             </div>
-            <h2 className="font-poppins font-semibold text-[35px] sm:text-[45px] md:text-[45px] lg:text-[30px] xl:text-[45px] 2xl:text-[55px] leading-[123%] tracking-[0] text-[#FFFFFF]">
+            <h2 className="font-poppins font-semibold text-[35px] sm:text-[30px] md:text-[40px] lg:text-[40px] xl:text-[45px] 2xl:text-[50px] leading-[123%] tracking-[0] text-[#FFFFFF]">
               {title}
             </h2>
             {highlight && (
-              <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[35px] sm:text-[45px] md:text-[45px] lg:text-[45px] xl:text-[45px] 2xl:text-[55px] leading-[123%] tracking-[0] text-[#FFFFFF]">
+              <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[35px] sm:text-[30px] md:text-[40px] lg:text-[40px] xl:text-[45px] 2xl:text-[50px] leading-[123%] tracking-[0] text-[#FFFFFF]">
                 {highlight}
               </span>
             )}
