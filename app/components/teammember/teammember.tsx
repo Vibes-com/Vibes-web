@@ -82,7 +82,7 @@ const TeamMembers = () => {
             className="
               swiper-button-prev-custom
               hidden md:flex
-              absolute left-[-18px] sm:left-[-45px] md:left-[-21px] lg:left-[-45px] xl:left-[-45px] 2xl:left-[-45px] top-[55%] -translate-y-1/2 z-20
+              absolute left-[-18px] sm:left-[-45px] md:left-[-21px] lg:left-[-23px] xl:left-[-19px] 2xl:left-[-45px] top-[55%] -translate-y-1/2 z-20
               p-2 border border-solid border-[#313131] cursor-pointer rounded-md bg-[#FFFFFFB0]
             "
           >
@@ -92,7 +92,7 @@ const TeamMembers = () => {
             className="
               swiper-button-next-custom
               hidden md:flex
-              absolute right-[-18px] sm:right-[-45px] md:right-[-21px] lg:right-[-45px] xl:right-[-45px] 2xl:right-[-45px] top-[55%] -translate-y-1/2 z-20
+              absolute right-[-18px] sm:right-[-45px] md:right-[-21px] lg:right-[-23px] xl:right-[-19px] 2xl:right-[-45px] top-[55%] -translate-y-1/2 z-20
               p-2 border border-solid border-[#313131] cursor-pointer rounded-md bg-[#FFFFFFB0]
             "
           >

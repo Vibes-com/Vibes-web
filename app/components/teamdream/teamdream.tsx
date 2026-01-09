@@ -16,7 +16,7 @@ const TeamDreamSection = () => {
     const [showTeam, setShowTeam] = useState(false);
 
     return (
-        <section className="one-team-wrapper relative section-gap">
+        <section className="one-team-wrapper relative section-gap overflow-hidden">
 
             <style jsx>{`
                 .team-animate {
