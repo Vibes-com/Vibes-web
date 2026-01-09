@@ -3,6 +3,7 @@ import React from "react";
 import { Button2 } from "@/components/ui/button2";
 import { ArrowUpIcon } from "lucide-react";
 import Link from "next/link";
+import {withImageBase} from "@/app/utils/image";
 
 const services = [
     {
@@ -10,8 +11,8 @@ const services = [
         description:
             "Vibes builds secure, personalised, and fully custom-coded websites designed to adapt as the brands grow. From sleek interfaces to powerful back-end systems, every web experience is crafted for performance, scalability, and seamless user journeys.",
 
-        bgImage: "/assests/img/technology-details/web-devlopment-bg.png",
-        hoverBgImage: "/assests/img/technology-details/tech-cards-bg.png",
+        bgImage: "/technology-details/web-devlopment-bg.png",
+        hoverBgImage: "/technology-details/tech-cards-bg.png",
 
         tags: [
             "UI/UX Design",
@@ -30,8 +31,8 @@ const services = [
         description:
             "Vibes creates high-performing Android and iOS apps built to solve real problems and deliver measurable value. With secure architecture, custom code, and adaptive design, every app is engineered for seamless usability and long-term scalability.",
 
-        bgImage: "/assests/img/technology-details/mobile-app-development-bg.jpg",
-        hoverBgImage: "/assests/img/technology-details/tech-cards-bg.png",
+        bgImage: "/technology-details/mobile-app-development-bg.jpg",
+        hoverBgImage: "/technology-details/tech-cards-bg.png",
 
         tags: ["Android App Development", "iOS App Development"],
 
@@ -43,8 +44,8 @@ const services = [
         description:
             "Vibes creates secure, custom eCommerce platforms that convert better and scale faster. With audience-focused design, smart tech like Next.js, React, Shopify, and WooCommerce, building seamless B2B and B2C experiences that drive measurable growth.",
 
-        bgImage: "/assests/img/technology-details/ecommerce-development-bg.jpg",
-        hoverBgImage: "/assests/img/technology-details/tech-cards-bg.png",
+        bgImage: "/technology-details/ecommerce-development-bg.jpg",
+        hoverBgImage: "/technology-details/tech-cards-bg.png",
 
         tags: [
             "Next.js / React",
@@ -62,8 +63,8 @@ const services = [
         description:
             "PMIS streamlines project tracking with smart dashboards for tasks, approvals, finances, and completion. It enhances workflows through portal upgrades, intuitive user flow, mobile app integration, and seamless CRM development and integration.",
 
-        bgImage: "/assests/img/technology-details/project-monitoring-system-bg.png",
-        hoverBgImage: "/assests/img/technology-details/tech-cards-bg.png",
+        bgImage: "/technology-details/project-monitoring-system-bg.png",
+        hoverBgImage: "/technology-details/tech-cards-bg.png",
 
         tags: [
             "Dashboard Design",
@@ -113,7 +114,7 @@ const TechSolutions = () => {
 
                             {/* -------- DEFAULT BACKGROUND IMAGE -------- */}
                             <Image
-                                src={service.bgImage}
+                                 src={withImageBase(service.bgImage)}
                                 alt="bg" priority unoptimized
                                 fill
                                 className="absolute inset-0 object-cover opacity-20
@@ -122,7 +123,7 @@ const TechSolutions = () => {
 
                             {/* -------- HOVER BACKGROUND IMAGE -------- */}
                             <Image
-                                src={service.hoverBgImage}
+                                src={withImageBase(service.hoverBgImage)}
                                 alt="hover-bg" priority unoptimized
                                 fill
                                 className="absolute inset-0 object-cover opacity-0

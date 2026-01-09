@@ -5,6 +5,7 @@ import React from "react";
 import { Button2 } from "@/components/ui/button2";
 import { ArrowUpIcon } from "lucide-react";
 import Image from "next/image";
+import {withImageBase} from "@/app/utils/image";
 
 const TechnologyDetailsHero: React.FC = () => {
     return (
@@ -33,7 +34,7 @@ const TechnologyDetailsHero: React.FC = () => {
                             <div className="flex items-center -space-x-5 me-auto">
                                 <div className="w-[35px] h-[35px] lg:w-[55px] lg:h-[55px] rounded-full border border-white/70 flex items-center justify-center shadow-[0px_4px_4px_0px_#00000040]">
                                     <Image
-                                        src="/assests/img/technology-details/widex-logo.png"
+                                         src={withImageBase("/technology-details/widex-logo.png")}
                                         alt="client logo"
                                         width={55}
                                         height={55}
@@ -41,7 +42,7 @@ const TechnologyDetailsHero: React.FC = () => {
                                 </div>
                                 <div className=" w-[35px] h-[35px] lg:w-[55px] lg:h-[55px] rounded-full border border-white/70 flex items-center justify-center shadow-[0px_4px_4px_0px_#00000040]">
                                     <Image
-                                        src="/assests/img/technology-details/pwc-logo.png"
+                                        src={withImageBase("/technology-details/pwc-logo.png")}
                                         alt="client logo"
                                         width={55}
                                         height={55}
@@ -49,7 +50,7 @@ const TechnologyDetailsHero: React.FC = () => {
                                 </div>
                                 <div className="w-[35px] h-[35px] lg:w-[55px] lg:h-[55px] rounded-full border border-white/70 flex items-center justify-center shadow-[0px_4px_4px_0px_#00000040]">
                                     <Image
-                                        src="/assests/img/technology-details/lumenis-logo.png"
+                                       src={withImageBase("/technology-details/lumenis-logo.png")}
                                         alt="client logo"
                                         width={55}
                                         height={55}
@@ -58,7 +59,7 @@ const TechnologyDetailsHero: React.FC = () => {
 
                                 <div className="w-[35px] h-[35px] lg:w-[55px] lg:h-[55px] rounded-full border border-white/70 flex items-center justify-center shadow-[0px_4px_4px_0px_#00000040]">
                                     <Image
-                                        src="/assests/img/technology-details/mofiso-logo.png"
+                                        src={withImageBase("/technology-details/mofiso-logo.png")}
                                         alt="client logo"
                                         width={55}
                                         height={55}

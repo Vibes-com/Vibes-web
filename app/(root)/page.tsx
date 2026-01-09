@@ -147,7 +147,7 @@ const page = () => {
         description="A curated showcase of visual work that shapes brand perception across channels, including social campaigns, identity design, and custom website builds."
         slides={slides}
         ctaText="Talk to us today"
-        bgImage="/assests/img/home/brand-stories-bg.png"
+        bgImage="https://s3.ap-south-1.amazonaws.com/vibescom.in/assets/img/home/brand-stories-bg.png"
       />
       {/* <TeamMembers /> */}
       <MilestoneMetrics />

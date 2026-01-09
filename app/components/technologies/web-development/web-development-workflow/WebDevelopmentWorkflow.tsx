@@ -1,53 +1,54 @@
 import Image from "next/image";
+import {withImageBase} from "@/app/utils/image";
 
 const workflowSteps = [
     {
         id: "01",
         title: "Discovery & Planning",
         desc: "The goals, audience, and structure are defined during Discovery & Planning to create a scalable foundation for the website.",
-        icon: "/assests/img/web-development/workflow-icon-1.png",
+        icon: "/web-development/workflow-icon-1.png",
     },
     {
         id: "02",
         title: "Wireframing & Architecture",
         desc: "Wireframes and architecture are used as the blueprint to define structure and function before design begins.",
-        icon: "/assests/img/web-development/workflow-icon-2.png",
+        icon: "/web-development/workflow-icon-2.png",
     },
     {
         id: "03",
         title: "UI/UX Design",
         desc: "UI/UX design is used to create intuitive digital experiences, using clear layouts, colors, and flows to ensure smooth, efficient user interaction.",
-        icon: "/assests/img/web-development/workflow-icon-3.png",
+        icon: "/web-development/workflow-icon-3.png",
     },
     {
         id: "04",
         title: "Front-End Development",
         desc: "Front-end development is used to turn designs into responsive, interactive interfaces with HTML, CSS, JavaScript, and modern UI frameworks.",
-        icon: "/assests/img/web-development/workflow-icon-1.png",
+        icon: "/web-development/workflow-icon-1.png",
     },
     {
         id: "05",
         title: "Back-End Development",
         desc: "Server logic, databases, APIs, and security are built in the backend to support scalable and reliable applications.",
-        icon: "/assests/img/web-development/workflow-icon-4.png",
+        icon: "/web-development/workflow-icon-4.png",
     },
     {
         id: "06",
         title: "Testing",
         desc: "Website testing is conducted to verify functionality, meet requirements, and ensure performance across devices and browsers.",
-        icon: "/assests/img/web-development/workflow-icon-5.png",
+        icon: "/web-development/workflow-icon-5.png",
     },
     {
         id: "07",
         title: "Deployment",
         desc: "The tested product is deployed to production, configured for use, and optimized for performance and stability.",
-        icon: "/assests/img/web-development/workflow-icon-6.png",
+        icon: "/web-development/workflow-icon-6.png",
     },
     {
         id: "08",
         title: "Support & Maintenance",
         desc: "Performed to keep software secure, updated, and high-performing through continuous monitoring and improvements.",
-        icon: "/assests/img/web-development/workflow-icon-7.png",
+        icon: "/web-development/workflow-icon-7.png",
     },
 ];
 
@@ -102,7 +103,7 @@ const WebDevelopmentWorkflow = () => {
                             {/* Icon */}
                             <div className="mb-6 mt-20">
                                 <Image
-                                    src={step.icon}
+                                    src={withImageBase(step.icon)}
                                     alt={step.title}
                                     width={36}
                                     height={36}

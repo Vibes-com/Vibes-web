@@ -4,6 +4,8 @@ import { useMemo, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import { ArrowLeft, ArrowRight } from "lucide-react";
+import {withImageBase} from "@/app/utils/image";
+
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -31,20 +33,20 @@ const MarqueeTabsSlider = ({
 
   const marqueeLogos = useMemo(() => {
     return [
-      "/assests/img/digital-m-details/digital-icon-1.png",
-      "/assests/img/digital-m-details/digital-icon-2.png",
-      "/assests/img/digital-m-details/digital-icon-3.png",
-      "/assests/img/digital-m-details/digital-icon-4.png",
-      "/assests/img/digital-m-details/digital-icon-5.png",
-      "/assests/img/digital-m-details/digital-icon-6.png",
-      "/assests/img/digital-m-details/digital-icon-7.png",
-      "/assests/img/digital-m-details/digital-icon-1.png",
-      "/assests/img/digital-m-details/digital-icon-2.png",
-      "/assests/img/digital-m-details/digital-icon-3.png",
-      "/assests/img/digital-m-details/digital-icon-4.png",
-      "/assests/img/digital-m-details/digital-icon-5.png",
-      "/assests/img/digital-m-details/digital-icon-6.png",
-      "/assests/img/digital-m-details/digital-icon-7.png",
+      "/digital-m-details/digital-icon-1.png",
+      "/digital-m-details/digital-icon-2.png",
+      "/digital-m-details/digital-icon-3.png",
+      "/digital-m-details/digital-icon-4.png",
+      "/digital-m-details/digital-icon-5.png",
+      "/digital-m-details/digital-icon-6.png",
+      "/digital-m-details/digital-icon-7.png",
+      "/digital-m-details/digital-icon-1.png",
+      "/digital-m-details/digital-icon-2.png",
+      "/digital-m-details/digital-icon-3.png",
+      "/digital-m-details/digital-icon-4.png",
+      "/digital-m-details/digital-icon-5.png",
+      "/digital-m-details/digital-icon-6.png",
+      "/digital-m-details/digital-icon-7.png",
 
     ];
   }, [logos]);
@@ -87,7 +89,7 @@ const MarqueeTabsSlider = ({
                 flex items-center justify-center px-6
                 shadow-md border border-[#6f8f7c]"
               >
-                <img src={src} className="max-h-[50px] w-auto" />
+                <img  src={withImageBase(src)} className="max-h-[50px] w-auto" />
               </div>
             ))}
           </div>

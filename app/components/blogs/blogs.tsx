@@ -9,6 +9,7 @@ import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import { useGetAllBlogsQuery } from "@/app/redux/api/blogApi";
+import { withImageBase } from "@/app/utils/image";
 import { useState } from "react";
 
 interface BlogCardProps {
@@ -79,7 +80,7 @@ export default function OurBlogs({ tData }: BlogsProps) {
         <section
             className="blogs-wrapper section-gap relative w-full bg-no-repeat bg-cover bg-center"
             style={{
-                backgroundImage: tData?.bgImage ? `url(${tData?.bgImage})` : "none",
+                backgroundImage: tData?.bgImage ? `url(${withImageBase(tData?.bgImage)})` : "none",
             }}
         >
             <div className="container mx-auto max-w-screen-xl px-4 md:px-8 relative z-10">

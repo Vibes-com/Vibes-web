@@ -24,7 +24,7 @@ const textcontent: blogContent = {
       Expert perspectives, trends, and strategic thinking that explore branding, <br />identity, and communication shaping how brands grow and stay relevant.
     </>
   ),
-  bgImage: '/assests/img/technology-details/common-casestudy-bg.jpg',
+  bgImage: '/technology-details/common-casestudy-bg.jpg',
   service: 'digital'
 };
 
@@ -34,7 +34,7 @@ const PerformanceMarketing = () => {
   return (
     <div>
       <HeroSection
-        bgImage="/assests/img/performance-marketing/performance-marketing-banner.jpg"
+        bgImage="/performance-marketing/performance-marketing-banner.jpg"
         title={
           <>
             PERFORMANCE <br />
@@ -49,7 +49,7 @@ const PerformanceMarketing = () => {
         highlightText="Advertising Solutions"
         description="Results-focused advertising strategies designed to generate high-quality leads, maximize reach, and drive measurable conversions across search and social platforms with precision targeting and data-backed optimization."
         mainImage="/performance-marketing/pm-overview-left-img.png"
-        bgImage="/assests/img/web-development/wd-services-bg.jpg"
+        bgImage="/web-development/wd-services-bg.jpg"
 
         features={[
           {
@@ -76,7 +76,7 @@ const PerformanceMarketing = () => {
       />
       <WhyChooseUsSection
         badgeText="Growth Strategy"
-        bgImage="/assests/img/technology-details/common-casestudy-bg.jpg"
+        bgImage="/technology-details/common-casestudy-bg.jpg"
         heading={
           <>
             How Brands  <br />
@@ -109,7 +109,7 @@ const PerformanceMarketing = () => {
       />
       <WhyChooseUs
         badgeText="WHAT SETS US APART  "
-        backgroundImage="/assests/img/web-development/wd-services-bg.jpg"
+        backgroundImage="/web-development/wd-services-bg.jpg"
         heading="Vibes Performance "
         highlightText="Advantage"
         description="A results-focused model blending strategy, data, creativity, and transparency to drive consistent growth"
@@ -140,7 +140,7 @@ const PerformanceMarketing = () => {
         title="Turn Clicks Into Conversions"
         subtitle="High-impact performance strategies built to maximize ROI and accelerate results."
         buttonText="Let’s Connect"
-        arrowImage="/assests/img/technology-details/arrow.png"
+        arrowImage="/technology-details/arrow.png"
         className="bg-black"
         // onButtonClick={() => router.push("/contact-for-digital-requirements")}
         btnlink="/contact-for-digital-requirements"

@@ -20,7 +20,7 @@ const textcontent: blogContent = {
       Expert insights, trends, and ideas focused on keeping brands relevant <br />in changing markets.
     </>
   ),
-  bgImage: '/assets/img/web-development/wd-services-bg.jpg',
+  bgImage: '/web-development/wd-services-bg.jpg',
   service:'branding'
 };
 
@@ -41,7 +41,7 @@ const BrandUpliftment = () => {
   return (
     <div>
       <HeroSection
-        bgImage="/assests/img/branding-details/brand-upliftment-banner.jpg"
+        bgImage="/branding-details/brand-upliftment-banner.jpg"
         title={
           <>
             Brand <br />
@@ -52,7 +52,7 @@ const BrandUpliftment = () => {
       />
       <WhyChooseUsSection
         badgeText="Services Highlight"
-        bgImage="/assests/img/web-development/wd-services-bg.jpg"
+        bgImage="/web-development/wd-services-bg.jpg"
         heading={
           <>
             Specialised Brand <br />
@@ -102,7 +102,7 @@ const BrandUpliftment = () => {
         title="Talk to Branding Experts"
         subtitle="Connect for strategic guidance on enhancing brand presence with clarity and intent."
         buttonText="Talk to Experts"
-        arrowImage="/assests/img/technology-details/arrow.png"
+        arrowImage="/technology-details/arrow.png"
         className="bg-black"
         // onButtonClick={() => router.push("/contact-for-digital-requirements")}
         btnlink="/contact-for-digital-requirements"

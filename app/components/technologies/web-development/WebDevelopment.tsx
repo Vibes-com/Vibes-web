@@ -48,7 +48,7 @@ const WebDevelopment = () => {
   return (
     <div>
       <HeroSection
-        bgImage="/assests/img/web-development/web-development-banner.jpg"
+        bgImage="/web-development/web-development-banner.jpg"
         title={
           <>
             Web <br />
@@ -63,7 +63,7 @@ const WebDevelopment = () => {
         highlightText="Speed and Scalability"
         description="Vibes develops secure, bespoke web platforms engineered for high performance, scalability, and reliability, supported by refined development and adaptive design."
         mainImage="/web-development/webdevelopment-about-img.png"
-        bgImage="/assests/img/web-development/wd-services-bg.jpg"
+        bgImage="/web-development/wd-services-bg.jpg"
 
         features={[
           {
@@ -92,7 +92,7 @@ const WebDevelopment = () => {
 
       <WorkflowSection
         badgeText="Workflow"
-        bgImage="/assests/img/technology-details/common-casestudy-bg.jpg"
+        bgImage="/technology-details/common-casestudy-bg.jpg"
         heading={
           <>
             Development{" "}
@@ -155,7 +155,7 @@ const WebDevelopment = () => {
 
       <TechnologyStackSection
         badgeText="Technology we use"
-        bgImage="/assests/img/web-development/wd-technology-bg.jpg"
+        bgImage="/web-development/wd-technology-bg.jpg"
         heading={
           <>
             Technology <span className="highlight relative z-9">Stack</span>
@@ -163,26 +163,26 @@ const WebDevelopment = () => {
         }
         description="Vibes uses a robust, future-ready tech stack built for speed, security, and scale every tool is handpicked to power high performance and elevate every digital experience."
         topLogos={[
-          "/assests/img/web-development/php-logo.png",
-          "/assests/img/web-development/react-logo.png",
-          "/assests/img/web-development/github-logo.png",
-          "/assests/img/web-development/css-logo.png",
-          "/assests/img/web-development/node-logo.png",
-          "/assests/img/web-development/html-logo.png",
-          "/assests/img/web-development/bootstrap-logo.png",
+          "/web-development/php-logo.png",
+          "/web-development/react-logo.png",
+          "/web-development/github-logo.png",
+          "/web-development/css-logo.png",
+          "/web-development/node-logo.png",
+          "/web-development/html-logo.png",
+          "/web-development/bootstrap-logo.png",
         ]}
         bottomLogos={[
-          "/assests/img/web-development/shopify-logo.png",
-          "/assests/img/web-development/postgresql-logo.png",
-          "/assests/img/web-development/wordpress-logo.png",
-          "/assests/img/web-development/mysql-logo.png",
-          "/assests/img/web-development/ci-4-logo.png",
-          "/assests/img/web-development/mongodb-logo.png",
+          "/web-development/shopify-logo.png",
+          "/web-development/postgresql-logo.png",
+          "/web-development/wordpress-logo.png",
+          "/web-development/mysql-logo.png",
+          "/web-development/ci-4-logo.png",
+          "/web-development/mongodb-logo.png",
         ]}
       />
       <WhyChooseSection
         badgeText="Why Choose Us"
-        bgImage="/assests/img/web-development/wd-services-bg.jpg"
+        bgImage="/web-development/wd-services-bg.jpg"
         heading={
           <>
             <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[28px] sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] leading-[1.23] tracking-normal">Choose Vibes.</span> Choose Certainty.
@@ -215,7 +215,7 @@ const WebDevelopment = () => {
 
       <BuiltWaySlider
         badgeText="Customized Solutions for You"
-        bgImage="/assests/img/technology-details/common-casestudy-bg.jpg"
+        bgImage="/technology-details/common-casestudy-bg.jpg"
         heading={
           <>
             Built <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[28px] sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] leading-[1.23] tracking-normal">Your Way</span>
@@ -228,7 +228,7 @@ const WebDevelopment = () => {
         title="Let’s Build Something Powerful"
         subtitle="Scalable digital solutions tailored for you"
         buttonText="Talk to Experts"
-        arrowImage="/assests/img/technology-details/arrow.png"
+        arrowImage="/technology-details/arrow.png"
         className="bg-black"
         // onButtonClick={() => router.push("/contact-for-digital-requirements")}
         btnlink="/contact-for-digital-requirements"

@@ -5,6 +5,7 @@ import { ArrowUp, ArrowDown } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import Image from "next/image";
+import {withImageBase} from "@/app/utils/image";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -13,82 +14,82 @@ import "swiper/css/pagination";
 const data = [
 {
 year: "2025",
-img: "/assests/img/about/2025.png",
+img: "/about/2025.png",
 text: "Today, we stand proud not just for achieving the targets but for fulfilling them in complete alignment with Vibe’s vision.",
 },
 {
 year: "2024",
-img: "/assests/img/about/2024.png",
+img: "/about/2024.png",
 text: "We sharpened our focus on targets, aligning our actions with long-term goals.",
 },
 {
 year: "2023",
-img: "/assests/img/about/2023.png",
+img: "/about/2023.png",
 text: "This year marked a fresh beginning as we officially launched our branding division, adding it as a new pillar of strength.",
 },
 {
 year: "2022",
-img: "/assests/img/about/2022.png",
+img: "/about/2022.png",
 text: "Our journey evolved: digital and tech began charting their individual paths, and EY became one more valued partner.",
 },
 {
 year: "2021",
-img: "/assests/img/about/2021.png",
+img: "/about/2021.png",
 text: " The world slowed down with Covid, but our spirit, resilience, and motivation stood stronger than ever.",
 },
 {
 year: "2020",
-img: "/assests/img/about/2020.png",
+img: "/about/2020.png",
 text: " Growth followed in naturally, as our digital and tech teams flourished into a 30-member family.",
 },
 {
 year: "2019",
-img: "/assests/img/about/2019.png",
+img: "/about/2019.png",
 text: " Widex India joined hands with us in a larger alignment, strengthening our role as a trusted partner.",
 },
 {
 year: "2018",
-img: "/assests/img/about/2018.png",
+img: "/about/2018.png",
 text: " Our journey expanded as more brands believed in our digital capabilities and joined us.",
 },
 {
 year: "2017",
-img: "/assests/img/about/2017.png",
+img: "/about/2017.png",
 text: " Trust deepened as we handled more technical projects, including the nationally significant Operation Clean Money during demonetization, inaugurated by Shri Arun Jaitley, a milestone we hold with pride.",
 },
 {
 year: "2016",
-img: "/assests/img/about/2016.png",
+img: "/about/2016.png",
 text: "Brought our first long-term PwC project, MOHUA, cementing a relationship built on trust.",
 },
 {
 year: "2015",
-img: "/assests/img/about/2015.png",
+img: "/about/2015.png",
 text: "The fusion of technology and marketing was no longer just an idea, it became the heart of our story.",
 },
 {
 year: "2014",
-img: "/assests/img/about/2014.png",
+img: "/about/2014.png",
 text: " We began exploring a rebranding journey, realizing that growth often comes with reinvention.",
 },
 {
 year: "2013",
-img: "/assests/img/about/2013.png",
+img: "/about/2013.png",
 text: " With a team of 4-5 people, we stepped into Digital Marketing Services.",
 },
 {
 year: "2012",
-img: "/assests/img/about/2012.png",
+img: "/about/2012.png",
 text: " A breakthrough year for us when PwC entrusted us with our first tech project.",
 },
 {
 year: "2011",
-img: "/assests/img/about/2011.png",
+img: "/about/2011.png",
 text: "Our very first dream took shape through Project RX Care.",
 },
 {
 year: "2010",
-img: "/assests/img/about/2010.png",
+img: "/about/2010.png",
 text: "Born with a vision, determination, and the courage to create impact.",
 },
 ];
@@ -171,7 +172,7 @@ return (
 <div className="w-full flex justify-start pr-0 lg:pr-10">
 <div className="">
 <Image
-src={item.img}
+ src={withImageBase(item.img)}
 width={300}
 height={300}
 alt=""
@@ -190,7 +191,7 @@ className="w-full h-[244px] object-contain rounded-lg"
 <div className="hidden md:block absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2">
 <div className="timeline-icon bg-white">
 <Image
-src="/assests/img/about/journey.png"
+ src={withImageBase("/about/journey.png")}
 alt="img"
 priority
 unoptimized
@@ -205,7 +206,7 @@ height={40}
 <div className="w-full  flex justify-end pl-0 lg:pl-10">
 <div className="">
 <Image
-src={item.img}
+ src={withImageBase(item.img)}
 width={300}
 height={300}
 alt=""

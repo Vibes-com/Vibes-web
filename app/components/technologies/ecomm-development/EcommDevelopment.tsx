@@ -13,7 +13,7 @@ const EcommDevelopment = () => {
   return (
     <div>
       <HeroSection
-        bgImage="/assests/img/ecommerce-development/ecom-banner.jpg"
+        bgImage="/ecommerce-development/ecom-banner.jpg"
         title={
           <>
             E-Commerce <br />
@@ -28,7 +28,7 @@ const EcommDevelopment = () => {
         highlightText="Online Growth"
         description="Comprehensive e-commerce services covering development, integrations, optimization, and scalability."
         mainImage="/ecommerce-development/ecom-dev-services.png"
-        bgImage="/assests/img/web-development/wd-services-bg.jpg"
+        bgImage="/web-development/wd-services-bg.jpg"
 
         features={[
           {
@@ -58,7 +58,7 @@ const EcommDevelopment = () => {
 
       <WorkflowSection
         badgeText="Process"
-        bgImage="/assests/img/technology-details/common-casestudy-bg.jpg"
+        bgImage="/technology-details/common-casestudy-bg.jpg"
         heading={
           <>
             A Clear Path from {" "}<br />
@@ -120,7 +120,7 @@ const EcommDevelopment = () => {
       />
       <WhyChooseSection
         badgeText="Why Choose Vibes?"
-        bgImage="/assests/img/web-development/wd-services-bg.jpg"
+        bgImage="/web-development/wd-services-bg.jpg"
         heading={
           <>
             <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[28px] sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] leading-[1.23] tracking-normal">Choose Vibes.</span> Choose Certainty.
@@ -152,7 +152,7 @@ const EcommDevelopment = () => {
       />
       <TechnologyStackSection
         badgeText="Technology we use"
-        bgImage="/assests/img/web-development/wd-technology-bg.jpg"
+        bgImage="/web-development/wd-technology-bg.jpg"
 
         heading={
           <>
@@ -161,21 +161,21 @@ const EcommDevelopment = () => {
         }
         description=" A robust technology stack enabling secure, scalable, and high-performance e-commerce solutions."
         topLogos={[
-          "/assests/img/web-development/php-logo.png",
-          "/assests/img/web-development/react-logo.png",
-          "/assests/img/web-development/github-logo.png",
-          "/assests/img/web-development/css-logo.png",
-          "/assests/img/web-development/node-logo.png",
-          "/assests/img/web-development/html-logo.png",
-          "/assests/img/web-development/bootstrap-logo.png",
+          "/web-development/php-logo.png",
+          "/web-development/react-logo.png",
+          "/web-development/github-logo.png",
+          "/web-development/css-logo.png",
+          "/web-development/node-logo.png",
+          "/web-development/html-logo.png",
+          "/web-development/bootstrap-logo.png",
         ]}
         bottomLogos={[
-          "/assests/img/web-development/shopify-logo.png",
-          "/assests/img/web-development/postgresql-logo.png",
-          "/assests/img/web-development/wordpress-logo.png",
-          "/assests/img/web-development/mysql-logo.png",
-          "/assests/img/web-development/ci-4-logo.png",
-          "/assests/img/web-development/mongodb-logo.png",
+          "/web-development/shopify-logo.png",
+          "/web-development/postgresql-logo.png",
+          "/web-development/wordpress-logo.png",
+          "/web-development/mysql-logo.png",
+          "/web-development/ci-4-logo.png",
+          "/web-development/mongodb-logo.png",
         ]}
       />
 
@@ -183,7 +183,7 @@ const EcommDevelopment = () => {
         title="Launch Your E-commerce Store"
         subtitle="Build a future-ready online business with performance, security, and scale at the core."
         buttonText="Talk to Experts"
-        arrowImage="/assests/img/technology-details/arrow.png"
+        arrowImage="/technology-details/arrow.png"
         className="bg-black"
         // onButtonClick={() => router.push("/contact-for-digital-requirements")}
         btnlink="/contact-for-digital-requirements"

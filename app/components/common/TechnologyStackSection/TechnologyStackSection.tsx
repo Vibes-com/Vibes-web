@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import {withImageBase} from "@/app/utils/image";
 
 type TechnologyStackProps = {
   badgeText: string;
@@ -25,7 +26,7 @@ const TechnologyStackSection: React.FC<TechnologyStackProps> = ({
   return (
     <section className="section-gap overflow-hidden bg-no-repeat bg-cover bg-center"
       style={{
-        backgroundImage: bgImage ? `url(${bgImage})` : "none",
+        backgroundImage: bgImage ? `url(${withImageBase(bgImage)})` : "none",
       }}
     >
       <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
@@ -105,6 +106,6 @@ export default TechnologyStackSection;
 /* ---------------------------------- */
 const LogoCard = ({ logo }: { logo: string }) => (
   <div className="min-w-[180px] h-[96px] bg-white rounded-sm flex items-center justify-center shadow">
-    <img src={logo} alt="tech logo" className="h-15 w-auto" />
+    <img src={withImageBase(logo)} alt="tech logo" className="h-15 w-auto" />
   </div>
 );

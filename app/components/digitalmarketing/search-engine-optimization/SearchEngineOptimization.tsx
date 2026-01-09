@@ -22,7 +22,7 @@ const textcontent: blogContent = {
       Practical perspectives on evolving search algorithms, AI-driven SEO,<br /> content performance, and organic growth strategies.
     </>
   ),
-  bgImage: '/assets/img/web-development/wd-services-bg.jpg',
+  bgImage: '/web-development/wd-services-bg.jpg',
   service: 'digital'
 };
 
@@ -32,7 +32,7 @@ const SearchEngineOptimization = () => {
   return (
     <div>
       <HeroSection
-        bgImage="/assests/img/search-engine-optimization/seo-banner.jpg"
+        bgImage="/search-engine-optimization/seo-banner.jpg"
         title={
           <>
             Search Engine <br />
@@ -47,7 +47,7 @@ const SearchEngineOptimization = () => {
         highlightText="Sustainable Results"
         description="Data-driven optimization frameworks designed to strengthen rankings, improve site health, and convert organic visibility into business impact."
         mainImage="/digital-m-details/seo-left-img.png"
-        bgImage="/assests/img/web-development/wd-services-bg.jpg"
+        bgImage="/web-development/wd-services-bg.jpg"
         features={[
           {
             icon: "/digital-m-details/on-page-seo.png",
@@ -79,7 +79,7 @@ const SearchEngineOptimization = () => {
       />
       <WhyChooseUs
         badgeText="Why Choose Us?"
-        backgroundImage="/assests/img/technology-details/common-casestudy-bg.jpg"
+        backgroundImage="/technology-details/common-casestudy-bg.jpg"
         heading=" Vibes Search "
         highlightText="Visibility Advantage"
         description="Data-backed SEO strategies focused on sustainable rankings, traffic quality, and long-term growth."
@@ -109,7 +109,7 @@ const SearchEngineOptimization = () => {
         title="Stronger Rankings Start With Smarter SEO"
         subtitle=" Identify gaps, unlock opportunities, and build search visibility that delivers consistent results."
         buttonText="Let’s Connect"
-        arrowImage="/assests/img/technology-details/arrow.png"
+        arrowImage="/technology-details/arrow.png"
         className="bg-black"
         // onButtonClick={() => router.push("/contact-for-digital-requirements")}
         btnlink="/contact-for-digital-requirements"

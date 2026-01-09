@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { withImageBase } from "@/app/utils/image";
 
 interface HeroSectionProps {
   backgroundImage: string;
@@ -19,7 +20,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
     <section
       className={`flex items-center ${height} bg-cover bg-left sm:text-bg-center md:text-bg-center] lg:text-bg-center xl:text-bg-center 2xl:bg-center bg-no-repeat service-bg`}
       style={{
-        backgroundImage: `url(${backgroundImage})`,
+        backgroundImage: `url(${withImageBase(backgroundImage)})`,
       }}
     >
       <div className="container mx-auto max-w-screen-xl px-4 md:px-8">

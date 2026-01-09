@@ -4,6 +4,8 @@ import Image from "next/image";
 import { Button2 } from "@/components/ui/button2";
 import { ArrowUpIcon } from "lucide-react";
 import Link from "next/link";
+import { withImageBase } from "@/app/utils/image";
+
 
 interface SuccessStoryProps {
   title: string;
@@ -31,7 +33,7 @@ export default function SuccessStory({
 
           {/* Arrow Image */}
           <Image
-            src={arrowImage}
+            src={withImageBase(arrowImage)}
             alt="Arrow"
             width={120}
             height={50}

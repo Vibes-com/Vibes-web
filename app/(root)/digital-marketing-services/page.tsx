@@ -82,7 +82,7 @@ const textcontent: blogContent = {
       Insights focused on performance, visibility, and sustainable<br /> digital growth.
     </>
   ),
-  bgImage: '/assets/img/web-development/wd-services-bg.jpg',
+  bgImage: '/web-development/wd-services-bg.jpg',
   service:'digital'
 };
 
@@ -222,7 +222,7 @@ export default function Page() {
       <DigitalMarketingSolutions />
       <WhyChooseUsSection
         badgeText="Why Choose Us"
-        bgImage="/assests/img/technology-details/common-casestudy-bg.jpg"
+        bgImage="/technology-details/common-casestudy-bg.jpg"
         heading={
           <>
             A Smarter Way to <br />
@@ -260,7 +260,7 @@ export default function Page() {
         description="A showcase of strategic digital campaigns, performance marketing, and brand-building initiatives that deliver measurable results across industries."
         slides={slides}
         ctaText="Talk to us today"
-        bgImage="/assests/img/web-development/wd-services-bg.jpg"
+        bgImage="/web-development/wd-services-bg.jpg"
       />
 
       {/* CASE STUDIES */}
@@ -284,7 +284,7 @@ export default function Page() {
           description="Discover how our digital marketing strategies turn insights into action and brands into market leaders."
           buttonText="Explore Case Studies"
           // cards={cards}
-          bgImage="/assests/img/technology-details/common-casestudy-bg.jpg"
+          bgImage="/technology-details/common-casestudy-bg.jpg"
         />
       {/* )} */}
 
@@ -304,7 +304,7 @@ export default function Page() {
         title="Let’s Build Something Powerful"
         subtitle="Scalable digital solutions tailored for you"
         buttonText="Talk to Experts"
-        arrowImage="/assests/img/technology-details/arrow.png"
+        arrowImage="/technology-details/arrow.png"
         className="bg-black"
         // onButtonClick={() => router.push("/contact-for-digital-requirements")}
         btnlink="/contact-for-digital-requirements"

@@ -73,7 +73,7 @@ useEffect(() => {
       className="branding-customer-wrapper relative section-gap !pb-30 lg:!pb-40 not-odd:overflow-visible"
       style={{
         backgroundImage: backgroundImage
-          ? `url(${backgroundImage})`
+          ? `url(${withImageBase(backgroundImage)})`
           : undefined,
         backgroundSize: "cover",
         backgroundPosition: "center",

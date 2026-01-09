@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { withImageBase } from "@/app/utils/image";
 
 interface CaseStudyDetailsImpactProps {
   badgeText?: string;
@@ -15,13 +16,13 @@ const CaseStudyDetailsImpact: React.FC<CaseStudyDetailsImpactProps> = ({
   titleLines,
   highlightText,
   impactList,
-  bgImage = "/assests/img/web-development/wd-services-bg.jpg",
+  bgImage = "/web-development/wd-services-bg.jpg",
 }) => {
   return (
     <section
       className="w-full relative overflow-hidden section-gap bg-no-repeat bg-cover bg-center"
       style={{
-        backgroundImage: bgImage ? `url(${bgImage})` : "none",
+        backgroundImage: bgImage ? `url(${withImageBase(bgImage)})` : "none",
       }}
     >
       <div className="container mx-auto max-w-screen-xl px-4 md:px-8">

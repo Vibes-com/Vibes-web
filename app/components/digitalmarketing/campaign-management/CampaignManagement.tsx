@@ -23,7 +23,7 @@ const textcontent: blogContent = {
       Explore thought leadership, trends, and proven strategies behind<br /> successful influencer and event-led campaigns shaping modern brand communication.
     </>
   ),
-  bgImage: '/assets/img/web-development/wd-services-bg.jpg',
+  bgImage: '/web-development/wd-services-bg.jpg',
   service: 'digital'
 };
 
@@ -32,7 +32,7 @@ const CampaignManagement = () => {
   return (
     <div>
       <HeroSection
-        bgImage="/assests/img/campaign-management/compaign-banner.jpg"
+        bgImage="/campaign-management/compaign-banner.jpg"
         title={
           <>
             Campaign <br />
@@ -47,7 +47,7 @@ const CampaignManagement = () => {
         highlightText="Drives Engagement"
         description=" From audience discovery to on-ground activation, campaigns are designed, managed, and optimized to deliver visibility, relevance, and results across multiple touchpoints."
         mainImage="/digital-m-details/compaign-left-img.png"
-        bgImage="/assests/img/web-development/wd-services-bg.jpg"
+        bgImage="/web-development/wd-services-bg.jpg"
         features={[
           {
             icon: "/digital-m-details/influencer.png",
@@ -65,7 +65,7 @@ const CampaignManagement = () => {
 
       <WhyChooseUs
         badgeText="Why Choose Us?"
-        backgroundImage="/assests/img/technology-details/common-casestudy-bg.jpg"
+        backgroundImage="/technology-details/common-casestudy-bg.jpg"
         heading="Vibes Campaign "
         highlightText="Excellence"
         description=" Strategic, insight-led campaigns designed for reach, relevance, and measurable outcomes."
@@ -97,7 +97,7 @@ const CampaignManagement = () => {
         title="Plan Your Campaign"
         subtitle="Build campaigns that connect, engage, and perform across every channel."
         buttonText="Let’s Connect"
-        arrowImage="/assests/img/technology-details/arrow.png"
+        arrowImage="/technology-details/arrow.png"
         className="bg-black"
         // onButtonClick={() => router.push("/contact-for-digital-requirements")}
         btnlink="/contact-for-digital-requirements"
