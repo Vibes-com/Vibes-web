@@ -48,8 +48,7 @@ const SectionWithSlider: FC<SectionProps> = ({
         {/* LEFT SIDE CONTENT */}
 
         <div
-          className="p-10 md:p-15 md:col-span-5 space-y-6
-  max-h-[772px] overflow-y-auto pr-2"
+          className="p-10 md:p-15 md:col-span-5 space-y-6 max-h-[772px] overflow-y-auto pr-2"
         >
           <div className="space-y-2">
             <div className="flex justify-start mb-5">
@@ -60,11 +59,11 @@ const SectionWithSlider: FC<SectionProps> = ({
                 </span>
               </div>
             </div>
-            <h2 className="font-poppins font-semibold text-[35px] sm:text-[55px] md:text-[55px] lg:text-[55px] xl:text-[55px] 2xl:text-[55px] leading-[123%] tracking-[0] text-[#FFFFFF]">
+            <h2 className="font-poppins font-semibold text-[35px] sm:text-[45px] md:text-[45px] lg:text-[30px] xl:text-[45px] 2xl:text-[55px] leading-[123%] tracking-[0] text-[#FFFFFF]">
               {title}
             </h2>
             {highlight && (
-              <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[35px] sm:text-[55px] md:text-[55px] lg:text-[55px] xl:text-[55px] 2xl:text-[55px] leading-[123%] tracking-[0] text-[#FFFFFF]">
+              <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[35px] sm:text-[45px] md:text-[45px] lg:text-[45px] xl:text-[45px] 2xl:text-[55px] leading-[123%] tracking-[0] text-[#FFFFFF]">
                 {highlight}
               </span>
             )}
@@ -110,7 +109,7 @@ const SectionWithSlider: FC<SectionProps> = ({
 
         {/* RIGHT SIDE SLIDER */}
         <div
-          className={`relative md:col-span-7 w-full h-[340px] sm:h-[700px] md:h-[700px] lg:h-[700px] xl:h-[700px] ${reverse ? "md:order-1" : "md:order-2"}`}
+          className={`relative md:col-span-7 w-full h-[50vh] sm:h-[68vh] md:-[60vh] lg:h-[100%] ${reverse ? "md:order-1" : "md:order-2"}`}
         >
           <Swiper
             modules={[Autoplay]}
@@ -163,7 +162,7 @@ const SectionWithSlider: FC<SectionProps> = ({
               return (
                 <SwiperSlide key={i}>
                   <div className="cut-wrapper">
-                    <img src={images[nextIndex]} className="img-next" alt="next" />
+                    <img src={images[nextIndex]} className="img-next " alt="next" />
                     <img
                       src={img}
                       className={`img-current ltr`}
