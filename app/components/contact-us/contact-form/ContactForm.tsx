@@ -29,11 +29,12 @@ export const contactSchema = z.object({
     .max(10, "Mobile number must be 10 digits"),
   email: z.string().email("Invalid email address"),
   website: z.string().optional(),
-  message: z.string().optional(),
+  message: z.string().min(2, "Message is required")
 });
 
 const ContactForm = () => {
   const router = useRouter();
+  const [errors, setErrors] = useState<Record<string, string>>({});
   const [submitContact, { isLoading, isSuccess, data, error }] =
     useSubmitContactFormMutation();
 
@@ -67,61 +68,73 @@ const ContactForm = () => {
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
+  e.preventDefault();
+  setErrors({});
 
-    if (captchaInput !== captcha) {
-      toast.error("Invalid captcha");
-      refreshCaptcha();
+  // Zod validation
+  const validation = contactSchema.safeParse(formData);
+
+  if (!validation.success) {
+    const fieldErrors: Record<string, string> = {};
+
+    validation.error.issues.forEach((issue) => {
+      const field = issue.path[0] as string;
+      fieldErrors[field] = issue.message;
+    });
+
+    setErrors(fieldErrors);
+    return;
+  }
+
+  //Captcha validation
+  if (captchaInput !== captcha) {
+    setErrors({ captcha: "Invalid captcha" });
+    refreshCaptcha();
+    return;
+  }
+
+  //API call
+  try {
+    const res = await submitContact(formData).unwrap();
+
+    if (res.status === 0) {
+      toast.error(res.msg);
       return;
     }
 
-    const validation = contactSchema.safeParse(formData);
+    toast.success(res.msg);
+    router.push("/thankyou");
 
-    if (!validation.success) {
-      validation.error.issues.forEach((issue) => {
-        toast.error(issue.message);
-      });
-      return;
+    setFormData({
+      firstname: "",
+      lastname: "",
+      mobile_no: "",
+      email: "",
+      website: "",
+      message: "",
+    });
+
+    setErrors({});
+    refreshCaptcha();
+  } catch (err) {
+    let errMsg = "Something went wrong. Please try again.";
+
+    if (
+      err &&
+      typeof err === "object" &&
+      "data" in err &&
+      typeof (err as any).data === "object" &&
+      (err as any).data?.errors.message
+    ) {
+      errMsg = (err as any).data.errors.message;
     }
 
-    try {
-      const res = await submitContact(formData).unwrap();
-
-      if (res.status === 0) {
-        toast.error(res.msg);
-        return; // ⛔ STOP HERE
-      }
-
-      toast.success(res.msg);
-      router.push("/thankyou");
-
-      refreshCaptcha();
-      setFormData({
-        firstname: "",
-        lastname: "",
-        mobile_no: "",
-        email: "",
-        website: "",
-        message: "",
-      });
-
-    } catch (error) {
-      console.error("Submission error:", error);
-
-      let msg = "Something went wrong. Please try again.";
-
-      if (
-        typeof (error as any)?.data === "string"
-      ) {
-        // HTML response
-        msg = "Server error. Please contact support.";
-      } else if ((error as any)?.data?.msg) {
-        msg = (error as any).data.msg;
-      }
-
-      toast.error(msg);
-    }
-  };
+    toast.error(errMsg);
+  }
+};
+const inputClass = (hasError?: string) =>
+  `w-full rounded-lg px-4 py-3 bg-white focus:outline-none 
+   ${hasError ? "border border-red-500 focus:border-red-500" : "border border-gray-300 focus:border-black"}`;
 
   return (
     <section className="w-full section-gap">
@@ -198,72 +211,96 @@ const ContactForm = () => {
           <div className="bg-[#ECF3EE] shadow-lg rounded-2xl p-8">
             <h3 className="text-2xl font-semibold mb-6">Connect With Us</h3>
 
-            <form className="space-y-4" onSubmit={handleSubmit}>
+            <form className="space-y-4" onSubmit={handleSubmit} noValidate>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <input
-                  name="firstname"
-                  placeholder="First Name*"
-                  value={formData.firstname}
-                  onChange={handleChange}
-                  required
-                  className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-black bg-white"
-                />
-                <input
-                  name="lastname"
-                  placeholder="Last Name*"
-                  value={formData.lastname}
-                  onChange={handleChange}
-                  required
-                  className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-black bg-white"
-                />
+                <div>
+                  <input
+                    name="firstname"
+                    placeholder="First Name*"
+                    value={formData.firstname}
+                    onChange={handleChange}
+                    className={inputClass(errors.firstname)}
+                  />
+                  {errors.firstname && (
+                    <p className="text-red-500 text-sm mt-1">{errors.firstname}</p>
+                  )}
+                </div>
+                <div>
+                  <input
+                    name="lastname"
+                    placeholder="Last Name*"
+                    value={formData.lastname}
+                    onChange={handleChange}
+                    className={inputClass(errors.lastname)}
+                  />
+                  {errors.lastname && (
+                    <p className="text-red-500 text-sm mt-1">{errors.lastname}</p>
+                  )}
+                </div>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <input
-                  name="mobile_no"
-                  placeholder="Phone Number*"
-                  value={formData.mobile_no}
-                  onChange={handleChange}
-                  required
-                  className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-black bg-white"
-                />
-                <input
-                  name="email"
-                  type="email"
-                  placeholder="Email Address*"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                  className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-black bg-white"
-                />
+                <div>
+                  <input
+                    name="mobile_no"
+                    placeholder="Phone Number*"
+                    value={formData.mobile_no}
+                    onChange={handleChange}
+                    className={inputClass(errors.mobile_no)}
+                  />
+                  {errors.mobile_no && (
+                    <p className="text-red-500 text-sm mt-1">{errors.mobile_no}</p>
+                  )}
+                </div>
+                <div>
+                  <input
+                    name="email"
+                    type="email"
+                    placeholder="Email Address*"
+                    value={formData.email}
+                    onChange={handleChange}
+                    className={inputClass(errors.email)}
+                  />
+                  {errors.email && (
+                    <p className="text-red-500 text-sm mt-1">{errors.email}</p>
+                  )}
+                </div>
               </div>
-
-              <input
-                name="website"
-                placeholder="Website"
-                value={formData.website}
-                onChange={handleChange}
-                className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-black bg-white"
-              />
-
-              <textarea
-                name="message"
-                placeholder="Your Message"
-                rows={5}
-                value={formData.message}
-                onChange={handleChange}
-                className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-black bg-white"
-              />
-
+              <div>
+                <input
+                  name="website"
+                  placeholder="Website"
+                  value={formData.website}
+                  onChange={handleChange}
+                  className={inputClass(errors.website)}
+                />
+                {errors.website && (
+                  <p className="text-red-500 text-sm mt-1">{errors.website}</p>
+                )}
+              </div>
+              <div>
+                <textarea
+                  name="message"
+                  placeholder="Your Message"
+                  rows={5}
+                  value={formData.message}
+                  onChange={handleChange}
+                  className={inputClass(errors.message)}
+                />
+                {errors.message && (
+                  <p className="text-red-500 text-sm mt-1">{errors.message}</p>
+                )}
+              </div>
 
               <div>
                 <label className="block font-medium mb-2">Captcha</label>
-                <div className="flex flex-wrap sm:flex-nowrap md:flex-nowrap lg:flex-nowrap xl: 2xl: gap-4 items-center">
+
+                <div className="flex gap-4 items-center">
                   <input
                     placeholder="Enter Captcha"
                     value={captchaInput}
                     onChange={(e) => setCaptchaInput(e.target.value)}
-                    className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-black bg-white"
+                    className={inputClass(errors.captcha)}
                   />
                   <div className="min-w-[160px] h-[48px] bg-[#7a7a7a] text-white rounded-md flex items-center justify-center tracking-widest">
                     {captcha}
@@ -272,8 +309,9 @@ const ContactForm = () => {
                     <RotateCw />
                   </button>
                 </div>
-                {captchaError && (
-                  <p className="text-red-500 text-sm mt-1">{captchaError}</p>
+
+                {errors.captcha && (
+                  <p className="text-red-500 text-sm mt-1">{errors.captcha}</p>
                 )}
               </div>
 
