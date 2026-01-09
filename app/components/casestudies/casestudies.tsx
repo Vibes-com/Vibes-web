@@ -31,7 +31,7 @@ export default function CaseStudies() {
         return <p className="text-center py-10 text-red-500">Failed to load case studies</p>;
 
     return (
-        <section className="casestudies-wrapper section-gap">
+        <section className="casestudies-wrapper section-gap overflow-hidden">
             <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
                 <div className="flex justify-start mb-5">
                     <div className="px-6 py-2 rounded-full border border-[#F4BE00] inline-flex items-center gap-2">
