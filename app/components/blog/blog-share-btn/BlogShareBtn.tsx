@@ -11,6 +11,8 @@ const BlogShareButtons = () => {
     const url =
         'https://www.ligogroup.in/blog-detail/the-best-corporate-bags-manufacturers-in-india';
     const title = 'The Best Corporate Bags Manufacturers In India';
+    const encodedUrl = encodeURIComponent(url);
+const encodedTitle = encodeURIComponent(title);
 
     return (
         <div className="float-right mt-6">
@@ -33,7 +35,7 @@ const BlogShareButtons = () => {
                     <li className="w-10 h-10 rounded-full bg-white shadow flex items-center justify-center scale-100 shadow-[0_0_13px_#F4BE00] ">
                         <Link
                             target="_blank"
-                            href={``}
+                            href={`https://wa.me/?text=${encodedTitle}%20${encodedUrl}`}
                         >
                             <Image
                                 src={withImageBase("/blog/whatsapp_share.png")}
@@ -49,7 +51,7 @@ const BlogShareButtons = () => {
                     <li className="w-10 h-10 rounded-full bg-white shadow flex items-center justify-center shadow-[0_0_13px_#F4BE00] ">
                         <Link
                             target="_blank"
-                            href={``}
+                           href={`https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`}
                         >
                             <Image
                                 src={withImageBase("/blog/facebook_share.png")}
@@ -65,7 +67,7 @@ const BlogShareButtons = () => {
                     <li className="w-10 h-10 rounded-full bg-white shadow flex items-center justify-center shadow-[0_0_13px_#F4BE00] ">
                         <Link
                             target="_blank"
-                            href={``}
+                            href={`https://twitter.com/intent/tweet?text=${encodedTitle}&url=${encodedUrl}`}
                         >
                             <Image
                                  src={withImageBase("/blog/twitter_share.png")}
@@ -81,7 +83,7 @@ const BlogShareButtons = () => {
                     <li className="w-10 h-10 rounded-full bg-white shadow flex items-center justify-center shadow-[0_0_13px_#F4BE00] ">
                         <Link
                             target="_blank"
-                            href={``}
+                           href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`}
                         >
                             <Image
                                 src={withImageBase("/blog/linkedin_share.png")}
