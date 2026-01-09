@@ -188,7 +188,7 @@ const WebDevelopment = () => {
             <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[28px] sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] leading-[1.23] tracking-normal">Choose Vibes.</span> Choose Certainty.
           </>
         }
-        description="Vibes delivers high-performing, scalable, secure digital solutions built with precision and trust."
+        description="Vibes delivers high-performing, scalable, secure digital solutions- built with precision, expertise, clear communication, and on-time delivery brands trust."
         items={[
           {
             title: "Insight-Led Execution",

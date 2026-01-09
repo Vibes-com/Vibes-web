@@ -70,10 +70,10 @@ export default function VerticalSlickMilestones() {
             desc: " How Vibes Powers Brands with Creativity, Digital Strategy & Tech Innovation.",
             img: "/about/Vision-Impact.png"
         },
-        {
-            title: "From Vision to Impact",
-            desc: " How Vibes Powers Brands with Creativity, Digital Strategy & Tech Innovation.",
-            img: "/about/Vision-Impact.png"
+      {
+            title: "On to the Path of Sustainability",
+            desc: " Forward-thinking digital solutions for a shared and innovative vision.",
+            img: "/about/Together-Tomorrow.png"
         },
     ];
 
