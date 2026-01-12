@@ -18,7 +18,7 @@ const textcontent: blogContent = {
   highlighttitle: "Narrative",
   Subtitle: (
     <>
-      nsights, perspectives, and trends shaping effective brand communication<br /> in evolving markets.
+      Insights, perspectives, and trends shaping effective brand communication<br /> in evolving markets.
     </>
   ),
   bgImage: '/web-development/wd-services-bg.jpg',

@@ -34,7 +34,7 @@ export default function SuccessStory({
           {/* Arrow Image */}
           <Image
             src={withImageBase(arrowImage)}
-            alt="Arrow"
+            alt="Vibes Contact Detail"
             width={120}
             height={50}
             className="arrow-img"
