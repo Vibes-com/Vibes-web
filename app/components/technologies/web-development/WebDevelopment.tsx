@@ -64,27 +64,31 @@ const WebDevelopment = () => {
         description="Vibes develops secure, bespoke web platforms engineered for high performance, scalability, and reliability, supported by refined development and adaptive design."
         mainImage="/web-development/webdevelopment-about-img.png"
         bgImage="/web-development/wd-services-bg.jpg"
-
+        alt="Web Development"
         features={[
           {
             icon: "/web-development/coded-secure.png",
             title: <>Custom-Coded,<br />Secure Builds</>,
-            subtitle: ""
+            subtitle: "",
+            alt:"Custom-Coded, Secure Builds"
           },
           {
             icon: "/web-development/high-speed-icon.png",
             title: <>High-Speed <br />Performance</>,
-            subtitle: ""
+            subtitle: "",
+            alt:"High-Speed Performance"
           },
           {
             icon: "/web-development/scalability.png",
             title: <>Scalable <br />Architecture</>,
-            subtitle: ""
+            subtitle: "",
+            alt: "Scalable Architecture"
           },
           {
             icon: "/web-development/project-management.png",
             title: <>On-Time Project<br />Delivery</>,
-            subtitle: ""
+            subtitle: "",
+            alt:"On-Time Project Delivery"
           },
         ]}
       />
@@ -163,21 +167,47 @@ const WebDevelopment = () => {
         }
         description="Vibes uses a robust, future-ready tech stack built for speed, security, and scale every tool is handpicked to power high performance and elevate every digital experience."
         topLogos={[
-          "/web-development/php-logo.png",
-          "/web-development/react-logo.png",
-          "/web-development/github-logo.png",
-          "/web-development/css-logo.png",
-          "/web-development/node-logo.png",
-          "/web-development/html-logo.png",
-          "/web-development/bootstrap-logo.png",
+          {
+            alt:"php-logo",
+            imgurl:"/web-development/php-logo.png"},
+          {
+            alt:"react-logo",
+            imgurl:"/web-development/react-logo.png"},
+          {
+            alt:"github-logo",
+            imgurl:"/web-development/github-logo.png"},
+          {
+            alt:"css-logo",
+            imgurl:"/web-development/css-logo.png"},
+          {
+            alt:"node-logo",
+            imgurl:"/web-development/node-logo.png"},
+          {
+            alt:"html-logo",
+            imgurl:"/web-development/html-logo.png"},
+          {
+            alt:"bootstrap-logo",
+            imgurl:"/web-development/bootstrap-logo.png"},
         ]}
         bottomLogos={[
-          "/web-development/shopify-logo.png",
-          "/web-development/postgresql-logo.png",
-          "/web-development/wordpress-logo.png",
-          "/web-development/mysql-logo.png",
-          "/web-development/ci-4-logo.png",
-          "/web-development/mongodb-logo.png",
+          {
+            alt:"shopify-logo",
+            imgurl:"/web-development/shopify-logo.png"},
+          {
+            alt:"postgresql-logo",
+            imgurl:"/web-development/postgresql-logo.png"},
+          {
+            alt:"wordpress-logo",
+            imgurl:"/web-development/wordpress-logo.png"},
+          {
+            alt:"mysql-logo",
+            imgurl:"/web-development/mysql-logo.png"},
+          {
+            alt:"ci-4-logo",
+            imgurl:"/web-development/ci-4-logo.png"},
+          {
+            alt:"mongodb-logo",
+            imgurl:"/web-development/mongodb-logo.png"},
         ]}
       />
       <WhyChooseSection

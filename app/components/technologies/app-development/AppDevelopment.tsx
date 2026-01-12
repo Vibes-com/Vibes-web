@@ -29,16 +29,18 @@ const AppDevelopment = () => {
         description="Custom-built mobile applications that support business growth across Android and iOS platforms."
         mainImage="/app-development/app-dev-serivice.png"
         bgImage="/web-development/wd-services-bg.jpg"
-
+        alt="Mobile App Development"
         features={[
           {
             icon: "/app-development/mobile-development.png",
             title: <>Android App Development</>,
+            alt: "Android App Development",
             subtitle: <>Robust Android applications built for performance, security, and seamless user experiences across devices</>,
           },
           {
             icon: "/app-development/ios-development.png",
             title: <>iOS App Development</>,
+            alt: "iOS App Development",
             subtitle: <>High-quality iOS apps designed for speed, stability, and compliance with Apple’s design and performance standards</>,
           },
 

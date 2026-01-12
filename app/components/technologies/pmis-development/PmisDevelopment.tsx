@@ -132,21 +132,47 @@ const PmisDevelopment = () => {
         }
         description="Delivered large-scale, mission-critical digital solutions in collaboration with PwC and EY, supporting transparency, governance, and data-driven decision-making across key government initiatives."
         topLogos={[
-          "/pmis/cris-logo.png",
-          "/pmis/pm-mitra-logo.png",
-          "/pmis/education-logo.png",
-          "/pmis/prayagraj-logo.jpg",
-          "/pmis/kumbh-logo.png",
-          "/pmis/dtis-logo.png",
-          "/pmis/moh-logo.png",
+          {
+            alt:"cris-logo",
+            imgurl:"/pmis/cris-logo.png"},
+          {
+            alt:"pm-mitra-logo",
+            imgurl:"/pmis/pm-mitra-logo.png"},
+          {
+            alt:"education-logo",
+            imgurl:"/pmis/education-logo.png"},
+          {
+            alt:"prayagraj-logo",
+            imgurl:"/pmis/prayagraj-logo.jpg"},
+          {
+            alt:"kumbh-logo",
+            imgurl:"/pmis/kumbh-logo.png"},
+          {
+            alt:"dtis-logo",
+            imgurl:"/pmis/dtis-logo.png"},
+          {
+            alt:"moh-logo",
+            imgurl:"/pmis/moh-logo.png"},
         ]}
         bottomLogos={[
-          "/pmis/dtis-logo.png",
-          "/pmis/kumbh-logo.png",
-          "/pmis/cris-logo.png",
-          "/pmis/moh-logo.png",
-          "/pmis/pm-mitra-logo.png",
-          "/pmis/prayagraj-logo.jpg",
+          {
+            alt:"dtis-logo",
+            imgurl:"/pmis/dtis-logo.png"},
+          {
+            alt:"kumbh-logo",
+            imgurl:"/pmis/kumbh-logo.png"},
+          {
+            alt:"cris-logo",
+            imgurl:"/pmis/cris-logo.png"},
+          {
+            alt:"moh-logo",
+            imgurl:"/pmis/moh-logo.png"},
+          {
+            alt:"pm-mitra-logo",
+            imgurl:"/pmis/pm-mitra-logo.png"},
+          {
+            alt:"prayagraj-logo",
+            imgurl:"/pmis/prayagraj-logo.jpg"},
         ]}
       />
       <SuccessStory

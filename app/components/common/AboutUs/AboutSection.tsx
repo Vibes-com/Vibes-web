@@ -5,6 +5,7 @@ type Feature = {
   icon: string;
   title: React.ReactNode;
   subtitle: React.ReactNode;
+  alt:string;
 };
 
 type AboutSectionProps = {
@@ -15,7 +16,7 @@ type AboutSectionProps = {
   description: string;
   mainImage: string;
   features: Feature[];
-
+  alt:string;
 };
 
 const AboutSection = ({
@@ -26,6 +27,7 @@ const AboutSection = ({
   description,
   mainImage,
   features,
+  alt
 }: AboutSectionProps) => {
   return (
     <section
@@ -40,8 +42,8 @@ const AboutSection = ({
           {/* LEFT IMAGE */}
           <div className="relative">
             <Image
-               src={withImageBase(mainImage)}
-              alt="about image"
+              src={withImageBase(mainImage)}
+              alt={alt}
               width={650}
               height={450}
               className="relative z-10"
@@ -79,8 +81,8 @@ const AboutSection = ({
                 <div key={index} className="flex items-start gap-4 flex-wrap">
                   <div className="w-15 h-15 rounded-full bg-[#466E59] flex items-center justify-center">
                     <Image
-                       src={withImageBase(feature.icon)}
-                      alt="feature icon"
+                      src={withImageBase(feature.icon)}
+                      alt={feature.alt}
                       width={25}
                       height={25}
                       unoptimized

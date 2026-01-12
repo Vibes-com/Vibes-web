@@ -29,26 +29,30 @@ const EcommDevelopment = () => {
         description="Comprehensive e-commerce services covering development, integrations, optimization, and scalability."
         mainImage="/ecommerce-development/ecom-dev-services.png"
         bgImage="/web-development/wd-services-bg.jpg"
-
+        alt="E-Commerce Development"
         features={[
           {
             icon: "/ecommerce-development/ecommerce.png",
             title: <>Custom E-commerce Development</>,
+            alt: "Custom E-commerce Development",
             subtitle: <>Tailored online stores built for performance, scalability, and seamless operations.</>,
           },
           {
             icon: "/ecommerce-development/platform.png",
             title: <>Platform-Based Solutions</>,
+            alt: "Platform-Based Solutions",
             subtitle: <> Expert development on Shopify, WooCommerce, and custom frameworks</>,
           },
           {
             icon: "/ecommerce-development/integration.png",
             title: <>Payment & System Integrations</>,
+            alt: "Payment & System Integrations",
             subtitle: <> Secure payment gateways, shipping, CRM, and marketing tool integrations.</>,
           },
           {
             icon: "/ecommerce-development/optimization.png",
             title: <>Optimization & Support</>,
+            alt: "Optimization & Support",
             subtitle: <>Performance tuning, security updates, and ongoing enhancements for growth.</>,
           },
 
@@ -161,21 +165,47 @@ const EcommDevelopment = () => {
         }
         description=" A robust technology stack enabling secure, scalable, and high-performance e-commerce solutions."
         topLogos={[
-          "/web-development/php-logo.png",
-          "/web-development/react-logo.png",
-          "/web-development/github-logo.png",
-          "/web-development/css-logo.png",
-          "/web-development/node-logo.png",
-          "/web-development/html-logo.png",
-          "/web-development/bootstrap-logo.png",
+          {
+            alt:"php-logo",
+            imgurl:"/web-development/php-logo.png"},
+          {
+            alt:"react-logo",
+            imgurl:"/web-development/react-logo.png"},
+          {
+            alt:"github-logo",
+            imgurl:"/web-development/github-logo.png"},
+          {
+            alt:"css-logo",
+            imgurl:"/web-development/css-logo.png"},
+          {
+            alt:"node-logo",
+            imgurl:"/web-development/node-logo.png"},
+          {
+            alt:"html-logo",
+            imgurl:"/web-development/html-logo.png"},
+          {
+            alt:"bootstrap-logo",
+            imgurl:"/web-development/bootstrap-logo.png"},
         ]}
         bottomLogos={[
-          "/web-development/shopify-logo.png",
-          "/web-development/postgresql-logo.png",
-          "/web-development/wordpress-logo.png",
-          "/web-development/mysql-logo.png",
-          "/web-development/ci-4-logo.png",
-          "/web-development/mongodb-logo.png",
+          {
+            alt:"shopify-logo",
+            imgurl:"/web-development/shopify-logo.png"},
+          {
+            alt:"postgresql-logo",
+            imgurl:"/web-development/postgresql-logo.png"},
+          {
+            alt:"wordpress-logo",
+            imgurl:"/web-development/wordpress-logo.png"},
+          {
+            alt:"mysql-logo",
+            imgurl:"/web-development/mysql-logo.png"},
+          {
+            alt:"ci-4-logo",
+            imgurl:"/web-development/ci-4-logo.png"},
+          {
+            alt:"mongodb-logo",
+            imgurl:"/web-development/mongodb-logo.png"},
         ]}
       />
 
