@@ -89,7 +89,7 @@ const MarqueeTabsSlider = ({
                 flex items-center justify-center px-6
                 shadow-md border border-[#6f8f7c]"
               >
-                <img  src={withImageBase(src)} className="max-h-[50px] w-auto" />
+                <img  src={withImageBase(src)} alt="Vibes Client" className="max-h-[50px] w-auto" />
               </div>
             ))}
           </div>

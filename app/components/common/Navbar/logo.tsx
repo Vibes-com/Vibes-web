@@ -8,7 +8,7 @@ const Logo = () => {
         <Link href="/">
             <Image
                 src={withImageBase("/home/vibes-logo.png")}
-                alt=''
+                alt='Vibes Communications Logo'
                 width={100}
                 height={100}
                 className="vibes-logo"
