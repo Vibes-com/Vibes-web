@@ -15,7 +15,7 @@ const MissionVision: React.FC = () => {
                         <div className="rounded-xl overflow-hidden p-1">
                             <Image
                                 src={withImageBase("/about/together-img-1.jpg")}
-                                alt="team main" priority unoptimized
+                                alt="vibes Team" priority unoptimized
                                 width={390}
                                 height={510}
                                 className="rounded-xl shadow-xl border-[5px] border-white w-[70%] "
@@ -25,7 +25,7 @@ const MissionVision: React.FC = () => {
                         <div className="absolute bottom-[-35px] right-[25px] md:right-[80px] lg:right-[90px] xl:right-[90px] 2xl:right-[90px] rounded-xl overflow-hidden shadow-xl">
                             <Image
                                  src={withImageBase("/about/together-img-2.jpg")}
-                                alt="team small" priority unoptimized
+                                alt="vibes Team" priority unoptimized
                                 width={220}
                                 height={330}
                                 className="border-[5px] border-white rounded-xl together-small-img object-cover"
@@ -57,7 +57,7 @@ const MissionVision: React.FC = () => {
                             <div className="col-span-12 md:col-span-1  flex items-center justify-center h-[40px] w-[40] rounded-full bg-[#F4BE00]">
                                 <Image
                                      src={withImageBase("/about/mission.png")}
-                                    alt="mission icon" priority unoptimized
+                                    alt="Vibes mission" priority unoptimized
                                     width={20}
                                     height={20}
                                 />
@@ -74,7 +74,7 @@ const MissionVision: React.FC = () => {
                             <div className="col-span-2 md:col-span-1 flex items-center justify-center h-[40px] w-[40] rounded-full bg-[#F4BE00]">
                                 <Image
                                     src={withImageBase("/about/vision.png")}
-                                    alt="vision icon" priority unoptimized
+                                    alt="Vibes vision" priority unoptimized
                                     width={20}
                                     height={20}
                                 />

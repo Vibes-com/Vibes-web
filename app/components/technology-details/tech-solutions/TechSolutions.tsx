@@ -115,7 +115,7 @@ const TechSolutions = () => {
                             {/* -------- DEFAULT BACKGROUND IMAGE -------- */}
                             <Image
                                  src={withImageBase(service.bgImage)}
-                                alt="bg" priority unoptimized
+                                alt="Technologies Services" priority unoptimized
                                 fill
                                 className="absolute inset-0 object-cover opacity-20
               transition-opacity duration-500 lg:group-hover:opacity-0"
@@ -124,7 +124,7 @@ const TechSolutions = () => {
                             {/* -------- HOVER BACKGROUND IMAGE -------- */}
                             <Image
                                 src={withImageBase(service.hoverBgImage)}
-                                alt="hover-bg" priority unoptimized
+                                alt="Technologies Services" priority unoptimized
                                 fill
                                 className="absolute inset-0 object-cover opacity-0
               transition-opacity duration-500 lg:group-hover:opacity-100"
