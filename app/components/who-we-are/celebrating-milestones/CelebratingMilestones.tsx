@@ -124,7 +124,7 @@ export default function VerticalSlickMilestones() {
                                             <div className="quote-container absolute top-6 right-6">
                                                 <Image
                                                    src={withImageBase("/about/quote-img.png")}
-                                                    alt="quote image" priority unoptimized
+                                                    alt="Celebrating Milestone" priority unoptimized
                                                     width={23}
                                                     height={23}
                                                 />

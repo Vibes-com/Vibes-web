@@ -33,21 +33,48 @@ const MarqueeTabsSlider = ({
 
   const marqueeLogos = useMemo(() => {
     return [
-      "/digital-m-details/digital-icon-1.png",
-      "/digital-m-details/digital-icon-2.png",
-      "/digital-m-details/digital-icon-3.png",
-      "/digital-m-details/digital-icon-4.png",
-      "/digital-m-details/digital-icon-5.png",
-      "/digital-m-details/digital-icon-6.png",
-      "/digital-m-details/digital-icon-7.png",
-      "/digital-m-details/digital-icon-1.png",
-      "/digital-m-details/digital-icon-2.png",
-      "/digital-m-details/digital-icon-3.png",
-      "/digital-m-details/digital-icon-4.png",
-      "/digital-m-details/digital-icon-5.png",
-      "/digital-m-details/digital-icon-6.png",
-      "/digital-m-details/digital-icon-7.png",
-
+      {
+        alt:"Yamaha Logo",
+        url:"/digital-m-details/digital-icon-1.png"},
+      {
+        alt:"Tomorrow's India Logo",
+        url:"/digital-m-details/digital-icon-2.png"},
+      {
+        alt:"Retas Logo",
+        url:"/digital-m-details/digital-icon-3.png"},
+      {
+        alt:"Motherson Logo",
+        url:"/digital-m-details/digital-icon-4.png"},
+      {
+        alt:"Mofiso Logo",
+        url:"/digital-m-details/digital-icon-5.png"},
+      {
+        alt:"Altrade Logo",
+        url:"/digital-m-details/digital-icon-6.png"},
+      {
+        alt:"Nikita Logo",
+        url:"/digital-m-details/digital-icon-7.png"},
+      {
+        alt:"Yamaha Logo",
+        url:"/digital-m-details/digital-icon-1.png"},
+      {
+        alt:"Tomorrow's India Logo",
+        url:"/digital-m-details/digital-icon-2.png"},
+      {
+        alt:"Retas Logo",
+        url:"/digital-m-details/digital-icon-3.png"},
+      {
+        alt:"Motherson Logo",
+        url:"/digital-m-details/digital-icon-4.png"},
+      {
+        alt:"Mofiso Logo",
+        url:"/digital-m-details/digital-icon-5.png"},
+      {
+        alt:"Altrade Logo",
+        url:"/digital-m-details/digital-icon-6.png"},
+      {
+        alt:"Nikita Logo",
+        url:"/digital-m-details/digital-icon-7.png"},
     ];
   }, [logos]);
 
@@ -89,7 +116,7 @@ const MarqueeTabsSlider = ({
                 flex items-center justify-center px-6
                 shadow-md border border-[#6f8f7c]"
               >
-                <img  src={withImageBase(src)} className="max-h-[50px] w-auto" />
+                <img  src={withImageBase(src.url)} alt={src.alt} className="max-h-[50px] w-auto" />
               </div>
             ))}
           </div>

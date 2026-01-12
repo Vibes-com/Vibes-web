@@ -25,15 +25,33 @@ const textcontent: blogContent = {
 };
 
 const images = [
-  { src: "/branding-details/brand-upliftment-showcase-img-1.jpg" },
-  { src: "/branding-details/brand-upliftment-showcase-img-2.jpg" },
-  { src: "/branding-details/brand-upliftment-showcase-img-3.jpg" },
-  { src: "/branding-details/brand-upliftment-showcase-img-4.jpg" },
-  { src: "/branding-details/brand-upliftment-showcase-img-5.jpg" },
-  { src: "/branding-details/brand-upliftment-showcase-img-6.jpg" },
-  { src: "/branding-details/brand-upliftment-showcase-img-7.jpg" },
-  { src: "/branding-details/brand-upliftment-showcase-img-8.jpg" },
-  { src: "/branding-details/brand-upliftment-showcase-img-9.jpg" },
+  { 
+    alt:"Ligo",
+    src: "/branding-details/brand-upliftment-showcase-img-1.jpg" },
+  { 
+    alt:"Ligo",
+    src: "/branding-details/brand-upliftment-showcase-img-2.jpg" },
+  { 
+    alt:"Mofiso",
+    src: "/branding-details/brand-upliftment-showcase-img-3.jpg" },
+  { 
+    alt:"Ligo",
+    src: "/branding-details/brand-upliftment-showcase-img-4.jpg" },
+  { 
+    alt:"Kaivee",
+    src: "/branding-details/brand-upliftment-showcase-img-5.jpg" },
+  { 
+    alt:"Ligo",
+    src: "/branding-details/brand-upliftment-showcase-img-6.jpg" },
+  { 
+    alt:"",
+    src: "/branding-details/brand-upliftment-showcase-img-7.jpg" },
+  { 
+    alt:"Mofiso",
+    src: "/branding-details/brand-upliftment-showcase-img-8.jpg" },
+  { 
+    alt:"Mofiso",
+    src: "/branding-details/brand-upliftment-showcase-img-9.jpg" },
 ];
 
 const BrandUpliftment = () => {

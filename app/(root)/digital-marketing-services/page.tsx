@@ -88,10 +88,12 @@ const textcontent: blogContent = {
 
 const slides: SlideItem[] = [
  {
-    type: "video",
+  alt:"Digital Marketing Services",  
+  type: "video",
     src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video1.mp4",
   },
   {
+    alt:"Digital Marketing Services",
     type: "images",
     images: [
       { src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img4.webp" },
@@ -99,10 +101,12 @@ const slides: SlideItem[] = [
     ],
   },
   {
+    alt:"Digital Marketing Services",
     type: "video",
     src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video2.mp4",
   },
   {
+    alt:"Digital Marketing Services",
     type: "images",
     images: [
       { src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-image18.jpg" },
@@ -110,10 +114,12 @@ const slides: SlideItem[] = [
     ],
   },
   {
+    alt:"Digital Marketing Services",
     type: "video",
     src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video9.mp4",
   },
   {
+    alt:"Digital Marketing Services",
     type: "images",
     images: [
       { src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-image19.jpg" },
@@ -121,10 +127,12 @@ const slides: SlideItem[] = [
     ],
   },
   {
+    alt:"Digital Marketing Services",
     type: "video",
     src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video6.mp4",
   },
   {
+    alt:"Digital Marketing Services",
     type: "images",
     images: [
       { src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img7.webp" },
@@ -132,10 +140,12 @@ const slides: SlideItem[] = [
     ],
   },
   {
+    alt:"Digital Marketing Services",
     type: "video",
     src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video1.mp4",
   },
   {
+    alt:"Digital Marketing Services",
     type: "images",
     images: [
       { src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-image20.jpg" },
@@ -143,10 +153,12 @@ const slides: SlideItem[] = [
     ],
   },
   {
+    alt:"Digital Marketing Services",
     type: "video",
     src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video3.mp4",
   },
   {
+    alt:"Digital Marketing Services",
     type: "images",
     images: [
       { src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-image26.jpg" },
@@ -154,10 +166,12 @@ const slides: SlideItem[] = [
     ],
   },
   {
+    alt:"Digital Marketing Services",
     type: "video",
     src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video7.mp4",
   },
   {
+    alt:"Digital Marketing Services",
     type: "images",
     images: [
       { src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img13.webp" },
@@ -165,10 +179,12 @@ const slides: SlideItem[] = [
     ],
   },
   {
+    alt:"Digital Marketing Services",
     type: "video",
     src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video4.mp4",
   },
   {
+    alt:"Digital Marketing Services",
     type: "images",
     images: [
       { src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img16.webp" },
@@ -176,10 +192,12 @@ const slides: SlideItem[] = [
     ],
   },
    {
+    alt:"Digital Marketing Services",
     type: "video",
     src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video5.mp4",
   },
   {
+    alt:"Digital Marketing Services",
     type: "images",
     images: [
       { src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img2.webp" },

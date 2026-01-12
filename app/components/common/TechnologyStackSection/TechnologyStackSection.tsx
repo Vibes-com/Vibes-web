@@ -3,12 +3,16 @@
 import React from "react";
 import {withImageBase} from "@/app/utils/image";
 
+type  tlogo ={
+    alt:string;
+    imgurl:string;
+  }
 type TechnologyStackProps = {
   badgeText: string;
   heading: React.ReactNode;
   description: string;
-  topLogos: string[];
-  bottomLogos?: string[];
+  topLogos: tlogo[];
+  bottomLogos?: tlogo[];
   marqueeSpeed?: number;
   bgImage?: string;
 
@@ -19,7 +23,7 @@ const TechnologyStackSection: React.FC<TechnologyStackProps> = ({
   heading,
   description,
   topLogos,
-  bottomLogos = [],
+  bottomLogos=[],
   bgImage,
   marqueeSpeed = 25,
 }) => {
@@ -104,8 +108,8 @@ export default TechnologyStackSection;
 /* ---------------------------------- */
 /* LOGO CARD */
 /* ---------------------------------- */
-const LogoCard = ({ logo }: { logo: string }) => (
+const LogoCard = ({ logo }: { logo: tlogo }) => (
   <div className="min-w-[180px] h-[96px] bg-white rounded-sm flex items-center justify-center shadow">
-    <img src={withImageBase(logo)} alt="tech logo" className="h-15 w-auto" />
+    <img src={withImageBase(logo.imgurl)} alt={logo.alt} className="h-15 w-auto" />
   </div>
 );

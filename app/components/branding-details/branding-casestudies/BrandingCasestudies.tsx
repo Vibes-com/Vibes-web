@@ -139,7 +139,7 @@ const BrandingCasestudies = () => {
                 <div className="space-y-8 mb-5!">
                     <div className="overflow-hidden">
                         <Image
-                             src={withImageBase("/branding-details/branding-case-img-4.png")}
+                            src={withImageBase("/branding-details/branding-case-img-4.png")}
                             alt="Brand Campaign Execution"
                             width={1440}
                             height={700}
@@ -189,17 +189,27 @@ const BrandingCasestudies = () => {
                         className="w-full"
                     >
                         {[
-                            "/branding-details/branding-bottom-img-1.png",
-                            "/branding-details/branding-bottom-img-2.png",
-                            "/branding-details/branding-bottom-img-3.png",
-                            "/branding-details/branding-bottom-img-4.png",
-                            "/branding-details/branding-bottom-img-1.png",
+                            {
+                                alt:"MaximAlert",
+                                imgurl:"/branding-details/branding-bottom-img-1.png"},
+                            {
+                                alt:"Buzaria",
+                                imgurl:"/branding-details/branding-bottom-img-2.png"},
+                            {
+                                alt:"Interio Heaven",
+                                imgurl:"/branding-details/branding-bottom-img-3.png"},
+                            {
+                                alt:"Tomorrow's India",
+                                imgurl:"/branding-details/branding-bottom-img-4.png"},
+                            {
+                                alt:"MaximAlert",
+                                imgurl:"/branding-details/branding-bottom-img-1.png"},
                         ].map((src, index) => (
                             <SwiperSlide key={index}>
                                 <div className="overflow-hidden">
                                     <Image
-                                        src={withImageBase(src)}
-                                        alt="Integrated Brand Identity"
+                                        src={withImageBase(src.imgurl)}
+                                        alt={src.alt}
                                         width={720}
                                         height={674}
                                         className="w-full h-auto object-cover transition-transform duration-700 ease-in-out hover:scale-110"

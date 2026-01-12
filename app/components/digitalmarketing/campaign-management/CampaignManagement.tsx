@@ -48,15 +48,18 @@ const CampaignManagement = () => {
         description=" From audience discovery to on-ground activation, campaigns are designed, managed, and optimized to deliver visibility, relevance, and results across multiple touchpoints."
         mainImage="/digital-m-details/compaign-left-img.png"
         bgImage="/web-development/wd-services-bg.jpg"
+        alt="Campaign Managemnt"
         features={[
           {
             icon: "/digital-m-details/influencer.png",
             title: <>Influencer Marketing</>,
+            alt: "Influencer Marketing",
             subtitle: "Strategic influencer collaborations that amplify brand narratives through credible voices, targeted communities, and performance-driven partnerships aligned with campaign goals."
           },
           {
             icon: "/digital-m-details/marketing-plan.png",
             title: <>Event Marketing</>,
+            alt: "Event Marketing",
             subtitle: "Concept-to-closure event execution that creates immersive brand experiences, drives audience participation, and strengthens brand recall through seamless planning and promotion."
           },
 

@@ -79,10 +79,10 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
       <div className="w-full">
         <Swiper
           modules={[Autoplay]}
-          autoplay={{
-            delay: autoplayDelay,
-            disableOnInteraction: false,
-          }}
+          // autoplay={{
+          //   delay: autoplayDelay,
+          //   disableOnInteraction: false,
+          // }}
           loop
           spaceBetween={20}
           slidesPerView={slidesPerView}

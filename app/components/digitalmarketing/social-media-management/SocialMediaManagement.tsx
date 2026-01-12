@@ -47,21 +47,25 @@ const SocialMediaManagement = () => {
         description=" End-to-end social media solutions focused on planning, storytelling, and performance crafted to align brand objectives with audience behaviour."
         mainImage="/digital-m-details/social-media-left-img.png"
         bgImage="/web-development/wd-services-bg.jpg"
+        alt="Social Media Management"
         features={[
           {
             icon: "/digital-m-details/copy-writing.png",
             title: <>Content Creation & Planning</>,
+            alt: "Content Creation & Planning",
             subtitle: "Purpose-driven content calendars, platform-specific creatives, and messaging frameworks built to maintain consistency, relevance, and brand recall."
           },
           {
             icon: "/digital-m-details/b2b.png",
             title: <>B2B Social Media Management</>,
+            alt: "B2B Social Media Management",
             subtitle: "Professional, insight-driven social strategies that position brands as industry leaders, strengthen credibility, and support long-term business growth."
           },
 
           {
             icon: "/digital-m-details/b2c.png",
             title: <>B2C Social Media Management</>,
+            alt: "B2C Social Media Management",
             subtitle: "Engaging, trend-responsive social storytelling designed to increase visibility, build community, and drive meaningful consumer interaction."
           },
         ]}

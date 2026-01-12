@@ -115,7 +115,7 @@ const TechSolutions = () => {
                             {/* -------- DEFAULT BACKGROUND IMAGE -------- */}
                             <Image
                                  src={withImageBase(service.bgImage)}
-                                alt="Technologies Services" priority unoptimized
+                                alt={service.title} priority unoptimized
                                 fill
                                 className="absolute inset-0 object-cover opacity-20
               transition-opacity duration-500 lg:group-hover:opacity-0"
@@ -124,7 +124,7 @@ const TechSolutions = () => {
                             {/* -------- HOVER BACKGROUND IMAGE -------- */}
                             <Image
                                 src={withImageBase(service.hoverBgImage)}
-                                alt="Technologies Services" priority unoptimized
+                                alt={service.title} priority unoptimized
                                 fill
                                 className="absolute inset-0 object-cover opacity-0
               transition-opacity duration-500 lg:group-hover:opacity-100"
@@ -132,7 +132,6 @@ const TechSolutions = () => {
 
                             {/* -------- CONTENT -------- */}
                             <div className="relative z-10 px-4 py-10 flex flex-col h-full">
-
                                 <h3 className="font-poppins font-semibold text-[20px] lg:text-[22px] tracking-normal text-[#FFFFFF] lg:group-hover:text-[#454545] ">{service.title}</h3>
 
                                 {/* TAGS → FADE OUT */}
@@ -163,13 +162,10 @@ const TechSolutions = () => {
                                         <Link href={service.url}><span>View More</span></Link>
                                         <ArrowUpIcon className="transform rotate-45" />
                                     </Button2>
-
                                 </div>
-
                             </div>
                         </div>
                     ))}
-
                 </div>
             </div >
         </div>

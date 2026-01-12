@@ -38,7 +38,7 @@ const HomeGallery = () => {
             <div>
               <Image
                 src={withImageBase("/home/home-gallery-img-1.jpg")}
-                alt="Gallery Image 1"
+                alt="Vibes Image Gallery"
                 width={400}
                 height={400}
               />
@@ -47,7 +47,7 @@ const HomeGallery = () => {
             <div>
               <Image
                src={withImageBase("/home/home-gallery-img-2.jpg")}
-                alt="Gallery Image 2"
+                alt="Vibes Image Gallery"
                 width={400}
                 height={400}
               />
@@ -56,7 +56,7 @@ const HomeGallery = () => {
             <div>
               <Image
                src={withImageBase("/home/home-gallery-img-3.jpg")}
-                alt="Gallery Image 3"
+                alt="Vibes Image Gallery"
                 width={400}
                 height={400}
               />
@@ -65,7 +65,7 @@ const HomeGallery = () => {
             <div>
               <Image
                 src={withImageBase("/home/home-gallery-img-4.png")}
-                alt="Gallery Image 4"
+                alt="Vibes Image Gallery"
                 width={400}
                 height={400}
               />
@@ -74,7 +74,7 @@ const HomeGallery = () => {
             <div>
               <Image
                src={withImageBase("/home/home-gallery-img-5.jpg")}
-                alt="Gallery Image 5"
+                alt="Vibes Image Gallery"
                 width={400}
                 height={400}
               />
@@ -83,7 +83,7 @@ const HomeGallery = () => {
             <div>
               <Image
                 src={withImageBase("/home/home-gallery-img-6.jpg")}
-                alt="Gallery Image 6"
+                alt="Vibes Image Gallery"
                 width={400}
                 height={400}
               />

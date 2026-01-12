@@ -12,11 +12,13 @@ import { withImageBase } from "@/app/utils/image";
 
 
 export type VideoSlide = {
+  alt:string,
   type: "video";
   src: string;
 };
 
 export type ImageSlide = {
+  alt:string,
   type: "images";
   images: {
     src: string;
@@ -124,7 +126,7 @@ const MarqueeStorySection = ({
                       <Image
                         key={i}
                         src={img.src}
-                        alt={img.alt || ""}
+                        alt={slide.alt}
                         width={200}
                         height={220}
                         className="rounded-[10px] shadow-md"

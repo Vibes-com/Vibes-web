@@ -128,8 +128,8 @@ useEffect(() => {
                     {/* QUOTE ICON */}
                     <div className="absolute top-4 right-4">
                       <Image
-                         src={withImageBase(quoteImage)}
-                        alt="quote"
+                        src={withImageBase(quoteImage)}
+                        alt={item.title}
                         width={26}
                         height={26}
                       />

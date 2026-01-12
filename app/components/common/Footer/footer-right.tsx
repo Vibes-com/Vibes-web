@@ -27,7 +27,7 @@ export default function FooterRightSection() {
             <div className="col-span-4 pt-4 sm:pt-0 md:pt-0 lg:pt-0 xl:pt-0 2xl:pt-0">
                 <Image
                     src={withImageBase("/home/vibes-logo.png")}
-                    alt=''
+                    alt='Vibes Communications Logo'
                     width={100}
                     height={100}
                 />

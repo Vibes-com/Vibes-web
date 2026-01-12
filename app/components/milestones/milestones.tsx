@@ -114,7 +114,7 @@ export default function MilestoneSection() {
                     >
                         <Image
                              src={withImageBase(src)}
-                            alt="hover-img"
+                            alt="Vibes Milestone"
                             fill
                             className={` object-cover transition-opacity duration-[900ms] ease-out
     ${activeIndex === index ? "opacity-60" : "opacity-0 delay-[400ms]"}
