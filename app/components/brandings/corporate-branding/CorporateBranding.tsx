@@ -26,14 +26,30 @@ const textcontent: blogContent = {
 };
 
 const images = [
-  { src: "/branding-details/corporate-workflow-1.jpg" },
-  { src: "/branding-details/corporate-workflow-2.jpg" },
-  { src: "/branding-details/corporate-workflow-3.jpg" },
-  { src: "/branding-details/corporate-workflow-4.jpg" },
-  { src: "/branding-details/corporate-workflow-5.jpg" },
-  { src: "/branding-details/corporate-workflow-6.jpg" },
-  { src: "/branding-details/corporate-workflow-7.jpg" },
-  { src: "/branding-details/corporate-workflow-8.jpg" },
+  { 
+    alt:"Tomorrows India",
+    src: "/branding-details/corporate-workflow-1.jpg" },
+  { 
+    alt:"Tomorrows India",
+    src: "/branding-details/corporate-workflow-2.jpg" },
+  { 
+    alt:"Tomorrows India",
+    src: "/branding-details/corporate-workflow-3.jpg" },
+  { 
+    alt:"Tomorrows India",
+    src: "/branding-details/corporate-workflow-4.jpg" },
+  { 
+    alt:"Tomorrows India",
+    src: "/branding-details/corporate-workflow-5.jpg" },
+  { 
+    alt:"Tomorrows India",
+    src: "/branding-details/corporate-workflow-6.jpg" },
+  { 
+    alt:"Tomorrows India",
+    src: "/branding-details/corporate-workflow-7.jpg" },
+  { 
+    alt:"Tomorrows India",
+    src: "/branding-details/corporate-workflow-8.jpg" },
 ];
 
 const CorporateBranding = () => {

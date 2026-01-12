@@ -117,7 +117,7 @@ const ServiceCard = ({ service }: any) => {
 border-[7px] border-[#ffffff]">
                 <Image
                    src={withImageBase(service.icon)}
-                    alt="service icon"
+                    alt={service.title}
                     width={30}
                     height={30}
                     className="invert-1 transition-all duration-300 lg:group-hover:invert"
@@ -127,7 +127,7 @@ border-[7px] border-[#ffffff]">
             {/* DEFAULT BG */}
             <Image
                 src={withImageBase(service.bgImage)}
-                alt="bg"
+                alt={service.title}
                 fill
                 unoptimized
                 className="absolute inset-0 object-cover opacity-5 transition-opacity duration-500 lg:group-hover:opacity-0 rounded-lg"
