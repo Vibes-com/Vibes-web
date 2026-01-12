@@ -50,26 +50,30 @@ const PerformanceMarketing = () => {
         description="Results-focused advertising strategies designed to generate high-quality leads, maximize reach, and drive measurable conversions across search and social platforms with precision targeting and data-backed optimization."
         mainImage="/performance-marketing/pm-overview-left-img.png"
         bgImage="/web-development/wd-services-bg.jpg"
-
+        alt="Performance MArketing"
         features={[
           {
             icon: "/digital-m-details/leads.png",
             title: <>Lead <br />Generation</>,
+            alt: "Lead Generation",
             subtitle: ""
           },
           {
             icon: "/digital-m-details/meta-ads.png",
             title: <>Meta<br />Ads</>,
+            alt: "Meta Ads",
             subtitle: ""
           },
           {
             icon: "/digital-m-details/google-ads.png",
             title: <>Google Ads</>,
+            alt: "Google Ads",
             subtitle: ""
           },
           {
             icon: "/digital-m-details/linkedin-ads.png",
             title: <>LinkedIn<br />Ads</>,
+            alt: "LinkedIn Ads",
             subtitle: ""
           },
         ]}
