@@ -40,7 +40,6 @@ export const metadata: Metadata = {
       },
     ],
     locale: "en_US",
-    alt:"Digital Marketing Services",
     type: "website",
   },
 
