@@ -69,7 +69,7 @@ const Brandingservices: ServiceItem[] = [
             "Employer Branding",
         ],
         icon: "/branding-details/carporate-icon.png",
-        url: "/branding-services/corporate-branding",
+        url: "/branding-agency/corporate-branding",
         highlighted: true,
     },
     {
@@ -82,7 +82,7 @@ const Brandingservices: ServiceItem[] = [
             "Graphic Design",
         ],
         icon: "/branding-details/carporate-icon.png",
-        url: "/branding-services/brand-upliftment",
+        url: "/branding-agency/brand-upliftment",
     },
     {
         title: "Brand Communication & Strategy",
@@ -95,7 +95,7 @@ const Brandingservices: ServiceItem[] = [
             "Brand Positioning"
         ],
         icon: "/branding-details/carporate-icon.png",
-        url: "/branding-services/brand-communication-and-strategy",
+        url: "/branding-agency/brand-communication-and-strategy",
     },
 ];
 

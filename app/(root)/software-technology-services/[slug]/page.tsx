@@ -229,10 +229,10 @@ type PageProps = {
 const page = async ({ params }: PageProps) => {
   const { slug } = await params;
 
-  if (slug === "web-development") return <WebDevelopment />;
-  if (slug === "app-development") return <AppDevelopment />;
-  if (slug === "ecomm-development") return <EcommDevelopment />;
-  if (slug === "pmis-development") return <PmisDevelopment />;
+  if (slug === "website-development-company") return <WebDevelopment />;
+  if (slug === "mobile-app-development-company") return <AppDevelopment />;
+  if (slug === "ecommerce-development-company") return <EcommDevelopment />;
+  if (slug === "project-management-information-system") return <PmisDevelopment />;
 
   return null;
 };
