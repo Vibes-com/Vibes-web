@@ -42,7 +42,7 @@ export default function SubscribeBox() {
   }, [data, error]);
 
   return (
-    <div className="w-full max-w-xl md:mx-0 lg:mx-auto mt-6">
+    <div className="w-full max-w-xl md:mx-0 lg:mx-auto mt-6 subscribe-cnt">
       <div className="relative">
         <input
           type="email"

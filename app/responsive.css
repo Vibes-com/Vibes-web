@@ -305,4 +305,9 @@ height: 240px;
 height: 50px;
 width: 50px;
 }
+.subscribe-cnt input::placeholder {
+  font-size: 11px;
+
+}
+
 }

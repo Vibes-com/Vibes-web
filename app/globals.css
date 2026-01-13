@@ -951,7 +951,7 @@ border-right: none;
 }
 
 .jobdesc h4 {
-  color: #333333 !important;
+  color: #707070;
   margin-top: 10px;
   margin-bottom: 5px;
   font-size: 16px !important;
@@ -959,7 +959,7 @@ border-right: none;
 .jobdesc p,
 .jobdesc ul li,
 .jobdesc ul li font {
-  color: #555555 !important;
+  color:#707070!important;
 }
 
 .job-apply-wrap form {
