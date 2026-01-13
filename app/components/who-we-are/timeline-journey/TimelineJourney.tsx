@@ -121,7 +121,7 @@ export default function TimelineVertical() {
                         className="hidden md:block lg:block up-arrow glow-up float-up-down absolute top-[-17px] left-1/2 -translate-x-1/2 z-30 p-3"
                     >
                         <img
-                            src="/assests/img/about/up-arrow.png"
+                            src={withImageBase("/about/up-arrow.png")}
                             alt="Up Arrow"
                             className="w-6 h-6"
                         />
