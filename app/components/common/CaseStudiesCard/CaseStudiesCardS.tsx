@@ -51,7 +51,7 @@ const cardsc = data?.data.slice(0,5)
                       width={1500}
                       height={1000}
                       unoptimized
-                      className="h-full  object-cover transition-transform duration-[900ms] ease-out group-hover:scale-110 group-hover:opacity-90"
+                      className="h-full  object-fill transition-transform duration-[900ms] ease-out group-hover:scale-110 group-hover:opacity-90"
                     />
                   </div>
 
