@@ -295,7 +295,7 @@ const inputClass = (hasError?: string) =>
               <div>
                 <label className="block font-medium mb-2">Captcha</label>
 
-                <div className="flex gap-4 items-center">
+                <div className="flex flex-wrap lg:flex-nowrap gap-4 items-center">
                   <input
                     placeholder="Enter Captcha"
                     value={captchaInput}
