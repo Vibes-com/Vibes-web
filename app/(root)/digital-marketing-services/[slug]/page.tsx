@@ -178,9 +178,9 @@ export async function generateMetadata(
 
 const componentMap: Record<string, JSX.Element> = {
   "campaign-management": <CampaignManagement />,
-  "social-media-management": <SocialMediaManagement />,
-  "performance-marketing": <PerformanceMarketing />,
-  "search-engine-optimization": <SearchEngineOptimization />,
+  "social-media-marketing-agency": <SocialMediaManagement />,
+  "performance-marketing-agency": <PerformanceMarketing />,
+  "search-optimization-services": <SearchEngineOptimization />,
 };
 
 type PageProps = {

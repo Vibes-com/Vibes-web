@@ -23,7 +23,7 @@ const services = [
             "Annual Maintenance (AMC)",
         ],
 
-        url: "/technology-services/web-development",
+        url: "/software-technology-services/website-development-company",
     },
 
     {
@@ -36,7 +36,7 @@ const services = [
 
         tags: ["Android App Development", "iOS App Development"],
 
-        url: "/technology-services/app-development"
+        url: "/software-technology-services/mobile-app-development-company"
     },
 
     {
@@ -55,7 +55,7 @@ const services = [
             "B2B E-commerce",
             "B2C E-commerce",
         ],
-        url: "/technology-services/ecomm-development",
+        url: "/software-technology-services/ecommerce-development-company",
     },
 
     {
@@ -73,7 +73,7 @@ const services = [
             "CRM Development",
             "Website Enhancement",
         ],
-        url: "/technology-services/pmis-development",
+        url: "/software-technology-services/project-management-information-system",
     },
 ];
 
