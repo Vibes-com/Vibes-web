@@ -76,7 +76,7 @@ const BrandingCasestudies = () => {
 
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 items-center mb-0">
-                    <div className="p-6 lg:p-20">
+                    <div className="order-2 lg:order-1 p-6 lg:p-20">
                         <div className="flex-1 ">
                             <h3 className="font-poppins font-medium text-[28px] lg:text-[32px] xl:text-[32px] 2xl:text-[32px] leading-[1.23] tracking-norma]">
                                 Luxury <br/><span className="highlight1 relative z-9 w-fit font-poppins font-semibold text-[28px] lg:text-[32px] xl:text-[32px] 2xl:text-[32px] leading-[1.23] tracking-normal">Brand Storytelling</span>
@@ -94,7 +94,7 @@ const BrandingCasestudies = () => {
 
                         </div>
                     </div>
-                    <div className="overflow-hidden">
+                    <div className="order-1 lg:order-2 overflow-hidden">
                         <Image
                              src={withImageBase("/branding-details/branding-case-img-2.png")}
                             alt="Building a New Age Brand"
