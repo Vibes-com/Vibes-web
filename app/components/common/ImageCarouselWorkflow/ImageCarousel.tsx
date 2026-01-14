@@ -36,7 +36,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
   images,
   heading,
   className = "",
-  imageHeight = "h-[433px]",
+  imageHeight = "h-auto lg:h-[433px]",
   autoplayDelay = 2500,
   slidesPerView = 2,
   breakpoints = {

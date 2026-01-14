@@ -55,7 +55,7 @@ export default function SuccessStory({
             <Link href={btnlink}>
             <Button2
               onClick={onButtonClick}
-              className=" mt-0 h-6 md:h-9 lg:h-9 xl:h-9 2xl:h-9 lg:mt-5 p-[10px] lg:p-[20px] bg-[#fff] cursor-pointer"
+              className=" mt-0 h-6 md:h-9 lg:h-9 xl:h-9 2xl:h-9 lg:mt-5 p-[18px] lg:p-[20px] bg-[#fff] cursor-pointer"
             >
               <span className="text-[#000] cursor-pointer">{buttonText}</span>
               <ArrowUpIcon className="transform rotate-45 text-[#000]" />

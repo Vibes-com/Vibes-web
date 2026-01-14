@@ -28,7 +28,7 @@ const services = [
         hoverBgImage: "/technology-details/tech-cards-bg.png",
         icon: "/digital-m-details/growth.png",
         tags: ["Lead Generation", "Meta Ads", "Google Ads", "LinkedIn Ads"],
-        url: "/digital-marketing-services/performance-marketing",
+        url: "/digital-marketing-services/performance-marketing-agency",
     },
     {
         title: "Social Media Management ",
@@ -38,7 +38,7 @@ const services = [
         hoverBgImage: "/technology-details/tech-cards-bg.png",
         icon: "/digital-m-details/social-media.png",
         tags: ["Content Creation & Planning", "B2B: LinkedIn Management", "B2C: LinkedIn Management"],
-        url: "/digital-marketing-services/social-media-management",
+        url: "/digital-marketing-services/social-media-marketing-agency",
     },
     {
         title: "Search Engine Optimization",
@@ -48,7 +48,7 @@ const services = [
         hoverBgImage: "/technology-details/tech-cards-bg.png",
         icon: "/digital-m-details/seo.png",
         tags: ["On-Page SEO", "Off-Page SEO", "Technical SEO", "LLM", "Keyword Strategy"],
-        url: "/digital-marketing-services/search-engine-optimization",
+        url: "/digital-marketing-services/search-optimization-services",
     },
 ];
 

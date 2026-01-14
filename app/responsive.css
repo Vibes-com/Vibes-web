@@ -124,6 +124,7 @@ background-size: cover;
 .curve-box .arrow-img{
 height: 25px;
 width: 25px;
+display: none;
 }
 .digital-details-hero-wrapper{
 height: 65vh!important;
