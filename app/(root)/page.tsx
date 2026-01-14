@@ -16,7 +16,7 @@ import MarqueeStorySection, { SlideItem } from "../components/common/MarqueeStor
 
 const slides: SlideItem[] = [
   {
-    alt:"Brand Stories",
+    alt:"Women Listed",
     type: "video",
     src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video1.mp4",
   },
@@ -25,15 +25,15 @@ const slides: SlideItem[] = [
     type: "images",
     images: [
       { 
-        alt:"Brand Stories",
+        alt:"Tomorrows India",
         src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img4.webp" },
       { 
-        alt:"Brand Stories",
+        alt:"Women Listed",
         src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img1.webp" },
     ],
   },
   {
-    alt:"Brand Stories",
+    alt:"Women Listed",
     type: "video",
     src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video2.mp4",
   },
@@ -42,15 +42,15 @@ const slides: SlideItem[] = [
     type: "images",
     images: [
       { 
-        alt:"Brand Stories",
+        alt:"Ligo Group",
         src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-image18.jpg" },
       { 
-        alt:"Brand Stories",
+        alt:"Kapgrow",
         src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img14.webp" },
     ],
   },
   {
-    alt:"Brand Stories",
+    alt:"Tomorrows India",
     type: "video",
     src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video9.mp4",
   },
@@ -59,15 +59,15 @@ const slides: SlideItem[] = [
     type: "images",
     images: [
       { 
-        alt:"Brand Stories",
+        alt:"BFE",
         src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-image19.jpg" },
       { 
-        alt:"Brand Stories",
+        alt:"Women Listed",
         src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img6.webp" },
     ],
   },
   {
-    alt:"Brand Stories",
+    alt:"Vibes Communications",
     type: "video",
     src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video6.mp4",
   },
@@ -76,15 +76,15 @@ const slides: SlideItem[] = [
     type: "images",
     images: [
       { 
-        alt:"Brand Stories",
+        alt:"Kapgrow",
         src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img7.webp" },
       { 
-        alt:"Brand Stories",
+        alt:"FADS World Congress",
         src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-image17.jpg" },
     ],
   },
   {
-    alt:"Brand Stories",
+    alt:"Women Listed",
     type: "video",
     src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video1.mp4",
   },
@@ -93,15 +93,15 @@ const slides: SlideItem[] = [
     type: "images",
     images: [
       { 
-        alt:"Brand Stories",
+        alt:"City Dental Institute",
         src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-image20.jpg" },
       { 
-        alt:"Brand Stories",
+        alt:"Women Listed",
         src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img10.webp" },
     ],
   },
   {
-    alt:"Brand Stories",
+    alt:"Women Listed",
     type: "video",
     src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video3.mp4",
   },
@@ -110,15 +110,15 @@ const slides: SlideItem[] = [
     type: "images",
     images: [
       { 
-        alt:"Brand Stories",
+        alt:"Tomorrows India",
         src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-image26.jpg" },
       { 
-        alt:"Brand Stories",
+        alt:"Kapgrow",
         src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img12.webp" },
     ],
   },
   {
-    alt:"Brand Stories",
+    alt:"Vibes Communications One Team Dream",
     type: "video",
     src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video7.mp4",
   },
@@ -127,15 +127,15 @@ const slides: SlideItem[] = [
     type: "images",
     images: [
       { 
-        alt:"Brand Stories",
+        alt:"Women Listed",
         src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img13.webp" },
       { 
-        alt:"Brand Stories",
+        alt:"BFE",
         src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-image21.jpg" },
     ],
   },
   {
-    alt:"Brand Stories",
+    alt:"Women Listed",
     type: "video",
     src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video4.mp4",
   },
@@ -144,15 +144,15 @@ const slides: SlideItem[] = [
     type: "images",
     images: [
       { 
-        alt:"Brand Stories",
+        alt:"Women Listed",
         src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img16.webp" },
       { 
-        alt:"Brand Stories",
+        alt:"Tomorrows India",
         src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-image25.jpg" },
     ],
   },
    {
-    alt:"Brand Stories",
+    alt:"Tomorrows India",
     type: "video",
     src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video5.mp4",
   },
@@ -161,10 +161,10 @@ const slides: SlideItem[] = [
     type: "images",
     images: [
       { 
-        alt:"Brand Stories",
+        alt:"Women Listed Bazar",
         src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img2.webp" },
       { 
-        alt:"Brand Stories",
+        alt:"Kapgrow",
         src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img3.webp" },
     ],
   },

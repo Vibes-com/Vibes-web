@@ -88,7 +88,7 @@ const textcontent: blogContent = {
 
 const slides: SlideItem[] = [
  {
-  alt:"Digital Marketing Services",  
+  alt:"Women Listed",  
   type: "video",
     src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video1.mp4",
   },
@@ -97,15 +97,15 @@ const slides: SlideItem[] = [
     type: "images",
     images: [
       { 
-        alt:"Digital Marketing Services",
+        alt:"Tomorrows India",
         src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img4.webp" },
       { 
-        alt:"Digital Marketing Services",
+        alt:"Women Listed",
         src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img1.webp" },
     ],
   },
   {
-    alt:"Digital Marketing Services",
+    alt:"Women Listed Bazar",
     type: "video",
     src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video2.mp4",
   },
@@ -114,15 +114,15 @@ const slides: SlideItem[] = [
     type: "images",
     images: [
       { 
-        alt:"Digital Marketing Services",
+        alt:"Ligo Group",
         src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-image18.jpg" },
       { 
-        alt:"Digital Marketing Services",
+        alt:"Kapgrow",
         src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img14.webp" },
     ],
   },
   {
-    alt:"Digital Marketing Services",
+    alt:"Tomorrows India",
     type: "video",
     src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video9.mp4",
   },
@@ -131,15 +131,15 @@ const slides: SlideItem[] = [
     type: "images",
     images: [
       { 
-        alt:"Digital Marketing Services",
+        alt:"BFE",
         src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-image19.jpg" },
       { 
-        alt:"Digital Marketing Services",
+        alt:"Women Listed",
         src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img6.webp" },
     ],
   },
   {
-    alt:"Digital Marketing Services",
+    alt:"Vibes Communications",
     type: "video",
     src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video6.mp4",
   },
@@ -148,15 +148,15 @@ const slides: SlideItem[] = [
     type: "images",
     images: [
       { 
-        alt:"Digital Marketing Services",
+        alt:"Kapgrow",
         src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img7.webp" },
       { 
-        alt:"Digital Marketing Services",
+        alt:"FADS World Congress",
         src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-image17.jpg" },
     ],
   },
   {
-    alt:"Digital Marketing Services",
+    alt:"Women Listed",
     type: "video",
     src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video1.mp4",
   },
@@ -165,15 +165,15 @@ const slides: SlideItem[] = [
     type: "images",
     images: [
       { 
-        alt:"Digital Marketing Services",
+        alt:"City Dental Institute",
         src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-image20.jpg" },
       { 
-        alt:"Digital Marketing Services",
+        alt:"Women Listed",
         src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img10.webp" },
     ],
   },
   {
-    alt:"Digital Marketing Services",
+    alt:"Women Listed",
     type: "video",
     src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video3.mp4",
   },
@@ -182,15 +182,15 @@ const slides: SlideItem[] = [
     type: "images",
     images: [
       { 
-        alt:"Digital Marketing Services",
+        alt:"Tomorrows India",
         src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-image26.jpg" },
       { 
-        alt:"Digital Marketing Services",
+        alt:"Kapgrow",
         src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img12.webp" },
     ],
   },
   {
-    alt:"Digital Marketing Services",
+    alt:"Vibes 1 Team Dream",
     type: "video",
     src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video7.mp4",
   },
@@ -199,15 +199,15 @@ const slides: SlideItem[] = [
     type: "images",
     images: [
       { 
-        alt:"Digital Marketing Services",
+        alt:"Women Listed",
         src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img13.webp" },
       { 
-        alt:"Digital Marketing Services",
+        alt:"BFE",
         src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-image21.jpg" },
     ],
   },
   {
-    alt:"Digital Marketing Services",
+    alt:"Women Listed",
     type: "video",
     src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video4.mp4",
   },
@@ -216,15 +216,15 @@ const slides: SlideItem[] = [
     type: "images",
     images: [
       { 
-        alt:"Digital Marketing Services",
+        alt:"Women Listed",
         src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img16.webp" },
       { 
-        alt:"Digital Marketing Services",
+        alt:"Tomorrows India",
         src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-image25.jpg" },
     ],
   },
    {
-    alt:"Digital Marketing Services",
+    alt:"Tomorrows India",
     type: "video",
     src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video5.mp4",
   },
@@ -233,10 +233,10 @@ const slides: SlideItem[] = [
     type: "images",
     images: [
       { 
-        alt:"Digital Marketing Services",
+        alt:"Women Listed",
         src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img2.webp" },
       { 
-        alt:"Digital Marketing Services",
+        alt:"Kapgrow",
         src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img3.webp" },
     ],
   },
