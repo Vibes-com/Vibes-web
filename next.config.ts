@@ -26,7 +26,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/(from-ideas-to-action-how-vibes-creates-eco-smart-branding-and-marketing|brand-feedback-exchange|our-branding-works|brand-positioning|brand-management|brand-marketing-company-india|brand-guidelines-agency-india|logo-design)',
-        destination: '/branding-services',
+        destination: '/branding-agency',
         permanent: true,
       },
       {
