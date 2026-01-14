@@ -21,7 +21,7 @@ const nextConfig: NextConfig = {
     return [
       {
         source: '/(from-vision-to-impact-vibes-powers-brands-with-creativity-and-tech|best-ui-ux-design-agency-india|web-portal-development-services|crm-software-for-sales-and-business|digital-transformation-company-india)',
-        destination: '/technology-services',
+        destination: '/software-technology-services',
         permanent: true,
       },
       {
@@ -30,7 +30,7 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        source: '/(digital-marketing-strategy-for-business|together-for-tomorrow-encapsulating-digital-marketing-technology-branding|ecommerce-marketing-company-in-noida|business-consultation-service-agency-india|linkedin-marketing-agency-india|content-marketing-agency-india|solutions|future-digital-strategies-for-companies)',
+        source: '/(digital-marketing-strategy-for-business|together-for-tomorrow-encapsulating-digital-marketing-technology-branding|business-consultation-service-agency-india|linkedin-marketing-agency-india|content-marketing-agency-india|solutions|future-digital-strategies-for-companies|/digital-marketing-strategy-for-business)',
         destination: '/digital-marketing-services',
         permanent: true,
       },
@@ -41,27 +41,32 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/(social-media-marketing-agency-delhi-ncr)',
-        destination: '/digital-marketing-services/social-media-management',
+        destination: '/digital-marketing-services/social-media-marketing-agency',
         permanent: true,
       },
       {
         source: '/(seo-agency-noida)',
-        destination: '/digital-marketing-services/search-engine-optimization',
+        destination: '/digital-marketing-services/search-optimization-services',
         permanent: true,
       },
       {
         source: '/(lead-generation-company-delhi-ncr)',
-        destination: '/digital-marketing-services/search-engine-optimization',
+        destination: '/digital-marketing-services/performance-marketing-agency',
         permanent: true,
       },
       {
         source: '/(website-development-company-noida)',
-        destination: '/technology-services/web-development',
+        destination: '/software-technology-services/website-development-company',
         permanent: true,
       },
       {
-        source: '/(ecommerce-development-company-in-noida)',
-        destination: '/technology-services/ecomm-development',
+        source: '/(ecommerce-development-company-in-noida|ecommerce-marketing-company-in-noida)',
+        destination: '/software-technology-services/ecommerce-development-company',
+        permanent: true,
+      },
+      {
+        source: '/(mobile-app-company-delhi-ncr)',
+        destination: '/software-technology-services/mobile-app-development-company',
         permanent: true,
       },
     ];
