@@ -22,7 +22,7 @@ export type ImageSlide = {
   type: "images";
   images: {
     src: string;
-    alt?: string;
+    alt: string;
   }[];
 };
 
@@ -126,7 +126,7 @@ const MarqueeStorySection = ({
                       <Image
                         key={i}
                         src={img.src}
-                        alt={slide.alt}
+                        alt={img.alt}
                         width={200}
                         height={220}
                         className="rounded-[10px] shadow-md"
