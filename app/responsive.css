@@ -218,15 +218,20 @@ bottom: 6px;
 left: 0;
 }
 .hero-video{
-    height: 40dvh;
+height: 40dvh;
+}
+}
 
-}
-}
-@media (min-width: 480px) and (max-width: 575px) {
+@media (min-width: 480px) and (max-width: 576px) {
 .hero-video{
-height:40vh;
+height:43vh;
+}
 }
 
+@media (min-width: 539px) and (max-width: 540px) {
+.hero-video{
+height:54vh;
+}
 }
 @media (min-width: 360px) and (max-width: 385px) {
 
