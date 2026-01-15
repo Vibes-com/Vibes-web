@@ -151,7 +151,8 @@
 }
 
 .footer-wrapper {
-  background: url("https://s3.ap-south-1.amazonaws.com/vibescom.in/assets/img/home/footer-bg.jpg") center/cover no-repeat;
+  /* background: url("https://s3.ap-south-1.amazonaws.com/vibescom.in/assets/img/home/footer-bg.jpg") center/cover no-repeat; */
+  background-color: #000;
   background-size: 100% 100%;
   
 }
