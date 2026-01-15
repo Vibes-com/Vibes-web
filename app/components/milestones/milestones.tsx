@@ -121,16 +121,17 @@ export default function MilestoneSection() {
   `}
                         /> */}
                    {/* gradient color */}
-      <div
-  className={`absolute inset-0 transition-opacity duration-700 ease-out
-    ${activeIndex === index ? "opacity-90" : "opacity-0"}
-    blur-[22px]
-  `}
-  style={{
-    background:
-      "linear-gradient(135deg, rgba(92,121,108,0.9), rgba(92,121,108,0.8), rgba(244,190,0,0.8))",
-  }}
-></div>
+  
+            <div
+                className={`absolute inset-0 transition-opacity duration-700 ease-out
+                    ${activeIndex === index ? "opacity-75" : "opacity-0"}
+                    blur-[26px] scale-[1.18]
+                `}
+                style={{
+                    background:
+                    "linear-gradient(135deg, rgba(40,85,78,0.75), rgba(32,68,70,0.55), rgba(24,52,58,0.35))",
+                }}
+                ></div>
                  {/* gradient color */}
 
                     </div>
