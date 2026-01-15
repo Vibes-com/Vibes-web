@@ -1,12 +1,3 @@
-@media(min-width: 1780px) and (max-width: 1800px){
-.service-bg{
-height: 65vh;
-}
-
-
-}
-
-
 @media (max-width: 1024px){
 .nv-menu{
 font-size: 10px!important;
@@ -34,8 +25,10 @@ background-color: black;
 .team-member-wrapper .member-card {
 min-height: 309px;
 }
+.wht-btn {
+padding-left: 8px;
 }
-
+}
 
 @media (min-width: 768px) {
 .timeline-journey-wrapper .swiper-pagination {
@@ -319,5 +312,4 @@ width: 50px;
 .subscribe-cnt .sbs-btn{
   font-size: 12px;
 }
-
 }

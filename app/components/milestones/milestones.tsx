@@ -112,14 +112,27 @@ export default function MilestoneSection() {
                         onMouseEnter={() => setActiveIndex(index)}
                         onMouseLeave={() => setActiveIndex(null)}
                     >
-                        <Image
+                        {/* <Image
                              src={withImageBase(src)}
                             alt="Vibes Milestone"
                             fill
                             className={` object-cover transition-opacity duration-[900ms] ease-out
     ${activeIndex === index ? "opacity-60" : "opacity-0 delay-[400ms]"}
   `}
-                        />
+                        /> */}
+                   {/* gradient color */}
+      <div
+  className={`absolute inset-0 transition-opacity duration-700 ease-out
+    ${activeIndex === index ? "opacity-90" : "opacity-0"}
+    blur-[22px]
+  `}
+  style={{
+    background:
+      "linear-gradient(135deg, rgba(92,121,108,0.9), rgba(92,121,108,0.8), rgba(244,190,0,0.8))",
+  }}
+></div>
+                 {/* gradient color */}
+
                     </div>
                 ))}
             </div>
