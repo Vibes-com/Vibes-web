@@ -36,7 +36,7 @@ const Navbar = () => {
             <a href="tel:+91-8586932861"
               className="bg-[#F4BE00] text-black px-4 text-sm py-1 flex items-center space-x-5 transition  border-[2px] border-[#F4BE00] hover:text-white rounded-full *:hover:bg-transparent"
             >
-              <span className="mx-1">Talk to us today</span>
+              <span className="mx-1">Talk to Us Today</span>
               <ArrowUpIcon className="transform rotate-45" />
             </a>
             {/* Mobile Menu */}

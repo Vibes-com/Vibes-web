@@ -134,7 +134,7 @@ export default function MilestoneSection() {
                 ></div>
                  {/* gradient color */}
 
-                    </div>
+                </div>
                 ))}
             </div>
 
