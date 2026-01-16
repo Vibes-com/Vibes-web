@@ -106,7 +106,7 @@ export default function Page() {
   
 
   return (
-    <div>
+    <div className="overflow-hidden">
       <TechnologyDetailsHero />
       <TechSolutions />
 
