@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useEffect, useState } from "react";
 import { withImageBase } from "@/app/utils/image";
+import SlideUp from "../../animations/SlideUp";
 
 /* ---------------- TYPES ---------------- */
 
@@ -106,7 +107,7 @@ useEffect(() => {
             {description}
           </p>
         )}
-
+          <SlideUp delay={0.5}>
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
 
           {/* LEFT CIRCLE */}
@@ -149,6 +150,7 @@ useEffect(() => {
           </div>
 
         </div>
+        </SlideUp>
       </div>
     </section>
   );

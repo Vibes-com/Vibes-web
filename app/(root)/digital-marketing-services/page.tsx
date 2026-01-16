@@ -14,6 +14,7 @@ import { SingleCaseStudyCard } from "@/app/components/common/CaseStudiesCard/Cas
 import WhyChooseUsSection from "@/app/components/common/WhyChooseUsSection/WhyChooseUsSection";
 import MarqueeStorySection, { SlideItem } from "@/app/components/common/MarqueeStorySection/MarqueeStorySection";
 
+
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

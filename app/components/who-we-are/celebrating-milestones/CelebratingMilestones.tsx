@@ -5,6 +5,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useEffect, useState } from "react";
 import {withImageBase} from "@/app/utils/image";
+import SlideRight from "../../animations/SlideRight";
+import SlideLeft from "../../animations/SlideLeft";
 
 export default function VerticalSlickMilestones() {
     const [isMobile, setIsMobile] = useState(false);
@@ -82,6 +84,7 @@ export default function VerticalSlickMilestones() {
             <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
                 <div className="grid grid-cols-12 items-center">
                     <div className=" col-span-12 lg:col-span-6">
+                         <SlideLeft delay={0.5}>
                         <div>
                             <div className="flex justify-center lg:justify-start mb-5">
 
@@ -101,8 +104,10 @@ export default function VerticalSlickMilestones() {
                                 How Vibes Has Transformed Visions into Reality
                             </p>
                         </div>
+                        </SlideLeft>
                     </div>
                     <div className="col-span-12 lg:col-span-6">
+                          <SlideRight delay={0.5}>
                         <div className="relative overflow-hidden ml-auto pr-0 lg:pr-16">
                             <Slider {...settings}>
 
@@ -136,6 +141,7 @@ export default function VerticalSlickMilestones() {
 
                             </Slider>
                         </div>
+                        </SlideRight>
                     </div>
                 </div>
             </div>

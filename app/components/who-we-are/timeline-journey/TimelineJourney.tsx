@@ -6,6 +6,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import Image from "next/image";
 import { withImageBase } from "@/app/utils/image";
+import SlideRight from "../../animations/SlideRight";
+import SlideLeft from "../../animations/SlideLeft";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -170,6 +172,7 @@ export default function TimelineVertical() {
                                         {/* LEFT SIDE */}
                                         {isLeft ? (
                                             <div className="w-full flex justify-start pr-0 lg:pr-10">
+                                                <SlideLeft delay={0.5}>
                                                 <div className="">
                                                     <img
                                                         src={withImageBase(item.img)}
@@ -179,8 +182,10 @@ export default function TimelineVertical() {
                                                         className="w-full h-[244px] object-contain rounded-lg"
                                                     />
                                                 </div>
+                                                </SlideLeft>
                                             </div>
                                         ) : (
+                                            
                                             <div className="w-full flex flex-col w-[100%] md:w-[45%] lg:w-[50%]">
                                                 <h2 className="font-poppins font-semibold text-[28px] sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] leading-[1.23] tracking-normal">{item.year}</h2>
                                                 <p className="text-[#707070] font-normal text-[16px] leading-[130%] tracking-[0] text-center md:text-start lg:text-start  mt-3 w-90">{item.text}</p>
@@ -193,8 +198,6 @@ export default function TimelineVertical() {
                                                 <img
                                                     src={withImageBase("/about/journey.png")}
                                                     alt="Vibes Journey 2024"
-                                                    
-                                                    
                                                     width={40}
                                                     height={40}
                                                 />
@@ -204,6 +207,7 @@ export default function TimelineVertical() {
                                         {/* RIGHT SIDE */}
                                         {!isLeft ? (
                                             <div className="w-full  flex justify-end pl-0 lg:pl-10">
+                                                <SlideRight delay={0.5}>
                                                 <div className="">
                                                     <img
                                                         src={withImageBase(item.img)}
@@ -213,6 +217,7 @@ export default function TimelineVertical() {
                                                         className="w-full h-[244px] object-contain rounded-lg"
                                                     />
                                                 </div>
+                                                </SlideRight>
                                             </div>
                                         ) : (
                                             <div className=" flex flex-col w-[100%] lg:w-[50%]">

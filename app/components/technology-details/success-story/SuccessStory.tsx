@@ -5,6 +5,7 @@ import { Button2 } from "@/components/ui/button2";
 import { ArrowUpIcon } from "lucide-react";
 import Link from "next/link";
 import { withImageBase } from "@/app/utils/image";
+import SlideUp from "../../animations/SlideUp";
 
 
 interface SuccessStoryProps {
@@ -28,6 +29,7 @@ export default function SuccessStory({
 }: SuccessStoryProps) {
   return (
     <section className={`w-full pt-10 lg:pt-15  pb-10 lg:pb-20 bg-success-story ${className}`}>
+        <SlideUp delay={0.5}>
       <div className="curve-box max-w-7xl mx-auto px-2 lg:px-6 relative">
         <div className="h-full flex flex-col md:flex-row lg:flex-row items-center justify-center lg:justify-between gap-8 px-2 lg:px-10">
 
@@ -65,6 +67,7 @@ export default function SuccessStory({
 
         </div>
       </div>
+      </SlideUp>
     </section>
   );
 }

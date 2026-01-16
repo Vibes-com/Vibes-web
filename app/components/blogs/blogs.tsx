@@ -11,6 +11,7 @@ import "swiper/css/pagination";
 import { useGetAllBlogsQuery } from "@/app/redux/api/blogApi";
 import { withImageBase } from "@/app/utils/image";
 import { useState } from "react";
+import SlideUp from "../animations/SlideUp";
 
 interface BlogCardProps {
     id: string;
@@ -113,6 +114,7 @@ export default function OurBlogs({ tData }: BlogsProps) {
                     </Link>
                 </div>
 
+              <SlideUp delay={0.5}>
                 {/* Swiper */}
                 <Swiper
                     modules={[Pagination, Autoplay]}
@@ -120,17 +122,17 @@ export default function OurBlogs({ tData }: BlogsProps) {
                     slidesPerView={1}
                     loop={true}
                     pagination={{ clickable: true }}
-                    // autoplay={{
-                    //     delay: 0,
-                    //     disableOnInteraction: false,
-                    // }}  
+                    autoplay={{
+                        delay: 0,
+                        disableOnInteraction: false,
+                    }}  
                     breakpoints={{
                         768: {
                             slidesPerView: 2,
                             spaceBetween: 24,
                         }
                     }}
-                    speed={2500}
+                    speed={4500}
                     className="pb-10 flex"
                 >
                     {blogs.map((item) => (
@@ -154,6 +156,7 @@ export default function OurBlogs({ tData }: BlogsProps) {
                         </SwiperSlide>
                     ))}
                 </Swiper>
+                </SlideUp>
             </div>
         </section >
     );

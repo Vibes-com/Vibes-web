@@ -4,6 +4,7 @@ import { Button2 } from "@/components/ui/button2";
 import { ArrowUpIcon } from "lucide-react";
 import Link from "next/link";
 import {withImageBase} from "@/app/utils/image";
+import SlideUp from "../../animations/SlideUp";
 
 const services = [
     {
@@ -103,8 +104,8 @@ const TechSolutions = () => {
                 <p className="text-[#707070] font-normal text-[16px] leading-[130%] tracking-[0] text-center max-w-2xl mx-auto mb-16 mt-5">
                     Explore Vibes’ complete suite of technology services- Web and App development, custom CRM platforms, UI/UX, and high-performance digital systems built for scalable growth.
                 </p>
+                  <SlideUp delay={0.5}>
                 <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10">
-
 
                     {services.map((service, idx) => (
                         <div
@@ -165,8 +166,10 @@ const TechSolutions = () => {
                                 </div>
                             </div>
                         </div>
+                       
                     ))}
                 </div>
+                 </SlideUp>
             </div >
         </div>
     );

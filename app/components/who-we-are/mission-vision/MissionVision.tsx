@@ -3,6 +3,8 @@
 import Image from "next/image";
 import React from "react";
 import {withImageBase} from "@/app/utils/image";
+import SlideRight from "../../animations/SlideRight";
+import SlideLeft from "../../animations/SlideLeft";
 
 const MissionVision: React.FC = () => {
     return (
@@ -10,8 +12,9 @@ const MissionVision: React.FC = () => {
             <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
 
                 <div className="grid grid-cols-12 gap-0 lg:gap-10 items-center">
-
+                  
                     <div className="col-span-12 md:col-span-12 lg:col-span-6 relative ">
+                           <SlideLeft delay={0.5}>
                         <div className="rounded-xl overflow-hidden p-1">
                             <img
                                 src={withImageBase("/about/together-img-1.jpg")}
@@ -31,8 +34,10 @@ const MissionVision: React.FC = () => {
                                 className="border-[5px] border-white rounded-xl together-small-img object-cover"
                             />
                         </div>
+                        </SlideLeft>
                     </div>
                     <div className="col-span-12 md:col-span-12 lg:col-span-6 mt-16 md:mt-0 ps-0 md:ps-10">
+                        <SlideRight delay={0.5}>
                         <div className="flex justify-start md:pt-10 lg:pt-0 mb-5">
 
                             <div className="px-6 py-2 rounded-full border border-[#F4BE00] inline-flex items-center gap-2">
@@ -87,7 +92,7 @@ const MissionVision: React.FC = () => {
                                 </p>
                             </div>
                         </div>
-
+                  </SlideRight>
                     </div>
                 </div>
 

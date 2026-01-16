@@ -8,6 +8,11 @@ import BrandingMarquee from "../branding-marquee/BrandingMarquee";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import {withImageBase} from "@/app/utils/image";
+import SlideRight from "../../animations/SlideRight";
+import SlideLeft from "../../animations/SlideLeft";
+import SlideUp from "../../animations/SlideUp";
+
+
 
 import "swiper/css";
 
@@ -48,6 +53,7 @@ const BrandingCasestudies = () => {
                 </div>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 items-center mb-0">
                     <div className="overflow-hidden">
+                         <SlideLeft delay={0.5}>
                         <img
                              src={withImageBase("/branding-details/branding-case-img-1.png")}
                             alt="Luxury Brand Storytelling"
@@ -55,8 +61,10 @@ const BrandingCasestudies = () => {
                             height={674}
                             className="w-full transition-transform duration-700 ease-in-out hover:scale-110"
                         />
+                        </SlideLeft>
                     </div>
                     <div className="p-6 lg:p-20">
+                          <SlideRight delay={0.5}>
                         <div className="flex-1 ">
                             <h3 className="font-poppins font-medium text-[28px] lg:text-[32px] xl:text-[32px] 2xl:text-[32px] leading-[1.23] tracking-norma]">
                                 Building a <br/><span className="highlight1 relative z-9 w-fit font-poppins font-semibold text-[28px] lg:text-[32px] xl:text-[32px] 2xl:text-[32px] leading-[1.23] tracking-normal">New-Age Brand</span>
@@ -70,6 +78,7 @@ const BrandingCasestudies = () => {
                                 <ArrowUpIcon className="transform rotate-45" />
                             </Button2>
                         </div>
+                        </SlideRight>
 
                     </div>
                 </div>
@@ -77,6 +86,7 @@ const BrandingCasestudies = () => {
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 items-center mb-0">
                     <div className="order-2 lg:order-1 p-6 lg:p-20">
+                         <SlideLeft delay={0.5}>
                         <div className="flex-1 ">
                             <h3 className="font-poppins font-medium text-[28px] lg:text-[32px] xl:text-[32px] 2xl:text-[32px] leading-[1.23] tracking-norma]">
                                 Luxury <br/><span className="highlight1 relative z-9 w-fit font-poppins font-semibold text-[28px] lg:text-[32px] xl:text-[32px] 2xl:text-[32px] leading-[1.23] tracking-normal">Brand Storytelling</span>
@@ -93,8 +103,11 @@ const BrandingCasestudies = () => {
                             </Button2>
 
                         </div>
+                        </SlideLeft>
                     </div>
+                  
                     <div className="order-1 lg:order-2 overflow-hidden">
+                          <SlideRight delay={0.5}>
                         <img
                              src={withImageBase("/branding-details/branding-case-img-2.png")}
                             alt="Building a New Age Brand"
@@ -102,12 +115,15 @@ const BrandingCasestudies = () => {
                             height={674}
                             className="w-full transition-transform duration-700 ease-in-out hover:scale-110"
                         />
+                         </SlideRight>
                     </div>
+                   
                 </div>
 
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 items-center mb-2">
                     <div className="overflow-hidden">
+                        <SlideLeft delay={0.5}>
                         <img
                             src={withImageBase("/branding-details/branding-case-img-3.png")}
                             alt="Integrated Brand Identity"
@@ -115,8 +131,10 @@ const BrandingCasestudies = () => {
                             height={674}
                             className="w-full transition-transform duration-700 ease-in-out hover:scale-110"
                         />
+                        </SlideLeft>
                     </div>
                     <div className="p-6 lg:p-20">
+                         <SlideRight delay={0.5}>
                         <div className="flex-1 ">
                             <h3 className="font-poppins font-medium text-[28px] lg:text-[32px] xl:text-[32px] 2xl:text-[32px] leading-[1.23] tracking-norma]">
                                 Integrated <br/><span className="highlight1 relative z-9 w-fit font-poppins font-semibold text-[28px] lg:text-[32px] xl:text-[32px] 2xl:text-[32px] leading-[1.23] tracking-normal">Brand Identity</span>
@@ -132,12 +150,14 @@ const BrandingCasestudies = () => {
                             </Button2>
 
                         </div>
+                        </SlideRight>
                     </div>
                 </div>
 
 
                 <div className="space-y-8 mb-5!">
                     <div className="overflow-hidden">
+                         <SlideUp delay={0.5}>
                         <img
                             src={withImageBase("/branding-details/branding-case-img-4.png")}
                             alt="Brand Campaign Execution"
@@ -145,8 +165,10 @@ const BrandingCasestudies = () => {
                             height={700}
                             className="w-full transition-transform duration-700 ease-in-out hover:scale-110"
                         />
+                        </SlideUp>
                     </div>
                     <div className="w-full ps-6 lg:ps-20 pt-5 pb-5">
+                        <SlideUp delay={0.5}>
                         <div className="flex-1 ">
                             <h3 className="font-poppins font-medium text-[28px] lg:text-[32px] xl:text-[32px] 2xl:text-[32px] leading-[1.23] tracking-norma]">
                                 Complete <br/><span className="highlight1 relative z-9 w-fit font-poppins font-semibold text-[28px] lg:text-[32px] xl:text-[32px] 2xl:text-[32px] leading-[1.23] tracking-normal">Brand Framework </span>
@@ -162,6 +184,7 @@ const BrandingCasestudies = () => {
                             </Button2>
 
                         </div>
+                        </SlideUp>
                     </div>
                 </div>
 

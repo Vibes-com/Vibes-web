@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import Link from "next/link";
 
 import SuggestedPills from "./SuggestedPills";
 import ImageCarousel from "./ImageCarousel";
@@ -11,6 +12,7 @@ import ImageCarousel from "./ImageCarousel";
 // import Timeline from "../Timeline";
 import CTAButton from "./CTAButton";
 import ContactForm from "./ContactForm";
+import { Button } from "@/components/ui/button";
 
 type Message = {
   role: "user" | "assistant";
@@ -208,8 +210,8 @@ useEffect(() => {
             </div>
 
             {/* dynamic UI */}
-            {msg.response_type === "cta" && <CTAButton text="Contact us" onClick={() => setShowForm(true)} />}
-            {msg.response_type === "contact_form" && showForm && <ContactForm onSubmit={handleFormSubmit} />}
+        
+            {msg.response_type === "contact_form" && <Button onClick={() => setShowForm(true)}><Link href="https://www.vibescom.in/contact-for-digital-requirements">Contact Form</Link></Button>}
 
             {/* {msg.response_type === "timeline" && (
               <Timeline steps={["Research", "Planning", "Design", "Development"]} />
@@ -240,6 +242,12 @@ useEffect(() => {
           placeholder="Ask something..."
           value={input}
           onChange={(e) => setInput(e.target.value)}
+           onKeyDown={(e) => {
+      if (e.key === "Enter") {
+        e.preventDefault(); // optional, safe
+        sendMessage();
+      }
+    }}
         />
         <button onClick={sendMessage} className="cursor-pointer bg-[#F4BE00] text-white px-4 rounded-lg">➤</button>
       </div>

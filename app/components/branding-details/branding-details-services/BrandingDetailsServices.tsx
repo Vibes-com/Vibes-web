@@ -4,6 +4,8 @@ import { ArrowUpIcon } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import {withImageBase} from "@/app/utils/image";
+import SlideLeft from "../../animations/SlideLeft";
+import SlideRight from "../../animations/SlideRight";
 
 type ServiceItem = {
     title: string;
@@ -107,6 +109,7 @@ const BrandingDetailsServices: React.FC = () => {
 
                     {/* Left Column */}
                     <div className="col-span-12  lg:col-span-5">
+                         <SlideLeft delay={0.5}>
                         <div className="flex  mb-5">
                             <div className="px-6 py-2 rounded-full border border-[#F4BE00] inline-flex items-center gap-2">
                                 <span className="w-2 h-2 rounded-full bg-[#F4BE00]" />
@@ -123,10 +126,14 @@ const BrandingDetailsServices: React.FC = () => {
                         <p className="text-[#707070]  max-w-2xl mx-auto mb-16 mt-5">
                             Offering strategic branding solutions that transform business vision into clear, consistent brand identities across every customer touchpoint.
                         </p>
+                        </SlideLeft>
                     </div>
+                 
 
                     {/* Right Column */}
+                    
                     <div className="col-span-12  lg:col-span-7">
+                             <SlideRight delay={0.5}>
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 place-items-center">
 
                             {[1, 2, 3].map((_, index) => (
@@ -143,6 +150,7 @@ const BrandingDetailsServices: React.FC = () => {
                             ))}
 
                         </div>
+                        </SlideRight>
                     </div>
 
                 </div>

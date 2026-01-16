@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import {withImageBase} from "@/app/utils/image";
+import SlideUp from "../../animations/SlideUp";
 
 
 import "swiper/css";
@@ -107,6 +108,7 @@ const MarqueeTabsSlider = ({
         </p>
 
         {/* MARQUEE */}
+        <SlideUp delay={0.5}>
         <div className="overflow-hidden w-[95%] mx-auto my-12">
           <div className="flex animate-marquee-right gap-5">
             {marqueeLogos.map((src, i) => (
@@ -153,6 +155,7 @@ const MarqueeTabsSlider = ({
 
           <NextArrow onClick={() => swiperRef.current?.slideNext()} />
         </div>
+        </SlideUp>
       </div>
 
       {/* Animation */}

@@ -9,6 +9,7 @@ import CaseStudiesCard, {
 import Link from "next/link";
 import CaseStudiesCardS from "../CaseStudiesCard/CaseStudiesCardS";
 import { withImageBase } from "@/app/utils/image";
+import SlideLeft from "../../animations/SlideLeft";
 
 // import { useGetAllCaseStudiesQuery } from "@/app/redux/api/caseStudyApi";
 
@@ -41,9 +42,9 @@ const CommonCasestudy = ({ badgeText, title, highlightTitle, description, button
     <section className="section-gap bg-no-repeat bg-cover bg-center" style={{ backgroundImage: bgImage ? `url(${withImageBase(bgImage)})` : "none" }}>
       <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
         <div className="grid grid-cols-12 relative">
-
           {/* LEFT CONTENT */}
           <div className="col-span-12 lg:col-span-6 relative  lg:sticky top-0 lg:h-screen flex ">
+            <SlideLeft delay={0.5}>
             <div className="flex-1">
 
               {/* BADGE */}
@@ -78,6 +79,7 @@ const CommonCasestudy = ({ badgeText, title, highlightTitle, description, button
                 </Button2>
               </Link>
             </div>
+            </SlideLeft>
           </div>
 
           {/* RIGHT CONTENT */}
