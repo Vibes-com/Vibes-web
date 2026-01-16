@@ -123,7 +123,7 @@ const MarqueeStorySection = ({
                 ) : (
                   <div className="flex flex-col gap-4">
                     {slide.images.map((img, i) => (
-                      <Image
+                      <img
                         key={i}
                         src={img.src}
                         alt={img.alt}

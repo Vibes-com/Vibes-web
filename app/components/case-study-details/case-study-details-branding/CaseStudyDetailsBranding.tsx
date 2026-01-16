@@ -59,12 +59,12 @@ const CaseStudyDetailsBranding: React.FC<CaseStudyDetailsBrandingProps> = ({
   {section.images.map((src) => (
     <SwiperSlide key={src}>
       <div className="overflow-hidden">
-        <Image
+        <img
           src={src}
           alt={section.title}
           width={720}
           height={674}
-          unoptimized
+          
           className="w-full h-auto object-cover transition-transform duration-700 hover:scale-110"
         />
       </div>

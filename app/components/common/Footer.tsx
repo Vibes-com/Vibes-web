@@ -29,7 +29,7 @@ const Footer = () => {
         <Copyright />
 
         <div className="vibes-footer-logo z-[50000] py-5">
-          <Image
+          <img
            src={withImageBase("/home/footer_vibes_icon.png")}
             alt="Vibes Logo"
             width={100}

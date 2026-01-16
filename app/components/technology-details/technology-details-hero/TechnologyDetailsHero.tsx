@@ -33,7 +33,7 @@ const TechnologyDetailsHero: React.FC = () => {
                         <div className=" mt-9 max-w-7xl me-auto  flex flex-col md:flex-row items-center justify-center gap-5 w-max">
                             <div className="flex items-center -space-x-5 me-auto">
                                 <div className="w-[35px] h-[35px] lg:w-[55px] lg:h-[55px] rounded-full border border-white/70 flex items-center justify-center shadow-[0px_4px_4px_0px_#00000040]">
-                                    <Image
+                                    <img
                                          src={withImageBase("/technology-details/widex-logo.png")}
                                         alt="widex logo"
                                         width={55}
@@ -41,7 +41,7 @@ const TechnologyDetailsHero: React.FC = () => {
                                     />
                                 </div>
                                 <div className=" w-[35px] h-[35px] lg:w-[55px] lg:h-[55px] rounded-full border border-white/70 flex items-center justify-center shadow-[0px_4px_4px_0px_#00000040]">
-                                    <Image
+                                    <img
                                         src={withImageBase("/technology-details/pwc-logo.png")}
                                         alt="pwc logo"
                                         width={55}
@@ -49,7 +49,7 @@ const TechnologyDetailsHero: React.FC = () => {
                                     />
                                 </div>
                                 <div className="w-[35px] h-[35px] lg:w-[55px] lg:h-[55px] rounded-full border border-white/70 flex items-center justify-center shadow-[0px_4px_4px_0px_#00000040]">
-                                    <Image
+                                    <img
                                        src={withImageBase("/technology-details/lumenis-logo.png")}
                                         alt="Lumines logo"
                                         width={55}
@@ -58,7 +58,7 @@ const TechnologyDetailsHero: React.FC = () => {
                                 </div>
 
                                 <div className="w-[35px] h-[35px] lg:w-[55px] lg:h-[55px] rounded-full border border-white/70 flex items-center justify-center shadow-[0px_4px_4px_0px_#00000040]">
-                                    <Image
+                                    <img
                                         src={withImageBase("/technology-details/mofiso-logo.png")}
                                         alt="Mofiso logo"
                                         width={55}

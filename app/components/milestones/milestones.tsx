@@ -101,8 +101,8 @@ export default function MilestoneSection() {
     return (
         <section ref={sectionRef} className="relative w-full section-gap overflow-hidden">
 
-            <Image
-               src={withImageBase("/home/milestone-bg.png")} fill alt="main-bg" priority unoptimized className="absolute inset-0 object-cover z-0" />
+            <img
+               src={withImageBase("/home/milestone-bg.png")}  alt="main-bg" className="absolute inset-0 object-cover w-full h-full z-0" />
 
            <div className="absolute z-99 inset-0 hidden lg:grid grid-cols-14 grid-rows-5 gap-0 pointer-events-none">
                 {galleryImages.map((src, index) => (
@@ -112,7 +112,7 @@ export default function MilestoneSection() {
                         onMouseEnter={() => setActiveIndex(index)}
                         onMouseLeave={() => setActiveIndex(null)}
                     >
-                        {/* <Image
+                        {/* <img
                              src={withImageBase(src)}
                             alt="Vibes Milestone"
                             fill

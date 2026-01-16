@@ -80,12 +80,11 @@ export default function CaseStudies() {
                             <SwiperSlide key={index}>
                                 <div className="bg-white rounded-2xl mb-5 p-1 shadow-[0_8px_30px_rgba(0,0,0,0.06)]">
 
-                                    <div className="relative w-full case-crd h-[280px] border-1 border-gray-400 rounded-xl overflow-hidden group">
-                                        <Image
+                                    <div className="relative w-full case-crd h-full border-1 border-gray-400 rounded-xl overflow-hidden group">
+                                        <img
                                             src={item.thumbnail}
                                             alt={item.client_name}
-                                            fill
-                                            className="object-fill transition-all duration-[900ms] group-hover:scale-110 group-hover:opacity-90"
+                                            className="object-fill transition-all duration-[900ms] group-hover:scale-110 group-hover:opacity-90 h-full"
                                         />
                                     </div>
 

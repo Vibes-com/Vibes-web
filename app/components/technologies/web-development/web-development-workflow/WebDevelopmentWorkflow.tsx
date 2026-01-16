@@ -102,7 +102,7 @@ const WebDevelopmentWorkflow = () => {
 
                             {/* Icon */}
                             <div className="mb-6 mt-20">
-                                <Image
+                                <img
                                     src={withImageBase(step.icon)}
                                     alt={step.title}
                                     width={36}

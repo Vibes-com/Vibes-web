@@ -68,11 +68,11 @@ const TeamDreamSection = () => {
                     {/* Right Logo */}
                     <div className="flex-1 flex justify-center">
                         <SlideRight delay={0.5}>
-                            <Image
+                            <img
                                 src={withImageBase("/home/one-team-img.png")}
                                 alt="Team Dream"
                                 width={500}
-                                height={500} priority unoptimized
+                                height={500}  
                                 className="object-contain"
                             />
                         </SlideRight>

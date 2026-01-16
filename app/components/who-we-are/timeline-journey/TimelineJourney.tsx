@@ -171,7 +171,7 @@ export default function TimelineVertical() {
                                         {isLeft ? (
                                             <div className="w-full flex justify-start pr-0 lg:pr-10">
                                                 <div className="">
-                                                    <Image
+                                                    <img
                                                         src={withImageBase(item.img)}
                                                         width={300}
                                                         height={300}
@@ -190,11 +190,11 @@ export default function TimelineVertical() {
                                         {/* MIDDLE ICON */}
                                         <div className="hidden md:block absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2">
                                             <div className="timeline-icon bg-white">
-                                                <Image
+                                                <img
                                                     src={withImageBase("/about/journey.png")}
                                                     alt="Vibes Journey 2024"
-                                                    priority
-                                                    unoptimized
+                                                    
+                                                    
                                                     width={40}
                                                     height={40}
                                                 />
@@ -205,7 +205,7 @@ export default function TimelineVertical() {
                                         {!isLeft ? (
                                             <div className="w-full  flex justify-end pl-0 lg:pl-10">
                                                 <div className="">
-                                                    <Image
+                                                    <img
                                                         src={withImageBase(item.img)}
                                                         width={300}
                                                         height={300}

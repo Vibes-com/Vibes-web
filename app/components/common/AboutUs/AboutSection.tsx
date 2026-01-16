@@ -41,7 +41,7 @@ const AboutSection = ({
 
           {/* LEFT IMAGE */}
           <div className="relative">
-            <Image
+            <img
               src={withImageBase(mainImage)}
               alt={alt}
               width={650}
@@ -80,12 +80,12 @@ const AboutSection = ({
               {features.map((feature, index) => (
                 <div key={index} className="flex items-start gap-4 flex-wrap">
                   <div className="w-15 h-15 rounded-full bg-[#466E59] flex items-center justify-center">
-                    <Image
+                    <img
                       src={withImageBase(feature.icon)}
                       alt={feature.alt}
                       width={25}
                       height={25}
-                      unoptimized
+                      
                     />
                   </div>
                   <div>

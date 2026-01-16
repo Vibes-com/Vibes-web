@@ -217,7 +217,7 @@ useEffect(() => {
 
             {msg.response_type === "portfolio" && Array.isArray(msg.images) && msg.images.length > 0 && (
               <div className="mt-2">
-                {/* <ImageCarousel images={msg.images} /> */}
+                {/* <imgCarousel images={msg.images} /> */}
               </div>
             )}
           </div>

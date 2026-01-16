@@ -45,12 +45,12 @@ const cardsc = data?.data.slice(0,5)
         >
           {/* Image */}
           <div className="case-study-card-common border border-gray-400 w-full rounded-xl overflow-hidden group">
-                    <Image
+                    <img
                      src={withImageBase(item.img)}
                       alt={item.title}
                       width={1500}
                       height={1000}
-                      unoptimized
+                      
                       className="h-full  object-fill transition-transform duration-[900ms] ease-out group-hover:scale-110 group-hover:opacity-90"
                     />
                   </div>

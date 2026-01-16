@@ -37,13 +37,12 @@ const encodedTitle = encodeURIComponent(title);
                             target="_blank"
                             href={`https://wa.me/?text=${encodedTitle}%20${encodedUrl}`}
                         >
-                            <Image
+                            <img
                                 src={withImageBase("/blog/whatsapp_share.png")}
                                 className="w-[40px]"
                                 alt="WhatsApp"
                                 width={30}
                                 height={30}
-                                unoptimized
                             />
                         </Link>
                     </li>
@@ -53,13 +52,12 @@ const encodedTitle = encodeURIComponent(title);
                             target="_blank"
                            href={`https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`}
                         >
-                            <Image
+                            <img
                                 src={withImageBase("/blog/facebook_share.png")}
                                 className="w-[40px]"
                                 alt="Facebook"
                                 width={30}
                                 height={30}
-                                unoptimized
                             />
                         </Link>
                     </li>
@@ -69,13 +67,12 @@ const encodedTitle = encodeURIComponent(title);
                             target="_blank"
                             href={`https://twitter.com/intent/tweet?text=${encodedTitle}&url=${encodedUrl}`}
                         >
-                            <Image
+                            <img
                                  src={withImageBase("/blog/twitter_share.png")}
                                 className="w-[40px]"
                                 alt="Twitter"
                                 width={30}
                                 height={30}
-                                unoptimized
                             />
                         </Link>
                     </li>
@@ -85,13 +82,12 @@ const encodedTitle = encodeURIComponent(title);
                             target="_blank"
                            href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`}
                         >
-                            <Image
+                            <img
                                 src={withImageBase("/blog/linkedin_share.png")}
                                 className="w-[40px]"
                                 alt="LinkedIn"
                                 width={30}
                                 height={30}
-                                unoptimized
                             />
                         </Link>
                     </li>

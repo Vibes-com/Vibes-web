@@ -34,40 +34,39 @@ const BrandingDetailsHero: React.FC = () => {
                         <div className=" mt-9 max-w-7xl me-auto  flex flex-col md:flex-row items-center justify-center gap-5 w-max">
                             <div className="flex items-center -space-x-5 me-auto">
                                 <div className="w-[35px] h-[35px] lg:w-[55px] lg:h-[55px] rounded-full border border-white/70 flex items-center justify-center shadow-[0px_4px_4px_0px_#00000040]">
-                                    <Image
+                                    <img
                                          src={withImageBase("/branding-details/brand-client-1.png")}
                                         alt="Tomorrow's India logo"
                                         width={55}
                                         height={55}
-                                        unoptimized
                                     />
                                 </div>
                                 <div className="w-[35px] h-[35px] lg:w-[55px] lg:h-[55px] rounded-full border border-white/70 flex items-center justify-center shadow-[0px_4px_4px_0px_#00000040]">
-                                    <Image
+                                    <img
                                         src={withImageBase("/branding-details/brand-client-2.png")}
                                         alt="Ligo Group logo"
                                         width={55}
                                         height={55}
-                                        unoptimized
+                                        
                                     />
                                 </div>
                                 <div className="w-[35px] h-[35px] lg:w-[55px] lg:h-[55px] rounded-full border border-white/70 flex items-center justify-center shadow-[0px_4px_4px_0px_#00000040]">
-                                    <Image
+                                    <img
                                         src={withImageBase("/branding-details/brand-client-3.png")}
                                         alt="Retas logo"
                                         width={55}
                                         height={55}
-                                        unoptimized
+                                        
                                     />
                                 </div>
 
                                 <div className="w-[35px] h-[35px] lg:w-[55px] lg:h-[55px] rounded-full border border-white/70 flex items-center justify-center shadow-[0px_4px_4px_0px_#00000040]">
-                                    <Image
+                                    <img
                                       src={withImageBase("/branding-details/brand-client-4.png")}
                                         alt="EY logo"
                                         width={55}
                                         height={55}
-                                        unoptimized
+                                        
                                     />
                                 </div>
 

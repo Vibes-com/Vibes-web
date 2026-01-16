@@ -58,7 +58,7 @@ export default function WhyChooseSection({
         <div className="relative mt-24 hidden lg:block">
 
           {unionImage && (
-            <Image
+            <img
               src={withImageBase(unionImage)}
               alt="background"
               width={1200}
@@ -78,7 +78,7 @@ export default function WhyChooseSection({
                 >
                   {isEven ? (
                     <>
-                      <Image  src={withImageBase(item.icon)} alt={item.title} width={60} height={60} className="mb-6" />
+                      <img  src={withImageBase(item.icon)} alt={item.title} width={60} height={60} className="mb-6" />
                       <h3 className="font-semibold text-[24px] mb-3">{item.title}</h3>
                       <p className="text-[14px] text-[#707070]">{item.desc}</p>
                     </>
@@ -86,7 +86,7 @@ export default function WhyChooseSection({
                     <>
                       <p className="text-[14px] text-[#707070] mb-4">{item.desc}</p>
                       <h3 className="font-semibold text-[24px] mb-4">{item.title}</h3>
-                      <Image  src={withImageBase(item.icon)} alt={item.title} width={60} height={60} />
+                      <img  src={withImageBase(item.icon)} alt={item.title} width={60} height={60} />
                     </>
                   )}
                 </div>
@@ -102,7 +102,7 @@ export default function WhyChooseSection({
               key={index}
               className="border-2 border-[#7FA58F] rounded-[24px] px-8 py-10 text-center"
             >
-              <Image  src={withImageBase(item.icon)} alt={item.title} width={42} height={42} className="mx-auto mb-4" />
+              <img  src={withImageBase(item.icon)} alt={item.title} width={42} height={42} className="mx-auto mb-4" />
               <h3 className="font-semibold mb-2">{item.title}</h3>
               <p className="text-sm text-[#6B6B6B]">{item.desc}</p>
             </div>

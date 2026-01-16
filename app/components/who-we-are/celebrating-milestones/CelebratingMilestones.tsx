@@ -122,9 +122,9 @@ export default function VerticalSlickMilestones() {
                                                 <p className="text-[#707070] text-left font-normal text-[14px] leading-[130%] tracking-[0] mt-1">{item.desc}</p>
                                             </div>
                                             <div className="quote-container absolute top-6 right-6">
-                                                <Image
+                                                <img
                                                    src={withImageBase("/about/quote-img.png")}
-                                                    alt="Celebrating Milestone" priority unoptimized
+                                                    alt="Celebrating Milestone"  
                                                     width={23}
                                                     height={23}
                                                 />

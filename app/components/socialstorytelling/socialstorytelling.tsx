@@ -61,12 +61,12 @@ export default function SocialStorytelling() {
 
                     <div className="swiper-slide odd-slide">
                         <div className="stacked-images">
-                            <Image
+                            <img
                                 src="/assests/img/home/brand-img-1.jpg"
                                 alt="event image 1" width={200} height={220} className="brand-img w-[200px] h-[220px] rounded-[10px]"
                             />
 
-                            <Image
+                            <img
                                 src="/assests/img/home/brand-img-2.jpg"
                                 alt="event image 1" width={200} height={220} className="brand-img w-[200px] h-[220px] rounded-[10px]"
                             />
@@ -81,12 +81,12 @@ export default function SocialStorytelling() {
                     </div>
                     <div className="swiper-slide odd-slide">
                         <div className="stacked-images">
-                            <Image
+                            <img
                                 src="/assests/img/home/brand-img-3.jpg"
                                 alt="event image 1" width={200} height={220} className="brand-img w-[200px] h-[220px] rounded-[10px]"
                             />
 
-                            <Image
+                            <img
                                 src="/assests/img/home/brand-img-4.png"
                                 alt="event image 1" width={200} height={220} className="brand-img w-[200px] h-[220px] rounded-[10px]"
                             />
@@ -102,12 +102,12 @@ export default function SocialStorytelling() {
 
                     <div className="swiper-slide odd-slide">
                         <div className="stacked-images">
-                            <Image
+                            <img
                                 src="/assests/img/home/brand-img-5.jpg"
                                 alt="event image 1" width={200} height={220} className="brand-img w-[200px] h-[220px] rounded-[10px]"
                             />
 
-                            <Image
+                            <img
                                 src="/assests/img/home/brand-img-6.jpg"
                                 alt="event image 1" width={200} height={220} className="brand-img w-[200px] h-[220px] rounded-[10px]"
                             />
@@ -123,12 +123,12 @@ export default function SocialStorytelling() {
 
                     <div className="swiper-slide odd-slide">
                         <div className="stacked-images">
-                            <Image
+                            <img
                                 src="/assests/img/home/brand-img-7.png"
                                 alt="event image 1" width={200} height={220} className="brand-img w-[200px] h-[220px] rounded-[10px]"
                             />
 
-                            <Image
+                            <img
                                 src="/assests/img/home/brand-img-8.jpg"
                                 alt="event image 1" width={200} height={220} className="brand-img w-[200px] h-[220px] rounded-[10px]"
                             />
@@ -145,12 +145,12 @@ export default function SocialStorytelling() {
 
                     <div className="swiper-slide odd-slide">
                         <div className="stacked-images">
-                            <Image
+                            <img
                                 src="/assests/img/home/brand-img-1.jpg"
                                 alt="event image 1" width={200} height={220} className="brand-img w-[200px] h-[220px] rounded-[10px]"
                             />
 
-                            <Image
+                            <img
                                 src="/assests/img/home/brand-img-2.jpg"
                                 alt="event image 1" width={200} height={220} className="brand-img w-[200px] h-[220px] rounded-[10px]"
                             />
@@ -166,12 +166,12 @@ export default function SocialStorytelling() {
 
                     <div className="swiper-slide odd-slide">
                         <div className="stacked-images">
-                            <Image
+                            <img
                                 src="/assests/img/home/brand-img-3.jpg"
                                 alt="event image 1" width={200} height={220} className="brand-img w-[200px] h-[220px] rounded-[10px]"
                             />
 
-                            <Image
+                            <img
                                 src="/assests/img/home/brand-img-4.png"
                                 alt="event image 1" width={200} height={220} className="brand-img w-[200px] h-[220px] rounded-[10px]"
                             />
@@ -188,12 +188,12 @@ export default function SocialStorytelling() {
 
                     <div className="swiper-slide odd-slide">
                         <div className="stacked-images">
-                            <Image
+                            <img
                                 src="/assests/img/home/brand-img-5.jpg"
                                 alt="event image 1" width={200} height={220} className="brand-img w-[200px] h-[220px] rounded-[10px]"
                             />
 
-                            <Image
+                            <img
                                 src="/assests/img/home/brand-img-6.jpg"
                                 alt="event image 1" width={200} height={220} className="brand-img w-[200px] h-[220px] rounded-[10px]"
                             />
@@ -210,12 +210,12 @@ export default function SocialStorytelling() {
 
                     <div className="swiper-slide odd-slide">
                         <div className="stacked-images">
-                            <Image
+                            <img
                                 src="/assests/img/home/brand-img-7.png"
                                 alt="event image 1" width={200} height={220} className="brand-img w-[200px] h-[220px] rounded-[10px]"
                             />
 
-                            <Image
+                            <img
                                 src="/assests/img/home/brand-img-8.jpg"
                                 alt="event image 1" width={200} height={220} className="w-[200px] h-[220px] rounded-[10px] brand-img"
                             />

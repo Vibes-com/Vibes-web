@@ -36,12 +36,12 @@ const CaseStudyDetailsAbout: React.FC<CaseStudyDetailsAboutProps> = ({
           {/* LEFT IMAGE */}
           <div className="col-span-12 lg:col-span-6">
             <div className="bg-white rounded-xl shadow-[0px_4px_7.6px_0px_#0000001F] ">
-              <Image
+              <img
                 src={imageSrc}
                 alt={imageAlt}
                 width={640}
                 height={420}
-                unoptimized
+                
                 className="w-full h-auto object-contain"
               />
             </div>

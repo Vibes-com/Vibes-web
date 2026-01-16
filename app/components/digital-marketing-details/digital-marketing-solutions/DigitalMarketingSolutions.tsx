@@ -84,13 +84,12 @@ const DigitalMarketingSolutions = () => {
                     </div>
 
                     <div className="relative w-full h-[582px] hidden md:block overflow-hidden shadow-xl ">
-                        <Image
+                        <img
                            src={withImageBase("/digital-m-details/digital-middle-img.png")}
                             alt="Technology Showcase"
-                            fill
-                            className="object-fill "
-                            priority
-                            unoptimized
+                            className="object-fill h-full"
+                            
+                            
                         />
                     </div>
 
@@ -115,7 +114,7 @@ const ServiceCard = ({ service }: any) => {
             <div
                 className="group absolute -top-4 right-[-8px] w-18 h-18 z-10 rounded-full flex items-center justify-center transition bg-[#FFFFFF] lg:group-hover:bg-[rgb(70,110,89)]
 border-[7px] border-[#ffffff]">
-                <Image
+                <img
                    src={withImageBase(service.icon)}
                     alt={service.title}
                     width={30}
@@ -125,12 +124,10 @@ border-[7px] border-[#ffffff]">
             </div>
 
             {/* DEFAULT BG */}
-            <Image
+            <img
                 src={withImageBase(service.bgImage)}
                 alt={service.title}
-                fill
-                unoptimized
-                className="absolute inset-0 object-cover opacity-5 transition-opacity duration-500 lg:group-hover:opacity-0 rounded-lg"
+                className="absolute inset-0 object-cover opacity-5 transition-opacity duration-500 lg:group-hover:opacity-0 rounded-lg h-full "
             />
 
 

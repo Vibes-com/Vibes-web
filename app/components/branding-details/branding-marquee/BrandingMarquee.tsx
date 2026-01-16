@@ -28,7 +28,7 @@ const BrandingMarquee = () => {
                                 className="flex items-center gap-6 px-8 font-poppins font-medium text-[40px] lg:text-[65px] leading-[1] tracking-normal whitespace-nowrap text-[#CBE6D8E0]"
                             >
                                 <span>{text}</span>
-                                <Image
+                                <img
                                      src={withImageBase("/home/star.png")}
                                     alt="star"
                                     width={40}
@@ -50,7 +50,7 @@ const BrandingMarquee = () => {
                                 className="flex items-center gap-6 px-8 font-poppins font-medium  text-[40px] lg:text-[65px] leading-[1] tracking-normal whitespace-nowrap text-[#CBE6D8E0]"
                             >
                                 <span>{text}</span>
-                                <Image
+                                <img
                                     src={withImageBase("/home/star.png")}
                                     alt="star"
                                     width={40}

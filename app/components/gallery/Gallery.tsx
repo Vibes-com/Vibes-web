@@ -80,7 +80,7 @@ export default function Gallery() {
                 data-fancybox="gallery"
                 className="relative overflow-hidden gallery-card shadow-lg"
               >
-                <Image
+                <img
                   src={item.name}
                   alt="Gallery image"
                   width={600}

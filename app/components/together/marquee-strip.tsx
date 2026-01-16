@@ -21,7 +21,7 @@ const MarqueeTabs = () => {
                         className="text-white text-[18px] font-medium flex items-center gap-10"
                     >
                         {label}
-                        <Image
+                        <img
                             src={withImageBase("/home/star.png")}
                             alt=''
                             width={100}
@@ -36,7 +36,7 @@ const MarqueeTabs = () => {
                         className="text-white text-[18px] font-medium flex items-center gap-10"
                     >
                         {label}
-                        <Image
+                        <img
                            src={withImageBase("/home/star.png")}
                             alt=''
                             width={100}

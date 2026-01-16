@@ -35,7 +35,7 @@ const DigitalMarketingDetailsHero: React.FC = () => {
                         <div className=" mt-9 max-w-7xl me-auto  flex flex-col md:flex-row items-center justify-center gap-5 w-max">
                             <div className="flex items-center -space-x-5 me-auto">
                                 <div className="w-[35px] h-[35px] lg:w-[55px] lg:h-[55px] rounded-full border border-white/70 flex items-center justify-center shadow-[0px_4px_4px_0px_#00000040]">
-                                    <Image
+                                    <img
                                        src={withImageBase("/digital-m-details/digtal-client-1.png")}
                                         alt="altrade logo"
                                         width={55}
@@ -43,7 +43,7 @@ const DigitalMarketingDetailsHero: React.FC = () => {
                                     />
                                 </div>
                                 <div className="w-[35px] h-[35px] lg:w-[55px] lg:h-[55px] rounded-full border border-white/70 flex items-center justify-center shadow-[0px_4px_4px_0px_#00000040]">
-                                    <Image
+                                    <img
                                         src={withImageBase("/digital-m-details/digtal-client-2.png")}
                                         alt="My Offiz logo"
                                         width={55}
@@ -51,7 +51,7 @@ const DigitalMarketingDetailsHero: React.FC = () => {
                                     />
                                 </div>
                                 <div className="w-[35px] h-[35px] lg:w-[55px] lg:h-[55px] rounded-full border border-white/70 flex items-center justify-center shadow-[0px_4px_4px_0px_#00000040]">
-                                    <Image
+                                    <img
                                         src={withImageBase("/digital-m-details/digtal-client-3.png")}
                                         alt="Nestle logo"
                                         width={55}
@@ -60,7 +60,7 @@ const DigitalMarketingDetailsHero: React.FC = () => {
                                 </div>
 
                                 <div className="w-[35px] h-[35px] lg:w-[55px] lg:h-[55px] rounded-full border border-white/70 flex items-center justify-center shadow-[0px_4px_4px_0px_#00000040]">
-                                    <Image
+                                    <img
                                         src={withImageBase("/digital-m-details/digtal-client-4.png")}
                                         alt="Solluna logo"
                                         width={55}

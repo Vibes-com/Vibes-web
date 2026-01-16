@@ -32,7 +32,7 @@ export default function SuccessStory({
         <div className="h-full flex flex-col md:flex-row lg:flex-row items-center justify-center lg:justify-between gap-8 px-2 lg:px-10">
 
           {/* Arrow Image */}
-          <Image
+          <img
             src={withImageBase(arrowImage)}
             alt="Vibes Contact Detail"
             width={120}

@@ -7,7 +7,7 @@ const TogetherLeft = () => {
             <h2 className="text-[#303030] font-poppins font-bold text-[75px] leading-[123%] tracking-[0]">
                 TOGETHER WE
             </h2>
-            <h3 className="text-[#303030] font-poppins  flex ps-10 font-bold text-[75px] leading-[123%] tracking-[0]"> <span className="highlight2 w-fit relative me-5 flex z-9">REI<span><Image
+            <h3 className="text-[#303030] font-poppins  flex ps-10 font-bold text-[75px] leading-[123%] tracking-[0]"> <span className="highlight2 w-fit relative me-5 flex z-9">REI<span><img
                src={withImageBase("/home/v-bird.png")}
                 alt=''
                 width={70}

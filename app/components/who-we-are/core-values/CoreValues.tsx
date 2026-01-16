@@ -60,9 +60,9 @@ const CoreValues = () => {
                                 className="bg-[#FFFFFF] shadow-md rounded-xl p-6 border-b-[5px] border-b-[#F4BE00] hover:-translate-y-1 transition-all"
                             >
                                 <div className="flex items-center justify-center h-[60px] w-[60] rounded-sm bg-[#F4BE00]">
-                                    <Image
+                                    <img
                                         src={withImageBase(item.img)}
-                                        alt={item.title} priority unoptimized
+                                        alt={item.title} 
                                         width={35}
                                         height={35}
                                         className="object-contain"

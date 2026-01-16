@@ -113,20 +113,20 @@ const TechSolutions = () => {
                         >
 
                             {/* -------- DEFAULT BACKGROUND IMAGE -------- */}
-                            <Image
+                            <img
                                  src={withImageBase(service.bgImage)}
-                                alt={service.title} priority unoptimized
-                                fill
-                                className="absolute inset-0 object-cover opacity-20
+                                alt={service.title}  
+                         
+                                className="absolute inset-0 h-full object-cover opacity-20
               transition-opacity duration-500 lg:group-hover:opacity-0"
                             />
 
                             {/* -------- HOVER BACKGROUND IMAGE -------- */}
-                            <Image
+                            <img
                                 src={withImageBase(service.hoverBgImage)}
-                                alt={service.title} priority unoptimized
-                                fill
-                                className="absolute inset-0 object-cover opacity-0
+                                alt={service.title} 
+                             
+                                className="absolute inset-0 h-full object-cover opacity-0
               transition-opacity duration-500 lg:group-hover:opacity-100"
                             />
 

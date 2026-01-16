@@ -36,7 +36,7 @@ const HomeGallery = () => {
         <SlideUp delay={0.5}>
           <div className="wrapper w-80 mt-5">
             <div>
-              <Image
+              <img
                 src={withImageBase("/home/home-gallery-img-1.jpg")}
                 alt="Vibes Image Gallery"
                 width={400}
@@ -45,7 +45,7 @@ const HomeGallery = () => {
             </div>
 
             <div>
-              <Image
+              <img
                src={withImageBase("/home/home-gallery-img-2.jpg")}
                 alt="Vibes Image Gallery"
                 width={400}
@@ -54,7 +54,7 @@ const HomeGallery = () => {
             </div>
 
             <div>
-              <Image
+              <img
                src={withImageBase("/home/home-gallery-img-3.jpg")}
                 alt="Vibes Image Gallery"
                 width={400}
@@ -63,7 +63,7 @@ const HomeGallery = () => {
             </div>
 
             <div>
-              <Image
+              <img
                 src={withImageBase("/home/home-gallery-img-4.png")}
                 alt="Vibes Image Gallery"
                 width={400}
@@ -72,7 +72,7 @@ const HomeGallery = () => {
             </div>
 
             <div>
-              <Image
+              <img
                src={withImageBase("/home/home-gallery-img-5.jpg")}
                 alt="Vibes Image Gallery"
                 width={400}
@@ -81,7 +81,7 @@ const HomeGallery = () => {
             </div>
 
             <div>
-              <Image
+              <img
                 src={withImageBase("/home/home-gallery-img-6.jpg")}
                 alt="Vibes Image Gallery"
                 width={400}

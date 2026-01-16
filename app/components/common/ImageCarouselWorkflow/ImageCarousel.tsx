@@ -89,16 +89,15 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
           breakpoints={breakpoints}
           className="w-full"
         >
-          {images.map((item, index) => (
+          {images.map((item:any, index:any) => (
             <SwiperSlide key={`${item.src}-${index}`}>
               <div className="overflow-hidden border-[5px] border-white">
-                <Image
+                <img
                   src={withImageBase(item.src)}
                   alt={item.alt || "carousel image"}
                   width={720}
                   height={674}
-                  priority={index === 0}
-                  unoptimized
+              
                   className={`w-full ${imageHeight} object-cover transition-transform duration-700 ease-in-out hover:scale-110`}
                 />
               </div>

@@ -81,12 +81,12 @@ const WorkflowSection: React.FC<WorkflowSectionProps> = ({
 
               {/* ICON */}
               <div className="mb-6 mt-20">
-                <Image
+                <img
                    src={withImageBase(step.icon)}
                   alt={step.title}
                   width={36}
                   height={36}
-                  unoptimized
+                  
                   className="transition group-hover:invert"
                 />
               </div>

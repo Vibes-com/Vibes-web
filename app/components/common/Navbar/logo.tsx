@@ -6,7 +6,7 @@ import { withImageBase } from "@/app/utils/image";
 const Logo = () => {
     return (
         <Link href="/">
-            <Image
+            <img
                 src={withImageBase("/home/vibes-logo.png")}
                 alt='Vibes Communications Logo'
                 width={100}

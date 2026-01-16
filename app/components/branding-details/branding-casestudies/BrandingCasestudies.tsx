@@ -48,7 +48,7 @@ const BrandingCasestudies = () => {
                 </div>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 items-center mb-0">
                     <div className="overflow-hidden">
-                        <Image
+                        <img
                              src={withImageBase("/branding-details/branding-case-img-1.png")}
                             alt="Luxury Brand Storytelling"
                             width={720}
@@ -95,7 +95,7 @@ const BrandingCasestudies = () => {
                         </div>
                     </div>
                     <div className="order-1 lg:order-2 overflow-hidden">
-                        <Image
+                        <img
                              src={withImageBase("/branding-details/branding-case-img-2.png")}
                             alt="Building a New Age Brand"
                             width={720}
@@ -108,7 +108,7 @@ const BrandingCasestudies = () => {
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 items-center mb-2">
                     <div className="overflow-hidden">
-                        <Image
+                        <img
                             src={withImageBase("/branding-details/branding-case-img-3.png")}
                             alt="Integrated Brand Identity"
                             width={720}
@@ -138,7 +138,7 @@ const BrandingCasestudies = () => {
 
                 <div className="space-y-8 mb-5!">
                     <div className="overflow-hidden">
-                        <Image
+                        <img
                             src={withImageBase("/branding-details/branding-case-img-4.png")}
                             alt="Brand Campaign Execution"
                             width={1440}
@@ -207,7 +207,7 @@ const BrandingCasestudies = () => {
                         ].map((src, index) => (
                             <SwiperSlide key={index}>
                                 <div className="overflow-hidden">
-                                    <Image
+                                    <img
                                         src={withImageBase(src.imgurl)}
                                         alt={src.alt}
                                         width={720}
