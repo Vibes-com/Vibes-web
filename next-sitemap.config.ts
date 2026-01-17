@@ -70,7 +70,7 @@
 // export default config;
 
 const config = {
-  siteUrl: 'https://www.vibescom.in/',
+  siteUrl: 'https://www.dev.vibescom.in/',
   generateRobotsTxt: true,
   changefreq: 'weekly',
   priority: 0.8,
