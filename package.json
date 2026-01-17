@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "postbuild": "next-sitemap --config next-sitemap.config.ts"
+
   },
   "dependencies": {
     "@fancyapps/ui": "^6.1.7",
@@ -30,6 +32,7 @@
     "lucide-react": "^0.554.0",
     "masonry-layout": "^4.2.2",
     "next": "^16.0.7",
+    "next-sitemap": "^4.2.3",
     "owl.carousel": "^2.3.4",
     "react": "^19.2.1",
     "react-dom": "^19.2.1",
