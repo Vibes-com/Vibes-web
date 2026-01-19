@@ -40,6 +40,8 @@ const Hero = () => {
               loop
               muted
               playsInline
+              preload="metadata"
+              poster={item.poster}
             >
               <source src={item.banner} type="video/mp4" />
             </video>

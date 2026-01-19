@@ -93,7 +93,6 @@ const WebDevelopment = () => {
         ]}
       />
 
-
       <WorkflowSection
         badgeText="Workflow"
         bgImage="/technology-details/common-casestudy-bg.jpg"
