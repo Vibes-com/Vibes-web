@@ -18,7 +18,17 @@ export const metadata: Metadata = {
     siteName: "Vibes Communications Pvt Ltd",
     images: [
       {
-        url: "https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png",
+        url: "https://s3.ap-south-1.amazonaws.com/vibescom.in/assets/img/home/Vibes-Communications_OG_Image_Fb.jpg",
+        width: 1200,
+        height: 630,
+      },
+       {
+        url: "https://s3.ap-south-1.amazonaws.com/vibescom.in/assets/img/home/Vibes-Communications_OG_Image_linkedin.jpg",
+        width: 1200,
+        height: 630,
+      },
+       {
+        url: "https://s3.ap-south-1.amazonaws.com/vibescom.in/assets/img/home/Vibes-Communications_OG_Image_Twitter.jpg",
         width: 1200,
         height: 630,
       },

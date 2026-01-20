@@ -58,7 +58,7 @@ const Footer = () => {
           <ChatWindow onClose={() => setOpen(false)} />
         )}
       </AnimatePresence>
-{/* 
+
         <div className="flex justify-end">
           <div className="group w-[50px] hover:w-[200px] h-[46px] 
         bg-[#2B4C69] rounded-tl-full rounded-bl-full flex items-center px-4 cursor-pointer
@@ -70,7 +70,7 @@ const Footer = () => {
               AI Assistant
             </span>
           </div>
-        </div> */}
+        </div>
 
         <div className="flex justify-end">
           <div

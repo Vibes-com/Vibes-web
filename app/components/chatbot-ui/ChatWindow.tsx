@@ -248,7 +248,7 @@ useEffect(() => {
         sendMessage();
       }
     }}
-        />
+    />
         <button onClick={sendMessage} className="cursor-pointer bg-[#F4BE00] text-white px-4 rounded-lg">➤</button>
       </div>
     </motion.div>
