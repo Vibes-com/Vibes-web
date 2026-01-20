@@ -61,7 +61,7 @@ const WebDevelopment = () => {
         badgeText="ABOUT US"
         heading="IT Solutions Engineered for"
         highlightText="Speed and Scalability"
-        description="Vibes develops secure, bespoke web platforms engineered for high performance, scalability, and reliability, supported by refined development and adaptive design."
+        description="As a forward-thinking Website development company, Vibes delivers secure, bespoke web platforms built for performance, scalability, and long-term reliability through refined development and adaptive design."
         mainImage="/web-development/webdevelopment-about-img.png"
         bgImage="/web-development/wd-services-bg.jpg"
         alt="Web Development"
@@ -164,7 +164,7 @@ const WebDevelopment = () => {
             Technology <span className="highlight relative z-9">Stack</span>
           </>
         }
-        description="Vibes uses a robust, future-ready tech stack built for speed, security, and scale every tool is handpicked to power high performance and elevate every digital experience."
+        description="Vibes is a modern web designing company providing an advanced website development service with a handpicked, future-ready tech stack that ensures speed, security, and scalable digital excellence."
         topLogos={[
           {
             alt:"php-logo",
@@ -217,7 +217,7 @@ const WebDevelopment = () => {
             <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[28px] sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] leading-[1.23] tracking-normal">Choose Vibes.</span> Choose Certainty.
           </>
         }
-        description="Vibes delivers high-performing, scalable, secure digital solutions- built with precision, expertise, clear communication, and on-time delivery brands trust."
+        description="Vibes is a trusted web development agency delivering high-performing, scalable, and secure digital solutions built with precision, technical expertise, clear communication, and on-time delivery."
         items={[
           {
             title: "Insight-Led Execution",

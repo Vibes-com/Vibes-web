@@ -98,11 +98,11 @@ const TechSolutions = () => {
                     </div>
                 </div>
                 <h3 className=" text-center font-poppins font-medium text-[28px]  sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] leading-[1.23] tracking-norma]">
-                    Vibes’ Smart <br/><span className="highlight relative z-9 w-fit font-poppins font-semibold text-[28px]  sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] leading-[1.23] tracking-normal">Tech Solutions</span>
+                    Vibes’ Smart <br/><span className="highlight relative z-9 w-fit font-poppins font-semibold text-[28px]  sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] leading-[1.23] tracking-normal">Tech Solution</span>
 
                 </h3>
                 <p className="text-[#707070] font-normal text-[16px] leading-[130%] tracking-[0] text-center max-w-2xl mx-auto mb-16 mt-5">
-                    Explore Vibes’ complete suite of technology services- Web and App development, custom CRM platforms, UI/UX, and high-performance digital systems built for scalable growth.
+                    Explore Vibes’ complete suite of technology solutions services. Web and App development, custom CRM platforms, UI/UX, and high-performance digital systems built for scalable growth.
                 </p>
                   <SlideUp delay={0.5}>
                 <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10">

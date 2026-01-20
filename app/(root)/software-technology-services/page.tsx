@@ -128,7 +128,7 @@ export default function Page() {
           badgeText="CASE STUDIES"
           title="Code that Delivers"
           highlightTitle="Real Impact"
-          description="Explore real technology success stories where Vibes turns complex challenges into measurable outcomes, delivering smarter, scalable digital solutions."
+          description="Explore real-world success stories where Vibes turns complex challenges into measurable impact with intelligent, scalable technology solutions services."
           buttonText="Dive Into Success Stories"
           bgImage="/technology-details/common-casestudy-bg.jpg"
         />
