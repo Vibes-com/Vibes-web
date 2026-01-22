@@ -4,16 +4,15 @@ import React from "react";
 import { withImageBase } from "@/app/utils/image";
 
 interface HeroSectionProps {
-  backgroundImage: string;
+  backgroundImage?: string;
   title: React.ReactNode;
   description?: string;
   height?: string;
-  mobileBackgroundImage: string;
+  mobileBackgroundImage?: string;
 }
 
 const HeroSection: React.FC<HeroSectionProps> = ({
   backgroundImage,
-  mobileBackgroundImage,
   title,
   description,
   height = "h-[65vh] sm:h-[90vh] md:h-[90vh] lg:h-[90vh] xl:h-[90vh] 2xl:h-[90vh]",
