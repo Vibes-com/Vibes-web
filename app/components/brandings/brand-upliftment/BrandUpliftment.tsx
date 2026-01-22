@@ -77,11 +77,11 @@ const BrandUpliftment = () => {
             <span className=" highlight relative w-fit z-9 font-semibold">Enhancement Offerings </span>
           </>
         }
-        description=" Focused solutions designed to refresh, realign, and elevate brand expression while preserving core identity."
+        description=" Focused solutions designed to refresh, realign, and elevate brand expression while preserving core identity delivered by a strategic rebrand agency approach."
         cards={[
           {
             title: "Rebranding",
-            desc: "Updated brand systems that align identity, tone, and visuals with evolving business objectives",
+            desc: "Updated brand systems that align identity, tone, and visuals with evolving business objectives through structured, insight-led rebranding services.",
             dark: true,
           },
           {
@@ -91,7 +91,7 @@ const BrandUpliftment = () => {
           },
           {
             title: "Graphic Design",
-            desc: "Consistent, high-quality design across marketing, digital, and corporate communication assets.",
+            desc: "Consistent, high-quality rebranding design across marketing, digital, and corporate communication assets to ensure cohesion and impact.",
             dark: false,
           },
           // {

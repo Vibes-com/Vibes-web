@@ -3,7 +3,7 @@ import React from "react";
 import { Button2 } from "@/components/ui/button2";
 import { ArrowUpIcon } from "lucide-react";
 import Link from "next/link";
-import {withImageBase} from "@/app/utils/image";
+import { withImageBase } from "@/app/utils/image";
 import SlideUp from "../../animations/SlideUp";
 
 const services = [
@@ -98,78 +98,78 @@ const TechSolutions = () => {
                     </div>
                 </div>
                 <h3 className=" text-center font-poppins font-medium text-[28px]  sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] leading-[1.23] tracking-norma]">
-                    Vibes’ Smart <br/><span className="highlight relative z-9 w-fit font-poppins font-semibold text-[28px]  sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] leading-[1.23] tracking-normal">Tech Solution</span>
+                    Vibes’ Smart <br /><span className="highlight relative z-9 w-fit font-poppins font-semibold text-[28px]  sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] leading-[1.23] tracking-normal">Tech Solution</span>
 
                 </h3>
                 <p className="text-[#707070] font-normal text-[16px] leading-[130%] tracking-[0] text-center max-w-2xl mx-auto mb-16 mt-5">
                     Explore Vibes’ complete suite of technology solutions services. Web and App development, custom CRM platforms, UI/UX, and high-performance digital systems built for scalable growth.
                 </p>
-                  <SlideUp delay={0.5}>
-                <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10">
+                <SlideUp delay={0.5}>
+                    <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10">
 
-                    {services.map((service, idx) => (
-                        <div
-                            key={idx}
-                            className="group desktop-hover-only relative w-full overflow-hidden h-[392px] bg-[#466E59]/85 shadow-lg transition-all duration-500 lg:group-hover:text-[#454545]"
-                        >
+                        {services.map((service, idx) => (
+                            <div
+                                key={idx}
+                                className="group desktop-hover-only relative w-full overflow-hidden h-[392px] bg-[#466E59]/85 shadow-lg transition-all duration-500 lg:group-hover:text-[#454545]"
+                            >
 
-                            {/* -------- DEFAULT BACKGROUND IMAGE -------- */}
-                            <img
-                                 src={withImageBase(service.bgImage)}
-                                alt={service.title}  
-                         
-                                className="absolute inset-0 h-full object-cover opacity-20
+                                {/* -------- DEFAULT BACKGROUND IMAGE -------- */}
+                                <img
+                                    src={withImageBase(service.bgImage)}
+                                    alt={service.title}
+
+                                    className="absolute inset-0 h-full object-cover opacity-20
               transition-opacity duration-500 lg:group-hover:opacity-0"
-                            />
+                                />
 
-                            {/* -------- HOVER BACKGROUND IMAGE -------- */}
-                            <img
-                                src={withImageBase(service.hoverBgImage)}
-                                alt={service.title} 
-                             
-                                className="absolute inset-0 h-full object-cover opacity-0
+                                {/* -------- HOVER BACKGROUND IMAGE -------- */}
+                                <img
+                                    src={withImageBase(service.hoverBgImage)}
+                                    alt={service.title}
+
+                                    className="absolute inset-0 h-full object-cover opacity-0
               transition-opacity duration-500 lg:group-hover:opacity-100"
-                            />
+                                />
 
-                            {/* -------- CONTENT -------- */}
-                            <div className="relative z-10 px-4 py-10 flex flex-col h-full">
-                                <h3 className="font-poppins font-semibold text-[20px] lg:text-[22px] tracking-normal text-[#FFFFFF] lg:group-hover:text-[#454545] ">{service.title}</h3>
+                                {/* -------- CONTENT -------- */}
+                                <div className="relative z-10 px-4 py-10 flex flex-col h-full">
+                                    <h3 className="font-poppins font-semibold text-[20px] lg:text-[22px] tracking-normal text-[#FFFFFF] lg:group-hover:text-[#454545] ">{service.title}</h3>
 
-                                {/* TAGS → FADE OUT */}
-                                <div className="mt-6 flex flex-wrap gap-3
+                                    {/* TAGS → FADE OUT */}
+                                    <div className="mt-6 flex flex-wrap gap-3
               transition-all duration-300 lg:group-hover:hidden lg:group-hover:translate-x-5">
-                                    {service.tags.map((tag, i) => (
-                                        <span
-                                            key={i}
-                                            className="px-3 py-2 rounded-full font-poppins font-medium text-[10px] leading-none tracking-normal border border-[#FFFFFF]/50 backdrop-blur-sm text-[#FFFFFF] bg-[#FFFFFF]/20"
-                                        >
-                                            {tag}
-                                        </span>
-                                    ))}
-                                </div>
-                                 <Button2 className="block  lg:hidden mt-5 p-[20px] hover:text-[#F4BE00] bg-transparent  text-[#FFFFFF] text-[16px]  cursor-pointer flex justify-start">
+                                        {service.tags.map((tag, i) => (
+                                            <span
+                                                key={i}
+                                                className="px-3 py-2 rounded-full font-poppins font-medium text-[10px] leading-none tracking-normal border border-[#FFFFFF]/50 backdrop-blur-sm text-[#FFFFFF] bg-[#FFFFFF]/20"
+                                            >
+                                                {tag}
+                                            </span>
+                                        ))}
+                                    </div>
+                                    <Button2 className="block  lg:hidden mt-5 p-[20px] hover:text-[#F4BE00] bg-transparent  text-[#FFFFFF] text-[16px]  cursor-pointer flex justify-start">
                                         <Link href={service.url}><span className="text-[16px] lg:text-[18px] ">View More</span></Link>
                                         <ArrowUpIcon className="transform rotate-45" />
                                     </Button2>
 
-                                {/* PARAGRAPH + BUTTON SLIDE IN */}
-                                <div
-                                    className="mt-4 transition-all duration-500 opacity-0 translate-x-10
+                                    {/* PARAGRAPH + BUTTON SLIDE IN */}
+                                    <div
+                                        className="mt-4 transition-all duration-500 opacity-0 translate-x-10
                 lg:group-hover:opacity-100 lg:group-hover:translate-x-0"
-                                >
-                                    <p className="font-poppins font-medium text-[12px]  tracking-normal text-[#737373]">{service.description}</p>
+                                    >
+                                        <p className="font-poppins font-medium text-[12px]  tracking-normal text-[#737373]">{service.description}</p>
 
-                                    <Button2 className="mt-5 p-[20px] hidden md:flex hover:text-[#F4BE00] bg-transparent  text-[#204667] text-[16px]  cursor-pointer  items-center">
-                                        <Link href={service.url}><span>View More</span></Link>
-                                        <ArrowUpIcon className="transform rotate-45" />
-                                    </Button2>
+                                        <Button2 className="mt-5 p-[20px] hidden md:flex hover:text-[#F4BE00] bg-transparent  text-[#204667] text-[16px]  cursor-pointer  items-center">
+                                            <Link href={service.url}><span>View More</span></Link>
+                                            <ArrowUpIcon className="transform rotate-45" />
+                                        </Button2>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                       
-                    ))}
-                </div>
-                 </SlideUp>
+
+                        ))}
+                    </div>
+                </SlideUp>
             </div >
         </div>
     );

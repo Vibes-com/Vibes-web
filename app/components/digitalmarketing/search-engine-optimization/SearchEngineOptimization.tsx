@@ -45,7 +45,7 @@ const SearchEngineOptimization = () => {
         badgeText="SEO Services"
         heading="Comprehensive SEO Built for "
         highlightText="Sustainable Results"
-        description="Data-driven optimization frameworks designed to strengthen rankings, improve site health, and convert organic visibility into business impact."
+        description="A performance-focused seo optimization service built on data-driven frameworks that strengthen rankings, improve site health, and translate organic visibility into measurable business impact."
         mainImage="/digital-m-details/seo-left-img.png"
         bgImage="/web-development/wd-services-bg.jpg"
         alt="SEO Services"
@@ -54,26 +54,26 @@ const SearchEngineOptimization = () => {
             icon: "/digital-m-details/on-page-seo.png",
             title: <>On-Page SEO</>,
             alt: "On-Page SEO",
-            subtitle: "Content, structure, and metadata optimization aligned with search intent to enhance relevance, readability, and ranking performance."
+            subtitle: "Content, structure, and metadata optimization aligned with search intent core to effective search optimization services that enhance relevance, readability, and ranking performance."
           },
           {
             icon: "/digital-m-details/off-page-seo.png",
             title: <>Off-Page SEO</>,
             alt: "Off-Page SEO",
-            subtitle: "Authority-building strategies focused on credible backlinks, digital PR, and brand trust signals that strengthen domain strength."
+            subtitle: "Authority-building strategies rooted in digital marketing seo, leveraging credible backlinks, digital PR, and brand trust signals to strengthen domain authority."
           },
 
           {
             icon: "/digital-m-details/technical-seo.png",
             title: <>Technical SEO</>,
             alt: "Technical SEO",
-            subtitle: "Performance-led optimization ensures crawlability, site speed, mobile readiness, and indexing efficiency for search engines."
+            subtitle: "Performance-led optimization delivered by an experienced seo agency, ensuring crawlability, site speed, mobile readiness, and indexing efficiency across search engines."
           },
           {
             icon: "/digital-m-details/ai.png",
             title: <>LLM Integrations (AI-Led Optimization)</>,
             alt: "LLM Integrations (AI-Led Optimization)",
-            subtitle: "Search strategies adapted for AI-powered discovery, optimizing content for large language models and next-generation search experiences."
+            subtitle: "Future-ready search strategies powered by an advanced seo optimization agency, adapting content for AI-driven discovery, large language models, and next-generation search experiences."
           },
           {
             icon: "/digital-m-details/keyword.png",

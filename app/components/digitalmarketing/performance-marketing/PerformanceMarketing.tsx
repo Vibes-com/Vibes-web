@@ -47,7 +47,7 @@ const PerformanceMarketing = () => {
         badgeText="Overview"
         heading="Performance "
         highlightText="Advertising Solutions"
-        description="Results-focused advertising strategies designed to generate high-quality leads, maximize reach, and drive measurable conversions across search and social platforms with precision targeting and data-backed optimization."
+        description="Results-focused advertising strategies by a performance marketing agency, designed to generate high-quality leads, maximize reach, and drive measurable conversions across search and social platforms through precision targeting and data-backed optimization."
         mainImage="/performance-marketing/pm-overview-left-img.png"
         bgImage="/web-development/wd-services-bg.jpg"
         alt="Performance MArketing"

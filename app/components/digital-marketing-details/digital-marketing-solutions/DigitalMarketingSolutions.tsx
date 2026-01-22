@@ -23,7 +23,7 @@ const services = [
     {
         title: "Performance Marketing",
         description:
-            "Campaign management focused on performance marketing and lead generation through Meta, Google, and LinkedIn ads to drive measurable conversions and ROI.",
+            "Campaigns built around performance marketing and lead generation, leveraging Meta, google digital marketing, and LinkedIn ads to deliver measurable conversions and ROI.",
         bgImage: "/digital-m-details/dm-bg-2.jpeg",
         hoverBgImage: "/technology-details/tech-cards-bg.png",
         icon: "/digital-m-details/growth.png",
@@ -33,7 +33,7 @@ const services = [
     {
         title: "Social Media Management ",
         description:
-            "Strategic social media management for B2B and B2C, covering content planning, creation, and platform-led growth across LinkedIn and consumer channels.",
+            " Strategic social media management for B2B and B2C brands, led by a results-oriented digital marketing company with expertise in content planning, creation, and platform-led growth across LinkedIn and consumer channels.",
         bgImage: "/digital-m-details/dm-bg-3.jpeg",
         hoverBgImage: "/technology-details/tech-cards-bg.png",
         icon: "/digital-m-details/social-media.png",
@@ -43,7 +43,7 @@ const services = [
     {
         title: "Search Engine Optimization",
         description:
-            "Comprehensive SEO management covering on-page, off-page, technical SEO, LLM optimization, and keyword strategy to improve visibility, rankings, and search performance.",
+            "Comprehensive SEO management covering on-page, off-page, technical SEO, LLM optimization, and keyword strategy guided by an experienced digital marketing consultant to improve visibility, rankings, and overall search performance.",
         bgImage: "/digital-m-details/dm-bg-4.jpeg",
         hoverBgImage: "/technology-details/tech-cards-bg.png",
         icon: "/digital-m-details/seo.png",
@@ -69,7 +69,7 @@ const DigitalMarketingSolutions = () => {
                 </h3>
 
                 <p className="text-[#707070] text-center max-w-2xl mx-auto mb-16 mt-5">
-                    Practical, data-driven digital marketing services focused on real outcomes strong visibility, quality leads, higher engagement, and consistent business growth
+                   Practical, data-driven Digital Marketing services focused on real outcomes, strong visibility, quality leads, higher engagement, and consistent business growth.
                 </p>
 
 

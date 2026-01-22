@@ -26,7 +26,7 @@ const EcommDevelopment = () => {
         badgeText="Services"
         heading=" Solutions Built for"
         highlightText="Online Growth"
-        description="Comprehensive e-commerce services covering development, integrations, optimization, and scalability."
+        description="Comprehensive e-commerce website development services delivered by an experienced ecommerce development company, covering development, integrations, optimization, and scalability."
         mainImage="/ecommerce-development/ecom-dev-services.png"
         bgImage="/web-development/wd-services-bg.jpg"
         alt="E-Commerce Development"
@@ -35,13 +35,13 @@ const EcommDevelopment = () => {
             icon: "/ecommerce-development/ecommerce.png",
             title: <>Custom E-commerce Development</>,
             alt: "Custom E-commerce Development",
-            subtitle: <>Tailored online stores built for performance, scalability, and seamless operations.</>,
+            subtitle: <>Tailored online stores built for performance, scalability, and seamless operations by a custom e commerce website development company.</>,
           },
           {
             icon: "/ecommerce-development/platform.png",
             title: <>Platform-Based Solutions</>,
             alt: "Platform-Based Solutions",
-            subtitle: <> Expert development on Shopify, WooCommerce, and custom frameworks</>,
+            subtitle: <> Expert development from a trusted ecommerce website development agency, delivering solutions on Shopify, WooCommerce, and custom frameworks.</>,
           },
           {
             icon: "/ecommerce-development/integration.png",
@@ -69,7 +69,7 @@ const EcommDevelopment = () => {
             <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[28px] sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] leading-[1.23] tracking-normal">Strategy to Scale</span>
           </>
         }
-        description=" A structured approach that ensures reliable builds, smooth launches, and long-term growth."
+        description=" A structured approach followed by our ecommerce development agency to ensure reliable builds, smooth launches, and long-term growth."
         steps={[
           {
             id: "01",
@@ -130,7 +130,7 @@ const EcommDevelopment = () => {
             <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[28px] sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] leading-[1.23] tracking-normal">Choose Vibes.</span> Choose Certainty.
           </>
         }
-        description="Scalable e-commerce solutions built for performance, security, and seamless customer experiences."
+        description="A robust technology stack powering a reliable ecommerce website development agency, enabling secure, scalable, and high-performance e-commerce solutions."
         items={[
           {
             title: "Conversion-Focused Design",

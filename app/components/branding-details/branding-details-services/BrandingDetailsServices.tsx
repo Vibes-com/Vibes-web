@@ -3,7 +3,7 @@ import { Button2 } from "@/components/ui/button2";
 import { ArrowUpIcon } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-import {withImageBase} from "@/app/utils/image";
+import { withImageBase } from "@/app/utils/image";
 import SlideLeft from "../../animations/SlideLeft";
 import SlideRight from "../../animations/SlideRight";
 
@@ -63,7 +63,7 @@ const Brandingservices: ServiceItem[] = [
     {
         title: "Corporate Branding",
         description:
-            "Building clear, consistent corporate brand identities that reflect strong values, strengthen credibility, and ensure alignment across all business touchpoints.",
+            "Building clear, consistent corporate brand identities that reflect strong values, strengthen credibility, and ensure alignment across all business touchpoints delivered with the precision expected from leading branding firms",
         tags: [
             "Corporate Identity",
             "Personal Branding",
@@ -89,7 +89,7 @@ const Brandingservices: ServiceItem[] = [
     {
         title: "Brand Communication & Strategy",
         description:
-            " Developing  structured brand strategies and communication frameworks that align messaging, tone, and positioning with business goals.",
+            " Developing structured brand strategies and communication frameworks that align messaging, tone, and positioning with business goals through a comprehensive branding service approach.",
         tags: [
             "Logo Design",
             "Content Creation",
@@ -109,47 +109,47 @@ const BrandingDetailsServices: React.FC = () => {
 
                     {/* Left Column */}
                     <div className="col-span-12  lg:col-span-5">
-                         <SlideLeft delay={0.5}>
-                        <div className="flex  mb-5">
-                            <div className="px-6 py-2 rounded-full border border-[#F4BE00] inline-flex items-center gap-2">
-                                <span className="w-2 h-2 rounded-full bg-[#F4BE00]" />
-                                <span className="font-poppins font-semibold text-[10px] uppercase text-[#F4BE00]">
-                                    Services Highlight
-                                </span>
+                        <SlideLeft delay={0.5}>
+                            <div className="flex  mb-5">
+                                <div className="px-6 py-2 rounded-full border border-[#F4BE00] inline-flex items-center gap-2">
+                                    <span className="w-2 h-2 rounded-full bg-[#F4BE00]" />
+                                    <span className="font-poppins font-semibold text-[10px] uppercase text-[#F4BE00]">
+                                        Services Highlight
+                                    </span>
+                                </div>
                             </div>
-                        </div>
 
-                        <h3 className=" font-poppins font-medium text-[28px]  sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px]">End-to-End<br />
-                            <span className=" relative w-fit highlight z-9 font-semibold">Branding Solutions</span>
-                        </h3>
+                            <h3 className=" font-poppins font-medium text-[28px]  sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px]">End-to-End<br />
+                                <span className=" relative w-fit highlight z-9 font-semibold">Branding Solutions</span>
+                            </h3>
 
-                        <p className="text-[#707070]  max-w-2xl mx-auto mb-16 mt-5">
-                            Offering strategic branding solutions that transform business vision into clear, consistent brand identities across every customer touchpoint.
-                        </p>
+                            <p className="text-[#707070]  max-w-2xl mx-auto mb-16 mt-5">
+                                As a full-scale branding agency, we offer strategic solutions that transform business vision into clear, consistent brand identities across every customer touchpoint.
+                            </p>
                         </SlideLeft>
                     </div>
-                 
+
 
                     {/* Right Column */}
-                    
+
                     <div className="col-span-12  lg:col-span-7">
-                             <SlideRight delay={0.5}>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 place-items-center">
+                        <SlideRight delay={0.5}>
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 place-items-center">
 
-                            {[1, 2, 3].map((_, index) => (
-                                <div
-                                    key={index}
-                                    className={
-                                        index === 0
-                                            ? "sm:col-span-2 flex  justify-center"
-                                            : ""
-                                    }
-                                >
-                                    <BrandingServiceCard service={Brandingservices[index]} />
-                                </div>
-                            ))}
+                                {[1, 2, 3].map((_, index) => (
+                                    <div
+                                        key={index}
+                                        className={
+                                            index === 0
+                                                ? "sm:col-span-2 flex  justify-center"
+                                                : ""
+                                        }
+                                    >
+                                        <BrandingServiceCard service={Brandingservices[index]} />
+                                    </div>
+                                ))}
 
-                        </div>
+                            </div>
                         </SlideRight>
                     </div>
 
@@ -176,7 +176,7 @@ const BrandingServiceCard = ({ service }: any) => {
                 className="group brnd-icon absolute -top-7  right-[-8px] w-18 h-18 z-10 rounded-full flex items-center justify-center transition bg-[#FFFFFF] lg:group-hover:bg-[#F4BE00]
 border-[7px] border-[#ffffff]">
                 <img
-                   src={withImageBase(service.icon)}
+                    src={withImageBase(service.icon)}
                     alt="service icon"
                     width={30}
                     height={30}
@@ -211,12 +211,12 @@ border-[7px] border-[#ffffff]">
                         </span>
                     ))}
                 </div>
-                        <Button2 className="mt-5 p-[20px] block lg:hidden cursor-pointer bg-transparent flex justify-start text-[#FFFFFF] hover:text-[#F4BE00]">
-                        <Link href={service.url}>
-                            <span  className=" text-[16px] lg:text-[18px]">View More</span>
-                        </Link>
-                        <ArrowUpIcon className="rotate-45" />
-                    </Button2>
+                <Button2 className="mt-5 p-[20px] block lg:hidden cursor-pointer bg-transparent flex justify-start text-[#FFFFFF] hover:text-[#F4BE00]">
+                    <Link href={service.url}>
+                        <span className=" text-[16px] lg:text-[18px]">View More</span>
+                    </Link>
+                    <ArrowUpIcon className="rotate-45" />
+                </Button2>
                 {/* DESCRIPTION */}
                 <div className="mt-4 transition-all duration-500 opacity-0 translate-x-10 lg:group-hover:opacity-100 lg:group-hover:translate-x-0">
                     <p className="font-poppins font-medium text-[12px] text-[#737373]">

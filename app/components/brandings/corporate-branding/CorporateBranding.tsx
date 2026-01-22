@@ -64,7 +64,7 @@ const CorporateBranding = () => {
             <span className="hero-highlight relative z-9 w-fit font-poppins font-semibold text-[33px] sm:text-[65px] md:text-[65px] lg:text-[65px] xl:text-[65px] 2xl:text-[65px] leading-[116%] tracking-normal capitalize text-[#F4BE00]">BRANDING</span>
           </>
         }
-        description=" Strategic corporate branding that builds credibility, ensures consistency, and strengthens long-term business positioning."
+        description=" Strategic corporate branding that builds credibility, ensures consistency, and strengthens long-term business positioning delivered by a seasoned corporate branding agency focused on sustainable growth"
       />
       <WhyChooseUsSection
         badgeText="Services Highlight"
@@ -75,11 +75,11 @@ const CorporateBranding = () => {
             <span className=" highlight relative w-fit z-9 font-semibold">Framework</span>
           </>
         }
-        description="A holistic branding approach that aligns identity, people, culture, and communication ensuring clarity, consistency, and credibility across every internal and external brand touchpoint"
+        description="A holistic branding approach aligning identity, people, culture, and communication to ensure clarity, consistency, and credibility across all brand touchpoints placing us among trusted corporate branding companies."
         cards={[
           {
             title: "Corporate Identity",
-            desc: " Defines a clear, professional visual and verbal presence that reflects values and strengthens brand recognition.",
+            desc: " Defines a clear, professional visual and verbal presence that strengthens brand recognition, and supports organizations seeking a dependable branding services company.",
             dark: true,
           },
           {
@@ -94,7 +94,7 @@ const CorporateBranding = () => {
           },
           {
             title: "Employer Branding",
-            desc: "Builds a strong workplace image that attracts talent, fosters pride, and supports long-term retention.",
+            desc: "Builds a strong workplace image that attracts talent, fosters pride, and supports long-term retention, an essential pillar of any forward-thinking business branding company.",
             dark: true,
           },
         ]}

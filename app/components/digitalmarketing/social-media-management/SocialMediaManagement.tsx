@@ -44,7 +44,7 @@ const SocialMediaManagement = () => {
         badgeText="Services"
         heading="Strategic Social Media "
         highlightText="Services"
-        description=" End-to-end social media solutions focused on planning, storytelling, and performance crafted to align brand objectives with audience behaviour."
+        description=" End-to-end social media marketing services focused on planning, storytelling, and performance crafted to align brand objectives with evolving audience behaviour."
         mainImage="/digital-m-details/social-media-left-img.png"
         bgImage="/web-development/wd-services-bg.jpg"
         alt="Social Media Management"
@@ -53,20 +53,20 @@ const SocialMediaManagement = () => {
             icon: "/digital-m-details/copy-writing.png",
             title: <>Content Creation & Planning</>,
             alt: "Content Creation & Planning",
-            subtitle: "Purpose-driven content calendars, platform-specific creatives, and messaging frameworks built to maintain consistency, relevance, and brand recall."
+            subtitle: "Purpose-driven content calendars, platform-specific creatives, and messaging frameworks built to maintain consistency, relevance, and long-term brand recall delivered by a results-focused social media agency."
           },
           {
             icon: "/digital-m-details/b2b.png",
             title: <>B2B Social Media Management</>,
             alt: "B2B Social Media Management",
-            subtitle: "Professional, insight-driven social strategies that position brands as industry leaders, strengthen credibility, and support long-term business growth."
+            subtitle: "Professional, insight-driven social strategies led by an experienced smm marketing agency, positioning brands as industry leaders, strengthening credibility, and supporting sustainable business growth."
           },
 
           {
             icon: "/digital-m-details/b2c.png",
             title: <>B2C Social Media Management</>,
             alt: "B2C Social Media Management",
-            subtitle: "Engaging, trend-responsive social storytelling designed to increase visibility, build community, and drive meaningful consumer interaction."
+            subtitle: "Engaging, trend-responsive social storytelling designed to increase visibility, build community, and drive meaningful consumer interaction powered by a performance-led social media marketing agency."
           },
         ]}
       />

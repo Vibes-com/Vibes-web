@@ -66,7 +66,8 @@ const PmisDevelopment = () => {
         backgroundImage="/technology-details/common-casestudy-bg.jpg"
         heading="Enabling PMIS Across"
         highlightText="Governance & Execution"
-        description="Vibes designs and delivers PMIS platforms structured for complex, multi-agency project environments."
+        description="Vibes designs and delivers (pmis) project management information system platforms structured for complex, multi-agency project environments.
+"
         centerText={`PMIS for,\nMulti-Agency Delivery`}
         slides={[
           {
@@ -97,7 +98,7 @@ const PmisDevelopment = () => {
             <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[28px] sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] leading-[1.23] tracking-normal">PMIS Modules</span> That<br /> Enable Governance
           </>
         }
-        description="PMIS solutions by Vibes are built with scalable, role-driven modules that support efficient project governance, monitoring, and execution across complex ecosystems."
+        description="Project Management Information system (pmis) solutions by Vibes are built with scalable, role-driven modules that support efficient project governance, monitoring, and execution across complex ecosystems."
         items={[
           {
             title: "PMIS Portal Enhancement",
@@ -105,7 +106,7 @@ const PmisDevelopment = () => {
             icon: "/pmis/portal.png",
           },
           {
-            title: "Dashboard Design & Analytics",
+            title: "Dashboard Tools & Analytics",
             desc: "Insight-driven dashboards delivering real-time project status, performance metrics, and actionable analytics.",
             icon: "/pmis/dashboard.png",
           },

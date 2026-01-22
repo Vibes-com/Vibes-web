@@ -39,7 +39,7 @@ const CampaignManagement = () => {
             <span className="hero-highlight relative z-9 w-fit font-poppins font-semibold text-[33px] sm:text-[65px] md:text-[65px] lg:text-[65px] xl:text-[65px] 2xl:text-[65px] leading-[116%] tracking-normal capitalize text-[#F4BE00]">Management</span>
           </>
         }
-        description="End-to-end campaign management that transforms strategy into action, ensuring consistent execution, measurable reach, and lasting brand impact across digital and on-ground platforms"
+        description="End-to-end campaign management that transforms strategy into action, ensuring consistent execution, measurable reach, and lasting brand impact across digital and on-ground platforms positioning Vibes as a reliable campaign management agency for brands seeking results."
       />
       <AboutSection
         badgeText="Services"
@@ -54,7 +54,7 @@ const CampaignManagement = () => {
             icon: "/digital-m-details/influencer.png",
             title: <>Influencer Marketing</>,
             alt: "Influencer Marketing",
-            subtitle: "Strategic influencer collaborations that amplify brand narratives through credible voices, targeted communities, and performance-driven partnerships aligned with campaign goals."
+            subtitle: "Strategic influencer collaborations powered by deep industry relationships with leading influencer management companies, amplifying brand narratives through credible voices, targeted communities, and performance-driven partnerships aligned with campaign goals."
           },
           {
             icon: "/digital-m-details/marketing-plan.png",
@@ -80,7 +80,7 @@ const CampaignManagement = () => {
           },
           {
             title: "Integrated Planning & Execution",
-            desc: " Media strategy, creative direction, and execution aligned across platforms for consistent brand impact.",
+            desc: " Media strategy, creative direction, and execution aligned across platforms for consistent brand impact supported by collaborations with select social media influencer management companies.",
           },
           {
             title: "Continuous Optimization & Reporting",

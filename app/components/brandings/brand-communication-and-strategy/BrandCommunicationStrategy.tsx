@@ -75,7 +75,7 @@ const BrandCommunicationStrategy = () => {
           },
           {
             title: "Brand Positioning",
-            desc: "Clear market definition that differentiates brands and anchors communication strategy.",
+            desc: "Clear market definition that differentiates brands and anchors a cohesive brand communication strategy for sustained impact.",
             dark: true,
           },
         ]}

@@ -61,7 +61,8 @@ const WebDevelopment = () => {
         badgeText="ABOUT US"
         heading="IT Solutions Engineered for"
         highlightText="Speed and Scalability"
-        description="As a forward-thinking Website development company, Vibes delivers secure, bespoke web platforms built for performance, scalability, and long-term reliability through refined development and adaptive design."
+        description="As a forward-thinking Website development company, Vibes delivers secure, bespoke web platforms built for performance, scalability, and long-term reliability through refined development and adaptive design.
+."
         mainImage="/web-development/webdevelopment-about-img.png"
         bgImage="/web-development/wd-services-bg.jpg"
         alt="Web Development"
@@ -217,7 +218,7 @@ const WebDevelopment = () => {
             <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[28px] sm:text-[40px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] leading-[1.23] tracking-normal">Choose Vibes.</span> Choose Certainty.
           </>
         }
-        description="Vibes is a trusted web development agency delivering high-performing, scalable, and secure digital solutions built with precision, technical expertise, clear communication, and on-time delivery."
+        description="Vibes is a trusted web development agency delivering high-performing, scalable, and secure digital solutions built with precision, technical expertise, clear communication, and on-time delivery"
         items={[
           {
             title: "Insight-Led Execution",

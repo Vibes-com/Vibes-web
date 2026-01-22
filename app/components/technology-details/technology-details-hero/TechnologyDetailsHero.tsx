@@ -20,7 +20,7 @@ const TechnologyDetailsHero: React.FC = () => {
                         </h1>
 
                         <p className="mt-10 font-poppins font-semibold text-[14px] sm:text-[18px] md:text-[18px] lg:text-[18px] xl:text-[18px] 2xl:text-[18px] leading-[128%] tracking-normal capitalize text-[#FFFFFF]">
-                            Vibes builds smart, responsive digital systems and apps
+                          Vibes builds smart, responsive digital systems and apps through advanced software-technology services designed for scalability and performance
                         </p>
                         <div className=" mt-4">
                             <Link href="/contact-for-digital-requirements">
