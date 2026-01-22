@@ -43,9 +43,9 @@ display: none !important;
 }
 
 @media (max-width: 676px){
- .hero-section {
+ /* .hero-section {
     background-image: var(--mobile-bg) !important;
-  }
+  } */
 .section-gap{
 padding: 50px 0 40px;
 }
