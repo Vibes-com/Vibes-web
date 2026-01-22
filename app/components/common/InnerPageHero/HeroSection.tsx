@@ -26,7 +26,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
       // }}
    style={{
   backgroundImage: `url(${withImageBase(backgroundImage)})`,
-  ["--mobile-bg" as any]: `url(${withImageBase(mobileBackgroundImage || backgroundImage)})`,
+  // ["--mobile-bg" as any]: `url(${withImageBase(mobileBackgroundImage || backgroundImage)})`,
 }}
     >
       <div className="container mx-auto max-w-screen-xl px-4 md:px-8">

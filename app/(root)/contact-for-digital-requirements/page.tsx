@@ -60,17 +60,14 @@ const page = () => {
 
       <HeroSection
         backgroundImage="/contact/contact-us-bg.jpg"
-        title={
-          <h1 className="font-poppins font-normal pt-15 hero-heading text-[32px] sm:text-[60px] md:text-[60px] lg:text-[60px] xl:text-[60px] 2xl:text-[60px] leading-[116%] capitalize text-white">
-            Connect. Collaborate.
-            <br />
-            <span className=" hero-highlight relative hero-heading z-10 w-fit font-poppins font-semibold text-[33px] sm:text-[65px] md:text-[65px] lg:text-[65px] xl:text-[65px] 2xl:text-[65px] leading-[116%] text-[#F4BE00]">
-              Create.
-            </span>
-          </h1>
-        }
-        description="A space to explore partnerships, projects, and meaningful digital possibilities."
-      />
+        title={<h1 className="font-poppins font-normal pt-15 hero-heading text-[32px] sm:text-[60px] md:text-[60px] lg:text-[60px] xl:text-[60px] 2xl:text-[60px] leading-[116%] capitalize text-white">
+          Connect. Collaborate.
+          <br />
+          <span className=" hero-highlight relative hero-heading z-10 w-fit font-poppins font-semibold text-[33px] sm:text-[65px] md:text-[65px] lg:text-[65px] xl:text-[65px] 2xl:text-[65px] leading-[116%] text-[#F4BE00]">
+            Create.
+          </span>
+        </h1>}
+        description="A space to explore partnerships, projects, and meaningful digital possibilities." mobileBackgroundImage={''}      />
       <ContactForm />
     </div>
   )
