@@ -37,7 +37,7 @@ const HomeGallery = () => {
           <div className="wrapper w-80 mt-5">
             <div>
               <img
-                src={withImageBase("/home/home-gallery-img-1.jpg")}
+                src={withImageBase("/home/13th-anniversary-vibes-communications.jpg")}
                 alt="Vibes Image Gallery"
                 width={400}
                 height={400}
@@ -46,7 +46,7 @@ const HomeGallery = () => {
 
             <div>
               <img
-               src={withImageBase("/home/home-gallery-img-2.jpg")}
+               src={withImageBase("/home/one-team-one-dream-uchagaon-vibes-communications.jpg")}
                 alt="Vibes Image Gallery"
                 width={400}
                 height={400}
@@ -55,7 +55,7 @@ const HomeGallery = () => {
 
             <div>
               <img
-               src={withImageBase("/home/home-gallery-img-3.jpg")}
+               src={withImageBase("/home/vibes-teams-uchagaon-vibes-communications.jpg")}
                 alt="Vibes Image Gallery"
                 width={400}
                 height={400}
@@ -64,7 +64,7 @@ const HomeGallery = () => {
 
             <div>
               <img
-                src={withImageBase("/home/home-gallery-img-4.png")}
+                src={withImageBase("/home/vibes-employee-vibes-communications.png")}
                 alt="Vibes Image Gallery"
                 width={400}
                 height={400}
@@ -73,7 +73,7 @@ const HomeGallery = () => {
 
             <div>
               <img
-               src={withImageBase("/home/home-gallery-img-5.jpg")}
+               src={withImageBase("/home/team-vibes-nimrana-fort-vibes-communications.jpg")}
                 alt="Vibes Image Gallery"
                 width={400}
                 height={400}
@@ -82,7 +82,7 @@ const HomeGallery = () => {
 
             <div>
               <img
-                src={withImageBase("/home/home-gallery-img-6.jpg")}
+                src={withImageBase("/home/teams-vibes--outing-nimrana-fort -vibes-communications.jpg")}
                 alt="Vibes Image Gallery"
                 width={400}
                 height={400}
@@ -104,3 +104,4 @@ const HomeGallery = () => {
 }
 
 export default HomeGallery
+

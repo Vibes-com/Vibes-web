@@ -139,19 +139,19 @@
 }
 
 .hero-section-wrapper {
-  background: url("https://s3.ap-south-1.amazonaws.com/vibescom.in/assets/img/home/hero-banner.png") center/cover no-repeat;
+  background: url("https://d32ze5duxdubbq.cloudfront.net/assets/img/home/hero-banner.png") center/cover no-repeat;
   height: 760px;
   width: 100%;
 }
 
 .preloader-section-wrapper {
-  background: url("https://s3.ap-south-1.amazonaws.com/vibescom.in/assets/img/home/hero-banner.png") center/cover no-repeat;
+  background: url("https://d32ze5duxdubbq.cloudfront.net/assets/img/home/hero-banner.png") center/cover no-repeat;
   height: 760px;
   width: 100%;
 }
 
 .footer-wrapper {
-  /* background: url("https://s3.ap-south-1.amazonaws.com/vibescom.in/assets/img/home/footer-bg.jpg") center/cover no-repeat; */
+  /* background: url("https://d32ze5duxdubbq.cloudfront.net/assets/img/home/footer-bg.jpg") center/cover no-repeat; */
   background-color: #000;
   background-size: 100% 100%;
   
@@ -192,7 +192,7 @@
   padding: 80px 0px 60px 0px;
 }
 .together-wrapper {
-  background: url("https://s3.ap-south-1.amazonaws.com/vibescom.in/assets/img/home/together-bg.jpg") center/cover no-repeat;
+  background: url("https://d32ze5duxdubbq.cloudfront.net/assets/img/home/together-bg.jpg") center/cover no-repeat;
   height: 630px;
 }
 @keyframes marquee {
@@ -266,7 +266,7 @@
   background: #ffd400 !important;
 }
 .casestudies-wrapper {
-  background: url("https://s3.ap-south-1.amazonaws.com/vibescom.in/assets/img/home/case-studies-bg.png");
+  background: url("https://d32ze5duxdubbq.cloudfront.net/assets/img/home/case-studies-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -325,7 +325,7 @@
   border: 1px solid #466e59;
 }
 .one-team-wrapper {
-  background: url("https://s3.ap-south-1.amazonaws.com/vibescom.in/assets/img/home/one-team-bg.png");
+  background: url("https://d32ze5duxdubbq.cloudfront.net/assets/img/home/one-team-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -480,26 +480,26 @@ border-right: none;
   }
 }
 .home-gallery-wrapper {
-  background: url("https://s3.ap-south-1.amazonaws.com/vibescom.in/assets/img/home/home-gallery-bg.png");
+  background: url("https://d32ze5duxdubbq.cloudfront.net/assets/img/home/home-gallery-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .technology-wrapper {
-  background: url("https://s3.ap-south-1.amazonaws.com/vibescom.in/assets/img/home/technology-bg.png");
+  background: url("https://d32ze5duxdubbq.cloudfront.net/assets/img/home/technology-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .branding-wrapper {
-  background: url("https://s3.ap-south-1.amazonaws.com/vibescom.in/assets/img/home/branding bg.png");
+  background: url("https://d32ze5duxdubbq.cloudfront.net/assets/img/home/branding bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .digital-wrapper {
-  background: url("https://s3.ap-south-1.amazonaws.com/vibescom.in/assets/img/home/digital-bg.png");
+  background: url("https://d32ze5duxdubbq.cloudfront.net/assets/img/home/digital-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -508,12 +508,12 @@ border-right: none;
 /* about */
 
 .about-hero-wrapper {
-  background: url("https://s3.ap-south-1.amazonaws.com/vibescom.in/assets/img/about/about-banner.png") center/cover no-repeat;
+  background: url("https://d32ze5duxdubbq.cloudfront.net/assets/img/about/about-banner.png") center/cover no-repeat;
   height: 697px;
   width: 100%;
 }
 .mission-vision-wrapper {
-  background: url("https://s3.ap-south-1.amazonaws.com/vibescom.in/assets/img/about/together-bg.png");
+  background: url("https://d32ze5duxdubbq.cloudfront.net/assets/img/about/together-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -522,13 +522,13 @@ border-right: none;
   height: 285px;
 }
 .core-values-wrapper {
-  background: url("https://s3.ap-south-1.amazonaws.com/vibescom.in/assets/img/about/core-values-bg.png");
+  background: url("https://d32ze5duxdubbq.cloudfront.net/assets/img/about/core-values-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .timeline-journey-wrapper {
-  background: url("https://s3.ap-south-1.amazonaws.com/vibescom.in/assets/img/about/our-Journey-bg.png");
+  background: url("https://d32ze5duxdubbq.cloudfront.net/assets/img/about/our-Journey-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -648,7 +648,7 @@ border-right: none;
 }
 
 .celebrating-milestones-wrapper {
-  background: url("https://s3.ap-south-1.amazonaws.com/vibescom.in/assets/img/about/core-values-bg.png");
+  background: url("https://d32ze5duxdubbq.cloudfront.net/assets/img/about/core-values-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -712,7 +712,7 @@ border-right: none;
 }
 
 .our-team-wrapper {
-  background: url("https://s3.ap-south-1.amazonaws.com/vibescom.in/assets/img/about/together-bg.png");
+  background: url("https://d32ze5duxdubbq.cloudfront.net/assets/img/about/together-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -731,7 +731,7 @@ border-right: none;
   animation: floatUpDown 1.8s ease-in-out infinite;
 }
 .technology-details-hero-wrapper {
-  background: url("https://s3.ap-south-1.amazonaws.com/vibescom.in/assets/img/technology-details/technology-hero-bg.png")
+  background: url("https://d32ze5duxdubbq.cloudfront.net/assets/img/technology-details/technology-hero-bg.png")
     center/cover no-repeat;
   height: 763px;
   width: 100%;
@@ -763,28 +763,28 @@ border-right: none;
 }
 
 .contact-hero-wrapper {
-  background: url("https://s3.ap-south-1.amazonaws.com/vibescom.in/assets/img/contact/contact-us-bg.jpg") center/cover
+  background: url("https://d32ze5duxdubbq.cloudfront.net/assets/img/contact/contact-us-bg.jpg") center/cover
     no-repeat;
   height: 763px;
   width: 100%;
 }
 
 .curve-box {
-  background: url("https://s3.ap-south-1.amazonaws.com/vibescom.in/assets/img/technology-details/green-shape.png") bottom /
+  background: url("https://d32ze5duxdubbq.cloudfront.net/assets/img/technology-details/green-shape.png") bottom /
     contain no-repeat;
   width: 100%;
   height: 300px;
 }
 
 .webdevelopment-hero-wrapper {
-  background: url("https://s3.ap-south-1.amazonaws.com/vibescom.in/assets/img/web-development/web-development-bg.jpg")
+  background: url("https://d32ze5duxdubbq.cloudfront.net/assets/img/web-development/web-development-bg.jpg")
     center/cover no-repeat;
   width: 100%;
   height: 503px;
 }
 
 .bg-success-story {
-  background: url("https://s3.ap-south-1.amazonaws.com/vibescom.in/assets/img/technology-details/cta-bg.jpg") center/cover
+  background: url("https://d32ze5duxdubbq.cloudfront.net/assets/img/technology-details/cta-bg.jpg") center/cover
     no-repeat;
   width: 100%;
 }
@@ -795,7 +795,7 @@ border-right: none;
   left: 50%;
 }
 .branding-details-hero-wrapper {
-  background: url("https://s3.ap-south-1.amazonaws.com/vibescom.in/assets/img/branding-details/branding-banner.jpg")
+  background: url("https://d32ze5duxdubbq.cloudfront.net/assets/img/branding-details/branding-banner.jpg")
     center/cover no-repeat;
   height: 763px;
   width: 100%;
@@ -897,7 +897,7 @@ border-right: none;
   overflow-x: clip;
 }
 .digital-details-hero-wrapper {
-  background: url("https://s3.ap-south-1.amazonaws.com/vibescom.in/assets/img/digital-m-details/digital-marketing-bg.png")
+  background: url("https://d32ze5duxdubbq.cloudfront.net/assets/img/digital-m-details/digital-marketing-bg.png")
     center/cover no-repeat;
   height: 763px;
   width: 100%;
@@ -1126,57 +1126,57 @@ border-right: none;
   font-weight: 600;
 }
 .blog-content-wrapper {
-  background: url("https://s3.ap-south-1.amazonaws.com/vibescom.in/assets/img/digital-m-details/dm-solution-bg.png")
+  background: url("https://d32ze5duxdubbq.cloudfront.net/assets/img/digital-m-details/dm-solution-bg.png")
     center/cover no-repeat;
   width: 100%;
 }
 .tech-solution-wrapper {
-  background: url("https://s3.ap-south-1.amazonaws.com/vibescom.in/assets/img/technology-details/technology-key-services-bg.jpg")
+  background: url("https://d32ze5duxdubbq.cloudfront.net/assets/img/technology-details/technology-key-services-bg.jpg")
     center/cover no-repeat;
   width: 100%;
 }
 .casestudy-common-wrapper {
-  background: url("https://s3.ap-south-1.amazonaws.com/vibescom.in/assets/img/technology-details/common-casestudy-bg.jpg")
+  background: url("https://d32ze5duxdubbq.cloudfront.net/assets/img/technology-details/common-casestudy-bg.jpg")
     center/cover no-repeat;
   width: 100%;
 }
 .blogs-wrapper {
-  background: url("https://s3.ap-south-1.amazonaws.com/vibescom.in/assets/img/technology-details/common-blog-bg.png")
+  background: url("https://d32ze5duxdubbq.cloudfront.net/assets/img/technology-details/common-blog-bg.png")
     center/cover no-repeat;
   width: 100%;
 }
 .clients-wrapper {
-  background: url("https://s3.ap-south-1.amazonaws.com/vibescom.in/assets/img/technology-details/common-clients-bg.png")
+  background: url("https://d32ze5duxdubbq.cloudfront.net/assets/img/technology-details/common-clients-bg.png")
     center/cover no-repeat;
   width: 100%;
 }
 .branding-services-wrapper {
-  background: url("https://s3.ap-south-1.amazonaws.com/vibescom.in/assets/img/branding-details/branding-services-bg.jpg")
+  background: url("https://d32ze5duxdubbq.cloudfront.net/assets/img/branding-details/branding-services-bg.jpg")
     center/cover no-repeat;
   width: 100%;
 }
 .branding-customer-wrapper {
-  background: url("https://s3.ap-south-1.amazonaws.com/vibescom.in/assets/img/technology-details/common-casestudy-bg.jpg")
+  background: url("https://d32ze5duxdubbq.cloudfront.net/assets/img/technology-details/common-casestudy-bg.jpg")
     center/cover no-repeat;
   width: 100%;
 }
 .branding-casestudy-wrapper {
-  background: url("https://s3.ap-south-1.amazonaws.com/vibescom.in/assets/img/branding-details/branding-casestudy-bg.jpg")
+  background: url("https://d32ze5duxdubbq.cloudfront.net/assets/img/branding-details/branding-casestudy-bg.jpg")
     center/cover no-repeat;
   width: 100%;
 }
 .digital-solution-wrapper {
-  background: url("https://s3.ap-south-1.amazonaws.com/vibescom.in/assets/img/digital-m-details/dm-solution-bg.png")
+  background: url("https://d32ze5duxdubbq.cloudfront.net/assets/img/digital-m-details/dm-solution-bg.png")
     center/cover no-repeat;
   width: 100%;
 }
 .digital-choose-us-wrapper {
-  background: url("https://s3.ap-south-1.amazonaws.com/vibescom.in/assets/img/technology-details/common-casestudy-bg.jpg")
+  background: url("https://d32ze5duxdubbq.cloudfront.net/assets/img/technology-details/common-casestudy-bg.jpg")
     center/cover no-repeat;
   width: 100%;
 }
 .case-study-details-hero-wrapper {
-  background: url("https://s3.ap-south-1.amazonaws.com/vibescom.in/assets/img/case-study-details/case-study-hero-bg.jpg")
+  background: url("https://d32ze5duxdubbq.cloudfront.net/assets/img/case-study-details/case-study-hero-bg.jpg")
     center/cover no-repeat;
   width: 100%;
 }
@@ -1190,29 +1190,29 @@ border-right: none;
   gap: calc(var(--spacing) * 2);
 }
 .casestudy-listing-hero-wrapper {
-  background: url("https://s3.ap-south-1.amazonaws.com/vibescom.in/assets/img/case-study-details/casestudy-listing-bg.png")
+  background: url("https://d32ze5duxdubbq.cloudfront.net/assets/img/case-study-details/casestudy-listing-bg.png")
     center/cover no-repeat;
   width: 100%;
   height: 503px;
 }
 .blog-listing-hero-wrapper {
-  background: url("https://s3.ap-south-1.amazonaws.com/vibescom.in/assets/img/blog/blog-listing-bg.jpg") center/cover
+  background: url("https://d32ze5duxdubbq.cloudfront.net/assets/img/blog/blog-listing-bg.jpg") center/cover
     no-repeat;
   width: 100%;
   height: 503px;
 }
 .blog-listing-wrapper {
-  background: url("https://s3.ap-south-1.amazonaws.com/vibescom.in/assets/img/technology-details/common-casestudy-bg.jpg")
+  background: url("https://d32ze5duxdubbq.cloudfront.net/assets/img/technology-details/common-casestudy-bg.jpg")
     center/cover no-repeat;
   width: 100%;
 }
 .blog-listig-bottom-wrapper {
-  background: url("https://s3.ap-south-1.amazonaws.com/vibescom.in/assets/img/digital-m-details/dm-solution-bg.png")
+  background: url("https://d32ze5duxdubbq.cloudfront.net/assets/img/digital-m-details/dm-solution-bg.png")
     center/cover no-repeat;
   width: 100%;
 }
 .branding-workflow-wrapper {
-  background: url("https://s3.ap-south-1.amazonaws.com/vibescom.in/assets/img/technology-details/common-casestudy-bg.jpg")
+  background: url("https://d32ze5duxdubbq.cloudfront.net/assets/img/technology-details/common-casestudy-bg.jpg")
     center/cover no-repeat;
   width: 100%;
 }
@@ -1265,7 +1265,7 @@ border-right: none;
   border: 1px solid #466e59;
 }
 .case-study-listing-wrapper {
-  background: url("https://s3.ap-south-1.amazonaws.com/vibescom.in/assets/img/digital-m-details/dm-solution-bg.png")
+  background: url("https://d32ze5duxdubbq.cloudfront.net/assets/img/digital-m-details/dm-solution-bg.png")
     center/cover no-repeat;
   width: 100%;
 }
@@ -1391,4 +1391,15 @@ border-right: none;
     left: 0;
 }
 
-
+.hero-section {
+  background-image: var(--desktop-bg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+/* 
+@media (max-width: 768px) {
+  .hero-section {
+    background-image: var(--mobile-bg) !important;
+  }
+} */

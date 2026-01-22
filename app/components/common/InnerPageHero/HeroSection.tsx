@@ -8,20 +8,26 @@ interface HeroSectionProps {
   title: React.ReactNode;
   description?: string;
   height?: string;
+  mobileBackgroundImage: string;
 }
 
 const HeroSection: React.FC<HeroSectionProps> = ({
   backgroundImage,
+  mobileBackgroundImage,
   title,
   description,
   height = "h-[65vh] sm:h-[90vh] md:h-[90vh] lg:h-[90vh] xl:h-[90vh] 2xl:h-[90vh]",
 }) => {
   return (
     <section
-      className={`flex items-center ${height} bg-cover bg-left sm:text-bg-center md:text-bg-center] lg:text-bg-center xl:text-bg-center 2xl:bg-center bg-no-repeat service-bg`}
-      style={{
-        backgroundImage: `url(${withImageBase(backgroundImage)})`,
-      }}
+      className={`hero-section flex items-center ${height} bg-cover bg-left sm:text-bg-center md:text-bg-center] lg:text-bg-center xl:text-bg-center 2xl:bg-center bg-no-repeat service-bg`}
+      // style={{
+      //   backgroundImage: `url(${withImageBase(backgroundImage)})`,
+      // }}
+   style={{
+  backgroundImage: `url(${withImageBase(backgroundImage)})`,
+  ["--mobile-bg" as any]: `url(${withImageBase(mobileBackgroundImage || backgroundImage)})`,
+}}
     >
       <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
         <div className="grid grid-cols-12 items-center">

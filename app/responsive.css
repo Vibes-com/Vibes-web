@@ -1,3 +1,9 @@
+@media (min-width: 1791px) and (max-width: 1800px) {
+.service-bg{
+  height: 60vh!important;
+}
+}
+
 @media (max-width: 1024px){
 .nv-menu{
 font-size: 10px!important;
@@ -37,7 +43,9 @@ display: none !important;
 }
 
 @media (max-width: 676px){
-
+ .hero-section {
+    background-image: var(--mobile-bg) !important;
+  }
 .section-gap{
 padding: 50px 0 40px;
 }

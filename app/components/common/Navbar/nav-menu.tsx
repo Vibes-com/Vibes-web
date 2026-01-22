@@ -31,10 +31,10 @@ export const NavMenu = (props: ComponentProps<typeof NavigationMenu> & { onLinkC
     }
     const isActive = (path: string) => pathname === path;
 
-    const isWhatWeDoActive =
-        pathname === "/technology-services" ||
-        pathname === "/branding-services" ||
-        pathname === "/digital-marketing-services";
+   const isWhatWeDoActive =
+  pathname.startsWith("/software-technology-services") ||
+  pathname.startsWith("/branding-agency") ||
+  pathname.startsWith("/digital-marketing-services");
 
     const linkClass = (active: boolean) =>
         clsx(

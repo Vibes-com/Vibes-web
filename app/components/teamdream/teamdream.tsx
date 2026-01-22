@@ -69,8 +69,8 @@ const TeamDreamSection = () => {
                     <div className="flex-1 flex justify-center">
                         <SlideRight delay={0.5}>
                             <img
-                                src={withImageBase("/home/one-team-img.png")}
-                                alt="Team Dream"
+                                src={withImageBase("/home/Vibes-Communications-Team.png")}
+                                alt="Vibes Communications Team"
                                 width={500}
                                 height={500}  
                                 className="object-contain"
