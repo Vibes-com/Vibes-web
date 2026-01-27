@@ -5,12 +5,11 @@ import { StoreProvider } from "../storeProvider";
 import { Toaster } from "react-hot-toast";
 
 export const metadata: Metadata = {
-  title: "Integrated Brand, Digital Marketing &amp; Software Solutions",
+  title: "Integrated Brand, Digital Marketing Software Solutions",
   description:
     `Vibes Communications delivers integrated brand strategy, digital marketing, and custom
 software solutions to build scalable, future-ready businesses.
     `,
-
 
   openGraph: {
     title: "Integrated Brand, Digital Marketing &amp; Software Solutions",
