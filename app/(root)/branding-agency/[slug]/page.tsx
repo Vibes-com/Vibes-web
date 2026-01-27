@@ -5,109 +5,107 @@ import type { Metadata } from "next";
 
 const metaMap: Record<string, Metadata> = {
   "corporate-branding": {
-    title: "Corporate Branding Services | Vibes Communications",
+    title: "Corporate Branding Agency | Business & Corporate Branding Services Company",
     description:
-      "Build a strong corporate brand identity with Vibes Communications. Strategic branding solutions designed for long-term impact.",
+      "Leading corporate branding agency offering expert branding services. We help businesses grow as a trusted branding services company and business branding company.",
   },
 
   "brand-upliftment": {
-    title: "Brand Makeover Magic: Air India's Upliftment Journey",
-
-  description:
-    "Experience brand transformation through Air India's journey. Discover the magic of upliftment with Vibes Communications, a leading branding agency in Delhi NCR.",
-
-  alternates: {
-    canonical: "https://www.vibescom.in/brand-upliftment",
-  },
-
-  openGraph: {
-    title: "Brand Makeover Magic: Air India's Upliftment Journey",
+    title: "Rebrand Agency | Professional Rebranding Services & Design Solutions",
     description:
-      "Experience brand transformation through Air India's journey. Discover the magic of upliftment with Vibes Communications, a leading branding agency in Delhi NCR.",
-    url: "https://www.vibescom.in/brand-upliftment",
-    siteName: "Vibes Communications Pvt Ltd",
-    images: [
-      {
-        url: "https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png",
-        width: 1200,
-        height: 630,
-      },
-    ],
-    locale: "en_US",
-    type: "website",
-  },
+      "Expert rebrand agency offering strategic rebranding services and creative rebranding design to transform your brand identity and drive business growth.",
 
-  twitter: {
-    card: "summary",
-    site: "@vibescom",
-    title: "Brand Makeover Magic: Air India's Upliftment Journey",
-    description:
-      "Experience brand transformation through Air India's journey. Discover the magic of upliftment with Vibes Communications, a leading branding agency in Delhi NCR.",
-    images: ["https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png"],
-  },
+    alternates: {
+      canonical: "https://www.vibescom.in/branding-agency/brand-upliftment",
+    },
 
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
+    openGraph: {
+      title: "Rebrand Agency | Professional Rebranding Services & Design Solutions",
+      description:
+        "Expert rebrand agency offering strategic rebranding services and creative rebranding design to transform your brand identity and drive business growth.",
+      url: "https://www.vibescom.in/branding-agency/brand-upliftment",
+      siteName: "Vibes Communications Pvt Ltd",
+      images: [
+        {
+          url: "https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png",
+          width: 1200,
+          height: 630,
+        },
+      ],
+      locale: "en_US",
+      type: "website",
+    },
+
+    twitter: {
+      card: "summary",
+      site: "@vibescom",
+      title: "Rebrand Agency | Professional Rebranding Services & Design Solutions",
+      description:
+        "Expert rebrand agency offering strategic rebranding services and creative rebranding design to transform your brand identity and drive business growth.",
+      images: ["https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png"],
+    },
+
+    robots: {
       index: true,
       follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+      },
     },
-  },
 
-  authors: [{ name: "Vibes Communications" }],
-  creator: "Vibes Communications",
-  publisher: "Vibes Communications",
+    authors: [{ name: "Vibes Communications" }],
+    creator: "Vibes Communications",
+    publisher: "Vibes Communications",
   },
 
   "brand-communication-and-strategy": {
-    title: "Strategic Communication by Vibes to Transform Brands",
-
-  description:
-    "Master the art of brand communication inspired by Apple. Emotions, storytelling, and lasting impressions—Vibes Communications, your storytellers of success.",
-
-  alternates: {
-    canonical: "https://www.vibescom.in/brand-communication",
-  },
-
-  openGraph: {
-    title: "Strategic Communication by Vibes to Transform Brands",
+    title: "Brand Communication & Visual Identity | Branding and Communication Strategy",
     description:
-      "Master the art of brand communication inspired by Apple. Emotions, storytelling, and lasting impressions—Vibes Communications, your storytellers of success.",
-    url: "https://www.vibescom.in/brand-communication",
-    siteName: "Vibes Communications Pvt Ltd",
-    images: [
-      {
-        url: "https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png",
-        width: 1200,
-        height: 630,
-      },
-    ],
-    locale: "en_US",
-    type: "website",
-  },
+      "Expert brand communication solutions with strong visual identity and branding and communication strategies that help businesses build trust, clarity, and growth.",
 
-  twitter: {
-    card: "summary",
-    site: "@vibescom",
-    title: "Strategic Communication by Vibes to Transform Brands",
-    description:
-      "Master the art of brand communication inspired by Apple. Emotions, storytelling, and lasting impressions—Vibes Communications, your storytellers of success.",
-    images: ["https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png"],
-  },
+    alternates: {
+      canonical: "https://www.vibescom.in/branding-agency/brand-communication-and-strategy",
+    },
 
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
+    openGraph: {
+      title: "Brand Communication & Visual Identity | Branding and Communication Strategy",
+      description:
+        "Expert brand communication solutions with strong visual identity and branding and communication strategies that help businesses build trust, clarity, and growth.",
+      url: "https://www.vibescom.in/branding-agency/brand-communication-and-strategy",
+      siteName: "Vibes Communications Pvt Ltd",
+      images: [
+        {
+          url: "https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png",
+          width: 1200,
+          height: 630,
+        },
+      ],
+      locale: "en_US",
+      type: "website",
+    },
+
+    twitter: {
+      card: "summary",
+      site: "@vibescom",
+      title: "Brand Communication & Visual Identity | Branding and Communication Strategy",
+      description:
+        "Expert brand communication solutions with strong visual identity and branding and communication strategies that help businesses build trust, clarity, and growth.",
+      images: ["https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png"],
+    },
+
+    robots: {
       index: true,
       follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+      },
     },
-  },
 
-  authors: [{ name: "Vibes Communications" }],
-  creator: "Vibes Communications",
-  publisher: "Vibes Communications",
+    authors: [{ name: "Vibes Communications" }],
+    creator: "Vibes Communications",
+    publisher: "Vibes Communications",
   }
 };
 

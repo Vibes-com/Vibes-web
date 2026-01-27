@@ -15,19 +15,21 @@ import CommonCasestudy from "@/app/components/common/CommonCasestudy/CommonCases
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Best Technology Solutions Services | Vibes Communications",
+  title: "Software Technology Services Driving Brand Growth",
 
   description:
-    "Vibes Communications provides you with a team of technology experts to handle your business challenges and deliver scalable, high-performance digital solutions.",
+    `Vibes offer software technology services, technology solutions services, and technology
+consulting services delivering scalable tech solutions for businesses.`,
 
   alternates: {
     canonical: "https://www.vibescom.in/technology-services",
   },
 
   openGraph: {
-    title: "Best Technology Solutions Services | Vibes Communications",
+    title: "Software Technology Services Driving Brand Growth",
     description:
-      "Vibes Communications provides you with a team of technology experts to handle your business challenges and deliver scalable, high-performance digital solutions.",
+      `Vibes offer software technology services, technology solutions services, and technology
+consulting services delivering scalable tech solutions for businesses.`,
     url: "https://www.vibescom.in/technology-services",
     siteName: "Vibes Communications Pvt Ltd",
     images: [
@@ -44,9 +46,10 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary",
     site: "@vibescom",
-    title: "Best Technology Solutions Services | Vibes Communications",
+    title: "Software Technology Services Driving Brand Growth",
     description:
-      "Vibes Communications provides you with a team of technology experts to handle your business challenges and deliver scalable, high-performance digital solutions.",
+      `Vibes offer software technology services, technology solutions services, and technology
+consulting services delivering scalable tech solutions for businesses.`,
     images: ["https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png"],
   },
 

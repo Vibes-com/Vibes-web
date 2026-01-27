@@ -174,7 +174,7 @@ const page = () => {
   return (
     <div>
 
-      <Hero />
+      <Hero /> 
       <TeamDreamSection />
       {/* <TogetherMain /> */}
       {/* <Technology />

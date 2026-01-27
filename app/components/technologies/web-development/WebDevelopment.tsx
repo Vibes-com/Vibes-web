@@ -8,6 +8,7 @@ import TechnologyStackSection from '../../common/TechnologyStackSection/Technolo
 import WorkflowSection from '../../common/WorkflowSection/WorkflowSection';
 import BuiltWaySlider, { BuiltWaySlide } from '../../common/BuiltWaySlider/BuiltWaySlider';
 import HeroSection from '../../common/HeroSection/HeroSection';
+import { Metadata } from 'next';
 
 const slides: BuiltWaySlide[] = [
   {
@@ -42,6 +43,58 @@ const slides: BuiltWaySlide[] = [
   },
 ];
 
+export const metadata: Metadata = {
+  title: "Website Development Company | Web Designing &amp; Shopify Development Services",
+
+  description:
+    `Leading website development company delivering web designing services, B2B custom
+websites, Shopify development, and expert web agency solutions.`,
+
+  alternates: {
+    canonical: "https://www.vibescom.in/technology-services",
+  },
+
+  openGraph: {
+    title: "Website Development Company | Web Designing &amp; Shopify Development Services",
+    description:
+      `Leading website development company delivering web designing services, B2B custom
+websites, Shopify development, and expert web agency solutions.`,
+    url: "https://www.vibescom.in/technology-services",
+    siteName: "Vibes Communications Pvt Ltd",
+    images: [
+      {
+        url: "https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary",
+    site: "@vibescom",
+    title: "Website Development Company | Web Designing &amp; Shopify Development Services",
+    description:
+      `Leading website development company delivering web designing services, B2B custom
+websites, Shopify development, and expert web agency solutions.`,
+    images: ["https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png"],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+
+  authors: [{ name: "Vibes Communications" }],
+  creator: "Vibes Communications",
+  publisher: "Vibes Communications",
+};
 
 const WebDevelopment = () => {
   // const router = useRouter();
@@ -71,13 +124,13 @@ const WebDevelopment = () => {
             icon: "/web-development/coded-secure.png",
             title: <>Custom-Coded,<br />Secure Builds</>,
             subtitle: "",
-            alt:"Custom-Coded, Secure Builds"
+            alt: "Custom-Coded, Secure Builds"
           },
           {
             icon: "/web-development/high-speed-icon.png",
             title: <>High-Speed <br />Performance</>,
             subtitle: "",
-            alt:"High-Speed Performance"
+            alt: "High-Speed Performance"
           },
           {
             icon: "/web-development/scalability.png",
@@ -89,7 +142,7 @@ const WebDevelopment = () => {
             icon: "/web-development/project-management.png",
             title: <>On-Time Project<br />Delivery</>,
             subtitle: "",
-            alt:"On-Time Project Delivery"
+            alt: "On-Time Project Delivery"
           },
         ]}
       />
@@ -168,46 +221,59 @@ const WebDevelopment = () => {
         description="Vibes is a modern web designing company providing an advanced website development service with a handpicked, future-ready tech stack that ensures speed, security, and scalable digital excellence."
         topLogos={[
           {
-            alt:"php-logo",
-            imgurl:"/web-development/php-logo.png"},
+            alt: "php-logo",
+            imgurl: "/web-development/php-logo.png"
+          },
           {
-            alt:"react-logo",
-            imgurl:"/web-development/react-logo.png"},
+            alt: "react-logo",
+            imgurl: "/web-development/react-logo.png"
+          },
           {
-            alt:"github-logo",
-            imgurl:"/web-development/github-logo.png"},
+            alt: "github-logo",
+            imgurl: "/web-development/github-logo.png"
+          },
           {
-            alt:"css-logo",
-            imgurl:"/web-development/css-logo.png"},
+            alt: "css-logo",
+            imgurl: "/web-development/css-logo.png"
+          },
           {
-            alt:"node-logo",
-            imgurl:"/web-development/node-logo.png"},
+            alt: "node-logo",
+            imgurl: "/web-development/node-logo.png"
+          },
           {
-            alt:"html-logo",
-            imgurl:"/web-development/html-logo.png"},
+            alt: "html-logo",
+            imgurl: "/web-development/html-logo.png"
+          },
           {
-            alt:"bootstrap-logo",
-            imgurl:"/web-development/bootstrap-logo.png"},
+            alt: "bootstrap-logo",
+            imgurl: "/web-development/bootstrap-logo.png"
+          },
         ]}
         bottomLogos={[
           {
-            alt:"shopify-logo",
-            imgurl:"/web-development/shopify-logo.png"},
+            alt: "shopify-logo",
+            imgurl: "/web-development/shopify-logo.png"
+          },
           {
-            alt:"postgresql-logo",
-            imgurl:"/web-development/postgresql-logo.png"},
+            alt: "postgresql-logo",
+            imgurl: "/web-development/postgresql-logo.png"
+          },
           {
-            alt:"wordpress-logo",
-            imgurl:"/web-development/wordpress-logo.png"},
+            alt: "wordpress-logo",
+            imgurl: "/web-development/wordpress-logo.png"
+          },
           {
-            alt:"mysql-logo",
-            imgurl:"/web-development/mysql-logo.png"},
+            alt: "mysql-logo",
+            imgurl: "/web-development/mysql-logo.png"
+          },
           {
-            alt:"ci-4-logo",
-            imgurl:"/web-development/ci-4-logo.png"},
+            alt: "ci-4-logo",
+            imgurl: "/web-development/ci-4-logo.png"
+          },
           {
-            alt:"mongodb-logo",
-            imgurl:"/web-development/mongodb-logo.png"},
+            alt: "mongodb-logo",
+            imgurl: "/web-development/mongodb-logo.png"
+          },
         ]}
       />
       <WhyChooseSection

@@ -5,161 +5,183 @@ import SocialMediaManagement from "@/app/components/digitalmarketing/social-medi
 import { JSX } from "react";
 import type { Metadata } from "next";
 
+
+
 const metaMap: Record<string, Metadata> = {
   "campaign-management": {
-    title: "Campaign Management Agency in India | Vibes Communications",
-
-  description:
-    "Vibes Communications is a leading campaign management agency in India, offering creative campaign strategies to achieve desired results and measurable business outcomes.",
-
-  alternates: {
-    canonical: "https://www.vibescom.in/campaign-management-agency-india",
-  },
-
-  openGraph: {
-    title: "Campaign Management Agency in India | Vibes Communications",
+    title: "Influencer Management Companies | Social Media & Campaign Experts",
     description:
-      "Vibes Communications is a leading campaign management agency in India, offering creative campaign strategies to achieve desired results and measurable business outcomes.",
-    url: "https://www.vibescom.in/campaign-management-agency-india",
-    siteName: "Vibes Communications Pvt Ltd",
-    images: [
-      {
-        url: "https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png",
-        width: 1200,
-        height: 630,
-      },
-    ],
-    locale: "en_US",
-    type: "website",
-  },
-
-  twitter: {
-    card: "summary",
-    site: "@vibescom",
-    title: "Campaign Management Agency in India | Vibes Communications",
-    description:
-      "Vibes Communications is a leading campaign management agency in India, offering creative campaign strategies to achieve desired results.",
-    images: ["https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png"],
-  },
-
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
+      "Top influencer management companies offering expert social media influencer management services and campaign management solutions for brands.",
+    alternates: {
+      canonical: "https://www.vibescom.in/digital-marketing-services/campaign-management",
+    },
+    openGraph: {
+      title: "Influencer Management Companies | Social Media & Campaign Experts",
+      description:
+        "Top influencer management companies offering expert social media influencer management services and campaign management solutions for brands.",
+      url: "https://www.vibescom.in/digital-marketing-services/campaign-management",
+      siteName: "Vibes Communications Pvt Ltd",
+      images: [
+        {
+          url: "https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png",
+          width: 1200,
+          height: 630,
+        },
+      ],
+      locale: "en_US",
+      type: "website",
+    },
+    twitter: {
+      card: "summary",
+      site: "@vibescom",
+      title: "Influencer Management Companies | Social Media & Campaign Experts",
+      description:
+        "Top influencer management companies offering expert social media influencer management services and campaign management solutions for brands.",
+      images: ["https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png"],
+    },
+    robots: {
       index: true,
       follow: true,
-    },
-  },
-
-  authors: [{ name: "Vibes Communications" }],
-  creator: "Vibes Communications",
-  publisher: "Vibes Communications",
-  },
-
-  "social-media-management": {
-    title: "Social Media Marketing Agency in Delhi NCR | Call Experts",
-
-  description:
-    "If you are searching for the best social media marketing agency in Delhi NCR to boost your business’s online presence, connect with our experts at Vibes Communications.",
-
-  alternates: {
-    canonical: "https://www.vibescom.in/social-media-marketing-agency-delhi-ncr",
-  },
-
-  openGraph: {
-    title: "Social Media Marketing Agency in Delhi NCR | Call Experts",
-    description:
-      "If you are searching for the best social media marketing agency in Delhi NCR to boost your business’s online presence, connect with our experts at Vibes Communications.",
-    url: "https://www.vibescom.in/social-media-marketing-agency-delhi-ncr",
-    siteName: "Vibes Communications Pvt Ltd",
-    images: [
-      {
-        url: "https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png",
-        width: 1200,
-        height: 630,
+      googleBot: {
+        index: true,
+        follow: true,
       },
-    ],
-    locale: "en_US",
-    type: "website",
+    },
+    authors: [{ name: "Vibes Communications" }],
+    creator: "Vibes Communications",
+    publisher: "Vibes Communications",
   },
 
-  twitter: {
-    card: "summary",
-    site: "@vibescom",
-    title: "Social Media Marketing Agency in Delhi NCR | Call Experts",
+  "social-media-marketing-agency": {
+    title: "Social Media Marketing Agency | SMM Marketing Agency & Social Media Services",
     description:
-      "If you are searching for the best social media marketing agency in Delhi NCR to boost your business’s online presence, connect with our experts at Vibes Communications.",
-    images: ["https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png"],
-  },
-
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
+      "Top social media marketing agency delivering expert SMM services for B2B and B2C brands result-driven strategies that grow reach, engagement, and online impact.",
+    alternates: {
+      canonical: "https://www.vibescom.in/digital-marketing-services/social-media-marketing-agency",
+    },
+    openGraph: {
+      title: "Social Media Marketing Agency | SMM Marketing Agency & Social Media Services",
+      description:
+        "Top social media marketing agency delivering expert SMM services for B2B and B2C brands result-driven strategies that grow reach, engagement, and online impact.",
+      url: "https://www.vibescom.in/digital-marketing-services/social-media-marketing-agency",
+      siteName: "Vibes Communications Pvt Ltd",
+      images: [
+        {
+          url: "https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png",
+          width: 1200,
+          height: 630,
+        },
+      ],
+      locale: "en_US",
+      type: "website",
+    },
+    twitter: {
+      card: "summary",
+      site: "@vibescom",
+      title: "Social Media Marketing Agency | SMM Marketing Agency & Social Media Services",
+      description:
+        "Top social media marketing agency delivering expert SMM services for B2B and B2C brands result-driven strategies that grow reach, engagement, and online impact.",
+      images: ["https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png"],
+    },
+    robots: {
       index: true,
       follow: true,
-    },
-  },
-
-  authors: [{ name: "Vibes Communications" }],
-  creator: "Vibes Communications",
-  publisher: "Vibes Communications",
-  },
-
-  "performance-marketing": {
-    title: "Performance Marketing Services | Vibes Communications",
-    description:
-      "Data-driven performance marketing services focused on ROI, conversions, and business growth.",
-  },
-
-  "search-engine-optimization": {
-     title: "Best SEO Agency in Noida | Free Website Audit & Consultation",
-
-  description:
-    "Vibes Communications is the best SEO agency in Noida, Delhi NCR, helping businesses achieve faster keyword rankings and quality website traffic in minimum time. Call us now for a free audit.",
-
-  alternates: {
-    canonical: "https://www.vibescom.in/seo-agency-noida",
-  },
-
-  openGraph: {
-    title: "Best SEO Agency in Noida | Free Website Audit & Consultation",
-    description:
-      "Vibes Communications is the best SEO agency in Noida, Delhi NCR, helping businesses achieve faster keyword rankings and quality website traffic in minimum time. Call us now for a free audit.",
-    url: "https://www.vibescom.in/seo-agency-noida",
-    siteName: "Vibes Communications Pvt Ltd",
-    images: [
-      {
-        url: "https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png",
-        width: 1200,
-        height: 630,
+      googleBot: {
+        index: true,
+        follow: true,
       },
-    ],
-    locale: "en_US",
-    type: "website",
+    },
+    authors: [{ name: "Vibes Communications" }],
+    creator: "Vibes Communications",
+    publisher: "Vibes Communications",
   },
 
-  twitter: {
-    card: "summary",
-    site: "@vibescom",
-    title: "Best SEO Agency in Noida | Free Website Audit & Consultation",
+  "performance-marketing-agency": {
+    title: "Performance Marketing Agency | ROI-Driven Digital Growth Experts",
     description:
-      "Vibes Communications is the best SEO agency in Noida, delivering fast keyword rankings and quality traffic. Get a free website audit today.",
-    images: ["https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png"],
-  },
-
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
+      "Leading performance marketing agency delivering measurable growth through data-driven PPC, SEO, social media ads, and conversion optimization. Maximize your ROI today.",
+    alternates: {
+      canonical: "https://www.vibescom.in/digital-marketing-services/performance-marketing-agency",
+    },
+    openGraph: {
+      title: "Performance Marketing Agency | ROI-Driven Digital Growth Experts",
+      description:
+        "Leading performance marketing agency delivering measurable growth through data-driven PPC, SEO, social media ads, and conversion optimization. Maximize your ROI today.",
+      url: "https://www.vibescom.in/digital-marketing-services/performance-marketing-agency",
+      siteName: "Vibes Communications Pvt Ltd",
+      images: [
+        {
+          url: "https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png",
+          width: 1200,
+          height: 630,
+        },
+      ],
+      locale: "en_US",
+      type: "website",
+    },
+    twitter: {
+      card: "summary",
+      site: "@vibescom",
+      title: "Performance Marketing Agency | ROI-Driven Digital Growth Experts",
+      description:
+        "Leading performance marketing agency delivering measurable growth through data-driven PPC, SEO, social media ads, and conversion optimization. Maximize your ROI today.",
+      images: ["https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png"],
+    },
+    robots: {
       index: true,
       follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+      },
     },
+    authors: [{ name: "Vibes Communications" }],
+    creator: "Vibes Communications",
+    publisher: "Vibes Communications",
   },
 
-  authors: [{ name: "Vibes Communications" }],
-  creator: "Vibes Communications",
-  publisher: "Vibes Communications",
+  "search-optimization-services": {
+    title: "SEO Optimization Service | Digital Marketing & SEO Agency",
+    description:
+      "Boost your online presence with expert SEO optimization service, search optimization services, digital marketing SEO, and trusted SEO agency solutions.",
+    alternates: {
+      canonical: "https://www.vibescom.in/digital-marketing-services/search-optimization-services",
+    },
+    openGraph: {
+      title: "SEO Optimization Service | Digital Marketing & SEO Agency",
+      description:
+        "Boost your online presence with expert SEO optimization service, search optimization services, digital marketing SEO, and trusted SEO agency solutions.",
+      url: "https://www.vibescom.in/digital-marketing-services/search-optimization-services",
+      siteName: "Vibes Communications Pvt Ltd",
+      images: [
+        {
+          url: "https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png",
+          width: 1200,
+          height: 630,
+        },
+      ],
+      locale: "en_US",
+      type: "website",
+    },
+    twitter: {
+      card: "summary",
+      site: "@vibescom",
+      title: "SEO Optimization Service | Digital Marketing & SEO Agency",
+      description:
+        "Boost your online presence with expert SEO optimization service, search optimization services, digital marketing SEO, and trusted SEO agency solutions.",
+      images: ["https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png"],
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+      },
+    },
+    authors: [{ name: "Vibes Communications" }],
+    creator: "Vibes Communications",
+    publisher: "Vibes Communications",
   },
 };
 

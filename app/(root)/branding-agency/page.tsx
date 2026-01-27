@@ -11,19 +11,19 @@ import type { Metadata } from "next";
 
 
 export const metadata: Metadata = {
-  title: "Best Branding Services Agency | Vibes Communications",
+  title: "Branding Agency | Leading Branding Firms & Branding Service Experts",
 
   description:
-    "Vibes Communications offers end-to-end branding services including brand creation, brand communication, and brand promotion to build a strong and positive market presence.",
+    "Trusted branding agency offering creative branding service solutions. We are among top branding firms helping businesses build strong, memorable brands.",
 
   alternates: {
     canonical: "https://www.vibescom.in/branding-services",
   },
 
   openGraph: {
-    title: "Manage Your Brand with Brand Management Services | Vibes Communications",
+    title: "Branding Agency | Leading Branding Firms & Branding Service Experts",
     description:
-      "Vibes Communications offers services in brand creation, brand communication, and brand promotion. Consult us today for professional brand management services.",
+      "Trusted branding agency offering creative branding service solutions. We are among top branding firms helping businesses build strong, memorable brands.",
     url: "https://www.vibescom.in/branding-services",
     siteName: "Vibes Communications Pvt Ltd",
     images: [
@@ -40,9 +40,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary",
     site: "@vibescom",
-    title: "Manage Your Brand with Brand Management Services | Vibes Communications",
+    title: "Branding Agency | Leading Branding Firms & Branding Service Experts",
     description:
-      "Vibes Communications offers services in brand creation, brand communication, and brand promotion. Consult us today for professional brand management services.",
+      "Trusted branding agency offering creative branding service solutions. We are among top branding firms helping businesses build strong, memorable brands.",
     images: ["https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png"],
   },
 

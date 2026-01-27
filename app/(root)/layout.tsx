@@ -5,15 +5,18 @@ import { StoreProvider } from "../storeProvider";
 import { Toaster } from "react-hot-toast";
 
 export const metadata: Metadata = {
-  title: "Digital Marketing & Brand Agency | IT Services Company | Delhi NCR",
+  title: "Integrated Brand, Digital Marketing &amp; Software Solutions",
   description:
-    "Vibes Communications is a proven agency in the space of Digital Marketing, Brand & IT Services. SEO, SMO, Brand Positioning, Website & Customized Software Development are prime services of the company.",
-   
+    `Vibes Communications delivers integrated brand strategy, digital marketing, and custom
+software solutions to build scalable, future-ready businesses.
+    `,
+
 
   openGraph: {
-    title: "Digital Marketing & Brand Agency | IT Services Company | Delhi NCR",
+    title: "Integrated Brand, Digital Marketing &amp; Software Solutions",
     description:
-      "Vibes Communications is a proven agency in the space of Digital Marketing, Brand & IT Services. SEO, SMO, Brand Positioning, Website & Customized Software Development are prime services of the company.",
+      `Vibes Communications delivers integrated brand strategy, digital marketing, and custom
+software solutions to build scalable, future-ready businesses.`,
     url: "https://www.vibescom.in/",
     siteName: "Vibes Communications Pvt Ltd",
     images: [
@@ -22,12 +25,12 @@ export const metadata: Metadata = {
         width: 1200,
         height: 630,
       },
-       {
+      {
         url: "https://s3.ap-south-1.amazonaws.com/vibescom.in/assets/img/home/Vibes-Communications_OG_Image_linkedin.jpg",
         width: 1200,
         height: 630,
       },
-       {
+      {
         url: "https://s3.ap-south-1.amazonaws.com/vibescom.in/assets/img/home/Vibes-Communications_OG_Image_Twitter.jpg",
         width: 1200,
         height: 630,
@@ -40,9 +43,10 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary",
     site: "@vibescom",
-    title: "Digital Marketing & Brand Agency | IT Services Company | Delhi NCR",
+    title: "Integrated Brand, Digital Marketing &amp; Software Solutions",
     description:
-      "Vibes Communications is a proven agency in the space of Digital Marketing, Brand & IT Services. SEO, SMO, Brand Positioning, Website & Customized Software Development are prime services of the company.",
+      `Vibes Communications delivers integrated brand strategy, digital marketing, and custom
+software solutions to build scalable, future-ready businesses.`,
     images: ["https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png"],
   },
 

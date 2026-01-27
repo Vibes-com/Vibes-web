@@ -6,204 +6,180 @@ import WebDevelopment from "@/app/components/technologies/web-development/WebDev
 import type { Metadata } from "next";
 
 const techMetaMap: Record<string, Metadata> = {
-  "web-development": {
-    title: "Best Website Development Company in Noida | Avail Quotes",
-    
+  "website-development-company": {
+    title: "Website Development Company | Web Designing & Shopify Development Services",
+    description:
+      "Leading website development company delivering web designing services, B2B custom websites, Shopify development, and expert web agency solutions.",
+    alternates: {
+      canonical: "https://www.vibescom.in/software-technology-services/website-development-company",
+    },
+    openGraph: {
+      title: "Website Development Company | Web Designing & Shopify Development Services",
       description:
-        "Vibes Communications is a leading website design and development company in Noida, India, serving clients across Delhi/NCR, Gurgaon, Jaipur, Lucknow, Chandigarh, and international markets.",
-    
-      alternates: {
-        canonical: "https://www.vibescom.in/website-development-company-noida",
-      },
-    
-      openGraph: {
-        title: "Best Website Development Company in Noida | Avail Quotes",
-        description:
-          "If you are searching for the best website development company in Noida for custom and creative website development services, Vibes Communications is the right fit for you.",
-        url: "https://www.vibescom.in/website-development-company-noida",
-        siteName: "Vibes Communications Pvt Ltd",
-        images: [
-          {
-            url: "https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png",
-            width: 1200,
-            height: 630,
-          },
-        ],
-        locale: "en_US",
-        type: "website",
-      },
-    
-      twitter: {
-        card: "summary",
-        site: "@vibescom",
-        title: "Best Website Development Company in Noida | Avail Quotes",
-        description:
-          "If you are searching for the best website development company in Noida for custom and creative website development services, Vibes Communications is the right fit for you.",
-        images: ["https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png"],
-      },
-    
-      robots: {
+        "Leading website development company delivering web designing services, B2B custom websites, Shopify development, and expert web agency solutions.",
+      url: "https://www.vibescom.in/software-technology-services/website-development-company",
+      siteName: "Vibes Communications Pvt Ltd",
+      images: [
+        {
+          url: "https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png",
+          width: 1200,
+          height: 630,
+        },
+      ],
+      locale: "en_US",
+      type: "website",
+    },
+    twitter: {
+      card: "summary",
+      site: "@vibescom",
+      title: "Website Development Company | Web Designing & Shopify Development Services",
+      description:
+        "Leading website development company delivering web designing services, B2B custom websites, Shopify development, and expert web agency solutions.",
+      images: ["https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png"],
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
         index: true,
         follow: true,
-        googleBot: {
-          index: true,
-          follow: true,
+      },
+    },
+    authors: [{ name: "Vibes Communications" }],
+    creator: "Vibes Communications",
+    publisher: "Vibes Communications"
+  },
+
+  "mobile-app-development-company": {
+    title: "Mobile App Development Company | Best App Development Agencies",
+    description:
+      "Leading mobile app development company delivering Android, iOS, and B2C & D2C app solutions. Partner with one of the best app development agencies.",
+    alternates: {
+      canonical: "https://www.vibescom.in/software-technology-services/mobile-app-development-company",
+    },
+    openGraph: {
+      title: "Mobile App Development Company | Best App Development Agencies",
+      description:
+        "Leading mobile app development company delivering Android, iOS, and B2C & D2C app solutions. Partner with one of the best app development agencies.",
+      url: "https://www.vibescom.in/software-technology-services/mobile-app-development-company",
+      siteName: "Vibes Communications Pvt Ltd",
+      images: [
+        {
+          url: "https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png",
+          width: 1200,
+          height: 630,
         },
-      },
-    
-      authors: [{ name: "Vibes Communications" }],
-      creator: "Vibes Communications",
-      publisher: "Vibes Communications"
-  },
-
-  "app-development": {
-    title: "Top Mobile App Company in Delhi NCR | Best App Solutions",
-
-  description:
-    "Vibes Communications is a top mobile application development company in Delhi NCR, offering the best mobile app development solutions. Call our experts now!",
-
-  alternates: {
-    canonical: "https://www.vibescom.in/mobile-app-company-delhi-ncr",
-  },
-
-  openGraph: {
-    title: "Top Mobile App Company in Delhi NCR | Best App Solutions",
-    description:
-      "Vibes Communications is a top mobile application development company in Delhi NCR, offering the best mobile app development solutions. Call our experts now!",
-    url: "https://www.vibescom.in/mobile-app-company-delhi-ncr",
-    siteName: "Vibes Communications Pvt Ltd",
-    images: [
-      {
-        url: "https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png",
-        width: 1200,
-        height: 630,
-      },
-    ],
-    locale: "en_US",
-    type: "website",
-  },
-
-  twitter: {
-    card: "summary",
-    site: "@vibescom",
-    title: "Top Mobile App Company in Delhi NCR | Best App Solutions",
-    description:
-      "Vibes Communications is a top mobile application development company in Delhi NCR, offering the best mobile app development solutions.",
-    images: ["https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png"],
-  },
-
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
+      ],
+      locale: "en_US",
+      type: "website",
+    },
+    twitter: {
+      card: "summary",
+      site: "@vibescom",
+      title: "Mobile App Development Company | Best App Development Agencies",
+      description:
+        "Leading mobile app development company delivering Android, iOS, and B2C & D2C app solutions.",
+      images: ["https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png"],
+    },
+    robots: {
       index: true,
       follow: true,
-    },
-  },
-
-  authors: [{ name: "Vibes Communications" }],
-  creator: "Vibes Communications",
-  publisher: "Vibes Communications",
-  },
-
-  "ecomm-development": {
-    title: "Ecommerce Web Development Company in Noida | Vibes Communications",
-
-  description:
-    "Vibes Communications is a leading ecommerce development company in Noida. From website design to digital marketing, we help connect your business with potential customers.",
-
-  alternates: {
-    canonical: "https://www.vibescom.in/ecommerce-development-company-in-noida",
-  },
-
-  openGraph: {
-    title: "Ecommerce Web Development Company in Noida | Vibes Communications",
-    description:
-      "Vibes Communications is a leading ecommerce development company in Noida. From website design to digital marketing, we help connect your business with potential customers.",
-    url: "https://www.vibescom.in/ecommerce-development-company-in-noida",
-    siteName: "Vibes Communications Pvt Ltd",
-    images: [
-      {
-        url: "https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png",
-        width: 1200,
-        height: 630,
+      googleBot: {
+        index: true,
+        follow: true,
       },
-    ],
-    locale: "en_US",
-    type: "website",
+    },
+    authors: [{ name: "Vibes Communications" }],
+    creator: "Vibes Communications",
+    publisher: "Vibes Communications",
   },
 
-  twitter: {
-    card: "summary",
-    site: "@vibescom",
-    title: "Ecommerce Web Development Company in Noida | Vibes Communications",
+  "ecommerce-development-company": {
+    title: "Ecommerce Development Company | Custom Ecommerce Website Experts",
     description:
-      "Vibes Communications is a leading ecommerce development company in Noida, offering end-to-end ecommerce website solutions.",
-    images: ["https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png"],
-  },
-
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
+      "Leading B2C ecommerce development company delivering custom ecommerce website development services. Trusted ecommerce development agency for scalable growth.",
+    alternates: {
+      canonical: "https://www.vibescom.in/software-technology-services/ecommerce-development-company",
+    },
+    openGraph: {
+      title: "Ecommerce Development Company | Custom Ecommerce Website Experts",
+      description:
+        "Leading B2C ecommerce development company delivering custom ecommerce website development services. Trusted ecommerce development agency for scalable growth.",
+      url: "https://www.vibescom.in/software-technology-services/ecommerce-development-company",
+      siteName: "Vibes Communications Pvt Ltd",
+      images: [
+        {
+          url: "https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png",
+          width: 1200,
+          height: 630,
+        },
+      ],
+      locale: "en_US",
+      type: "website",
+    },
+    twitter: {
+      card: "summary",
+      site: "@vibescom",
+      title: "Ecommerce Development Company | Custom Ecommerce Website Experts",
+      description:
+        "Leading B2C ecommerce development company delivering custom ecommerce website development services.",
+      images: ["https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png"],
+    },
+    robots: {
       index: true,
       follow: true,
-    },
-  },
-
-  authors: [{ name: "Vibes Communications" }],
-  creator: "Vibes Communications",
-  publisher: "Vibes Communications",
-  },
-
-  "pmis-development": {
-    title: "Project Management Information System | PMIS Tool",
-
-  description:
-    "If you are seeking a project management tool to assess, track, and monitor your company’s development, Vibes Communications can create a custom PMIS solution tailored to your needs.",
-
-  alternates: {
-    canonical: "https://www.vibescom.in/project-management-information-system",
-  },
-
-  openGraph: {
-    title: "Project Management Information System | PMIS Tool",
-    description:
-      "If you are seeking a project management tool to assess, track, and monitor your company’s development, Vibes Communications can create a custom PMIS solution tailored to your needs.",
-    url: "https://www.vibescom.in/project-management-information-system",
-    siteName: "Vibes Communications Pvt Ltd",
-    images: [
-      {
-        url: "https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png",
-        width: 1200,
-        height: 630,
+      googleBot: {
+        index: true,
+        follow: true,
       },
-    ],
-    locale: "en_US",
-    type: "website",
+    },
+    authors: [{ name: "Vibes Communications" }],
+    creator: "Vibes Communications",
+    publisher: "Vibes Communications",
   },
 
-  twitter: {
-    card: "summary",
-    site: "@vibescom",
-    title: "Project Management Information System | PMIS Tool",
+  "project-management-information-system": {
+    title: "Project Management Information System | PMIS Project Management Solutions",
     description:
-      "If you are seeking a project management tool to assess, track, and monitor your company’s development, Vibes Communications can create a custom PMIS solution tailored to your needs.",
-    images: ["https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png"],
-  },
-
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
+      "Learn about Project Management Information System (PMIS). Discover how PMIS project management information system improves planning, tracking, and control.",
+    alternates: {
+      canonical: "https://www.vibescom.in/software-technology-services/project-management-information-system",
+    },
+    openGraph: {
+      title: "Project Management Information System | PMIS Project Management Solutions",
+      description:
+        "Learn about Project Management Information System (PMIS). Discover how PMIS project management information system improves planning, tracking, and control.",
+      url: "https://www.vibescom.in/software-technology-services/project-management-information-system",
+      siteName: "Vibes Communications Pvt Ltd",
+      images: [
+        {
+          url: "https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png",
+          width: 1200,
+          height: 630,
+        },
+      ],
+      locale: "en_US",
+      type: "website",
+    },
+    twitter: {
+      card: "summary",
+      site: "@vibescom",
+      title: "Project Management Information System | PMIS Project Management Solutions",
+      description:
+        "Learn about Project Management Information System (PMIS). Discover how PMIS project management information system improves planning, tracking, and control.",
+      images: ["https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png"],
+    },
+    robots: {
       index: true,
       follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+      },
     },
-  },
-
-  authors: [{ name: "Vibes Communications" }],
-  creator: "Vibes Communications",
-  publisher: "Vibes Communications",
+    authors: [{ name: "Vibes Communications" }],
+    creator: "Vibes Communications",
+    publisher: "Vibes Communications",
   },
 };
 

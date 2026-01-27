@@ -18,19 +18,19 @@ import MarqueeStorySection, { SlideItem } from "@/app/components/common/MarqueeS
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Digital Solutions and Digital Marketing Services | Vibes Communications",
+  title: "Digital Marketing Services | Trusted Digital Marketing Company & Consultant",
 
   description:
-    "Looking for digital solutions and digital marketing services? Vibes Communications is a leading digital company in Noida, India, delivering SEO, social media, and performance-driven marketing solutions.",
+    "Expert digital marketing services by a leading digital marketing company. Get Google digital marketing solutions from an experienced digital marketing consultant to grow your business online.",
 
   alternates: {
     canonical: "https://www.vibescom.in/digital-marketing-services",
   },
 
   openGraph: {
-    title: "Digital Solutions and Digital Marketing Services | Vibes Communications",
+    title: "Digital Marketing Services | Trusted Digital Marketing Company & Consultant",
     description:
-      "Looking for digital solutions and digital marketing services? Vibes Communications is a leading digital company in Noida, India, delivering SEO, social media, and performance-driven marketing solutions.",
+      "Expert digital marketing services by a leading digital marketing company. Get Google digital marketing solutions from an experienced digital marketing consultant to grow your business online.",
     url: "https://www.vibescom.in/digital-marketing-services",
     siteName: "Vibes Communications Pvt Ltd",
     images: [
@@ -45,11 +45,11 @@ export const metadata: Metadata = {
   },
 
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     site: "@vibescom",
-    title: "Digital Solutions and Digital Marketing Services | Vibes Communications",
+    title: "Digital Marketing Services | Trusted Digital Marketing Company & Consultant",
     description:
-      "Looking for digital solutions and digital marketing services? Vibes Communications is a leading digital company in Noida, India, delivering SEO, social media, and performance-driven marketing solutions.",
+      "Expert digital marketing services by a leading digital marketing company. Get Google digital marketing solutions from an experienced digital marketing consultant to grow your business online.",
     images: ["https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png"],
   },
 

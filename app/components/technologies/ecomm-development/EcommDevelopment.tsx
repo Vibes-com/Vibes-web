@@ -7,6 +7,61 @@ import TechnologyStackSection from '../../common/TechnologyStackSection/Technolo
 import BuiltWay from '../web-development/built-way/BuiltWay';
 import WorkflowSection from '../../common/WorkflowSection/WorkflowSection';
 import HeroSection from '../../common/HeroSection/HeroSection';
+import { Metadata } from 'next';
+
+
+export const metadata: Metadata = {
+  title: "Software Technology Services Driving Brand Growth",
+
+  description:
+    `Vibes offer software technology services, technology solutions services, and technology
+consulting services delivering scalable tech solutions for businesses.`,
+
+  alternates: {
+    canonical: "https://www.vibescom.in/technology-services",
+  },
+
+  openGraph: {
+    title: "Software Technology Services Driving Brand Growth",
+    description:
+      `Vibes offer software technology services, technology solutions services, and technology
+consulting services delivering scalable tech solutions for businesses.`,
+    url: "https://www.vibescom.in/technology-services",
+    siteName: "Vibes Communications Pvt Ltd",
+    images: [
+      {
+        url: "https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary",
+    site: "@vibescom",
+    title: "Software Technology Services Driving Brand Growth",
+    description:
+      `Vibes offer software technology services, technology solutions services, and technology
+consulting services delivering scalable tech solutions for businesses.`,
+    images: ["https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png"],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+
+  authors: [{ name: "Vibes Communications" }],
+  creator: "Vibes Communications",
+  publisher: "Vibes Communications",
+};
 
 const EcommDevelopment = () => {
   // const router = useRouter();
