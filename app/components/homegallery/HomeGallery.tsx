@@ -38,7 +38,7 @@ const HomeGallery = () => {
             <div>
               <img
                 src={withImageBase("/home/13th-anniversary-vibes-communications.jpg")}
-                alt="Vibes Image Gallery"
+                alt="13th-anniversary-vibes-communications"
                 width={400}
                 height={400}
               />
@@ -47,7 +47,7 @@ const HomeGallery = () => {
             <div>
               <img
                src={withImageBase("/home/one-team-one-dream-uchagaon-vibes-communications.jpg")}
-                alt="Vibes Image Gallery"
+                alt="one-team-one-dream-uchagaon-vibes-communications"
                 width={400}
                 height={400}
               />
@@ -56,7 +56,7 @@ const HomeGallery = () => {
             <div>
               <img
                src={withImageBase("/home/vibes-teams-uchagaon-vibes-communications.jpg")}
-                alt="Vibes Image Gallery"
+                alt="vibes-teams-uchagaon-vibes-communications"
                 width={400}
                 height={400}
               />
@@ -65,7 +65,7 @@ const HomeGallery = () => {
             <div>
               <img
                 src={withImageBase("/home/vibes-employee-vibes-communications.png")}
-                alt="Vibes Image Gallery"
+                alt="vibes-employee-vibes-communications"
                 width={400}
                 height={400}
               />
@@ -74,7 +74,7 @@ const HomeGallery = () => {
             <div>
               <img
                src={withImageBase("/home/team-vibes-nimrana-fort-vibes-communications.jpg")}
-                alt="Vibes Image Gallery"
+                alt="team-vibes-nimrana-fort-vibes-communications"
                 width={400}
                 height={400}
               />
@@ -83,7 +83,7 @@ const HomeGallery = () => {
             <div>
               <img
                 src={withImageBase("/home/teams-vibes--outing-nimrana-fort -vibes-communications.jpg")}
-                alt="Vibes Image Gallery"
+                alt="teams-vibes--outing-nimrana-fort -vibes-communications"
                 width={400}
                 height={400}
               />
