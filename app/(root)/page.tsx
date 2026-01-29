@@ -25,11 +25,11 @@ const slides: SlideItem[] = [
     type: "images",
     images: [
       { 
-        alt:"Tomorrows India",
-        src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img4.webp" },
+        alt:"home/brand launch services-vibes communications",
+        src: "https://d32ze5duxdubbq.cloudfront.net/assets/img/home/brand launch services-vibes communications.webp" },
       { 
-        alt:"Women Listed",
-        src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img1.webp" },
+        alt:"women listed marketing-vibes communications",
+        src: "https://d32ze5duxdubbq.cloudfront.net/assets/img/home/women listed marketing-vibes communications.webp" },
     ],
   },
   {
@@ -42,11 +42,11 @@ const slides: SlideItem[] = [
     type: "images",
     images: [
       { 
-        alt:"Ligo Group",
-        src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-image18.jpg" },
+        alt:"performance marketing services- vibes communications",
+        src: "https://d32ze5duxdubbq.cloudfront.net/assets/img/home/performance marketing services- vibes communications.jpg" },
       { 
-        alt:"Kapgrow",
-        src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img14.webp" },
+        alt:"legal advisory services -vibes communications",
+        src: "https://d32ze5duxdubbq.cloudfront.net/assets/img/home/legal advisory services -vibes communications.webp" },
     ],
   },
   {
@@ -59,11 +59,11 @@ const slides: SlideItem[] = [
     type: "images",
     images: [
       { 
-        alt:"BFE",
-        src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-image19.jpg" },
+        alt:"branding services - vibes communications",
+        src: "https://d32ze5duxdubbq.cloudfront.net/assets/img/home/branding services - vibes communications.jpg" },
       { 
-        alt:"Women Listed",
-        src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img6.webp" },
+        alt:"marketing for events -vibes communications",
+        src: "https://d32ze5duxdubbq.cloudfront.net/assets/img/home/marketing for events -vibes communications.webp" },
     ],
   },
   {
@@ -76,11 +76,11 @@ const slides: SlideItem[] = [
     type: "images",
     images: [
       { 
-        alt:"Kapgrow",
-        src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img7.webp" },
+        alt:"hr consulting services-vibes communications",
+        src: "https://d32ze5duxdubbq.cloudfront.net/assets/img/home/hr consulting services-vibes communications.webp" },
       { 
-        alt:"FADS World Congress",
-        src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-image17.jpg" },
+        alt:"website Maintenance services- vibes communications",
+        src: "https://d32ze5duxdubbq.cloudfront.net/assets/img/home/website Maintenance services- vibes communications.jpg" },
     ],
   },
   {
@@ -93,11 +93,11 @@ const slides: SlideItem[] = [
     type: "images",
     images: [
       { 
-        alt:"City Dental Institute",
-        src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-image20.jpg" },
+        alt:"dental institute services-vibes communications",
+        src: "https://d32ze5duxdubbq.cloudfront.net/assets/img/home/dental institute services-vibes communications.jpg" },
       { 
-        alt:"Women Listed",
-        src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img10.webp" },
+        alt:"performance marketing-vibes communications",
+        src: "https://d32ze5duxdubbq.cloudfront.net/assets/img/home/performance marketing-vibes communications.jpeg" },
     ],
   },
   {
@@ -110,11 +110,11 @@ const slides: SlideItem[] = [
     type: "images",
     images: [
       { 
-        alt:"Tomorrows India",
-        src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-image26.jpg" },
+        alt:"brand launch platform services- vibes communications",
+        src: "https://d32ze5duxdubbq.cloudfront.net/assets/img/home/brand launch platform services- vibes communications.jpg" },
       { 
-        alt:"Kapgrow",
-        src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img12.webp" },
+        alt:"corporate advisory services-vibes communications",
+        src: "https://d32ze5duxdubbq.cloudfront.net/assets/img/home/corporate advisory services-vibes communications.webp" },
     ],
   },
   {
@@ -127,11 +127,11 @@ const slides: SlideItem[] = [
     type: "images",
     images: [
       { 
-        alt:"Women Listed",
-        src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img13.webp" },
+        alt:"digital marketing for exhibition-vibes communications",
+        src: "https://d32ze5duxdubbq.cloudfront.net/assets/img/home/digital marketing for exhibition-vibes communications.jpeg" },
       { 
-        alt:"BFE",
-        src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-image21.jpg" },
+        alt:"vibes communications- branding client",
+        src: "https://d32ze5duxdubbq.cloudfront.net/assets/img/home/vibes communications- branding client.jpg" },
     ],
   },
   {
@@ -144,11 +144,11 @@ const slides: SlideItem[] = [
     type: "images",
     images: [
       { 
-        alt:"Women Listed",
-        src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img16.webp" },
+        alt:"marketing services for events-vibes communications",
+        src: "https://d32ze5duxdubbq.cloudfront.net/assets/img/home/marketing services for events-vibes communications.webp" },
       { 
-        alt:"Tomorrows India",
-        src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-image25.jpg" },
+        alt:"brand launch platform- vibes communications",
+        src: "https://d32ze5duxdubbq.cloudfront.net/assets/img/home/brand launch platform- vibes communications.jpg" },
     ],
   },
    {
@@ -161,11 +161,11 @@ const slides: SlideItem[] = [
     type: "images",
     images: [
       { 
-        alt:"Women Listed Bazar",
-        src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img2.webp" },
+        alt:"digital marketing for events-vibes communications",
+        src: "https://d32ze5duxdubbq.cloudfront.net/assets/img/home/digital marketing for events-vibes communications.webp" },
       { 
-        alt:"Kapgrow",
-        src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img3.webp" },
+        alt:"webinar services-vibes communications",
+        src: "https://d32ze5duxdubbq.cloudfront.net/assets/img/home/webinar services-vibes communications.webp" },
     ],
   },
 ];
