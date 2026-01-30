@@ -12,7 +12,9 @@ export async function generateMetadata(
   { params }: { params: Promise<{ slug: string }> }
 ): Promise<Metadata> {
 
-  const { slug } = await params; // ✅ required now
+  const { slug } = await params;
+  
+  console.log("Generating metadata for slug:", slug);
 
   if (!slug) {
     return {
@@ -51,6 +53,6 @@ export async function generateMetadata(
 
 
 export default async function Page({ params }: PageProps) {
-  const { slug } = await params; // ✅ unwrap promise
+  const { slug } = await params; //  unwrap promise
   return <ClientPage slug={slug} />;
 }
