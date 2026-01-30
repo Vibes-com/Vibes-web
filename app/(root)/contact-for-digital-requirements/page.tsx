@@ -4,19 +4,19 @@ import ContactForm from '@/app/components/contact-us/contact-form/ContactForm'
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Brief Vibes on Your Digital Vision | Vibes Communications",
+  title: "Contact Vibes Communications | Let’s Build Something Great",
 
   description:
-    "Brief your digital vision with Vibes Communications and leave the rest to us. Your trusted partner for website upliftment, SEO, social media, and lead generation services.",
+    "Get in touch with Vibes Communications to discuss branding, digital marketing, or custom software solutions for your business.",
 
   alternates: {
     canonical: "https://www.vibescom.in/contact-for-digital-requirements",
   },
 
   openGraph: {
-    title: "Brief Vibes on Your Digital Vision | Vibes Communications",
+    title: "Contact Vibes Communications | Let’s Build Something Great",
     description:
-      "Brief your digital vision with Vibes Communications and leave the rest to us. Your trusted partner for website upliftment, SEO, social media, and lead generation services.",
+      "Get in touch with Vibes Communications to discuss branding, digital marketing, or custom software solutions for your business.",
     url: "https://www.vibescom.in/contact-for-digital-requirements",
     siteName: "Vibes Communications Pvt Ltd",
     images: [
@@ -33,9 +33,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary",
     site: "@vibescom",
-    title: "Brief Vibes on Your Digital Vision | Vibes Communications",
+    title: "Contact Vibes Communications | Let’s Build Something Great",
     description:
-      "Brief your digital vision with Vibes Communications and leave the rest to us. Your trusted partner for website upliftment, SEO, social media, and lead generation services.",
+      "Get in touch with Vibes Communications to discuss branding, digital marketing, or custom software solutions for your business.",
     images: ["https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png"],
   },
 

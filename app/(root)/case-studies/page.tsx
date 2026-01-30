@@ -8,19 +8,19 @@ import CaseStudiesCard, {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Digital Case Studies | Vibes Communications",
+  title: "Case Studies | Real Growth Stories by Vibes Communications",
 
   description:
-    "Learn from our digital case studies which campaigns rose above digital marketing objectives to achieve ROI – Your Digital Partner, Vibes Communications.",
+    "See how Vibes Communications drives measurable growth through branding, digital marketing, and software solutions across diverse industries.",
 
   alternates: {
     canonical: "https://www.vibescom.in/case-studies",
   },
 
   openGraph: {
-    title: "Digital Case Studies | Vibes Communications",
+    title: "Case Studies | Real Growth Stories by Vibes Communications",
     description:
-      "Learn from our digital case studies which campaigns rose above digital marketing objectives to achieve ROI – Your Digital Partner, Vibes Communications.",
+      "See how Vibes Communications drives measurable growth through branding, digital marketing, and software solutions across diverse industries.",
     url: "https://www.vibescom.in/case-studies",
     siteName: "Vibes Communications Pvt Ltd",
     images: [
@@ -37,9 +37,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary",
     site: "@vibescom",
-    title: "Digital Case Studies | Vibes Communications",
+    title: "Case Studies | Real Growth Stories by Vibes Communications",
     description:
-      "Learn from our digital case studies which campaigns rose above digital marketing objectives to achieve ROI – Your Digital Partner, Vibes Communications.",
+      "See how Vibes Communications drives measurable growth through branding, digital marketing, and software solutions across diverse industries.",
     images: ["https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png"],
   },
 

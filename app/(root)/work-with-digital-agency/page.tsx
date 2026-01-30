@@ -5,19 +5,19 @@ import React from 'react'
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Work with Leading Digital Agency | Noida | Vibes Communications",
+  title: "Careers at Vibes Communications | Build Your Future With Us",
 
   description:
-    "If you quest for growth and have the right attitude, then work with a leading digital agency in Delhi/NCR. We are hiring PHP, Social Media, HTML, UI, QA, and SEO professionals.",
+    "Join Vibes Communications and grow your career in branding, digital marketing, and technology with a team that values creativity and impact.",
 
   alternates: {
     canonical: "https://www.vibescom.in/work-with-digital-agency",
   },
 
   openGraph: {
-    title: "Work with Leading Digital Agency | Noida | Vibes Communications",
+    title: "Careers at Vibes Communications | Build Your Future With Us",
     description:
-      "If you quest for growth and have the right attitude, then work with a leading digital agency in Delhi/NCR. We are hiring PHP, Social Media, HTML, UI, QA, and SEO professionals.",
+      "Join Vibes Communications and grow your career in branding, digital marketing, and technology with a team that values creativity and impact.",
     url: "https://www.vibescom.in/work-with-digital-agency",
     siteName: "Vibes Communications Pvt Ltd",
     images: [
@@ -34,9 +34,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary",
     site: "@vibescom",
-    title: "Work with Leading Digital Agency | Noida | Vibes Communications",
+    title: "Careers at Vibes Communications | Build Your Future With Us",
     description:
-      "If you quest for growth and have the right attitude, then work with a leading digital agency in Delhi/NCR. We are hiring PHP, Social Media, HTML, UI, QA, and SEO professionals.",
+      "Join Vibes Communications and grow your career in branding, digital marketing, and technology with a team that values creativity and impact.",
     images: ["https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png"],
   },
 

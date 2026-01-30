@@ -8,19 +8,19 @@ import React from 'react'
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Digital Marketing & Brand Agency | IT Services Company | Delhi NCR",
+  title: "About Vibes Communications | Brand, Digital & Tech Experts",
 
   description:
-    "Vibes Communications is a proven agency in the space of Digital Marketing, Brand & IT Services. SEO, SMO, Brand Positioning, Website & Customized Software Development are prime services of the company.",
+    " Discover Vibes Communications an integrated brand, digital marketing, and software solutions company helping businesses grow with strategy, creativity, and technology.",
 
   alternates: {
     canonical: "https://www.vibescom.in/about-us-together-for-tomorrow",
   },
 
   openGraph: {
-    title: "Digital Marketing & Brand Agency | IT Services Company | Delhi NCR",
+    title: "About Vibes Communications | Brand, Digital & Tech Experts",
     description:
-      "Vibes Communications is a proven agency in the space of Digital Marketing, Brand & IT Services. SEO, SMO, Brand Positioning, Website & Customized Software Development are prime services of the company.",
+      "Discover Vibes Communications an integrated brand, digital marketing, and software solutions company helping businesses grow with strategy, creativity, and technology.",
     url: "https://www.vibescom.in/about-us-together-for-tomorrow",
     siteName: "Vibes Communications Pvt Ltd",
     images: [
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     site: "@vibescom",
     title: "Digital Marketing & Brand Agency | IT Services Company | Delhi NCR",
     description:
-      "Vibes Communications is a proven agency in the space of Digital Marketing, Brand & IT Services. SEO, SMO, Brand Positioning, Website & Customized Software Development are prime services of the company.",
+      "Discover Vibes Communications an integrated brand, digital marketing, and software solutions company helping businesses grow with strategy, creativity, and technology.",
     images: ["https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png"],
   },
 
