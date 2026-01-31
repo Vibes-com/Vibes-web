@@ -9,7 +9,7 @@ type Props = {
 
 export default function BlogClient({ slug }: Props) {
   const { data, isLoading, error } = useGetSingleBlogQuery(slug);
-
+  // console.log("single blog data", data);
   if (isLoading) return <p>Loading...</p>;
   if (error) return <p>Failed to load blog</p>;
 
