@@ -6,6 +6,7 @@ export interface TeamMember {
   member_role: string;
   member_image: string;
   member_description: string;
+  image_alt:string
 }
 
 export interface TeamResponse {

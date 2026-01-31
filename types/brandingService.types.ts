@@ -1,4 +1,5 @@
 export interface BrandingImage {
+  alt: string;
   url: string;
   order: number;
 }
@@ -9,7 +10,7 @@ export interface BrandingService {
   slug: string;
   title: string;
   description: string;
-  tags: string; 
+  tags: string;
   image_gallery: BrandingImage[];
 }
 

@@ -15,6 +15,7 @@ import {
 
 export default function BlogListing() {
   const { data, error, isLoading } = useGetAllBlogsQuery();
+  console.log("blog listing data", data);
   const [selectedFilter, setSelectedFilter] = useState("All");
   if (isLoading) return <p>Loading...</p>;
   if (error) return <p>Error loading blogs</p>;
@@ -61,7 +62,7 @@ export default function BlogListing() {
                 <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition">
                   <img
                     src={LatestBlog.blog_thumb_image}
-                    alt={LatestBlog.blog_title}
+                    alt={LatestBlog?.blog_thumb_image_alt || LatestBlog.blog_title}
                     className="w-full h-auto  md:h-70 lg:h-70 xl:h-70 2xl:h-70 object-fill md:object-cover lg:object-cover xl:object-cover rounded-t-2xl"
                   />
 
@@ -88,7 +89,7 @@ export default function BlogListing() {
                         <figure className="w-24 mr-3">
                           <img
                             src={blog.blog_thumb_image}
-                            alt={blog.blog_title}
+                            alt={blog.blog_thumb_image_alt || blog.blog_title}
                             className="w-full border-1 border-[#F4BE00] rounded-md"
                           />
                         </figure>
@@ -147,7 +148,7 @@ export default function BlogListing() {
                 <div className="bg-white h-[410px] rounded-1xl shadow-md hover:shadow-xl transition">
                   <img
                     src={blog.blog_thumb_image}
-                    alt={blog.blog_title}
+                    alt={blog.blog_thumb_image_alt || blog.blog_title}
                     className="w-full h-56 object-fill rounded-t-1xl"
                   />
 

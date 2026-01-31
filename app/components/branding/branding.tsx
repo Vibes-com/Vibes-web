@@ -36,7 +36,7 @@ export default function Branding() {
         description={service.description}
         tags={service.tags.split(",").map((tag) => tag.trim())}
         buttonText="Build Your Brand"
-        images={service.image_gallery.map((img) => img.url)}
+        images={service.image_gallery}
         reverse={true}
         btnlink="/branding-agency"
       />
