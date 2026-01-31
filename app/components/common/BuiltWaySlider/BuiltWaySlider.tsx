@@ -97,13 +97,13 @@ export default function BuiltWaySlider({
                 "
               >
                 {/* ICON */}
-                <div className="absolute -top-3 right-[-4px] w-20 h-20 rounded-full flex items-center justify-center bg-[#466E59] group-hover:bg-white border-[7px] border-[#EEF4EE]">
+                <div className="absolute -top-3 right-[-4px] w-20 h-20 rounded-full flex items-center justify-center bg-[#466E59] group-hover:bg-[#F4BE00] border-[7px] border-[#EEF4EE]">
                   <img
                      src={withImageBase(item.icon)}
                     alt={item.title}
                     width={26}
                     height={26}
-                    className="transition-all duration-300 group-hover:invert"
+                    className="brightness-0 invert transition-all duration-300 group-hover:invert-0 group-hover:brightness-0"
                   />
                 </div>
 

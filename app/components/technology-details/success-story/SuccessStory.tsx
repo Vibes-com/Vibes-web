@@ -11,8 +11,10 @@ import SlideUp from "../../animations/SlideUp";
 interface SuccessStoryProps {
   title: string;
   subtitle: string;
+  buttonnewText:string;
   buttonText: string;
   arrowImage?: string;
+
   onButtonClick?: () => void;
   className?: string;
   btnlink:string;
@@ -22,6 +24,7 @@ export default function SuccessStory({
   title,
   subtitle,
   buttonText,
+   buttonnewText,
   arrowImage = "/assests/img/technology-details/arrow.png",
   onButtonClick,
   className = "",
@@ -51,7 +54,18 @@ export default function SuccessStory({
               {subtitle}
             </p>
           </div>
-
+           {/* New Button */}
+            <div>
+            <Link href={btnlink}>
+            <Button2
+              onClick={onButtonClick}
+              className=" mt-0 h-6 md:h-9 lg:h-9 xl:h-9 2xl:h-9 lg:mt-5 p-[18px] lg:p-[20px] bg-[#fff] cursor-pointer"
+            >
+              <span className="text-[#000] cursor-pointer">{buttonnewText}</span>
+              <ArrowUpIcon className="transform rotate-45 text-[#000]" />
+            </Button2>
+            </Link>
+          </div>
           {/* Button */}
           <div>
             <Link href={btnlink}>

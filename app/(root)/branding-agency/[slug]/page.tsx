@@ -1,6 +1,7 @@
 import BrandCommunicationStrategy from "@/app/components/brandings/brand-communication-and-strategy/BrandCommunicationStrategy";
 import BrandUpliftment from "@/app/components/brandings/brand-upliftment/BrandUpliftment";
 import CorporateBranding from "@/app/components/brandings/corporate-branding/CorporateBranding";
+import CompanyLogoDesign from "@/app/components/brandings/company-logo-design/CompanyLogoDesign";
 import type { Metadata } from "next";
 
 const metaMap: Record<string, Metadata> = {
@@ -138,6 +139,9 @@ const page = async ({ params }: PageProps) => {
 
   if (slug === "brand-communication-and-strategy") {
     return <BrandCommunicationStrategy />;
+  }
+ if (slug === "company-logo-design") {
+    return <CompanyLogoDesign/>;
   }
 
   return null;

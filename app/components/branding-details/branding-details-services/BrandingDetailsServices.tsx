@@ -99,6 +99,20 @@ const Brandingservices: ServiceItem[] = [
         icon: "/branding-details/carporate-icon.png",
         url: "/branding-agency/brand-communication-and-strategy",
     },
+     {
+        title: "Logo Design",
+        description:
+            " Developing structured brand strategies and communication frameworks that align messaging, tone, and positioning with business goals through a comprehensive branding service approach.",
+        tags: [
+            "Logo Design",
+            "Logo Maker",
+            "Company Logo Design",
+            "Business Logo Design",
+            "Business Logo Maker"
+        ],
+        icon: "/branding-details/carporate-icon.png",
+        url: "/branding-agency/company-logo-design",
+    },
 ];
 
 const BrandingDetailsServices: React.FC = () => {
@@ -134,16 +148,12 @@ const BrandingDetailsServices: React.FC = () => {
 
                     <div className="col-span-12  lg:col-span-7">
                         <SlideRight delay={0.5}>
-                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 place-items-center">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 place-items-center">
 
-                                {[1, 2, 3].map((_, index) => (
+                                {[1, 2, 3, 4].map((_, index) => (
                                     <div
                                         key={index}
-                                        className={
-                                            index === 0
-                                                ? "sm:col-span-2 flex  justify-center"
-                                                : ""
-                                        }
+                                        className=""
                                     >
                                         <BrandingServiceCard service={Brandingservices[index]} />
                                     </div>
