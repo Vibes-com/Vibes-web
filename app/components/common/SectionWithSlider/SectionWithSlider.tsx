@@ -8,6 +8,7 @@ import { ArrowRight, ArrowLeft } from "lucide-react";
 import { ArrowUpIcon } from "lucide-react";
 import "swiper/css";
 import Link from "next/link";
+import { TechnologyImage } from "@/types/technologyService.types";
 
 interface SectionProps {
   heading: string;
@@ -16,7 +17,7 @@ interface SectionProps {
   description: string;
   tags: string[];
   buttonText: string;
-  images: string[];
+  images: TechnologyImage[];
   reverse?: boolean;
   btnlink?: string;
 }
@@ -162,11 +163,11 @@ const SectionWithSlider: FC<SectionProps> = ({
               return (
                 <SwiperSlide key={i}>
                   <div className="cut-wrapper">
-                    <img src={images[nextIndex]} className="img-next " alt="next" />
+                    <img src={images[nextIndex].url} className="img-next " />
                     <img
-                      src={img}
+                      src={img.url}
                       className={`img-current ltr`}
-                      alt="current"
+                      alt={img.alt}
                       onAnimationEnd={handleAnimationEnd}
                     />
                   </div>

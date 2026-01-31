@@ -15,7 +15,7 @@ type Props = {
 
 const ClientPage = ({ slug }: Props) => {
   const { data, isLoading, isError } = useGetSingleCaseStudyQuery(slug);
-
+console.log("single case study data", data);
   if (isLoading) {
     return <p className="py-20 text-center">Loading...</p>;
   }
@@ -80,6 +80,7 @@ const ClientPage = ({ slug }: Props) => {
         sections={[
           {
             title: "Branding",
+            altTags: caseStudy.banner_image_names || [],
             images: caseStudy.banner_middle_imgage || [],
             slidesPerView: 1,
             paginationId: "case-study-pagination-1",
@@ -87,6 +88,7 @@ const ClientPage = ({ slug }: Props) => {
           },
           {
             title: "Creative Display",
+            altTags: caseStudy.banner_image_names || [],
             images:
               caseStudy.creative_display?.map(
                 (item: any) => item.social_post
@@ -94,6 +96,7 @@ const ClientPage = ({ slug }: Props) => {
             slidesPerView: 4,
             paginationId: "case-study-pagination-2",
           },
+         
         ]}
       />
     </div>

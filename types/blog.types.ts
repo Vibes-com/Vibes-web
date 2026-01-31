@@ -1,4 +1,5 @@
 export interface Blog {
+  blog_thumb_image_alt: string;
   created_on: string;
   blog_id: number;
   banner_img:string;
@@ -24,4 +25,5 @@ export interface SingleBlogResponse {
   status: number;
   msg: string;
   data: Blog;
+  blog_thumb_image_alt?: string;
 }

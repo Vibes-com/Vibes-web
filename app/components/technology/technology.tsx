@@ -20,7 +20,7 @@ export default function Technology() {
         description={service.description}
         tags={service.tags.split(",").map((tag) => tag.trim())}
         buttonText="Explore Tech Solutions"
-        images={service.image_gallery.map((img) => img.url)}
+        images={service.image_gallery}
         reverse={false}
         btnlink="/software-technology-services"
       />

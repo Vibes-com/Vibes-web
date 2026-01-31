@@ -1,14 +1,8 @@
+import { TeamMember } from '@/types/teammembers.types';
 import React from 'react'
 
 interface MemberCardProps {
-    m: {
-        member_id: string | number;
-        member_image: string;
-        member_fname: string;
-        member_lname: string;
-        member_role: string;
-        member_description: string;
-    };
+    m:TeamMember,
     isActive?: boolean;
 }
 
@@ -35,7 +29,7 @@ const MemberCard = ({ m, isActive }: MemberCardProps) => {
                 <div className="rounded-full overflow-hidden border-[6px] border-[#F4BE00] shadow-lg">
                     <img
                         src={m.member_image}
-                        alt={`${m.member_fname} ${m.member_lname}`}
+                        alt={m.image_alt}
                         className="w-full h-full object-cover"
                     />
                 </div>

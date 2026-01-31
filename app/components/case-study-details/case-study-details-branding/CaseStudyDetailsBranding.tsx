@@ -15,6 +15,7 @@ export interface BrandingSliderSection {
   slidesPerView?: number;
   paginationId: string;
   autoplay?: boolean;
+  altTags?: string[];
 }
 
 interface CaseStudyDetailsBrandingProps {
@@ -24,58 +25,57 @@ interface CaseStudyDetailsBrandingProps {
 const CaseStudyDetailsBranding: React.FC<CaseStudyDetailsBrandingProps> = ({
   sections,
 }) => {
-  
+
   return (
     <div className="case-study-details-branding-wrapper">
       {sections.map((section) => {
         const swiperModules: SwiperModule[] = section.autoplay
           ? [Autoplay, Pagination]
           : [Pagination];
-        if(sections && section.images.length>0){
+        if (sections && section.images.length > 0) {
           return (
             <div key={section.paginationId} className="w-full mb-13 lg:mb-20 ">
-  
+
               {/* TITLE */}
               <h3 className="mb-3 pb-5 text-center font-poppins font-medium text-[65px]">
                 <span className="highlight font-semibold text-[28px] lg:text-[48px] relative">
                   {section.title}
                 </span>
               </h3>
-  
+
               {/* SLIDER */}
               <Swiper
-  modules={swiperModules}
-  loop
-  autoHeight
-  spaceBetween={8}
-  slidesPerView={section.slidesPerView ?? 1}
-  autoplay={section.autoplay ? { delay: 1500 } : false}
-  pagination={{
-    el: `.${section.paginationId}`,
-    clickable: true,
-  }}
-  onSlideChange={(swiper) => swiper.updateAutoHeight()}
->
-  {section.images.map((src) => (
-    <SwiperSlide key={src}>
-      <div className="overflow-hidden">
-        <img
-          src={src}
-          alt={section.title}
-          width={720}
-          height={674}
-          
-          className="w-full h-auto object-cover transition-transform duration-700 hover:scale-110"
-        />
-      </div>
-    </SwiperSlide>
-  ))}
-</Swiper>
-  
+                modules={swiperModules}
+                loop
+                autoHeight
+                spaceBetween={8}
+                slidesPerView={section.slidesPerView ?? 1}
+                autoplay={section.autoplay ? { delay: 1500 } : false}
+                pagination={{
+                  el: `.${section.paginationId}`,
+                  clickable: true,
+                }}
+                onSlideChange={(swiper) => swiper.updateAutoHeight()}
+              >
+                {section.images.map((src) => (
+                  <SwiperSlide key={src}>
+                    <div className="overflow-hidden">
+                      <img
+                        src={src}
+                        alt={section.altTags?.[section.images.indexOf(src)] || section.title}
+                        width={720}
+                        height={674}
+                        className="w-full h-auto object-cover transition-transform duration-700 hover:scale-110"
+                      />
+                    </div>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+
               <div className={`${section.paginationId} mt-4 text-center`} />
             </div>
           );
-        }else{
+        } else {
           return null
         }
       })}

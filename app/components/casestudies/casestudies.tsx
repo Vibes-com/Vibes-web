@@ -22,7 +22,7 @@ export default function CaseStudies() {
 
     const caseStudies = data?.data || [];
 
-
+    console.log("case studies data", data)
     // Handling states (loading / error)
     if (isLoading)
         return <p className="text-center py-10 text-gray-500">Loading case studies...</p>;
@@ -66,10 +66,10 @@ export default function CaseStudies() {
                         pagination={{ clickable: true }}
                         loop={true}
                         autoplay={{
-                                delay: 5000,
-                                disableOnInteraction: false,
-                            }}
-                            breakpoints={{
+                            delay: 5000,
+                            disableOnInteraction: false,
+                        }}
+                        breakpoints={{
                             320: { slidesPerView: 1 },
                             768: { slidesPerView: 2 },
                             1024: { slidesPerView: 3 },
@@ -83,7 +83,7 @@ export default function CaseStudies() {
                                     <div className="relative w-full case-crd h-full border-1 border-gray-400 rounded-xl overflow-hidden group">
                                         <img
                                             src={item.thumbnail}
-                                            alt={item.client_name}
+                                            alt={(item?.left_side_image_alt || '').length > 0 ? item?.left_side_image_alt :  "case_study_image"}
                                             className="object-fill transition-all duration-[900ms] group-hover:scale-110 group-hover:opacity-90 h-full"
                                         />
                                     </div>

@@ -14,6 +14,7 @@ export interface SingleCaseStudyCard {
   title: string;
   slug: string;
   tags: string[];
+  left_side_image_alt?: string;
   buttonText?: string;
 }
 
@@ -24,8 +25,8 @@ interface CaseStudiesCardProps {
 /* ---------------- COMPONENT ---------------- */
 
 export default function CaseStudiesCard() {
-const { data, isLoading, isError } = useGetAllCaseStudiesQuery();
-
+  const { data, isLoading, isError } = useGetAllCaseStudiesQuery();
+  console.log("case studies card data", data)
   if (isLoading) return <p className="text-center py-10">Loading...</p>;
   if (isError) return <p className="text-center py-10 text-red-500">Error</p>;
 
@@ -39,7 +40,7 @@ const { data, isLoading, isError } = useGetAllCaseStudiesQuery();
       tags: item.tags ? item.tags.split(",").map((t) => t.trim()) : [],
       buttonText: "Inside The Project",
     })) || [];
-    
+
   return (
     <>
       {cards.map((item, index) => (
@@ -48,16 +49,16 @@ const { data, isLoading, isError } = useGetAllCaseStudiesQuery();
           className="bg-white mb-[70px] rounded-2xl p-1 ps-2 pb-3 shadow-[0_8px_30px_rgba(0,0,0,0.06)] w-full"
         >
           {/* Image */}
-         <div className="case-study-card-common border border-gray-400 w-full rounded-xl overflow-hidden group">
-          <img
-            src={withImageBase(item.img)}
-            alt={item.title}
-            width={1500}
-            height={1000}
-            
-            className="h-full  object-fill transition-transform duration-[900ms] ease-out group-hover:scale-110 group-hover:opacity-90"
-          />
-        </div>
+          <div className="case-study-card-common border border-gray-400 w-full rounded-xl overflow-hidden group">
+            <img
+              src={withImageBase(item.img)}
+              alt={(item?.left_side_image_alt || '').length > 0 ? item?.left_side_image_alt : "case_study_image"}
+              width={1500}
+              height={1000}
+
+              className="h-full  object-fill transition-transform duration-[900ms] ease-out group-hover:scale-110 group-hover:opacity-90"
+            />
+          </div>
 
           {/* Title */}
           <h3 className="mt-5 text-[#1F1F1F] font-poppins font-semibol0d text-[20px] lg:text-[28px]">
