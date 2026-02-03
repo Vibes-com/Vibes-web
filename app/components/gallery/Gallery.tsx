@@ -10,7 +10,7 @@ import { useGetGalleryQuery } from "@/app/redux/api/galleryApi";
 
 export default function Gallery() {
   const { data, isLoading, error } = useGetGalleryQuery();
-
+   console.log("gallery data", data);
   // Bind Fancybox AFTER images are rendered
   useEffect(() => {
     Fancybox.bind("[data-fancybox='gallery']", {
@@ -83,7 +83,7 @@ export default function Gallery() {
               >
                 <img
                   src={item.name}
-                  alt="Gallery image"
+                  alt={item?.image_alt || "gallery_image"}
                   width={600}
                   height={400}
                   className="w-full h-[260px] object-cover gallery-image shadow-lg shadow-gray-700/40"

@@ -17,6 +17,8 @@ const TeamMembers = () => {
 
   const members = data?.member_list ?? [];
 
+  console.log("team members ", data)
+
   if (isLoading) {
     return (
       <p className="text-center py-20 text-gray-500">

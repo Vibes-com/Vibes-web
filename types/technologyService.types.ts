@@ -1,7 +1,7 @@
 export interface TechnologyImage {
+  alt: string;
   url: string;
   order: number;
-  sno: number;
 }
 
 export interface TechnologyService {

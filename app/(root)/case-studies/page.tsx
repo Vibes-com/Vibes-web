@@ -57,7 +57,6 @@ export const metadata: Metadata = {
   publisher: "Vibes Communications",
 };
 
-
 export default function Page() {
   return (
     <div>

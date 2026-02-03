@@ -32,7 +32,7 @@ export default function Digital() {
         description={service.description}
         tags={service.tags.split(",").map((tag) => tag.trim())}
         buttonText="Discover More"
-        images={service.image_gallery.map((img) => img.url)}
+        images={service.image_gallery}
         reverse={false}
         btnlink="/digital-marketing-services"
       />

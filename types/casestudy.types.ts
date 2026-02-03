@@ -3,7 +3,7 @@ export interface BaseCaseStudy {
   id: string;
   client_name: string;
   client_slug: string;
-  slug: string; 
+  slug: string;
   thumbnail: string;
   tags?: string;
   case_status?: string;
@@ -12,6 +12,8 @@ export interface BaseCaseStudy {
 
 /* ------------------ LISTING (GRID / SLIDER) ------------------ */
 export interface CaseStudy extends BaseCaseStudy {
+  banner_image_alt: string | undefined;
+  left_side_image_alt: string | undefined;
   short_desc?: string;
   banner_heading?: string;
 }
@@ -40,10 +42,11 @@ export interface SingleCaseStudy {
   case_id: string;
   client_name: string;
   client_slug: string;
-  
+  banner_image_names: string[];
   banner_heading: string;
   banner_image?: string;
-  
+  left_side_image_alt: string;
+  banner_image_alt: string;
   left_side_page_image: string;
 
   related_project_image: string;

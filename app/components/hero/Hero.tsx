@@ -42,13 +42,14 @@ const Hero = () => {
               playsInline
               preload="metadata"
               poster={item.poster}
+           
             >
-              <source src={item.banner} type="video/mp4" />
+              <source src={item.banner} type="video/mp4"  />
             </video>
           ) : (
             <img
               src={item.banner}
-              alt="Hero Banner"
+              alt={item.image_alt || "Hero Banner"}
               className="w-full h-full object-cover"
               loading="eager"
             />

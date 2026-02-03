@@ -1,4 +1,5 @@
 export interface DigitalImage {
+  alt: string;
   url: string;
   order: number;
 }
