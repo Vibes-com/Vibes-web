@@ -107,7 +107,56 @@ const metaMap: Record<string, Metadata> = {
     authors: [{ name: "Vibes Communications" }],
     creator: "Vibes Communications",
     publisher: "Vibes Communications",
+  },
+  "company-logo-design": {
+    title: "Logo Design Services | Brand Identity by Vibes Communications",
+    description:
+      "Explore impactful logo designs by Vibes Communications that build strong brand identities through strategy-led design and visual storytelling.",
+
+    alternates: {
+      canonical: "https://www.vibescom.in/branding-agency/company-logo-design",
+    },
+
+    openGraph: {
+      title: "Logo Design Services | Brand Identity by Vibes Communications",
+      description:
+        "Explore impactful logo designs by Vibes Communications that build strong brand identities through strategy-led design and visual storytelling.",
+      url: "https://www.vibescom.in/branding-agency/company-logo-design",
+      siteName: "Vibes Communications Pvt Ltd",
+      images: [
+        {
+          url: "https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png",
+          width: 1200,
+          height: 630,
+        },
+      ],
+      locale: "en_US",
+      type: "website",
+    },
+
+    twitter: {
+      card: "summary",
+      site: "@vibescom",
+      title: "Logo Design Services | Brand Identity by Vibes Communications",
+      description:
+        "Explore impactful logo designs by Vibes Communications that build strong brand identities through strategy-led design and visual storytelling.",
+      images: ["https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png"],
+    },
+
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+      },
+    },
+
+    authors: [{ name: "Vibes Communications" }],
+    creator: "Vibes Communications",
+    publisher: "Vibes Communications",
   }
+
 };
 
 export async function generateMetadata(
@@ -140,8 +189,8 @@ const page = async ({ params }: PageProps) => {
   if (slug === "brand-communication-and-strategy") {
     return <BrandCommunicationStrategy />;
   }
- if (slug === "company-logo-design") {
-    return <CompanyLogoDesign/>;
+  if (slug === "company-logo-design") {
+    return <CompanyLogoDesign />;
   }
 
   return null;
