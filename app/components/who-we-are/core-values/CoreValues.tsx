@@ -7,22 +7,26 @@ import SlideLeft from "../../animations/SlideLeft";
 
 const coreValues = [
     {
-        img: "/about/shared-vision.png",
+        img: "/about/collective-growth-vision-vibes-communications.png",
         title: "Shared Vision",
+        alt:"collective-growth-vision-vibes-communications",
         desc: "Aligning goals to shape purposeful growth and tomorrow’s success.",
     },
     {
-        img: "/about/seamless-communication.png",
+        img: "/about/-seamless-brand-communication-vibes-communications.png",
+        alt:"seamless-brand-communication-vibes-communications",
         title: "Seamless Communication",
         desc: "Building clarity and trust for stronger collaboration in the future.",
     },
     {
-        img: "/about/innovation-together.png",
+        img: "/about/innovation-through-collaboration-vibes-communications.png",
+        alt:"innovation-through-collaboration-vibes-communications",
         title: "Innovation Together",
         desc: "Co-creating ideas today that fuel opportunities for tomorrow.",
     },
     {
-        img: "/about/sustainable-impact.png",
+        img: "/about/sustainable-business-impact-vibes-communications.png",
+        alt:"sustainable-business-impact-vibes-communications",
         title: "Sustainable Impact",
         desc: "Delivering lasting solutions that inspire progress for generations ahead.",
     },
@@ -69,7 +73,7 @@ const CoreValues = () => {
                                 <div className="flex items-center justify-center h-[60px] w-[60] rounded-sm bg-[#F4BE00]">
                                     <img
                                         src={withImageBase(item.img)}
-                                        alt={item.title} 
+                                          alt={item.alt}
                                         width={35}
                                         height={35}
                                         className="object-contain"

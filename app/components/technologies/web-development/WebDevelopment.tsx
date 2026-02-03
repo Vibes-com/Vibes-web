@@ -101,7 +101,7 @@ const WebDevelopment = () => {
   return (
     <div>
       <HeroSection
-        bgImage="/web-development/web-development-banner.jpg"
+        bgImage="/web-development/web-design-development-technology-banner-vibes-communications.jpg"
         title={
           <>
             Web <br />
@@ -116,9 +116,9 @@ const WebDevelopment = () => {
         highlightText="Speed and Scalability"
         description="As a forward-thinking Website development company, Vibes delivers secure, bespoke web platforms built for performance, scalability, and long-term reliability through refined development and adaptive design.
 ."
-        mainImage="/web-development/webdevelopment-about-img.png"
+        mainImage="/web-development/web-application-development-vibes-communications.png"
         bgImage="/web-development/wd-services-bg.jpg"
-        alt="Web Development"
+        alt="web-application-development-vibes-communications"
         features={[
           {
             icon: "/web-development/coded-secure.png",

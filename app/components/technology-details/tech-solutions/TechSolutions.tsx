@@ -9,10 +9,11 @@ import SlideUp from "../../animations/SlideUp";
 const services = [
     {
         title: "Web Development",
+        alt:"Software-development-Vibes-Communications",
         description:
             "Vibes builds secure, personalised, and fully custom-coded websites designed to adapt as the brands grow. From sleek interfaces to powerful back-end systems, every web experience is crafted for performance, scalability, and seamless user journeys.",
 
-        bgImage: "/technology-details/web-devlopment-bg.png",
+        bgImage: "/technology-details/Software-development-Vibes-Communications.png",
         hoverBgImage: "/technology-details/tech-cards-bg.png",
 
         tags: [
@@ -29,10 +30,11 @@ const services = [
 
     {
         title: "Mobile App Development",
+        alt:"Envision-Wind-Energy-Website-UI-Vibes-communications",
         description:
             "Vibes creates high-performing Android and iOS apps built to solve real problems and deliver measurable value. With secure architecture, custom code, and adaptive design, every app is engineered for seamless usability and long-term scalability.",
 
-        bgImage: "/technology-details/mobile-app-development-bg.jpg",
+        bgImage: "/technology-details/Envision-Wind-Energy-Website-UI-Vibes-communications.jpg",
         hoverBgImage: "/technology-details/tech-cards-bg.png",
 
         tags: ["Android App Development", "iOS App Development"],
@@ -42,10 +44,11 @@ const services = [
 
     {
         title: "E-commerce Development",
+        alt:"Event-marketing-agency-website-design-UI-Vibes-Communications",
         description:
             "Vibes creates secure, custom eCommerce platforms that convert better and scale faster. With audience-focused design, smart tech like Next.js, React, Shopify, and WooCommerce, building seamless B2B and B2C experiences that drive measurable growth.",
 
-        bgImage: "/technology-details/ecommerce-development-bg.jpg",
+        bgImage: "/technology-details/Event-marketing-agency-website-design-UI-Vibes-Communications.jpg",
         hoverBgImage: "/technology-details/tech-cards-bg.png",
 
         tags: [
@@ -61,10 +64,11 @@ const services = [
 
     {
         title: "Project Monitoring Information Systems",
+        alt:"project-monitoring-system-dashboard-web-application-Vibes-communications",
         description:
             "PMIS streamlines project tracking with smart dashboards for tasks, approvals, finances, and completion. It enhances workflows through portal upgrades, intuitive user flow, mobile app integration, and seamless CRM development and integration.",
 
-        bgImage: "/technology-details/project-monitoring-system-bg.png",
+        bgImage: "/technology-details/project-monitoring-system-dashboard-web-application-Vibes-communications.png",
         hoverBgImage: "/technology-details/tech-cards-bg.png",
 
         tags: [
@@ -116,7 +120,7 @@ const TechSolutions = () => {
                                 {/* -------- DEFAULT BACKGROUND IMAGE -------- */}
                                 <img
                                     src={withImageBase(service.bgImage)}
-                                    alt={service.title}
+                                    alt={service.alt}
 
                                     className="absolute inset-0 h-full object-cover opacity-20
               transition-opacity duration-500 lg:group-hover:opacity-0"

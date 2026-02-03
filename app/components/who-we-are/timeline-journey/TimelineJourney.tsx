@@ -16,82 +16,98 @@ import "swiper/css/pagination";
 const data = [
     {
         year: "2025",
-        img: "/about/2025.png",
+        img: "/about/sustainable-business-journey-vibes-communications.png",
+        alt:"sustainable-business-journey-vibes-communications",
         text: "Today, we stand proud not just for achieving the targets but for fulfilling them in complete alignment with Vibe’s vision.",
     },
     {
         year: "2024",
-        img: "/about/2024.png",
+        img: "/about/marketing-goal-achievement-vibes-communications.png",
+        alt:"marketing-goal-achievement-vibes-communications",
         text: "We sharpened our focus on targets, aligning our actions with long-term goals.",
     },
     {
         year: "2023",
-        img: "/about/2023.png",
+        img: "/about/-brand-development-performance-vibes-communications.png",
+        alt:"-brand-development-performance-vibes-communications",
         text: "This year marked a fresh beginning as we officially launched our branding division, adding it as a new pillar of strength.",
     },
     {
         year: "2022",
-        img: "/about/2022.png",
+        img: "/about/digital-transformation-team-growth-vibes-communcations.png",
+        alt:"digital-transformation-team-growth-vibes-communcations",
         text: "Our journey evolved: digital and tech began charting their individual paths, and EY became one more valued partner.",
     },
     {
         year: "2021",
-        img: "/about/2021.png",
+        img: "/about/remote-working-covid-safety-vibes-communications.png",
+        alt:"remote-working-covid-safety-vibes-communications",
         text: " The world slowed down with Covid, but our spirit, resilience, and motivation stood stronger than ever.",
     },
     {
         year: "2020",
-        img: "/about/2020.png",
+        img: "/about/organizational-growth-strategy-vibes-communications.png",
+        alt:"organizational-growth-strategy-vibes-communications",
         text: " Growth followed in naturally, as our digital and tech teams flourished into a 30-member family.",
     },
     {
         year: "2019",
-        img: "/about/2019.png",
+        img: "/about/brand-growth-strategy-vibes-communications.png",
+        alt:"brand-growth-strategy-vibes-communications",
         text: " Widex India joined hands with us in a larger alignment, strengthening our role as a trusted partner.",
     },
     {
         year: "2018",
-        img: "/about/2018.png",
+        img: "/about/corporate-marketing-strategy-vibes-communications.png",
+        alt:"corporate-marketing-strategy-vibes-communications",
         text: " Our journey expanded as more brands believed in our digital capabilities and joined us.",
     },
     {
         year: "2017",
-        img: "/about/2017.png",
+        img: "/about/Operation -Clean -Money- corporate- awareness -visual-vibes communications.png",
+        alt:"Operation -Clean -Money- corporate- awareness -visual-vibes communications",
         text: " Trust deepened as we handled more technical projects, including the nationally significant Operation Clean Money during demonetization, inaugurated by Shri Arun Jaitley, a milestone we hold with pride.",
     },
     {
         year: "2016",
-        img: "/about/2016.png",
+        img: "/about/Business -growth- throug -digital -services-vibes-communications.png",
+        alt:"Business -growth- throug -digital -services-vibes-communications",
         text: "Brought our first long-term PwC project, MOHUA, cementing a relationship built on trust.",
     },
     {
         year: "2015",
-        img: "/about/2015.png",
+        img: "/about/Digital -solutions for- business- growth-vibes- communications.png",
+        alt:"Digital -solutions for- business- growth-vibes- communications",
         text: "The fusion of technology and marketing was no longer just an idea, it became the heart of our story.",
     },
     {
         year: "2014",
-        img: "/about/2014.png",
+        img: "/about/Team -working -on -brand- strategy-vibes communications.png",
+        alt:"Team -working -on -brand- strategy-vibes communications",
         text: " We began exploring a rebranding journey, realizing that growth often comes with reinvention.",
     },
     {
         year: "2013",
-        img: "/about/2013.png",
+        img: "/about/Digital -marketing agency- services-vibes-communications.png",
+        alt:"Digital -marketing agency- services-vibes-communications",
         text: " With a team of 4-5 people, we stepped into Digital Marketing Services.",
     },
     {
         year: "2012",
-        img: "/about/2012.png",
+        img: "/about/Business -growth through -digital solutions-vibes-communications.png",
+        alt:"Business -growth through -digital solutions-vibes-communications",
         text: " A breakthrough year for us when PwC entrusted us with our first tech project.",
     },
     {
         year: "2011",
-        img: "/about/2011.png",
+        img: "/about/Business -vision for- digital- growth-vibes-communications.png",
+        alt:"Business -vision for- digital- growth-vibes-communications",
         text: "Our very first dream took shape through Project RX Care.",
     },
     {
         year: "2010",
-        img: "/about/2010.png",
+        img: "/about/Business- vision -for- digital growth-vibes communications.png",
+        alt:"Business- vision -for- digital growth-vibes communications",
         text: "Born with a vision, determination, and the courage to create impact.",
     },
 ];
@@ -178,7 +194,7 @@ export default function TimelineVertical() {
                                                         src={withImageBase(item.img)}
                                                         width={300}
                                                         height={300}
-                                                        alt="Vibes Journey 2025"
+                                                          alt={item.alt}
                                                         className="w-full h-[244px] object-contain rounded-lg"
                                                     />
                                                 </div>
@@ -196,8 +212,8 @@ export default function TimelineVertical() {
                                         <div className="hidden md:block absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2">
                                             <div className="timeline-icon bg-white">
                                                 <img
-                                                    src={withImageBase("/about/journey.png")}
-                                                    alt="Vibes Journey 2024"
+                                                    src={withImageBase("/about/strategic-growth-roadmap-vibes-communications.png")}
+                                                    alt="strategic-growth-roadmap-vibes-communications"
                                                     width={40}
                                                     height={40}
                                                 />
@@ -213,7 +229,7 @@ export default function TimelineVertical() {
                                                         src={withImageBase(item.img)}
                                                         width={300}
                                                         height={300}
-                                                        alt="Vibes Journey 2022"
+                                                        alt={item.alt}
                                                         className="w-full h-[244px] object-contain rounded-lg"
                                                     />
                                                 </div>

@@ -13,7 +13,7 @@ const services = [
         description:
             " End-to-end campaign management including influencer collaborations and event marketing to amplify reach, drive engagement, and create measurable brand impact.",
         bgImage: "/digital-m-details/dm-bg-1.jpeg",
-        icon: "/digital-m-details/campaign.png",
+        icon: "/digital-m-details/digital-campaign-vibes-communications.png",
         tags: [
             "Influencer Marketing",
             "Event Marketing",
@@ -36,7 +36,7 @@ const services = [
             " Strategic social media management for B2B and B2C brands, led by a results-oriented digital marketing company with expertise in content planning, creation, and platform-led growth across LinkedIn and consumer channels.",
         bgImage: "/digital-m-details/dm-bg-3.jpeg",
         hoverBgImage: "/technology-details/tech-cards-bg.png",
-        icon: "/digital-m-details/social-media.png",
+        icon: "/digital-m-details/social-media-optimization-vibes-communications.png",
         tags: ["Content Creation & Planning", "B2B: LinkedIn Management", "B2C: LinkedIn Management"],
         url: "/digital-marketing-services/social-media-marketing-agency",
     },
@@ -85,8 +85,8 @@ const DigitalMarketingSolutions = () => {
 
                     <div className="relative w-full h-[582px] hidden md:block overflow-hidden shadow-xl ">
                         <img
-                           src={withImageBase("/digital-m-details/digital-middle-img.png")}
-                            alt="Technology Showcase"
+                           src={withImageBase("/digital-m-details/digital-marketing-company- for-realstate-dubai-vibes-communications.png")}
+                            alt="digital-marketing-company- for-realstate-dubai-vibes-communications"
                             className="object-fill h-full"
                             
                             

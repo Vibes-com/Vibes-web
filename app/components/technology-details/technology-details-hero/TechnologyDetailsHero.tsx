@@ -19,7 +19,7 @@ const TechnologyDetailsHero: React.FC = () => {
                             <span className="hero-highlight relative z-9 w-fit hero-heading font-poppins font-semibold text-[33px] sm:text-[65px] md:text-[65px] lg:text-[65px] xl:text-[65px] 2xl:text-[65px] leading-[116%] tracking-normal capitalize text-[#F4BE00]">Digital Solutions</span>
                         </h1>
 
-                        <p className="mt-10 font-poppins font-semibold text-[14px] sm:text-[18px] md:text-[18px] lg:text-[18px] xl:text-[18px] 2xl:text-[18px] leading-[128%] tracking-normal capitalize text-[#FFFFFF]">
+                        <p className="mt-10 font-poppins font-semibold text-[14px] sm:text-[18px] md:text-[18px] lg:text-[18px] xl:text-[18px] 2xl:text-[18px] leading-[128%] tracking-normal capitalize text-[#FFFFFF] max-w-[500px]">
                           Vibes builds smart, responsive digital systems and apps through advanced software-technology services designed for scalability and performance
                         </p>
                         <div className=" mt-4">
@@ -34,24 +34,24 @@ const TechnologyDetailsHero: React.FC = () => {
                             <div className="flex items-center -space-x-5 me-auto">
                                 <div className="w-[35px] h-[35px] lg:w-[55px] lg:h-[55px] rounded-full border border-white/70 flex items-center justify-center shadow-[0px_4px_4px_0px_#00000040]">
                                     <img
-                                         src={withImageBase("/technology-details/widex-logo.png")}
-                                        alt="widex logo"
+                                         src={withImageBase("/technology-details/Logo-creation-for-widex-vibes-communications.png")}
+                                        alt="Logo-creation-for-widex-vibes-communications"
                                         width={55}
                                         height={55}
                                     />
                                 </div>
                                 <div className=" w-[35px] h-[35px] lg:w-[55px] lg:h-[55px] rounded-full border border-white/70 flex items-center justify-center shadow-[0px_4px_4px_0px_#00000040]">
                                     <img
-                                        src={withImageBase("/technology-details/pwc-logo.png")}
-                                        alt="pwc logo"
+                                        src={withImageBase("/technology-details/pwc-logo-vibes-communications.png")}
+                                        alt="pwc-logo-vibes-communications"
                                         width={55}
                                         height={55}
                                     />
                                 </div>
                                 <div className="w-[35px] h-[35px] lg:w-[55px] lg:h-[55px] rounded-full border border-white/70 flex items-center justify-center shadow-[0px_4px_4px_0px_#00000040]">
                                     <img
-                                       src={withImageBase("/technology-details/lumenis-logo.png")}
-                                        alt="Lumines logo"
+                                       src={withImageBase("/technology-details/lumenis-logo-vibes-communications.png")}
+                                        alt="lumenis-logo-vibes-communications"
                                         width={55}
                                         height={55}
                                     />
@@ -59,8 +59,8 @@ const TechnologyDetailsHero: React.FC = () => {
 
                                 <div className="w-[35px] h-[35px] lg:w-[55px] lg:h-[55px] rounded-full border border-white/70 flex items-center justify-center shadow-[0px_4px_4px_0px_#00000040]">
                                     <img
-                                        src={withImageBase("/technology-details/mofiso-logo.png")}
-                                        alt="Mofiso logo"
+                                        src={withImageBase("/technology-details/mofiso-logo-vibes-communications.png")}
+                                        alt="mofiso-logo-vibes-communications"
                                         width={55}
                                         height={55}
                                     />

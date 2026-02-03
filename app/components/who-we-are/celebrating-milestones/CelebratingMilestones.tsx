@@ -59,21 +59,25 @@ export default function VerticalSlickMilestones() {
     const slides = [
         {
             title: "From Ideas to Action",
+            alt:"digital-brand-communication-vibes-communications",
             desc: " How Vibes Creates Eco-Smart Branding & Marketing.",
-            img: "/about/From-Ideas-Eco-Smart.png"
+            img: "/about/digital-brand-communication-vibes-communications.png"
         },
         {
             title: "On to the Path of Sustainability",
+            alt:"Together-Tomorrow",
             desc: " Forward-thinking digital solutions for a shared and innovative vision.",
             img: "/about/Together-Tomorrow.png"
         },
         {
             title: "From Vision to Impact",
+            alt:"vision-led-business-growth-vibes-communications",
             desc: " How Vibes Powers Brands with Creativity, Digital Strategy & Tech Innovation.",
-            img: "/about/Vision-Impact.png"
+            img: "/about/vision-led-business-growth-vibes-communications.png"
         },
       {
             title: "On to the Path of Sustainability",
+            alt:"Together-Tomorrow",
             desc: " Forward-thinking digital solutions for a shared and innovative vision.",
             img: "/about/Together-Tomorrow.png"
         },
@@ -117,7 +121,7 @@ export default function VerticalSlickMilestones() {
                                             className="relative bg-white p-4 rounded-xl shadow-md flex items-center gap-6 h-[170px] transition-all duration-500 milestone-card border-l-[8px] border-l-[#F4BE00]"
                                         >
                                             {/* Image */}
-                                            <img src={withImageBase(item.img)} className=" w-20 h-20 lg:w-25 lg:h-25 object-contain" />
+                                            <img src={withImageBase(item.img)} alt={item.alt} className=" w-20 h-20 lg:w-25 lg:h-25 object-contain" />
 
                                             {/* Text */}
                                             <div>
@@ -128,8 +132,7 @@ export default function VerticalSlickMilestones() {
                                             </div>
                                             <div className="quote-container absolute top-6 right-6">
                                                 <img
-                                                   src={withImageBase("/about/quote-img.png")}
-                                                    alt="Celebrating Milestone"  
+                                                   src={withImageBase("/about/quote-img.png")} 
                                                     width={23}
                                                     height={23}
                                                 />

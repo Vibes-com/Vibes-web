@@ -55,8 +55,8 @@ const BrandingCasestudies = () => {
                     <div className="overflow-hidden">
                          <SlideLeft delay={0.5}>
                         <img
-                             src={withImageBase("/branding-details/branding-case-img-1.png")}
-                            alt="Luxury Brand Storytelling"
+                             src={withImageBase("/branding-details/branding agency - vibes communications.png")}
+                            alt="branding agency - vibes communications"
                             width={720}
                             height={674}
                             className="w-full transition-transform duration-700 ease-in-out hover:scale-110"
@@ -109,8 +109,8 @@ const BrandingCasestudies = () => {
                     <div className="order-1 lg:order-2 overflow-hidden">
                           <SlideRight delay={0.5}>
                         <img
-                             src={withImageBase("/branding-details/branding-case-img-2.png")}
-                            alt="Building a New Age Brand"
+                             src={withImageBase("/branding-details/Branding Collaterals marketing services-vibes communications.png")}
+                            alt="Branding Collaterals marketing services-vibes communications"
                             width={720}
                             height={674}
                             className="w-full transition-transform duration-700 ease-in-out hover:scale-110"
@@ -125,8 +125,8 @@ const BrandingCasestudies = () => {
                     <div className="overflow-hidden">
                         <SlideLeft delay={0.5}>
                         <img
-                            src={withImageBase("/branding-details/branding-case-img-3.png")}
-                            alt="Integrated Brand Identity"
+                            src={withImageBase("/branding-details/360 Degree Branding - vibes communications.png")}
+                            alt="360 Degree Branding - vibes communications"
                             width={720}
                             height={674}
                             className="w-full transition-transform duration-700 ease-in-out hover:scale-110"
@@ -159,8 +159,8 @@ const BrandingCasestudies = () => {
                     <div className="overflow-hidden">
                          <SlideUp delay={0.5}>
                         <img
-                            src={withImageBase("/branding-details/branding-case-img-4.png")}
-                            alt="Brand Campaign Execution"
+                            src={withImageBase("/branding-details/office branding design - vibes communications.png")}
+                            alt="office branding design - vibes communications"
                             width={1440}
                             height={700}
                             className="w-full transition-transform duration-700 ease-in-out hover:scale-110"
@@ -213,20 +213,20 @@ const BrandingCasestudies = () => {
                     >
                         {[
                             {
-                                alt:"MaximAlert",
-                                imgurl:"/branding-details/branding-bottom-img-1.png"},
+                                alt:"professional Visiting  card design-Vibes Communications",
+                                imgurl:"/branding-details/professional Visiting  card design-Vibes Communications.png"},
                             {
-                                alt:"Buzaria",
-                                imgurl:"/branding-details/branding-bottom-img-2.png"},
+                                alt:"social media marketing for e commerce - vibes communications",
+                                imgurl:"/branding-details/social media marketing for e commerce - vibes communications.png"},
                             {
-                                alt:"Interio Heaven",
-                                imgurl:"/branding-details/branding-bottom-img-3.png"},
+                                alt:"End-to-End Digital Solutions - vibes communications",
+                                imgurl:"/branding-details/End-to-End Digital Solutions - vibes communications.png"},
                             {
-                                alt:"Tomorrow's India",
-                                imgurl:"/branding-details/branding-bottom-img-4.png"},
+                                alt:"Brand Communication- vibes communications",
+                                imgurl:"/branding-details/Brand Communication- vibes communications.png"},
                             {
-                                alt:"MaximAlert",
-                                imgurl:"/branding-details/branding-bottom-img-1.png"},
+                                alt:"professional Visiting  card design-Vibes Communications",
+                                imgurl:"/branding-details/professional Visiting  card design-Vibes Communications.png"},
                         ].map((src, index) => (
                             <SwiperSlide key={index}>
                                 <div className="overflow-hidden">

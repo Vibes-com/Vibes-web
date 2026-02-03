@@ -35,16 +35,16 @@ const BrandingDetailsHero: React.FC = () => {
                             <div className="flex items-center -space-x-5 me-auto">
                                 <div className="w-[35px] h-[35px] lg:w-[55px] lg:h-[55px] rounded-full border border-white/70 flex items-center justify-center shadow-[0px_4px_4px_0px_#00000040]">
                                     <img
-                                         src={withImageBase("/branding-details/brand-client-1.png")}
-                                        alt="Tomorrow's India logo"
+                                         src={withImageBase("/branding-details/logo creation company in Delhi NCR -vibes communications.png")}
+                                        alt="logo creation company in Delhi NCR -vibes communications"
                                         width={55}
                                         height={55}
                                     />
                                 </div>
                                 <div className="w-[35px] h-[35px] lg:w-[55px] lg:h-[55px] rounded-full border border-white/70 flex items-center justify-center shadow-[0px_4px_4px_0px_#00000040]">
                                     <img
-                                        src={withImageBase("/branding-details/brand-client-2.png")}
-                                        alt="Ligo Group logo"
+                                        src={withImageBase("/branding-details/logo design marketing agency-vibes-communications.png")}
+                                        alt="logo design marketing agency-vibes-communications"
                                         width={55}
                                         height={55}
                                         
@@ -52,8 +52,8 @@ const BrandingDetailsHero: React.FC = () => {
                                 </div>
                                 <div className="w-[35px] h-[35px] lg:w-[55px] lg:h-[55px] rounded-full border border-white/70 flex items-center justify-center shadow-[0px_4px_4px_0px_#00000040]">
                                     <img
-                                        src={withImageBase("/branding-details/brand-client-3.png")}
-                                        alt="Retas logo"
+                                        src={withImageBase("/branding-details/logo desinging company-vibes communicattions.png")}
+                                        alt="logo desinging company-vibes communicattions"
                                         width={55}
                                         height={55}
                                         
@@ -62,8 +62,8 @@ const BrandingDetailsHero: React.FC = () => {
 
                                 <div className="w-[35px] h-[35px] lg:w-[55px] lg:h-[55px] rounded-full border border-white/70 flex items-center justify-center shadow-[0px_4px_4px_0px_#00000040]">
                                     <img
-                                      src={withImageBase("/branding-details/brand-client-4.png")}
-                                        alt="EY logo"
+                                      src={withImageBase("/branding-details/Logo design agency-Vibes  Communications.png")}
+                                        alt="Logo design agency-Vibes  Communications"
                                         width={55}
                                         height={55}
                                         
