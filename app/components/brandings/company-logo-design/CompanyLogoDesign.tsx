@@ -93,7 +93,7 @@ const CompanyLogoDesign = () => {
         features={[
           {
             icon: "/branding-details/Instant-brand-recognition.png",
-            title: <>Instant brand <br />recognition</>,
+            title: <>Instant brand &nbsp; &nbsp;<br />recognition</>,
             subtitle: "",
             alt: "Instant-brand-recognition"
           },

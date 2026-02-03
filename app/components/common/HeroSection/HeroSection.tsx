@@ -28,7 +28,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 }) => {
   return (
     <section
-      className={`relative flex items-center ${height} bg-cover bg-left lg:bg-right bg-no-repeat service-bg`}
+      className={`relative flex items-center ${height} bg-cover bg-left lg:bg-left xl:bg-right bg-no-repeat service-bg`}
       style={{
         backgroundImage: `url(${withImageBase(bgImage)})`,
       }}
@@ -41,7 +41,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
       <div className="relative z-10 container mx-auto max-w-screen-xl px-4 md:px-8">
         <div className="grid grid-cols-12 items-center">
           {/* LEFT */}
-          <div className="col-span-12 md:col-span-5">
+          <div className="col-span-12 md:col-span-12 lg:col-span-12 xl:col-span-5">
             <h1 className="font-poppins font-normal hero-heading pt-15 text-[32px] sm:text-[60px] md:text-[60px] lg:text-[60px] xl:text-[60px] 2xl:text-[60px] leading-[116%] text-white">
               {title}
             </h1>

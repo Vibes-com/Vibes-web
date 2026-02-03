@@ -40,9 +40,18 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
   autoplayDelay = 2500,
   slidesPerView = 2,
   breakpoints = {
-    0: { slidesPerView: 1},
-    640: { slidesPerView: 1 },
-    1024: { slidesPerView: 2.5 },
+   0: {
+    slidesPerView: 1,
+  },
+  640: {
+    slidesPerView: 1,
+  },
+  1024: {
+    slidesPerView: 2,   
+  },
+  1280: {
+    slidesPerView: 2.5, 
+  },
   },
 }) => {
   return (

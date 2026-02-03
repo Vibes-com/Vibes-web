@@ -81,7 +81,12 @@ export default function BuiltWaySlider({
           speed={6000}
           spaceBetween={32}
           breakpoints={{
-            768: { slidesPerView: 3 },
+            768: {
+              slidesPerView: 1, 
+            },
+            1024: {
+              slidesPerView: 3,
+            },
           }}
           className="pb-14"
         >
@@ -97,7 +102,7 @@ export default function BuiltWaySlider({
                 "
               >
                 {/* ICON */}
-                <div className="absolute -top-3 right-[-4px] w-20 h-20 rounded-full flex items-center justify-center bg-[#466E59] group-hover:bg-[#F4BE00] border-[7px] border-[#EEF4EE]">
+                <div className="absolute -top-6 right-[-4px] w-20 h-20 rounded-full flex items-center justify-center bg-[#466E59] group-hover:bg-[#F4BE00] border-[7px] border-[#EEF4EE]">
                   <img
                      src={withImageBase(item.icon)}
                     alt={item.title}
