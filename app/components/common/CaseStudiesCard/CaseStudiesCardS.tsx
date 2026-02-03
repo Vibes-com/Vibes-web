@@ -74,7 +74,7 @@ const cardsc = data?.data.slice(0,5)
             </div>
 
             {/* View More Link */}
-            <Link href={`/case-studies/${item.slug}`}>
+            <Link href={`/case-studies/${item?.title?.toLowerCase()?.replace(/\s+/g, '-')}/${item?.slug?.toLowerCase()}`}>
               <Button3 className="text-[#204667] cursor-pointer !p-1 flex items-center gap-2 hover:text-[#F4BE00]">
                 <span>{item.buttonText || "View More"}</span>
                 <ArrowUpIcon className="rotate-45" />
