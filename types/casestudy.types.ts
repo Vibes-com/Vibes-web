@@ -12,6 +12,7 @@ export interface BaseCaseStudy {
 
 /* ------------------ LISTING (GRID / SLIDER) ------------------ */
 export interface CaseStudy extends BaseCaseStudy {
+  clientName: any;
   banner_image_alt: string | undefined;
   left_side_image_alt: string | undefined;
   short_desc?: string;
