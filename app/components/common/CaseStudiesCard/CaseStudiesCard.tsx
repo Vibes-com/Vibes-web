@@ -8,6 +8,7 @@ import { withImageBase } from "@/app/utils/image";
 /* ---------------- TYPES ---------------- */
 
 export interface SingleCaseStudyCard {
+  altTag: string;
   clientName: any;
   id: string;
   img: string;
@@ -35,6 +36,7 @@ export default function CaseStudiesCard() {
       id: item.id,
       img: item.thumbnail,
       title: item.client_name,
+      altTag: item.left_side_image_alt || '',
       clientName: item?.client_name,
       slug: item.slug || item.client_slug,
       tags: item.tags ? item.tags.split(",").map((t) => t.trim()) : [],
@@ -52,7 +54,7 @@ export default function CaseStudiesCard() {
           <div className="case-study-card-common border border-gray-400 w-full rounded-xl overflow-hidden group">
             <img
               src={withImageBase(item.img)}
-              alt={(item?.left_side_image_alt || '').length > 0 ? item?.left_side_image_alt : "case_study_image"}
+              alt={(item?.altTag || '').length > 0 ? item?.altTag : "case_study_image"}
               width={1500}
               height={1000}
 

@@ -44,7 +44,7 @@ console.log("single case study data", data);
       <CaseStudyDetailsAbout
         title="The Client"
         imageSrc={caseStudy.left_side_page_image}
-        imageAlt={caseStudy.client_name}
+        imageAlt={caseStudy.left_side_image_alt || "Client Image"}
         points={htmlToList(caseStudy.the_client)}
       />
 

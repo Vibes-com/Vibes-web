@@ -34,7 +34,7 @@ export default function FooterRightSection() {
                 <p className=" text-[#7C7C7C]  font-normal text-[12px] leading-[25px] sm:leading-[25px] md:leading-[130%] lg:leading-[130%] xl:leading-[130%] 2xl:leading-[130%] tracking-[0] mb-4">
                     Vibes Communications integrates technology, branding, and digital marketing to transform ideas into impactful digital experiences building strong brands through smart strategy, creative design, and data-driven storytelling.
                 </p>
-                <div className="flex items-center gap-5 mt-2">
+                <div className="flex items-center gap-[10px] mt-2">
                     <Link target="_blank" href="https://www.facebook.com/vibescomm" className="hover:text-[#E3A324] transition bg-[#585858] rounded-full h-[25px] w-[25px] flex items-center justify-center"><Facebook size={15} strokeWidth={1.6} /></Link>
                     <Link target="_blank" href="https://www.instagram.com/vibescom/" className="hover:text-[#E3A324] transition bg-[#585858] rounded-full h-[25px] w-[25px] flex items-center justify-center"><Instagram size={15} strokeWidth={1.6} /></Link>
                     <Link target="_blank" href="https://x.com/Vibescom" className="hover:text-[#E3A324] transition bg-[#585858] rounded-full h-[25px] w-[25px] flex items-center justify-center"><svg viewBox="0 0 24 24"width="11" height="11"fill="currentColor"> <path d="M18.9 2H22l-7.1 8.1L23 22h-6.5l-5.1-6.2L5.7 22H2.6l7.6-8.7L1 2h6.7l4.6 5.6L18.9 2z" /></svg></Link>

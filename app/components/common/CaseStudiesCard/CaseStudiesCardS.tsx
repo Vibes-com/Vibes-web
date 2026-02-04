@@ -8,6 +8,7 @@ import { withImageBase } from "@/app/utils/image";
 /* ---------------- TYPES ---------------- */
 
 export interface SingleCaseStudyCard {
+  altTag: string | undefined;
   id: string;
   img: string;
   title: string;
@@ -24,6 +25,7 @@ interface CaseStudiesCardProps {
 
 export default function CaseStudiesCardS() {
 const { data, isLoading, isError } = useGetAllCaseStudiesQuery();
+// console.log("Loading case :", data);
 console.log("Case Studies Data:", data);
 const cardsc = data?.data.slice(0,5)
   if (isLoading) return <p className="text-center py-10">Loading...</p>;
@@ -32,6 +34,7 @@ const cardsc = data?.data.slice(0,5)
     cardsc?.map((item) => ({
       id: item.id,
       img: item.thumbnail,
+      altTag: item.left_side_image_alt,
       title: item.client_name,
       slug: item.slug || item.client_slug,
       tags: item.tags ? item.tags.split(",").map((t) => t.trim()) : [],
@@ -48,7 +51,7 @@ const cardsc = data?.data.slice(0,5)
           <div className="case-study-card-common border border-gray-400 w-full rounded-xl overflow-hidden group">
                     <img
                      src={withImageBase(item.img)}
-                      alt={item?.slug}
+                      alt={item?.altTag }
                       width={1500}
                       height={1000}
                       

@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={poppins.className}>
       <head>
-        
+       <meta name="google-site-verification" content="E65bCmnTCJEnFGWiDEE8Q_LfRpo9WaGemXaWpVW_01M" />
         {/* Google Analytics (GA4) */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-EN2VK2PXCN"
