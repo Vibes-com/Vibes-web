@@ -26,7 +26,7 @@ export default function Gallery() {
     <div>
       {/* HERO */}
       <HeroSection
-        backgroundImage="/culture/culture-banner.jpg"
+        backgroundImage="/culture/Vibes-communication-festive-celebrations.jpg"
         mobileBackgroundImage="/web-development/web-development-mobile.jpg"
         title={
           <h1 className="font-poppins font-normal hero-heading font-poppins  pt-15 text-[32px] sm:text-[60px] md:text-[60px] lg:text-[60px] xl:text-[60px] 2xl:text-[60px] leading-[116%] capitalize text-white">

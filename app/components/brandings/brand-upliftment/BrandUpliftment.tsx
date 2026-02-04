@@ -26,32 +26,32 @@ const textcontent: blogContent = {
 
 const images = [
   { 
-    alt:"Ligo",
-    src: "/branding-details/brand-upliftment-showcase-img-1.jpg" },
+    alt:"performance marketing agency-vibes coummications",
+    src: "/branding-details/performance marketing agency-vibes coummications.jpg" },
   { 
-    alt:"Ligo",
-    src: "/branding-details/brand-upliftment-showcase-img-2.jpg" },
+    alt:"marketing services-vibes communications",
+    src: "/branding-details/marketing services-vibes communications.jpg" },
   { 
-    alt:"Mofiso",
-    src: "/branding-details/brand-upliftment-showcase-img-3.jpg" },
+    alt:"social  media marketing agency -Vibes communications",
+    src: "/branding-details/social  media marketing agency -Vibes communications.jpg" },
   { 
-    alt:"Ligo",
-    src: "/branding-details/brand-upliftment-showcase-img-4.jpg" },
+    alt:"social media services  company - vibes communications",
+    src: "/branding-details/social media services  company - vibes communications.jpg" },
   { 
-    alt:"Kaivee",
-    src: "/branding-details/brand-upliftment-showcase-img-5.jpg" },
+    alt:"Logo design for kaviee-vibes communications",
+    src: "/branding-details/Logo design for kaviee-vibes communications.jpg" },
   { 
-    alt:"Ligo",
-    src: "/branding-details/brand-upliftment-showcase-img-6.jpg" },
+    alt:"social media marketing  company in noida-vibes coummunications",
+    src: "/branding-details/social media marketing  company in noida-vibes coummunications.jpg" },
   { 
-    alt:"",
-    src: "/branding-details/brand-upliftment-showcase-img-7.jpg" },
+    alt:"website development- vibes communication",
+    src: "/branding-details/website development- vibes communication.jpg" },
   { 
-    alt:"Mofiso",
-    src: "/branding-details/brand-upliftment-showcase-img-8.jpg" },
+    alt:"Brand build marketing agency -vibes communications",
+    src: "/branding-details/Brand build marketing agency -vibes communications.jpg" },
   { 
-    alt:"Mofiso",
-    src: "/branding-details/brand-upliftment-showcase-img-9.jpg" },
+    alt:"Social Media Management agency - vibes communications",
+    src: "/branding-details/Social Media Management agency - vibes communications.jpg" },
 ];
 
 const BrandUpliftment = () => {
@@ -59,7 +59,7 @@ const BrandUpliftment = () => {
   return (
     <div>
       <HeroSection
-        bgImage="/branding-details/brand-upliftment-banner.jpg"
+        bgImage="/branding-details/digital-marketing-services-vibes-communications.jpg"
         title={
           <>
             Brand <br />

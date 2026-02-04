@@ -65,7 +65,7 @@ const AppDevelopment = () => {
   return (
     <div>
       <HeroSection
-        bgImage="/app-development/mobile-app-banner.jpg"
+        bgImage="/app-development/mobile-app-development-vibes-communications.jpg"
         title={
           <>
             Mobile App <br />
@@ -79,20 +79,20 @@ const AppDevelopment = () => {
         heading="Apps Built for"
         highlightText="Performance"
         description="As a reliable app development company, we build custom mobile applications that drive business growth across Android and iOS platforms."
-        mainImage="/app-development/app-dev-serivice.png"
+        mainImage="/app-development/app-development -serivice-vibes communications.png"
         bgImage="/web-development/wd-services-bg.jpg"
-        alt="Mobile App Development"
+        alt="app-development -serivice-vibes communications"
         features={[
           {
-            icon: "/app-development/mobile-development.png",
+            icon: "/app-development/mobile-development-services-vibes-communications.png",
             title: <>Android App Development</>,
-            alt: "Android App Development",
+            alt: "mobile-development-services-vibes-communications",
             subtitle: <>Robust Android applications built for performance, security, and seamless user experiences across devices</>,
           },
           {
-            icon: "/app-development/ios-development.png",
+            icon: "/app-development/ios-development-service-vibes commnications.png",
             title: <>iOS App Development</>,
-            alt: "iOS App Development",
+            alt: "ios-development-service-vibes commnications",
             subtitle: <>High-quality iOS apps designed for speed, stability, and compliance with Apple’s design and performance standards</>,
           },
 
@@ -114,7 +114,7 @@ const AppDevelopment = () => {
             id: "01",
             title: "Ideation & Strategy",
             desc: "Define the core app idea, unique value proposition (UVP), target audience, and feature roadmap.",
-            icon: "/app-development/idea.png",
+            icon: "/app-development/creative-ideas-innovation-vibes-communications.png",
           },
           {
             id: "02",
@@ -170,22 +170,22 @@ const AppDevelopment = () => {
           {
             title: "Strategy-Led Development",
             desc: " Mobile apps built with clear goals, purpose, and measurable outcomes.",
-            icon: "/app-development/development.png",
+            icon: "/app-development/talent-development-growth-vibes-communications.png",
           },
           {
             title: "Scalable Architecture",
             desc: " Robust app frameworks designed to grow with evolving business needs.",
-            icon: "/app-development/scalability.png",
+            icon: "/app-development/Scalable Architecture-development-vibes-communications.png",
           },
           {
             title: "End-to-End Ownership",
             desc: " Complete lifecycle management from idea to launch and beyond.",
-            icon: "/app-development/ownership.png",
+            icon: "/app-development/web-development-project-ownership-vibes-communications.png",
           },
           {
             title: "User-Centric Design",
             desc: " Intuitive experiences crafted for engagement, usability, and retention.",
-            icon: "/app-development/centric.png",
+            icon: "/app-development/customer-centric-approach-vibes-communications.png",
           },
         ]}
       />

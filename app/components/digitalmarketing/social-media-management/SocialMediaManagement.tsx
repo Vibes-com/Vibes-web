@@ -31,7 +31,7 @@ const SocialMediaManagement = () => {
   return (
     <div>
       <HeroSection
-        bgImage="/digital-m-details/social-media-banner.jpg"
+        bgImage="/digital-m-details/social-media-management-vibes-communications.jpg"
         title={
           <>
             Social Media <br />
@@ -45,9 +45,9 @@ const SocialMediaManagement = () => {
         heading="Strategic Social Media "
         highlightText="Services"
         description=" End-to-end social media marketing services focused on planning, storytelling, and performance crafted to align brand objectives with evolving audience behaviour."
-        mainImage="/digital-m-details/social-media-left-img.png"
+        mainImage="/digital-m-details/Social-media-management-vibes-communications.png"
         bgImage="/web-development/wd-services-bg.jpg"
-        alt="Social Media Management"
+        alt="Social-media-management-vibes-communications"
         features={[
           {
             icon: "/digital-m-details/copy-writing.png",

@@ -68,7 +68,7 @@ const EcommDevelopment = () => {
   return (
     <div>
       <HeroSection
-        bgImage="/ecommerce-development/ecom-banner.jpg"
+        bgImage="/ecommerce-development/ecommerce-store-development-vibes-communications.jpg"
         title={
           <>
             E-Commerce <br />
@@ -82,32 +82,32 @@ const EcommDevelopment = () => {
         heading=" Solutions Built for"
         highlightText="Online Growth"
         description="Comprehensive e-commerce website development services delivered by an experienced ecommerce development company, covering development, integrations, optimization, and scalability."
-        mainImage="/ecommerce-development/ecom-dev-services.png"
+        mainImage="/ecommerce-development/ecommerce-development-services-vibes-communications.png"
         bgImage="/web-development/wd-services-bg.jpg"
-        alt="E-Commerce Development"
+        alt="ecommerce-development-services-vibes-communications"
         features={[
           {
-            icon: "/ecommerce-development/ecommerce.png",
+            icon: "/ecommerce-development/Custom E-commerce services-vibes-communications.png",
             title: <>Custom E-commerce Development</>,
-            alt: "Custom E-commerce Development",
+            alt: "Custom E-commerce services-vibes-communications",
             subtitle: <>Tailored online stores built for performance, scalability, and seamless operations by a custom e commerce website development company.</>,
           },
           {
-            icon: "/ecommerce-development/platform.png",
+            icon: "/ecommerce-development/technology-platform-solutions-vibes-communications.png",
             title: <>Platform-Based Solutions</>,
-            alt: "Platform-Based Solutions",
+            alt: "technology-platform-solutions-vibes-communications",
             subtitle: <> Expert development from a trusted ecommerce website development agency, delivering solutions on Shopify, WooCommerce, and custom frameworks.</>,
           },
           {
-            icon: "/ecommerce-development/integration.png",
+            icon: "/ecommerce-development/system-integration-services-vibes-communications.png",
             title: <>Payment & System Integrations</>,
-            alt: "Payment & System Integrations",
+            alt: "system-integration-services-vibes-communications",
             subtitle: <> Secure payment gateways, shipping, CRM, and marketing tool integrations.</>,
           },
           {
-            icon: "/ecommerce-development/optimization.png",
+            icon: "/ecommerce-development/ecommerce-performance-optimization-vibes-communications.png",
             title: <>Optimization & Support</>,
-            alt: "Optimization & Support",
+            alt: "ecommerce-performance-optimization-vibes-communications",
             subtitle: <>Performance tuning, security updates, and ongoing enhancements for growth.</>,
           },
 
@@ -190,7 +190,7 @@ const EcommDevelopment = () => {
           {
             title: "Conversion-Focused Design",
             desc: "Built for intuitive navigation, seamless journeys, and higher sales conversions.",
-            icon: "/ecommerce-development/focused-design.png",
+            icon: "/ecommerce-development/ecommerce-strategy-focus -vibes-communications.png",
           },
           {
             title: "Scalable Architecture",
@@ -205,7 +205,7 @@ const EcommDevelopment = () => {
           {
             title: "Secure & Optimized Performance",
             desc: "Fast, reliable, and secure platforms that enhance user trust and experience.",
-            icon: "/ecommerce-development/security.png",
+            icon: "/ecommerce-development/secure-ecommerce-development-vibes-communications.png",
           },
         ]}
       />

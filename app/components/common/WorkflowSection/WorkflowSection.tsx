@@ -82,7 +82,7 @@ const WorkflowSection: React.FC<WorkflowSectionProps> = ({
               {/* ICON */}
               <div className="mb-6 mt-20">
                 <img
-                   src={withImageBase(step.icon)}
+                  src={withImageBase(step.icon)}
                   alt={step.title}
                   width={36}
                   height={36}

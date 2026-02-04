@@ -32,7 +32,7 @@ const CampaignManagement = () => {
   return (
     <div>
       <HeroSection
-        bgImage="/campaign-management/compaign-banner.jpg"
+        bgImage="/campaign-management/Campaign-management-system-vibes-communications.jpg"
         title={
           <>
             Campaign <br />
@@ -46,9 +46,9 @@ const CampaignManagement = () => {
         heading="Campaign Execution That "
         highlightText="Drives Engagement"
         description=" From audience discovery to on-ground activation, campaigns are designed, managed, and optimized to deliver visibility, relevance, and results across multiple touchpoints."
-        mainImage="/digital-m-details/compaign-left-img.png"
+        mainImage="/digital-m-details/customer-relationship-management-system-vibes-communications.png"
         bgImage="/web-development/wd-services-bg.jpg"
-        alt="Campaign Managemnt"
+        alt="customer-relationship-management-system-vibes-communications"
         features={[
           {
             icon: "/digital-m-details/influencer.png",

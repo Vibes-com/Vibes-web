@@ -34,7 +34,7 @@ const PerformanceMarketing = () => {
   return (
     <div>
       <HeroSection
-        bgImage="/performance-marketing/performance-marketing-banner.jpg"
+        bgImage="/performance-marketing/performance-marketing-analytics-vibes-communications.jpg"
         title={
           <>
             PERFORMANCE <br />
@@ -48,9 +48,9 @@ const PerformanceMarketing = () => {
         heading="Performance "
         highlightText="Advertising Solutions"
         description="Results-focused advertising strategies by a performance marketing agency, designed to generate high-quality leads, maximize reach, and drive measurable conversions across search and social platforms through precision targeting and data-backed optimization."
-        mainImage="/performance-marketing/pm-overview-left-img.png"
+        mainImage="/performance-marketing/performance-marketing-agency-vibes-communications.png"
         bgImage="/web-development/wd-services-bg.jpg"
-        alt="Performance MArketing"
+        alt="performance-marketing-agency-vibes-communications"
         features={[
           {
             icon: "/digital-m-details/leads.png",

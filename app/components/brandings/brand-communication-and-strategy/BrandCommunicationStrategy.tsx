@@ -26,10 +26,19 @@ const textcontent: blogContent = {
 };
 
 const images = [
-  { src: "/branding-details/brand-communication-and-strategy-img-1.jpg" },
-  { src: "/branding-details/brand-communication-and-strategy-img-2.jpg" },
-  { src: "/branding-details/brand-communication-and-strategy-img-3.jpg" },
-  { src: "/branding-details/brand-communication-and-strategy-img-4.jpg" },
+  { 
+    alt:"logo creations for buzriac- vibes communications",
+    src: "/branding-details/logo creations for buzriac- vibes communications.jpg"
+   },
+  { 
+    alt:"logo creations for BFE- vibes communications",
+    src: "/branding-details/logo creations for BFE- vibes communications.jpg" },
+  {
+     alt:"Logo design-vibes communications",
+    src: "/branding-details/Logo design-vibes communications.jpg" },
+  { 
+    alt:"digital marketing service for healthcare-Vibes communication",
+    src: "/branding-details/digital marketing service for healthcare-Vibes communication.jpg" },
 ];
 
 const BrandCommunicationStrategy = () => {
@@ -37,7 +46,7 @@ const BrandCommunicationStrategy = () => {
   return (
     <div>
       <HeroSection
-        bgImage="/branding-details/brand-communication-banner.jpg"
+        bgImage="/branding-details/brand-strategy-and-market-analysis-banner-Vibes-Communications.jpg"
         title={
           <>
             Brand Communication <br />

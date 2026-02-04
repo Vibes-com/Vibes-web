@@ -32,7 +32,7 @@ const SearchEngineOptimization = () => {
   return (
     <div>
       <HeroSection
-        bgImage="/search-engine-optimization/seo-banner.jpg"
+        bgImage="/search-engine-optimization/seo-agency-in-noida-vibes-communications.jpg"
         title={
           <>
             Search Engine <br />
@@ -46,9 +46,9 @@ const SearchEngineOptimization = () => {
         heading="Comprehensive SEO Built for "
         highlightText="Sustainable Results"
         description="A performance-focused seo optimization service built on data-driven frameworks that strengthen rankings, improve site health, and translate organic visibility into measurable business impact."
-        mainImage="/digital-m-details/seo-left-img.png"
+        mainImage="/digital-m-details/serp-services-vibes-communications.png"
         bgImage="/web-development/wd-services-bg.jpg"
-        alt="SEO Services"
+        alt="serp-services-vibes-communications"
         features={[
           {
             icon: "/digital-m-details/on-page-seo.png",

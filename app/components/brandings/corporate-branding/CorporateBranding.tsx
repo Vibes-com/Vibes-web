@@ -27,29 +27,29 @@ const textcontent: blogContent = {
 
 const images = [
   { 
-    alt:"Tomorrows India",
-    src: "/branding-details/corporate-workflow-1.jpg" },
+    alt:"Marketing collateral designa gency-vibes communications",
+    src: "/branding-details/Marketing collateral designa gency-vibes communications.jpg" },
   { 
-    alt:"Tomorrows India",
-    src: "/branding-details/corporate-workflow-2.jpg" },
+    alt:"corporate  branding id card -  vibes communications",
+    src: "/branding-details/corporate  branding id card -  vibes communications.jpg" },
   { 
-    alt:"Tomorrows India",
-    src: "/branding-details/corporate-workflow-3.jpg" },
+    alt:"marketing branding agency-vibes coummications",
+    src: "/branding-details/marketing branding agency-vibes coummications.jpg" },
   { 
-    alt:"Tomorrows India",
-    src: "/branding-details/corporate-workflow-4.jpg" },
+    alt:"branding marketing company- vibes communications",
+    src: "/branding-details/branding marketing company- vibes communications.jpg" },
   { 
-    alt:"Tomorrows India",
-    src: "/branding-details/corporate-workflow-5.jpg" },
+    alt:"Business Card Design services-Vibes communications",
+    src: "/branding-details/Business Card Design services-Vibes communications.jpg" },
   { 
-    alt:"Tomorrows India",
-    src: "/branding-details/corporate-workflow-6.jpg" },
+    alt:"Brand Positioning commpany - vibes communications",
+    src: "/branding-details/Brand Positioning commpany - vibes communications.jpg" },
   { 
-    alt:"Tomorrows India",
-    src: "/branding-details/corporate-workflow-7.jpg" },
+    alt:"360 Degree Branding-  vibes communications",
+    src: "/branding-details/360 Degree Branding-  vibes communications.jpg" },
   { 
-    alt:"Tomorrows India",
-    src: "/branding-details/corporate-workflow-8.jpg" },
+    alt:"Corporate Branding company- vibes communications",
+    src: "/branding-details/Corporate Branding company- vibes communications.jpg" },
 ];
 
 const CorporateBranding = () => {
@@ -57,7 +57,7 @@ const CorporateBranding = () => {
   return (
     <div>
       <HeroSection
-        bgImage="/branding-details/corporate-branding-banner.jpg"
+        bgImage="/branding-details/corporate-branding-banner-vibes-communications.jpg"
         title={
           <>
             CORPORATE <br />

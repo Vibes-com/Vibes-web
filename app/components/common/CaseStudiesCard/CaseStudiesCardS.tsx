@@ -24,6 +24,7 @@ interface CaseStudiesCardProps {
 
 export default function CaseStudiesCardS() {
 const { data, isLoading, isError } = useGetAllCaseStudiesQuery();
+console.log("Case Studies Data:", data);
 const cardsc = data?.data.slice(0,5)
   if (isLoading) return <p className="text-center py-10">Loading...</p>;
   if (isError) return <p className="text-center py-10 text-red-500">Error</p>;
@@ -47,7 +48,7 @@ const cardsc = data?.data.slice(0,5)
           <div className="case-study-card-common border border-gray-400 w-full rounded-xl overflow-hidden group">
                     <img
                      src={withImageBase(item.img)}
-                      alt={item.title}
+                      alt={item?.slug}
                       width={1500}
                       height={1000}
                       

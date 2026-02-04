@@ -58,7 +58,7 @@ const page = () => {
   return (
     <div>
       <HeroSection
-        backgroundImage="/career/career-banner.jpg"
+        backgroundImage="/career/website-banner-vibes-communications.jpg"
         title={
           <h1 className=" pt-15 hero-heading font-poppins font-normal text-[32px] sm:text-[60px] md:text-[60px] lg:text-[60px] xl:text-[60px] 2xl:text-[60px] leading-[116%] capitalize text-white">
             Where Careers Take Shape:

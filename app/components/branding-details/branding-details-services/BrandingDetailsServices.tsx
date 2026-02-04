@@ -83,7 +83,7 @@ const Brandingservices: ServiceItem[] = [
             "PR, Photoshoot & Videos",
             "Graphic Design",
         ],
-        icon: "/branding-details/carporate-icon.png",
+        icon: "/branding-details/Brand-Upliftment.png",
         url: "/branding-agency/brand-upliftment",
     },
     {
@@ -96,7 +96,7 @@ const Brandingservices: ServiceItem[] = [
             "Storytelling",
             "Brand Positioning"
         ],
-        icon: "/branding-details/carporate-icon.png",
+        icon: "/branding-details/Brand-Communication-&-Strategy.png",
         url: "/branding-agency/brand-communication-and-strategy",
     },
      {
@@ -110,7 +110,7 @@ const Brandingservices: ServiceItem[] = [
             "Business Logo Design",
             "Business Logo Maker"
         ],
-        icon: "/branding-details/carporate-icon.png",
+        icon: "/branding-details/logo-design.png",
         url: "/branding-agency/company-logo-design",
     },
 ];

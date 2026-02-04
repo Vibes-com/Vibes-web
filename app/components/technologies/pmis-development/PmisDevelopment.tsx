@@ -94,7 +94,7 @@ const PmisDevelopment = () => {
   return (
     <div>
       <HeroSection
-        bgImage="/pmis/pmis-banner.jpg"
+        bgImage="/pmis/project-management-information-system-vibes-communications.jpg"
         title={
           <>
             PROJECT MANAGEMENT<br />
