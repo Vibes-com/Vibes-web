@@ -108,19 +108,20 @@ const metaMap: Record<string, Metadata> = {
     creator: "Vibes Communications",
     publisher: "Vibes Communications",
   },
+
   "company-logo-design": {
-    title: "Logo Design Services | Brand Identity by Vibes Communications",
+    title: "Logo Maker & Logo Design | Company & Business Logo Design Services",
     description:
-      "Explore impactful logo designs by Vibes Communications that build strong brand identities through strategy-led design and visual storytelling.",
+      "Professional logo maker offering creative logo design, company logo design, and business logo design services. Build your brand with a powerful business logo maker.",
 
     alternates: {
       canonical: "https://www.vibescom.in/branding-agency/company-logo-design",
     },
 
     openGraph: {
-      title: "Logo Design Services | Brand Identity by Vibes Communications",
+      title: "Logo Maker & Logo Design | Company & Business Logo Design Services",
       description:
-        "Explore impactful logo designs by Vibes Communications that build strong brand identities through strategy-led design and visual storytelling.",
+        "Professional logo maker offering creative logo design, company logo design, and business logo design services. Build your brand with a powerful business logo maker.",
       url: "https://www.vibescom.in/branding-agency/company-logo-design",
       siteName: "Vibes Communications Pvt Ltd",
       images: [
@@ -137,9 +138,9 @@ const metaMap: Record<string, Metadata> = {
     twitter: {
       card: "summary",
       site: "@vibescom",
-      title: "Logo Design Services | Brand Identity by Vibes Communications",
+      title: "Logo Maker & Logo Design | Company & Business Logo Design Services",
       description:
-        "Explore impactful logo designs by Vibes Communications that build strong brand identities through strategy-led design and visual storytelling.",
+        "EProfessional logo maker offering creative logo design, company logo design, and business logo design services. Build your brand with a powerful business logo maker.",
       images: ["https://www.vibescom.in/assets/images/Vibes_OG_1200_630.png"],
     },
 
