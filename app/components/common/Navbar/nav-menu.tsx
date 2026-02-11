@@ -17,11 +17,13 @@ import clsx from "clsx";
 import { SheetClose } from "@/components/ui/sheet";
 import { useIsMobile } from "@/app/hooks/useIsMobile";
 import { ChevronDown } from "lucide-react";
+
 export const NavMenu = (props: ComponentProps<typeof NavigationMenu> & { onLinkClick?: () => void }) => {
     const { onLinkClick, ...navProps } = props;
     const pathname = usePathname();
     const isMobile = useIsMobile()
     const [isOpen, setIsOpen] = useState(false)
+    
     const handleLinkClick = (e: React.MouseEvent) => {
         if (onLinkClick) {
             setTimeout(() => {
@@ -29,12 +31,16 @@ export const NavMenu = (props: ComponentProps<typeof NavigationMenu> & { onLinkC
             }, 50);
         }
     }
+    
     const isActive = (path: string) => pathname === path;
 
-   const isWhatWeDoActive =
-  pathname.startsWith("/software-technology-services") ||
-  pathname.startsWith("/branding-agency") ||
-  pathname.startsWith("/digital-marketing-services");
+    const isWhatWeDoActive =
+        pathname.startsWith("/software-technology-services") ||
+        pathname.startsWith("/branding-agency") ||
+        pathname.startsWith("/digital-marketing-services");
+
+    // Check if we're on case studies page or any case study detail page
+    const isCaseStudiesActive = pathname === "/case-studies" || pathname.startsWith("/case-studies/");
 
     const linkClass = (active: boolean) =>
         clsx(
@@ -46,12 +52,12 @@ export const NavMenu = (props: ComponentProps<typeof NavigationMenu> & { onLinkC
             "after:scale-x-0 after:transition-transform after:duration-300 after:origin-left after:rounded-tl-[30px] after:rounded-tr-[30px]",
             active && "after:scale-x-100"
         );
+        
     return (
         <NavigationMenu {...navProps}>
             <NavigationMenuList className=" nav-menu-new space-x-3 data-[orientation=vertical]:flex-col data-[orientation=vertical]:items-start ">
 
                 <NavigationMenuItem>
-
                     <NavigationMenuLink asChild className={linkClass(isActive("/"))}>
                         <Link onClick={handleLinkClick} href="/" className="text-white">HOME</Link>
                     </NavigationMenuLink>
@@ -62,51 +68,6 @@ export const NavMenu = (props: ComponentProps<typeof NavigationMenu> & { onLinkC
                         <Link onClick={handleLinkClick} href="/about-us-together-for-tomorrow" className="text-white">WHO WE ARE</Link>
                     </NavigationMenuLink>
                 </NavigationMenuItem>
-
-                {/* <NavigationMenuItem>
-                    <NavigationMenuTrigger
-                        className={clsx(
-                            "bg-transparent !bg-transparent text-white font-poppins nv-menu font-normal text-[14px] leading-[100%] wht-btn",
-
-                            "hover:!bg-transparent focus:!bg-transparent active:!bg-transparent",
-                            "data-[state=open]:!bg-transparent data-[state=closed]:!bg-transparent",
-
-                            // text stays white
-                            "hover:text-white focus:text-white data-[state=open]:text-white",
-
-                            // underline
-                            " relative after:absolute after:left-0 after:-bottom-1  after:h-[4px] after:w-[0px] lg:after:w-full after:bg-[#F4BE00]",
-                            "after:scale-x-0 after:transition-transform after:duration-300 after:origin-left after:rounded-tl-[30px] after:rounded-tr-[30px]",
-
-                            isWhatWeDoActive && "after:scale-x-100"
-                        )}
-                    >
-                        WHAT WE DO
-                    </NavigationMenuTrigger>
-
-                    <NavigationMenuContent>
-                        <ul className="grid gap-3 p-4 w-[50vw] lg:w-[300px]">
-                            <li>
-                                <Link onClick={handleLinkClick} href="/software-technology-services" className="block p-2 hover:bg-gray-100 rounded text-[14px] lg:text-[16px]">
-                                    Technology
-                                </Link>
-                            </li>
-                            <li>
-                                <Link onClick={handleLinkClick} href="/branding-agency" className="block p-2 hover:bg-gray-100 rounded  text-[14px] lg:text-[16px]">
-                                    Branding
-                                </Link>
-                            </li>
-                            <li>
-                                <Link onClick={handleLinkClick} href="/digital-marketing-services" className="block p-2 hover:bg-gray-100 rounded text-[14px] lg:text-[16px]">
-                                    Digital Marketing
-                                </Link>
-                            </li>
-                        </ul>
-                    </NavigationMenuContent>
-
-
-
-                </NavigationMenuItem> */}
 
                 {isMobile ? (
                     <DropdownMenu open={isOpen} onOpenChange={setIsOpen}>
@@ -219,7 +180,7 @@ export const NavMenu = (props: ComponentProps<typeof NavigationMenu> & { onLinkC
                 <NavigationMenuItem>
                     <NavigationMenuLink
                         asChild
-                        className={linkClass(isActive("/case-studies"))}
+                        className={linkClass(isCaseStudiesActive)}
                     >
                         <Link onClick={handleLinkClick} href="/case-studies">CASE STUDIES</Link>
                     </NavigationMenuLink>

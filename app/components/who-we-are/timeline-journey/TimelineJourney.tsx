@@ -136,7 +136,7 @@ export default function TimelineVertical() {
                     {/* TOP ARROW */}
                     <button
                         onClick={() => swiperRef.current.slidePrev()}
-                        className="hidden md:block lg:block up-arrow glow-up float-up-down absolute top-[-17px] left-1/2 -translate-x-1/2 z-30 p-3"
+                        className=" cursor-pointer hidden md:block lg:block up-arrow glow-up float-up-down absolute top-[-17px] left-1/2 -translate-x-1/2 z-30 p-3"
                     >
                         <img
                             src={withImageBase("/about/up-arrow.png")}
@@ -250,7 +250,7 @@ export default function TimelineVertical() {
                     {/* BOTTOM ARROW */}
                     <button
                         onClick={() => swiperRef.current.slideNext()}
-                        className="hidden md:block lg:block arrows-down absolute bottom-0 left-1/2 -translate-x-1/2 z-50 shadow-lg animate-arrowBounce"
+                        className=" cursor-pointer hidden md:block lg:block arrows-down absolute bottom-0 left-1/2 -translate-x-1/2 z-50 shadow-lg animate-arrowBounce"
                     >
 
                     </button>

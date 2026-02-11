@@ -15,7 +15,7 @@ typeof window !== "undefined" ? window.location.href : "";
 const encodedTitle = encodeURIComponent(title);
 
     return (
-        <div className="float-right mt-6">
+        <div className="">
             <div className="relative flex items-center gap-3">
                 {/* Share Button */}
                 <button
@@ -27,7 +27,7 @@ const encodedTitle = encodeURIComponent(title);
 
                 {/* Social Icons */}
                 <ul
-                    className={`absolute right-12 flex gap-2 transition-all duration-300 ${open
+                    className={`absolute right-[2%] flex gap-2 transition-all duration-300 ${open
                         ? 'opacity-100 visible -translate-x-0'
                         : 'opacity-0 invisible translate-x-4'
                         }`}
