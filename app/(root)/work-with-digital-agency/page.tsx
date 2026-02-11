@@ -60,6 +60,7 @@ const page = () => {
       <HeroSection
         backgroundImage="/career/website-banner-vibes-communications.jpg"
         mobileBackgroundImage="/career/website-mobile-banner-vibes-communications.jpeg"
+      
         title={
           <h1 className=" pt-0 mt-[-150px] lg:mt-[0px] lg:pt-15 hero-heading font-poppins font-normal text-[32px] sm:text-[60px] md:text-[60px] lg:text-[60px] xl:text-[60px] 2xl:text-[60px] leading-[116%] capitalize text-white">
             Where Careers Take Shape:

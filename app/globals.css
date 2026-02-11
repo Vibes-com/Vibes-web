@@ -1402,6 +1402,7 @@ border-right: none;
   .hero-section {
     background-image: var(--mobile-bg) !important;
     height: 100vh;
+    background-position:bottom;
   }
 }
 
