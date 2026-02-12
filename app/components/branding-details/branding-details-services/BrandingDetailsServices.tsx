@@ -179,7 +179,7 @@ export default BrandingDetailsServices;
 
 const BrandingServiceCard = ({ service }: any) => {
     return (
-        <div className="border-b-6 border-transparent hover:border-[#204667] transition-colors duration-300 group relative w-[100%] lg:w-[100%] xl:w-[340px] h-[278px] bg-[#466E59]/100 shadow-lg transition-all duration-500 rounded-lg hover:bg-[#FFFFFF]">
+       <div className="border-b-6 border-transparent hover:border-[#204667] transition-colors duration-300 group relative w-[100%] lg:w-[100%] xl:w-[340px] h-[278px] bg-[#466E59]/100 shadow-lg transition-all duration-500 rounded-lg lg:hover:bg-[#FFFFFF] active:bg-[#466E59]/100">
 
             {/* ICON */}
             <div
