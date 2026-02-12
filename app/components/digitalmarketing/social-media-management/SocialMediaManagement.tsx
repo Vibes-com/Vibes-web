@@ -32,6 +32,7 @@ const SocialMediaManagement = () => {
     <div>
       <HeroSection
         bgImage="/digital-m-details/social-media-management-vibes-communications.jpg"
+         mobileBgImage="/digital-m-details/social-media-management-mobile-banner-vibes-communications.jpeg"
         title={
           <>
             Social Media <br />

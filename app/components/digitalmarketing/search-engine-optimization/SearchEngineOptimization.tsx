@@ -33,6 +33,7 @@ const SearchEngineOptimization = () => {
     <div>
       <HeroSection
         bgImage="/search-engine-optimization/seo-agency-in-noida-vibes-communications.jpg"
+         mobileBgImage="/search-engine-optimization/seo-agency-in-noida-mobile-banner-vibes-communications.jpeg"
         title={
           <>
             Search Engine <br />

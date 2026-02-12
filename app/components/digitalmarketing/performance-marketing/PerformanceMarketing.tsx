@@ -35,6 +35,7 @@ const PerformanceMarketing = () => {
     <div>
       <HeroSection
         bgImage="/performance-marketing/performance-marketing-analytics-vibes-communications.jpg"
+         mobileBgImage="/performance-marketing/performance-marketing-analytics-mobile-banner-vibes-communications.jpeg"
         title={
           <>
             PERFORMANCE <br />
