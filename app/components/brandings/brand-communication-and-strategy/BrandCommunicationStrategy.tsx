@@ -47,6 +47,7 @@ const BrandCommunicationStrategy = () => {
     <div>
       <HeroSection
         bgImage="/branding-details/brand-strategy-and-market-analysis-banner-Vibes-Communications.jpg"
+         mobileBgImage="/branding-details/brand-strategy-and-market-analysis-mobile-banner-Vibes-Communications.jpeg"
         title={
           <>
             Brand Communication <br />

@@ -58,6 +58,7 @@ const CorporateBranding = () => {
     <div>
       <HeroSection
         bgImage="/branding-details/corporate-branding-banner-vibes-communications.jpg"
+         mobileBgImage="/branding-details/corporate-branding-banner-mobile-banner-vibes-communications.jpeg"
         title={
           <>
             CORPORATE <br />

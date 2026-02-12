@@ -72,7 +72,8 @@ const CompanyLogoDesign = () => {
   return (
     <div>
       <HeroSection
-        bgImage="/branding-details/logo-design-bg.jpeg"
+        bgImage="/branding-details/company-logo-design-branding-agency-vibes-communications.jpeg"
+        mobileBgImage="/branding-details/company-logo-design-branding-agency-mobile-banner-vibes-communications.jpeg"
         title={
           <>
            Turning Ideas into Distinctive <br />

@@ -60,6 +60,7 @@ const BrandUpliftment = () => {
     <div>
       <HeroSection
         bgImage="/branding-details/digital-marketing-services-vibes-communications.jpg"
+         mobileBgImage="/branding-details/digital-marketing-services-new-mobile-banner-vibes-communications.jpeg"
         title={
           <>
             Brand <br />
