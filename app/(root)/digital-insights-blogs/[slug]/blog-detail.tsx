@@ -17,14 +17,24 @@ interface TocItem {
 }
 
 interface ResourceLink {
-  title: string;
+  subtitle: string;
   url: string;
 }
 
 interface ResourceCategory {
   title: string;
-  links: ResourceLink[];
+  order: number;
+  items: ResourceLink[];
   isOpen: boolean;
+}
+
+interface BlogData {
+  blog_title?: string;
+  blog_description?: string;
+  blog_thumb_image?: string;
+  created_on?: string;
+  resources?: string;
+  [key: string]: any; 
 }
 
 export default function BlogClient({ slug }: Props) {
@@ -36,36 +46,35 @@ export default function BlogClient({ slug }: Props) {
   const observerRef = useRef<IntersectionObserver | null>(null);
 
   // Additional Resources State
-  const [resources, setResources] = useState<ResourceCategory[]>([
-    {
-      title: "Strategy & Road-Mapping (Plan the Playbook)",
-      isOpen: true,
-      links: [
-        {
-          title: "Why Trust Is the True Currency for All Business",
-          url: "/blog/why-trust-is-the-true-currency"
-        },
-        {
-          title: "8 Digital Marketing Trends You Cannot Ignore in 2026",
-          url: "/blog/digital-marketing-trends-2026"
-        },
-        {
-          title: "10 Marketing Objective Examples To Guide and Focus Your Strategy",
-          url: "/blog/marketing-objective-examples"
+  const [resources, setResources] = useState<ResourceCategory[]>([]);
+
+  // Parse and set resources from API
+  useEffect(() => {
+    if (data?.data) {
+      const blogData = data.data as BlogData;
+      
+      if (blogData.resources) {
+        try {
+          const parsedResources = JSON.parse(blogData.resources);
+          
+          // Sort by order and add isOpen property (first one open by default)
+          const resourcesWithState = parsedResources
+            .sort((a: ResourceCategory, b: ResourceCategory) => a.order - b.order)
+            .map((resource: ResourceCategory, index: number) => ({
+              ...resource,
+              isOpen: index === 0 // First category open by default
+            }));
+          
+          setResources(resourcesWithState);
+        } catch (error) {
+          console.error("Error parsing resources:", error);
+          setResources([]);
         }
-      ]
-    },
-    {
-      title: "High-impact Channels & Execution (Bring the Plan to Life)",
-      isOpen: false,
-      links: []
-    },
-    {
-      title: "Measurement, Budget & Continuous Improvement (Keep It Profitable)",
-      isOpen: false,
-      links: []
+      } else {
+        setResources([]);
+      }
     }
-  ]);
+  }, [data]);
 
   const toggleResourceCategory = (index: number) => {
     setResources(prev => 
@@ -183,7 +192,7 @@ export default function BlogClient({ slug }: Props) {
   if (isLoading) return <p>Loading...</p>;
   if (error) return <p>Failed to load blog</p>;
 
-  const blog = data?.data;
+  const blog = data?.data as BlogData;
 
   return (
     <section className="w-full">
@@ -212,8 +221,8 @@ export default function BlogClient({ slug }: Props) {
            
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Link href="/contact-for-digital-requirements" className="bg-[#F4BE00] hover:bg-[#e5b000] text-white font-semibold px-8 py-3 rounded-full transition-colors duration-200 w-full sm:w-auto text-center">
-              Contact Us
-            </Link>
+                Contact Us
+              </Link>
               <a 
                 href="https://api.whatsapp.com/send?phone=918586932861" 
                 target="_blank" 
@@ -303,75 +312,77 @@ export default function BlogClient({ slug }: Props) {
                   <BlogShareButtons />
                 </div>
 
-                {/* Additional Resources Section */}
-                <div className="bg-white rounded-lg border border-gray-200 overflow-hidden">
-                  <div className="p-6 border-b border-gray-200">
-                    <h2 className="font-poppins font-bold text-xl lg:text-2xl ">
-                      Additional Resources
-                    </h2>
-                  </div>
-                  
-                  <div className="divide-y divide-gray-200">
-                    {resources.map((category, index) => (
-                      <div key={index} className="border-b border-gray-200 last:border-b-0">
-                        <button
-                          onClick={() => toggleResourceCategory(index)}
-                          className="w-full px-6 py-4 flex items-start justify-between hover:bg-gray-50 transition-colors duration-200"
-                        >
-                          <span className="font-poppins font-semibold text-sm text-left text-[#1F1F1F] pr-4 leading-relaxed">
-                            {category.title}
-                          </span>
-                          <div className="flex-shrink-0 w-6 h-6 rounded-full border-2 border-gray-400 flex items-center justify-center mt-0.5">
-                            <svg
-                              className={`w-3 h-3 text-gray-600 transition-transform duration-200 ${
-                                category.isOpen ? "rotate-0" : "rotate-180"
-                              }`}
-                              fill="none"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth="2"
-                              viewBox="0 0 24 24"
-                              stroke="currentColor"
-                            >
-                              <path d="M5 15l7-7 7 7"></path>
-                            </svg>
-                          </div>
-                        </button>
-                        
-                        {category.isOpen && category.links.length > 0 && (
-                          <div className="px-6 pb-4 space-y-3">
-                            {category.links.map((link, linkIndex) => (
-                              <Link
-                                key={linkIndex}
-                                href={link.url}
-                                className="flex items-start gap-3 group"
+                {/* Additional Resources Section - Now Dynamic */}
+                {resources.length > 0 && (
+                  <div className="bg-white rounded-lg border border-gray-200 overflow-hidden">
+                    <div className="p-6 border-b border-gray-200">
+                      <h2 className="font-poppins font-bold text-xl lg:text-2xl ">
+                        Additional Resources
+                      </h2>
+                    </div>
+                    
+                    <div className="divide-y divide-gray-200">
+                      {resources.map((category, index) => (
+                        <div key={index} className="border-b border-gray-200 last:border-b-0">
+                          <button
+                            onClick={() => toggleResourceCategory(index)}
+                            className="w-full px-6 py-4 flex items-start justify-between hover:bg-gray-50 transition-colors duration-200"
+                          >
+                            <span className="font-poppins font-semibold text-sm text-left text-[#1F1F1F] pr-4 leading-relaxed">
+                              {category.title}
+                            </span>
+                            <div className="flex-shrink-0 w-6 h-6 rounded-full border-2 border-gray-400 flex items-center justify-center mt-0.5">
+                              <svg
+                                className={`w-3 h-3 text-gray-600 transition-transform duration-200 ${
+                                  category.isOpen ? "rotate-0" : "rotate-180"
+                                }`}
+                                fill="none"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth="2"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
                               >
-                                <div className="flex-shrink-0 mt-1">
-                                  <svg 
-                                    className="w-5 h-5 text-gray-400" 
-                                    fill="none" 
-                                    stroke="currentColor" 
-                                    viewBox="0 0 24 24"
-                                  >
-                                    <path 
-                                      strokeLinecap="round" 
-                                      strokeLinejoin="round" 
-                                      strokeWidth="2" 
-                                      d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                                    />
-                                  </svg>
-                                </div>
-                                <span className="text-sm text-[#707070] group-hover:text-[#f4be00] transition-colors duration-200 leading-relaxed">
-                                  {link.title}
-                                </span>
-                              </Link>
-                            ))}
-                          </div>
-                        )}
-                      </div>
-                    ))}
+                                <path d="M5 15l7-7 7 7"></path>
+                              </svg>
+                            </div>
+                          </button>
+                          
+                          {category.isOpen && category.items && category.items.length > 0 && (
+                            <div className="px-6 pb-4 space-y-3">
+                              {category.items.map((link, linkIndex) => (
+                                <Link
+                                  key={linkIndex}
+                                  href={link.url}
+                                  className="flex items-start gap-3 group"
+                                >
+                                  <div className="flex-shrink-0 mt-1">
+                                    <svg 
+                                      className="w-5 h-5 text-gray-400" 
+                                      fill="none" 
+                                      stroke="currentColor" 
+                                      viewBox="0 0 24 24"
+                                    >
+                                      <path 
+                                        strokeLinecap="round" 
+                                        strokeLinejoin="round" 
+                                        strokeWidth="2" 
+                                        d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                                      />
+                                    </svg>
+                                  </div>
+                                  <span className="text-sm text-[#707070] group-hover:text-[#f4be00] transition-colors duration-200 leading-relaxed">
+                                    {link.subtitle}
+                                  </span>
+                                </Link>
+                              ))}
+                            </div>
+                          )}
+                        </div>
+                      ))}
+                    </div>
                   </div>
-                </div>
+                )}
               </div>
             </div>
           </div>
