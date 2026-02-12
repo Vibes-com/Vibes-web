@@ -10,7 +10,7 @@ const BlogListingHero: React.FC = () => {
             <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
                 <div className="grid grid-cols-12 items-center">
                     <div className="col-span-12 ">
-                        <h1 className="font-poppins font-normal pt-15 hero-heading text-[32px] sm:text-[60px] md:text-[60px] lg:text-[60px] xl:text-[60px] 2xl:text-[60px] leading-[116%] tracking-normal capitalize text-[#FFFFFF]">
+                        <h1 className="font-poppins font-normal pt-0 mt-[-150px] lg:mt-[0px] lg:pt-15 hero-heading text-[32px] sm:text-[60px] md:text-[60px] lg:text-[60px] xl:text-[60px] 2xl:text-[60px] leading-[116%] tracking-normal capitalize text-[#FFFFFF]">
                             Future-Ready
                             <br />
                             <span className=" hero-heading hero-highlight relative z-9 w-fit font-poppins font-semibold text-[32px] sm:text-[65px] md:text-[65px] lg:text-[65px] xl:text-[65px] 2xl:text-[65px] leading-[116%] tracking-normal capitalize text-[#f4be00]">Digital Solutions</span>

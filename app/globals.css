@@ -1398,11 +1398,5 @@ border-right: none;
   background-position: left center;
 }
 
-@media (max-width: 768px) {
-  .hero-section {
-    background-image: var(--mobile-bg) !important;
-    height: 100vh;
-    background-position:bottom;
-  }
-}
+
 

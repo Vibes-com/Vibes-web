@@ -6,11 +6,11 @@ import Image from "next/image";
 
 const CaseStudiesListingHero: React.FC = () => {
     return (
-        <div className="casestudy-listing-hero-wrapper flex items-center !h-[65vh] md:h-[90vh] lg:h-[90vh] xl:h-[90vh] 2xl:h-[90vh]">
+        <div className="casestudy-listing-hero-wrapper flex items-center  md:h-[90vh] lg:h-[90vh] xl:h-[90vh] 2xl:h-[90vh]">
             <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
                 <div className="grid grid-cols-12 items-center">
                     <div className="col-span-12 ">
-                        <h1 className="font-poppins font-normal pt-15 hero-heading text-[32px] sm:text-[60px] md:text-[60px] lg:text-[60px] xl:text-[60px] 2xl:text-[60px] leading-[116%] tracking-normal capitalize text-[#FFFFFF]">
+                        <h1 className="font-poppins font-normal pt-0 mt-[-150px] md:mt-[0px] lg:mt-[0px] lg:pt-15 hero-heading text-[32px] sm:text-[60px] md:text-[60px] lg:text-[60px] xl:text-[60px] 2xl:text-[60px] leading-[116%] tracking-normal capitalize text-[#FFFFFF]">
                             OUR
                             <br />
                             <span className="hero-highlight relative z-9 w-fit font-poppins font-semibold text-[33px] sm:text-[65px] md:text-[65px] lg:text-[65px] xl:text-[65px] 2xl:text-[65px] leading-[116%] tracking-normal capitalize text-[#F4BE00]">CASE STUDIES</span>
