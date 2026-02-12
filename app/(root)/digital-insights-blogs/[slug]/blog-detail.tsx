@@ -207,7 +207,7 @@ export default function BlogClient({ slug }: Props) {
 
      
           <p className="text-center text-[#1F1F1F] text-sm md:text-base mb-8">
-            Last updated on {blog?.created_on ? blog.created_on : "N/A"}
+            Last updated on {blog?.updated_on ? blog.updated_on : "N/A"}
           </p>
 
           <div className="max-w-4xl mx-auto bg-white  rounded-lg p-8 md:p-10 text-center border  border-gray-200">

@@ -33,6 +33,8 @@ const CampaignManagement = () => {
     <div>
       <HeroSection
         bgImage="/campaign-management/Campaign-management-system-vibes-communications.jpg"
+        mobileBgImage="/campaign-management/Campaign-management-system-mobile-banner-vibes-communications.jpeg"
+          
         title={
           <>
             Campaign <br />
