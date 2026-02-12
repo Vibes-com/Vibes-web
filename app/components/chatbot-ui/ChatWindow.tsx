@@ -432,7 +432,7 @@ export default function ChatWindow({ onClose }: { onClose: () => void }) {
       <SuggestedPills pills={suggestedPills} onSelect={(q) => setInput(q)} />
 
       {/* INPUT BAR */}
-      <div className="p-3 border-t flex gap-2 bg-white">
+      <div className="p-3 border-t flex flex-wrap gap-2 bg-white">
         <input
           className="flex-1 border rounded-lg px-3 py-2"
           placeholder="Ask something..."
