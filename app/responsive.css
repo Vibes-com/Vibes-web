@@ -131,8 +131,9 @@ width: 25px;
 display: none;
 }
 .digital-details-hero-wrapper{
-height: 65vh!important;
-background-position: left; 
+background-position: bottom;
+background-image: url("https://d32ze5duxdubbq.cloudfront.net/assets/img/digital-m-details/Digital-Marketing-services-mobile-banner-vibes-communications.jpeg")!important;
+height: 100vh;
 }
 .branding-details-hero-wrapper {
 height: 65vh!important;
@@ -264,10 +265,7 @@ font-size: 28px!important;
 height: 90vh!important;
 background-position: left;
 }
-.digital-details-hero-wrapper{
-height: 90vh!important;
-background-position: left; 
-}
+
 .branding-details-hero-wrapper {
 height: 90vh!important;
 background-position: left; 
@@ -290,11 +288,11 @@ height:56dvh;
 }
 .technology-details-hero-wrapper{
 height: 100vh!important;
-background-position: left;
+background-position: bottom;
 }
 .digital-details-hero-wrapper{
 height: 100vh!important;
-background-position: left; 
+background-position:bottom; 
 }
 .branding-details-hero-wrapper {
 height: 100vh!important;

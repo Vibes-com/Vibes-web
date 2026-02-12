@@ -13,7 +13,7 @@ const DigitalMarketingDetailsHero: React.FC = () => {
             <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
                 <div className="grid grid-cols-12 items-center">
                     <div className="col-span-12 ">
-                        <h1 className="font-poppins font-normal hero-heading pt-15 text-[32px] sm:text-[60px] md:text-[60px] lg:text-[60px] xl:text-[60px] 2xl:text-[60px] leading-[116%] tracking-normal capitalize text-[#FFFFFF]">
+                        <h1 className="font-poppins font-normal hero-heading pt-0 mt-[-150px] lg:mt-[0px] lg:pt-15 text-[32px] sm:text-[60px] md:text-[60px] lg:text-[60px] xl:text-[60px] 2xl:text-[60px] leading-[116%] tracking-normal capitalize text-[#FFFFFF]">
                             Driving Digital
 
                             <br />
@@ -26,13 +26,13 @@ const DigitalMarketingDetailsHero: React.FC = () => {
                         </p>
                         <div className=" mt-4">
                             <Link href="/contact-for-digital-requirements">
-                                <Button2 className="mt-5 text-[12px] lg:text-[18px]  p-[10px] lg:p-[20px]  cursor-pointer hover:border-[#2B4C69] hover:border-[2px] hover:text-[#F4BE00] hover:bg-transparent bg-[#FFFFFF] text-[#204667]">
+                                <Button2 className=" hidden sm:flex mt-5 text-[12px] lg:text-[18px]  p-[10px] lg:p-[20px]  cursor-pointer hover:border-[#2B4C69] hover:border-[2px] hover:text-[#F4BE00] hover:bg-transparent bg-[#FFFFFF] text-[#204667]">
                                     <span>Plan Your Digital Success</span>
                                     <ArrowUpIcon className="transform rotate-45" />
                                 </Button2>
                             </Link>
                         </div>
-                        <div className=" mt-9 max-w-7xl me-auto  flex flex-col md:flex-row items-center justify-center gap-5 w-max">
+                        <div className=" mt-9 max-w-7xl me-auto hidden sm:flex flex-col md:flex-row items-center justify-center gap-5 w-max">
                             <div className="flex items-center -space-x-5 me-auto">
                                 <div className="w-[35px] h-[35px] lg:w-[55px] lg:h-[55px] rounded-full border border-white/70 flex items-center justify-center shadow-[0px_4px_4px_0px_#00000040]">
                                     <img
