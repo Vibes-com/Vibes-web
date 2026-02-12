@@ -333,7 +333,7 @@ export default function ChatWindow({ onClose }: { onClose: () => void }) {
       initial={{ opacity: 0, scale: 0.9, y: 50 }}
       animate={{ opacity: 1, scale: 1, y: 0 }}
       exit={{ opacity: 0, scale: 0.9, y: 50 }}
-      className="fixed bottom-0 right-5 w-[90%] sm:w-[320px] md:w-[320px] lg:w-[320px] h-[450px] bg-white shadow-xl rounded-2xl flex flex-col overflow-hidden border"
+      className="fixed bottom-5 right-5 w-[90%] sm:w-[320px] md:w-[320px] lg:w-[320px] h-[450px] bg-white shadow-xl rounded-2xl flex flex-col overflow-hidden border"
     >
       {/* HEADER */}
       <div className="p-4 bg-[#466e59] text-white flex justify-between items-center">
@@ -432,21 +432,27 @@ export default function ChatWindow({ onClose }: { onClose: () => void }) {
       <SuggestedPills pills={suggestedPills} onSelect={(q) => setInput(q)} />
 
       {/* INPUT BAR */}
-      <div className="p-3 border-t flex flex-wrap gap-2 bg-white">
-        <input
-          className="flex-1 border rounded-lg px-3 py-2"
-          placeholder="Ask something..."
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-          onKeyDown={(e) => {
-            if (e.key === "Enter") {
-              e.preventDefault(); // optional, safe
-              sendMessage();
-            }
-          }}
-        />
-        <button onClick={sendMessage} className="cursor-pointer bg-[#F4BE00] text-white px-4 rounded-lg">➤</button>
-      </div>
+     <div className="p-3 border-t flex flex-nowrap gap-2 bg-white">
+  <input
+    className="flex-1 min-w-0 border rounded-lg px-3 py-2"
+    placeholder="Ask something..."
+    value={input}
+    onChange={(e) => setInput(e.target.value)}
+    onKeyDown={(e) => {
+      if (e.key === "Enter") {
+        e.preventDefault();
+        sendMessage();
+      }
+    }}
+  />
+
+  <button
+    onClick={sendMessage}
+    className="flex-shrink-0 cursor-pointer bg-[#F4BE00] text-white px-4 rounded-lg"
+  >
+    ➤
+  </button>
+</div>
     </motion.div>
   );
 }
