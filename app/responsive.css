@@ -112,8 +112,9 @@ text-align: center!important;
 transform: scale(0.9) translateX(0px);
 }
 .technology-details-hero-wrapper{
-height: 65vh!important;
-background-position: left;
+height: 100vh!important;
+background-position:bottom;
+background-image: url("https://d32ze5duxdubbq.cloudfront.net/assets/img/technology-details/Ecommerce-website-design-mobile-banner-vibes-communications.jpeg")!important;
 }
 .tech-casestudy .case-study-card-common{
 height: 250px;
@@ -136,8 +137,9 @@ background-image: url("https://d32ze5duxdubbq.cloudfront.net/assets/img/digital-
 height: 100vh;
 }
 .branding-details-hero-wrapper {
-height: 65vh!important;
-background-position: left; 
+background-position: bottom;
+background-image: url("https://d32ze5duxdubbq.cloudfront.net/assets/img/branding-details/corporate-branding-design-mobile-banner-vibes-communications.jpeg")!important;
+height: 100vh;
 }
 .branding-customer-wrapper .customer-circle:after {
 display: none;

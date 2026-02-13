@@ -66,6 +66,7 @@ const AppDevelopment = () => {
     <div>
       <HeroSection
         bgImage="/app-development/mobile-app-development-vibes-communications.jpg"
+        mobileBgImage="/app-development/mobile-app-development-mobile-banner-vibes-communications.jpeg"
         title={
           <>
             Mobile App <br />

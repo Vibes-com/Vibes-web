@@ -207,7 +207,7 @@ export default function BlogClient({ slug }: Props) {
 
      
           <p className="text-center text-[#1F1F1F] text-sm md:text-base mb-8">
-            Last updated on {blog?.updated_on ? blog.updated_on : "N/A"}
+            Last updated on <span className="font-semibold">{blog?.updated_on ? blog.updated_on : "N/A"}</span>
           </p>
 
           <div className="max-w-4xl mx-auto bg-white  rounded-lg p-8 md:p-10 text-center border  border-gray-200">
@@ -280,28 +280,33 @@ export default function BlogClient({ slug }: Props) {
                     </h2>
                     <nav>
                       <ol className="space-y-2">
-                        {tocItems.map((item, index) => (
-                          <li 
-                            key={item.id}
-                            style={{ 
-                              paddingLeft: `${(item.level - 2) * 1}rem`
-                            }}
-                          >
-                            <button
-                              onClick={() => scrollToSection(item.id)}
-                              className={`text-left w-full transition-colors duration-200 hover:text-[#f4be00] text-sm ${
-                                activeId === item.id
-                                  ? "text-[#f4be00] font-semibold"
-                                  : "text-[#707070] font-poppins" 
-                              }`}
+                        {tocItems.map((item, index) => {
+                          // Remove leading numbers and dots/spaces from heading text
+                          const cleanedText = item.text.trim().replace(/^\d+[\.\)\-\s]+/, '');
+                          
+                          return (
+                            <li 
+                              key={item.id}
+                              style={{ 
+                                paddingLeft: `${(item.level - 2) * 1}rem`
+                              }}
                             >
-                              <span className="text-[#f4be00] mr-2 font-medium">
-                                {String(index + 1).padStart(2, "0")}
-                              </span>
-                              {item.text}
-                            </button>
-                          </li>
-                        ))}
+                              <button
+                                onClick={() => scrollToSection(item.id)}
+                                className={`text-left cursor-pointer w-full transition-colors duration-200 hover:text-[#f4be00] text-sm ${
+                                  activeId === item.id
+                                    ? "text-[#f4be00] font-semibold"
+                                    : "text-[#707070] font-poppins" 
+                                }`}
+                              >
+                                <span className="text-[#f4be00] mr-2 font-medium">
+                                  {String(index + 1).padStart(2, "0")}
+                                </span>
+                                {cleanedText}
+                              </button>
+                            </li>
+                          );
+                        })}
                       </ol>
                     </nav>
                   </div>

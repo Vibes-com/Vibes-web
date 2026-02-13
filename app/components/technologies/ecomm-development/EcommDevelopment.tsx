@@ -69,6 +69,7 @@ const EcommDevelopment = () => {
     <div>
       <HeroSection
         bgImage="/ecommerce-development/ecommerce-store-development-vibes-communications.jpg"
+         mobileBgImage="/ecommerce-development/ecommerce-store-development-mobile-banner-vibes-communications.jpeg"
         title={
           <>
             E-Commerce <br />

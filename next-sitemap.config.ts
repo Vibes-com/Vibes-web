@@ -145,6 +145,12 @@ const config = {
           priority: 0.5,
           lastmod: new Date().toISOString(),
         },
+        {
+          loc: '/branding-agency/company-logo-design',
+          changefreq: 'monthly',
+          priority: 0.5,
+          lastmod: new Date().toISOString(),
+        },
             {
           loc: '/digital-marketing-services/campaign-management',
           changefreq: 'monthly',
@@ -182,8 +188,8 @@ const config = {
       const caseJson = await caseRes.json();
 
       const caseStudyPaths = Array.isArray(caseJson.data)
-        ? caseJson.data.map((item: { client_slug: string }) => ({
-            loc: `/case-studies/${item.client_slug}`,
+        ? caseJson.data.map((item: {client_name: string, client_slug: string }) => ({
+            loc: `/case-studies/${item?.client_name?.toLowerCase()?.replace(/\s+/g, '-')}/${item.client_slug}`,
             changefreq: 'monthly',
             priority: 0.7,
             lastmod: new Date().toISOString(),

@@ -102,6 +102,7 @@ const WebDevelopment = () => {
     <div>
       <HeroSection
         bgImage="/web-development/web-design-development-technology-banner-vibes-communications.jpg"
+         mobileBgImage="/web-development/web-design-development-technology-banner-mobile-banner-vibes-communications.jpeg"
         title={
           <>
             Web <br />
