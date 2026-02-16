@@ -62,7 +62,7 @@ export default function Page() {
     <div>
       <CaseStudiesListingHero />
       
-      <section className="case-study-listing-wrapper section-gap">
+      <section className="case-study-listing-wrapper section-gap ">
         <div className="container mx-auto max-w-screen-xl px-4 md:px-2">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             <CaseStudiesCard />

@@ -62,10 +62,10 @@ const page = () => {
         backgroundImage="/contact/Connecting-Brands-Creating-Vibes-vibes-communications.jpg"
          mobileBackgroundImage="/contact/Connecting-Brands-Creating-mobile-Vibes-communications.jpeg"
         
-        title={<h1 className="font-poppins font-normal pt-0 mt-[-150px] lg:mt-[0px] lg:pt-15 hero-heading text-[32px] sm:text-[60px] md:text-[60px] lg:text-[60px] xl:text-[60px] 2xl:text-[60px] leading-[116%] capitalize text-white">
+        title={<h1 className="font-poppins font-normal pt-0 mt-[-150px] md:mt-[50px] lg:mt-[0px] lg:pt-15 hero-heading text-[32px] sm:text-[60px] md:text-[30px] lg:text-[60px] xl:text-[60px] 2xl:text-[60px] leading-[116%] capitalize text-white">
           Connect. Collaborate.
           <br />
-          <span className=" hero-highlight relative hero-heading z-10 w-fit font-poppins font-semibold text-[33px] sm:text-[65px] md:text-[65px] lg:text-[65px] xl:text-[65px] 2xl:text-[65px] leading-[116%] text-[#F4BE00]">
+          <span className=" hero-highlight relative hero-heading z-10 w-fit font-poppins font-semibold text-[33px] sm:text-[65px] md:text-[35px] lg:text-[65px] xl:text-[65px] 2xl:text-[65px] leading-[116%] text-[#F4BE00]">
             Create.
           </span>
         </h1>}

@@ -83,7 +83,7 @@ const DigitalMarketingSolutions = () => {
                         ))}
                     </div>
 
-                    <div className="relative w-full h-[582px] hidden md:block overflow-hidden shadow-xl ">
+                    <div className="relative w-full h-[582px] hidden md:hidden lg:block overflow-hidden shadow-xl ">
                         <img
                            src={withImageBase("/digital-m-details/digital-marketing-company- for-realstate-dubai-vibes-communications.png")}
                             alt="digital-marketing-company- for-realstate-dubai-vibes-communications"

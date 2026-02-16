@@ -15,7 +15,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   backgroundImage,
   title,
   description,
-  height = "h-[65vh] sm:h-[90vh] md:h-[90vh] lg:h-[90vh] xl:h-[90vh] 2xl:h-[90vh]",
+  height = "h-[65vh] sm:h-[90vh] md:h-[40vh] lg:h-[90vh] xl:h-[90vh] 2xl:h-[90vh]",
   mobileBackgroundImage,
 }) => {
   const desktopBg = backgroundImage ? withImageBase(backgroundImage) : '';
@@ -36,7 +36,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             {title}
 
             {description && (
-              <p className="mt-10 font-poppins max-w-2xl font-semibold text-[14px] sm:text-[18px] md:text-[18px] lg:text-[18px] xl:text-[18px] 2xl:text-[18px] leading-[128%] text-white">
+              <p className="mt-10 font-poppins md:max-w-[400px] lg:max-w-2xl font-semibold text-[14px] sm:text-[18px] md:text-[18px] lg:text-[18px] xl:text-[18px] 2xl:text-[18px] leading-[128%] text-white">
                 {description}
               </p>
             )}

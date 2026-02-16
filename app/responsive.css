@@ -1,6 +1,18 @@
+@media (min-width: 1801px) and (max-width: 1920px) {
+  .service-bg{
+  height: 80vh!important;
+}
+.casestudy-listing-hero-wrapper{
+ height: 80vh!important;
+}
+}
+
 @media (min-width: 1791px) and (max-width: 1800px) {
 .service-bg{
-  height: 60vh!important;
+  height: 65vh!important;
+}
+.casestudy-listing-hero-wrapper{
+ height: 65vh!important;
 }
 }
 
@@ -35,7 +47,33 @@ min-height: 309px;
 padding-left: 8px;
 }
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+.casestudy-listing-hero-wrapper{
+  height: 40vh;
+  background-position: 80%;
+}
+.blog-listing-hero-wrapper{
+  height: 40vh;
+  background-position: 80%;
 
+}
+.technology-details-hero-wrapper{
+  height: 40vh;
+  background-position: 80%;
+}
+.branding-details-hero-wrapper{
+  height: 40vh;
+  background-position: 80%;
+}
+.digital-details-hero-wrapper{
+  height: 40vh;
+  background-position: 80%;
+}
+.about-hero-wrapper{
+  height: 40vh;
+  background-position: 80%;
+}
+}
 @media (min-width: 768px) {
 .timeline-journey-wrapper .swiper-pagination {
 display: none !important;
@@ -77,8 +115,9 @@ margin-left: 0px!important;
 background-position: left!important;
 }
 .about-hero-wrapper{
-height: 65vh!important;
-background-position: left!important;
+height: 100vh;
+background-position:bottom;
+background-image: url("https://d32ze5duxdubbq.cloudfront.net/assets/img/about/leadership-team-success-mobile-banner-vibes-communications.jpeg")!important;
 }
 .blog-listing-hero-wrapper{
 background-position: bottom;
@@ -272,10 +311,7 @@ background-position: left;
 height: 90vh!important;
 background-position: left; 
 }
-.about-hero-wrapper{
-background-position: 0 !important;
-height: 90vh !important;
-}
+
 .case-crd{
 height: 240px;
 }
@@ -300,10 +336,7 @@ background-position:bottom;
 height: 100vh!important;
 background-position: left; 
 }
-.about-hero-wrapper{
-background-position: 0 !important;
-height: 100vh !important;
-}
+
 .talk-btn a{
 padding: 2px 2px!important;
 font-size: 12px!important;

@@ -288,7 +288,7 @@ export default function BlogClient({ slug }: Props) {
                             <li 
                               key={item.id}
                               style={{ 
-                                paddingLeft: `${(item.level - 2) * 1}rem`
+                                paddingLeft: `${(item.level - 2) * 0}rem`
                               }}
                             >
                               <button

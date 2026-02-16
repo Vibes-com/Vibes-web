@@ -1193,13 +1193,13 @@ border-right: none;
   background: url("https://d32ze5duxdubbq.cloudfront.net/assets/img/case-study-details/creative-design-banner-vibes-communications.png")
     center/cover no-repeat;
   width: 100%;
-  height: 503px;
+  
 }
 .blog-listing-hero-wrapper {
   background: url("https://d32ze5duxdubbq.cloudfront.net/assets/img/blog/digital-insights-blog-future-ready-digital-solutions-vibes-communications.jpg") center/cover
     no-repeat;
   width: 100%;
-  height: 503px;
+  background-position: 70%;
 }
 .blog-listing-wrapper {
   background: url("https://d32ze5duxdubbq.cloudfront.net/assets/img/technology-details/common-casestudy-bg.jpg")

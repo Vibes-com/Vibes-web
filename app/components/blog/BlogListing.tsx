@@ -52,7 +52,7 @@ export default function BlogListing() {
       <section className="blog-listing-wrapper section-gap">
         <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
-            <div className="md:col-span-7">
+            <div className="md:col-span-12 lg:col-span-7">
 
               <Link
                 key={LatestBlog.blog_id}
@@ -74,7 +74,7 @@ export default function BlogListing() {
                 </div>
               </Link>
             </div>
-            <div className="md:col-span-5  p-4">
+            <div className=" md:col-span-12 lg:col-span-5  p-4">
               <h2 className="text-[#1F1F1F] font-poppins font-semibold text-[28px] text-start mb-5 border-b-3 border-[#F4BE00] pb-3">Latest Blog</h2>
               <ul>
                 {LatestBlogList.map((blog) => (

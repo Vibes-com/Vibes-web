@@ -165,7 +165,7 @@ const inputClass = (hasError?: string) =>
       <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
 
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-6 mb-12">
 
           <div className="bg-[#ECF3EE] shadow-md rounded-xl p-6 flex gap-4 items-center border-l-10 border-l-[#4d7756]">
             <div className="p-3 border-3 border-[#F4BE00] text-[#2b3332] rounded-full text-[20px] h-[50px] w-[50px]">
