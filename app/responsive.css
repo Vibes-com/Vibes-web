@@ -15,7 +15,11 @@
  height: 65vh!important;
 }
 }
-
+@media (min-width: 1023px) and (max-width: 1025px) {
+  .ct-image{
+    height:100%;
+  }
+}
 @media (max-width: 1024px){
 .nv-menu{
 font-size: 10px!important;

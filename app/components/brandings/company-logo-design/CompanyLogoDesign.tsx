@@ -61,10 +61,19 @@ const textcontent: blogContent = {
 };
 
 const images = [
-  { src: "/branding-details/brand-communication-and-strategy-img-1.jpg" },
-  { src: "/branding-details/brand-communication-and-strategy-img-2.jpg" },
-  { src: "/branding-details/brand-communication-and-strategy-img-3.jpg" },
-  { src: "/branding-details/brand-communication-and-strategy-img-4.jpg" },
+   { 
+    alt:"logo creations for buzriac- vibes communications",
+    src: "/branding-details/logo creations for buzriac- vibes communications.jpg"
+   },
+  { 
+    alt:"logo creations for BFE- vibes communications",
+    src: "/branding-details/logo creations for BFE- vibes communications.jpg" },
+  {
+     alt:"Logo design-vibes communications",
+    src: "/branding-details/Logo design-vibes communications.jpg" },
+  { 
+    alt:"digital marketing service for healthcare-Vibes communication",
+    src: "/branding-details/digital marketing service for healthcare-Vibes communication.jpg" },
 ];
 
 const CompanyLogoDesign = () => {
@@ -88,9 +97,9 @@ const CompanyLogoDesign = () => {
         highlightText="for Your Brand"
         description="Objective-driven company logo design that builds recognition and trust. We design logos that communicate clarity, credibility, and purpose turning ideas into powerful brand assets through thoughtful business logo design."
         
-        mainImage="/branding-details/logo-design-objective-img.png"
+        mainImage="/branding-details/logo-design-branding-agency-vibes-communications.png"
         bgImage="/web-development/wd-services-bg.jpg"
-        alt="Web Development"
+        alt="logo-design-branding-agency-vibes-communications"
         features={[
           {
             icon: "/branding-details/Instant-brand-recognition.png",

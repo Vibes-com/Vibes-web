@@ -112,7 +112,7 @@ const SectionWithSlider: FC<SectionProps> = ({
 
         {/* RIGHT SIDE SLIDER */}
         <div
-          className={`relative w-full lg:col-span-7 xl:col-span-7 2xl:col-span-7 h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px] xl:h-[772px] 2xl:h-[800px] ${reverse ? "lg:order-1" : "lg:order-2"}`}
+          className={`ct-image relative w-full lg:col-span-7 xl:col-span-7 2xl:col-span-7 h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px] xl:h-[772px] 2xl:h-[800px] ${reverse ? "lg:order-1" : "lg:order-2"}`}
         >
           <Swiper
             modules={[Autoplay]}
@@ -160,7 +160,7 @@ const SectionWithSlider: FC<SectionProps> = ({
 
               return (
                 <SwiperSlide key={i}>
-                  <div className="cut-wrapper">
+                  <div className="cut-wrapper ">
                     <img 
                       src={images[nextIndex].url} 
                       className="img-next"
