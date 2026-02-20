@@ -26,13 +26,13 @@ const DigitalMarketingDetailsHero: React.FC = () => {
                         </p>
                         <div className=" mt-4">
                             <Link href="/contact-for-digital-requirements">
-                                <Button2 className=" hidden md:hidden lg:flex sm:flex mt-5 text-[12px] lg:text-[18px]  p-[10px] lg:p-[20px]  cursor-pointer hover:border-[#2B4C69] hover:border-[2px] hover:text-[#F4BE00] hover:bg-transparent bg-[#FFFFFF] text-[#204667]">
+                                <Button2 className="  md:hidden lg:flex sm:flex mt-0 lg:mt-5 text-[12px] lg:text-[18px]  p-[10px] lg:p-[20px]  cursor-pointer hover:border-[#2B4C69] hover:border-[2px] hover:text-[#F4BE00] hover:bg-transparent bg-[#FFFFFF] text-[#204667]">
                                     <span>Plan Your Digital Success</span>
                                     <ArrowUpIcon className="transform rotate-45" />
                                 </Button2>
                             </Link>
                         </div>
-                        <div className=" mt-9 max-w-7xl me-auto hidden md:hidden lg:flex sm:flex flex-col md:flex-row items-center justify-center gap-5 w-max">
+                        <div className=" mt-4 lg:mt-9 max-w-7xl me-auto md:hidden lg:flex sm:flex flex md:flex-row items-center justify-center gap-5 w-max">
                             <div className="flex items-center -space-x-5 me-auto">
                                 <div className="w-[35px] h-[35px] lg:w-[55px] lg:h-[55px] rounded-full border border-white/70 flex items-center justify-center shadow-[0px_4px_4px_0px_#00000040]">
                                     <img

@@ -317,7 +317,18 @@ height: 100vh!important;
 background-position: top;
 }
 .technology-details-hero-wrapper h1{
-  margin-top: -12px;
+  margin-top: -60px;
+  
+}
+.branding-details-hero-wrapper{
+height: 100vh!important;
+background-position:center;
+}
+.branding-details-hero-wrapper h1{
+  margin-top: -60px;
+}
+.digital-details-hero-wrapper h1{
+  margin-top: -60px;
 }
 }
 
@@ -332,15 +343,41 @@ background-position: top;
 .technology-details-hero-wrapper h1{
   margin-top: -12px;
 }
+.technology-details-hero-wrapper p{
+  font-size: 11px;
+}
+.technology-details-hero-wrapper h2{
+font-size: 13px;
+}
 .digital-details-hero-wrapper{
 height: 100vh!important;
 background-position:bottom; 
 }
-.branding-details-hero-wrapper {
-height: 100vh!important;
-background-position: left; 
+
+.digital-details-hero-wrapper h1{
+  margin-top: -60px;
 }
 
+.digital-details-hero-wrapper p{
+ font-size: 11px;
+}
+.digital-details-hero-wrapper h2{
+  font-size: 13px;
+}
+.branding-details-hero-wrapper{
+height: 100vh!important;
+background-position: top;
+}
+.branding-details-hero-wrapper h1{
+  margin-top: -60px;
+}
+
+.branding-details-hero-wrapper p{
+ font-size: 11px;
+}
+.branding-details-hero-wrapper h2{
+  font-size: 13px;
+}
 .talk-btn a{
 padding: 2px 2px!important;
 font-size: 12px!important;
