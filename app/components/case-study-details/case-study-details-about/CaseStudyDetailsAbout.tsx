@@ -3,6 +3,8 @@
 import Image from "next/image";
 import React from "react";
 import { withImageBase } from "@/app/utils/image";
+import SlideRight from "../../animations/SlideRight";
+import SlideLeft from "../../animations/SlideLeft";
 
 interface CaseStudyDetailsAboutProps {
   badgeText?: string;
@@ -34,7 +36,9 @@ const CaseStudyDetailsAbout: React.FC<CaseStudyDetailsAboutProps> = ({
         <div className="grid grid-cols-12 lg:gap-14  items-center">
 
           {/* LEFT IMAGE */}
+         
           <div className="col-span-12 lg:col-span-6">
+             <SlideRight delay={0.5}>
             <div className="bg-white rounded-xl shadow-[0px_4px_7.6px_0px_#0000001F] ">
               <img
                 src={imageSrc}
@@ -45,12 +49,14 @@ const CaseStudyDetailsAbout: React.FC<CaseStudyDetailsAboutProps> = ({
                 className="w-full h-auto object-contain"
               />
             </div>
-          </div>
+             </SlideRight>
 
+          </div>
+         
           {/* RIGHT CONTENT */}
           <div className="col-span-12  pt-20 md:pt-0 lg:pt-0 xl:pt-0 2xl:pt-0 lg:col-span-6">
-
             {/* BADGE */}
+            <SlideLeft delay={0.5}>
             <div className="mb-5">
               <div className="px-6 py-2 rounded-full border border-[#F4BE00] inline-flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-[#F4BE00]" />
@@ -82,7 +88,7 @@ const CaseStudyDetailsAbout: React.FC<CaseStudyDetailsAboutProps> = ({
                 </div>
               ))}
             </div>
-
+        </SlideLeft>
           </div>
         </div>
       </div>

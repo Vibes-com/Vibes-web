@@ -5,6 +5,7 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import type { SwiperModule } from "swiper/types";
+import SlideUp from "../../animations/SlideUp";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -59,6 +60,7 @@ const CaseStudyDetailsBranding: React.FC<CaseStudyDetailsBrandingProps> = ({
               >
                 {section.images.map((src) => (
                   <SwiperSlide key={src}>
+                    <SlideUp delay={0.3}>
                     <div className="overflow-hidden">
                       <img
                         src={src}
@@ -68,6 +70,7 @@ const CaseStudyDetailsBranding: React.FC<CaseStudyDetailsBrandingProps> = ({
                         className="w-full h-auto object-cover transition-transform duration-700 hover:scale-110"
                       />
                     </div>
+                    </SlideUp>
                   </SwiperSlide>
                 ))}
               </Swiper>

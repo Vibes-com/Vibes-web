@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { withImageBase } from "@/app/utils/image";
+import SlideUp from "../../animations/SlideUp";
 
 /* ---------------- TYPES ---------------- */
 
@@ -58,6 +59,7 @@ const WorkflowSection: React.FC<WorkflowSectionProps> = ({
         </p>
 
         {/* STEPS GRID */}
+        <SlideUp delay={0.5}>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center ">
           {steps.map((step) => (
             <div
@@ -103,7 +105,7 @@ const WorkflowSection: React.FC<WorkflowSectionProps> = ({
             </div>
           ))}
         </div>
-
+    </SlideUp> 
       </div>
     </section>
   );

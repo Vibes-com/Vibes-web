@@ -2,6 +2,8 @@
 
 import React from "react";
 import { withImageBase } from "@/app/utils/image";
+import SlideLeft from "../../animations/SlideLeft";
+import SlideRight from "../../animations/SlideRight";
 
 interface CaseStudyDetailsImpactProps {
   badgeText?: string;
@@ -30,6 +32,7 @@ const CaseStudyDetailsImpact: React.FC<CaseStudyDetailsImpactProps> = ({
 
           {/* LEFT CONTENT */}
           <div className="col-span-12 lg:col-span-5">
+              <SlideRight delay={0.5}>
             <div className="mb-5">
               <div className="px-6 py-2 rounded-full border border-[#F4BE00] inline-flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-[#F4BE00]" />
@@ -38,7 +41,7 @@ const CaseStudyDetailsImpact: React.FC<CaseStudyDetailsImpactProps> = ({
                 </span>
               </div>
             </div>
-
+          
             <h3 className="font-poppins font-medium text-[30px] lg:text-[50px] leading-[1.23]">
               {titleLines.map((line, index) => (
                 <span key={index} className="block">
@@ -50,10 +53,12 @@ const CaseStudyDetailsImpact: React.FC<CaseStudyDetailsImpactProps> = ({
                 {highlightText}
               </span>
             </h3>
+              </SlideRight>
           </div>
 
           {/* RIGHT LIST */}
           <div className="col-span-12 lg:col-span-7">
+            <SlideLeft delay={0.5}>
             <ul className="space-y-6 text-[#AEAEAE] font-poppins mt-10 lg:mt-0 font-medium text-[20px] lg:text-[26px] leading-[123%]">
               {impactList.map((item, index) => (
                 <li
@@ -64,6 +69,7 @@ const CaseStudyDetailsImpact: React.FC<CaseStudyDetailsImpactProps> = ({
                 </li>
               ))}
             </ul>
+            </SlideLeft>
           </div>
 
         </div>

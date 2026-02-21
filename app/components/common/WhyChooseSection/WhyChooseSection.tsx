@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { withImageBase } from "@/app/utils/image";
+import SlideUp from "../../animations/SlideUp";
 
 export type WhyChooseItem = {
   title: string;
@@ -55,6 +56,7 @@ export default function WhyChooseSection({
         </p>
 
         {/* DESKTOP */}
+        <SlideUp delay={0.5}>
         <div className="relative mt-24 hidden lg:block">
 
           {unionImage && (
@@ -94,6 +96,7 @@ export default function WhyChooseSection({
             })}
           </div>
         </div>
+        </SlideUp>
 
         {/* MOBILE */}
         <div className="grid grid-cols-1 gap-6 mt-16 lg:hidden">

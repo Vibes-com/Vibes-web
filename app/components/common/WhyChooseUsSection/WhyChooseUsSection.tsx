@@ -1,5 +1,6 @@
 import React from "react";
 import { withImageBase } from "@/app/utils/image";
+import SlideLeft from "../../animations/SlideLeft";
 
 export type WhyChooseCard = {
   title: string;
@@ -53,6 +54,7 @@ const WhyChooseUsSection: React.FC<WhyChooseUsSectionProps> = ({
 
           {/* RIGHT CARDS */}
           <div className="col-span-12 lg:col-span-7">
+            <SlideLeft delay={0.5}>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {cards.map((card, index) => (
                 <div
@@ -76,8 +78,9 @@ const WhyChooseUsSection: React.FC<WhyChooseUsSectionProps> = ({
                 </div>
               ))}
             </div>
+            </SlideLeft>
           </div>
-
+        
         </div>
       </div>
     </section>

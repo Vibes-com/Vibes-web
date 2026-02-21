@@ -6,6 +6,7 @@ import { Autoplay } from "swiper/modules";
 import Image from "next/image";
 import "swiper/css";
 import { withImageBase } from "@/app/utils/image";
+import SlideUp from "../../animations/SlideUp";
 
 export type BuiltWaySlide = {
   id: string;
@@ -92,6 +93,7 @@ export default function BuiltWaySlider({
         >
           {[...slides, ...slides].map((item, index) => (
             <SwiperSlide key={`${item.id}-${index}`} className="!h-auto">
+              <SlideUp delay={0.5}>
               <div
                 className="
                   group relative shadow-sm h-[260px] mt-20 mb-10 rounded-2xl p-4 lg:p-8
@@ -120,6 +122,7 @@ export default function BuiltWaySlider({
                   {item.desc}
                 </p>
               </div>
+              </SlideUp>
             </SwiperSlide>
           ))}
         </Swiper>

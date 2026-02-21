@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { withImageBase } from "@/app/utils/image";
+import SlideRight from "../../animations/SlideRight";
 
 type Feature = {
   icon: string;
@@ -40,6 +41,7 @@ const AboutSection = ({
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
 
           {/* LEFT IMAGE */}
+        <SlideRight delay={0.5}>
           <div className="relative">
             <img
               src={withImageBase(mainImage)}
@@ -49,6 +51,7 @@ const AboutSection = ({
               className="relative z-10"
             />
           </div>
+          </SlideRight>
 
           {/* RIGHT CONTENT */}
           <div>

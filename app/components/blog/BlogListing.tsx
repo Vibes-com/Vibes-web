@@ -3,6 +3,9 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { useGetAllBlogsQuery } from "@/app/redux/api/blogApi";
 import { titleCase } from "title-case";
+import SlideLeft from "../animations/SlideLeft";
+import SlideRight from "../animations/SlideRight";
+import SlideUp from "../animations/SlideUp";
 import {
   Select,
   SelectContent,
@@ -59,6 +62,7 @@ export default function BlogListing() {
                 href={`/digital-insights-blogs/${LatestBlog.blog_slug}`}
                 className="group"
               >
+                <SlideRight delay={0.5}>
                 <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition">
                   <img
                     src={LatestBlog.blog_thumb_image}
@@ -72,10 +76,14 @@ export default function BlogListing() {
                     </h3>
                   </div>
                 </div>
+                </SlideRight>
               </Link>
             </div>
+            
             <div className=" md:col-span-12 lg:col-span-5  p-4">
-              <h2 className="text-[#1F1F1F] font-poppins font-semibold text-[28px] text-start mb-5 border-b-3 border-[#F4BE00] pb-3">Latest Blog</h2>
+              <SlideLeft delay={0.5}>
+            <h2 className="text-[#1F1F1F] font-poppins font-semibold text-[28px] text-start mb-5 border-b-3 border-[#F4BE00] pb-3">Latest Blog</h2>
+              
               <ul>
                 {LatestBlogList.map((blog) => (
                   <Link
@@ -102,7 +110,9 @@ export default function BlogListing() {
                 ))}
 
               </ul>
+              </SlideLeft>
             </div>
+              
           </div>
         </div>
       </section>
@@ -137,7 +147,7 @@ export default function BlogListing() {
             </Select>
 
           </div>
-          
+          <SlideUp delay={0.5}>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredBlogs.map((blog: any) => (
               <Link
@@ -166,6 +176,7 @@ export default function BlogListing() {
               </Link>
             ))}
           </div>
+          </SlideUp>
         </div>
       </div>
     </>

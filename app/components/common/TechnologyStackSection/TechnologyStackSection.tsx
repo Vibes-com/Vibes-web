@@ -2,6 +2,7 @@
 
 import React from "react";
 import {withImageBase} from "@/app/utils/image";
+import SlideUp from "../../animations/SlideUp";
 
 type  tlogo ={
     alt:string;
@@ -54,7 +55,7 @@ const TechnologyStackSection: React.FC<TechnologyStackProps> = ({
         <p className="text-[#FFFFFFDB] text-[16px] text-center max-w-3xl mx-auto mb-16 mt-5">
           {description}
         </p>
-
+       <SlideUp delay={0.5}>
         {/* MARQUEE TOP */}
         <div className="overflow-hidden mb-8">
           <div
@@ -66,9 +67,10 @@ const TechnologyStackSection: React.FC<TechnologyStackProps> = ({
             ))}
           </div>
         </div>
-
+        </SlideUp>
         {/* MARQUEE BOTTOM */}
         {bottomLogos.length > 0 && (
+          <SlideUp delay={0.5}>
           <div className="overflow-hidden mx-5 lg:mx-20">
             <div
               className="flex gap-6 w-max animate-marquee-right"
@@ -79,6 +81,7 @@ const TechnologyStackSection: React.FC<TechnologyStackProps> = ({
               ))}
             </div>
           </div>
+          </SlideUp>
         )}
       </div>
 

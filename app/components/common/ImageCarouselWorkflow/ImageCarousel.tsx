@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import { withImageBase } from "@/app/utils/image";
+import SlideUp from "../../animations/SlideUp";
 
 /* ---------- TYPES ---------- */
 
@@ -85,6 +86,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
       )}
 
       {/* ---------- SLIDER ---------- */}
+      <SlideUp delay={0.3}>
       <div className="w-full">
         <Swiper
           modules={[Autoplay]}
@@ -114,6 +116,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
           ))}
         </Swiper>
       </div>
+      </SlideUp>
     </section>
   );
 };

@@ -2,6 +2,8 @@
 
 import React from "react";
 import { withImageBase } from "@/app/utils/image";
+import SlideRight from "../../animations/SlideRight";
+import SlideLeft from "../../animations/SlideLeft";
 
 interface BriefBlock {
   badgeText: string;
@@ -78,12 +80,16 @@ const CaseStudyDetailsBrief: React.FC<CaseStudyDetailsBriefProps> = ({
 
           {/* LEFT BLOCK */}
           <div className="col-span-12 lg:col-span-6">
+            <SlideRight delay={0.5}>
             {renderBlock(leftBlock)}
+            </SlideRight>
           </div>
 
           {/* RIGHT BLOCK */}
           <div className="col-span-12 lg:col-span-6 pt-15 lg:pt-0">
+            <SlideLeft delay={0.5}>
             {renderBlock(rightBlock)}
+            </SlideLeft>
           </div>
 
         </div>

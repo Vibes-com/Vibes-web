@@ -6,6 +6,9 @@ import { Button2 } from "@/components/ui/button2";
 import { ArrowUpIcon } from "lucide-react";
 import Link from "next/link";
 import { withImageBase } from "@/app/utils/image";
+import SlideRight from "../../animations/SlideRight";
+import SlideLeft from "../../animations/SlideLeft";
+import SlideUp from "../../animations/SlideUp";
 
 const services = [
     {
@@ -77,12 +80,15 @@ const DigitalMarketingSolutions = () => {
                 <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-5 items-stretch">
 
                     {/* LEFT CARDS */}
+                     <SlideRight delay={0.5}>
                     <div className="flex flex-col gap-5 ">
                         {services.slice(0, 2).map((service, idx) => (
                             <ServiceCard key={idx} service={service} />
                         ))}
                     </div>
+                    </SlideRight>
 
+                   <SlideUp delay={0.5}>
                     <div className="relative w-full h-[582px] hidden md:hidden lg:block overflow-hidden shadow-xl ">
                         <img
                            src={withImageBase("/digital-m-details/digital-marketing-company- for-realstate-dubai-vibes-communications.png")}
@@ -92,13 +98,16 @@ const DigitalMarketingSolutions = () => {
                             
                         />
                     </div>
+                    </SlideUp>
 
                     {/* RIGHT CARDS */}
+                        <SlideLeft delay={0.5}>
                     <div className="flex flex-col gap-5">
                         {services.slice(2, 4).map((service, idx) => (
                             <ServiceCard key={idx} service={service} />
                         ))}
                     </div>
+                    </SlideLeft>
 
                 </div>
             </div>

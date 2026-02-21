@@ -5,6 +5,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { LucideMonitorPlay } from 'lucide-react';
 import { FaCode } from 'react-icons/fa';
 import { TbBrandAirtable } from "react-icons/tb";
+import SlideUp from "../../animations/SlideUp";
 
 import ListJobs from "./ListJobs";
 
@@ -24,7 +25,9 @@ const JobTabs = () => {
     <div className='career-wrap'>
       <section className="w-full py-16">
         <div className="container mx-auto px-4">
+          <SlideUp delay={0.3}>
           <Tabs defaultValue="technology" className="w-full">
+           
             <TabsList className='w-[100%] md:w-[90%] lg:w-[80%] mx-auto mb-10 h-auto main-tab p-0 rounded-md bg-gray-50'>
               <TabsTrigger value="technology" className='flex flex-col h-auto text-center  py-6 rounded-r-none'>
                 <FaCode className="!w-[30px] lg:!w-[40px] !h-[30px] lg:!h-[40px] cursor-pointer" />
@@ -32,6 +35,7 @@ const JobTabs = () => {
               <TabsTrigger value="digital" className='flex flex-col h-auto text-center py-6 rounded-none border-x border-y-0 border-gray-400 cursor-pointer'><LucideMonitorPlay className="!w-[30px] lg:!w-[40px] !h-[30px] lg:!h-[40px]" />Digital Marketing</TabsTrigger>
               <TabsTrigger value="branding" className='flex flex-col h-auto text-center py-6 rounded-l-none cursor-pointer'><TbBrandAirtable className="!w-[30px] lg:!w-[40px] !h-[30px] lg:!h-[40px]" />Branding</TabsTrigger>
             </TabsList>
+         
             {/* technology start */}
             <TabsContent value="technology">
               <ListJobs type={1} />
@@ -43,6 +47,7 @@ const JobTabs = () => {
               <ListJobs type={3} />
             </TabsContent>
           </Tabs>
+          </SlideUp>
         </div>
       </section>
     </div>

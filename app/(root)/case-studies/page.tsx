@@ -4,6 +4,7 @@ import CaseStudiesListingHero from "@/app/components/casestudies/casestudies-lis
 import CaseStudiesCard, {
   SingleCaseStudyCard,
 } from "@/app/components/common/CaseStudiesCard/CaseStudiesCard";
+import SlideUp from "@/app/components/animations/SlideUp";
 
 import type { Metadata } from "next";
 
@@ -64,9 +65,11 @@ export default function Page() {
       
       <section className="case-study-listing-wrapper section-gap ">
         <div className="container mx-auto max-w-screen-xl px-4 md:px-2">
+          <SlideUp delay={0.3}>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             <CaseStudiesCard />
           </div>
+          </SlideUp>
         </div>
       </section>
     </div>

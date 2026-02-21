@@ -4,6 +4,10 @@ import { useGetSingleBlogQuery } from "@/app/redux/api/blogApi";
 import BlogShareButtons from "@/app/components/blog/blog-share-btn/BlogShareBtn";
 import { useEffect, useState, useRef } from "react";
 import Link from "next/link";
+import SlideLeft from "@/app/components/animations/SlideLeft";
+import SlideUp from "@/app/components/animations/SlideUp";
+import SlideRight from "@/app/components/animations/SlideRight";
+import SlideDown from "@/app/components/animations/SlideDown";
   
 
 type Props = {
@@ -201,15 +205,16 @@ export default function BlogClient({ slug }: Props) {
         <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
           <div className="font-poppins font-semibold text-[18px] text-center  text-[#1F1F1F] mb-6 leading-tight mt-[80px]">Digital Marketing Strategy</div>
           {/* Blog Title */}
+          <SlideDown delay={0.3}>
           <h1 className="font-poppins font-bold text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-[#1F1F1F] mb-6 leading-tight">
             {blog?.blog_title}
           </h1>
-
+        </SlideDown>
      
           <p className="text-center text-[#1F1F1F] text-sm md:text-base mb-8">
             Last updated on <span className="font-semibold">{blog?.updated_on ? blog.updated_on : "N/A"}</span>
           </p>
-
+          <SlideUp delay={0.5}>
           <div className="max-w-4xl mx-auto bg-white  rounded-lg p-8 md:p-10 text-center border  border-gray-200">
             <h2 className="font-poppins font-semibold text-lg md:text-xl mb-4 uppercase tracking-wide">
               NEED HELP WITH YOUR MARKETING STRATEGY?
@@ -233,6 +238,7 @@ export default function BlogClient({ slug }: Props) {
               </a>
             </div>
           </div>
+          </SlideUp>
         </div>
       </div>
 
@@ -245,9 +251,9 @@ export default function BlogClient({ slug }: Props) {
 
       
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
-      
+            
             <div className="w-full lg:w-2/3 order-2 lg:order-1">
-           
+           <SlideRight delay={0.5}>
               {blog?.blog_thumb_image && (
                 <div className="mb-8">
                   <img
@@ -257,7 +263,8 @@ export default function BlogClient({ slug }: Props) {
                   />
                 </div>
               )}
-
+              </SlideRight>
+             <SlideRight delay={0.7}>
               <div className="blog-content">
                 <div
                   ref={contentRef}
@@ -267,10 +274,12 @@ export default function BlogClient({ slug }: Props) {
                   }}
                 />
               </div>
+              </SlideRight>
             </div>
 
             {/* Right Column - TOC and Share Buttons */}
             <div className="w-full lg:w-1/3 order-1 lg:order-2">
+               <SlideLeft delay={0.5}>
               <div className="lg:sticky lg:top-24 space-y-6">
                 {/* Table of Contents */}
                 {tocItems.length > 0 && (
@@ -389,7 +398,9 @@ export default function BlogClient({ slug }: Props) {
                   </div>
                 )}
               </div>
+              </SlideLeft>
             </div>
+            
           </div>
         </div>
       </div>

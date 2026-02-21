@@ -6,6 +6,7 @@ import { Fancybox } from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
 import HeroSection from "../common/InnerPageHero/HeroSection";
 import { useGetGalleryQuery } from "@/app/redux/api/galleryApi";
+import SlideUp from "../animations/SlideUp";
 
 
 export default function Gallery() {
@@ -73,6 +74,7 @@ export default function Gallery() {
           )}
 
           {/* GALLERY GRID */}
+          <SlideUp delay={0.3}>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 gallery-group">
             {data?.gallery?.map((item) => (
               <a
@@ -91,6 +93,7 @@ export default function Gallery() {
               </a>
             ))}
           </div>
+          </SlideUp>
         </div>
       </section>
     </div>
