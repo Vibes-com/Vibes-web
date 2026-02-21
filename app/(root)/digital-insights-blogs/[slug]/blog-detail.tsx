@@ -199,7 +199,7 @@ export default function BlogClient({ slug }: Props) {
   const blog = data?.data as BlogData;
 
   return (
-    <section className="w-full">
+    <section className="w-full overflow-hidden">
       {/* Header Section */}
       <div className="bg-[linear-gradient(45deg,#fcf6dc,transparent)] pt-[85px] sm:pt-24 md:pt-28 lg:pt-32 pb-12">
         <div className="container mx-auto max-w-screen-xl px-4 md:px-8">

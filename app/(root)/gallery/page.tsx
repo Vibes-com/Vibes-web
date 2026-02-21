@@ -56,7 +56,7 @@ export const metadata: Metadata = {
 
 const page = () => {
   return (
-    <div>
+    <div className="overflow-hidden">
         <Gallery/>
     </div>
   )

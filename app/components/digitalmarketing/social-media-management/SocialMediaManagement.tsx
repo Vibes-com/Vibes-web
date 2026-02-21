@@ -29,7 +29,7 @@ const textcontent: blogContent = {
 const SocialMediaManagement = () => {
   const router = useRouter();
   return (
-    <div>
+    <div className="overflow-hidden">
       <HeroSection
         bgImage="/digital-m-details/social-media-management-vibes-communications.jpg"
          mobileBgImage="/digital-m-details/social-media-management-mobile-banner-vibes-communications.jpeg"

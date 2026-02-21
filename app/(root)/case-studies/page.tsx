@@ -60,7 +60,7 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <div>
+    <div className="overflow-hidden">
       <CaseStudiesListingHero />
       
       <section className="case-study-listing-wrapper section-gap ">

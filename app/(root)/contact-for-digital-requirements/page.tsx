@@ -56,8 +56,7 @@ export const metadata: Metadata = {
 const page = () => {
 
   return (
-    <div>
-
+    <div className="overflow-hidden">
       <HeroSection
         backgroundImage="/contact/Connecting-Brands-Creating-Vibes-vibes-communications.jpg"
          mobileBackgroundImage="/contact/Connecting-Brands-Creating-mobile-Vibes-communications.jpeg"

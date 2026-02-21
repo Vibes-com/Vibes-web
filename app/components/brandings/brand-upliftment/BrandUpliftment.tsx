@@ -57,7 +57,7 @@ const images = [
 const BrandUpliftment = () => {
   // const router = useRouter();
   return (
-    <div>
+     <div className="overflow-hidden">
       <HeroSection
         bgImage="/branding-details/digital-marketing-services-vibes-communications.jpg"
          mobileBgImage="/branding-details/digital-marketing-services-new-mobile-banner-vibes-communications.jpeg"

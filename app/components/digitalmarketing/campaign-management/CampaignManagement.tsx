@@ -30,7 +30,7 @@ const textcontent: blogContent = {
 const CampaignManagement = () => {
   const router = useRouter();
   return (
-    <div>
+    <div className="overflow-hidden">
       <HeroSection
         bgImage="/campaign-management/Campaign-management-system-vibes-communications.jpg"
         mobileBgImage="/campaign-management/Campaign-management-system-mobile-banner-vibes-communications.jpeg"

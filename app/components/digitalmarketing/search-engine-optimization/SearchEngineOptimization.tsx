@@ -30,7 +30,7 @@ const textcontent: blogContent = {
 const SearchEngineOptimization = () => {
   const router = useRouter();
   return (
-    <div>
+    <div className="overflow-hidden">
       <HeroSection
         bgImage="/search-engine-optimization/seo-agency-in-noida-vibes-communications.jpg"
          mobileBgImage="/search-engine-optimization/seo-agency-in-noida-mobile-banner-vibes-communications.jpeg"

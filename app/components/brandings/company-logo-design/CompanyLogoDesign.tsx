@@ -79,7 +79,7 @@ const images = [
 const CompanyLogoDesign = () => {
   // const router = useRouter();
   return (
-    <div>
+     <div className="overflow-hidden">
       <HeroSection
         bgImage="/branding-details/company-logo-design-branding-agency-vibes-communications.jpeg"
         mobileBgImage="/branding-details/company-logo-design-branding-agency-mobile-banner-vibes-communications.jpeg"

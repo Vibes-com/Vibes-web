@@ -44,7 +44,7 @@ const images = [
 const BrandCommunicationStrategy = () => {
   // const router = useRouter();
   return (
-    <div>
+     <div className="overflow-hidden">
       <HeroSection
         bgImage="/branding-details/brand-strategy-and-market-analysis-banner-Vibes-Communications.jpg"
          mobileBgImage="/branding-details/brand-strategy-and-market-analysis-mobile-banner-Vibes-Communications.jpeg"

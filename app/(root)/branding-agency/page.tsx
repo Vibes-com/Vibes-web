@@ -82,7 +82,7 @@ const textcontent: blogContent = {
 const page = () => {
   // const router = useRouter();
   return (
-    <div className="overflow-hidden">
+     <div className="overflow-hidden">
       <BrandingDetailsHero />
       <BrandingDetailsServices />
       <WhyChooseUs

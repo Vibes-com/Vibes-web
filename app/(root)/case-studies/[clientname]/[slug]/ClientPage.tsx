@@ -31,7 +31,7 @@ console.log("single case study data", data);
   const caseStudy = data.data;
 
   return (
-    <div>
+    <div className="overflow-hidden">
       <CaseStudyDetailsHero
         title={caseStudy.banner_heading?.split(" ")[0] || ""}
         highlightTitle={
