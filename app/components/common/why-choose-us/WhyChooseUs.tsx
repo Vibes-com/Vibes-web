@@ -120,7 +120,7 @@ useEffect(() => {
           </div>
 
           {/* RIGHT SLIDER */}
-          <div className="lg:col-span-7 z-99">
+          <div className="lg:col-span-7 z-49">
             <Slider {...settings} className="customer-slider">
               {slides.map((item, index) => (
                 <div key={index} className="customer-slide">
